@@ -1,0 +1,1483 @@
+/* SD Auto complete results popup width fix */
+.form-item-search .dropdown-menu {
+	width:900px !important;
+}
+
+.form-autocomplete .dropdown-menu {
+   width:900px !important;
+}
+
+/* Fix to hide refresh button & bg colour */
+.form-item-search .input-group-addon {
+	color:white !important;
+	background-color:white !important;
+	border:0px solid white !important;
+}
+
+/* Fix at Home page */
+.panel-panel .form-autocomplete .input-group-addon {
+	color:#032848 !important;
+	background-color:#e2e2e2 !important;
+	border:0px solid #032848 !important;
+}
+
+.panel-panel  #intel-isdm-module-site-search-form {
+    width:25% !important;
+    right: 145px;
+    top: 6px;
+}
+
+.panel-panel #intel-isdm-module-site-search-form input {
+	height : 34px !important;
+}
+
+/* Fix for Border colour */
+#intel-isdm-module-site-search-form input {
+	/*border-color : #1eafec;*/
+}
+
+/* Fix for cross button at search-box, when user reset input */
+.clearable.form-text{
+  background: #fff url(../images/close-button.gif) no-repeat right -10px center !important;
+  /*border: 1px solid #1eafec !important; */
+  padding: 3px 18px 3px 4px;     /* Use the same right padding (18) in jQ! */
+  border-radius: 3px;
+  transition: background 0.4s;
+  z-index: 1;
+}
+.clearable.form-text.x  { background-position: right 35px center !important; } /* (jQ) Show icon */
+.clearable.form-text.onX{ cursor: pointer; }              /* (jQ) hover cursor style */
+.clearable.form-text::-ms-clear {display: none; width:0; height:0;} /* Remove IE default X */
+
+/* Fix for market-segment breadcrumb */
+.page-market-segment .breadcrumb {
+	margin-left:90px;
+	margin-top:30px;
+}
+
+.category-pane-title .pane-title{
+	font-weight:bold;
+}
+
+.memory-max-title .pane-title{
+	display:none;
+}
+
+.display-independent-title .pane-title{
+	display:none;
+}
+/**fix for spacing in the panels**/
+.collapsible .panel-heading {
+	padding:0px;
+}
+/**fix for spacing between panels **/
+.panel {
+	margin-bottom:10px !important;	
+}
+/**Fix for background color for panel headings **/
+.panel-default .panel-heading {
+	background-color: #fff !important;
+}
+/**Fix for the upload button in solution and formula page **/
+.input-group-btn .btn{
+margin-top:0px;
+}
+/** Start of changes for Product comparison CSS changes **/
+
+.view-product-comparison .views-field{
+    padding-bottom:10px;
+    padding-top:10px;
+    padding-left:5px;
+    padding-right:5px;
+    border-bottom:0.1px solid silver;
+    color:black;
+    text-align:left;
+    width:15%;
+    vertical-align:top;
+    line-height:26px;
+
+}
+
+.view-product-comparison .views-field .views-field-field-processors-list{
+
+    padding-bottom:10px;
+    padding-top:10px;
+    padding-left:5px;
+    padding-right:5px;
+    border-bottom:0.1px solid silver;
+    color:black;
+    text-align:left;
+    width:15%;
+    vertical-align:top;
+    line-height:19px;
+
+}
+.view-product-comparison .views-field .views-field-field-processors-list ul,
+.view-product-comparison .views-field .views-field-field-categories ul,
+.view-product-comparison .views-field .views-field-field-fpga ul,
+.view-product-comparison .views-field .views-field-field-chipsets ul,
+.view-product-comparison .views-field .views-field-field-market-segments ul,
+.view-product-comparison .views-field .views-field-field-geographic-location ul,
+.view-product-comparison .views-field .views-field-field-intel-technologies ul,
+.view-product-comparison .views-field .views-field-field-application ul,
+.view-product-comparison .views-field .views-field-field-power ul,
+.view-product-comparison .views-field .views-field-field-ethernet-controllers ul,
+.view-product-comparison .views-field .views-field-field-intel-wireless ul,
+.view-product-comparison .views-field .views-field-field-software-solutions ul,
+.view-product-comparison .views-field .views-field-field-stds-eth ul,
+.view-product-comparison .views-field .views-field-field-memory-type ul{
+	
+	padding-left:1px;
+	text-indent: -1em;
+}
+.view-product-comparison .views-field .views-field-field-processors-list li ,
+.view-product-comparison .views-field .views-field-field-categories li,
+.view-product-comparison .views-field .views-field-field-fpga li,
+.view-product-comparison .views-field .views-field-field-chipsets li,
+.view-product-comparison .views-field .views-field-field-market-segments li,
+.view-product-comparison .views-field .views-field-field-geographic-location li,
+.view-product-comparison .views-field .views-field-field-intel-technologies li,
+.view-product-comparison .views-field .views-field-field-application li,
+.view-product-comparison .views-field .views-field-field-power li,
+.view-product-comparison .views-field .views-field-field-ethernet-controllers li,
+.view-product-comparison .views-field .views-field-field-intel-wireless li,
+.view-product-comparison .views-field .views-field-field-software-solutions li,
+.view-product-comparison .views-field .views-field-field-stds-eth li,
+.view-product-comparison .views-field .views-field-field-memory-type li{
+	list-style-type: none;
+	color:black;
+}
+.view-product-comparison .views-field .views-field-field-processors-list li:before,
+.view-product-comparison .views-field .views-field-field-categories li:before,
+.view-product-comparison .views-field .views-field-field-fpga li:before,
+.view-product-comparison .views-field .views-field-field-chipsets li:before,
+.view-product-comparison .views-field .views-field-field-market-segments li:before,
+.view-product-comparison .views-field .views-field-field-geographic-location li:before,
+.view-product-comparison .views-field .views-field-field-intel-technologies li:before,
+.view-product-comparison .views-field .views-field-field-application li:before,
+.view-product-comparison .views-field .views-field-field-power li:before,
+.view-product-comparison .views-field .views-field-field-ethernet-controllers li:before,
+.view-product-comparison .views-field .views-field-field-intel-wireless li:before,
+.view-product-comparison .views-field .views-field-field-software-solutions li:before,
+.view-product-comparison .views-field .views-field-field-stds-eth li:before,
+.view-product-comparison .views-field .views-field-field-memory-type li:before{
+	content: '\2022';
+    color: #b7b795;
+    padding-right: 0.5em;
+	
+}
+.view-product-comparison .views-field.views-row:nth-child(even)
+{
+    background-color:#f2f2f2;
+}
+.productcompareTop{
+    height:275px;
+
+
+}
+.productcompareTop a{
+-ms-word-break: break-all;
+
+     /* Non standard for WebKit */
+     word-break: break-word;
+     word-break: break-all;
+
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+        hyphens: auto;
+}
+.productcompareBottom{
+    height:45px;	
+    font-size:13px;
+    text-align:center;
+}
+.view-product-comparison .views-field .views-row-first{
+    text-align:right;
+
+}
+
+.view-product-comparison .views-field:first-child{
+    color:#3366cc;
+    background-color:#ffffff;
+    width:15%;
+}
+.view-solutions-directory .flag-product-comparison  a{
+
+   font-size:11px;
+}
+.view-product-comparison .views-field  th {
+    border:none;
+}
+.view-solutions-directory .comparecheckbox {
+    width: 15px; 
+    margin: 0px;
+    padding: 0px;;
+}
+
+.comparelistbutton{
+    font: bold 18px Arial;
+    width: 150px; 
+    background-color:#003567;
+    text-align: center;
+    display: block;
+    padding: 8px;
+    border-radius: 7px;
+    margin-left:20px;
+    color:#fff;
+    position:relative;
+}
+
+body.page-solutions-directory .view-product-compare-counter .view-footer a:hover, body.page-solutions-directory .view-product-compare-counter .view-footer a:focus {
+    color:#fff;
+}
+body.page-solutions-directory .view-product-compare-counter {
+    bottom: 0;
+    transition: bottom .7s linear;
+    position: fixed;
+    margin-left: -5px;
+    opacity: 1;
+    z-index: 10000;
+    background: #0071c5;
+    color: #fff;
+    width: 1217px;
+    padding-left:10px;
+
+}
+body.page-solutions-directory .view-product-compare-counter .flag-product-comparison  a{
+    margin: 0px;
+    color:#fff;
+    font-size: 11px;
+
+}
+body.page-solutions-directory .view-product-compare-counter .view-header{
+
+    text-align: left;
+    position: relative;
+    top:25px;
+	font-size:18px;
+
+}
+body.page-solutions-directory .view-product-compare-counter .view-content{
+
+     position: relative;
+    left: 250px;
+
+}
+
+body.page-solutions-directory .view-product-compare-counter .view-footer
+{
+
+    float: right;
+    position: relative;
+    bottom: 5px;
+    margin-top:-35px;
+    margin-right: 10px;
+
+}
+
+.reqquotecompare .btn-primary ,.reqquotecompare .btn-primary:hover,.reqquotecompare .btn-primary:focus,.reqquotecompare .btn-primary:active
+{
+    border: 0;
+    background: none;
+    border: none;
+    display: inline;
+    font: inherit;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    outline-offset: 0;
+    /* Additional styles to look like a link */
+    color: #0072c5;
+    cursor: pointer;
+    text-decoration: underline;
+
+
+}
+
+.view-product-compare-counter .flag-product-comparison  a{
+
+    color:#fff;
+}
+
+body.page-solutions-directory .view-id-product_compare_counter table tr td
+{
+    border:none;
+    width: 27%;
+}
+
+body.page-solutions-directory .view-id-product_compare_counter table
+{
+    border-spacing:10px;
+    margin-top:0px;
+}
+
+
+/** END of changes for Product comparison CSS changes **/
+
+/* Promotion Start*/
+.PromotionTopBar .field-name-field-promotion-period 
+{
+	display:inline-block;
+}
+
+.page-node-add-promotion .panel, .node-type-promotion .panel {
+	    margin-bottom: 10px !important;
+}
+
+.page-node-add-promotion .panel-body, .node-type-promotion .panel-body {
+	margin-bottom: 0px;
+}
+
+.field-name-field-promotion-image .panel-heading {
+	background-color: white;
+	width:637px;
+    color: black;
+    padding-left: 5px;
+	padding-bottom: 7px;
+	/*border-left: 7px;
+    border-right: 9px;
+	border: 1px solid lightgrey; */
+	border:none! important;
+	
+}
+.field-name-field-promotion-image .panel-title, .field-name-field-promotion-video .panel-title {
+	text-transform:capitalize;
+}
+
+.field-name-field-promotion-video .form-text {float: left; width: 350px;}
+.field-name-field-promotion-video .control-label {float: left; padding-top: 5px;}
+
+.addpromo {
+    margin-left: 10px;
+    color: #fff;
+    background-color: #1eafec;
+    border-color: #13a2de;
+}
+.field-name-field-promotion-image .btn-default , .field-name-field-banner-image .btn-default, .field-name-field-promotion-attachment .btn-default
+{
+
+    color: #fff;
+    background-color: #1eafec;
+    border-color: #357ebd;
+
+}
+.field-name-field-select-view-buyer .btn-default{
+
+    color: #fff;
+    background-color: #1191c6;
+    border-color: #0e79a5;
+
+}
+.field-name-field-promotion-products  .btn-success {
+    color: #fff;
+    background-color: #1191c6;
+    border-color: #0e79a5;
+}
+.page-node-add-promotion .modal-content, .node-type-promotion.page-node-edit .modal-content{
+    overflow:auto;
+}
+
+.page-node-add-promotion .view-select-promotion-solutions #edit-ervw-submit, 
+.page-node-add-promotion .view-buyer-companies #edit-ervw-submit,
+.node-type-promotion.page-node-edit .view-select-promotion-solutions #edit-ervw-submit, 
+.node-type-promotion.page-node-edit .view-buyer-companies #edit-ervw-submit 
+{
+	float:left;
+	margin-bottom:25px;
+}
+.page-node-add-promotion .view-select-promotion-solutions ul.pagination, 
+.page-node-add-promotion .view-buyer-companies ul.pagination,
+.node-type-promotion.page-node-edit .view-select-promotion-solutions ul.pagination, 
+.node-type-promotion.page-node-edit .view-buyer-companies ul.pagination 
+{
+	margin-top: 0;
+    padding-top: 0;
+	
+}
+.node-type-promotion.page-node-edit .view-select-promotion-solutions td.views-field-entityreference-view-widget, 
+.page-node-add-promotion.page-node-add .view-select-promotion-solutions td.views-field-entityreference-view-widget,
+.page-node-add-promotion.page-node-add .view-buyer-companies td.views-field-entityreference-view-widget,
+.node-type-promotion.page-node-edit .view-buyer-companies td.views-field-entityreference-view-widget 
+{
+	padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.page-node-add-promotion .view-select-promotion-solutions #entityreference-view-widget-select-all,
+.node-type-promotion.page-node-edit .view-select-promotion-solutions #entityreference-view-widget-select-all
+{
+    display:none;
+}
+.page-node-add-promotion .view-buyer-companies #entityreference-view-widget-select-all,
+.node-type-promotion.page-node-edit .view-buyer-companies #entityreference-view-widget-select-all
+{
+    display:none;
+} 
+.page-node-add-promotion .field-name-field-promotion-period .panel-default .panel-heading , 
+.node-type-promotion.page-node-edit .field-name-field-promotion-period .panel-default .panel-heading {
+    background-color: white !important; 
+    color: black;
+    width: 640px;
+    margin-left: -1px;
+    padding-left: 5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+	text-transform: capitalize;
+}
+.page-node-add-promotion .field-name-field-promotion-video .panel-default .panel-heading,
+.node-type-promotion.page-node-edit .field-name-field-promotion-video .panel-default .panel-heading {
+    background-color: white !important; 
+    color: black;
+    width: 638px;
+    margin-left: -1px;
+    padding-left: 5px;
+    padding-top: 8px;
+    padding-bottom: 7px;
+    font-size: 16px;
+	text-transform: capitalize;
+	border: none;
+	-webkit-box-shadow: none !important;
+}
+.page-node-add-promotion .field-name-field-promotion-products .field-label,
+.node-type-promotion.page-node-edit .field-name-field-promotion-products .field-label{
+    background-color: white !important; 
+    color: black;
+}
+.page-node-add-promotion .field-name-field-select-view-buyer .field-label,.node-type-promotion.page-node-edit .field-name-field-select-view-buyer .field-label {padding-left:5px;}
+.page-node-add-promotion .field-name-field-promotion-products label,
+.node-type-promotion.page-node-edit .field-name-field-promotion-products label{
+    padding-left:5px;
+    text-transform: capitalize;
+    cursor: text;
+    padding-top: 3px;
+    padding-bottom: 1px;
+    padding-left: 13px;
+}
+.page-node-add-promotion .group-select-buyer a.panel-title.fieldset-legend,
+.node-type-promotion.page-node-edit .group-select-buyer a.panel-title.fieldset-legend{
+ background-color: white !important; 
+    color: black;
+    font-size:16px;
+    width: 637px;
+    margin-left: -2px;
+    cursor: text;
+    padding-top: 8px;
+    padding-bottom: 8px;
+	padding-left: 5px;
+	text-transform: capitalize;
+	border: 1px solid lightgrey;
+}
+.page-node-add-promotion .tabledrag-toggle-weight-wrapper,
+.node-type-promotion.page-node-edit .tabledrag-toggle-weight-wrapper
+{
+    display: none;
+}
+.field-name-field-promotion-period .panel-heading { border:none !important;}
+.field-name-field-promotion-period .panel-body { margin-bottom:-60px !important;}
+.field-name-field-promotion-period .help-block { visibility:hidden;} 
+.field-name-field-promotion-period .date-combo { border:none !important; -webkit-box-shadow: none !important; padding:0px !important;}
+.field-name-field-promotion-period .panel-title {text-transform: capitalize;}
+.field-name-field-promotion-image .panel-body{ margin-top:-50px;}
+/*.field-name-field-promotion-video .panel-body{margin-bottom: -50px;} */
+
+.field-name-field-select-view-buyer tr td {padding:2px}
+/*
+.field-name-field-promotion-products td {visibility: hidden;}
+.field-name-field-select-view-buyer td:first-child:before {content: 'Add Buyers';}
+*/
+.page-node-add-promotion .views-exposed-widgets > div{width:23%}
+.page-node-add-promotion .views-exposed-widgets > div.views-submit-button{width:5%}
+
+.node-type-promotion .views-exposed-widgets > div{width:23%}
+.node-type-promotion .views-exposed-widgets > div.views-submit-button{width:5%}
+
+
+
+
+
+
+/*
+#views-form-manual-builders-entityreference-view-widget-1 .table-hover{margin-top: 0;} 
+
+.view-select-promotion-solutions .table-hover thead tr th:first-child, .view-buyer-companies .table-hover thead tr  th:first-child{width: 10%;}
+
+.view-select-promotion-solutions .table-hover thead tr th:second-child, .view-buyer-companies .table-hover thead tr th:second-child{width: 90%;}
+*/
+
+.node-promotion .field-label {
+	
+	background-color: white;
+	color: black;
+    padding: 8px;
+	font-size:17px;
+	
+}
+.node-promotion .field-name-field-promotion-period .field-label, .node-promotion .field-name-field-promotion-image .field-label, 
+.node-promotion .field-name-field-banner-image .field-label, .node-promotion .field-name-field-select-view-buyer .field-label {
+	
+	display:none;
+	
+}
+.PromotionTopBar{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    color: white;
+    background-color: #193167;
+}
+.PromotionBody {
+	background-color: white;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+	border-bottom:0.1px solid silver;
+}
+.PromotionAttach .field-items{
+    padding-top: 10px;
+	padding-bottom:10px;
+}
+.PromotionAttach {
+    background-color: white;
+	border-bottom: 0.1px solid silver;
+	
+}
+.PromotionSoln .field-items{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: white;
+    border-bottom: 0.1px solid silver;
+    position: relative;
+}
+.PromotionBuyer .field-items{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    background-color: white;
+    border-bottom: 0.1px solid silver;
+    position: relative;
+}
+.PromotionCall .field-items{
+    background-color: #ebebe0;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+	border-bottom:0.1px solid silver;
+}
+.PromotionImage .field-items{
+    background-color: #ebebe0;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+	border-bottom:0.1px solid silver;
+}
+.PromotionBanner .field-items{
+    background-color: #ebebe0;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: white;
+	border-bottom:0.1px solid silver;
+}
+
+.node-promotion .PromotionTitle {
+	background-color: white;
+	font-weight: bold;
+    color: black;
+    font-size: 17px;
+    padding-left: 8px;
+    padding-top: 10px;
+}
+
+.joinbuttonpromo, .builderjoinbuttonpromo{
+	background-color: transparent;
+    border: 2px;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.PromotionSoln .field-label, .PromotionCall .field-label, .PromotionBuyer .PromotionTitle{
+	background-color: lightgray;
+    color: black;
+    padding: 8px;
+    font-size: 17px;
+}
+
+.PromotionSoln .promsol {
+	padding-bottom:7px;
+	padding-top:7px;
+}
+.PromotionSoln .promsol .field-item{
+    padding-bottom: 3px;
+}
+
+.node-promotion-form .form-item-promotion-workflow, .node-promotion-form .form-item-workflow-scheduled{
+	display:none;
+}
+
+.node-promotion-form .glyphicon-ok:before{
+	display:none;
+}
+.node-promotion-form  #edit-submit .glyphicon:empty , .node-promotion-form #edit-submit-button-5 .glyphicon:empty{
+	width :0px;
+	
+}
+.node-promotion-form .btn-danger {
+	/*margin-top: 5px;*/
+    background-color: #1eafec;
+    border-color: #357ebd;
+}
+
+.node-promotion-form .form-item-language{
+	display:none;
+}
+.page-node-add-promotion .breadcrumb .inline a, .node-type-promotion.page-node-edit .breadcrumb .inline a{
+	display:none;
+}
+/*.page-node-add-promotion .breadcrumb .inline :before{
+	content:'Content';
+}
+*/
+.page-node-add-promotion .breadcrumb .delimiter, .node-type-promotion.page-node-edit .breadcrumb .delimiter{
+	display:none;
+}
+.node-promotion-form .tabledrag-handle {
+	display:none;
+}
+
+.page-node-add-promotion .view-select-promotion-solutions #edit-submit , .node-type-promotion.page-node-edit .view-select-promotion-solutions #edit-submit, 
+.page-node-add-promotion .view-buyer-companies #edit-submit ,.node-type-promotion.page-node-edit .view-buyer-companies #edit-submit{
+	visibility: hidden;
+}
+.page-node-add-promotion .view-select-promotion-solutions #edit-submit--4 , .node-type-promotion.page-node-edit .view-select-promotion-solutions #edit-submit--4, 
+.page-node-add-promotion .view-buyer-companies #edit-submit--4 ,.node-type-promotion.page-node-edit .view-buyer-companies #edit-submit--4{
+	visibility: hidden;
+}
+
+.page-node-add-promotion .field-name-field-promotion-video .panel, .node-type-promotion .field-name-field-promotion-video .panel {
+	    border:none !important;
+	   -webkit-box-shadow: none !important;
+}
+
+.node-promotion-form .field-name-field-promotion-image .panel-default {
+	 border:none !important;
+	 -webkit-box-shadow: none !important;
+}
+
+.page-node-add-promotion .field-name-field-promotion-products  .field-multiple-table td .field-multiple-drag ,.node-type-promotion .field-name-field-promotion-products .field-multiple-table td .field-multiple-drag {
+	display:none;
+}
+
+.node-type-promotion .field-name-field-promotion-products .view-mode-promotion_solution_list .group-header .field-name-field-image .img-responsive ,
+.page-node-add-promotion .field-name-field-promotion-products .view-mode-promotion_solution_list .group-header .field-name-field-image .img-responsive{
+	margin:0 auto !important;
+}
+
+.node-type-promotion .field-name-field-promotion-products .view-mode-promotion_solution_list .group-footer ,
+.page-node-add-promotion .field-name-field-promotion-products .view-mode-promotion_solution_list .group-footer {
+	text-align:center;
+}
+
+.page-node-add-promotion .field-name-field-promotion-products .view-mode-promotion_solution_list .group-middle ,
+.node-type-promotion .field-name-field-promotion-products .view-mode-promotion_solution_list .group-middle {
+
+    float: unset;
+    width: unset;
+	text-align:center;
+}
+.prom {
+  position: absolute;
+  top: 105px;
+  right: 260px;
+}
+.node-promotion-form .form-item-field-odm-legacy-id-und-0-value {
+	display:none;
+}
+
+.node-type-promotion .field-name-field-promotion-video .player{
+	background-color:black;
+}
+.node-type-promotion #edit-submit-button-5 {
+color: #fff;
+background-color: #1eafec;
+border-color: #13a2de;
+}
+.node-type-promotion #edit-submit-button-5:hover {
+color: #fff;
+background-color: #1191c6;
+border-color: #0e79a5;
+}
+.field-name-field-promotion-video .panel-body {
+    margin-bottom: -50px;
+}
+
+.page-node-add-promotion .tab-content > .tab-pane:not(.active),
+.page-node-add-promotion .pill-content > .pill-pane:not(.active) {
+    display: block;
+    height: 0;
+    overflow-y: hidden;
+} 
+
+
+.page-node-add-promotion .field-name-field-promotion-attachment .panel-default, .node-type-promotion .field-name-field-promotion-attachment .panel-default
+{
+	border:0;
+	padding-top: 6px;
+}
+.page-node-add-promotion .field-name-field-promotion-attachment .panel-heading, .node-type-promotion .field-name-field-promotion-attachment .panel-heading
+{
+    border:0;
+	color:black;
+	padding-bottom:0px;
+
+}
+
+.page-node-add-promotion .field-name-field-promotion-attachment .panel, .node-type-promotion .field-name-field-promotion-attachment .panel
+{
+	box-shadow: none !important;	
+}
+
+.page-node-add-promotion .field-name-field-promotion-attachment .panel-title, .node-type-promotion .field-name-field-promotion-attachment .panel-title
+{
+	text-transform:capitalize;
+}
+
+
+
+
+/* Promotion End*/
+
+/* private message styling */
+/* private message CSS */
+ul.privatemsg-message-actions.links.list-inline {
+    display: none;
+}
+div.privatemsg-message-information{
+	border-bottom: none !important;
+}
+div.privatemsg-message-body{
+    border-radius: 0.5em;
+    padding: 1.0em !important;
+    margin-left: 0px !important;
+	width:80%;
+}
+.privatemsg-message {
+    max-width: none !important;
+}
+#privatemsg-new .form-item-subject {
+	margin-bottom:0px;
+}
+.privatemsg-list .select-all .form-checkbox{
+	margin-left:-0.27em;
+}
+#top-header #page-navigation .block-privatemsg h2{
+  display: none;}
+  .page-messages .form-item-tag-add {
+  display:none;
+}
+.page-messages .form-item-tag-add button .edit-tag-add-submit{
+  display:none;
+}
+.page-messages #privatemsg-list-form .form-control {
+  display:inline;
+  width:30%;
+   position: absolute;
+    left: 138px;
+    top: 120px;
+}
+
+form#privatemsg-list div.container-inline .form-item-tag-remove {
+   
+    display: none;
+}
+.form-control#edit-subject, #edit-field-pvt-msg-tag-und{
+width: 100%}
+.msg-count{
+    display: inline;
+    /* font-size: 15px; */
+    color: red;
+    /* margin-bottom: 10px; */
+    vertical-align: super;
+}
+#edit-tag-add-submit{
+display: none; }
+
+form#privatemsg-new .form-select option[value=RFP] {display: none;}
+form#privatemsg-new .form-select option[value=Promotion] {display: none;}
+
+.form-item-field-pvt-msg-to-company-und-0-value,
+/*.form-item-field-geographic-responsibilit-und,*/
+.form-item-field-geo-und-0-target-id {
+width:28%;
+}
+.page-messages .form-item-body-value {
+	margin-top: 20px;
+}
+.form-item.form-item-field-pvt-msg-to-company-und-0-value.form-type-textfield.form-autocomplete.form-group,
+/*.form-item.form-item-field-geographic-responsibilit-und.form-type-textfield.form-autocomplete.form-group,*/
+.form-item.form-item-field-geo-und-0-target-id.form-type-textfield.form-autocomplete.form-group{
+	float: left;
+	margin-right: 10px;
+}
+.form-item-user-country {
+	float: left;
+	width: 28%;
+	margin-right: 10px;
+}
+.form-item-user-email{
+width:55%;
+/*float:right;*/
+}
+.page-messages .form-item-subject .control-label{padding-top: 0px}
+fieldset#edit-filter div.form-item label {
+    float: left;
+    margin-right: 10px;
+    width: 150px;
+    /* text-align: right; */
+    padding-top: 5px;
+}
+
+form#privatemsg-list #edit-search.form-control.form-text,form#privatemsg-list #edit-tags.form-control.form-select{width :86%}
+
+.page-messages ul.action-links li:first-child { visibility: hidden; }
+.page-messages ul.action-links {
+	margin-left:-40px;
+}
+.privatemsg-filter-tags-modify{
+ display: none;
+}
+
+.privatemsg-message-column {
+    float: right;
+    overflow: visible;
+    width: 100%;
+    margin-bottom: 10px;
+}
+#privatemsg-new #edit-body-format {
+	display: none;
+}
+.page-messages #email-wrapper div.privatemsg_checkbox:nth-of-type(1) {
+	height: 110px;
+    width: 650px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	overflow-y: scroll;
+}
+.page-messages #privatemsg-new #edit-recipient {
+	height: 110px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+	overflow-y: scroll;
+}
+.page-messages #privatemsg-new #edit-recipient .form-item .control-label {
+	font-size: 13px;
+}
+.page-messages .privatemsg_checkbox .form-item .control-label {
+	font-size: 13px;
+}
+input.privatemsg-list.form-checkbox {
+      margin-left: -40px;
+
+}
+th.privatemsg-header-participants {
+
+    width: 351px;
+}
+.page-messages-view .field-name-field-geographic-responsibilit,
+.page-messages-view .field-name-field-geo {
+	display: none;
+}
+.page-messages #edit-get-users {
+	/*float:right;*/
+	margin-top:25px;
+}
+.page-messages #edit-field-geo {
+	display:none;
+}
+.page-messages #edit-field-pvt-msg-attach-file-und {
+	padding-bottom: 20px;
+}
+.page-messages #privatemsg-new-icon {
+	background-color: #0072c5;
+    padding: 9px;
+	border-radius: 3px;
+}
+.page-messages ul.action-links {
+	margin-top:15px;
+}
+.page-messages ul.action-links li {
+	list-style: none;
+}
+.page-messages #edit-filter .panel-heading {
+	width: 47px;
+	left: 66px;
+    position: absolute;
+    top: -42px;
+	border-radius: 3px;
+}
+.page-messages #edit-filter .panel-heading .panel-title {
+	font-size: 14px;
+}
+.page-messages #edit-filter .panel-body {
+	margin-bottom:0px;
+}
+.page-messages-sent #privatemsg-list-form .form-control,
+.page-messages-list #privatemsg-list-form .form-control {
+	top: 162px;
+}
+.page-messages-archive #privatemsg-list-form .form-control {
+	top: 162px;
+}
+.page-messages .page-header {
+	margin-top: 0px;
+	font-size: 2.5em;
+}
+.page-messages .privatemsg-message-body .field-name-field-pvt-msg-tag {
+	display: none;
+}
+#privatemsg-new label[for=edit-recipient] {
+	display: none;
+}
+#privatemsg-new .privatemsg-reply {
+	font-size: 20px;
+    font-weight: bold;
+}
+table.privatemsg-list tbody tr td {
+	line-height: 1;
+    vertical-align: middle;
+	padding: 3px;
+}
+table.privatemsg-list thead tr th a {
+	display: flex;
+}
+table.privatemsg-list thead tr th a img {
+    margin-left: 5px;
+    margin-top: -2px;
+}
+table.privatemsg-list tbody tr td.privatemsg-list-subject,
+table.privatemsg-list tbody tr td.privatemsg-list-participants {
+	width:30%;
+}
+.privatemsg-group-icon img {
+	width: 23px;
+    height: 23px;
+	float:right;
+}
+.page-messages-new #edit-field-geographic-responsibilit {
+	display: none;
+}
+
+#edit-priority-tag{
+	font-size: 13px;
+    float: right;
+	/* margin-top:17px; */
+	margin-top:-9px;
+}
+
+.edit-priority-tag{
+	margin-top:-3em ;
+}
+
+#privatemsg-new .form-item-subject {
+	margin-bottom:0px;
+}
+
+.field-name-field--pvt-msg-attach-file .panel-heading{
+	background-color: #dddddd !important;
+	padding-left: 0.5em !important;
+	color:black;
+}
+
+ul.privatemsg-message-actions.links.list-inline {
+    display: none;
+}
+div.privatemsg-message-information{
+	border-bottom: none !important;
+}
+div.privatemsg-message-body{
+    border-radius: 0.5em;
+    padding: 1.0em !important;
+    margin-left: 0px !important;
+	width:80%;
+}
+
+.self_msg {
+    background-color: #dddddd;
+    border: 0.1em solid #dddddd;
+    float: right;
+}
+
+.other_msg{
+	background-color: #99ddff !important;
+    border: 0.1em solid #99ddff !important;
+    float: left;
+}
+.self_clone{
+	float:right;
+}
+.self_author{
+	float:right;
+	text-align:right;
+}
+.privatemsg-message {
+    max-width: none !important;
+}
+
+.privatemsg-list .select-all .form-checkbox{
+	margin-left:-0.27em;
+}
+
+.field-name-field--pvt-msg-attach-file .tabledrag-handle .handle{
+	height:25px!important;
+	width:25px!important;
+}
+
+.field-name-field--pvt-msg-attach-file [data-title="File requirements"]{
+	display:none;
+}
+
+[for=edit-subject] [title="This field is required."] {
+	display:none;
+}
+[for=edit-subject]::after{
+	content:"*";
+	color: red;
+}
+.page-messages .container-inline .btn-danger {
+	display: none;
+}
+#privatemsg-list a.panel-title.fieldset-legend {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+    color: inherit;
+    /* text-transform: uppercase; */
+    /* font-weight: bold; */
+    color: #fff;
+    background-color: #0072c5;
+    border-color: #ebebeb;
+    padding: 7px 12px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+#edit-tag-add-submit {
+	display: none;
+}
+.page-messages .privatemsg-filter-actions #edit-save {
+	display: none;
+}
+.field-name-field--pvt-msg-attach-file .tabledrag-toggle-weight{
+	display: none;
+}
+
+/* Hide The Intel - Only and pre-release checkboxes
+*
+* Replace with View Options Field
+*
+*/
+#solution-node-form .form-item-field-pre-release-und, .form-item-field-intel-only-und{
+		display:none;
+}
+
+#formula-node-form .form-item-field-pre-release-und{
+		display:none;
+}
+#home-banner .views-field-field-image ul li,
+.view-browse-by-type-iot .view-content .views-field-field-image ul li {
+	    list-style: none;
+}
+#home-banner .views-field-field-image ul,
+.view-browse-by-type-iot .view-content .views-field-field-image ul {
+	    padding-left: 0px !important;
+}
+
+#solution-node-form .form-item-field-website-und-0-url:after {
+    content: 'This field is mandatory if either "Intel - Only Content" (Or) "Public Content" is selected in "View Options" field in the previous tab.';
+}
+
+form[action="/messages/archive"] #edit-filter{
+	margin-top: 3em;
+}
+
+#edit-field-pre-release-value-wrapper{
+	display:none;
+}
+
+.field-name-field-workflow-temporary{
+	display:none;
+}
+
+/**** Home page Taxonomy & Tab Changes STARTS here ****/
+.ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+    width: 165px !important;
+}
+
+#intel-home .pane-browse-by-type h2, #intel-home .pane-market-segments h2, #intel-home .pane-isdm-partners-by-market-segment h2, #intel-home .pane-isdm-partners-by-loc h2, .pane-block-13 h2, .pane-block-14 h2, .pane-block-15 h2, .pane-block-17 h2, .pane-block-18 h2, .pane-block-19 h2,  .pane-block-20 h2, .pane-block-21 h2, .pane-block-22 h2, .pane-block-23 h2, .pane-block-24 h2  {
+    font-family: 'intel_clearlight';
+    padding-bottom: 17px;
+    color: #fff;
+    font-size: 20px;
+}
+/**** Home page Taxonomy & Tab Changes ENDS here ****/
+
+/**** Inner Pages & Tab/Menus Changes STARTS here */
+.region-header-one {
+    float: left;
+    width: 47%;
+    margin-right: 20px;
+}
+.region-header-two {
+    float: right;
+    width: 47%;
+}
+
+.region-eiot-header-msegments h2.block-title, .region-eiot-header-categories h2.block-title, .region-client-header-msegments h2.block-title, .region-client-header-categories h2.block-title, .region-server-header-msegments h2.block-title, .region-server-header-categories h2.block-title, .region-header-three h2.block-title, .region-header-four h2.block-title  {
+    font-size: 16px !important;
+    margin-top: 0;
+}
+/**** Inner Pages & Tab/Menus Changes ENDS here */
+
+/* MRS NEW PAGE CSS */
+.view-intel-qualified-iot-solutions .views-exposed-form .bef-checkboxes .form-type-bef-checkbox {
+	width: 23%;
+    float: left;
+    /*border: 1px solid #ccc;*/
+    margin: 5px;
+    height: 30px;
+    background: #F8F8F8;
+	padding: 5px;
+	border-radius: 2px;
+}
+.view-intel-qualified-iot-solutions .views-exposed-form .bef-checkboxes .form-control{
+	height: 15px;
+    float: right;
+    width: 8%;
+	box-shadow: none;
+}
+.page-intel-iot-market-ready-solution .page-header {
+	display: none;
+}
+.view-intel-qualified-iot-solutions .view-filters {
+	background: #f3f3f3;
+}
+.view-intel-qualified-iot-solutions .views-exposed-form .panel-heading {
+	color: #333;
+}
+.view-intel-qualified-iot-solutions .views-exposed-form .form-checkboxes {
+	border: none;
+    box-shadow: none;
+	background: #eaeaea;
+}
+.view-intel-qualified-iot-solutions .views-exposed-form .panel-heading {
+	border: none;
+}
+.view-intel-qualified-iot-solutions .views-exposed-form .panel-body {
+	background: #eaeaea;
+}
+.view-intel-qualified-iot-solutions .arrow_up {
+	width: 0px;
+    height: 0px;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #eaeaea;
+    float: right;
+    margin-right: 77px;
+    top: -13px;
+    position: relative;
+	display: none;
+}
+.view-intel-qualified-iot-solutions .views-exposed-form .bef-checkboxes .form-type-bef-checkbox label {
+	font-size: 12px;
+    margin-right: 0px;
+	margin-left: 5px;
+}
+.view-intel-qualified-iot-solutions .views-exposed-form .views-submit-button,
+.view-intel-qualified-iot-solutions .views-exposed-form .views-reset-button {
+	float: right;
+	right: 75px;
+    position: relative;
+    top: -65px;
+	display: none;
+}
+.view-intel-qualified-iot-solutions .views-exposed-form .views-submit-button button,
+.view-intel-qualified-iot-solutions .views-exposed-form .views-reset-button button {
+	margin-top:0em;
+}
+.view-intel-qualified-iot-solutions .view-content .mrs-view-row {
+	width: 23%;
+    min-width: 207px;
+    border: solid 1px #d6d5d5;
+    float: left;
+	height: 305px;
+	margin: 10px;
+	padding: 10px;
+	background: #ffffff;
+}
+.view-intel-qualified-iot-solutions .view-content .mrs-view-row .views-field-title {
+	font-size: 16px;
+	text-align: center;
+	margin-top: 5px;
+	height: 30px;
+	line-height: 17px;
+	font-weight: bold;
+}
+.view-intel-qualified-iot-solutions .view-content .mrs-view-row .views-field-field-company {	
+    color: #003c71;
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+	text-align: center;
+	margin-top: 5px;
+	height: 30px;
+	font-weight: bold;
+}
+.view-intel-qualified-iot-solutions .view-content .mrs-view-row .views-field-field-market-segments {
+	margin-top: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+	font-size: 11px;
+	height: 83px;
+	background-color: #eaeaea;
+    padding-left: 5px;
+}
+.view-intel-qualified-iot-solutions .view-content .mrs-view-row .views-field-field-market-segments .views-label-field-market-segments {
+	color: #000;
+	font-weight: bold;
+}
+.view-intel-qualified-iot-solutions .view-content .mrs-view-row .views-field-field-market-segments .field-content {
+	color: #1eafec;
+	font-weight: bold;
+}
+.view-intel-qualified-iot-solutions .view-content .mrs-view-row .views-field-field-image {
+	height: 130px;
+}
+.view-intel-qualified-iot-solutions .view-content .mrs-view-row .views-field-field-image ul li,
+#home-banner .views-field-field-image ul li,
+.view-intel-qualified-iot-solutions .views-field-field-image ul li {
+	list-style: none;
+}
+.view-intel-qualified-iot-solutions .views-field-field-image ul,
+#home-banner .views-field-field-image ul,
+.view-intel-qualified-iot-solutions .view-content .mrs-view-row .views-field-field-image ul {
+	padding-left: 0px !important;
+}
+body.page-intel-iot-market-ready-solution {
+	background: #f3f3f3;
+}
+body.page-intel-iot-market-ready-solution footer.global {
+	border-top: 1px solid #cac7c7;
+}
+.view-intel-qualified-iot-solutions .views-exposed-form .form-item-field-market-segments .panel-body {
+	display: none;
+	padding-bottom: 50px;
+}
+.views-widget-filter-field_market_segments {
+	width: 100%;
+}
+.view-intel-qualified-iot-solutions .views-exposed-form .form-item-field-market-segments .panel-heading .panel-title {
+    float: right;
+    margin-right: 20px;
+    margin-top: 15px;
+    text-transform: none;
+}
+.view-intel-qualified-iot-solutions .views-exposed-form .views-reset-button button {
+	background: grey;
+    color: #fff;
+    border: #f3f3f3;
+    width: 150px;
+}
+.view-intel-qualified-iot-solutions .views-exposed-form .views-submit-button button {
+	width: 150px;
+    background: #0071c5;
+	border: #f3f3f3;
+}
+.view-intel-qualified-iot-solutions .views-exposed-form .form-item-field-market-segments .panel-heading .panel-title span {
+	background: url(/sites/all/themes/custom/intel_isdm_bootstrap/images/left_tags.PNG) #f3f3f3 5px 5px no-repeat;
+    padding: 10px 12px 8px 35px;
+    border-radius: 5px;
+    border: 1px solid #cecdcd;
+	cursor: pointer;
+}
+.view-intel-qualified-iot-solutions .views-exposed-form .bef-checkboxes .form-type-bef-checkbox.selected,
+.view-intel-qualified-iot-solutions .views-exposed-form .bef-checkboxes .form-type-bef-checkbox.highlight {
+	background: #0071c5;
+	color: #fff;
+}
+.view-intel-qualified-iot-solutions > .view-footer,
+.view-intel-qualified-iot-solutions #result_summary_iot {
+    font-style: italic;
+    font-weight: bold;
+    float: right;
+	margin-right: 46px;
+    font-size: 15px;
+	position: relative;
+}
+.view-intel-qualified-iot-solutions > .view-content {
+	margin-top: 15px;
+	float: left;
+	padding-left: 75px;
+    padding-bottom: 110px;
+    background-color: #ffffff;
+}
+.view-intel-qualified-iot-solutions .text-center ul.pagination > li > a,
+.view-intel-qualified-iot-solutions .text-center ul.pagination > li > span{
+	margin: 5px;
+	color: #0071c5;
+	background-color: #f7f7f7;
+	border-radius: 3px;
+	font-size: 16px;
+}
+.view-intel-qualified-iot-solutions .text-center ul.pagination > li.active > span {
+	color: #ffffff;
+	background-color: #0071c5;
+	border-radius: 3px;
+	font-size: 16px;
+}
+.view-intel-qualified-iot-solutions .views-exposed-form .close_mark {
+	position: relative;
+    /*top: -75px;*/
+    right: -30px;
+    font-weight: bold;
+    font-size: 20px;
+	cursor: pointer;
+	width: 30px;
+	float: right;
+}
+.view-intel-qualified-iot-solutions .text-center ul.pagination {
+	float: right;
+	position: relative;
+    top: -100px;
+	right: 15px;
+}
+.view-intel-qualified-iot-solutions .views-exposed-form .bef-checkboxes .form-type-bef-checkbox {
+    margin: 3.5px !important;
+    height: 21px;
+    font-size: 12px !important;
+    width: 275px;
+    padding-top: 2px;
+    background-color: #f7f7f7;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+	border-radius: 3px;
+}
+
+
+.view-intel-qualified-iot-solutions .views-exposed-form .bef-checkboxes .form-type-bef-checkbox.selected, .view-intel-qualified-iot-solutions .views-exposed-form .bef-checkboxes .form-type-bef-checkbox.highlight {
+    margin: 3.5px !important;
+    height: 21px;
+    font-size: 12px !important;
+    width: 275px;
+    padding-top: 2px;
+    background-color: #0071c5;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+	border-radius: 3px;
+}
+.view-intel-qualified-iot-solutions .views-exposed-form .panel-body{
+	    background: #e9e9e9 !important;
+}
+
+.view-intel-qualified-iot-solutions .view-content .mrs-view-row{
+	width:21% !important;
+	margin-right:16.5px;
+	padding-top: 20px;
+	margin-bottom: 18px;
+}
+
+.view-intel-qualified-iot-solutions .view-content .mrs-view-row .views-field-field-market-segments {
+	padding: 10px !important;
+	background-color: #f1f1f1 !important;
+	height: 89px !important;
+	margin-top: 4px !important;
+}	
+
+.view-intel-qualified-iot-solutions .views-exposed-form .bef-checkboxes .form-control {
+	display:none;
+}
+
+.views-widget-filter-field_market_segments :checked + label.option:after {
+    content: url(http://test-solutionsdirectory.intel.com/sites/all/themes/custom/intel_isdm_bootstrap/images/icon-tick.png);
+    float: right;
+	max-width:15px;
+	max-height:23px;
+}
+
+.view-intel-qualified-iot-solutions .views-exposed-form .bef-checkboxes .form-type-bef-checkbox.selected, .view-intel-qualified-iot-solutions .views-exposed-form .bef-checkboxes .form-type-bef-checkbox.highlight{
+	   /*  background: #3323CF !important; */
+}
+
+.view-intel-qualified-iot-solutions .views-exposed-form .close_mark{
+	left:13px;
+}
+
+/*common button color*/
+.btn-danger {
+    background-color: #1eafec;
+    border-color: #13a2de;
+} 
+
+.btn-danger:hover {
+    background-color: #1191c6;
+    border-color: #0e79a5;
+} 
+
+.field-name-field-pre-release-badge{
+	/* margin-top: 6em;
+	max-width: 7em; */
+	position:relative !important;
+}
+	
+.field-name-field-pre-release-badge img.img-responsive{
+	max-width: 7em;
+    margin-left: 7em !important;
+	
+}
+body.page-solutions-directory .view-id-solutions_directory .pre-release{
+		left: 6em !important;
+}
+.view-solutions-directory img.pre-release{
+	max-width:7em;
+}
+
+.field-name-field-pre-release{
+	display:none;
+}
+
+.pane-node-field-access, .pane-node-field-access-formula  img{
+	/* margin-top: -3em; */
+	margin-left: 5em;
+	max-width:	10em;
+}
+
+.view-intel-qualified-iot-solutions .views-field-title a{
+	font-size:13px !important;
+}
+
+.odm_messages_label {
+    font-weight: bold;
+}
+
+.odm_message_wrapper {
+    background-color: #99ddff;
+    margin-bottom: 0.5em;
+    border-radius: 0.5em;
+    padding: 0.5em;
+}

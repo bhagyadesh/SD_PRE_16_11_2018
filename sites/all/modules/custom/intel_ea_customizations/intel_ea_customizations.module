@@ -1,0 +1,2085 @@
+<?php
+/**
+ * @file
+ * Custom Intel EA code.
+ */
+  /**
+ * Setting the cooking on each page load
+ */
+  
+function  intel_ea_customizations_boot(){
+	
+	if (isset($_GET['src'])){
+		setcookie('source_data', $_GET['src'], 0, '/');
+		}		
+}
+/**
+ * Implements hook_menu().
+ */
+function intel_ea_customizations_menu(){
+  $items = array();
+  // link to edit company details.
+  $items['company/edit'] = array(
+    'title' => 'Manage Company Description / Website URL',
+    'description' => 'Edit link to edit user company.',
+    'page callback' => 'user_company_redirect',
+    'access callback' => 'edit_user_company',
+	'menu_name' => 'menu-administration',
+    'type'             => MENU_NORMAL_ITEM,
+  );
+  // privatemsg company autocomplete
+  $items['messages/companies'] = array(
+    'title' => 'Autocomplete companies',
+    'page callback' => 'get_all_companies',
+    'access callback' => 'privatemsg_user_access',
+    'access arguments' => array('write privatemsg'),
+    'type' => MENU_CALLBACK,
+  );
+  // privatemsg menu to update all users with pm disabled by default.
+  $items['messages/disable'] = array(
+    'title' => 'Autocomplete companies',
+    'page callback' => 'disable_pm_users',
+    'access callback' => 'privatemsg_user_access',
+    'access arguments' => array('write privatemsg'),
+    'type' => MENU_CALLBACK,
+  );
+  // to enable private message fro ODM users with Buyer Builder Supply Chain role
+  $items['messages_enable'] = array(
+    'title' => 'Enable Users',
+    'page callback' => 'enable_pm_users',
+    'access callback' => 'privatemsg_user_access',
+    'access arguments' => array('write privatemsg'),
+    'type' => MENU_CALLBACK,
+  );
+  // Config page to set SLA reminder for private message
+  $items['admin/config/messaging/custom_configs'] = array(
+    'title' => 'Messaging Custom Configurations',
+    'description' => 'Configure private messaging custom settings..',
+    'page callback' => 'drupal_get_form',
+    'page arguments'   => array('privatemsg_custom_settings'),
+    'access arguments' => array('administer privatemsg settings'),
+    'type'             => MENU_NORMAL_ITEM,
+  );
+  // Config page to enable/disable private message.
+  $items['private_message/custom_configs'] = array(
+    'title' => 'Messaging Custom Configurations',
+    'description' => 'Configure private messaging custom settings.',
+    'page callback' => 'drupal_get_form',
+	'page arguments'   => array('privatemsg_custom_user_settings'),
+    'access arguments' => array('write privatemsg'),
+    'type'             => MENU_NORMAL_ITEM,
+  );
+  // privatemsg clone message
+  $items['messages/clone/%'] = array(
+    'title' => 'Clone Message',
+    'description' => 'clone message.',
+    'page callback' => 'message_clone',
+    'page arguments' => array(2),
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+  );
+  // privatemsg archive 
+  $items['messages/archive'] = array(
+    'title'            => 'Archive',
+    'page callback'    => 'privatemsg_list_page',
+	'page arguments'   => array('archive'),
+    'file'             => 'privatemsg.pages.inc',
+    'file path'        => drupal_get_path('module', 'privatemsg'),
+    'access callback'  => 'privatemsg_user_access',
+    'type'             => MENU_LOCAL_TASK,
+    'weight'           => 10,
+    'menu_name'        => 'user-menu',
+  );
+  // update faefse
+  $items['updatefaefse'] = array(
+    'title' => 'Update FAE FSE',
+    'description' => 'clone message.',
+    'page callback' => 'update_faefse',
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+  );
+  // update translations
+  $items['updatetranslations'] = array(
+    'title' => 'Update translate',
+    'description' => 'clone message.',
+    'page callback' => 'update_translation_display',
+    'access callback' => TRUE,
+    'type' => MENU_NORMAL_ITEM,
+  );
+  
+   $items['Indapp/networksecurity'] = array(
+    'page callback' => 'Indus_app_network_security_taxonomy_mapping',
+	'type' => MENU_CALLBACK,
+    'access callback' => TRUE,
+    //'access arguments' => array('access mymodule reports'),
+    //'type' => MENU_CALLBACK,
+  );
+  
+  return $items;
+}  
+
+/**
+ * Implements hook_permission().
+ */
+
+function intel_ea_customizations_permission() {
+  return array(
+    'external facing user roles' => array(
+      'title' => t('Check what all roles are external facing'),
+    ),
+	'internal user roles' => array(
+      'title' => t('Check what all roles are internal'),
+    )
+  );
+}
+
+/**
+ * Implements hook_menu_local_tasks_alter() to unset unwanted tabs
+ */
+function intel_ea_customizations_menu_local_tasks_alter(&$data) {
+  if(user_access('external facing user roles') && !user_access('internal user roles')) {
+    foreach ($data['tabs'][0]['output'] as $key => $value) {
+      if ($value['#link']['path'] == "node/%/revisions") {
+        unset($data['tabs'][0]['output'][$key]);
+      }
+	  
+	    $node = menu_get_object();
+
+		$nid_solution=$node->field_company[und][0][target_id];
+
+		global $user;
+
+		$nid_user= db_select('field_data_field_company','c')
+		->fields('c',array('field_company_target_id'))
+		->condition('c.entity_id',$user->uid)
+		->condition('c.bundle','user')
+		->execute()
+		->fetchField();
+	  
+	  if ($value['#link']['path'] == "node/%/translate") {
+		  if($nid_user!=$nid_solution){
+        unset($data['tabs'][0]['output'][$key]);
+		  }
+		}
+    }
+  }
+  $add_to ='messages/archive';
+  if(isset($root_path)){
+  if (strpos($root_path, $add_to) !== FALSE) {
+    $item = menu_get_item('messages/new');
+    if ($item['access']) {
+      $data['actions']['output'][] = array(
+        '#theme' => 'menu_local_action',
+        '#link' => $item,
+      );
+    }
+  }
+  }
+}
+
+/**
+ * This function takes company id as arguments and returns count of products associated.
+ */
+function get_partner_products_count($company_id) {
+$query = new EntityFieldQuery();
+$query->entityCondition('entity_type', 'node')
+  ->entityCondition('bundle', 'solution')
+  ->propertyCondition('language', 'en')
+   ->fieldCondition('field_company', 'target_id', $company_id, '=');
+// get logged in user company.
+ global $user;
+ $user_company = '';
+  if(user_is_logged_in()) {
+   $user_det = user_load($user->uid);
+   $user_company = $user_det->field_company['und']['0']['target_id'];
+  }    
+// super admin, intel admin
+   if(user_has_role('21') || user_has_role('9')) {    
+     $count = $query->count()->execute();
+   }
+   // Intel employee and partner
+   elseif(user_has_role('10')|| $user_company == $company_id) {
+     // Show only published release/pre-release both
+	 $query->propertyCondition('status', NODE_PUBLISHED);
+	 $count = $query->count()->execute();
+   }
+   // Rest all users including anonymous
+   else {
+     $query->fieldCondition('field_pre_release', 'value', '0', '=');
+	 $query->propertyCondition('status', NODE_PUBLISHED);
+	 $count = $query->count()->execute();
+   }
+return $count;
+}
+
+function intel_ea_customizations_block_view_facetapi_ZgMiubZJd0pG3BIb0vHcpHpCTcxLKDiE_alter(&$data, $block) {
+	global $language_base_url;
+
+  if ($block->module == 'facetapi' && $block->bid == '1105') {
+    //get custom text
+    $custom_text = '<a href="'.$language_base_url.'/member-roster-print" target = "_blank">Print Member Roster</a>';
+
+    if (!empty($custom_text)) {
+      //we can put the text at the top
+      $data['content']['field_membership_tier']['#items']['3']['data'] = $custom_text;
+
+    }
+  }
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function intel_ea_customizations_views_api() {
+  return array('api' => 3.0);
+}
+
+function intel_ea_customizations_form_alter(&$form, &$form_state, $form_id) {
+switch ($form_id) {
+    case 'solution_node_form':
+	//print_r (debug_backtrace()); exit();
+	unset($form['field_end_user_description']);
+	 unset($form['field_stds_wlan']);
+	 unset($form['field_stds_wpan']);
+	 unset($form['field_stds_wwan']);
+	 $form['#after_build'][] = 'intel_ea_customizations_form_node_form_alter';
+    break;
+	case 'formula_node_form':
+     unset($form['field_end_user_description']);
+	 $form['#validate'][] = "formula_submit_alter";
+	 $form['#after_build'][] = 'intel_ea_customizations_form_node_form_alter';
+    break;
+	case 'user_register_form':
+	$form['field_address']['und'][0]['country']['#title'] = 'Country/Region';
+	break;
+	case 'company_node_form':
+	$form['field_address']['und'][0]['country']['#title'] = 'Country/Region';
+	$form['#after_build'][] = 'intel_ea_customizations_form_node_form_alter';
+	  global $user;
+	  
+
+	  //$c = !in_array("Intel Admin", $user->roles);
+	  //$c = (!in_array("Intel Admin", $user->roles) || !in_array("Administrator", $user->roles) || !in_array("Alliance Staff Admin", $user->roles) || !in_array("Intel Field Sales Engineer", $user->roles) || !in_array("Intel Market Development Manager", $user->roles) || !in_array("Alliance Marketing Expert", $user->roles) || !in_array("Primary Admin Contact", $user->roles));
+	  //echo "IA:".$c; exit();
+	  //TO DISABLE THE P2PMM AND PARTNER ROLE FIELDS IF USER IS AN SE OR INTEL EMPLOYEE
+	if((in_array("Solutions Directory Editor", $user->roles) || in_array("Intel Employee", $user->roles)) && (!in_array("Intel Admin", $user->roles) && !in_array("Administrator", $user->roles) && !in_array("Alliance Staff Admin", $user->roles) && !in_array("Intel Field Sales Engineer", $user->roles) && !in_array("Intel Market Development Manager", $user->roles) && !in_array("Alliance Marketing Expert", $user->roles) && !in_array("Primary Admin Contact", $user->roles))){
+		$form['field_p2pmmtype']['#disabled'] = TRUE;
+		$form['field_partner_role']['#disabled'] = TRUE;
+	}
+      // Form alter to hide fields on company node form for solutions directory editor role.
+      $count_roles = count($user->roles);
+      if(user_is_logged_in() && user_access('external facing user roles') && !user_access('internal user roles')) {
+        $form['field_erpm_company_number']['#access'] =  0;
+	    $form['title']['#disabled'] = TRUE;
+		$form['field_end_user_description']['#access'] = 0;
+	    $form['field_company_type']['#access'] = 0;
+	    $form['field_acceptable_domains']['#access'] = 0;
+	    //$form['field_logo']['#access'] = 0;
+	    $form['field_cnda']['#access'] = 0;
+	    $form['field_geographic_region']['#access'] = 0;
+	    $form['field_geographic_coverage']['#access'] = 0;
+	    $form['field_address']['#access'] = 0;
+	    $form['field_sponsoring_business_units']['#access'] = 0;
+	    $form['field_programs']['#access'] = 0;
+	    $form['field_account_managers']['#access'] = 0;
+	    $form['field_marketing_expert']['#access'] = 0;
+	    $form['field_applications_engineers']['#access'] = 0;
+	    $form['field_sales_engineers']['#access'] = 0;
+	    $form['field_renewal_signee']['#access'] = 0;
+	    $form['field_agreed']['#access'] = 0;
+	    $form['field_acceptance_date']['#access'] = 0;
+	    $form['field_agreement_identifier']['#access'] = 0;
+	    $form['field_membership_type']['#access'] = 0;
+	    $form['field_agreement_date']['#access'] = 0;
+	    $form['field_future_membership']['#access'] = 0;
+	    $form['field_future_membership_type']['#access'] = 0;
+	    $form['field_future_agreement_date']['#access'] = 0;
+	    $form['field_solutions_directiory_id']['#access'] = 0;
+	    $form['field_community_tag']['#access'] = 0;
+	    $form['field_embedded_processor_support']['#access'] = 0;
+	    $form['field_membership_tier']['#access'] = 0;
+	    $form['field_new_itp_company']['#access'] = 0;
+		$form['#submit'][] = 'submit_company_new_revison';
+		return $form;
+     }
+	break;
+	case "views_exposed_form":
+		if(strpos(request_uri(), "/intel_iot_market_ready_solution") !== FALSE){
+			foreach($form['field_market_segments']['#options'] as $tid => $title){
+				$parent = db_select('taxonomy_term_hierarchy', 'tth')
+								->fields('tth', array('parent'))
+								->condition('tid', $tid, '=')
+								->execute()->fetchField();
+								
+				if($parent != 0){
+					unset($form['field_market_segments']['#options'][$tid]);
+				}
+			}
+			
+			foreach($form['field_market_segments']['#options'] as $tid => $title){
+				if(is_not_marked_with_solutions($tid) || $tid == '2329' || $tid == '255' || is_not_marked_with_iot_solutions($tid)){
+					 unset($form['field_market_segments']['#options'][$tid]);
+				}
+			}
+		}
+		break;
+  }
+  if($form_id == 'privatemsg_new') {	  
+    // hide token browser.
+    $form['token']['#access'] = 0;
+	$form['field_pvt_msg_tag']['#access'] = 0;
+	// An element which will have recipient user list.
+	 $form['priority_tag'] = array(
+	  '#title' => t(''),
+	  '#type' => 'checkboxes',
+	  '#description' => t(''),
+	  '#options' => array(true => "Mark as important"),
+	  '#weight' => 4,
+	); 
+	$form['recipient'] = array(
+        '#type' => 'textfield',
+        '#title' => 'To',
+        '#default_value' => '',
+        '#access' => 0,
+		//'#element_validate'=>array("check_recipients"),
+    );
+	$form['subject']['#weight'] = 100;
+	$form['subject']['#required'] = true;
+	// Wrapper for multiselect user list.  
+	$wrapper_id = "email-wrapper";
+	
+	if($_GET['subject']){
+		$form['subject']['#value'] = $_GET['subject'];
+	}
+	// Show only on new message generation form.
+	if(!isset($form['reply']) && $form['reply'] == '')  {
+	if(isset($_GET['promotion']) && $_GET['promotion'] == 1 && isset($_GET['node'])){
+		$node = node_load($_GET['node']);
+		try{
+		$form['body']['#default_value'] = db_select('field_data_body', 'b')
+			->fields('b', array('body_value'))
+			->condition('b.entity_id', $_GET['node'])
+			->execute()->fetchField();	
+		}catch(Exception $e){
+			$form['body']['#default_value'] = "";
+		}
+		try{
+		$company_id = db_select('field_data_field_company', 'c')
+			->fields('c', array('field_company_target_id'))
+			->condition('c.entity_id', $_GET['node'])
+			->execute()->fetchField();
+		$company_node = node_load($company_id);
+		$company = $company_node->title."(".$company_id.")";
+		$form['field_pvt_msg_to_company']['und'][0]['value']['#default_value'] = $company;
+		}catch(Exception $e){
+			$form['field_pvt_msg_to_company']['und'][0]['value']['#default_value'] = "";
+		}
+		try{
+			$period = ($node->field_promotion_period['und'][0]['value'] != "" && $node->field_promotion_period['und'][0]['value2'] != "") ? " - Promotion Period: ".date("d-M-Y", strtotime($node->field_promotion_period['und'][0]['value']))." to ".date("d-M-Y", strtotime($node->field_promotion_period['und'][0]['value2'])) : "";
+			$form['subject']['#default_value'] = $node->title.$period;
+		}
+		catch(Exception $e){
+			$form['subject']['#default_value'] = "";
+		}
+	}
+
+	
+	  //clone message update
+	  if(isset($_GET['mid']) && $_GET['mid'] != '') {
+		$message = privatemsg_message_load($_GET['mid']);
+	    $message_subject = $message->subject;
+	    $message_body = $message->body;
+		$form['subject']['#default_value'] = $message_subject;
+		$form['body']['#default_value'] = $message_body;
+	  }
+      //set default value if usre comes from company page.
+      $form['field_pvt_msg_to_company']['und'][0]['value']['#autocomplete_path'] = 'messages/companies';
+	  $form['field_pvt_msg_to_company']['#limit_validation_errors'] = array();
+	  //$form['field_pvt_msg_to_company']['und'][0]['value']['#ajax'] = array('callback' => 'show_company_users','wrapper' => $wrapper_id, 'progress' => array('type' => 'throbber', 'message' => t('Please wait while we load users')));
+	  $countries = country_get_list();
+	  array_unshift($countries, ' - ALL - ');
+	  $form['user_country'] = array(
+	    '#title' => 'Country/Region',
+		'#type' => 'select',			
+		'#options' => $countries,
+		'#default_value' => '0',
+		'#weight' => 2,
+	  );
+	  $form['get_users'] = array (
+		'#type' => 'button',
+		'#value' => 'Load Users',
+		'#executes_submit_callback' => false,
+		'#limit_validation_errors' => array(),	 
+		'#ajax' => array(
+		'callback' => 'show_company_users',
+		'wrapper' => $wrapper_id,
+		'progress' => array('type' => 'throbber', 'message' => t('Please wait while we load users'))),
+		'#weight' => 2,
+	  );
+	  //$form['subject']['#weight'] = 50;
+	  $current_path = current_path();
+	  if (strpos($current_path, 'ajax') !== false) {
+	  // If user comes from company page, autofill company in message form and disable it.
+	  if(isset($_GET['id']) && $_GET['id'] != '') {
+        $comp_val = $_GET['name'].'('.$_GET['id'].')';
+        $form['field_pvt_msg_to_company']['und'][0]['value']['#default_value'] = $comp_val;
+        $form['field_pvt_msg_to_company']['#disabled'] = TRUE;
+		$company_id = $_GET['id'];
+      }
+	  else {
+        $company = $form_state['input']['field_pvt_msg_to_company']['und'][0]['value'];
+        preg_match('/\((.*?)\)/', $company, $a);
+        $company_id = $a[1];
+		if (isset($form_state['input']['field_geo'])) {
+			$geo_resp = trim($form_state['input']['field_geo']['und'][0]['target_id'], '"');
+			preg_match_all('!\d+!', $geo_resp, $matches);
+			$user_geo_resp_id = $matches[0][0];
+			/*$terms = taxonomy_get_term_by_name($geo_resp);
+			if (!empty($terms)) {
+			  $user_geo_resp = array_shift($terms);
+			  $user_geo_resp_id = $user_geo_resp->tid;
+			}*/
+		}
+		$country = $form_state['input']['user_country'];
+	  }
+	  
+	  if (isset($company_id)) {
+		  $comp_query = db_query("SELECT DISTINCT u.uid FROM users u,field_data_field_company fc WHERE u.uid = fc.entity_id AND fc.entity_type = 'user' AND fc.field_company_target_id = $company_id");
+		  $fae_query = db_query("SELECT DISTINCT field_applications_engineers_target_id as uid from field_data_field_applications_engineers where entity_id=$company_id");
+		  $cfae_query = db_query("SELECT DISTINCT field_client_fae_target_id as uid from field_data_field_client_fae where entity_id=$company_id");
+		  $sfae_query = db_query("SELECT DISTINCT field_server_fae_target_id as uid from field_data_field_server_fae where entity_id=$company_id");
+		  $efae_query = db_query("SELECT DISTINCT field_eiot_fae_target_id as uid from field_data_field_eiot_fae where entity_id=$company_id");
+		  $fse_query = db_query("SELECT DISTINCT field_sales_engineers_target_id as uid from field_data_field_sales_engineers where entity_id=$company_id");
+		  $cfse_query = db_query("SELECT DISTINCT field_client_fse_target_id as uid from field_data_field_client_fse where entity_id=$company_id");
+		  $sfse_query = db_query("SELECT DISTINCT field_server_fse_target_id as uid from field_data_field_server_fse where entity_id=$company_id");
+		  $efse_query = db_query("SELECT DISTINCT field_eiot_fse_target_id as uid from field_data_field_eiot_fse where entity_id=$company_id");
+		  
+	  } else {
+		  $comp_query = db_query("SELECT DISTINCT u.uid FROM users u");
+	  }
+	  $comp_users = $comp_query->fetchAll();
+	  $fae_users = $fae_query->fetchAll();
+	  $cfae_users = $cfae_query->fetchAll();
+	  $sfae_users = $sfae_query->fetchAll();
+	  $efae_users = $efae_query->fetchAll();
+	  $fse_users = $fse_query->fetchAll();
+	  $cfse_users = $cfse_query->fetchAll();
+	  $sfse_users = $sfse_query->fetchAll();
+	  $efse_users = $efse_query->fetchAll();
+	  foreach ($comp_users as $k=>$v) {
+		  $c_user[$v->uid] = $v->uid;
+	  }
+	   foreach ($fae_users as $k=>$v) {
+		  $fae_user[$v->uid] = $v->uid;
+	  }
+	  foreach ($cfae_users as $k=>$v) {
+		  $cfae_user[$v->uid] = $v->uid;
+	  }
+	  foreach ($sfae_users as $k=>$v) {
+		  $sfae_user[$v->uid] = $v->uid;
+	  }
+	  foreach ($efae_users as $k=>$v) {
+		  $efae_user[$v->uid] = $v->uid;
+	  }
+	  foreach ($fse_users as $k=>$v) {
+		  $fse_user[$v->uid] = $v->uid;
+	  }
+	  foreach ($cfse_users as $k=>$v) {
+		  $cfse_user[$v->uid] = $v->uid;
+	  }
+	  foreach ($sfse_users as $k=>$v) {
+		  $sfse_user[$v->uid] = $v->uid;
+	  }
+	  foreach ($efse_users as $k=>$v) {
+		  $efse_user[$v->uid] = $v->uid;
+	  }
+	  if (isset($user_geo_resp_id)) {
+		  $geo_query = db_query("SELECT DISTINCT u.uid FROM users u,field_data_field_geographic_responsibilitie fgr WHERE u.uid = fgr.entity_id AND fgr.entity_type = 'user' AND fgr.field_geographic_responsibilitie_tid = $user_geo_resp_id");
+	  } else {
+		  $geo_query = db_query("SELECT DISTINCT u.uid FROM users u");
+	  }
+	  $geo_users = $geo_query->fetchAll();
+	  foreach ($geo_users as $k=>$v) {
+		  $g_user[$v->uid] = $v->uid;
+	  }
+	  if (isset($country) && $country != '0') {
+		  $cou_query = db_query("SELECT DISTINCT u.uid FROM users u, field_data_field_address fa WHERE u.uid=fa.entity_id AND fa.entity_type='user' AND fa.field_address_country='$country'");
+	  } else {
+		  $cou_query = db_query("SELECT DISTINCT u.uid FROM users u");
+	  }
+	  $country_users = $cou_query->fetchAll();
+	   foreach ($country_users as $k=>$v) {
+		  $co_user[$v->uid] = $v->uid;
+	  }
+	  
+
+	  $final_user = array_unique(array_intersect($c_user,$g_user,$co_user));
+	  $final_users = (array)$fae_user + (array)$cfae_user + (array)$sfae_user + (array)$efae_user + (array)$fse_user + (array)$cfse_user + (array)$sfse_user + (array)$efse_user + (array)$final_user ;
+	  //echo '<pre>';print_r($final_users);exit;
+	  // Add multiselect box to display user.
+      /*$query = new EntityFieldQuery();
+      $query->entityCondition('entity_type', 'user')
+       ->fieldCondition('field_company', 'target_id', $company_id, '=')
+	   ->fieldOrderBy('field_first_name', 'value', 'ASC');
+      $result = $query->execute();*/
+      $user_list = array(); 
+	  $fae_text ='';
+	  $fse_text ='';
+      foreach($final_users as $key=>$item) {
+        $uid = $item;
+        $user = user_load($uid);
+		$u = entity_metadata_wrapper('user', $user);
+		$company = $user->field_company['und'][0]['target_id'];
+		$query = db_select('node', 'n')
+         ->fields('n', array('title'))
+         ->condition('n.nid', $company, '=');
+        $title = $query->execute()->fetchField();
+		$fae_exists_query = db_select('field_data_field_applications_engineers', 'fae')
+         ->fields('fae', array('field_applications_engineers_target_id'))
+         ->condition('fae.field_applications_engineers_target_id', $uid, '=')
+		 ->condition('fae.entity_id', $company_id, '=');
+        $fae_exists = $fae_exists_query->execute()->fetchField();
+		
+		$cfae_exists_query = db_select('field_data_field_client_fae', 'cfae')
+         ->fields('cfae', array('field_client_fae_target_id'))
+         ->condition('cfae.field_client_fae_target_id', $uid, '=')
+		 ->condition('cfae.entity_id', $company_id, '=');
+        $cfae_exists = $cfae_exists_query->execute()->fetchField();
+		
+		$sfae_exists_query = db_select('field_data_field_server_fae', 'sfae')
+         ->fields('sfae', array('field_server_fae_target_id'))
+         ->condition('sfae.field_server_fae_target_id', $uid, '=')
+		 ->condition('sfae.entity_id', $company_id, '=');
+        $sfae_exists = $sfae_exists_query->execute()->fetchField();
+		
+		$efae_exists_query = db_select('field_data_field_eiot_fae', 'efae')
+         ->fields('efae', array('field_eiot_fae_target_id'))
+         ->condition('efae.field_eiot_fae_target_id', $uid, '=')
+		 ->condition('efae.entity_id', $company_id, '=');
+        $efae_exists = $efae_exists_query->execute()->fetchField();
+		
+		$fse_exists_query = db_select('field_data_field_sales_engineers', 'fse')
+         ->fields('fse', array('field_sales_engineers_target_id'))
+         ->condition('fse.field_sales_engineers_target_id', $uid, '=')
+		 ->condition('fse.entity_id', $company_id, '=');
+        $fse_exists = $fse_exists_query->execute()->fetchField();
+		
+		$cfse_exists_query = db_select('field_data_field_client_fse', 'cfse')
+         ->fields('cfse', array('field_client_fse_target_id'))
+         ->condition('cfse.field_client_fse_target_id', $uid, '=')
+		 ->condition('cfse.entity_id', $company_id, '=');
+        $cfse_exists = $cfse_exists_query->execute()->fetchField();
+		
+		$sfse_exists_query = db_select('field_data_field_server_fse', 'sfse')
+         ->fields('sfse', array('field_server_fse_target_id'))
+         ->condition('sfse.field_server_fse_target_id', $uid, '=')
+		 ->condition('sfse.entity_id', $company_id, '=');
+        $sfse_exists = $sfse_exists_query->execute()->fetchField();
+		
+		$efse_exists_query = db_select('field_data_field_eiot_fse', 'efse')
+         ->fields('efse', array('field_eiot_fse_target_id'))
+         ->condition('efse.field_eiot_fse_target_id', $uid, '=')
+		 ->condition('efse.entity_id', $company_id, '=');
+        $efse_exists = $efse_exists_query->execute()->fetchField();
+		
+		$pm_disable = privatemsg_is_disabled($user);
+        if(!$pm_disable) {
+          $jobtitle = $u->field_title->value();
+		  $user_details = ($u->field_first_name->value() && $u->field_last_name->value()) ?  $u->field_first_name->value().' '.$u->field_last_name->value(): $user->name;
+		  if (isset($jobtitle)) {
+			  $user_details .= '('.$jobtitle.')';
+		  }
+		  if (isset($title)) {
+			  $user_details .= ' - '.$title;
+		  }
+		  if ($fae_exists) {
+			  $user_details .= ' - FAE';
+		  }
+		  if ($cfae_exists) {
+			  $user_details .= ' - Client FAE';
+		  }
+		  if ($sfae_exists) {
+			  $user_details .= ' - Server FAE';
+		  }
+		  if ($efae_exists) {
+			  $user_details .= ' - EIOT FAE';
+		  }
+		  if ($fse_exists) {
+			  $user_details .= ' - FSE';
+		  }
+		  if ($cfse_exists) {
+			  $user_details .= ' - Client FSE';
+		  }
+		  if ($sfse_exists) {
+			  $user_details .= ' - Server FSE';
+		  }
+		  if ($efse_exists) {
+			  $user_details .= ' - EIOT FSE';
+		  }
+		  $user_list[$user->uid] = $user_details;  
+        }
+      }
+	}
+     $form['user_email'] = array(
+        '#title' => t('Select User'),
+        '#type' => 'checkboxes',
+        '#multiple' => true,
+	    '#prefix' => '<div id="email-wrapper">',
+	    '#suffix' => '</div>',
+        '#description' => 'Select users to whome message will be sent.',
+        '#options' => $user_list,
+	    '#weight' => 3,
+		'#checkall' => TRUE,
+		'#attributes' => array('class' => array('privatemsg_checkbox'), 'length' => 2),
+      );
+	  if(!is_array($form['#validate'])){
+        $form['#validate'] = array();
+      }
+	  // Add recipients validation.
+	  array_unshift($form['#validate'], 'add_recipients'); 
+	}  
+    
+    // if reply form show recipient
+    if(isset($form['reply']) && !empty($form['reply'])) {
+      $form['recipient']['#access'] = 1;
+	  $form['recipient']['#type'] = 'checkboxes';
+	  $form['recipient']['#multiple'] = true;
+	  $form['recipient']['#checkall'] = TRUE;
+	  
+	  
+	  // Load message using thread id.
+      $message = privatemsg_thread_load($form['thread_id']['#value']);
+	  //echo '<pre>';print_r($message);exit;
+	  $participants = $message['participants'];
+	  $participants_custom_array = array();
+	  foreach($participants as $participant){
+		  $participants_custom_array[$participant->uid] = $participant->uid;
+	  } 
+	  //echo "<pre>"; print_r($participants_custom_array); exit();
+      $thread_id = $form['thread_id']['#value'];
+	  
+      $author = $message['messages'][$thread_id]->author->name;
+	  
+	  // Load sender company.
+	  $form['field_pvt_msg_to_company']['#access'] = 0;
+      $user_pro = user_load($message['messages'][$thread_id]->author->uid);
+      $company = $user_pro->field_company['und'][0]['target_id'];
+      	 
+	  // Select recipient company.
+	  $recipient_company = $message['messages'][$thread_id]->field_pvt_msg_to_company['und'][0]['value'];
+	  preg_match('/\((.*?)\)/', $recipient_company, $a);
+      $recipient_company_id = $a[1];	
+
+	  // get all users of sender and recipient comapnies
+	  $companies_array = array($company, $recipient_company_id);
+	  
+      $query = new EntityFieldQuery();
+      $query->entityCondition('entity_type', 'user')
+       ->fieldCondition('field_company', 'target_id', $companies_array, 'IN')
+	   ->fieldOrderBy('field_first_name', 'value', 'ASC');
+      $result = $query->execute();
+	  if (!empty($companies_array)) {
+	  $companies = implode(',',array_filter($companies_array));
+	  if (!empty($companies)) {
+      $fae_query = db_query("SELECT DISTINCT field_applications_engineers_target_id as uid from field_data_field_applications_engineers where entity_id IN ($companies)");
+	  $cfae_query = db_query("SELECT DISTINCT field_client_fae_target_id as uid from field_data_field_client_fae where entity_id IN ($companies)");
+	  $sfae_query = db_query("SELECT DISTINCT field_server_fae_target_id as uid from field_data_field_server_fae where entity_id IN ($companies)");
+	  $efae_query = db_query("SELECT DISTINCT field_eiot_fae_target_id as uid from field_data_field_eiot_fae where entity_id IN ($companies)");
+	  $fse_query = db_query("SELECT DISTINCT field_sales_engineers_target_id as uid from field_data_field_sales_engineers where entity_id IN ($companies)");
+	  $cfse_query = db_query("SELECT DISTINCT field_client_fse_target_id as uid from field_data_field_client_fse where entity_id IN ($companies)");
+	  $sfse_query = db_query("SELECT DISTINCT field_server_fse_target_id as uid from field_data_field_server_fse where entity_id IN ($companies)");
+	  $efse_query = db_query("SELECT DISTINCT field_eiot_fse_target_id as uid from field_data_field_eiot_fse where entity_id IN ($companies)");
+	  $fae_users = $fae_query->fetchAll();
+	  $cfae_users = $cfae_query->fetchAll();
+	  $sfae_users = $sfae_query->fetchAll();
+	  $efae_users = $efae_query->fetchAll();
+	  $fse_users = $fse_query->fetchAll();
+	  $cfse_users = $cfse_query->fetchAll();
+	  $sfse_users = $sfse_query->fetchAll();
+	  $efse_users = $efse_query->fetchAll();
+		}
+	  }
+		
+		foreach ($fae_users as $k=>$v) {
+		  $fae_user[$v->uid] = $v->uid;
+	  }
+	  foreach ($cfae_users as $k=>$v) {
+		  $cfae_user[$v->uid] = $v->uid;
+	  }
+	  foreach ($sfae_users as $k=>$v) {
+		  $sfae_user[$v->uid] = $v->uid;
+	  }
+	  foreach ($efae_users as $k=>$v) {
+		  $efae_user[$v->uid] = $v->uid;
+	  }
+	  foreach ($fse_users as $k=>$v) {
+		  $fse_user[$v->uid] = $v->uid;
+	  }
+	  foreach ($cfse_users as $k=>$v) {
+		  $cfse_user[$v->uid] = $v->uid;
+	  }
+	  foreach ($sfse_users as $k=>$v) {
+		  $sfse_user[$v->uid] = $v->uid;
+	  }
+	  foreach ($efse_users as $k=>$v) {
+		  $efse_user[$v->uid] = $v->uid;
+	  }
+	  foreach ($result['user'] as $k => $v ) {
+		  $co_user[$v->uid] = $v->uid;
+	  }
+	  
+	  	 // echo "<pre>";
+	  //print_r($co_user);
+	  //print_r($message['messages'][$thread_id]); exit();
+	  $recipients = db_select('pm_index', 'pi')
+					->fields('pi', array('recipient'))
+					->condition('mid', $message['messages'][$thread_id]->mid)
+					->execute()
+					->fetchCol();
+	//print_r($recipients); exit();
+	  foreach($co_user as $key=>$user_id){
+		  $user = user_load($user_id);
+		  if($user->field_company['und'][0]['target_id'] == 145){
+			 // print_r($user);
+			  if($user_id != $message['messages'][$thread_id]->author->uid){
+				 if(in_array($user_id, $recipients) === FALSE){
+					unset($co_user[$key]);
+				 }
+			  }
+		  }
+	  }
+	  
+	  //exit();
+	  
+	  foreach($participants_custom_array as $key=>$user_id){
+		  $user = user_load($user_id);
+		  if($user->field_company['und'][0]['target_id'] == 145){
+			 if($user_id != $message['messages'][$thread_id]->author->uid){
+				 if(in_array($user_id, $recipients) === FALSE){
+					unset($participants_custom_array[$key]);
+				 }
+			 }
+		  }
+	  }
+	  
+	  
+	  
+	  $final_users = (array)$fae_user + (array)$cfae_user + (array)$sfae_user + (array)$efae_user + (array)$fse_user + (array)$cfse_user + (array)$sfse_user + (array)$efse_user + (array)$co_user + (array)$participants_custom_array ;
+	  // Generate user list.
+      $user_list = array(); 
+      foreach($final_users as $key=>$item) {
+        $uid = $item;
+        $user = user_load($uid);
+		$u = entity_metadata_wrapper('user', $user);
+		$company = $user->field_company['und'][0]['target_id'];
+		$query = db_select('node', 'n')
+         ->fields('n', array('title'))
+         ->condition('n.nid', $company, '=');
+        $title = $query->execute()->fetchField();
+		$fae_exists_query = db_select('field_data_field_applications_engineers', 'fae')
+         ->fields('fae', array('field_applications_engineers_target_id'))
+         ->condition('fae.field_applications_engineers_target_id', $uid, '=')
+		 ->condition('fae.entity_id', $companies_array, 'IN');
+        $fae_exists = $fae_exists_query->execute()->fetchField();
+		
+		$cfae_exists_query = db_select('field_data_field_client_fae', 'cfae')
+         ->fields('cfae', array('field_client_fae_target_id'))
+         ->condition('cfae.field_client_fae_target_id', $uid, '=')
+		 ->condition('cfae.entity_id', $companies_array, 'IN');
+        $cfae_exists = $cfae_exists_query->execute()->fetchField();
+		
+		$sfae_exists_query = db_select('field_data_field_server_fae', 'sfae')
+         ->fields('sfae', array('field_server_fae_target_id'))
+         ->condition('sfae.field_server_fae_target_id', $uid, '=')
+		 ->condition('sfae.entity_id', $companies_array, 'IN');
+        $sfae_exists = $sfae_exists_query->execute()->fetchField();
+		
+		$efae_exists_query = db_select('field_data_field_eiot_fae', 'efae')
+         ->fields('efae', array('field_eiot_fae_target_id'))
+         ->condition('efae.field_eiot_fae_target_id', $uid, '=')
+		 ->condition('efae.entity_id', $companies_array, 'IN');
+        $efae_exists = $efae_exists_query->execute()->fetchField();
+		
+		$fse_exists_query = db_select('field_data_field_sales_engineers', 'fse')
+         ->fields('fse', array('field_sales_engineers_target_id'))
+         ->condition('fse.field_sales_engineers_target_id', $uid, '=')
+		 ->condition('fse.entity_id', $companies_array, 'IN');
+        $fse_exists = $fse_exists_query->execute()->fetchField();
+		
+		$cfse_exists_query = db_select('field_data_field_client_fse', 'cfse')
+         ->fields('cfse', array('field_client_fse_target_id'))
+         ->condition('cfse.field_client_fse_target_id', $uid, '=')
+		 ->condition('cfse.entity_id', $companies_array, 'IN');
+        $cfse_exists = $cfse_exists_query->execute()->fetchField();
+		
+		$sfse_exists_query = db_select('field_data_field_server_fse', 'sfse')
+         ->fields('sfse', array('field_server_fse_target_id'))
+         ->condition('sfse.field_server_fse_target_id', $uid, '=')
+		 ->condition('sfse.entity_id', $companies_array, 'IN');
+        $sfse_exists = $sfse_exists_query->execute()->fetchField();
+		
+		$efse_exists_query = db_select('field_data_field_eiot_fse', 'efse')
+         ->fields('efse', array('field_eiot_fse_target_id'))
+         ->condition('efse.field_eiot_fse_target_id', $uid, '=')
+		 ->condition('efse.entity_id', $companies_array, 'IN');
+        $efse_exists = $efse_exists_query->execute()->fetchField();
+		
+		$pm_disable = privatemsg_is_disabled($user);
+        if(!$pm_disable) {
+          $jobtitle = $u->field_title->value();
+		  //$user_details = $u->field_first_name->value().' '.$u->field_last_name->value();
+		   $user_details = ($u->field_first_name->value() && $u->field_last_name->value()) ?  $u->field_first_name->value().' '.$u->field_last_name->value(): $user->name;
+		  if (isset($jobtitle)) {
+			  $user_details .= '('.$jobtitle.')';
+		  }
+		  if (isset($title)) {
+			  $user_details .= ' - '.$title;
+		  }
+		  if ($fae_exists) {
+			  $user_details .= ' - FAE';
+		  }
+		  if ($cfae_exists) {
+			  $user_details .= ' - Client FAE';
+		  }
+		  if ($sfae_exists) {
+			  $user_details .= ' - Server FAE';
+		  }
+		  if ($efae_exists) {
+			  $user_details .= ' - EIOT FAE';
+		  }
+		  if ($fse_exists) {
+			  $user_details .= ' - FSE';
+		  }
+		  if ($cfse_exists) {
+			  $user_details .= ' - Client FSE';
+		  }
+		  if ($sfse_exists) {
+			  $user_details .= ' - Server FSE';
+		  }
+		  if ($efse_exists) {
+			  $user_details .= ' - EIOT FSE';
+		  }
+		  $user_list[$user->uid] = $user_details; 
+        }
+	  }	
+      $form['recipient']['#options'] = $user_list;	  
+	  
+	  // Add default tag value and disable.
+	  $msg_tag = $message['messages'][$thread_id]->field_pvt_msg_tag['und'][0]['value'];
+	  $form['field_pvt_msg_tag']['und']['#default_value'] = $msg_tag;
+	  $form['field_pvt_msg_tag']['#disabled'] = TRUE;
+	  
+      //Add validation handler to be called after default validation hanlder to ovverride recipient as we need to send message reply only to sender.
+	  unset($form['#validate']);
+	  $form['#validate'] = array('custom_userlist_validation');
+    } 
+	$form['#submit'][] = 'email_table_insert';
+	//$form['subject']['#weight'] = 100;
+	//echo '<pre>';print_r($form['subject']);exit;
+    return $form;
+  }
+    /*Added for the priority tag.
+  *
+  * If a message is marked as "important", then it has an "!" symbol in the listing
+  */
+  if($form_id = "privatemsg-list"){
+	if(isset($form['updated']['list']['#options'])){
+	foreach($form['updated']['list']['#options'] as $options){
+		$thread_id = $options["thread_id"];
+		$query = db_select('pm_priority', 'pp');
+		$query->fields('pp', array('priority'));
+		$query->condition('msg_id',$thread_id);
+		$is_priority_set = $query->execute()->fetchField();
+		global $base_url;
+		if($is_priority_set == 1){
+			//$form['updated']['list']['#options'][$thread_id]['subject'] .= ' <img src="https://dviotsaub10.amr.corp.intel.com/sites/all/modules/custom/intel_ea_customizations/important.png" alt="Important Message" width: 15px; height: 15px;>';
+			$form['updated']['list']['#options'][$thread_id]['subject'] = ' <img src="'.$base_url.'/'.drupal_get_path('module', 'intel_ea_customizations').'/important.png" alt="Important Message" style="width: 15px; height: 15px;">'.$form['updated']['list']['#options'][$thread_id]['subject'];
+		}
+		$message = privatemsg_message_load($thread_id);
+		$message_body = $message->body;
+		/*$group_text = 'This is a group message';
+		if (strpos($message_body, $group_text) !== false) {
+			$form['updated']['list']['#options'][$thread_id]['subject'] .= ' <img src="'.$base_url.'/'.drupal_get_path('module', 'intel_ea_customizations').'/group.png" alt="Group Message" style="width: 18px; height: 18px;">';
+		}*/
+		/*$msg_count = $options['count'];
+		if ($msg_count > 1) {
+			$subject = $form['updated']['list']['#options'][$thread_id]['subject'];
+			$new_subject = ' <img src="'.$base_url.'/'.drupal_get_path('module', 'intel_ea_customizations').'/chevron.png" style="width: 12px; height: 12px; padding-right: 5px;" title="View Message">' .$subject;
+			$form['updated']['list']['#options'][$thread_id]['subject'] = $new_subject;
+		}*/
+	}
+  }
+	return $form;
+  }
+}
+/* menu call back for company auto complete messaging */
+function get_all_companies($string) {
+//$string = 'ab';  
+$query = db_select('node', 'n');
+    $query->fields('n', array('nid','title'));
+    $query->condition('title', db_like($string).'%', 'LIKE');
+    $query->condition('type', 'company');
+    $query->condition('language','en');
+	$query->condition('status','1');
+  $result = $query->execute()->fetchAll();
+  $match = array();
+  foreach($result as $item) {
+    $val = $item->title.'('.$item->nid.')';
+    $match[$val] = $item->title;
+  }    
+  drupal_json_output($match);
+}
+
+function add_recipients($form, &$form_state) {
+ $user_list = ''; 
+  //print_r($form_state); exit;
+ if(!isset($form['reply']) && $form['reply'] == '')  {
+	$recipient_users =  $form_state['values']['user_email'];
+	if(empty($recipient_users) && $form_state['triggering_element'] == 'Send message') {
+		drupal_set_message(t('Please select user to send message'), 'error');
+    }
+	if($form_state['triggering_element'] == 'Send message') {
+		drupal_set_message(t('Check'), 'error');
+    }
+    else {		
+      foreach($recipient_users as $item) {
+        $user = user_load($item);
+        $user_list .= $user->name.',';
+      } 
+      form_set_value($form['recipient'], $user_list, $form_state);
+	}	
+  }
+}
+
+function show_company_users($form, &$form_state) {
+   return $form['user_email'];
+} 
+
+function custom_userlist_validation($form, &$form_state) { 
+   // The actual message that is being sent, we create this during validation and
+  // pass to submit to send out.
+  $message = (object)$form_state['values'];
+  $message->mid       = 0;
+  $mid = $form_state['values']['thread_id'];
+  $message->format    = $message->body['format'];
+  $message->body      = $message->body['value'];
+  $message->timestamp = REQUEST_TIME;
+  // Avoid subjects which only consist of a space as these can not be clicked.
+  $message->subject = trim($message->subject);
+  // adding group if recipients are more than one
+  $recipients = $form_state['values']['recipient'];
+  $remove = array(0);
+  $result = array_diff($recipients, $remove);
+  $no_of_recievers = count(array_filter($result));
+  /* if($form_state['values']['priority_tag'][1] == 1){
+		db_insert('pm_priority')
+		->fields(array(
+				'msg_id' => $mid,
+				'priority' => 1))
+		->execute();
+		$message->body .= "
+		
+		This is an important message.";
+  } */
+  //echo '<pre>';print_r($no_of_recievers);exit;
+  /*if ($no_of_recievers > 1) {
+	$message->body .= '<br>This is a group message <img src="'.$base_url.'/'.drupal_get_path('module', 'intel_ea_customizations').'/group.png" alt="Group Message" style="width: 18px; height: 18px;">.'; 
+  }*/
+  /* if ($no_of_recievers > 5000) {
+	form_set_error('recipient', t('Error on these elements!'));
+  } */
+  foreach($form_state['values']['recipient'] as $recipient) {
+	$uid = 'user_'.$recipient;
+	$reciever[$uid] = user_load($recipient);  
+  }
+  $message->recipients = $reciever;
+  $trimmed_body = trim(truncate_utf8(strip_tags($message->body), 50, TRUE, TRUE));
+  if (empty($message->subject) && !empty($trimmed_body)) {
+    $message->subject = $trimmed_body;
+  }
+
+  if (!empty($invalid)) {
+    // Display information about invalid recipients.
+    drupal_set_message(t('The following users will not receive this private message: @invalid.', array('@invalid' => implode(", ", $invalid))), 'error');
+  }
+  if (!empty($denieds)) {
+    // Display information about denied recipients.
+    drupal_set_message(t('You do not have access to write these recipients: @denieds.', array('@denieds' => implode(", ", $denieds))), 'error');
+  }
+
+  if (!empty($duplicates)) {
+    // Add JS and CSS to allow choosing the recipient.
+    drupal_add_js(drupal_get_path('module', 'privatemsg') . '/privatemsg-alternatives.js');
+
+    // Display information about recipients that couldn't be identified
+    // uniquely.
+    $js_duplicates = array();
+    foreach ($duplicates as $string => $duplicate) {
+      $alternatives = array();
+      foreach ($duplicate as $match) {
+        $formatted_match = privatemsg_recipient_format($match, array('plain' => TRUE, 'unique' => TRUE));
+        $js_duplicates[$formatted_match] = $string;
+        $alternatives[] = '<span class="privatemsg-recipient-alternative">' . $formatted_match . '</span>';
+      }
+      // Build a formatted list of possible recipients.
+      $alternatives = theme('item_list', array('items' => $alternatives, 'attributes' => array('class' => array('action-links'))));
+      form_set_error('recipient', '<span class="privatemsg-alternative-description">' . t('The site has multiple recipients named %string. Please choose your intended recipient: !list', array('%string' => $string, '!list' => $alternatives)) . '</span>');
+    }
+
+    // Also make that information available to the javascript replacement code.
+    drupal_add_js(array('privatemsg_duplicates' => $js_duplicates), 'setting');
+  }
+
+  $validated = _privatemsg_validate_message($message, TRUE);
+ /*  if($no_of_recievers > 5000){
+	  $validated['success'] = 0;
+	  $validated['messages']['error'][] = "The number of recipients should not be more than 5000.";
+  } */
+  foreach ($validated['messages'] as $type => $texts) {
+    foreach ($texts as $text) {
+      drupal_set_message($text, $type);
+    }
+  } 
+  $form_state['validate_built_message'] = $message;  
+ }
+ function disable_pm_users() {
+	 $users = entity_load('user');
+	 $uids = array_keys($users);
+	 foreach($uids as $uid) {
+           if($uid != 0) {
+	 db_insert('pm_disable')
+          ->fields(array('uid' => $uid))
+          ->execute();
+	 }
+     }	  
+ }
+ function privatemsg_custom_settings() {
+  $form = array();
+
+  $form['privatemsg_email_sla'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Email alert SLA in days'),
+	'#default_value' => variable_get('privatemsg_email_sla'),
+    '#description' => t('Mention the days after which a reminder email will be sent to intended recipient.'),
+    '#weight'      => -5,
+  );
+  
+  $form['privatemsg_email_max_recipients'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Max Number Of Recipients'),
+	'#default_value' => variable_get('privatemsg_email_max_recipients'),
+    '#description' => t('The cap number of recipients'),
+    '#weight'      => -7,
+  );
+  
+  $form['#submit'][] = 'privatemsg_custom_admin_settings_submit';
+  return system_settings_form($form);
+  
+}  
+
+function privatemsg_custom_admin_settings_submit() {
+  drupal_theme_rebuild();	
+}
+
+function privatemsg_custom_user_settings() { 
+  global $user;
+  
+  $form['privatemsg_enable_msg'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Enable Private Message'),
+    '#default_value' => !privatemsg_is_disabled($user),
+    '#description' => t('Enable to send or recieve messages from other users.'),
+    '#weight'      => -5,
+  );	
+  
+  $form['#submit'][] = 'privatemsg_custom_user_settings_submit';
+  return system_settings_form($form);
+}
+
+function privatemsg_custom_user_settings_submit($form, &$form_state) {
+  global $user;
+  if($form_state['values']['privatemsg_enable_msg'] == 1) {
+	db_delete('pm_disable')
+          ->condition('uid', $user->uid)
+          ->execute();
+  }
+  else {
+	db_insert('pm_disable')
+          ->fields(array('uid' => $user->uid))
+          ->execute();  
+  }
+  drupal_theme_rebuild();
+}
+/**
+ * Implements hook_cron to save nodes for node_access table().
+ */
+function intel_ea_customizations_cron() {
+	ini_set('memory_limit', '2G');
+	ini_set('default_socket_timeout', 48000);
+    /*$nids = db_query("select nid from node where nid not in (select distinct(nid) from node_access) and type in ('solution','company') LIMIT 3000")->fetchCol();
+	foreach (node_load_multiple($nids) as $node) {
+	  node_save($node);
+	}*/
+	/* pre-release formula */
+	//$nids = db_query("select entity_id from field_data_field_pre_release where bundle ='formula' and field_pre_release_value ='1'")->fetchCol();
+	/* pre-release solution */
+	//$nids = db_query("select entity_id from field_data_field_pre_release where bundle ='solution' and field_pre_release_value ='1'")->fetchCol();
+	/* intel only solutions */
+	//$nids = db_query("select entity_id from field_data_field_intel_only where bundle ='solution' and field_intel_only_value ='1'")->fetchCol();
+	/*foreach ($nids as $nid) {
+		$node = node_load($nid);
+		//$node->field_access_formula['und'][0]['value'] = 2;
+		$node->field_access['und'][0]['value'] = 2;
+		if($node->status = 1){
+			$node->revision_moderation = FALSE;
+			$node->is_current = TRUE;
+		}
+	    node_save($node);
+		echo $node->title." - ".$node->nid." Saved <br>";
+		/* if ($node->status == 1) {
+		  echo $node->title." - ".$node->nid." Saved And Published. <br>";
+		} */
+	//}*/
+	$SLA_days = variable_get('privatemsg_email_sla',3);
+		
+	$query_result = db_select('pm_index', 'pmi')
+      ->condition('is_new', 1)
+	  ->fields('pmi', array('recipient','mid'))
+	  ->groupBy('pmi.recipient')
+	  ->execute()->fetchAll();
+
+	  
+	foreach($query_result as $recipient) {
+      // check if message has breached SLA.
+      $time_mid = db_select('pm_message', 'pm')
+		->condition('mid', $recipient->mid)
+        ->fields('pm', array(timestamp))
+        ->execute()->fetchField();	
+	  
+	  $curr = time() - 24*60*60*$SLA_days; 
+		
+      if($time_mid < $curr) {
+	    // Send email data to table.
+		$mail = user_load($recipient->recipient)->mail;
+		$subject = 'Unread message reminder';
+		$message = 'You have unread messages in your Solutions Directory inbox.';
+        
+		// insert into email table.
+		/**
+        db_insert("pm_email_custom")
+          ->fields(array(
+           'pm_email_mid' => 0,
+           'pm_email_to' => $mail,
+           'pm_email_sender' => 'intel.communications.alliance.admin@intel.com',
+           'pm_email_subject' => $subject,
+           'pm_email_message' => $message,
+           'pm_email_flag' => 'unsent',))
+          ->execute();
+		  **/
+		}
+	  }
+	  watchdog(
+            'intel_ea_customizations',
+            t('Alert Message data inserted into email table on cron run.'),
+            NULL,
+            WATCHDOG_NOTICE);
+			
+		//Added for archiving
+	try{
+
+		$query = db_select('pm_message', 'pm');
+	$query->join('pm_index', 'pi', 'pi.mid = pm.mid');
+	$result = $query
+	  ->fields('pi', array('thread_id'))
+	  ->condition('timestamp', 'UNIX_TIMESTAMP(DATE_SUB(NOW(), INTERVAL 60 DAY))', '<')
+	  ->distinct()->execute();
+	  
+	}catch(Exception $e){
+		echo $e->getMessage(); exit();
+	}
+	foreach($result as $old_thread_id){
+		db_delete('pm_tags_index')
+		  ->condition('thread_id', $old_thread_id->thread_id)
+		  ->condition('tag_id', variable_get('privatemsg_filter_inbox_tag', ''), '=')
+		  ->execute();
+	}
+	
+}
+
+/**
+ * Function to insert data into email table when message is sent.
+ */
+function email_table_insert($form, &$form_state) {
+	$sender =  $form_state['values']['author']->mail;
+	$reciever = $form_state['values']['recipient'];
+	$recievers = array();
+	$recievers = explode(',', $reciever);
+	$mid = $form_state['validate_built_message']->mid;
+	$sub = $form_state['values']['subject'];
+	$msg = $form_state['values']['body']['value'];
+	if(empty($recievers)){
+		foreach($reciever as $single_reciever){
+			if($single_reciever != 0){
+				$recievers[] = $single_reciever;
+			}
+		}
+	}
+	$no_of_recievers = count(array_filter($recievers));
+	if($form_state['values']['priority_tag'][1] == 1){
+		db_insert('pm_priority')
+		->fields(array(
+				'msg_id' => $mid,
+				'priority' => 1))
+		->execute();
+		$msg .= "
+		
+		This is an important message.";
+	}
+	
+	/*if ($no_of_recievers > 1) {
+		$msg .= '<br>This is a group message<img src="'.$base_url.'/'.drupal_get_path('module', 'intel_ea_customizations').'/group.png" alt="Group Message" style="width: 18px; height: 18px;">.';
+	}*/
+	
+	db_update("pm_message")
+		  ->fields(array('body' => $msg))
+		  ->condition("mid", $mid)
+		  ->execute();
+	
+	/* echo "<pre>";
+	foreach($recievers as $item){
+		$user_obj = user_load_by_name($item);
+		
+		print_r($user_obj);
+	}
+	exit(); */
+	foreach($recievers as $item) {
+		$user_obj = user_load_by_name($item);
+		if($item != '') {
+		  // insert into email table.
+          db_insert("pm_email_custom")
+            ->fields(array(
+             'pm_email_mid' => $mid,
+            // 'pm_email_to' => $item,
+			'pm_email_to' => $user_obj->mail,
+             'pm_email_sender' => $sender,
+             'pm_email_subject' => $sub,
+             'pm_email_message' => $msg,
+             'pm_email_flag' => 'unsent',))
+              ->execute();
+			  
+			watchdog(
+            'intel_ea_customizations',
+            t('Message data inserted into email table with mid '.$mid.' to user '.$item),
+            NULL,
+            WATCHDOG_NOTICE);  
+		}  
+		  
+	}
+	
+	if($_GET['promotion'] == 1){
+		db_insert('report_message')
+		->fields(array(
+				'mid' => $mid,
+				'author' => $form_state['values']['author']->uid,
+				'nid' => $_GET['node']))
+		->execute();
+		promotionqnreport($_GET['node'], $form_state['values']['author']->uid);
+	}
+	
+}
+function intel_ea_customizations_theme_registry_alter(&$theme_registry) {
+  $theme_registry['privatemsg_list_field__subject']['function'] = '_intel_ea_customizations_my_subject_attach_theme';
+  $theme_registry['privatemsg_username']['function'] = '_intel_ea_customizations_partcipant_name_theme';
+  $theme_registry['privatemsg_list_header__count']['function'] = '_intel_ea_customizations_table_header_count';
+  //$theme_registry['privatemsg_list_header__participants']['function'] = '_intel_ea_customizations_table_header_participants';
+}
+
+function _intel_ea_customizations_my_subject_attach_theme($variables) {
+  $thread = $variables['thread'];
+  $field = array();
+  $options = array();
+  $is_new = '';
+  if (!empty($thread['is_new'])) {
+    $is_new = theme('mark', array('type' => MARK_NEW));
+    $options['fragment'] = 'new';
+  }
+  $message = privatemsg_message_load($thread['thread_id']);
+  $msg_count = $thread['count'];
+  global $base_url;
+  if ($msg_count > 1) {
+	  $count_img = '<img src="'.$base_url.'/'.drupal_get_path('module', 'intel_ea_customizations').'/chevron.png" style="width: 12px; height: 12px; padding-right: 5px;" title="View Message">';
+  }
+  if(isset($message->field__pvt_msg_attach_file) && !empty($message->field__pvt_msg_attach_file)) {
+	$att_img = '<img src="/sites/default/files/att.png"/> ';
+  }
+  $subject = $count_img . $att_img . $thread['subject'];
+  if ($thread['has_tokens']) {
+    $subject = privatemsg_token_replace($subject, array('privatemsg_message' => $message), array('sanitize' => TRUE, 'privatemsg-show-span' => FALSE));
+  }
+  $field['data'] = l($subject, 'messages/view/' . $thread['thread_id'], array('html' => TRUE)) . $is_new;
+  $field['class'][] = 'privatemsg-list-subject';
+  return $field;
+}
+
+function _intel_ea_customizations_partcipant_name_theme($variables) {
+	$first_name = $variables['recipient']->field_first_name['und'][0]['value'];
+	$last_name = $variables['recipient']->field_last_name['und'][0]['value'];
+	$email = $variables['recipient']->mail;
+	return $first_name.' '.$last_name;
+	//return $email;
+}
+function _intel_ea_customizations_table_header_count ($variables) {
+	return array(
+    'data'    => t('Messages'),
+	'field'   => 'count',
+    'class'   => array('privatemsg-header-count'),
+    '#weight' => -25,
+  );
+}
+function _intel_ea_customizations_table_header_participants ($variables) {
+	return array(
+    'data'    => t('Participants'),
+	'field'   => 'participants',
+    'class'   => array('privatemsg-header-participants'),
+    '#weight' => -30,
+
+  );
+}
+//redirect clone to new message with mid
+function message_clone($mid) {
+	drupal_goto("messages/new", array('query' => array('mid' => $mid)));
+}
+function intel_ea_customizations_privatemsg_thread_operations($type) {
+  if ($type == 'archive') {
+    $restore = array(
+      'label' => t('Restore'),
+      'callback' => 'privatemsg_filter_add_tags',
+      'callback arguments' => array('tag_id' => variable_get('privatemsg_filter_inbox_tag', '')),
+      'success message' => t('The messages have been restored.'),
+      'undo callback' => 'privatemsg_filter_remove_tags',
+      'undo callback arguments' => array('tag_id' => variable_get('privatemsg_filter_inbox_tag', '')),
+    );
+	$deletemsg = array(
+      'label' => t('Delete Message'),
+      'callback' => 'privatemsg_thread_change_delete',
+      'callback arguments' => array('delete' => 1),
+      'success message' => t('The messages have been deleted.'),
+      'undo callback' => 'privatemsg_thread_change_delete',
+      'undo callback arguments' =>  array('delete' => 0),
+    );
+    return array('restore' => $restore,'deletemsg' => $deletemsg);
+  }
+  if (privatemsg_user_access('delete privatemsg')) {
+    $deletemsg = array(
+      'label' => t('Delete Message'),
+      'callback' => 'privatemsg_thread_change_delete',
+      'callback arguments' => array('delete' => 1),
+      'success message' => t('The messages have been deleted.'),
+      'undo callback' => 'privatemsg_thread_change_delete',
+      'undo callback arguments' =>  array('delete' => 0),
+    );
+    return array('deletemsg' => $deletemsg);
+  }
+}
+
+function check_recipients(&$form_state, $form){
+	$current_path = current_path();
+	if (strpos($current_path, 'ajax') == false) {
+		$form_state['error']= true;
+		return;
+	}
+	$reciever = $form_state['values']['recipient'];
+	$recievers = array();
+	$recievers = explode(',', $reciever);
+	if(empty($recievers)){
+		foreach($reciever as $single_reciever){
+			if($single_reciever != 0){
+				$recievers[] = $single_reciever;
+			}
+		}
+	}
+	
+}
+
+function intel_ea_customizations_preprocess_page(&$variables) {
+  // Make sure current page is node/nid
+  // It will even if use aliases.
+  if(strpos(request_uri(), "/messages/archive") !== FALSE){
+    //$variables['head_title']= "Archive | Solutions Directory";
+	drupal_set_title('Archive');
+  }
+}
+
+function privatemsg_sql_archive($account, $argument = 'archive') {
+  $query = db_select('pm_message', 'pm')->extend('TableSort')->extend('PagerDefault');
+  $query->join('pm_index', 'pmi', 'pm.mid = pmi.mid');
+
+  // Create count query;
+  $count_query = db_select('pm_message', 'pm');
+  $count_query->addExpression('COUNT(DISTINCT pmi.thread_id)', 'count');
+  $count_query->join('pm_index', 'pmi', 'pm.mid = pmi.mid');
+  $count_query
+    ->condition('pmi.recipient', $account->uid)
+    ->condition('pmi.type', array('hidden', 'user'))
+    ->condition('pmi.deleted', 0);
+  $query->setCountQuery($count_query);
+
+
+  // Required columns
+  $query->addField('pmi', 'thread_id');
+  $query->addExpression('MIN(pm.subject)', 'subject');
+  $query->addExpression('MAX(pm.timestamp)', 'last_updated');
+  $query->addExpression('MAX(pm.has_tokens)', 'has_tokens');
+  $query->addExpression('SUM(pmi.is_new)', 'is_new');
+
+  // Load enabled columns
+  $fields = array_filter(variable_get('privatemsg_display_fields', array('participants')));
+
+  if (in_array('count', $fields)) {
+    // We only want the distinct number of messages in this thread.
+    $query->addExpression('COUNT(distinct pmi.mid)', 'count');
+  }
+  if (in_array('participants', $fields)) {
+    // Query for a string with uids, for example "1,6,7". This needs a subquery on PostgreSQL.
+    if (db_driver() == 'pgsql') {
+      $query->addExpression("array_to_string(array(SELECT DISTINCT pmia.type || '_' || pmia.recipient
+                                                          FROM {pm_index} pmia
+                                                          WHERE pmia.type <> 'hidden' AND pmia.thread_id = pmi.thread_id AND pmia.recipient <> :current), ',')", 'participants', array(':current' => $account->uid));
+    }
+    else {
+      $query->addExpression("(SELECT GROUP_CONCAT(DISTINCT CONCAT(pmia.type, '_', pmia.recipient))
+                                     FROM {pm_index} pmia
+                                     WHERE pmia.type <> 'hidden' AND pmia.thread_id = pmi.thread_id AND pmia.recipient <> :current)", 'participants', array(':current' => $account->uid));
+    }
+  }
+  if (in_array('thread_started', $fields)) {
+    $query->addExpression('MIN(pm.timestamp)', 'thread_started');
+  }
+  return $query
+    ->condition('pmi.recipient', $account->uid)
+    ->condition('pmi.type', array('hidden', 'user'))
+    ->condition('pmi.deleted', 0)
+	->join('pm_tags_index', 'pti', 'pti.thread_id = pmi.thread_id')
+	->condition('pm.author', $account->uid, '<>')
+	->condition('pti.uid', $account->uid)
+	->having('MIN(tag_id) > :matches', array(':matches' => variable_get('privatemsg_filter_inbox_tag')))
+    ->groupBy('pmi.thread_id')
+    ->orderByHeader(_privatemsg_list_headers(array_merge(array('subject', 'last_updated'), $fields)))
+    ->limit(variable_get('privatemsg_per_page', 25));
+}
+
+/*Submit handler for company form */
+function submit_company_new_revison($form, &$form_state) {
+	if(user_access('external facing user roles') && !user_access('internal user roles')) {
+	  drupal_set_message('Your revision has been created with updated logo. Kindly '.l('email us', 'mailto:intel.communications.alliance.admin@intel.com?Subject=IOT Company Logo', array('absolute' => TRUE)).' to publish the revision.After Publishing the revision your updated logo will be shown');	
+	}
+}
+
+/**
+ * Menu callback to redirect user to his company page.
+ */
+function user_company_redirect() {
+	global $user;
+    $user_data = user_load($user->uid);
+	$company = $user_data->field_company['und'][0]['target_id'];
+	if($company) {
+	  drupal_goto('node/'.$company.'/edit');
+	}
+    else {
+      drupal_access_denied();
+    } 
+		
+}
+
+/**
+ * Access callback to check user access.
+ */
+function edit_user_company() {
+	global $user;
+	if(user_has_role(20) || user_has_role(3) || user_has_role(4)) {
+		return TRUE;
+	}	
+	else {
+		return FALSE;
+    }		
+}
+
+/**
+ * Implements hook_node_access().
+ */
+function intel_ea_customizations_node_access($node, $op, $account) {
+	$user_data = user_load($account->uid);
+	$company = 0;
+	if(isset($user_data->field_company['und'][0]['target_id'])){
+		$company = $user_data->field_company['und'][0]['target_id'];
+	}
+	if($node->type == 'company' && $op == 'update' && arg(1) == $company && $op != 'create') {
+	  if(user_has_role(20) || user_has_role(3) || user_has_role(4)) {
+	    return NODE_ACCESS_ALLOW;
+	  }	
+	  else {
+        return NODE_ACCESS_DENY;
+	   }
+	}
+	// intel only restriction for solutions
+	/*if($node->type == 'solution' && $op == 'view') {
+        // Wrap the node entity.
+		$wrapped_node = entity_metadata_wrapper('node', $node);
+		$intel_only = $wrapped_node->field_intel_only->value();
+		$user_mail = $account->mail;
+		$domains = array('intel.com');
+		$pattern = "/^[a-z0-9._%+-]+@[a-z0-9.-]*(" . implode('|', $domains) . ")$/i";
+		if ($intel_only == '1' && !preg_match($pattern, $user_mail)) {
+			return NODE_ACCESS_DENY;
+		} else {
+			return NODE_ACCESS_ALLOW;
+		}
+		if ($intel_only == '1' && $account->uid < 0) {
+			return NODE_ACCESS_DENY;
+		} else {
+			return NODE_ACCESS_ALLOW;
+		}
+    }
+	else {
+	  return NODE_ACCESS_IGNORE;
+	}*/
+}
+/**
+ * Implements hook_flag_validate().
+ */
+function intel_ea_customizations_flag_validate($action, $flag, $entity_id, $account, $skip_permission_check, $flagging) {
+
+  if ($flag->name == 'product_comparison' && $action == 'flag') {
+    // Get all flags set by the current user.
+    $flags = flag_get_user_flags('node', NULL, $account->uid, $sid = NULL, $reset = FALSE);
+    // Check if this user has any flags of this type set.
+    if (isset($flags['product_comparison'])) {
+      $count = count($flags[$flag->name]);
+	  variable_set('prod_compare_flag', 0);
+	  
+      if ($count >=4) {
+        variable_set('prod_compare_flag', 1);
+		return false;
+      }
+    }
+  }
+}
+
+
+/* When the formula is submitted with components that are moarked IoT flag,
+*
+* it is saved as an IoT formula too.
+*
+*/
+function formula_submit_alter($form, &$form_state) {
+	$formula_is_iot = FALSE;
+	foreach($form_state['values']['field_component_group']['und'][0]['field_component_options']['und'] as $component){
+	  if(isset($component['target_id'])){
+		  $iot_number = db_select('field_data_field_intel_iot_market_ready_sol', 'iot')
+					->fields('iot', array('field_intel_iot_market_ready_sol_tid'))
+					->condition('iot.entity_id', $component['target_id'])
+					->execute()->fetchField();
+		if($iot_number == 1416){
+			$formula_is_iot = TRUE;
+			break;
+		}				  
+	  }
+	}
+	$form_state['values']['field_intel_iot_market_ready_sol']['und'][0]['tid'] = ($formula_is_iot || $form_state['values']['field_intel_iot_market_ready_sol']['und'][0]['tid'] == 1416) ? 1416 : "";
+}
+
+function mark_solutions_with_default(){
+	ini_set('memory_limit', '2G');
+	ini_set('default_socket_timeout', 48000);
+    $nids = db_query("select nid from node where nid not in (SELECT distinct(entity_id) FROM field_data_field_access) and type in ('solution') LIMIT 2000")->fetchCol();
+	foreach (node_load_multiple($nids) as $node) {
+	  $node->field_access['und'][0]['value'] = 0;
+	  node_save($node);
+	  echo $node->title." ---------- ".$node->nid." -------- Saved \n";
+	}
+	/* pre-release formula */
+	//$nids = db_query("select entity_id from field_data_field_pre_release where bundle ='formula' and field_pre_release_value ='1'")->fetchCol();
+	/* pre-release solution */
+	//$nids = db_query("select entity_id from field_data_field_pre_release where bundle ='solution' and field_pre_release_value ='1' AND entity_id NOT IN (SELECT entity_id FROM field_data_field_access WHERE field_access_value = 2)")->fetchCol();
+	/* intel only solutions */
+	//$nids = db_query("select entity_id from field_data_field_intel_only where bundle ='solution' and field_intel_only_value ='1' AND entity_id NOT IN (SELECT entity_id FROM field_data_field_access WHERE field_access_value = 2)")->fetchCol();
+	/* foreach ($nids as $nid) {
+		$node = node_load($nid);
+		//$node->field_access_formula['und'][0]['value'] = 2;
+		if($nid == 45515)
+			continue;
+		$node->field_access['und'][0]['value'] = 2;
+		if($node->status = 1){
+			$node->revision_moderation = FALSE;
+			$node->is_current = TRUE;
+		}
+	    node_save($node); */
+	//echo $node->title." ---------- ".$node->nid." -------- Saved \n";
+		/* if ($node->status == 1) {
+		  echo $node->title." - ".$node->nid." Saved And Published. <br>";
+		} */
+	//}
+	//}
+}
+
+function mark_solutions_with_default_set_2(){
+	ini_set('memory_limit', '2G');
+	ini_set('default_socket_timeout', 48000);
+    $nids = db_query("select nid from node where nid not in (SELECT distinct(entity_id) FROM field_data_field_access) and type in ('solution') LIMIT 2000")->fetchCol();
+	foreach (node_load_multiple($nids) as $node) {
+	  $node->field_access['und'][0]['value'] = 0;
+	  node_save($node);
+	  echo $node->title." ---------- ".$node->nid." -------- Saved \n";
+	}
+}
+
+
+function intel_ea_customizations_feeds_after_parse(FeedsSource $source, FeedsParserResult $result) {
+	if($source->id === "solution_import"){
+		foreach($result->items as $key => $item){
+			$result->items[$key]['company id'] = get_company_from_erpm($result->items[$key]['company id'], $result->items[$key]['language']);
+			/* db_query("SELECT entity_id FROM field_data_field_erpm_company_number AS erpm
+				INNER JOIN node AS n ON n.nid = erpm.entity_id
+				WHERE field_erpm_company_number_value = ".$result->items[$key]['company id']."
+				AND n.language = '".$result->items[$key]['language']."'")->fetchField(); */
+				
+			$result->items[$key]['user id'] = db_query("SELECT uid FROM field_data_field_erpm_login_id AS erpm
+				INNER JOIN users AS u ON u.uid = erpm.entity_id
+				WHERE field_erpm_login_id_value = '".$result->items[$key]['user id']."'")->fetchField();
+					
+		}
+	}
+
+	if($source->id === "promotion_import"){
+		foreach($result->items as $key => $item){
+			$sol_names = $result->items[$key]['promotion solutions'];
+			if(count($sol_names > 0)){
+				$sol_ids = array();
+				foreach($sol_names as $sol_name){
+					$sol_ids[] = db_query("SELECT nid FROM node where title = '". $sol_name ."'")->fetchField();
+				}
+				$result->items[$key]['promotion solutions'] = $sol_ids;
+			}
+			$result->items[$key]['promotion company'] = get_company_from_erpm($result->items[$key]['promotion company']);
+			$buyers = $result->items[$key]['select buyer'];
+			$buyer_companies = array();
+				foreach($buyers as $buyer){
+					$company_id = get_company_from_erpm($buyer);
+					if($company_id > 0)
+						$buyer_companies[] = $company_id;
+				}
+			$result->items[$key]['select buyer'] = $buyer_companies;
+			$result->items[$key]['author'] = db_query("SELECT uid FROM field_data_field_erpm_login_id AS erpm
+				INNER JOIN users AS u ON u.uid = erpm.entity_id
+				WHERE field_erpm_login_id_value = '".$result->items[$key]['author']."'")->fetchField();
+		}
+	}
+}
+
+function get_company_from_erpm($erpm_id, $language = 'en'){
+	$company_id =  db_query("SELECT entity_id FROM field_data_field_erpm_company_number AS erpm
+				INNER JOIN node AS n ON n.nid = erpm.entity_id
+				WHERE field_erpm_company_number_value = '".$erpm_id."'
+				AND n.language = '".$language."'")->fetchField();
+	return $company_id;
+}
+
+
+function intel_ea_customizations_feeds_after_save(FeedsSource $source, $entity, $item, $entity_id) {
+	//echo $source->id." "; print_r($entity->nid); exit();
+	if($source->id === "solution_import"){
+		$node = node_load($entity->nid);
+		db_query("UPDATE workflow_node SET sid = ".$node->field_workflow_temporary['und'][0]['value']." WHERE nid = ". $entity->nid);
+		db_query("UPDATE workflow_node_history SET sid = ".$node->field_workflow_temporary['und'][0]['value']." WHERE nid =".$entity->nid)->execute;
+	}
+	if($source->id === "promotion_import"){
+		$node = node_load($entity->nid);
+		if($node->type == 'promotion'){	
+			//echo "<pre>"; print_r($node); exit();//$node->field_workflow_temporary['und'][0]['value']; exit();
+			//$node->workflow = 2; //$node->field_workflow_temporary['und'][0]['value'];
+			switch($node->field_workflow_temporary['und'][0]['value']){
+				case "Expired":
+					$workflow = 17;
+					break;
+				case "Denied":
+					$workflow = 17;
+					break;
+				case "Canceled":
+					$workflow = 17;
+					break;
+				case "Draft":
+					$workflow = 15;
+					break;
+				case "On Editing":
+					$workflow = 21;
+					break;
+				case "Pending FSE Approve":
+					$workflow = 16;
+					break;
+				case "Pending System Admin Approve":
+					$workflow = 18;
+					break;
+				case "Published":
+					$workflow = 19;
+					db_query("UPDATE node SET status = 1 WHERE nid =".$entity->nid)->execute;
+					break;
+			}
+			db_query("UPDATE workflow_node SET sid = ".$workflow." WHERE nid =".$entity->nid)->execute;
+			db_query("UPDATE workflow_node_history SET sid = ".$workflow." WHERE nid =".$entity->nid)->execute;
+		}
+	}
+}
+function is_not_marked_with_solutions($tid) {
+	global $language;
+	$or = db_or();
+	$or->condition('ms.language', $language->language);
+	$or->condition('ms.language', 'und');
+	$query = db_select('field_data_field_market_segments', 'ms');
+	$query->join('field_data_field_intel_iot_market_ready_sol', 'term_iot', 'ms.entity_id = term_iot.entity_id');
+	$query->join('node', 'n', 'n.nid = term_iot.entity_id');
+	$query->condition('term_iot.field_intel_iot_market_ready_sol_tid', 1416);
+	$query->condition('ms.field_market_segments_tid', $tid);
+	$query->condition('n.status', 1);
+	$query->condition($or);
+	$term_result = $query ->fields('ms', array('entity_id'))->execute()->fetchCol();
+	$access = TRUE;
+	if(sizeOf($term_result) > 0){
+		foreach($term_result as $nid){
+			 $node = node_load($nid);
+			if(node_access('view', $node)){
+				$access = FALSE;
+				break;
+			}
+		}
+	}
+	return $access;
+}
+
+function is_not_marked_with_iot_solutions($tid){
+	global $language;
+	$or = db_or();
+	$or->condition('n.language', $language->language);
+	$or->condition('n.language', 'und');
+	/* $or = db_or();
+	$or->condition('ms.language', $language->language);
+	$or->condition('ms.language', 'und'); */
+	$query = db_select('field_data_field_market_segments', 'ms');
+	$query->join('field_data_field_intel_iot_market_ready_sol', 'term_iot', 'ms.entity_id = term_iot.entity_id');
+	$query->join('node', 'n', 'ms.entity_id = n.nid');
+	$query->condition('term_iot.field_intel_iot_market_ready_sol_tid', 1416);
+	$query->condition('ms.field_market_segments_tid', $tid);
+	$query->condition($or);
+	$term_result = $query ->fields('ms', array('entity_id'))->countQuery()->execute()->fetchField();
+	$result = ($term_result > 0) ? FALSE : TRUE;
+	return $result;
+}
+/* enable private message fro ODM users with Builder, Buyer and Supply Chain roles */
+ function enable_pm_users() {
+	 $uids = db_query("select DISTINCT  u.uid from users u, users_roles ur where u.uid=ur.uid and ur.rid IN (33,34,35,36)")->fetchCol();
+	 foreach($uids as $uid) {
+        if($uid != 0) {
+	    db_delete('pm_disable')
+          ->condition('uid', $uid)
+          ->execute();
+	    }
+     }	  
+ }
+ /*
+function mark_solution_intel_only(){
+	ini_set('memory_limit', '2G');
+	ini_set('default_socket_timeout', 48000);
+    $nids = db_query("select nid from node where nid not in (SELECT distinct(entity_id) FROM field_data_field_access) and type in ('solution') LIMIT 2000")->fetchCol();
+	foreach (node_load_multiple($nids) as $node) {
+		 $node->field_access['und'][0]['value'] = 2;
+		 $node->field_solution_type['und'][0]['value'] = "embedded iot";
+		if($node->status = 1){
+			$node->revision_moderation = FALSE;
+			$node->is_current = TRUE;
+		}
+		if($node->status == 0){
+			$node->status = 0;
+		}
+	  node_save($node);
+	  echo $node->title." ---------- ".$node->nid." -------- Saved \n";
+	}
+}
+*/
+function update_faefse(){
+	/*$cfse_users =  db_query("select DISTINCT field_client_fae_target_id FROM field_data_field_client_fae")->fetchCol();
+	foreach ($cfse_users as $cfse_user) {
+		$userObj = user_load($cfse_user);
+		//echo 'before:<pre>';print_r($userObj->roles);
+		if (!in_array('Intel Field Applications Engineer',$userObj->roles)) {
+			//echo 'before:<pre>';print_r($userObj->roles);exit;
+			$insert_query = db_insert('users_roles')
+					->fields(array('uid' => $userObj->uid,
+								'rid' => 11,
+								)
+							)
+					->execute(); 
+		}
+		echo $userObj->uid."-".$userObj->name."\n";
+		//echo 'after:<pre>';print_r($userObj->roles);
+	}*/
+	$cfse_users =  db_query("select DISTINCT field_client_fse_target_id FROM field_data_field_client_fse")->fetchCol();
+	foreach ($cfse_users as $cfse_user) {
+		$userObj = user_load($cfse_user);
+		//echo 'before:<pre>';print_r($userObj->roles);
+		if (!in_array('Intel Field Sales Engineer',$userObj->roles)) {
+			//echo 'before:<pre>';print_r($userObj->roles);exit;
+			$insert_query = db_insert('users_roles')
+					->fields(array('uid' => $userObj->uid,
+								'rid' => 12,
+								)
+							)
+					->execute(); 
+					echo $userObj->uid."-".$userObj->name."\n";
+		}
+		
+		//echo 'after:<pre>';print_r($userObj->roles);
+	}
+}
+
+function download_csv(){
+	$companies_details = db_query("SELECT group_concat(c.entity_id) AS uid, group_concat(mail) AS mail, group_concat(DISTINCT(r.name)) AS partner_role, field_erpm_company_number_value, field_company_target_id, title FROM field_data_field_company AS c
+							INNER JOIN users as u ON entity_id = uid
+							INNER JOIN node as n ON nid = field_company_target_id
+							INNER JOIN field_data_field_erpm_company_number as erpm_c ON erpm_c.entity_id = nid
+							INNER JOIN field_data_field_partner_role AS pr ON field_company_target_id = pr.entity_id
+							INNER JOIN role AS r On r.rid = pr.field_partner_role_rid
+							WHERE n.status = 1 AND c.bundle = 'user' AND n.language = 'en'
+							GROUP BY field_company_target_id")->fetchAll();
+
+	echo "NID,TITLE,COMPANY ERPM NUMBER,PARTNER ROLE,LIST OF USERS\n";
+	foreach($companies_details as $company_detail){
+		echo $company_detail->field_company_target_id.',"'.$company_detail->title.'",'.$company_detail->field_erpm_company_number_value.',"'.$company_detail->partner_role.'","'.$company_detail->mail.'"'."\n";
+	}
+	
+}
+
+function update_modified_comp_sols(){
+	//$translated_nodes = translation_node_get_translations(44059);
+	//echo '<pre>';print_r($translated_nodes);exit;
+	//$nids = db_query("select nid from node where language = 'en' and type = 'solution' limit 10")->fetchCol();
+	$nids = db_query("SELECT DISTINCT(nid) FROM node_access WHERE gid = 123")->fetchCol();
+	//echo '<pre>';print_r($nids);exit;
+	foreach ($nids as $nid) {
+		$node = node_load($nid);
+		$status = $node->status;
+		if($node->status = 1){
+			$node->revision_moderation = FALSE;
+			$node->is_current = TRUE;
+		}
+		node_save($node);
+		db_query("UPDATE node SET status = ". $status. " WHERE nid = ".$nid)->execute();
+		echo $nid." -------------- ".$node->title." ---------- SAVED\n";
+		  //}
+	  //} 
+	}
+}
+
+
+
+function update_translation_sync(){
+	ini_set('memory_limit', '2G');
+	ini_set('default_socket_timeout', 48000);
+	//$nids = db_query("select nid from node where language = 'en' and type = 'solution' AND nid BETWEEN 1 AND 1000")->fetchCol();
+    //echo print_r($nids);
+
+    $nids = array(47459,47460);
+
+
+//    $nids = array(31191,19188);
+    //echo print_r($nids);
+	foreach ($nids as $nid) {
+	  /*$translated_nodes = translation_node_get_translations($nid);
+		if (!empty($translated_nodes)) {
+		  $trans_nids[] = $nid;
+	  }
+	}
+	//echo print_r($trans_nids);
+	foreach ($trans_nids as $trans_nid) {*/
+		//echo "************************************".$trans_nid;
+		$node = node_load($nid);
+		//echo '<pre>';print_r($);
+		$status = $node->status;
+		if($node->status = 1){
+			$node->revision_moderation = FALSE;
+			$node->is_current = TRUE;
+		}
+		node_save($node);
+		db_query("UPDATE node SET status = ". $status. " WHERE nid = ".$nid)->execute();
+		echo $nid." -------------- ".$node->title." ---------- SAVED\n";
+	}
+	//echo '<pre>';print_r($trans_nids);exit;
+}
+
+function update_translation_display(){
+	ini_set('memory_limit', '2G');
+	ini_set('default_socket_timeout', 48000);
+    //$nids = db_query("SELECT tnid FROM node WHERE language = 'ja' AND nid NOT IN (SELECT DISTINCT(entity_id) FROM field_data_field_solution_type) AND tnid IN (SELECT DISTINCT(entity_id) FROM field_data_field_solution_type)")->fetchcol();
+	//$nids = db_query("SELECT nid FROM node where nid IN (select nid from node_access where realm = 'all' and nid NOT IN (SELECT DISTINCT(nid) from node_access where gid !=0)) and status = 1 and (language = 'en' or language = 'zh-hans' or language = 'ja') and type = 'solution' ORDER BY nid DESC LIMIT 10")->fetchCol();
+	
+	//$nids = array(23093, 27196, 27197, 27387, 27389);
+	$nids = array(28061, 28250);
+	$count = 0;
+	//$nids = array(1196);
+	foreach ($nids as $nid) {
+		$node = node_load($nid);
+		$status = $node->status;
+		$time = $node->changed;
+		$changed_by = db_query("SELECT uid FROM node_revision WHERE vid = (SELECT vid FROM node where nid = ".$nid.")")->fetchField();
+		if($node->status = 1){
+			$node->revision_moderation = FALSE;
+			$node->is_current = TRUE;
+		}
+		//echo "<pre>";
+		
+		//print_r($node->field_market_segments);
+		
+		node_save($node);
+		db_query("UPDATE node SET status = ". $status. " WHERE nid = ".$nid)->execute();
+		db_query("UPDATE node SET changed = ". $time. " WHERE nid = ".$nid)->execute();
+		db_query("UPDATE node_revision SET status = ". $status. " WHERE vid = (SELECT vid FROM node where nid = ".$nid.")")->execute();
+		db_query("UPDATE node_revision SET timestamp = ". $time. " WHERE vid = (SELECT vid FROM node where nid = ".$nid.")")->execute();
+		db_query("UPDATE node_revision SET uid = ". $changed_by. " WHERE vid = (SELECT vid FROM node where nid = ".$nid.")")->execute();
+		 
+		echo $nid." -------------- ".$node->title." ---------- SAVED With Status ---".$status."Modified By --- ".$changed_by."\n";
+		$count++;
+		
+	}
+	exit();
+	echo "COUNT: ".$count."\n";
+}
+
+function update_membership_tier(){
+	
+	ini_set('memory_limit', '2G');
+	ini_set('default_socket_timeout', 48000);
+    //$nids = db_query("SELECT tnid FROM node WHERE language = 'ja' AND nid NOT IN (SELECT DISTINCT(entity_id) FROM field_data_field_solution_type) AND tnid IN (SELECT DISTINCT(entity_id) FROM field_data_field_solution_type)")->fetchcol();
+	$nids = db_query("SELECT DISTINCT(entity_id) FROM field_data_field_partner_role WHERE bundle = 'company' AND entity_id NOT IN (SELECT entity_id FROM field_data_field_membership_tier WHERE field_membership_tier_tid = 8034) ORDER BY entity_id")->fetchCol();
+	$count = 0;
+	//$nids = array(1196);
+	foreach ($nids as $nid) {
+		$node = node_load($nid);
+		$status = $node->status;
+		$time = $node->changed;
+		$changed_by = db_query("SELECT uid FROM node_revision WHERE vid = (SELECT vid FROM node where nid = ".$nid.")")->fetchField();
+		if($node->status = 1){
+			$node->revision_moderation = FALSE;
+			$node->is_current = TRUE;
+		}
+		$node->field_membership_tier['und'][][tid] = 8034;
+		node_save($node);
+		db_query("UPDATE node SET status = ". $status. " WHERE nid = ".$nid)->execute();
+		db_query("UPDATE node SET changed = ". $time. " WHERE nid = ".$nid)->execute();
+		db_query("UPDATE node_revision SET status = ". $status. " WHERE vid = (SELECT vid FROM node where nid = ".$nid.")")->execute();
+		db_query("UPDATE node_revision SET timestamp = ". $time. " WHERE vid = (SELECT vid FROM node where nid = ".$nid.")")->execute();
+		db_query("UPDATE node_revision SET uid = ". $changed_by. " WHERE vid = (SELECT vid FROM node where nid = ".$nid.")")->execute();
+		
+		echo $nid." -------------- ".$node->title." ---------- MARKED ODM/LOEM With Status ---".$status."Modified By --- ".$changed_by."\n";
+		$count++;
+	}
+	echo "COUNT: ".$count."\n";
+}
+
+
+function intel_ea_customizations_node_insert($node){
+//	echo "<pre>"; print_r($node); exit();
+	if($node->type == 'solution'){
+		//echo "<pre>"; print_r($_POST);// exit();
+		//echo "<pre>"; print_r($node); exit();
+		
+		if($_POST[field_intel_iot_market_ready_sol]['und'][1416] === 1416){
+			$already_iot = db_query("SELECT count(nid) FROM field_data_field_intel_iot_market_ready_sol
+					WHERE nid = ".$node->nidid."
+					AND vid = ".$node->vid."
+					AND field_intel_iot_market_ready_sol_tid = 1416")->execute();
+			if($already_iot < 1){
+				db_query("INSERT INTO field_data_field_intel_iot_market_ready_sol VALUES ('node', 'solution', 0, ".$node->id.", ".$node->vid.", 'lamguage', 0, 1416)")->execute();
+				db_query("INSERT INTO field_revision_field_intel_iot_market_ready_sol VALUES ('node', 'solution', 0, ".$node->id.", ".$node->vid.", 'lamguage', 0, 1416)")->execute();
+			}
+			
+		}
+	}
+}
+
+function intel_ea_customizations_node_update($node){
+//	echo "<pre>"; print_r($node); exit();
+	if($node->type == 'solution'){
+		//echo "<pre>"; print_r($_POST);// exit();
+		//echo "<pre>"; print_r($node); exit();
+		//echo $_POST[field_intel_iot_market_ready_sol]['und'][1416]; exit();
+		if($_POST[field_intel_iot_market_ready_sol]['und'][1416] == 1416){
+			//echo "hai"; exit();
+			$already_iot = db_query("SELECT count(entity_id) FROM field_data_field_intel_iot_market_ready_sol
+					WHERE entity_id = ".$node->nid."
+					AND revision_id = ".$node->vid."
+					AND field_intel_iot_market_ready_sol_tid = 1416")->execute();
+					echo "SELECT count(entity_id) FROM field_data_field_intel_iot_market_ready_sol
+					WHERE entity_id = ".$node->nid."
+					AND revision_id = ".$node->vid."
+					AND field_intel_iot_market_ready_sol_tid = 1416";
+				//echo $already_iot; exit();
+			if($already_iot < 1){
+				
+				db_query("INSERT INTO field_data_field_intel_iot_market_ready_sol VALUES ('node', 'solution', 0, ".$node->nid.", ".$node->vid.", 'und', 0, 1416)")->execute();
+				db_query("INSERT INTO field_revision_field_intel_iot_market_ready_sol VALUES ('node', 'solution', 0, ".$node->nid.", ".$node->vid.", 'und', 0, 1416)")->execute();
+			}
+			
+		}
+	}
+}
+function intel_ea_customizations_form_node_form_alter($form, &$form_state) {
+  //example_language_list returns an array in the form of ("en"=>"English") etc
+  $form['language']['#options'] = example_language_list($form['#node'], TRUE);
+  if (!i18n_node_language_options($node, 'required')) {
+    $form['language']['#options'] = ($form['language']['#options']);
+  }
+ return $form;
+}
+function example_language_list (){
+	return array("en" => "English","ja" => "Japanese","zh-hans" => "Chinese, Simplified");
+}
+
+function save_processors_with_2_in_1(){
+        //$tids = db_query("SELECT tid, name FROM taxonomy_term_data WHERE vid = 12 AND tid < 1300 AND tid NOT IN (SELECT entity_id FROM field_data_field_term_categories WHERE field_term_categories_tid IN(124,8000,1456,1458)) ORDER BY tid")->fetchAll();
+        //$tids = db_query("SELECT tid, name FROM taxonomy_term_data WHERE vid = 12 AND tid NOT IN (SELECT entity_id FROM field_data_field_term_categories WHERE field_term_categories_tid IN(124,8000,1456,1458)) ORDER BY tid")->fetchAll();
+		$tids = db_query("SELECT tid, name FROM taxonomy_term_data WHERE vid = 12
+						AND tid NOT IN (SELECT entity_id FROM field_data_field_term_categories WHERE field_term_categories_tid = 8000)
+						ORDER BY tid")->fetchAll();
+        //echo "<pre>";
+        //print_r($tids); exit();
+        foreach($tids as $tid){
+                $term = taxonomy_term_load($tid->tid);
+                $term->field_term_categories['und'][]['tid'] = 124;
+                $term->field_term_categories['und'][]['tid'] = 8000;
+                $term->field_term_categories['und'][]['tid'] = 1456;
+                $term->field_term_categories['und'][]['tid'] = 1458;
+                taxonomy_term_save($term);
+                echo $tid->tid." ---- ".$tid->name."\n";
+
+        }
+        //echo "<pre>"; print_r($term); exit();
+}
+
+
+function Indus_app_network_security_taxonomy_mapping(){
+
+	// $tids = db_query(" select nid from node where status=1 and language='en' and nid in  (select distinct(entity_id) from field_data_field_market_segments where field_market_segments_tid=1037 ) ")->fetchCol();
+    
+	// $nids = db_query(" select nid from node where nid='47419' ")->fetchCol();
+	
+	$nids = array(47419,286,333);
+	
+	foreach($nids as $nid) {
+			
+			echo $nid;
+			
+			$node = node_load($nid);
+			
+			print_r($node->field_market_segments);
+	}
+
+
+}

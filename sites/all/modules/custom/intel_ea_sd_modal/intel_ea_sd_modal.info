@@ -1,0 +1,5 @@
+name = Intel EA SD Modal
+description = A Ctools modal for the Intel EA Solutions Directory view.
+core = 7.x
+package = Intel EA
+dependencies[] = ctools

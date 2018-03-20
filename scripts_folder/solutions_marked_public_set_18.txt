@@ -1,0 +1,301 @@
+Clinic DPC 210 ---------- 24640 -------- Saved 
+HP RP7 Retail System, Model 7800 ---------- 24641 -------- Saved 
+HP RP2 Retail System ---------- 24642 -------- Saved 
+2I385C シリーズ - 2.5 インチ SBC、Intel® Atom® E3815/E3845 シングル/クアッドコア CPU/チップセット搭載 ---------- 24643 -------- Saved 
+3I770 A/C シリーズ - 第 3 世代 Intel® Core™ i7/i5/i3 モバイル・プロセッサーを搭載した 3.5 インチの SBC ボード ---------- 24644 -------- Saved 
+3I380D シリーズ 3.5 インチ SBC、Intel® Atom® E3815/E3845 シングル/クアッドコア CPU/チップセット搭載 ---------- 24645 -------- Saved 
+Seavo SV1-18026P 高性能 Mini-ITX マザーボード ---------- 24646 -------- Saved 
+3I268A/C-Intel® Atom® N2600/N2800 3.5 インチ SBC ---------- 24647 -------- Saved 
+TRACe V304-TR ---------- 24648 -------- Saved 
+TRACe B304-TR - 認可ファンレス鉄道コンピューターのベースライン ---------- 24649 -------- Saved 
+CSA-5100 - Intel® Xeon® Processor E3-1200 v3 ファミリー搭載の 1U ラックマウント・ネットワーク・アプライアンス ---------- 24650 -------- Saved 
+CSA-5200 - Intel® Xeon® Processor E3-1200 v3 ファミリー搭載の 2U ラックマウント・ネットワーク・アプライアンス ---------- 24651 -------- Saved 
+POC-W242 - ポイント・オブ・ケア端末、24 インチのワイドスクリーン IPS TFT ディスプレイと第 4 世代 Intel® Core™ i7 プロセッサー搭載 ---------- 24652 -------- Saved 
+ MICA-071 - 7 インチ Win 8 ポケットパッド ---------- 24653 -------- Saved 
+Netarium™ システム管理モジュール ---------- 24654 -------- Saved 
+NA850 -- 2U ラックマウント・ネットワーク・アプライアンス・プラットフォーム LGA2011 Intel® Xeon® E5-2600 v3 ファミリー・プロセッサー Intel® C610、最大 42 LANs ---------- 24655 -------- Saved 
+第 4 世代 Intel® Xeon® プロセッサー E3 をベースにした  1U キャリアグレード・サーバー ---------- 24656 -------- Saved 
+Mi エンベデッド ---------- 24657 -------- Saved 
+FW-8896 は、Intel® Xeon® E5-2600 v3/v4 シリーズ CPU と Intel® C612 チップセットをベースにした、高性能 2U ネットワーク・セキュリティ・システムです。 ---------- 24658 -------- Saved 
+ITX4011 ---------- 24659 -------- Saved 
+SBS 産業用パネル PC - SPC-1010B ---------- 24660 -------- Saved 
+ADLINK aTCA-9710 - デュアル Intel® Xeon® E5-2600 v3 ファミリー 40G イーサネット AdvancedTCA® プロセッサー・ブレード ---------- 24661 -------- Saved 
+TRACe V304-TR ---------- 24662 -------- Saved 
+TRACe B304-TR ---------- 24663 -------- Saved 
+ITX-D81 VER:1.1 ---------- 24664 -------- Saved 
+ITX-N29 VER:1.0 ---------- 24665 -------- Saved 
+EPIC-N85 VER:1.0 ---------- 24666 -------- Saved 
+ARES-5803 プログラム可能なエンベデッド・コントローラー  ---------- 24668 -------- Saved 
+M2150 21.5 インチ・ファンレス医療ステーション ---------- 24669 -------- Saved 
+XPOS-956 是一款高性能一体化 POS 终端。 ---------- 24672 -------- Saved 
+XPOS-956、高パフォーマンスのオールインワン POS 端末 ---------- 24673 -------- Saved 
+G210-H4G ---------- 24674 -------- Saved 
+G210-H4G ---------- 24675 -------- Saved 
+X-POS 722 创新性的超紧凑型无风扇 POS 终端采用 Intel® Celeron® N2930 ---------- 24676 -------- Saved 
+Intel® Celeron® N2930 搭載の革新的な超小型ファンレス POS 端末  X-POS 722 ---------- 24677 -------- Saved 
+SharpStreamer™ PCIE-7207 高密度视频加速器 ---------- 24678 -------- Saved 
+SharpStreamer™ PCIE-7207 高密度ビデオ・アクセラレーター ---------- 24679 -------- Saved 
+时尚现代的动态无风扇触摸屏 POS 终端 - X-POS 752 ---------- 24680 -------- Saved 
+スタイリッシュなダイナミック・ファンレス・タッチ POS 端末 - X-POS 752 ---------- 24681 -------- Saved 
+SYMKLOUD MS2900 Web ---------- 24684 -------- Saved 
+SYMKLOUD MS2900 Web ---------- 24685 -------- Saved 
+Moxa DA-682A 19 英寸机架式计算机 ---------- 24686 -------- Saved 
+Moxa DA-682A 19 インチ・ラックマウント・コンピューター ---------- 24687 -------- Saved 
+MPC-2190 系列 19 英寸无风扇液晶电脑 ---------- 24688 -------- Saved 
+MPC-2190 シリーズ 19 インチ ファンレス・パネル・コンピューター ---------- 24689 -------- Saved 
+X-POS 755 无缝平板无风扇多点触摸 POS 终端  ---------- 24690 -------- Saved 
+シームレスなフラットベゼル・ファンレス・マルチタッチ POS 端末の X POS 755 ---------- 24691 -------- Saved 
+TRACe G304-TR ---------- 24698 -------- Saved 
+TRACe G304-TR ---------- 24699 -------- Saved 
+Moxa DA-820 IEC 61850 本地 PRP/HSR 计算机 ---------- 24700 -------- Saved 
+Moxa DA-820 IEC 61850 ネイティブ PRP/HSR コンピューター ---------- 24701 -------- Saved 
+Moxa V2616A 高性能网络视频录像机计算机 ---------- 24702 -------- Saved 
+Moxa V2616A 高性能ネットワーク・ビデオレコーダー・コンピューター ---------- 24703 -------- Saved 
+X-POS 852 - 双核处理器和无风扇热技术 ---------- 24704 -------- Saved 
+X-POS 852 - デュアルコア・プロセッサーとファンレス熱テクノロジー ---------- 24705 -------- Saved 
+X-POS 855 / 854 是一款高效的一体式 POS 终端。 ---------- 24706 -------- Saved 
+X-POS 855/854 は高効率 オールインワン POS 端末。 ---------- 24707 -------- Saved 
+X-POS 950 - 零售业 POS 终端采用第 2 代 Intel® Core™ i3/ i5/ i7/ Pentium® G850 / Celeron® G540 四核和双核 CPU ---------- 24708 -------- Saved 
+X-POS 950 - 小売 POS 端末、第 2 世代 Intel® Core™ i3/ i5/ i7/ Pentium® G850 / Celeron® G540 クアッドコア・デュアルコア CPU ---------- 24709 -------- Saved 
+X-POS 955 / 954 是高性能无挡板多点触摸 POS 终端。 ---------- 24710 -------- Saved 
+X-POS 955/954 はベゼルなしの高性能マルチタッチ POS 端末です。 ---------- 24711 -------- Saved 
+conga-MA3 COM Express 10 型模块采用第 3 代 Intel® Atom™ 处理器和 ECC 内存 ---------- 24714 -------- Saved 
+conga-IA3  ---------- 24724 -------- Saved 
+conga-IA3 ---------- 24725 -------- Saved 
+CP3002-RC / CP3002-RA ---------- 24728 -------- Saved 
+CP6005-SA ---------- 24729 -------- Saved 
+PRA-CB-HM87 ---------- 24730 -------- Saved 
+PRA-OPS-HM76A ---------- 24731 -------- Saved 
+Intelligent Agriculture - Planting and Breeding Solution ---------- 24732 -------- Saved 
+Intelligent Agriculture – Smart Planting and Breeding System Solution ---------- 24733 -------- Saved 
+CP6004-SA ---------- 24736 -------- Saved 
+CP3003-SA ---------- 24737 -------- Saved 
+CP3002 ---------- 24738 -------- Saved 
+CP6004-RA_RC ---------- 24739 -------- Saved 
+CP6003-RA_RC ---------- 24740 -------- Saved 
+CPS3003-SA ---------- 24741 -------- Saved 
+CP6002 ---------- 24742 -------- Saved 
+PRA-EC-D525T ---------- 24747 -------- Saved 
+PRA-EC-4503 3.5寸嵌入式主板 ---------- 24749 -------- Saved 
+PRA-EC-4503 3.5寸嵌入式主板 ---------- 24750 -------- Saved 
+PRA-EC-4501 嵌入式工控主板 ---------- 24751 -------- Saved 
+MD70-HB1 服务器主板 ---------- 24753 -------- Saved 
+AGS2 ---------- 24755 -------- Saved 
+EHS8 ---------- 24756 -------- Saved 
+NCR Real POS™ XR7 ---------- 24757 -------- Saved 
+BGS8 ---------- 24758 -------- Saved 
+EHS6T/EHS5T ---------- 24759 -------- Saved 
+BGS5T ---------- 24760 -------- Saved 
+BCM BI255-1900J-IoT-DEV 开发工具包可为 VAR 和 OEM 提供成熟的构建基块基础，是基于 Intel® 的物联网 （IoT） 网关解决方案。 ---------- 24762 -------- Saved 
+基于 VP B1x/msd 第 4 代 Intel® Core™ 的 VME 板   ---------- 24764 -------- Saved 
+GOT3187W-881-PCT - 18.5" WXGA TFT 无风扇多点触摸液晶电脑，采用 LGA1150 插座第 4 代 Intel® Core™ i7/i5/i3 和 Celeron® 处理器 （0°C ~ +40°C） ---------- 24765 -------- Saved 
+eBOX560-880-FL -- 无风扇嵌入式系统采用 Intel® Celeron® 2980U 1.6 GHz / Core™ i5 4300U 1.9 GHz ULT SoC、HDMI/DisplayPort、2 个千兆以太网局域网、4 个 USB 3.0、2 个 COM 和 PCIe 迷你卡 ---------- 24766 -------- Saved 
+eBOX639-830-FL — 无风扇嵌入式系统采用 Intel® Atom® D2550 1.86GHz 处理器、1 个 LPT 和 2 个 PCI 插槽 ---------- 24767 -------- Saved 
+ZeroOne LY-101 多媒体广播平台 ---------- 24768 -------- Saved 
+ZeroOne LY-104 网络安全平台 ---------- 24769 -------- Saved 
+ ZeroOne LY-102 工业计算机 ---------- 24770 -------- Saved 
+ZeroOne LY-103 云终端 ---------- 24771 -------- Saved 
+ZeroOne NANO-1037-1CIR 迷你主板 ---------- 24772 -------- Saved 
+ZeroOne LAN-1037SFP-8L 主板 ---------- 24773 -------- Saved 
+ZeroOne ITX-D525-ATPC 主板 ---------- 24774 -------- Saved 
+凌壹 （zeroone） ITX-1037T-2CD8 ---------- 24775 -------- Saved 
+NVR SV1-190A6 高性能迷你 ITX 主板 ---------- 24776 -------- Saved 
+Seavo SV1a-19014P-B 高性能超薄迷你 ITX 主板 ---------- 24777 -------- Saved 
+GOT5100T-834 — 配备 Intel® Celeron® 处理器 J1900 的 10.4" SVGA TFT 无风扇触摸式液晶电脑 ---------- 24778 -------- Saved 
+Seavo SV1a-19014P 高性能超薄迷你 ITX 主板 ---------- 24779 -------- Saved 
+Seavo SV1-19028P-B 高性能迷你 ITX 主板 ---------- 24780 -------- Saved 
+Seavo SV1-19028P 高性能迷你 ITX 主板 ---------- 24781 -------- Saved 
+兼容 REC-2740 MIL-STD-810G 和 IP-67 级嵌入式箱型电脑 ---------- 24782 -------- Saved 
+X-TPC 790 - 耐用型平板电脑   ---------- 24783 -------- Saved 
+X-TPC 780 - 耐用型平板电脑 ---------- 24784 -------- Saved 
+X-TPC 770 - 耐用型平板电脑 ---------- 24785 -------- Saved 
+Seavo SV1a-18014P-B 高性能超薄迷你 ITX 主板 ---------- 24787 -------- Saved 
+Seavo SV1a-18014P 高性能超薄迷你 ITX 主板 ---------- 24788 -------- Saved 
+Seavo SV1-18026 高性能迷你 ITX 主板 ---------- 24789 -------- Saved 
+无风扇嵌入式计算机 - BOXPC 65 ---------- 24790 -------- Saved 
+BOXPC 82 无风扇嵌入式工控机配备 Intel® Atom® D525 双核 1.8GHz CPU 和最高 4GB 的 DDR3 SDRAM  ---------- 24791 -------- Saved 
+BOXPC 95 是一款高性能工业计算机。 ---------- 24792 -------- Saved 
+Boxster 5 无风扇嵌入式箱式电脑 ---------- 24793 -------- Saved 
+Boxster 3 无风扇嵌入式箱式电脑 ---------- 24794 -------- Saved 
+Boxster 1 无风扇嵌入式箱式电脑 ---------- 24795 -------- Saved 
+CAR-5041 - 2U 机架安装通信设备  ---------- 24796 -------- Saved 
+VP E2x/msd - Intel® Atom® VMEbus 单板计算机 ---------- 24797 -------- Saved 
+PCOM-B633VG ---------- 24798 -------- Saved 
+FileCruiser VR2600  ---------- 24799 -------- Saved 
+FileCruiser VA2600  ---------- 24800 -------- Saved 
+X-PPC 852 - 最新双核无风扇液晶电脑 ---------- 24801 -------- Saved 
+X-PPC 855 / 854 无缝无挡板无风扇多点触摸液晶电脑 ---------- 24802 -------- Saved 
+X-PPC 950 液晶电脑采用第 2 代 Intel® Core™ i3/ i5/ i7/ Pentium® G850 四核和双核 CPU ---------- 24803 -------- Saved 
+X-PPC 955 / 954 是一款高性能纯平液晶电脑，配备投射电容式触摸屏，支持多点触摸。 ---------- 24804 -------- Saved 
+XPPC-956 是一款高性能液晶电脑。 ---------- 24805 -------- Saved 
+机架集成服务  ---------- 24806 -------- Saved 
+CloudMax 融合云基础设施平台   ---------- 24807 -------- Saved 
+开放式计算项目 （OCP） 解决方案  ---------- 24808 -------- Saved 
+PHAT-Data 大数据 / Hadoop 集群解决方案  ---------- 24809 -------- Saved 
+StorMax 存储解决方案  ---------- 24810 -------- Saved 
+ClusterMax 先端 HPC 群集 ---------- 24811 -------- Saved 
+ClusterMax 工作组 HPC 集群  ---------- 24812 -------- Saved 
+ClusterMax Stor-X 存储集群 ---------- 24813 -------- Saved 
+ServMax™ XG-4802Gxp 4U Xeon Phi 并行处理机架式服务器  ---------- 24814 -------- Saved 
+ServMax™ PSC-6gxp 4U / Tower Xeon Phi 并行处理工作站  ---------- 24815 -------- Saved 
+ServMax™ PSC-6pxp 4U / Tower Xeon Phi 并行处理工作站  ---------- 24816 -------- Saved 
+ServMax™ XG-2401Gxp 2U Xeon Phi 并行处理机架式服务器 ---------- 24817 -------- Saved 
+ServMax™ Xr-2401Gxp 2U Xeon Phi 并行处理机架式服务器  ---------- 24818 -------- Saved 
+ServMax™ XG-2402Gxp 2U Xeon Phi 并行处理机架式服务器 ---------- 24819 -------- Saved 
+ServMax™ XG-1301Gxp 1U Xeon Phi 并行处理机架式服务器 ---------- 24820 -------- Saved 
+Windows 嵌入式开发  ---------- 24821 -------- Saved 
+ServMax™ Xr-1201Gxp 1U Xeon Phi 并行处理机架式服务器 ---------- 24822 -------- Saved 
+StorMax™ XG-42302 36x3.5 英寸 Dirve 3U DP 存储服务器 ---------- 24823 -------- Saved 
+StorMax™ XG-42301 24x3.5 英寸 Drive 3U DP 存储服务器 ---------- 24824 -------- Saved 
+StorMax™ XG-41301 36x3.5" Drive 3U UP 存储服务器 ---------- 24825 -------- Saved 
+StorMax™ XG-32301 16x3.5" Drive 3U DP 存储服务器 ---------- 24826 -------- Saved 
+ServMax™ XG-28000 系列 2U 四节点计算机架式服务器  ---------- 24827 -------- Saved 
+X-PPC 722 - 理想的无风扇触摸屏液晶电脑 ---------- 24828 -------- Saved 
+X-PPC 710 Ideal Touch 无风扇触摸屏液晶电脑 ---------- 24829 -------- Saved 
+X-PPC 752 - 理想的无风扇触摸屏液晶电脑 ---------- 24830 -------- Saved 
+X-PPC 755 - 无缝平面挡板无风扇多点触摸液晶电脑 ---------- 24831 -------- Saved 
+X-PPC 725R - 理想的无风扇触摸屏液晶电脑 ---------- 24832 -------- Saved 
+CAR-5040 ---------- 24834 -------- Saved 
+ServMax™ XG-24201 / XG-24301 2U 双节点计算机架式服务器 ---------- 24835 -------- Saved 
+StorMax™ XG-22201 / XG-22301 2U DP 存储服务器 ---------- 24836 -------- Saved 
+StorMax™ XG-21301 2U 12x3.5" Drive UP 存储服务器  ---------- 24837 -------- Saved 
+ServMax™ XG-12201 / XG-12301 1U DP 计算机架式服务器 ---------- 24838 -------- Saved 
+ServMax™ XG-11301 1U Short Depth UP 计算机架式服务器 ---------- 24839 -------- Saved 
+StorMax™ Xr-42303 36x3.5 英寸 Drive 3U DP 存储服务器  ---------- 24840 -------- Saved 
+StorMax™ Xr-42302 24x3.5" Drive 3U DP 存储服务器 ---------- 24841 -------- Saved 
+StorMax™ Xr-32301 16x3.5 英寸 Drive 3U DP 存储服务器 ---------- 24842 -------- Saved 
+ServMax™ Xr-28000 系列 2U 四节点计算机架式服务器  ---------- 24843 -------- Saved 
+ServMax™ Xr-24203 / Xr-24303 2U 四插座计算机架式服务器 ---------- 24844 -------- Saved 
+StorMax™ Xr-22201 / Xr-22301 2U DP 存储服务器  ---------- 24845 -------- Saved 
+Supermicro MicroBlade MBI-6128R-T2 ---------- 24846 -------- Saved 
+ServMax™ Xr-12301 / Xr-12201 1U DP 计算机架式服务器  ---------- 24847 -------- Saved 
+ServMax™ X-11306 1U UP 计算机架式服务器  ---------- 24848 -------- Saved 
+ServMax™ X-11305 1U UP 计算机架式服务器 ---------- 24849 -------- Saved 
+OEM 服务器设备制造  ---------- 24850 -------- Saved 
+ATCA-7480 ---------- 24851 -------- Saved 
+由 Avnet 推出的 Intel® DK300 系列物联网 （IoT） 网关解决方案 ---------- 24853 -------- Saved 
+Avnet によるモノのインターネット (IoT) の Intel® DK300 シリーズ・ゲートウェイ・ソリューション ---------- 24854 -------- Saved 
+由 Avnet 推出的 Intel® DK200 系列物联网 （IoT） 网关解决方案 ---------- 24855 -------- Saved 
+Avnet によるモノのインターネット (IoT) の Intel® DK200 シリーズ・ゲートウェイ・ソリューション ---------- 24856 -------- Saved 
+由 Avnet 推出的 Intel® DK100 系列物联网 （IoT） 网关解决方案 ---------- 24857 -------- Saved 
+Avnet によるモノのインターネット (IoT) の Intel® DK100 シリーズ・ゲートウェイ・ソリューション ---------- 24858 -------- Saved 
+由 Avnet 推出的 Intel® DK50 系列物联网 （IoT） 网关解决方案 ---------- 24859 -------- Saved 
+Avnet によるモノのインターネット (IoT) の Intel® DK50 シリーズ・ゲートウェイ・ソリューション ---------- 24860 -------- Saved 
+由 Arrow 推出的 Intel® DK300 系列物联网 （IoT） 网关解决方案 ---------- 24861 -------- Saved 
+Arrow によるモノのインターネット (IoT) の Intel® DK300 シリーズ・ゲートウェイ・ソリューション ---------- 24862 -------- Saved 
+由 Arrow 推出的 Intel® DK200 系列物联网 （IoT） 网关解决方案 ---------- 24863 -------- Saved 
+Arrow によるモノのインターネット (IoT) の Intel® DK200 シリーズ・ゲートウェイ・ソリューション ---------- 24864 -------- Saved 
+由 Arrow 推出的 Intel® DK100 系列物联网 （IoT） 网关解决方案 ---------- 24865 -------- Saved 
+Arrow によるモノのインターネット (IoT) の Intel® DK100 シリーズ・ゲートウェイ・ソリューション ---------- 24866 -------- Saved 
+由 Arrow 推出的 Intel® DK50 系列物联网 （IoT） 网关解决方案 ---------- 24867 -------- Saved 
+Arrow によるモノのインターネット (IoT) の Intel® DK50 シリーズ・ゲートウェイ・ソリューション ---------- 24868 -------- Saved 
+UTC-W101B ---------- 24869 -------- Saved 
+GOT3187W-881-PCT -- Ruggedized Multi-touch 18.5" PCAP Panel PC with 4th Generation Intel® Core™ Processor ---------- 24870 -------- Saved 
+UTC-W101BF ---------- 24871 -------- Saved 
+CEM880 -- Basic-size COM Express Type 6 module with 5th Generation Intel® Core™ ---------- 24872 -------- Saved 
+NCS2-IXM407 ---------- 24873 -------- Saved 
+PRA-EC-N2600SD 嵌入式工控主板 ---------- 24874 -------- Saved 
+NCS2-IQM201 Dual-port 40GbE QSFP NIC Module with Intel® XL710 Ethernet Controller ---------- 24875 -------- Saved 
+ENVADER® V - Telematic System ---------- 24876 -------- Saved 
+AIMB-Q35GM ---------- 24879 -------- Saved 
+GB-BXBT-3825 - IoT Gateway Solution ---------- 24881 -------- Saved 
+NH1 – Smallest Windows Compute Stick with Intel® Atom® Processor Z3735F ---------- 24882 -------- Saved 
+SKY-8200 - 2U Carrier Grade Server based on Dual Intel® Xeon® E5-2600 v3 v4 Series Processors ---------- 24886 -------- Saved 
+SBC-E3800无风扇计算机 ---------- 24887 -------- Saved 
+ASMB-823I ---------- 24888 -------- Saved 
+ASMB-923 ---------- 24889 -------- Saved 
+IPC934-230-FL - 4-slot Fanless Barebone System with 4th Generation Intel® Core™ i7/i5/i3 and Celeron® Processor up to 3.3 GHz, Intel® Q87 Chipset, PCIe and PCI Slots ---------- 24890 -------- Saved 
+MANO840 -- Mini ITX Motherboard powered by Intel® Quad-Core SoC ---------- 24892 -------- Saved 
+CAPA841 -- Intel® Celeron® Processor J1900/N2807 3.5-inch Embedded SBC with LVDS/VGA/HDMI, Dual LANs, SIM slot, and 2 PCI Express Mini Card ---------- 24893 -------- Saved 
+DSB320-842 Fanless Digital Signage Player Supports Intel® Celeron® J1900, SoC ---------- 24894 -------- Saved 
+MANO882 -- High-end Mini ITX Motherboard Supports Intel® Xeon® E3 Series, Intel® AMT 9.0 and TPM 1.2 ---------- 24895 -------- Saved 
+eBOX625-841-FL -- Intel® Atom® SoC Fanless Embedded Box System Supports Wide Temp and Dual Display ---------- 24896 -------- Saved 
+KBox A-201 ---------- 24899 -------- Saved 
+PROPORT Tab 10-A ---------- 24902 -------- Saved 
+Infoblox Network Control Solutions for DNS, DHCP and IP Address Management ---------- 24903 -------- Saved 
+MD70-HB1 サーバー・マザーボード ---------- 24904 -------- Saved 
+AGS2 ---------- 24906 -------- Saved 
+EHS8 ---------- 24907 -------- Saved 
+NCR Real POS™ XR7 ---------- 24908 -------- Saved 
+BGS8 ---------- 24909 -------- Saved 
+EHS6T/EHS5T ---------- 24910 -------- Saved 
+BGS5T ---------- 24911 -------- Saved 
+BCM BI255-1900J-IoT-DEV 開発キットは、付加価値再販業者と OEM にモノのインターネット (IoT) 向け Intel® ベースのゲートウェイ・ソリューション構築の基礎を提供します。 ---------- 24913 -------- Saved 
+VP B1x/msd 第 4 世代 Intel® Core™ ベースの VME ボード ---------- 24915 -------- Saved 
+GOT3187W-881-PCT -- LGA1150 ソケット 第 4 世代 Intel® Core™ i7/i5/i3 および Celeron® プロセッサー (0°C～+40°C)を搭載した 18.5 インチ WXGA TFT ファンレス・マルチ・タッチパネル・コンピューター ---------- 24916 -------- Saved 
+eBOX560-880-FL -- Intel® Celeron® 2980U 1.6 GHz / Core™ i5 4300U 1.9 GHz ULT SoC、HDMI/DisplayPort、2 GbE LAN、4 USB 3.0、2 COM、PCIe Mini カードを搭載したファンレス・エンベデッド・システム  ---------- 24917 -------- Saved 
+eBOX639-830-FL -- Intel® Atom® プロセッサー D2550 1.86GHz、1 つの LPTと 2 つの PCI スロットを搭載したファンレス・エンベデッド・システム ---------- 24918 -------- Saved 
+ZeroOne LY-101 マルチメディア・ブロードキャスト・プラットフォーム ---------- 24919 -------- Saved 
+ZeroOne LY-104 ネットワーク・セキュリティ・プラットフォーム ---------- 24920 -------- Saved 
+ ZeroOne LY-102 産業用コンピューター ---------- 24921 -------- Saved 
+ZeroOne LY-103 クラウド端末 ---------- 24922 -------- Saved 
+ZeroOne NANO-1037-1CIR MINI マザーボード ---------- 24923 -------- Saved 
+ZeroOne LAN-1037SFP-8L マザーボード ---------- 24924 -------- Saved 
+ZeroOne ITX-D525-ATPC マザーボード ---------- 24925 -------- Saved 
+凌壹（zeroone）ITX-1037T-2CD8 ---------- 24926 -------- Saved 
+NVR SV1-190A6 ハイパフォーマンス Mini-ITX マザーボード ---------- 24927 -------- Saved 
+Seavo SV1a-19014P-B ハイパフォーマンス Thin Mini-ITX マザーボード ---------- 24928 -------- Saved 
+GOT5100T-834 -- Intel® Celeron® プロセッサー J1900 を搭載の 10.4 インチ SVGA TFT ファンレス・タッチパネル・コンピューター ---------- 24929 -------- Saved 
+Seavo SV1a-19014P ハイパフォーマンス Thin Mini-ITX マザーボード ---------- 24930 -------- Saved 
+Seavo SV1-19028P-B 高性能 Mini-ITX マザーボード ---------- 24931 -------- Saved 
+Seavo SV1-19028P 高性能 Mini-ITX マザーボード ---------- 24932 -------- Saved 
+REC-2740 MIL-STD-810G 準拠、IP-67 認定エンベデッド・ボックス PC ---------- 24933 -------- Saved 
+X TPC 790 - 堅牢型タブレット PC ---------- 24934 -------- Saved 
+X-TPC 780 - 堅牢型タブレット PC ---------- 24935 -------- Saved 
+X-TPC 770 - 堅牢型タブレット PC ---------- 24936 -------- Saved 
+Seavo SV1a-18014P-B ハイパフォーマンス 薄型 Mini-ITX マザーボード ---------- 24938 -------- Saved 
+Seavo SV1a-18014P ハイパフォーマンス Thin Mini-ITX マザーボード ---------- 24939 -------- Saved 
+Seavo SV1-18026 高性能 Mini-ITX マザーボード ---------- 24940 -------- Saved 
+ファンレス・エンベデッド・コンピューター -  BOXPC 65 ---------- 24941 -------- Saved 
+Intel® Atom® D525 デュアルコア 1.8GHz CPU 、最大 4GB の DDR3 SDRAM を搭載した BOXPC 82 ファンレス・エンベデッド産業用ボックス PC ---------- 24942 -------- Saved 
+BOXPC 95 は高性能産業用 PC です。 ---------- 24943 -------- Saved 
+Boxster 5 ファンレス・エンベデッド・ボックス PC ---------- 24944 -------- Saved 
+Boxster 3 ファンレス・エンベデッド・ボックス PC ---------- 24945 -------- Saved 
+Boxster 1 ファンレス・エンベデッド・ボックス PC ---------- 24946 -------- Saved 
+CAR-5041 - 2U ラックマウント通信アプライアンス ---------- 24947 -------- Saved 
+VP E2x/msd - Intel® Atom® VMEbus シングルボード・コンピューター ---------- 24948 -------- Saved 
+PCOM-B633VG ---------- 24949 -------- Saved 
+FileCruiser VR2600 ---------- 24950 -------- Saved 
+FileCruiser VA2600 ---------- 24951 -------- Saved 
+X-PPC 852 - 最新デュアルコア・ファンレス・パネル PC ---------- 24952 -------- Saved 
+X-PPC 855 / 854 シームレスなベゼルなしファンレス・マルチタッチ・パネル PC ---------- 24953 -------- Saved 
+X-PPC 950 パネル PC、第 2 世代Intel® Core™ i3/ i5/ i7/ Pentium® G850 クワッドコアとデュアルコア CPU 搭載 ---------- 24954 -------- Saved 
+X-PPC 955/954 は、マルチタッチをサポートする射影静電容量式タッチパネル搭載の高性能フラットスクリーン・パネル PC。 ---------- 24955 -------- Saved 
+XPPC-956 は高性能なパネル PC です。 ---------- 24956 -------- Saved 
+ラック統合サービス ---------- 24957 -------- Saved 
+CloudMax コンバージドクラウド・インフラストラクチャ・プラットフォーム ---------- 24958 -------- Saved 
+オープン・コンピューティング・プロジェクト (OCP) ソリューション ---------- 24959 -------- Saved 
+PHAT-Data ビッグデータ / Hadoop クラスター・ソリューション ---------- 24960 -------- Saved 
+StorMax ストレージ・ソリューション ---------- 24961 -------- Saved 
+ClusterMax Apex HPC Cluster ---------- 24962 -------- Saved 
+ClusterMax ワークグループ HPC クラスター ---------- 24963 -------- Saved 
+ClusterMax Stor-X ストレージ・クラスター ---------- 24964 -------- Saved 
+ServMax™ XG-4802Gxp 4U Xeon Phi 並列ラックマウント型サーバー ---------- 24965 -------- Saved 
+ServMax™ PSC-6gxp 4U / Tower Xeon Phi 並列処理ワークステーション ---------- 24966 -------- Saved 
+ServMax™ PSC-6pxp 4U / Tower Xeon Phi 並列処理ワークステーション ---------- 24967 -------- Saved 
+ServMax™ XG-2401Gxp 2U Xeon Phi 並列処理ラック・サーバー ---------- 24968 -------- Saved 
+ServMax™ Xr-2401Gxp 2U Xeon Phi 並列ラックマウント型サーバー ---------- 24969 -------- Saved 
+ServMax ™ XG 2402Gxp 2U Xeon Phi 並列ラックマウント型サーバー ---------- 24970 -------- Saved 
+ServMax™ XG-1301Gxp 1U Xeon Phi 並列処理ラック・サーバー ---------- 24971 -------- Saved 
+Windows エンベデッド開発 ---------- 24972 -------- Saved 
+ServMax™ Xr-1201Gxp 1U Xeon Phi 並列ラックマウント型サーバー ---------- 24973 -------- Saved 
+StorMax™ XG-42302 36x3.5 インチ・ドライブ 3U DP ストレージ・サーバー ---------- 24974 -------- Saved 
+StorMax™ XG-42301 24x3.5 インチ・ドライブ 3U DP ストレージ・サーバー ---------- 24975 -------- Saved 
+StorMax™ XG-41301 36x3.5 インチ Drive 3U UP ストレージ・サーバー ---------- 24976 -------- Saved 
+StorMax™ XG-32301 16x3.5 インチ Drive 3U DP ストレージ・サーバー ---------- 24977 -------- Saved 
+ServMax™ XG-28000 シリーズ 2U クアッドノード計算ラックサーバー ---------- 24978 -------- Saved 
+X-PPC 722 - 理想的なタッチ・ファンレス・タッチパネル PC ---------- 24979 -------- Saved 
+X-PPC 710 理想的なタッチ・ファンレス・タッチパネル PC ---------- 24980 -------- Saved 
+X-PPC 752 - 理想的なタッチ・ファンレス・タッチパネル PC ---------- 24981 -------- Saved 
+X-PPC 755 - シームレスなフラットベゼル・ファンレス・マルチタッチ・パネル PC ---------- 24982 -------- Saved 
+X-PPC 725R - 理想的なタッチ・ファンレス・タッチパネル PC ---------- 24983 -------- Saved 
+CAR-5040 ---------- 24985 -------- Saved 
+ServMax™ XG-24201 / XG-24301 2U デュアル・ノード・コンピューティング・ラック・サーバー ---------- 24986 -------- Saved 
+PDOException: SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to get lock; try restarting transaction: UPDATE {transperfect_core} SET last_modified=:db_update_placeholder_0, changed=:db_update_placeholder_1
+WHERE  (nid = :db_condition_placeholder_0) ; Array
+(
+    [:db_update_placeholder_0] => 1510204931
+    [:db_update_placeholder_1] => 1
+    [:db_condition_placeholder_0] => 24987
+)
+ in update_change_detection() (line 719 of /var/www/html/sites/all/modules/vendor/transperfect/transperfect.module).

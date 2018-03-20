@@ -1,0 +1,4 @@
+name  = Promotion Company 
+description  = Promotion Company Field default settings
+core = 7.x
+package = Promotion

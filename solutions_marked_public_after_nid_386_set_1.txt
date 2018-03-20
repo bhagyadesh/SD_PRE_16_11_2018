@@ -1,0 +1,244 @@
+BIS-6660 - Next Gen Proprietary "ICEFIN" Fanless Box PC with Intel® Atom® CPUs ---------- 364 -------- Saved 
+BIS-6922 Fanlesss Dual NIC System with 3rd Generation Intel® Core™ i7 Processor (Mobile quad-core) ---------- 365 -------- Saved 
+FLX-2000: New Generation Strong Anti-Shock,Anti-Vibration Hardware Platform with Variable Demension Design ---------- 366 -------- Saved 
+Portwell PCOM-B219 ---------- 368 -------- Saved 
+Portwell WADE-8013 ---------- 369 -------- Saved 
+RUBY-D714VG2AR ---------- 370 -------- Saved 
+BPC-8076, High Performance Desktop Intel® Core™ i3 / i5 / i7 Processors Book PC ---------- 371 -------- Saved 
+BPC-8960, Slim Dual Core Intel® Atom® D525 Book Size PC ---------- 372 -------- Saved 
+PA-3350 - 15" POS Terminal ---------- 373 -------- Saved 
+PMB-822LF, Intel® Atom® N455/D525 ---------- 374 -------- Saved 
+PMB-872LF, Mini-ITX MB Supports LGA1155 Intel® Core™ i3/i5/i7/Pentium®/Celeron® CPU ---------- 375 -------- Saved 
+PMB-891LF, ATX MB with Intel® Core™ i7/i5/i3 and Pentium® CPU ---------- 376 -------- Saved 
+PMB-897LF - Mini-ITX MB ---------- 377 -------- Saved 
+POS-6510, The Fanless Highly Integrated & Performance 15" POS ---------- 378 -------- Saved 
+POS-6510-MIT, Interactive Kiosk ---------- 379 -------- Saved 
+POS-6511, Intel® Core™ i3-series mobile processor ---------- 380 -------- Saved 
+POS-6620, Highly Integrated 10.4" POS Terminal ---------- 381 -------- Saved 
+POS-6630, The High performance All-in-One POS Terminal ---------- 382 -------- Saved 
+POS-6920-PPC, The Fanless 15" True Flat Touch Panel PC ---------- 383 -------- Saved 
+SA-5082, Intel® Atom® D525 Book Size PC ---------- 384 -------- Saved 
+SA-5592, Slim, Compact and High Performance Book Size PC ---------- 385 -------- Saved 
+iS-1600 - Digital Signage Player ---------- 386 -------- Saved 
+iS-1620 - Digital Signage Player ---------- 387 -------- Saved 
+ATCA-XE100 ---------- 388 -------- Saved 
+HS-N0801A ---------- 389 -------- Saved 
+SV1-H6126 High-performance Mini-ITX Motherboard ---------- 390 -------- Saved 
+NVR SV4-H61A6 ATX Motherboard supports 2nd/3rd Generation Intel® Core™ i7/i5/i3 CPU ---------- 391 -------- Saved 
+ITX M4S2GAP Fanless ---------- 392 -------- Saved 
+ITX M61X62A ---------- 393 -------- Saved 
+ITX-M25D61E ---------- 394 -------- Saved 
+ITX-M25D62B ---------- 395 -------- Saved 
+ITX-M25E21A ---------- 396 -------- Saved 
+ITX-M27X42A ---------- 397 -------- Saved 
+ITX-M27X62D ---------- 399 -------- Saved 
+ITX-M27X62S ---------- 400 -------- Saved 
+ITX-M41X41E ---------- 401 -------- Saved 
+ITX-M41X41S ---------- 402 -------- Saved 
+ITX-M41X42A ---------- 403 -------- Saved 
+ITX-M42X41S ---------- 404 -------- Saved 
+ITX-M42X42A ---------- 406 -------- Saved 
+ITX-M42X61D ---------- 407 -------- Saved 
+ITX-M42X61E ---------- 408 -------- Saved 
+ITX-M42X62A ---------- 409 -------- Saved 
+ITX-M42X82A ---------- 410 -------- Saved 
+ITX-M45X82A ---------- 411 -------- Saved 
+ITX-M4S2GAP ---------- 412 -------- Saved 
+ITX-M4S2GAP-2 ---------- 413 -------- Saved 
+ITX-M51X41E ---------- 414 -------- Saved 
+ITX-M51X42A ---------- 415 -------- Saved 
+ITX-M52X21D ---------- 416 -------- Saved 
+ITX-M52X21E ---------- 417 -------- Saved 
+ITX-M52X42A ---------- 418 -------- Saved 
+ITX-M52X61E ---------- 419 -------- Saved 
+ITX-M52X62A ---------- 420 -------- Saved 
+ITX-M52X82A ---------- 421 -------- Saved 
+ITX-M52X82B ---------- 422 -------- Saved 
+ITX-M61X11B ---------- 423 -------- Saved 
+ITX-M61X11E ---------- 425 -------- Saved 
+ITX-M6S2GA ---------- 426 -------- Saved 
+ITX-MYX5LA ---------- 427 -------- Saved 
+ITX-M42X21D ---------- 428 -------- Saved 
+X9DBL-3 - Dual Processor Supermicro Motherboard ---------- 429 -------- Saved 
+X9DBL-3F - Dual Processor Supermicro Motherboard ---------- 430 -------- Saved 
+X9DBL-i  - Dual Processor Supermicro Motherboard ---------- 431 -------- Saved 
+X9DBL-iF - Dual Processor Supermicro Motherboard ---------- 432 -------- Saved 
+X9DR7-TF+ - Dual Processor Supermicro Motherboard ---------- 433 -------- Saved 
+X9DRD-7LN4F - Dual Processor  Supermicro Motherboard ---------- 434 -------- Saved 
+X9DRD-7LN4F-JBOD - Dual Processor  Supermicro Motherboard ---------- 435 -------- Saved 
+X9DRD-EF - Dual Processor Supermicro Motherboard ---------- 436 -------- Saved 
+X9DRL-3F - Dual Processor Supermicro Motherboard ---------- 437 -------- Saved 
+X9DRL-iF  - Dual Processor Supermicro Motherboard ---------- 438 -------- Saved 
+X9DRX+-F  - Dual Processor Supermicro Motherboard ---------- 439 -------- Saved 
+X9SAE Supermicro ATX Motherboard ---------- 440 -------- Saved 
+X9SAE-V Supermicro ATX Motherboard ---------- 441 -------- Saved 
+X9SPU-F Supermicro UIO Motherboard ---------- 442 -------- Saved 
+X9SPV-F-3217UE Supermicro Embedded Motherboard ---------- 443 -------- Saved 
+X9SPV-F-3610ME Supermicro Embedded Motherboard ---------- 444 -------- Saved 
+X9SPV-LN4F-3LE Supermicro Embedded Motherboard ---------- 445 -------- Saved 
+X9SPV-LN4F-3QE Supermicro Embedded Motherboard ---------- 446 -------- Saved 
+X9SPV-M4 Supermicro Embedded Motherboard ---------- 447 -------- Saved 
+X9SRH-7F Supermicro Embedded Motherboard ---------- 448 -------- Saved 
+X9SRH-7TF Supermicro Embedded Motherboard ---------- 449 -------- Saved 
+SARA-G3 2.5G module series ---------- 450 -------- Saved 
+IP-90830 WIN SoNIC Card ---------- 451 -------- Saved 
+PL-80430 ---------- 452 -------- Saved 
+ZNYX ZX9210 ATCA Compute Blade ---------- 455 -------- Saved 
+AEV-6312 (In-Vehicle Embedded Controller Solution) ---------- 456 -------- Saved 
+AQ7-LN (Qseven Module) ---------- 457 -------- Saved 
+COM-945GSE ---------- 458 -------- Saved 
+COM-CV Rev.A (COM Express Module) ---------- 460 -------- Saved 
+COM-CV Rev.B (COM Express) ---------- 461 -------- Saved 
+COM-LN B1.0 (COM Express CPU Module) ---------- 464 -------- Saved 
+COM-QM57 (COM Express CPU Module) ---------- 465 -------- Saved 
+COM-QM77 Rev.B  (COM Express CPU Module) ---------- 467 -------- Saved 
+COM-TC (COM Express CPU Module) ---------- 469 -------- Saved 
+COM-TCW2 (Wide Temp. Board) ---------- 470 -------- Saved 
+EMB-9459T Rev.A (Embedded Motherboard, Mini-ITX) ---------- 474 -------- Saved 
+EMB-9459T Rev.B (Embedded Motherboard, Mini-ITX) ---------- 475 -------- Saved 
+EMB-9459TW1 Rev. A (Wide Temperature Boards) ---------- 476 -------- Saved 
+EMB-CV1 (Mini-ITX Motherboard) ---------- 477 -------- Saved 
+EMB-H61A (Mini-ITX Motherboard) ---------- 478 -------- Saved 
+EMB-LN8T (Embedded Motherboard) ---------- 479 -------- Saved 
+EMB-LN9T Rev.B (Embedded Motherboard) ---------- 480 -------- Saved 
+EMB-QM67 (Mini-ITX Motherboard) ---------- 481 -------- Saved 
+EMB-QM77 (Mini-ITX) ---------- 483 -------- Saved 
+EPIC-9457 (EPIC Board) ---------- 484 -------- Saved 
+EPIC-9457 Rev. B (EPIC Board) ---------- 485 -------- Saved 
+EPIC-9457W1 (Wide Temperature Board) ---------- 486 -------- Saved 
+EPIC-CV07 (EPIC board) ---------- 487 -------- Saved 
+EPIC-QM57 (EPIC Express Board) ---------- 488 -------- Saved 
+ETX-945GSE (Computer On Module, ETX) ---------- 489 -------- Saved 
+FSB-B75H (PICMG 1.3 SBC) ---------- 491 -------- Saved 
+FSB-H61G (PICMG 1.0 Full Size) ---------- 492 -------- Saved 
+GENE-9455 (3.5" SubCompact Board) ---------- 494 -------- Saved 
+GENE-CV05 (ESB 3.5") ---------- 496 -------- Saved 
+GENE-LN05 Rev.B (3.5" ESB) ---------- 497 -------- Saved 
+GENE-LN05W1 (Wide Temperature Boards) ---------- 498 -------- Saved 
+GENE-QM57 (3.5" ESB) ---------- 499 -------- Saved 
+GENE-QM67 (3.5" SBC) ---------- 500 -------- Saved 
+GENE-QM77 (3.5" SBC) ---------- 501 -------- Saved 
+GENE-QM77 Rev.B  (3.5" ESB) ---------- 502 -------- Saved 
+GENE-TC05 (ESB 3.5") ---------- 503 -------- Saved 
+GENE-TC05W2 (Wide Temp. Board) ---------- 504 -------- Saved 
+HSB-945P (Half-size SBC) ---------- 506 -------- Saved 
+HSB-CV1P (Half-size SBC) ---------- 507 -------- Saved 
+IMBA-967 (ATX Motherboard) ---------- 508 -------- Saved 
+IMBI-Q57 (Industrial Motherboard) ---------- 509 -------- Saved 
+IMBI-QM57 (Industrial Motherboard) ---------- 510 -------- Saved 
+IMBM-B75A (Micro ATX Industrial Motherboard) ---------- 512 -------- Saved 
+NanoCOM-TC (COM Express CPU Module) ---------- 515 -------- Saved 
+NanoCOM-TCW2 (Wide Temp. Board) ---------- 516 -------- Saved 
+PCM-LN02 (Compact Board) ---------- 518 -------- Saved 
+PFM-CVS (PC/104 Module) ---------- 521 -------- Saved 
+PFM-CVSW1/W2 (Wide Temp. Board) ---------- 523 -------- Saved 
+PFM-LNP (PC/104 Module) ---------- 524 -------- Saved 
+PICO-CV01 (PICO-ITX) ---------- 525 -------- Saved 
+XTX-945GSE (XTX CPU Module) ---------- 526 -------- Saved 
+Cinnamon Bay EX ---------- 529 -------- Saved 
+Cinnamon Bay SBC Based on Intel® Atom® Z5xxP ---------- 530 -------- Saved 
+True Single Chip Semi-Custom Boards for Intel® Atom® E6xx Series ---------- 531 -------- Saved 
+ADLD2000PC ---------- 532 -------- Saved 
+ADLD25PC ---------- 533 -------- Saved 
+ADLQM67PC ---------- 534 -------- Saved 
+ADLS15PC ---------- 535 -------- Saved 
+ADLINK Dual Intel® Xeon® Processor E5-2648L 10 GbE AdvancedTCA® Processor Blade, aTCA-6200 ---------- 537 -------- Saved 
+CoreModule 730: Intel® Atom® SUMIT-ISM™ Single Board Computer Highly Integrated ---------- 539 -------- Saved 
+CoreModule 740: PC/104-Plus Single Board Computer with Intel® Atom® Processor witrh Intel® ICH8-M Chipset ---------- 540 -------- Saved 
+CoreModule 745: PC/104-Plus Single Board Computer with Intel® Atom® Processor with Intel® ICH8-M Chipset ---------- 541 -------- Saved 
+cPCI-3610 - 3U CompactPCI® Dual-Core Intel® Atom™ Entry Level Processor Blade ---------- 542 -------- Saved 
+cPCI-3615 - 3U CompactPCI® Dual-Core Intel® Atom™ Entry Level Processor Blade ---------- 543 -------- Saved 
+cPCI-3970 - 3U CompactPCI® 2nd Generation Intel® Core™ i7 Processor with ECC ---------- 544 -------- Saved 
+cPCI-6210 - 6U CompactPCI® Quad-Core 2nd Generation Intel® Core™ i7 Processor Host/Peripheral Blade ---------- 545 -------- Saved 
+cPCI-6510 - 6U CompactPCI® Intel® Core™ i7 Universal Blade with two PMC sites ---------- 546 -------- Saved 
+cPCI-6520 - 6U CompactPCI 3rd Generation Intel® Core™ i7 Processor Blade with ECC SDRAM ---------- 547 -------- Saved 
+cPCI-6615 - 6U CompactPCI Intel® Atom™ Processor D525 Host Blade ---------- 548 -------- Saved 
+cPCI-6930 - 6U CompactPCI Blade with Eight-Core 32nm Intel® Xeon® Processor E5 ---------- 549 -------- Saved 
+cPCI-6930 6U CompactPCI Blade with Ten-Core Intel® Xeon® Processor E5 v2 ---------- 550 -------- Saved 
+ETX-AT: ETX® Module with Intel® Atom® Processor N270 and Intel® 945GSE/ ICH7-M Chipset ---------- 551 -------- Saved 
+ETX-PVR: ETX® Module with Intel® Atom® Single and Dual Core Processors and Intel® ICH8M Chipset ---------- 552 -------- Saved 
+Express-AT: COM Express® Module with Intel® Atom® Processor N270 and Intel® 945GSE / ICH7-M Chipset ---------- 553 -------- Saved 
+Express-ATC: Compact COM Express® Module with Intel® Atom® Processor N270 and Intel® 945GSE / ICH7-M Chipset ---------- 554 -------- Saved 
+Express-ATR: Extreme Rugged™ COM Express® Module with Intel® Atom® Processor N270 and Intel® 945GSE / ICH7-M Chipset ---------- 555 -------- Saved 
+Express-CB: COM Express® Module with Intel® Core i7/i5/i3 Processor and Intel® QM57 Chipset ---------- 557 -------- Saved 
+Express-CBE: COM Express® Module with Intel® Core™ i7/i5/i3 Processor and Intel® QM57 Chipset ---------- 558 -------- Saved 
+Express-CBR: Extreme Rugged™ COM Express® Module with Intel® Core™ i7 Processor and Intel® QM57 Chipset ---------- 559 -------- Saved 
+Express-IBR: Extreme Rugged™ COM Express® Type 6 Computer-on-Module with 3rd Generation Intel® Core™ Processor and Intel® QM77 Chipset ---------- 561 -------- Saved 
+Express-LPC: Compact COM Express® Module with Single/Dual Core Intel® Atom® Processor and Intel® ICH8M Chipset ---------- 562 -------- Saved 
+LittleBoard 735: EBX Single Board Computer with Intel® Atom® Processor, Feature Rich, Legacy Friendly ---------- 563 -------- Saved 
+M-342 - ATX Intel® Core™ i7/i5/i3 Industrial Motherboard ---------- 564 -------- Saved 
+MI-220: Mini-ITX Intel® Core™ i7/i5/i3 Industrial Motherboard ---------- 565 -------- Saved 
+nanoX-ML: Mini size COM Express Type 1 Pinout Compatible Module ---------- 566 -------- Saved 
+nanoX-TCR: Extreme Rugged™ COM Express® Type 10 Mini-size Computer-on-Module with Intel® Atom® Processor E6xxT ---------- 567 -------- Saved 
+NuPRO-A331 - PICMG® 1.0 Full-Size LGA1156 Intel® Core™ i7/i5/i3 SBC ---------- 568 -------- Saved 
+NuPRO-E330 - PICMG® 1.3 Full-Size LGA1156 Intel® Core™ i7/i5/i3 SHB ---------- 569 -------- Saved 
+NuPRO-E340 - PICMG® 1.3 Full-Size LGA1155 Intel® Core™ i7/i5/i3 SHB ---------- 570 -------- Saved 
+ReadyBoard 740 - Dual-Core Intel® Atom® EPIC Single Board Computer with H.264 Hardware Video Decoder ---------- 571 -------- Saved 
+RuffSystem 735: Extreme Rugged™ Intel® Atom® Computer System ---------- 572 -------- Saved 
+AIMB-210 ---------- 573 -------- Saved 
+AIMB-212 Intel® Atom® N450/D510 Mini-ITX ---------- 575 -------- Saved 
+AIMB-213 ---------- 576 -------- Saved 
+AIMB-270 Intel® Core™ i7/Intel® Core™ i5/Intel® Celeron® Mini-ITX ---------- 577 -------- Saved 
+AIMB-272 ---------- 578 -------- Saved 
+AIMB-273 ---------- 579 -------- Saved 
+AIMB-280 Intel® Core™ i7/Intel® Core™ i5/ Intel® Core™ i3 Mini-ITX ---------- 580 -------- Saved 
+AIMB-580 Intel® Core™ i7/i5/i3/Pentium® Processor ATX ---------- 581 -------- Saved 
+AIMB-581 ---------- 582 -------- Saved 
+AIMB-582 ---------- 583 -------- Saved 
+AIMB-781 ---------- 584 -------- Saved 
+ASMB-781 ---------- 586 -------- Saved 
+ASMB-782 ---------- 587 -------- Saved 
+DPX-S425 ---------- 591 -------- Saved 
+EBPC-3500L-61SE Intel® Atom® N270 Embedded System ---------- 592 -------- Saved 
+GMB-N270 Intel® Atom® Mini-ITX motherboard ---------- 593 -------- Saved 
+MIC-5603 ---------- 602 -------- Saved 
+PCE-5126/PCE-5126QG2/PCE-5126QVG/PCE-5126WG2 ---------- 604 -------- Saved 
+PCM-3362 Intel® Atom® N450 PC/104-Plus SBC ---------- 608 -------- Saved 
+PCM-3363 ---------- 609 -------- Saved 
+PCM-9362 Intel® Atom® N450/ D510 3.5" SBC ---------- 612 -------- Saved 
+PCM-9363 ---------- 613 -------- Saved 
+PCM-9562 Intel® Atom® N450/D510 EBX SBC ---------- 616 -------- Saved 
+SOM-5890 ---------- 624 -------- Saved 
+SOM-6763 Intel® Atom® Processor N450/ D510 COM-Express Compact Module ---------- 628 -------- Saved 
+SOM-7562 Intel® Atom® N450 COM-Ultra Module ---------- 629 -------- Saved 
+TREK-550 In-vehicle Computing Box ---------- 631 -------- Saved 
+UTC-W101 ---------- 632 -------- Saved 
+CM-7305  Intel® Atom® Z5xx serial Processor COM Express Module with 2 PCI-E, 6 USB, GbE, LVDS, SDVO, IDE, PCI, 2 SATA ---------- 633 -------- Saved 
+EM-5300 Intel® Atom® N450, D510, D410 Processor Embedded Board with VGA, LVDS, Dual GbE, SATA, CF & Mini PCI ---------- 634 -------- Saved 
+CM-5100 ---------- 635 -------- Saved 
+SCB-6975 Desktop Intel® Atom® Network System, Six GbE, CF, SATA, mini-card, Bypass, Cavium 505 ---------- 636 -------- Saved 
+SEM-5300 Fanless Micro PC with Intel® Atom® N450, D510, D410 Processor, VGA, Dual GbE, COM, USB, Audio, SATA, CF & mini PCI ---------- 637 -------- Saved 
+MI-945H ---------- 638 -------- Saved 
+MI-945S ---------- 639 -------- Saved 
+NOVO-3153 ---------- 640 -------- Saved 
+NOVO-3945 ---------- 641 -------- Saved 
+Digital Engine DE67-HA ---------- 642 -------- Saved 
+MP67-D ---------- 643 -------- Saved 
+EmETXe-i2903 ---------- 644 -------- Saved 
+ITX-i2701 ---------- 645 -------- Saved 
+ITX-i2705 ---------- 646 -------- Saved 
+M1726 Patient Infotainment Terminal ---------- 647 -------- Saved 
+MBX-1820 Network Server ---------- 648 -------- Saved 
+ECM-QB - 3.5" Micro Module with Intel® Platform Controller Hub EG20T Chipset ---------- 651 -------- Saved 
+Avalue 3.5" Intel® Atom® N270 945GSE Micro Module ---------- 652 -------- Saved 
+Avalue EBM-CDV - 5.25" Intel® Atom® 5.25" Mini Module with Intel® NM10 Express Chipset ---------- 653 -------- Saved 
+Avalue EPI-QM67 Intel® Core™ i3/i5/i7 EPIC Module with Intel® QM67 Chipset ---------- 654 -------- Saved 
+Avalue Intel® Atom® D510 Dual-Core 3.5" Micro Module with Intel® ICH8-M Chipset ---------- 655 -------- Saved 
+Avalue Intel® Atom® N270 3.5" Micro Module with Intel® 945GSE + ICH7-M Chipset ---------- 656 -------- Saved 
+Avalue Intel® Atom® PNV-M/ PNV-D Nano ITX Motherboard ---------- 657 -------- Saved 
+Avalue Intel® Core™ i7/ Core™ i5/ Celeron® COM Express Module with Intel® QM57 Chipset ---------- 658 -------- Saved 
+Avalue Intel® Core™ i7-620LE/ 620UE 3.5" Micro Module with Intel® QM57 Chipset ---------- 659 -------- Saved 
+BCM BC206C ATX Motherboard supports Intel® Xeon® Processor and ECC Memory, Intel C206 Chipset, 3 PCI, 2 PCIe x1, Intel TXT, Turbo, TPM ---------- 660 -------- Saved 
+BCM BC67Q - Intel® Q67 ATX Motherboard ---------- 662 -------- Saved 
+BCM MX255D Intel® Atom® D2550 Fanless Low Power Mini ITX Motherboard, Intel GMA3600, LVDS, DVI, 7 USB, USB DOM, DC 12V ---------- 663 -------- Saved 
+BCM MX260N Intel® Atom® N2600 dual-core Mini ITX Motherboard ---------- 665 -------- Saved 
+BCM MX57QM - Intel® QM57 Mini ITX Featuring Latest Two-Chip Design, supports Intel® Core™ i7, i5, i3 Mobile processors, 6 COM, 5 SATA RAID ---------- 667 -------- Saved 
+BCM MX61H Mini ITX Motherboard supports Intel H61 Chipset, DVI, LVDS, 4 COM ---------- 668 -------- Saved 
+PDOException: SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to get lock; try restarting transaction: UPDATE {transperfect_core} SET last_modified=:db_update_placeholder_0, changed=:db_update_placeholder_1
+WHERE  (nid = :db_condition_placeholder_0) ; Array
+(
+    [:db_update_placeholder_0] => 1510121687
+    [:db_update_placeholder_1] => 1
+    [:db_condition_placeholder_0] => 669
+)
+ in update_change_detection() (line 719 of /var/www/html/sites/all/modules/vendor/transperfect/transperfect.module).

@@ -1,0 +1,25 @@
+1704 -------------- Wind River JTAG Debugging Solutions ---------- SAVED With Status ---0Modified By --- 0
+2161 -------------- SR330-N Intel&reg; GME965/ICH8M &micro;ATX motherboard ---------- SAVED With Status ---1Modified By --- 0
+795 -------------- SB630-CRM - ATX Industrial Motherboard with 2nd Generation Intel® Core™ Processor Support ---------- SAVED With Status ---1Modified By --- 0
+877 -------------- XCR14 CompactPCI SBC ---------- SAVED With Status ---1Modified By --- 0
+21653 -------------- RIS-109 desktop or 19" rack-mountable network communication platform Based on Intel® Atom® D425/D525 ---------- SAVED With Status ---1Modified By --- 0
+21534 -------------- RIS-5010 1U rack-mountable platform, with 2/3 Generation Intel® Core™ processor ---------- SAVED With Status ---1Modified By --- 0
+21532 -------------- RIS-1091 desktop or 19-inch rack-mountable network communication platform, Based on Intel® Atom® D425/D525 architecture ---------- SAVED With Status ---1Modified By --- 0
+21421 -------------- FSC-1817V2NA ---------- SAVED With Status ---1Modified By --- 0
+20982 -------------- PRO-2000: Muti-USB interface multi-port fanless barebone based on Intel® Atom® processor ---------- SAVED With Status ---1Modified By --- 0
+20719 -------------- TEA-N2704 for network security application ---------- SAVED With Status ---1Modified By --- 0
+20718 -------------- TEA-N1704 for network security application ---------- SAVED With Status ---1Modified By --- 0
+20717 -------------- TEB-S7011 applicable to cloud terminal application ---------- SAVED With Status ---1Modified By --- 0
+20033 -------------- K-Q87HD  ---------- SAVED With Status ---1Modified By --- 0
+19838 -------------- ITX-M847_D18  VER:1.2 ---------- SAVED With Status ---1Modified By --- 0
+19837 -------------- Q77DM VER:2.2 ---------- SAVED With Status ---1Modified By --- 0
+19376 -------------- BIS-6660C - new Gen “ICEFIN” low power embedded industrial computer based on Intel® Atom® platform ---------- SAVED With Status ---1Modified By --- 0
+19375 -------------- BIS-6910A is a new Gen “ICEFIN” low power embedded system based on Intel Bay Trail platform ---------- SAVED With Status ---1Modified By --- 0
+29088 -------------- XT-6515 ---------- SAVED With Status ---1Modified By --- 0
+29469 -------------- ITX-K68 VER: 1.1 ---------- SAVED With Status ---1Modified By --- 0
+48006 -------------- V5 Portable Edge Computing Unit (V5 PECU-Dell) ---------- SAVED With Status ---1Modified By --- 0
+47878 -------------- Financial self-help solution Intel® Celeron® 3855U ---------- SAVED With Status ---1Modified By --- 0
+48216 -------------- Citybeacon Kiosk: Smart City Solution ---------- SAVED With Status ---1Modified By --- 0
+48338 -------------- M908 LoRa ---------- SAVED With Status ---1Modified By --- 0
+48237 -------------- CAF-0260 ---------- SAVED With Status ---1Modified By --- 0
+COUNT: 24

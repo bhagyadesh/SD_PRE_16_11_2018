@@ -1,0 +1,15 @@
+name = Partner Upload
+description = This module is to send automated notifications to the partner users.
+
+core = 7.x
+php = 5.2
+
+; Add a style sheet for all media
+stylesheets[all][] = pustyle.css
+scripts[] = intel_ea_partner_upload.js
+
+; Information added by drupal.org packaging script on 2012-05-08
+version = "7.x-2.0-alpha3"
+core = "7.x"
+project = "intel_ea_partner_upload"
+datestamp = "1336466457"

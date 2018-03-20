@@ -1,0 +1,143 @@
+// Theme Customizations for Region/Layout changes //
+/*
+//Create Row
+@include make-row;
+//Create columns
+@include make-xs-column(12);
+*/
+
+//Hide This
+#block-masquerade-masquerade {
+	display:none;
+}
+#intel-home {
+	//Home Banner
+	#home-banner {
+	background:#05192b;
+		h1, h2 {
+			color:#fff;
+			text-transform: uppercase;
+			font-family: 'intel_clear_probold'; 
+			font-size:70px; 
+		}
+		.panel-col-top {
+			background:url('/sites/all/themes/custom/intel_isdm_bootstrap/images/home-banner.jpg') no-repeat;
+			height:304px;
+			color:#fff;
+			background-size:cover;
+			padding-top:100px;
+			.inside {
+				.pane-content {
+					padding-top:100px;
+					padding-left:25px;
+					color:#656f7b;
+					/*h1 {
+						color:#fff;
+						text-transform: uppercase;
+						font-family: 'intel_clear_probold';  
+					}*/
+				}
+			}
+			.pane-title {
+				font-family: 'intel_clear_probold';
+				text-transform: uppercase;
+				font-size:70px;
+			}
+			.pane-content {
+  				font-family: 'intel_clearregular';
+  				color:#c9c9c9;
+			}
+		}
+	}
+	//Browse By
+	#browse-by {
+		background: linear-gradient(#053d6f 0%,#053d6f 61%,#053d6f 50%, #032848 50%, #032848 100%);
+		@media (min-width: $screen-md-min) { 
+			background: linear-gradient(to right, #053d6f 0%,#053d6f 50%,#053d6f 50%, #032848 50%, #032848 100%);
+		}
+		.panel-col-first {
+			background:#053d70;
+			color:#fff;
+			margin-bottom:5px;	
+			@media (min-width: $screen-md-min) { 
+				margin-bottom:0;		
+			}
+			a {
+				color:#8bdaf8;
+			}
+			.view-content {
+				.views-row {
+					padding-bottom: 10px;
+				}
+			}
+		}
+		.panel-col-last {
+			background:#042848;
+			h2 {
+				color:#fff;
+			}
+			a {
+				color:#8bdaf8;
+			}
+		}
+	}
+	.pane-browse-by-type {
+		.views-row {
+			margin-bottom:20px;
+		}
+	}
+	//Market Segments
+	.pane-market-segments {
+		padding:10px 0;
+		h2 {
+			font-family: 'intel_clearlight';
+			color:#fff;
+			padding-bottom:20px;
+		}
+		.view-content {
+			&:after {
+				content: '';
+				clear:both;
+				display:block;
+			}
+		}
+		.views-field-field-icon {
+			display: inline-block;
+			float: left;
+			margin:0 10px 5px 0;
+		}
+		.views-row-odd {
+			@include make-xs-column(6);
+		}
+		.views-row-even {
+			@include make-xs-column(6);
+		}
+	}
+	// Browse by type
+	.pane-browse-by-type {
+		padding:10px 0 40px 20px;
+		h2 {
+			font-family: 'intel_clearlight';
+			padding-bottom:30px;
+		}
+		.views-field-field-icon {
+			display: inline-block;
+			float: left;
+			margin:0 10px 5px 0;
+		}
+	}
+	//Intro Content
+	#bottom-content {
+		background:#fff;
+		padding:50px 0;
+		h2 {
+			font-family: 'intel_clearlight';
+			padding-bottom:10px;
+		}
+
+		img.itp-logo {
+			margin-left: 70px;
+			margin-right: 70px;
+		}
+	}
+}

@@ -1,0 +1,3538 @@
+<?php 
+
+
+//Changes to start for RFQ functionality is addeed.
+
+
+/**
+ * Implements hook_menu().
+ */
+ 
+
+function intel_ea_partner_upload_menu() {
+
+global $user;
+	$items['request_for_quote'] = array(
+		'page callback' => 'request_for_quote',
+		'access callback' => TRUE,
+		'type' => MENU_CALLBACK,
+	);
+  
+	  
+	  $items['rfq/%/%'] = array(
+		  'page callback' => 'rfq_callback',
+		  'page arguments' => array(1,2),
+		  'access callback' => TRUE,
+		  'type' => MENU_CALLBACK,
+		);
+//Ask for features
+	  $items['aff/%/%'] = array(
+		  'page callback' => 'aff_callback',
+		  'page arguments' => array(1,2),
+		  'access callback' => TRUE,
+		  'type' => MENU_CALLBACK,
+		);
+	  // Request for sample
+	  $items['rfs/%/%'] = array(
+		  'page callback' => 'rfs_callback',
+		  'page arguments' => array(1,2),
+		  'access callback' => TRUE,
+		  'type' => MENU_CALLBACK,
+		);
+	
+	 return $items;
+	  
+}
+
+
+
+
+/**
+ * Helper function to make a link.
+ */
+function _make_link($link_text = '') {
+  // Set a default value if no text in supplied.
+  if (empty($link_text)) {
+    $link_text = 'Request For Quote';
+  }
+
+  return '<div id="request-for-quote-link">' . l($link_text, 'rfq/nojs', array('attributes' => array('class' => 'ctools-use-modal'))) . '</div>';
+}
+
+
+
+/**
+ * An example page.
+ */
+function request_for_quote() {
+  // Load the modal library and add the modal javascript.
+  ctools_include('modal');
+  ctools_modal_add_js();
+  return _make_link('Request For Quote');
+}
+
+
+
+
+/**
+ * Ajax menu callback.
+ */
+function rfq_callback($ajax,$node_id) {
+  if ($ajax) {
+    ctools_include('ajax');
+    ctools_include('modal');
+ 	ctools_modal_add_js();
+    $form_state = array(
+      'ajax' => TRUE,
+      'title' => t('Send Private Message to Supplier'),
+    );
+    $form_state['node_id'] = $node_id;
+
+    // Use ctools to generate ajax instructions for the browser to create
+    // a form in a modal popup.
+    $output = ctools_modal_form_wrapper('rfq_form', $form_state);
+
+    // If the form has been submitted, there may be additional instructions
+    // such as dismissing the modal popup.
+    if (!empty($form_state['ajax_commands'])) {
+	
+      $output = $form_state['ajax_commands'];
+    }
+
+	//echo 'am here';
+	//print_r($output);
+	//exit;
+	//unset($form_state['redirect']);
+	
+    // Return the ajax instructions to the browser via ajax_render().
+    print ajax_render($output);
+    drupal_exit();
+  }
+  else {
+    return drupal_get_form('rfq_form');
+  }
+}
+
+
+/**
+ * Drupal form to be put in a modal.
+ */
+function rfq_form($form, $form_state) {
+  $form = array();
+  
+   $form['rfq_volume'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Volume for Quotation'),
+	'#required' => true,
+  );
+  
+  $form['node_id'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Node Value'),
+    '#type' => 'hidden',
+	'#value' => $form_state['node_id'],
+  );
+   //get current date to use as default value for date fields.
+  $date = format_date(REQUEST_TIME, 'custom', 'Y-m-d');
+  $form['rfq_date'] = array(
+    '#type' => 'date_popup',
+	'#title' => t('Expected Delivery Date'),
+	'#default_value' => $date,
+	'#date_format' => 'm-d-Y',
+	'#required' => true,  
+  );
+
+
+  
+  
+  
+  $form['rfq_opport_desc'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Opportunity Description'),
+	'#rows' =>2,
+	'#cols' => 7,
+  );
+
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Submit'),
+  );
+
+  return $form;
+}
+
+
+/**
+ * Drupal form submit handler.
+ */
+function rfq_form_submit(&$form, &$form_state) {
+  // Generate the new link using the submitted text value.
+	//$rfq_title = $form_state['values']['rfq_title'];
+	$rfq_vol = $form_state['values']['rfq_volume'];
+	$rfq_date = $form_state['values']['rfq_date'];
+	$rfq_comment1 = $form_state['values']['rfq_opport_desc'];
+	
+	
+	$nodeid=$form_state['values']['node_id'];
+		
+	global $user;
+	$user_fields = user_load($user->uid);
+	$usercompid = $user_fields->field_company['und']['0']['target_id'];
+	$usercompname = node_load($usercompid)->title;
+	
+	$nodeurl = url(drupal_get_path_alias('node/' . $nodeid), array('absolute' => TRUE)); 
+	 
+                $nodedet = node_load($nodeid);
+                $nodecompid = $nodedet->field_company['und']['0']['target_id'];
+	            $nodecompname = node_load($nodecompid)->title;
+				
+	$rfq_nodetitle= $nodecompname.' sent you a new message.';
+	
+	$rfq_comment = <<<EOF
+	
+Dear {$nodecompname},
+
+          From: {$usercompname} 
+
+          Subject: Request for Quotation for {$rfq_vol} units of {$nodedet->title} 
+		  
+		  Content:
+          
+		  For:  {$nodedet->title} Product from {$usercompname}   
+          
+		  Product link: <a href= {$nodeurl} > Click here </a>
+		  
+          Volume For Quotation : {$rfq_vol}.
+		  
+		  Expected Delivery Date : {$rfq_date}.
+		  
+		  Opportunity Description : {$rfq_comment1}.
+		  
+		  
+Please click "Here" to reply.
+
+If you have any questions, please contact your support team via intelpartnersolutiondirectory@intel.com.
+
+Regards, 
+Intel Partner Solution Directory Team
+
+To ensure that you continue to receive update from Intel Partner Solution Directory, please add ChannelCatalogSupport@intel.com to your contact list or address book."
+		  
+		  
+EOF;
+	
+
+  // Tell the browser to close the modal.
+  $form_state['ajax_commands'][] = ctools_modal_command_dismiss();
+
+  // Tell the browser to replace the old link with the new one.
+  $form_state['ajax_commands'][] = ajax_command_replace('#magical-modal-link', $link);
+ // if ($form_id == 'rfq_form') {
+	 //$rfq_title = 'RFQ';
+	 //$rfq_comment = 'message';
+  if($form_state['values']['op'] == 'Submit'){
+	  //drupal_set_message('hi yaa');
+	  //drupal_set_message($form_state);
+	  msgs_to_submitter_on_rfq(8,$nodeid,$rfq_nodetitle,$rfq_comment);
+	  //print_r($form_state['values']);exit;
+	 
+ // msg_to_fse_rfq($rfq_title, $rfq_date, $rfq_comment, $form_state['node_id'], $tag_id);
+  }
+//}
+}
+//Ask for features code 
+function aff_callback($ajax,$node_id) {
+  if ($ajax) {
+    ctools_include('ajax');
+    ctools_include('modal');
+ 	ctools_modal_add_js();
+    $form_state = array(
+      'ajax' => TRUE,
+      'title' => t('Send Private Message to Supplier'),
+    );
+    $form_state['node_id'] = $node_id;
+
+    // Use ctools to generate ajax instructions for the browser to create
+    // a form in a modal popup.
+    $output = ctools_modal_form_wrapper('aff_form', $form_state);
+
+    // If the form has been submitted, there may be additional instructions
+    // such as dismissing the modal popup.
+    if (!empty($form_state['ajax_commands'])) {
+	
+      $output = $form_state['ajax_commands'];
+    }
+
+	//echo 'am here';
+	//print_r($output);
+	//exit;
+	//unset($form_state['redirect']);
+	
+    // Return the ajax instructions to the browser via ajax_render().
+    print ajax_render($output);
+    drupal_exit();
+  }
+  else {
+    return drupal_get_form('aff_form');
+  }
+}
+
+
+/**
+ * Drupal form to be put in a modal.
+ */
+function aff_form($form, $form_state) {
+  $form = array();
+  
+  $form['aff_specify_features'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Ask for specific features'),
+	'#rows' =>2,
+	'#cols' => 7,
+	'#required' => true,
+  );
+  $form['node_id'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Node Value'),
+    '#type' => 'hidden',
+  '#value' => $form_state['node_id'],
+  );
+
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Submit'),
+  );
+
+  return $form;
+}
+
+
+/**
+ * Drupal form submit handler.
+ */
+function aff_form_submit(&$form, &$form_state) {
+  // Generate the new link using the submitted text value.
+	//$rfq_title = $form_state['values']['rfq_title'];
+	$aff_features1 = $form_state['values']['aff_specify_features'];
+	global $user;
+	$user_fields = user_load($user->uid);
+	$usercompid = $user_fields->field_company['und']['0']['target_id'];
+	$usercompname = node_load($usercompid)->title;
+	$nodeid=$form_state['values']['node_id'];
+	
+	$nodeurl = url(drupal_get_path_alias('node/' . $nodeid), array('absolute' => TRUE)); 
+	 
+                $nodedet = node_load($nodeid);
+                $nodecompid = $nodedet->field_company['und']['0']['target_id'];
+	            $nodecompname = node_load($nodecompid)->title;
+				
+	$aff_nodetitle = $nodecompname.' sent you a new message.';
+	
+	$aff_features = <<<EOF
+          		  
+		 
+		  
+Dear {$nodecompname},
+
+          From: {$usercompname} 
+
+          Subject: Ask for {$nodedet->title} 's specific features.
+		  
+		  Content:
+          
+		  For:  {$nodedet->title} Product from {$usercompname}   
+          
+		  Product link: <a href= {$nodeurl} > Click here </a>
+		  
+          Specific Features asked : {$aff_features1}.
+		  
+		  
+Please click "Here" to reply.
+
+If you have any questions, please contact your support team via intelpartnersolutiondirectory@intel.com.
+
+Regards, 
+Intel Partner Solution Directory Team
+
+To ensure that you continue to receive update from Intel Partner Solution Directory, please add ChannelCatalogSupport@intel.com to your contact list or address book.
+		  
+		  		  
+EOF;
+
+  // Tell the browser to close the modal.
+  $form_state['ajax_commands'][] = ctools_modal_command_dismiss();
+
+  // Tell the browser to replace the old link with the new one.
+  $form_state['ajax_commands'][] = ajax_command_replace('#magical-modal-link', $link);
+ // if ($form_id == 'rfq_form') {
+	 //$rfq_title = 'RFQ';
+	 //$rfq_comment = 'message';
+  if($form_state['values']['op'] == 'Submit'){
+	  //drupal_set_message($form_state);
+	  msgs_to_submitter_on_rfq(8,$nodeid,$aff_nodetitle,$aff_features);
+	  //print_r($form_state['values']);exit;
+	 
+ // msg_to_fse_rfq($rfq_title, $rfq_date, $rfq_comment, $form_state['node_id'], $tag_id);
+  }
+//}
+}
+
+//Changes for RFS
+
+function rfs_callback($ajax,$node_id) {
+  if ($ajax) {
+    ctools_include('ajax');
+    ctools_include('modal');
+ 	ctools_modal_add_js();
+    $form_state = array(
+      'ajax' => TRUE,
+      'title' => t('Send Private Message to Supplier'),
+    );
+    $form_state['node_id'] = $node_id;
+
+    // Use ctools to generate ajax instructions for the browser to create
+    // a form in a modal popup.
+    $output = ctools_modal_form_wrapper('rfs_form', $form_state);
+
+    // If the form has been submitted, there may be additional instructions
+    // such as dismissing the modal popup.
+    if (!empty($form_state['ajax_commands'])) {
+	
+      $output = $form_state['ajax_commands'];
+    }
+
+	//echo 'am here';
+	//print_r($output);
+	//exit;
+	//unset($form_state['redirect']);
+	
+    // Return the ajax instructions to the browser via ajax_render().
+    print ajax_render($output);
+    drupal_exit();
+  }
+  else {
+    return drupal_get_form('rfs_form');
+  }
+}
+
+
+/**
+ * Drupal form to be put in a modal.
+ */
+function rfs_form($form, $form_state) {
+  $form = array();
+  
+   $form['rfs_volume'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Units'),
+	'#required' => true,
+  );
+  
+  $form['node_id'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Node Value'),
+    '#type' => 'hidden',
+	'#value' => $form_state['node_id'],
+  );
+   //get current date to use as default value for date fields.
+  $date = format_date(REQUEST_TIME, 'custom', 'Y-m-d');
+  $form['rfs_date'] = array(
+    '#type' => 'date_popup',
+	'#title' => t('Expected Delivery Date'),
+	'#default_value' => $date,
+	'#date_format' => 'm-d-Y',
+	'#required' => true,  
+  );
+
+
+  
+  
+  
+  $form['rfs_opport_desc'] = array(
+    '#type' => 'textarea',
+    '#title' => t('Opportunity Description'),
+	'#rows' =>2,
+	'#cols' => 7,
+  );
+
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Submit'),
+  );
+
+  return $form;
+}
+
+
+/**
+ * Drupal form submit handler.
+ */
+function rfs_form_submit(&$form, &$form_state) {
+  // Generate the new link using the submitted text value.
+	//$rfq_title = $form_state['values']['rfq_title'];
+	$rfs_vol = $form_state['values']['rfs_volume'];
+	$rfs_date = $form_state['values']['rfs_date'];
+	$rfs_comment1 = $form_state['values']['rfs_opport_desc'];
+	$nodeid=$form_state['values']['node_id'];
+	 global $user;
+	$user_fields = user_load($user->uid);
+	$usercompid = $user_fields->field_company['und']['0']['target_id'];
+	$usercompname = node_load($usercompid)->title;
+	
+	$nodeurl = url(drupal_get_path_alias('node/' . $nodeid), array('absolute' => TRUE)); 
+	 
+                $nodedet = node_load($nodeid);
+                $nodecompid = $nodedet->field_company['und']['0']['target_id'];
+	            $nodecompname = node_load($nodecompid)->title;
+				
+	$rfs_nodetitle= $nodecompname.' sent you a new message.';
+	
+	$rfs_comment = <<<EOF
+	
+Dear {$nodecompname},
+
+          From: {$usercompname} 
+
+          Subject: Request for Samples for {$rfs_vol} units of {$nodedet->title} 
+		  
+		  Content:
+          
+		  For:  {$nodedet->title} Product from {$usercompname}   
+          
+		  Product link: <a href= {$nodeurl} > Click here </a>
+		  
+          Units : {$rfs_vol}.
+		  
+		  Expected Delivery Date : {$rfs_date}.
+		  
+		  Opportunity Description : {$rfs_comment1}.
+		  
+		  
+Please click "Here" to reply.
+
+If you have any questions, please contact your support team via intelpartnersolutiondirectory@intel.com.
+
+Regards, 
+Intel Partner Solution Directory Team
+
+To ensure that you continue to receive update from Intel Partner Solution Directory, please add ChannelCatalogSupport@intel.com to your contact list or address book."
+		    
+		  
+EOF;
+	
+	
+
+
+  // Tell the browser to close the modal.
+  $form_state['ajax_commands'][] = ctools_modal_command_dismiss();
+
+  // Tell the browser to replace the old link with the new one.
+  $form_state['ajax_commands'][] = ajax_command_replace('#magical-modal-link', $link);
+ // if ($form_id == 'rfq_form') {
+	 //$rfq_title = 'RFQ';
+	 //$rfq_comment = 'message';
+  if($form_state['values']['op'] == 'Submit'){
+	  //drupal_set_message($form_state);
+	  msgs_to_submitter_on_rfq(8,$nodeid,$rfs_nodetitle,$rfs_comment);
+	  //print_r($form_state['values']);exit;
+	 
+ // msg_to_fse_rfq($rfq_title, $rfq_date, $rfq_comment, $form_state['node_id'], $tag_id);
+  }
+//}
+}
+
+//start of noti to submitter
+function msgs_to_submitter_on_rfq($tag_id, $nid, $rfq_title,$rfq_comment)
+                {
+              $recipients = array();
+			  //$nid=36023;
+                $nodeauthor = $nid; //node id.
+                $authordet = node_load($nodeauthor);
+                $authorcompanyid = $authordet->field_company['und']['0']['target_id'];
+                                $user_mails = views_embed_view('promotionsubmittercompanyuser', 'default', $authorcompanyid); // listing mails
+                                $user_mails_data = json_decode(strip_tags($user_mails));
+                                       foreach($user_mails_data as $key => $value)
+                                                {
+                                                $recipient = user_load_by_mail($value->mail);
+												//print_r($recipient);exit;
+                                                if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false)
+                                                                {
+                                                                $recipients[] = $recipient;
+                                                                }
+                                                }
+                      foreach($recipients as $key => $value)
+                                {      
+                                                $thread = privatemsg_new_thread(array(user_load_by_mail($value->mail)), $rfq_title, $rfq_comment, $options = array());
+                                                $thread_id = $thread['message']->thread_id;
+                                db_merge('pm_tags_index')->key(array(
+                                                'tag_id' => $tag_id,
+                                                'uid' => $value->uid,
+                                                'thread_id' => $thread_id,
+                                ))->execute();
+                             
+												if(!empty($value->field_company)){
+                                                       insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+                                                           }
+                                }
+                }
+
+
+
+/* end*/
+
+
+//First part of the RFQ ends
+
+
+////########### Biz-040 - Content type is now multi-select but removing the All ################################
+
+function intel_ea_partner_upload_form_views_exposed_form_alter(&$form, &$form_state) {
+
+		  // Over-ride Views exposed filter for Captain so it replaces the text field with a select list populated by captains marked as paid in a Webform table
+		  if ($form['#id'] == 'views-exposed-form-revisioning-content-summary-page-1') {
+		  
+				 $form['field_solution_type_value']['#options'] = array("-ALL-" => t("- All -")) + $form['field_solution_type_value']['#options'];
+				array_unshift($form['#submit'], 'intel_ea_partner_upload_exposed_form_submit');
+			
+			}
+		 
+		 // Content type filter at Translation page
+		 if ($form['#id'] == 'views-exposed-form-reports-translations-page-1') {		  
+				 $form['field_solution_type_value']['#options'] = array("-ALL-" => t("- All -")) + $form['field_solution_type_value']['#options'];
+				array_unshift($form['#submit'], 'intel_ea_partner_upload_exposed_form_submit');
+			
+			}
+	
+}
+
+function intel_ea_partner_upload_exposed_form_submit(&$form, &$form_state) { 
+  if (!empty($form_state['values']['field_solution_type_value']['-ALL-'])) {
+    $options = $form['field_solution_type_value']['#options'];
+    unset($options['-ALL-']);
+    $form_state['values']['field_solution_type_value'] = $options;
+  }
+}
+
+function intel_ea_partner_upload_menu_alter(&$items) {
+       $items['node/%node/workflow']['access callback'] = 'custom_workflow_tab_node_access';	 
+		
+		
+    }
+
+ function custom_workflow_tab_node_access($node = NULL) {
+
+
+ 
+   global $user;
+
+    if ($workflow = workflow_get_workflow_type_map_by_type($node->type)) {
+        if ($workflow = workflow_get_workflows_by_wid($workflow->wid)) {
+            $roles = array_keys($user->roles);
+            if ($node->uid == $user->uid) {
+                $roles = array_merge(array('author'), $roles);
+            }
+            $allowed_roles = $workflow->tab_roles ? 
+            explode(',', $workflow->tab_roles) : array();
+
+          if (user_access('administer nodes') || array_intersect($roles, $allowed_roles)){ 
+      /* This is additional Condition */
+
+      if ($node->type == "solution") {
+	  
+	   if(isset($node->field_solution_type[LANGUAGE_NONE])){
+			$_solu_type = $node->field_solution_type[LANGUAGE_NONE];
+			foreach($_solu_type as $sol_type){
+				$solution_type[] = $sol_type['value'];
+			}
+		}
+		
+		  $solution_approv_id = default_approver_options($node->nid);
+
+			foreach($solution_approv_id as $approv){
+				$approver_id[] = $approv;
+			}
+   
+				 //########  Hide the workflow tab for Intel Admin with Client OR Server AND Embedded IoT with ODM Intel Admin ################//
+					if(((in_array('client',$solution_type) || in_array('server',$solution_type)) && in_array('embedded iot',$solution_type)) && (in_array('ODM Intel Admin',$user->roles) && !in_array('Intel Admin',$user->roles))){ //echo '3'; exit;
+						return false;
+					} else if(((in_array('client',$solution_type) || in_array('server',$solution_type)) && in_array('embedded iot',$solution_type)) && (in_array('ODM Intel Admin',$user->roles) && in_array('Intel Admin',$user->roles))){ //echo '4'; exit;
+						return true;			
+					} else if(((in_array('client',$solution_type) || in_array('server',$solution_type)) && in_array('embedded iot',$solution_type)) && (in_array('Intel Admin',$user->roles))){ //echo '4a'; exit;
+						return true;			
+					} else if((in_array('client',$solution_type) || in_array('server',$solution_type)) && (in_array('Intel Admin',$user->roles) && !in_array('ODM Intel Admin',$user->roles))){ //echo '5'; exit;
+						return false;
+					} else if((in_array('client',$solution_type) || in_array('server',$solution_type)) && (in_array('Intel Admin',$user->roles) && in_array('ODM Intel Admin',$user->roles))){ //echo '6'; exit;
+						return true;
+					} else if((in_array('client',$solution_type) || in_array('server',$solution_type)) && (in_array('ODM Intel Admin',$user->roles))){ //echo '7'; exit;
+						return true;
+					} else if(in_array('embedded iot',$solution_type) && (in_array('ODM Intel Admin',$user->roles) && in_array('Intel Admin',$user->roles))){ //echo 'am in 1'; exit;
+						return true;
+					} else if(in_array('embedded iot',$solution_type) && (in_array('ODM Intel Admin',$user->roles) && !in_array('Intel Admin',$user->roles))){ //echo 'am in 2'; exit;
+						return false;
+					} else if(in_array('embedded iot',$solution_type) && (in_array('Intel Admin',$user->roles))){ //echo 'am in 2'; exit;
+						return true;
+						/////////// FAE/FAE show view Workflow Tab only for the solution they are assigned too 
+					} else if(in_array($user->uid,$approver_id) && (in_array('Intel Field Sales Engineer',$user->roles) || in_array('Intel Field Applications Engineer',$user->roles) && !(in_array('ODM Intel Admin',$user->roles) || in_array('Intel Admin',$user->roles)))){
+						return true;
+					} else {
+						return false;
+					} 
+                   
+                } else /*End Additional Condition */{
+                    return TRUE;
+                }
+           } else {
+                return FALSE;
+            }
+        }
+    }
+    return FALSE;
+}
+
+
+
+/**
+ * Implements hook_cron().
+ *
+ * PURPOSE: Send reminder emails to Intel Admin/ODM Intel Admin/FSE/FAE.
+ *//*
+function intel_ea_partner_upload_cron(){
+	drupal_load('module', 'privatemsg');
+	//drupal_load('module', 'node');
+			// n.nid,wn.sid, n.changed, n.title
+	global $user;	 
+	 $query_result = db_query("select n.nid,n.uid,wn.sid, n.changed, n.title from {node} n join {workflow_node} wn on wn.nid = n.nid where n.status = :status and n.type = :type", array(':status' => 0 , ':type' => 'solution'));
+
+	 	while ($row = $query_result->fetchAssoc()) {
+			$node_id = $row['nid'];    
+			$node_updated_time = $row['changed'];
+			$node_title = $row['title'];
+			$node_user_id = $row['uid'];
+		  
+//	  echo '<pre>';
+//	  print_r($user_uid); exit;
+	  
+	
+      // check if message has breached SLA.
+     // $node_updated_time = $node->changed;
+	  
+	  $day_diff = time() - $node_updated_time;	 
+		
+	  $SLA_days = floor($day_diff/86400);  ///  number of days 	
+	  
+	  $que_result = db_query("select fc.field_company_target_id,n.title from {field_data_field_company} fc join {node} n on n.nid = fc.field_company_target_id  where fc.entity_id = :node_id and fc.bundle = :type ", array(':node_id' => $node_id, ':type' => 'solution'));
+	  
+	  	while ($c_id = $que_result->fetchAssoc()) {
+			 $company_id = $c_id['field_company_target_id'];
+			 $company_name = $c_id['title'];
+		}
+	
+		 
+	  if($SLA_days > 3){
+		// Get the current workflow state of the node..
+		
+		  $workflow_state = workflow_get_state_name($row['sid']);
+		//  echo '<br />workflow_state='.$workflow_state;
+		  
+		
+		 		  
+		  if($workflow_state == 'Draft'){
+			  
+	
+		  // Get the content type of the solution
+		  
+		 // echo 'Node id='.$node_id;
+		  
+		   $que_result = db_select('field_data_field_solution_type', 'st')
+		  ->condition('entity_id', $node_id)
+		  ->condition('bundle', 'solution')
+		  ->fields('st', array('field_solution_type_value'))  
+		  ->execute()->fetchAll();
+		// $solution_type = array();
+		  foreach($que_result as $sol_state) {
+		  	
+			$solution_type[] = $sol_state->field_solution_type_value;
+		  
+		  }
+		  
+	
+		// Get the product description
+		
+		$que_body = db_query("SELECT fb.body_value,fb.entity_id FROM {field_data_body} fb where fb.entity_id = :nid and fb.bundle = :solution_type", array(":nid" => $node_id, ":solution_type" => 'solution'));
+		
+			while ($q_body = $que_body->fetchAssoc()) {
+			 $prod_desc = $q_body['body_value'];
+			
+			}
+			
+		
+	// Get the product image fid 
+		
+		$que_body = db_query("SELECT fi.field_image_fid,fi.entity_id FROM {field_data_field_image} fi where fb.entity_id = :nid and fb.bundle = :solution_type", array(":nid" => $node_id, ":solution_type" => 'solution'));
+		
+			while ($q_body = $que_body->fetchAssoc()) {
+			 $prod_image_fid = $q_body['field_image_fid'];
+			
+			}
+			
+		
+	
+				
+		 if(!empty($solution_type)) {
+		  //Send Mail to Intel Admin & ODM Intel Admin
+		  if((in_array('client',$solution_type) && in_array('server',$solution_type) && in_array('embedded iot',$solution_type)) || (in_array('server',$solution_type) && in_array('embedded iot',$solution_type)) || (in_array('client',$solution_type) && in_array('embedded iot',$solution_type))){
+				
+				$recipients= array();
+					    $role_IA = user_role_load_by_name('Intel Admin');
+						$selected_users_IA = getUsersByRole($role_IA->rid);
+						
+							
+						foreach ($selected_users_IA as $res_IA_key => $recipient_IA) {
+							$recipients[] = user_load($res_IA_key);
+							
+							//Provide permission for all recipients to write and read message 
+							read_write_pri_message(user_load($res_IA_key));
+							
+							$pm_disable = privatemsg_is_disabled(user_load($res_IA_key));
+							if(!$pm_disable) {
+								$mail_flag = true;
+							} else {
+								$mail_flag = false;
+							}
+							
+						}
+						
+						
+				
+						//echo $role_ODMA->rid; exit;
+						
+			if($mail_flag == true){		
+
+			foreach ($recipients as $recipient) {
+					
+			    $msg_subject = 'Approval request for '.$node_title .' reminder.';
+				$msg_body = 'Dear Intel Admin, <br /> 
+				
+				The solution "'.$node_title .'" approval requested submmited by company "'.$company_name.'" on '.date('m-d-Y',$node_updated_time).' has been not been process for more than 4 days. Details as below
+				
+				<br /> Please take the action to approve or reject this request. You may directly approve in the e-mail by clicking on 
+				<a href="/node/' . $node_id .'/edit" target="_blank">Approve</a> or disapprove by clicking on <a href="/node/'. $node_id .'/edit" target="_blank">Reject</a>. Also you may click <a href=/node/' . $node_id . '/workflow>Here</a> to web site to check overall product approval status. <br />';
+
+								
+				//// Node Image
+				if(isset($prod_image_fid)){
+					$node_fid = $prod_image_fid;
+					$file = file_load($node_fid);
+					$uri = $file->uri;
+					$url = file_create_url($uri);
+					
+					
+					$msg_body .= '<img typeof="foaf:Image" class="img-responsive" src="'.$url.'" width="100" height="67" alt="">';
+				}
+				
+				$msg_body .= '<br />Product Description : '.$prod_desc;
+				$msg_body .= '<br /> Please find the link for the solution  <a href=/node/' . $node_id . '>' . $node_title . '</a><br /> Regards, <br />
+				Intel Partner MarketPlace Team';
+			}		
+										
+				$get_message_thread_id = privatemsg_new_thread($recipients, $msg_subject, $msg_body, $options = array());
+				
+				$message_thread_id = 	$get_message_thread_id['message'];
+				$m_thread_id = $message_thread_id->thread_id;	
+				
+								
+				try {
+					if($m_thread_id){
+						foreach ($recipients as $recipient) {
+									solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);	
+						}					
+						drupal_set_message('Message successfully sent to Intel Admin and ODM Intel Admin.');
+					}
+				} catch (Exception $e){
+					drupal_set_message('Message not sent.','error');			
+				}
+			} else {
+					drupal_set_message('Message not sent. Recipient(s) does not have permissions for private message.','error');
+			}
+				
+		  
+			    //Send Mail to  ODM Intel Admin
+		} else if(in_array('client',$solution_type) || in_array('server',$solution_type)){ //echo 'am in else iff 1'; exit;
+						$recipients= array();
+					
+						$role_ODMA = user_role_load_by_name('ODM Intel Admin');
+						$selected_users_ODMA = getUsersByRole($role_ODMA->rid);
+					
+						
+						foreach ($selected_users_ODMA as $res_ODMA_key => $recipient_ODMA) {
+							$recipients[] = user_load($res_ODMA_key);
+							
+							//Provide permission for all recipients to write and read message 
+							read_write_pri_message(user_load($res_ODMA_key));
+							
+							$pm_disable = privatemsg_is_disabled(user_load($res_ODMA_key));
+							if(!$pm_disable) {
+								$mail_flag_1 = true;
+							} else {
+								$mail_flag_1 = false;
+							}
+						}
+				//$mail_flag_1 = true;
+				
+						//echo $role_ODMA->rid; exit;
+				
+			if($mail_flag_1 == true){		
+			foreach ($recipients as $recipient) {
+			
+			    $msg_subject = 'Approval request for '.$node_title .' reminder.';
+				$msg_body = 'Dear ODM Intel Admin, <br /> 
+				
+				The solution "'.$node_title .'" approval requested summited by company "'.$company_name.'" on '.date('m-d-Y',$node_updated_time).'  
+				has been not been process for more than 4 days. Details as below
+				
+				<br /> Please take the action to approve or reject this request. You may directly approve in the e-mail by clicking on 
+				<a href="/node/' . $node_id .'/edit" target="_blank">Approve</a> or disapprove by clicking on <a href="/node/' . $node_id .'/edit" target="_blank">Reject</a>. Also you may click <a href=/node/' . $node_id . '/workflow>Here</a> to web site to check overall product approval status. <br />';
+
+				
+			
+				
+				//// Node Image
+				if(isset($prod_image_fid)){
+					$node_fid = $prod_image_fid;
+					$file = file_load($node_fid);
+					$uri = $file->uri;
+					$url = file_create_url($uri);
+					
+					
+					$msg_body .= '<img typeof="foaf:Image" class="img-responsive" src="'.$url.'" width="100" height="67" alt="">';
+				}		
+
+				$msg_body .= '<br />Product Description : '.$prod_desc;				
+				
+				$msg_body .= '<br /> Please find the link for the solution  <a href=/node/' . $node_id . '>' . $node_title . '</a><br /> Regards, <br />
+				Intel Partner MarketPlace Team';
+		} // for loop	
+										
+				$get_message_thread_id = privatemsg_new_thread($recipients, $msg_subject, $msg_body, $options = array());
+				
+				$message_thread_id = 	$get_message_thread_id['message'];
+				$m_thread_id = $message_thread_id->thread_id;	
+				
+				//echo $m_thread_id;
+								
+				try {					
+					
+					if($m_thread_id){
+						foreach ($recipients as $recipient) {
+									solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);	
+						}					
+						drupal_set_message('Message successfully sent to ODM Intel Admin.');
+					}
+				} catch (Exception $e){
+					drupal_set_message('Message not sent.','error');			
+				}
+			} else {
+					drupal_set_message('Message not sent. Recipient(s) does not have permissions for private message.','error');
+			}
+				//exit;
+			
+			 //Send Mail to Intel Admin 
+	    } else if(in_array('embedded',$solution_type)){ //echo 'am in else iff 2'; exit;
+			$recipients= array();
+					    $role_IA = user_role_load_by_name('Intel Admin');
+						$selected_users_IA = getUsersByRole($role_IA->rid);
+					
+							
+						foreach ($selected_users_IA as $res_IA_key => $recipient_IA) {
+							$recipients[] = user_load($res_IA_key);
+							//Provide permission for all recipients to write and read message 
+							read_write_pri_message(user_load($res_IA_key));
+							
+							$pm_disable = privatemsg_is_disabled(user_load($res_IA_key));
+							if(!$pm_disable) {
+								$mail_flag = true;
+							} else {
+								$mail_flag = false;
+							}
+							
+						}
+						
+						//echo $role_ODMA->rid; exit;
+				
+						
+			if($mail_flag == true){			
+			foreach ($recipients as $recipient) {
+			
+							
+			
+			    $msg_subject = 'Approval request for '.$node_title .' reminder.';
+				$msg_body = 'Dear Intel Admin, <br /> 
+				
+				The solution "'.$node_title .'" approval requested submmited by company "'.$company_name.'" on '.date('m-d-Y',$node_updated_time).' 
+				has been not been process for more than 4 days. Details as below
+				
+				<br /> Please take the action to approve or reject this request. You may directly approve in the e-mail by clicking on 
+				<a href="/node/' . $node_id .'/edit" target="_blank">Approve</a> or disapprove by clicking on <a href="/node/' . $node_id .'/edit" target="_blank">Reject</a>. Also you may click <a href=/node/' . $node_id . '/workflow>Here</a> to web site to check overall product approval status. <br />';				
+				
+								
+				//// Node Image
+				if(isset($prod_image_fid)){
+					$node_fid = $prod_image_fid;
+					$file = file_load($node_fid);
+					$uri = $file->uri;
+					$url = file_create_url($uri);
+					
+					
+					$msg_body .= '<img typeof="foaf:Image" class="img-responsive" src="'.$url.'" width="100" height="67" alt="">';
+				}	
+					
+				$msg_body .= '<br />Product Description : '.$prod_desc;		
+				
+				$msg_body .= '<br /> Please find the link for the solution  <a href=/node/' . $node_id . '>' . $node_title . '</a><br /> Regards, <br />
+				Intel Partner MarketPlace Team';
+					
+			}// for loop 							
+				$get_message_thread_id = privatemsg_new_thread($recipients, $msg_subject, $msg_body, $options = array());
+				
+				$message_thread_id = 	$get_message_thread_id['message'];
+				$m_thread_id = $message_thread_id->thread_id;	
+				
+								
+				try {					
+					
+					if($m_thread_id){
+						foreach ($recipients as $recipient) {
+									solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);	
+						}					
+						drupal_set_message('Message successfully sent to Intel Admin.');
+					}
+				} catch (Exception $e){
+					drupal_set_message('Message not sent.','error');			
+				}
+			} else {
+					drupal_set_message('Message not sent. Recipient(s) does not have permissions for private message.','error');
+			}
+				
+		}
+		
+      }// Empty solution type	
+	    // $solution_type = array(); 
+		  unset($solution_type);		
+		}// Draft    
+	  } // SLA 3 days	  
+	 }// While loop
+	 	 
+	 // Trigger Mail to all the FSE/FAE who have not approved for more than 3 days 
+	 
+	 	$approvers_list = db_query("select n.nid,n.uid, fa.field_approvers_target_id,wn.sid, n.changed, n.title from field_data_field_approvers fa join node n on fa.entity_id = n.nid  join workflow_node wn on wn.nid = n.nid where  fa.bundle = :type and n.status = :status", array(':status' => 0, ':type' => 'solution'));
+		
+		while ($approver_id = $approvers_list->fetchAssoc()) {
+			$approvers_id	 = $approver_id['field_approvers_target_id'];
+			$node_updated_time = $approver_id['changed'];
+			$app_node_id = $approver_id['nid'];
+			$app_node_user_id = $approver_id['uid'];
+			$day_diff = time() - $node_updated_time;	 
+		
+	        $app_SLA_days = floor($day_diff/86400);  ///  number of days 	
+		//	echo '<br />app_sla'.$app_SLA_days;
+		
+		//$node_info = node_load($node_id);
+		
+		
+		   $que_result = db_query("select fc.field_company_target_id,n.title from {field_data_field_company} fc join {node} n on n.nid = fc.field_company_target_id  where fc.entity_id = :node_id and fc.bundle = :type ", array(':node_id' => $app_node_id, ':type' => 'solution'));
+	  
+	  	while ($c_id = $que_result->fetchAssoc()) {
+			 $company_id = $c_id['field_company_target_id'];
+			 $company_name = $c_id['title'];
+		}
+		
+		
+	   if($app_SLA_days > 3){
+		// Get the current workflow state of the node..
+		
+		  $workflow_state = workflow_get_state_name($approver_id['sid']);
+		// echo '<br />workflow_state='.$workflow_state;
+		  
+		  
+		  
+		  if($workflow_state == 'Draft'){
+		// echo '<br />approvers_id='.$approvers_id;
+		//  echo '<br />node_id='.$node_id;
+		  
+			$app_recipients[] = user_load($approvers_id);
+				$recip = user_load($approvers_id);
+				//Provide permission for all recipients to write and read message 
+				read_write_pri_message(user_load($approvers_id));
+				
+				$pm_disable = privatemsg_is_disabled(user_load($approvers_id));
+				if(!$pm_disable) {
+					$mail_flag_app = true;
+				} else {
+					$mail_flag_app = false;
+				}
+				
+				
+				//echo '<br />mail_flag_app='.$mail_flag_app;
+				
+					// Get the product description
+		
+			$que_body = db_query('SELECT nb.body_value FROM {field_data_body} nb where nb.entity_id = :nid and nb.bundle = :solution_type', array(":nid" => $app_node_id, ":solution_type" => 'solution'));
+		
+			while ($q_body = $que_body->fetchAssoc()) {
+			 $prod_desc = $q_body['body_value'];
+			
+			}
+					
+				
+				
+				if($mail_flag_app == true){			
+			//echo 'am inside if';
+			
+			foreach ($app_recipients as $recipient) {
+					
+					
+					$msg_subject = 'Urgent! Submitted product "'.$node_title.'" pending for your approval!';
+					$msg_body = 'Dear FSE '.$recipient->name.', <br /> '.
+					'Please note this product is pending for your review and approval. Please review the product details and provide feedback if ok to approve or have any concerns/questions.<br />
+					You may directly approve in the e-mail by clicking on <a href="/node/' . $node_id .'/edit" target="_blank">Approve</a> or disapprove by clicking on <a href="/node/' . $node_id .'/edit" target="_blank">Reject</a>. Also you may click "Here" to web site to check overall product approval status<br />.
+					
+					Appreciate your timely support to publish this product soon!
+					';
+									
+											
+				//// Node Image
+				if(isset($prod_image_fid)){
+					$node_fid = $prod_image_fid;
+					$file = file_load($node_fid);
+					$uri = $file->uri;
+					$url = file_create_url($uri);
+										
+					$msg_body .= '<img typeof="foaf:Image" class="img-responsive" src="'.$url.'" width="100" height="67" alt="">';
+				}
+					$user_obj = user_load($app_node_user_id);
+					
+					$msg_body .= '<br />Product Description: '.$prod_desc;
+					$msg_body .= '<br />Partner User Name :'. $user_obj->name;
+					$msg_body .= '<br />Partner Email : '.$user_obj->email;
+					$msg_body .= '<br />Please find the link for the solution  <a href=/node/' . $app_node_id . '>' . $node_title . '</a><br /> Regards, <br />
+					Intel Partner Solution Directory Team';
+					
+							
+				
+				}// For loop				
+					$get_message_thread_id = privatemsg_new_thread($app_recipients, $msg_subject, $msg_body, $options = array());
+				
+				
+				$message_thread_id = 	$get_message_thread_id['message'];
+				$m_thread_id = $message_thread_id->thread_id;	
+				
+					//	echo $m_thread_id; exit;	
+				try {					
+					
+					if($m_thread_id){
+						foreach ($app_recipients as $recipient) {
+									solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);	
+						}					
+						drupal_set_message('Message successfully sent to FSE/FAE.');
+					}
+				} catch (Exception $e){
+					drupal_set_message('Message not sent.','error');			
+				}
+			} else {
+					drupal_set_message('Message not sent. Recipient(s) does not have permissions for private message.','error');
+			}
+			
+		 } // Draft
+		
+	  }// SLA > 3 days
+	} // While loop	
+	//exit;	
+		
+	//////################ Product Update Reminder to node authors ##########################################
+	$node_auth_list = db_query("select n.nid,n.uid,wnh.sid, n.changed, n.title , ws.state from node n  join workflow_node_history wnh  on wnh.nid = n.nid join workflow_states ws on ws.sid = wnh.sid where  ws.state=:state and n.status = :status and n.type = :type;
+", array(':state' => 'Update Required', ':status' => 0, ':type' => 'solution'));
+
+	while ($node_authors = $node_auth_list->fetchAssoc()) {
+		
+			$node_updated_time = $node_authors['changed'];
+			$nid = $node_authors['nid'];
+			$node_auth_id = $node_authors['uid'];
+			$workflow_state = $node_authors['state'];
+			$node_title = $node_authors['title'];
+			$day_diff = time() - $node_updated_time;	 
+		
+	        $update_req_SLA_days = floor($day_diff/86400);  ///  number of days 	
+		//	echo '<br />app_sla'.$app_SLA_days;
+		
+		//$node_info = node_load($node_id);
+		
+		
+		   $que_result = db_query("select fc.field_company_target_id,n.title from {field_data_field_company} fc join {node} n on n.nid = fc.field_company_target_id  where fc.entity_id = :node_id and fc.bundle = :type ", array(':node_id' => $nid, ':type' => 'solution'));
+	  
+	  	while ($c_id = $que_result->fetchAssoc()) {
+			 $company_id = $c_id['field_company_target_id'];
+			 $company_name = $c_id['title'];
+		}
+		
+	
+	   if($app_SLA_days > 90){
+				  
+		  if($workflow_state == 'Update Required'){
+		// echo '<br />approvers_id='.$approvers_id;
+		//  echo '<br />node_id='.$node_id;
+		  
+			$node_auth_recipients[] = user_load($node_auth_id);
+				
+				//Provide permission for all recipients to write and read message 
+				read_write_pri_message(user_load($node_auth_id));
+				
+				$pm_disable = privatemsg_is_disabled(user_load($node_auth_id));
+				if(!$pm_disable) {
+					$mail_flag_app = true;
+				} else {
+					$mail_flag_app = false;
+				}
+						
+				
+			
+				if($mail_flag_app == true){			
+			//echo 'am inside if';
+			
+			foreach ($node_auth_recipients as $recipient) {
+						
+					$msg_subject = 'Product Updates Reminder';
+					$msg_body = 'Dear '.$company_name.', <br /> '.
+					'You are receiving this email as we have identified some of your products/solutions have not been updated for over 3 months. As we continue to drive new products on Intel Partner Solution Directory, we would like to ask you to review your old products/solutions. If they are no longer in your roadmap, you dont need to take any action and we will move them to Off Shelf by end of the week. However, if you are still selling and want to promote some of the products, please update them within this week so we can keep them On Shelf.';
+					
+					$msg_body.='<br /> Please complete the product update by clicking <a href=/node/' . $nid . '>' . $node_title . '</a>';
+					
+					$msg_body .= '<br />If you have any questions, please contact your support team via <intelpartnersolutiondirectory@intel.com>';
+					
+					$msg_body .= '<br />Thanks for your understanding and support.
+To ensure that you continue to receive update from Intel Partner Solution Directory, please add <intelpartnersolutiondirectory@intel.com> to your contact list or address book.';
+																	
+				
+				}// For loop				
+				$get_message_thread_id = privatemsg_new_thread($app_recipients, $msg_subject, $msg_body, $options = array());
+				
+				$message_thread_id = 	$get_message_thread_id['message'];
+				$m_thread_id = $message_thread_id->thread_id;	
+				
+					//	echo $m_thread_id; exit;	
+				try {					
+					
+					if($m_thread_id){
+						foreach ($node_auth_recipients as $recipient) {
+							solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);	
+							drupal_set_message('Message successfully sent to '.$recipient->name);
+						}					
+						
+					}
+				} catch (Exception $e){
+					drupal_set_message('Message not sent.','error');			
+				}
+			} else {
+					drupal_set_message('Message not sent. Recipient(s) does not have permissions for private message.','error');
+			}
+			
+		 } // Update Required
+		
+	  }// SLA > 90 days
+	} // While loop
+
+	
+	 // watchdog('intel_ea_partner_upload',t('Alert Message data inserted into email table on cron run.'),NULL,WATCHDOG_NOTICE);
+}
+*/
+
+/* hook form formID alter for solution page*/
+
+function intel_ea_partner_upload_form_solution_node_form_alter(&$form, $form_state, $form_id){
+
+drupal_add_js(drupal_get_path('module', 'intel_ea_partner_upload') . '/solution.js'); 
+
+global $user;
+$user_id = user_load($user->uid);
+$node = $form_state['node'];
+
+    $nid=$node->nid;
+	$query = db_query('SELECT w.sid FROM {workflow_node} w WHERE w.nid = :nid LIMIT 1', array(':nid' => $nid));
+    $result = $query->fetchAll(); 
+    $sidresult = $result[0]->sid;
+	
+  if($form_id == 'solution_node_form'){
+
+   $dyn_message = check_solution($nid, 'Archive');
+   /************ display the class only if Promotion/RFP is mapped **************/
+   if($dyn_message){
+	$class_pop = 'archive_buttn';
+   } else {
+   $class_pop = '';
+   }
+   
+   $se_edit_dyn_message = check_solution($nid, 'Save_SE');
+   /************ display the class only if Promotion/RFP is mapped for Submit button **************/
+   if($dyn_message && $node->workflow == 7){
+	$class_submit_pop = 'se_submit_buttn';
+   } else {   
+    $class_submit_pop = '';
+   }
+    /*Hide the radio buttons for SE*/
+  if( ((array_key_exists(20, $user_id->roles)) && (empty(array_key_exists(36, $user_id->roles)))  )&& (empty(array_key_exists(9, $user_id->roles))) ) {
+  drupal_add_js('jQuery(document).ready(function () { jQuery(".form-item-partner-upload-workflow").css("display", "none"); });', 'inline'); }
+  
+  /*Hide the radio buttons for SE*/
+  
+	/*Archive for SE */  
+	 // print_r($node);exit;
+	  if (((array_key_exists(20, $user_id->roles)) && (empty(array_key_exists(36, $user_id->roles)))  )&& (empty(array_key_exists(9, $user_id->roles))) &&(isset($node->nid)) && $sidresult != 22 )
+	{
+	
+        $form['actions']['submit_button_1'] = array(
+        '#type' => 'submit',
+        '#value' => t('Archive'),		
+		'#attributes' => array('class' => array($class_pop)),		
+        '#submit' => array('node_form_submit', 'intel_ea_partner_upload_node_submit'),
+                          );
+        					  
+	   $form['actions']['submit']['#attributes'] = array('class' => array($class_submit_pop));  					  
+		
+	}
+ /***********Add help text for enable / disable tabs *************/
+		$form['solution_help_text'] = array(
+			'#markup' => '<i>Tabs will be enabled in sequence only after the mandatory fields are filled in.</i>',
+			'#weight' => -1,
+		);
+		$form['#group_children']['solution_help_text'] = 'group_solution_information';
+		$form['#group_children']['workflow_alert'] = 'group_solution_information';
+  			
+		$form['field_search_category'] = array (
+			'#type' => 'textfield',
+			'#description' => '<a href="#" id="search_cat">Click</a> to search in the Categories below.',			
+			'#suffix' => '<a href="#" class= "expand_all">Expand All</a> | <a href="#" class= "collapse_all">Collapse All</a> | <a href="#" class= "reset_cat">Reset</a>'
+		);
+		
+			
+		$form['field_search_characteristics'] = array (
+			'#type' => 'textfield',
+			'#description' => '<a href="#" id="search_char">Click</a>  to search in the Characteristics below.',			
+			'#suffix' => '<a href="#" class= "expand_all_char">Expand All</a> | <a href="#" class= "collapse_all_char">Collapse All</a> | <a href="#" class= "reset_char">Reset</a>'
+		);	
+  
+	$form['workflow_alert'] = array(
+			'#type' =>'item',
+			'#value' =>($dyn_message)?$dyn_message:'',		
+			//'#attributes' => array('id' => 'workflow-alert'),
+			'#weight' => -1,
+				
+		);
+		
+		$form['workflow_alert1'] = array(
+			'#type' =>'item',
+			'#value' =>($dyn_message)?$dyn_message:'',		
+			//'#attributes' => array('id' => 'workflow-alert'),
+			'#weight' => -1,
+				
+		);
+		
+		$form['workflow_res'] = array(
+			'#type' =>'hidden',
+			'#value' => ($dyn_message)?$dyn_message:'',	
+			 '#attributes' => array('id' => 'workflow-res'),	
+		);
+
+		$form['workflow_res_se_edit'] = array(
+			'#type' =>'hidden',
+			'#value' => ($se_edit_dyn_message)?$se_edit_dyn_message:'',	
+			'#attributes' => array('id' => 'workflow-res-se-edit'),	
+		);
+
+			/******** Store the fields in the hidden fields ************/
+		$form['current_user_id'] = array(
+			'#type' => 'hidden',
+			'#attributes' => array('id' => 'current-user-id'),
+			'#value' => $user->uid,
+		);
+		
+	$form['current_node_id'] = array(
+			'#type' => 'hidden',
+			'#attributes' => array('id' => 'current-node-id'),
+			'#value' => $form_state['node']->nid,
+		);
+		
+		if(in_array('Intel Admin',$user->roles)){
+			$curr_role = 'Intel Admin';
+		} else if(in_array('ODM Intel Admin',$user->roles)){
+			$curr_role = 'ODM Intel Admin';
+		} else if(in_array('Intel Field Applications Engineer',$user->roles)){
+			$curr_role = 'Intel Field Applications Engineer';
+		} else if(in_array('Intel Field Sales Engineer',$user->roles)){
+			$curr_role = 'Intel Field Sales Engineer';
+		} else if(in_array('Administrator',$user->roles)){
+			$curr_role = 'Administrator';
+		} else {
+			$curr_role = 'Other';
+		}
+		
+		$form['current_user_role'] = array(
+			'#type' => 'hidden',
+			'#attributes' => array('id' => 'current-user-role'),
+			'#value' => $curr_role,
+		);
+		
+    // Get the node's author
+		$node_user_id = $form_state['node']->uid;
+		// GEt the node's author's company
+		$node_author_company = user_load($node_user_id);
+		
+		$_node_auth_comp = $node_author_company->field_company[LANGUAGE_NONE][0]['target_id'];
+		
+		$get_approvers = field_approver_options($_node_auth_comp);
+		$default_approvers = default_approver_options($form_state['node']->nid);
+		
+	/*	echo '<pre>';
+		print_r($get_approvers);
+		exit;*/
+	if(!empty($get_approvers)){	
+		$form['approvers'] = array(
+			 '#title' => 'Approvers',	
+			 '#type' => 'select',			
+			 '#options' => $get_approvers,
+			 '#default_value' => $default_approvers,
+			 '#multiple' => true,
+			 '#size' => 10,	
+			 '#weight' => 82,
+		);
+	}
+	// Show  the last comment  for submitter's 
+			$get_auto_incr_id = db_select('workflow_node_history','wfnh')
+				->fields('wfnh', array('comment'))
+				->condition('wfnh.sid', $form_state['node']->workflow)
+				->condition('wfnh.nid', $form_state['node']->nid)
+				->orderBy('hid', 'DESC')
+				->range(0,1)
+				->execute();
+			$result = $get_auto_incr_id->fetchObject();	
+		
+				
+			$wf_comment = $result->comment;	
+			
+		$form['workflow_custom_comment'] = array(
+			 '#title' => 'Workflow Comment',	
+			 '#default_value' => $wf_comment,
+			 '#type' => 'textarea',			
+			 '#rows' => 3,			
+			 '#cols' => 7,
+			 '#weight' => 83, 
+		);
+	// Position the approvers and workflow  in the workflow tab 
+		$form['#group_children']['approvers'] = 'group_workflow';
+		$form['#group_children']['workflow_custom_comment'] = 'group_workflow';
+	   $form['#group_children']['workflow_alert1'] = 'group_workflow';
+	
+	
+	// Hide the workflow tab for Intel Field Applications Engineer and Intel Field Sales Engineer if workflow state is Approve	
+	/*  if((in_array('Intel Field Applications Engineer',$user->roles) && $form_state['node']->workflow_state_name == 'Approved By FSE/FAE') || (in_array('Intel Field Sales Engineer',$user->roles) && $form_state['node']->workflow_state_name == 'Approved By FSE/FAE')){
+		$form['#group_children']['group_workflow']['#access'] = FALSE;
+	   } 
+	*/
+	if(!empty($default_approvers)){
+				
+				foreach($default_approvers as $key => $value){
+					$solution_approvers[] = $value;
+				}
+				
+				$sol_approv = implode(",",$solution_approvers);				
+				$form['approver_hidden'] = array(
+					'#type' => 'hidden',
+					'#attributes' => array('id' => 'approver-hidden'),
+					'#value' => $sol_approv,
+				);
+			}
+			
+
+// Hide delete for all users including Super Admin	
+									
+								hide($form['actions']['delete']);							
+				
+					
+			// Hide Preview for all states and EDIT / ADD 
+				//	hide($form['actions']['preview']);
+				//	hide($form['actions']['preview_changes']);     
+	
+  }		
+	 if(isset($form_state['node']->field_solution_type[LANGUAGE_NONE])){
+			$_solu_type = $form_state['node']->field_solution_type[LANGUAGE_NONE];
+			foreach($_solu_type as $sol_type){
+				$solution_type[] = $sol_type['value'];
+			}
+			
+			$sol_type_approv = implode(",",$solution_type);
+		
+			$form['solution_type_hidden'] = array(
+				'#type' => 'hidden',
+				'#attributes' => array('id' => 'solution-type-hidden'),
+				'#value' => $sol_type_approv,
+			);			
+		}	
+/********* Get the Current work flow state of the node ************/
+		
+		// Workflow state ###########################
+		 $query_result = db_query("select n.nid,n.uid,wn.sid, n.changed, n.title from {node} n join {workflow_node} wn on wn.nid = n.nid where n.type = :type and n.nid = :nid", array(':type' => 'solution', ':nid' => $form_state['node']->nid));
+		 
+		 while ($row = $query_result->fetchAssoc()) {
+			$sid = $row['sid'];    
+		 }
+		 
+		$workflow_state = workflow_get_state_name($sid);
+		
+		
+		
+			$form['solution_workflow_state'] = array(
+				'#type' => 'hidden',
+				'#attributes' => array('id' => 'solution-workflow-state'),
+				'#value' => $workflow_state,
+			);		
+   	//########  Hide the workflow tab for Intel Admin with Client OR Server AND Embedded IoT with ODM Intel Admin ################//
+		if(((in_array('client',$solution_type) || in_array('server',$solution_type)) && in_array('embedded iot',$solution_type)) && (in_array('ODM Intel Admin',$user->roles) && !in_array('Intel Admin',$user->roles))){ //echo '3'; exit;
+			$form['#group_children']['group_workflow']['#access'] = FALSE;
+		} else if(((in_array('client',$solution_type) || in_array('server',$solution_type)) && in_array('embedded iot',$solution_type)) && (in_array('ODM Intel Admin',$user->roles) && in_array('Intel Admin',$user->roles))){ //echo '4'; exit;
+			//$form['#group_children']['group_workflow']['#access'] = TRUE;					
+		} else if(((in_array('client',$solution_type) || in_array('server',$solution_type)) && in_array('embedded iot',$solution_type)) && (in_array('Intel Admin',$user->roles))){ //echo '4a'; exit;
+			//$form['#group_children']['group_workflow']['#access'] = TRUE;					
+		} else if((in_array('client',$solution_type) || in_array('server',$solution_type)) && (in_array('Intel Admin',$user->roles) && !in_array('ODM Intel Admin',$user->roles))){ //echo '5'; exit;
+			$form['#group_children']['group_workflow']['#access'] = FALSE;
+		} else if((in_array('client',$solution_type) || in_array('server',$solution_type)) && (in_array('Intel Admin',$user->roles) && in_array('ODM Intel Admin',$user->roles))){ //echo '6'; exit;
+		//	$form['#group_children']['group_workflow']['#access'] = TRUE;
+		} else if((in_array('client',$solution_type) || in_array('server',$solution_type)) && (in_array('Intel Admin',$user->roles))){ //echo '7'; exit;
+		//	$form['#group_children']['group_workflow']['#access'] = TRUE;
+		} else if(in_array('embedded iot',$solution_type) && (in_array('ODM Intel Admin',$user->roles) && in_array('Intel Admin',$user->roles))){ //echo 'am in 1'; exit;
+			//$form['#group_children']['group_workflow']['#access'] = TRUE;
+		} else if(in_array('embedded iot',$solution_type) && (in_array('ODM Intel Admin',$user->roles) && !in_array('Intel Admin',$user->roles))){ //echo 'am in 2'; exit;
+			$form['#group_children']['group_workflow']['#access'] = FALSE;
+		} else if(in_array('embedded iot',$solution_type) && (in_array('Intel Admin',$user->roles))){ //echo 'am in 2'; exit;
+			//$form['#group_children']['group_workflow']['#access'] = FALSE;
+		} else {
+			
+		}
+		//######### #################################################################################################################//
+		
+if(isset($form_state['node']->field_solution_type[LANGUAGE_NONE][0]['value'])){
+				
+				if((in_array('client',$solution_type) || in_array('server',$solution_type)) &&  in_array('ODM Intel Admin',$user->roles)){
+					$form['approvers']['#access'] = TRUE;
+				} else if(in_array('embedded iot',$solution_type) && in_array('Intel Admin',$user->roles)){
+					$form['approvers']['#access'] = TRUE;
+				} else if(in_array('client',$solution_type) && in_array('server',$solution_type) && in_array('embedded iot',$solution_type) && in_array('Intel Admin',$user->roles)){
+					$form['approvers']['#access'] = TRUE;
+				} else if(in_array('client',$solution_type) && in_array('server',$solution_type) && in_array('embedded iot',$solution_type) && in_array('ODM Intel Admin',$user->roles)){
+					$form['approvers']['#access'] = TRUE;
+				} else { 
+					$form['approvers']['#access'] = FALSE;
+				} // Create page approvers will be visible only for Intel admin and ODM Intel admin
+			} else if((in_array('Intel Admin',$user->roles) || in_array('ODM Intel Admin',$user->roles))){	
+				$form['approvers']['#access'] = TRUE;
+			} else {
+				$form['approvers']['#access'] = FALSE;
+			}
+				
+ if(!in_array('Administrator',$user->roles, true)){
+		$form['author']['#access'] = FALSE;
+		$form['options']['#access'] = FALSE; 
+		}
+// Hide the revision information for SDE 
+			if((in_array('Intel Admin',$user->roles, true) || in_array('ODM Intel Admin',$user->roles, true) || in_array('Administrator',$user->roles)) && !in_array('Solutions Directory Editor',$user->roles)){ 
+					$form['revision_information']['#access'] = TRUE;
+			}
+
+}
+
+
+// Get the user's based on the company
+function field_approver_options($node_company_id = '') {
+
+	$user_list = array();
+	
+	////////// Get the Field Sales Engineers  //////////////////////////
+	$query = db_select('users', 'u');
+	$query->distinct();
+		$query->leftjoin('field_data_field_sales_engineers', 'fse', 'u.uid = fse.field_sales_engineers_target_id');
+
+	$query->fields('u',array('uid', 'name'));	
+	
+	$query->fields('fse',array('field_sales_engineers_target_id'));
+
+	$query->condition('u.status', 0, '<>');
+	
+	$query->condition(
+				db_or()
+					->condition('fse.entity_id', $node_company_id, '=') // User who are FAE's under the partner's company  			
+					); 
+	
+	
+	$result = $query->execute();
+	
+	/*echo '<pre>';
+	print_r($result);
+	exit;*/
+
+	if($result){
+		foreach($result as $row) {
+			$uid = $row->uid;	
+			$uname = $row->name;
+			$fse = $row->field_sales_engineers_target_id;
+	
+			if($fse){
+				$user_list['Intel Field Sales Engineer'][$uid] = $uname;  
+			} 
+		
+							
+		}
+	}
+	////////// Get the Field Applications Engineers  //////////////////////////////////////////////////////
+	$query_1 = db_select('users', 'u');
+	$query_1->distinct();
+	$query_1->leftjoin('field_data_field_applications_engineers', 'fae', 'u.uid = fae.field_applications_engineers_target_id');
+
+	$query_1->fields('u',array('uid', 'name'));	
+	
+	$query_1->fields('fae',array('field_applications_engineers_target_id'));
+
+	$query_1->condition('u.status', 0, '<>');
+	
+	$query_1->condition(
+				db_or()
+					->condition('fae.entity_id', $node_company_id, '=') // User who are FAE's under the partner's company  			
+					); 
+	
+	
+	$result_1 = $query_1->execute();
+	
+		if($result_1){
+		foreach($result_1 as $row) {
+			$uid = $row->uid;	
+			$uname = $row->name;
+			$fae = $row->field_applications_engineers_target_id;
+	
+			if($fae){
+				$user_list['Intel Field Applications Engineer'][$uid] = $uname;  
+			} 
+		
+							
+		}
+	}
+	////////// Get the Client Field Applications Engineers /////////////////////////
+	$query_2 = db_select('users', 'u');
+	$query_2->distinct();
+	$query_2->leftjoin('field_data_field_client_fae', 'c_fae', 'u.uid = c_fae.field_client_fae_target_id');
+
+	$query_2->fields('u',array('uid', 'name'));	
+	
+	$query_2->fields('c_fae',array('field_client_fae_target_id'));
+
+	$query_2->condition('u.status', 0, '<>');
+	
+	$query_2->condition(
+				db_or()
+					->condition('c_fae.entity_id', $node_company_id, '=') // User who are FAE's under the partner's company  			
+					); 
+	
+	
+	$result_2 = $query_2->execute();
+	
+	/*echo '<pre>';
+	print_r($result);
+	exit;*/
+
+	if($result_2){
+		foreach($result_2 as $row) {
+			$uid = $row->uid;	
+			$uname = $row->name;
+			$c_fae = $row->field_client_fae_target_id;
+	
+			if($c_fae){
+				$user_list['Intel Client Field Applications Engineer'][$uid] = $uname;  
+			} 
+		
+							
+		}
+	}
+	
+	////////// Get the Server Field Applications Engineers /////////////////////////
+	$query_3 = db_select('users', 'u');
+	$query_3->distinct();
+	$query_3->leftjoin('field_data_field_server_fae', 's_fae', 'u.uid = s_fae.field_server_fae_target_id');
+
+	$query_3->fields('u',array('uid', 'name'));	
+	
+	$query_3->fields('s_fae',array('field_server_fae_target_id'));
+
+	$query_3->condition('u.status', 0, '<>');
+	
+	$query_3->condition(
+				db_or()
+					->condition('s_fae.entity_id', $node_company_id, '=') // User who are FAE's under the partner's company  			
+					); 
+	
+	
+	$result_3 = $query_3->execute();
+	
+	/*echo '<pre>';
+	print_r($result);
+	exit;*/
+
+	if($result_3){
+		foreach($result_3 as $row) {
+			$uid = $row->uid;	
+			$uname = $row->name;
+			$s_fae = $row->field_server_fae_target_id;
+	
+			if($s_fae){
+				$user_list['Intel Server Field Applications Engineer'][$uid] = $uname;  
+			} 
+		
+							
+		}
+	}
+	
+	////////// Get the EIOT Field Applications Engineers /////////////////////////
+	$query_4 = db_select('users', 'u');
+	$query_4->distinct();
+	$query_4->leftjoin('field_data_field_eiot_fae', 'eiot_fae', 'u.uid = eiot_fae.field_eiot_fae_target_id');
+
+	$query_4->fields('u',array('uid', 'name'));	
+	
+	$query_4->fields('eiot_fae',array('field_eiot_fae_target_id'));
+
+	$query_4->condition('u.status', 0, '<>');
+	
+	$query_4->condition(
+				db_or()
+					->condition('eiot_fae.entity_id', $node_company_id, '=') // User who are FAE's under the partner's company  			
+					); 
+	
+	
+	$result_4 = $query_4->execute();
+	
+	/*echo '<pre>';
+	print_r($result);
+	exit;*/
+
+	if($result_4){
+		foreach($result_4 as $row) {
+			$uid = $row->uid;	
+			$uname = $row->name;
+			$eiot_fae = $row->field_eiot_fae_target_id;
+	
+			if($eiot_fae){
+				$user_list['Intel Embedded IoT Field Applications Engineer'][$uid] = $uname;  
+			} 
+		
+							
+		}
+	}
+	
+	////////// Get the Client Field Sales Engineers /////////////////////////
+	$query_5 = db_select('users', 'u');
+	$query_5->distinct();
+	$query_5->leftjoin('field_data_field_client_fse', 'c_fse', 'u.uid = c_fse.field_client_fse_target_id');
+
+	$query_5->fields('u',array('uid', 'name'));	
+	
+	$query_5->fields('c_fse',array('field_client_fse_target_id'));
+
+	$query_5->condition('u.status', 0, '<>');
+	
+	$query_5->condition(
+				db_or()
+					->condition('c_fse.entity_id', $node_company_id, '=') // User who are FAE's under the partner's company  			
+					); 
+	
+	
+	$result_5 = $query_5->execute();
+	
+	/*echo '<pre>';
+	print_r($result);
+	exit;*/
+
+	if($result_5){
+		foreach($result_5 as $row) {
+			$uid = $row->uid;	
+			$uname = $row->name;
+			$c_fse = $row->field_client_fse_target_id;
+	
+			if($c_fse){
+				$user_list['Intel Client Field Sales Engineer'][$uid] = $uname;  
+			} 
+		
+							
+		}
+	}
+	
+	////////// Get the Server Field Sales Engineers /////////////////////////
+	$query_6 = db_select('users', 'u');
+	$query_6->distinct();
+	$query_6->leftjoin('field_data_field_server_fse', 's_fse', 'u.uid = s_fse.field_server_fse_target_id');
+
+	$query_6->fields('u',array('uid', 'name'));	
+	
+	$query_6->fields('s_fse',array('field_server_fse_target_id'));
+
+	$query_6->condition('u.status', 0, '<>');
+	
+	$query_6->condition(
+				db_or()
+					->condition('s_fse.entity_id', $node_company_id, '=') // User who are FAE's under the partner's company  			
+					); 
+	
+	
+	$result_6 = $query_6->execute();
+	
+	/*echo '<pre>';
+	print_r($result);
+	exit;*/
+
+	if($result_6){
+		foreach($result_6 as $row) {
+			$uid = $row->uid;	
+			$uname = $row->name;
+			$s_fse = $row->field_server_fse_target_id;
+	
+			if($s_fse){
+				$user_list['Intel Server Field Sales Engineer'][$uid] = $uname;  
+			} 
+		
+							
+		}
+	}
+	
+	////////// Get the EIOT Field Sales Engineers /////////////////////////
+	$query_7 = db_select('users', 'u');
+	$query_7->distinct();
+	$query_7->leftjoin('field_data_field_eiot_fse', 'eiot_fse', 'u.uid = eiot_fse.field_eiot_fse_target_id');
+
+	$query_7->fields('u',array('uid', 'name'));	
+	
+	$query_7->fields('eiot_fse',array('field_eiot_fse_target_id'));
+
+	$query_7->condition('u.status', 0, '<>');
+	
+	$query_7->condition(
+				db_or()
+					->condition('eiot_fse.entity_id', $node_company_id, '=') // User who are FAE's under the partner's company  			
+					); 
+	
+	
+	$result_7 = $query_7->execute();
+	
+	/*echo '<pre>';
+	print_r($result);
+	exit;*/
+
+	if($result_7){
+		foreach($result_7 as $row) {
+			$uid = $row->uid;	
+			$uname = $row->name;
+			$eiot_fse = $row->field_eiot_fse_target_id;
+	
+			if($eiot_fse){
+				$user_list['Intel Embedded IoT Field Sales Engineer'][$uid] = $uname;  
+			} 
+		
+							
+		}
+	}
+	/*echo '<pre>';
+	print_r($user_list);
+	exit;*/
+	
+	return $user_list;
+}
+
+
+function default_approver_options($node_id) {
+
+$approvers_list = array();
+
+	$query = db_select('field_data_field_approvers', 'fa');
+
+	$query->fields('fa',array('field_approvers_target_id'));
+	$query->condition('fa.entity_id', $node_id, '=');
+	$query->condition('fa.bundle', 'solution', '=');
+	
+
+	$result = $query->execute();
+
+	/*echo '<pre>';
+	print_r($result);
+	exit;*/
+	
+	if($result){
+		foreach($result as $row) {		
+			$approvers_list[$row->field_approvers_target_id] = $row->field_approvers_target_id;        
+		}
+	}
+
+	return $approvers_list;
+}
+
+
+/* hook form formID alter for Formula  page*/
+
+function intel_ea_partner_upload_form_formula_node_form_alter(&$form, $form_state, $form_id){
+	
+		if($form_id == 'formula_node_form'){
+  		
+		$form['field_search_formula_category'] = array (
+			'#type' => 'textfield',
+			'#description' => '<a href="#" id="formula_search_cat">Click</a> to search in the Categories below.',			
+			'#suffix' => '<a href="#" class= "formula_expand_all">Expand All</a> | <a href="#" class= "formula_collapse_all">Collapse All</a> | <a href="#" class= "formula_reset_cat">Reset</a>'
+		);
+		
+		$form['field_search_formula_details'] = array (
+			'#type' => 'textfield',
+			'#description' => '<a href="#" id="formula_details_search">Click</a>  to search below.',			
+			'#suffix' => '<a href="#" class= "expand_all_formula_details">Expand All</a> | <a href="#" class= "collapse_all_formula_details">Collapse All</a> | <a href="#" class= "reset_formula_details">Reset</a>'
+		);
+		
+  }
+	
+}
+/* hook form formID alter for Component  page*/
+
+function intel_ea_partner_upload_form_component_node_form_alter(&$form, $form_state, $form_id){
+	
+		if($form_id == 'component_node_form'){
+  		
+		
+		$form['field_search_component_category'] = array (
+			'#type' => 'textfield',
+			'#description' => '<a href="#" id="component_search_cat">Click</a> to search in the Categories below.',			
+			'#suffix' => '<a href="#" class= "component_expand_all">Expand All</a> | <a href="#" class= "component_collapse_all">Collapse All</a> | <a href="#" class= "component_reset_cat">Reset</a>'
+		);
+		
+		$form['field_search_component_character'] = array (
+			'#type' => 'textfield',
+			'#description' => '<a href="#" id="component_search_char">Click</a>  to search in the Characteristics below.',	
+			'#suffix' => '<a href="#" class= "expand_all_char">Expand All</a> | <a href="#" class= "collapse_all_char">Collapse All</a> | <a href="#" class= "component_reset_char">Reset</a>'
+		);		
+  }
+}
+
+// Function to send mail 
+function solution_mailer($thread_id = 0,$to,$sender,$subject,$body){
+
+        $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $to->mail,
+          'pm_email_sender' => $sender,
+          'pm_email_subject' => $subject,
+          'pm_email_message' => $body,
+          'pm_email_flag' => 'unsent',
+        );
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+			try {
+			  $return_value = db_insert('pm_email_custom')
+				  ->fields($felds)
+				  ->execute();
+			}
+			catch (Exception $e) {
+			  drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+			} 
+	   }	
+}
+/********* Workflow tab form alter function ********************/
+function intel_ea_partner_upload_form_workflow_tab_form_alter(&$form, $form_state, $form_id){
+/*********hide the Workflow in the workflow tab ******************/
+	 if($form_id == 'workflow_tab_form'){
+	 
+	 	$form['#choices'] = array();
+		$form['#wf_options']['choices'] = array();
+		$form['workflow'] = array();
+		$form['submit'] = array();
+		 }
+}
+
+function intel_ea_partner_upload_node_access($node, $op, $account) {
+
+ global $user;
+ $user_info = user_load($user->uid);
+ // $type = is_string($node) ? $node : $node->type;
+$type = $node->type;
+ 
+ // Define Intel Admin OR ODM Intel Admin roles that can edit the solution content type content.
+  
+   $IA_OIA_perms = array_intersect(
+       array(
+     'Intel Admin',    
+     'ODM Intel Admin',    
+     ),array_values($user->roles));
+   // If they have any of these roles, then they can see the solution content
+ 
+   if ($IA_OIA_perms){ 		
+
+		if ($type == 'solution') {
+		
+				// Define roles that can see solution content type content.
+  $node_id = $node->nid;
+ $node_info = node_load($node_id); 
+
+
+ if(isset($node->field_solution_type[LANGUAGE_NONE])){
+			$_sol_type = $node->field_solution_type[LANGUAGE_NONE];
+			
+			foreach($_sol_type as $sol_type){
+				$solution_type[] = $sol_type['value'];
+
+
+			}			
+		}
+		
+		  if((in_array('client',$solution_type) && in_array('server',$solution_type) && in_array('embedded iot',$solution_type))
+			  || (in_array('server',$solution_type) && in_array('embedded iot',$solution_type)) || (in_array('client',$solution_type) && in_array('embedded iot',$solution_type)) ){
+
+				// ODM Intel Admin editlink is disabled
+				if(in_array('Intel Admin',$user->roles) === FALSE && ($op == 'delete' || $op == 'update')){ 
+					  return NODE_ACCESS_DENY;
+				}
+
+		 
+		 } else if(in_array('client',$solution_type) || in_array('server',$solution_type)){
+
+				// Intel Admin edit link is disabled 
+					if(in_array('ODM Intel Admin',$user->roles) === FALSE && ($op == 'delete' || $op == 'update')){ 
+						return NODE_ACCESS_DENY;
+					}
+
+		 } else if(in_array('embedded iot',$solution_type)){
+			// ODM Intel Admin edit link is disabled
+				if(in_array('Intel Admin',$user->roles) === FALSE && ($op == 'delete' || $op == 'update')){
+					return NODE_ACCESS_DENY;
+				}
+
+
+		}
+	} 
+	
+	
+	
+	
+}
+
+  
+				
+   // Define FSE/FAE that can edit the solution content type content.
+    $solution_approv_id = default_approver_options($node->nid);
+
+			foreach($solution_approv_id as $approv){
+				$approver_id[] = $approv;
+			}
+			
+   $FSE_FAE_perms = array_intersect(
+       array(
+     'Intel Field Sales Engineer',    
+     'Intel Field Applications Engineer',    
+     ),array_values($user->roles));
+   // If they have any of these roles, then they can see the solution content
+ 
+   if ($FSE_FAE_perms){ 
+				
+	  // if its a solution content type, user content types machine name. //|| $op == 'view'
+	  if ($type == 'solution' && ($op == 'update' )) {
+	// Approvers whom the solution is mapped to and author of the solution with "Update Required" state can edit the node 	  
+		  if(in_array($user->uid,$approver_id) === FALSE && ($node->uid !== $user->uid)){ 
+			 return NODE_ACCESS_DENY;
+		  }
+		}
+		
+  } //FSE and FAE
+  
+ 
+
+  
+   
+} 
+
+/*** Give Read write permission for recipients ****/
+function read_write_pri_message($recipients){
+
+//TODO provide permission for all recipients to write and read message 
+db_delete('pm_disable')
+          ->condition('uid', $recipients->uid)
+          ->execute();
+return true;
+		
+
+}
+/**Function to get the state name using the SID **/
+function workflow_get_state_name($sid) {
+  //return db_result(db_query("SELECT state FROM {workflow_states} WHERE sid = %d", $sid));
+    $query = db_select('workflow_states', 'ws');
+    $query->fields('ws', array('state'));
+	$query->condition('ws.sid', $sid);
+	 
+	  $result = $query->execute();
+	  
+	  
+   foreach ($result as $workflowstate) {
+        $wfs = $workflowstate->state;
+    }
+  
+  return $wfs;
+	
+}
+
+
+
+
+/**
+ * Implements hook_node_submit().
+ */
+
+function intel_ea_partner_upload_node_submit($node, $form, &$form_state) {
+
+	global $user;
+	$user_id = user_load($user->uid);
+	
+	$nid=$node->nid;
+	$query = db_query('SELECT w.sid FROM {workflow_node} w WHERE w.nid = :nid LIMIT 1', array(':nid' => $nid));
+    $result = $query->fetchAll(); 
+    $sidresult = $result[0]->sid; 
+	
+	if($node->type == 'solution'){
+	// Get the old workflow state and send notifications to FSE/FAE/Intel Admin/ODM Intel Admin
+	
+	/*echo '<pre>';
+	print_r($node);
+	exit;
+
+*/
+	
+	/*echo '<pre>';
+	print_r($_POST);
+	exit;
+	*/
+	
+	
+/** ARCHIVE Button **/
+	if( ($form_state['values']['op'] == 'Archive') && (array_key_exists(20, $user_id->roles))){
+		workflow_execute_transition($node, 22,  $form_state['node']->workflow_custom_comment, $force = FALSE);
+		
+	}
+	/******Replace this instead of hook node update ******/
+	if( ($form_state['values']['op'] == 'Save') && (array_key_exists(20, $user_id->roles)) && (empty(array_key_exists(36, $user_id->roles)))  
+		&& (empty(array_key_exists(9, $user_id->roles)))&& ($sidresult==22 || $sidresult==3 || $sidresult==4 || $sidresult==5 ||$sidresult == 6  || $node->workflow_state_name === '(creation)') && $node->status == 0 ){ 
+		workflow_execute_transition($node, 2,  $form_state['node']->workflow_custom_comment, $force = FALSE);		
+	} else if(($form_state['values']['op'] == 'Save') && (array_key_exists(20, $user_id->roles)) && (empty(array_key_exists(36, $user_id->roles))) && (empty(array_key_exists(9, $user_id->roles))) && $sidresult == 7) { 
+		workflow_execute_transition($node, 2,  $form_state['node']->workflow_custom_comment, $force = FALSE);	
+	}else { 
+		workflow_execute_transition($node, $node->workflow,  $form_state['node']->workflow_custom_comment, $force = FALSE);
+	}
+	
+	
+/** editing the solution in DRAFT state will retain the draft state **/
+	if(!$_POST['workflow']){
+		if($node->workflow_state_name === '(creation)'){
+			$form_state['node']->workflow = 2;
+		}
+	}
+	
+	
+	
+	$node_nid = $node->nid;
+	
+	if(($node->workflow_state_name == 'Update Required' || $node->workflow_state_name == 'Reject') && ($user->uid  == $node->uid)){
+						
+		
+		// Send Mail to Intel Admin or ODM Intel Admin when the partner user Updates the Solution 
+		$result = db_query("SELECT wfnh.uid FROM {workflow_node_history} wfnh join {users_roles} ur ON wfnh.uid = ur.uid join {role} r on ur.rid = r.rid  where (r.name = :role or r.name = :role_a) and wfnh.nid = :nid ORDER BY wfnh.hid DESC LIMIT 1", array(':nid' => $node_nid,':role' => 'Intel Admin',':role_a' => 'ODM Intel Admin'));
+
+		while ($row = $result->fetchAssoc()) {
+			$user_uid = $row['uid'];    
+		}
+				
+		
+			$recipients[] = user_load($user_uid);
+			//Provide permission for all recipients to write and read message 
+				read_write_pri_message(user_load($user_uid));
+				
+				$pm_disable = privatemsg_is_disabled(user_load($user_uid));
+				if(!$pm_disable) {
+					$mail_flg = true;
+				} else {
+					$mail_flg = false;
+				}
+				
+				if($mail_flg == true){			
+					$msg_subject = $form_state['node']->title .' is updated, Request to approve/publish the solution.';
+					
+				foreach ($recipients as $recipient) {	
+					$msg_body = 'Dear '.$recipient->name.' , <br /> The Solution "'.$form_state['node']->title .'" is updated. <br /> Request to approve the solution '. $form_state['node']->title .'. <br />';
+					
+						//// Node Image
+					if(isset($node->field_image[LANGUAGE_NONE][0]['fid'])){
+						$node_fid = $node->field_image[LANGUAGE_NONE][0]['fid'];
+						$file = file_load($node_fid);
+						$uri = $file->uri;
+						$url = file_create_url($uri);
+						
+						
+						$msg_body .= '<img typeof="foaf:Image" class="img-responsive" src="'.$url.'" width="100" height="67" alt="">';
+					}
+					// Node Desc
+					if(isset($node->body[LANGUAGE_NONE][0]['value'])){
+						$prod_desc =  $node->body[LANGUAGE_NONE][0]['value'];
+						$msg_body .= '<br />Product Description: '.$prod_desc;
+					}
+				
+					$msg_body .= '<br />Please find the link for the solution  <a href="'.$GLOBALS['base_url'].base_path().'/node/' . $form_state['node']->nid . '">' . $form_state['node']->title . '</a><br /> Regards, <br /> Intel Partner Product Catalog Team';				
+				}
+							
+					$get_message_thread_id = privatemsg_new_thread($recipients, $msg_subject, $msg_body, $options = array());
+					
+					$message_thread_id = 	$get_message_thread_id['message'];
+					$m_thread_id = $message_thread_id->thread_id;	
+					
+									
+					try {					
+						
+						if($m_thread_id){
+							foreach ($recipients as $recipient) {
+										solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);	
+							}					
+							drupal_set_message('Message successfully sent to '.$recipient->mail);
+						}
+					} catch (Exception $e){
+						drupal_set_message('Message not sent.','error');			
+					}
+				}
+	
+	} 
+		
+	
+
+	
+// Get the company name of the node 
+	$company_id = $form_state['node']->field_company['und'][0]['target_id'];
+	$_company_name = node_load($company_id);
+	$company_name = $_company_name->title;
+	//echo $company_name; exit;
+	
+	
+	/**Give Read / Write permission for logged user for private message**/
+	read_write_pri_message(user_load($user->uid));
+	
+	 /** Get the approver user id **/
+	 
+	 if(isset($form_state['node']->approvers)){
+			$_approver = $form_state['node']->approvers;
+			$node_id = $form_state['node']->nid;
+			$node_rev_id = $form_state['node']->vid;
+			
+	
+			$default_approvers = default_approver_options($form_state['node']->nid);
+			
+			/*echo '<pre>';
+			print_r($default_approvers);
+			exit;*/
+			
+				foreach($default_approvers as $approver){
+				// delete the approvers table before updating 
+				  db_delete('field_data_field_approvers')
+				   ->condition('entity_id', $node_id)
+				   ->condition('field_approvers_target_id', $approver)
+				   ->execute();	
+				}
+			
+			foreach($_approver as $approv){
+			$approver_id[] = $approv;
+
+					
+			 $_count_result = 	db_select('field_data_field_approvers','fa')
+							 ->fields('fa',array('entity_id','field_approvers_target_id'))
+							 ->condition('entity_id', $node_id, '=')
+							 ->condition('field_approvers_target_id', $approv, '=')
+							 ->execute();
+			
+			$num_of_results = $_count_result->rowCount();
+		
+			// Insert the data in to approvers table 
+			if($num_of_results == 0){	 
+				 db_insert('field_data_field_approvers')
+					->fields(array(
+					  'entity_type' => 'node',
+					  'bundle' =>  'solution',
+					  'entity_id' => $node_id,
+					  'revision_id' => $node_rev_id,
+					  'language' => LANGUAGE_NONE,
+					  'delta' => 0,
+					  'field_approvers_target_id' => $approv,
+				 
+					))->execute(); 
+				}	
+			}			
+		}
+	
+	
+		/* If User role is Intel Employee - send mail/message to approvers */
+			$node_user_info = user_load($form_state['node']->uid);
+		
+
+		//get the company id of the node's author
+	
+		$node_user_comp = $node_user_info->field_company[LANGUAGE_NONE][0]['target_id'];	
+			
+		
+		// Check for the Client, Server , embedded IoT solution types
+		 if(isset($form_state['node']->field_solution_type[LANGUAGE_NONE])){
+			$_sol_type = $form_state['node']->field_solution_type[LANGUAGE_NONE];
+			
+			foreach($_sol_type as $sol_type){
+				$solution_type[] = $sol_type['value'];
+			}			
+		}
+				
+					
+	####################### Solution Type is Client + Server + Embedded IoT #############################################################
+	if((in_array('client',$solution_type) && in_array('server',$solution_type) && in_array('embedded iot',$solution_type)) || (in_array('server',$solution_type) && in_array('embedded iot',$solution_type)) || (in_array('client',$solution_type) && in_array('embedded iot',$solution_type)) ){
+  
+	 $workflow_state = workflow_get_state_name($node->workflow);
+	
+			if(empty($node->approvers) && (in_array('Intel Admin',$user->roles) || in_array('ODM Intel Admin',$user->roles)) && ($workflow_state == 'Publish' || $workflow_state == 'Update Required' || $workflow_state == 'Reject')){
+				// Send notification to node's Author //////////////
+							$recipients[] = user_load($node->uid);
+							//Provide permission for all recipients to write and read message 
+							read_write_pri_message(user_load($node->uid));
+							
+							$pm_disable = privatemsg_is_disabled(user_load($node->uid));
+							if(!$pm_disable) {
+								$mail_flag = true;
+							} else {
+								$mail_flag = false;
+							}
+				
+					
+			if($mail_flag){	
+			  
+				 $nodeurl = drupal_get_path_alias('node/' . $node->nid);
+				if($workflow_state == 'Publish'){
+						$msg_subject = 'Your Solution "'.$node->title.'" is published on Solutions Directory';	
+						$msg_body = 'Dear '.$node_user_info->name.' , <br /> Please note solution "'.$node->title .'" is approved and published on Solutions Directory.';
+						$msg_body .='You may click <a href="'.$nodeurl.'" target="_blank">"Here"</a> to check the solution details.';
+				}  else if($workflow_state == 'Update Required'){
+							$msg_subject = 'Update required for your solution '.$node->title;						
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the update required for solution '.$node->title;
+
+							if($form_state['node']->workflow_custom_comment){
+								$msg_body .= '<br /> The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							}
+							
+							$msg_body .='<br /><br /> Please click  <a href=/node/' . $form_state['node']->nid . '/edit>"Here"</a> to update the solution.<br />';				
+							
+						
+				} else if($workflow_state == 'Reject'){
+							$msg_subject = 'Your solution '.$node->title.' is rejected';						
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the solution '.$node->title .' is rejected.';
+							if($form_state['node']->workflow_custom_comment){
+								$msg_body .= '<br /> The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							}
+							$msg_body .='<br /><br /> Please click  <a href=/node/' . $form_state['node']->nid . '/edit>"Here"</a> to update the solution.<br />';						
+						
+				}
+				
+				$msg_body .= '<br /> Regards, <br />
+				Intel Solution Directory Team';				
+				
+				
+				$get_message_thread_id = privatemsg_new_thread($recipients, $msg_subject, $msg_body, $options = array());
+				
+				$message_thread_id = 	$get_message_thread_id['message'];
+				$m_thread_id = $message_thread_id->thread_id;	
+					
+				$node_user = user_load($node->uid);					
+				try {					
+					
+					if($m_thread_id){
+					/********************Email sent for Reject ***************************/
+						if($workflow_state == 'Reject'){
+							foreach ($recipients as $recipient) {
+										solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);	
+							}
+						}						
+						drupal_set_message('Message successfully sent to '.$node_user->name .'.');
+					}
+				} catch (Exception $e){
+					drupal_set_message('Message not sent.','error');			
+				}
+			} else {
+					drupal_set_message('Message not sent. Recipient(s) does not have permissions for private message.','error');
+			}	
+		
+		} else {
+										
+				//Mail to be sent to approvers only when its in Draft state 
+				if(!empty($node->approvers) && (in_array('Intel Admin',$user->roles) || in_array('ODM Intel Admin',$user->roles)) && ($workflow_state == 'Pending FSE/FAE Approval')) { //echo 'am in Pending FSE/FAE Approval'; exit; 
+				
+				$priv_mesg_recipients= array();	
+					
+					if(isset($form_state['node']->approvers)){
+						$recips = $form_state['node']->approvers;
+						
+						foreach($recips as $recip){
+							$recipient_id = $recip;
+							$priv_mesg_recipients[] = user_load($recipient_id);
+							
+						}
+					}
+					
+						
+					$part_user = user_load($node->uid);
+					$partner_user = $part_user->name;
+					
+					
+				
+			foreach($priv_mesg_recipients as $recipient){
+						
+				        $url = $GLOBALS['base_url'].base_path().'/node/' . $node_id ;
+						$msg_subject = "Please review solution '".$node->title ."' from company ".$company_name." on Solutions Directory.";
+												
+						$msg_body = 'Dear '.$recipient->name.',  <br />
+						'.$partner_user.' from your account '.$company_name.' has submitted the solution '.$node->title.'. Please help validate if this product can be published. Please click <a href="'.$url.'" target="_blank">Here</a> to check the solution details.';
+						if($form_state['node']->workflow_custom_comment){
+							$msg_body .= '<br /> The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+						}
+							
+			//// Node Image
+				if(isset($node->field_image[LANGUAGE_NONE][0]['fid'])){
+					$node_fid = $node->field_image[LANGUAGE_NONE][0]['fid'];
+					$file = file_load($node_fid);
+					$uri = $file->uri;
+					$url_image = file_create_url($uri);
+					
+					
+					$msg_body .= '<img typeof="foaf:Image" class="img-responsive" src="'.$url_image.'" width="100" height="67" alt="">';
+				}
+				// Node Desc
+				if(isset($node->body[LANGUAGE_NONE][0]['value'])){
+					$prod_desc =  $node->body[LANGUAGE_NONE][0]['value'];
+					$msg_body .= '<br />Product Description: '.$prod_desc;
+				}
+							
+				$msg_body .= '<br /> Appreciate your timely support to publish this product soon! <br /> Regards , <br /> Intel Solutions Directory Team';
+						
+				}	
+						$get_message_thread_id = privatemsg_new_thread($priv_mesg_recipients, $msg_subject, $msg_body, $options = array());			
+							$message_thread_id = 	$get_message_thread_id['message'];
+							$m_thread_id = $message_thread_id->thread_id;
+											
+						if($m_thread_id){
+							try {										
+										foreach($priv_mesg_recipients as $recipient){
+											
+											solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);
+											drupal_set_message('Online Message and Email successfully sent to '.$recipient->name.'.');
+										}
+								
+								} catch (Exception $e){
+									drupal_set_message('Email not sent.','error');			
+								}
+			            }
+	      } elseif(!empty($node->approvers) && (in_array($user->uid,$approver_id)) && ($workflow_state == 'Update Required' || $workflow_state == 'Reject' || $workflow_state == 'Approved By FSE/FAE')) { //FSE/FAE Approves/Rejects/Update Required to SE
+				 /// Send Notification to Intel Admin ///////////////
+				
+						$recipients= array();
+					    $role_IA = user_role_load_by_name('Intel Admin');
+						$selected_users_IA = getUsersByRole($role_IA->rid);
+						
+						///// ODM Intel Admin recipients 
+						foreach ($selected_users_IA as $res_IA_key => $recipient_IA) {
+							$recipients[] = user_load($res_IA_key);
+								//Provide permission for all recipients to write and read message 
+							read_write_pri_message(user_load($res_IA_key));
+							
+							$pm_disable = privatemsg_is_disabled(user_load($res_IA_key));
+							if(!$pm_disable) {
+								$mail_flag_1 = true;
+							} else {
+								$mail_flag_1 = false;
+							}
+							
+						}
+						
+						///// Node's author is the recipient
+						if($workflow_state == 'Reject' || $workflow_state == 'Update Required'){	
+							$recipients[] = user_load($node->uid);
+							//Provide permission for all recipients to write and read message 
+							read_write_pri_message(user_load($node->uid));
+							
+							$pm_disable = privatemsg_is_disabled(user_load($node->uid));
+							if(!$pm_disable) {
+								$mail_flag_2 = true;
+							} else {
+								$mail_flag_2 = false;
+							}
+					   }
+						
+					if($mail_flag_1 == true || $mail_flag_2 == true){		
+						if($workflow_state == 'Approved By FSE/FAE'){	
+					
+						   $fse_fae = user_load($user->uid);
+							
+							$msg_subject = strtolower($fse_fae->name).' has approved "'.$node->title .'"  from the company '.$company_name;
+							$msg_body = 'Dear Intel Admin, <br /> The solution "'.$node->title .'" from company "'.$company_name.'" has been approved by '.strtolower($fse_fae->name)." .";
+							$msg_body .='<br />Please take the action to approve or reject the solution. Please click  <a href=/node/' . $form_state['node']->nid . '>"Here"</a> to view the request detail.';
+						
+												//// Node Image
+							if(isset($node->field_image[LANGUAGE_NONE][0]['fid'])){
+								$node_fid = $node->field_image[LANGUAGE_NONE][0]['fid'];
+								$file = file_load($node_fid);
+								$uri = $file->uri;
+								$url = file_create_url($uri);
+								
+								
+								$msg_body .= '<img typeof="foaf:Image" class="img-responsive" src="'.$url.'" width="100" height="67" alt="">';
+							}
+							// Node Desc
+							if(isset($node->body[LANGUAGE_NONE][0]['value'])){
+								$prod_desc =  $node->body[LANGUAGE_NONE][0]['value'];
+								$msg_body .= '<br />Product Description: '.$prod_desc;
+							}
+								
+						
+						} else if($workflow_state == 'Update Required'){
+							$msg_subject = 'Update required for your solution '.$node->title;						
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the update required for solution '.$node->title;
+						
+							if($form_state['node']->workflow_custom_comment){
+								$msg_body .= '<br />The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							}
+							
+							$msg_body .='<br /><br />Please click  <a href=/node/' . $form_state['node']->nid . '/edit>"Here"</a> to update the solution.<br />';
+						
+						} else if($workflow_state == 'Reject'){
+							$msg_subject = 'Your solution '.$node->title.' is rejected';						
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the solution '.$node->title .' is rejected.';
+							
+							if($form_state['node']->workflow_custom_comment){
+								$msg_body .= '<br />The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							}
+							
+							$msg_body .='<br /><br /> Please click  <a href=/node/' . $form_state['node']->nid . '/edit>"Here"</a> to update the solution.<br />';
+						
+						}
+												
+					
+						$msg_body .= '<br /> Regards , <br /> Intel Solution Directory Team';
+						
+							$get_message_thread_id = privatemsg_new_thread($recipients, $msg_subject, $msg_body, $options = array());
+						
+							$message_thread_id = 	$get_message_thread_id['message'];
+							$m_thread_id = $message_thread_id->thread_id;
+							$node_user = user_load($node->uid);		
+					
+					
+							try {
+							  if($m_thread_id){	
+								if($workflow_state == 'Approved By FSE/FAE'){ // Email only for Approve
+										foreach ($recipients as $recipient) {
+											solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);	
+										}								
+											drupal_set_message('Message successfully sent to Intel Admin.');
+									}
+								}
+							} catch (Exception $e){
+								drupal_set_message('Message not sent.','error');			
+							}
+						}  else {
+							drupal_set_message('Message not sent. Recipient(s) does not have permissions for private message.','error');
+						}	
+				} elseif(!empty($node->approvers) && (in_array('Intel Admin',$user->roles) || in_array('ODM Intel Admin',$user->roles)) && ($workflow_state == 'Publish' || $workflow_state == 'Update Required' || $workflow_state == 'Reject')){
+				// Mail to Admin and Approvers   ||| 30 Jan 2018
+				
+						
+						$recipients= array();
+					
+							
+					// Mail to Approvers 
+					if(isset($form_state['node']->approvers)){
+						$recips = $form_state['node']->approvers;
+						
+						foreach($recips as $recip){
+							$recipient_id = $recip;
+							$recipients[] = user_load($recipient_id);	
+
+								//Provide permission for all recipients to write and read message 
+							read_write_pri_message(user_load($recipient_id));
+							
+							$pm_disable = privatemsg_is_disabled(user_load($recipient_id));
+							if(!$pm_disable) {
+								$mail_flag_1 = true;
+							} else {
+								$mail_flag_1 = false;
+							}						
+						}
+					}					
+					//CC to SDE 
+					///// Node's author is the recipient
+					if($workflow_state == 'Reject' || $workflow_state == 'Update Required'){
+							$recipients[] = user_load($node->uid);
+							//Provide permission for all recipients to write and read message 
+							read_write_pri_message(user_load($node->uid));
+							
+							$pm_disable = privatemsg_is_disabled(user_load($node->uid));
+							if(!$pm_disable) {
+								$mail_flag_2 = true;
+							} else {
+								$mail_flag_2 = false;
+							}
+					}
+					
+					if(($mail_flag_1 == true) || $mail_flag_2 == true){		
+						if($workflow_state == 'Publish'){
+						     $nodeurl = drupal_get_path_alias('node/' . $node->nid);
+							$msg_subject = 'Your Solution "'.$node->title.'" is published on Solutions Directory';	
+							$msg_body = 'Dear '.$node_user_info->name.' , <br /> Please note solution "'.$node->title .'" is approved and published on Solutions Directory.';
+							$msg_body .='You may click <a href="'.$nodeurl.'" target="_blank">"Here"</a> to check the solution details.';
+						} else if($workflow_state == 'Update Required'){
+							$msg_subject = 'Update required for your solution '.$node->title;						
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the update required for solution '.$node->title;
+							
+							if($form_state['node']->workflow_custom_comment){
+								$msg_body .= '<br />The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							}
+							$msg_body .='<br /><br /> Please click  <a href=/node/' . $form_state['node']->nid . '/edit>"Here"</a> to update the solution.<br />';
+						
+						} else if($workflow_state == 'Reject'){
+							$msg_subject = 'Your solution '.$node->title.' is rejected';
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the solution '.$node->title .' is rejected.';
+							
+							$msg_body .= '<br />The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							
+							$msg_body .='<br /><br /> Please click  <a href=/node/' . $form_state['node']->nid . '/edit>"Here"</a> to update the solution.<br />';
+						
+						}
+						
+						$msg_body .= '<br /> Regards , <br /> Intel Solution Directory Team';
+						
+							$get_message_thread_id = privatemsg_new_thread($recipients, $msg_subject, $msg_body, $options = array());
+						
+							$message_thread_id = 	$get_message_thread_id['message'];
+							$m_thread_id = $message_thread_id->thread_id;
+							$node_user = user_load($node->uid);		
+						try {
+							if($m_thread_id){
+								if($workflow_state == 'Reject'){ // Email only for Reject
+									foreach ($recipients as $recipient) {
+										solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);	
+									 }
+									}			
+										drupal_set_message('Message successfully sent to Intel Admin.');
+								
+							}
+						} catch (Exception $e){
+							drupal_set_message('Message not sent.','error');			
+						}
+					}  else {
+						drupal_set_message('Message not sent. Recipient(s) does not have permissions for private message.','error');
+					}
+							
+				}
+	   } // partner products are not empty
+	  ######### Solution type is ODM ###################################################
+	  } else if(in_array('client',$solution_type) || in_array('server',$solution_type)){
+		
+		 $workflow_state = workflow_get_state_name($node->workflow);
+	
+		  
+				if(empty($node->approvers) && (in_array('ODM Intel Admin',$user->roles)) && ($workflow_state == 'Publish' || $workflow_state == 'Update Required' || $workflow_state == 'Reject')){
+				// Send notification to node's Author //////////////
+							$recipients[] = user_load($node->uid);
+							//Provide permission for all recipients to write and read message 
+							read_write_pri_message(user_load($node->uid));
+							
+							$pm_disable = privatemsg_is_disabled(user_load($node->uid));
+							if(!$pm_disable) {
+								$mail_flag = true;
+							} else {
+								$mail_flag = false;
+							}
+						 
+				$node_user = user_load($node->uid);		
+						//echo $role_ODMA->rid; exit;
+				
+			if($mail_flag){	
+			   	if($workflow_state == 'Publish'){
+				         $nodeurl = drupal_get_path_alias('node/' . $node->nid);
+						$msg_subject = 'Your Solution "'.$node->title.'" is published on Solutions Directory';
+						$msg_body = 'Dear '.$node_user_info->name.' , <br /> Please note solution "'.$node->title .'" is approved and published on Solutions Directory.';
+						$msg_body .='You may click <a href="'.$nodeurl.'" target="_blank">"Here"</a> to check the solution details.';
+				} else if($workflow_state == 'Update Required'){
+							$msg_subject = 'Update required for your solution '.$node->title;						
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the update required for solution '.$node->title;
+							
+							if($form_state['node']->workflow_custom_comment){
+								$msg_body .= '<br />The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							}
+							$msg_body .='<br /><br /> Please click  <a href=/node/' . $form_state['node']->nid . '/edit>"Here"</a> to update the solution.<br />';
+						
+				} else if($workflow_state == 'Reject'){
+							$msg_subject = 'Your solution '.$node->title. ' is rejected';						
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the solution '.$node->title .' is rejected.';
+							if($form_state['node']->workflow_custom_comment){
+								$msg_body .= '<br />The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							}
+							$msg_body .='<br /><br /> Please click  <a href=/node/' . $form_state['node']->nid . '/edit>"Here"</a> to update the solution.<br />';
+						
+				}
+				
+				$msg_body .= '<br /> Regards , <br /> Intel Solution Directory Team';
+				
+				$get_message_thread_id = privatemsg_new_thread($recipients, $msg_subject, $msg_body, $options = array());
+				
+				$message_thread_id = 	$get_message_thread_id['message'];
+				$m_thread_id = $message_thread_id->thread_id;	
+					
+				$node_user = user_load($node->uid);					
+				try {					
+					
+					if($m_thread_id){
+					  if($workflow_state == 'Reject'){ // Email only for Reject
+							 foreach ($recipients as $recipient) {
+										solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);	
+						  	 }	
+							}
+							drupal_set_message('Message successfully sent to '.$node_user->name .'.');
+						
+					}
+				} catch (Exception $e){
+					drupal_set_message('Message not sent.','error');			
+				}
+			} else {
+					drupal_set_message('Message not sent. Recipient(s) does not have permissions for private message.','error');
+			}	
+		
+		} else {
+				
+				if(!empty($node->approvers) && (in_array('Intel Admin',$user->roles) || in_array('ODM Intel Admin',$user->roles)) && ($workflow_state == 'Pending FSE/FAE Approval')) { //echo 'am in draft'; exit; 
+				
+				$priv_mesg_recipients= array();	
+					
+					if(isset($form_state['node']->approvers)){
+						$recips = $form_state['node']->approvers;
+						
+						foreach($recips as $recip){
+							$recipient_id = $recip;
+							$priv_mesg_recipients[] = user_load($recipient_id);
+							
+						}
+					}
+				
+				$part_user = user_load($node->uid);
+				$partner_user = $part_user->name;
+				
+					foreach($priv_mesg_recipients as $recipient){
+										
+					  $url = $GLOBALS['base_url'].base_path().'/node/' . $node_id ;
+						$msg_subject = "Please review solution '".$node->title ."' from company ".$company_name." on Solutions Directory.";
+												
+						$msg_body = 'Dear '.$recipient->name.',  <br />
+						'.$partner_user.' from your account '.$company_name.' has submitted the solution '.$node->title.'. Please help validate if this product can be published. Please click <a href="'.$url.'" target="_blank">Here</a> to check the solution details.';
+						
+						if($form_state['node']->workflow_custom_comment){
+							$msg_body .= '<br />The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+						}
+						
+								//// Node Image
+						if(isset($node->field_image[LANGUAGE_NONE][0]['fid'])){
+							$node_fid = $node->field_image[LANGUAGE_NONE][0]['fid'];
+							$file = file_load($node_fid);
+							$uri = $file->uri;
+							$url_image = file_create_url($uri); 
+							
+													
+							$msg_body .= '<img typeof="foaf:Image" class="img-responsive" src="'.$url_image.'" width="100" height="67" alt="">';
+						}
+						// Node Desc
+						if(isset($node->body[LANGUAGE_NONE][0]['value'])){
+							$prod_desc =  $node->body[LANGUAGE_NONE][0]['value'];
+							$msg_body .= '<br />Product Description: '.$prod_desc;
+						}
+						
+						
+						$msg_body .= '<br />Appreciate your timely support to publish this product soon!<br /> Regards , <br /> Intel Solutions Directory Team';						
+					
+					}//for each 
+					
+				$get_message_thread_id = privatemsg_new_thread($priv_mesg_recipients, $msg_subject, $msg_body, $options = array());
+				
+				$message_thread_id = 	$get_message_thread_id['message'];
+				$m_thread_id = $message_thread_id->thread_id;	
+					
+					if($m_thread_id){
+							try {
+										foreach($priv_mesg_recipients as $recipient){											
+											solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);
+											drupal_set_message('Message successfully sent to '.$recipient->name.'.');
+										}
+									
+							} catch (Exception $e){
+								drupal_set_message('Email not sent.','error');			
+							}
+						}
+		} elseif(!empty($node->approvers) && (in_array($user->uid,$approver_id)) && ($workflow_state == 'Update Required' || $workflow_state == 'Reject' || $workflow_state == 'Approved By FSE/FAE')) { //FSE/FAE Approve/Reject/Update Required to SE
+					
+						$recipients= array();
+					
+						$role_ODMA = user_role_load_by_name('ODM Intel Admin');
+						$selected_users_ODMA = getUsersByRole($role_ODMA->rid);
+				
+						///// ODM Intel Admin recipients 
+						foreach ($selected_users_ODMA as $res_ODMA_key => $recipient_ODMA) {
+							$recipients[] = user_load($res_ODMA_key);
+								//Provide permission for all recipients to write and read message 
+							read_write_pri_message(user_load($res_ODMA_key));
+							
+							$pm_disable = privatemsg_is_disabled(user_load($res_ODMA_key));
+							if(!$pm_disable) {
+								$mail_flag_1 = true;
+							} else {
+								$mail_flag_1 = false;
+							}
+							
+						}
+						
+							///// Node's author is the recipient
+						if($workflow_state == 'Reject' || $workflow_state == 'Update Required'){	
+							$recipients[] = user_load($node->uid);
+							//Provide permission for all recipients to write and read message 
+							read_write_pri_message(user_load($node->uid));
+							
+							$pm_disable = privatemsg_is_disabled(user_load($node->uid));
+							if(!$pm_disable) {
+								$mail_flag_2 = true;
+							} else {
+								$mail_flag_2 = false;
+							}
+					   }
+				if($mail_flag_1 == true || $mail_flag_2 == true){
+						$fse_fae = user_load($user->uid);
+						
+						if($workflow_state == 'Approved By FSE/FAE'){//echo $fse_fae; exit;
+							$msg_subject = strtolower($fse_fae->name).' has approved "'.$node->title .'"  from the company '.$company_name;						
+							
+							$msg_body = 'Dear Intel Admin, <br /> The solution "'.$node->title .'" from company "'.$company_name.'" has been approved by '. strtolower($fse_fae->name)." .";
+							$msg_body .='<br />Please take the action to approve or reject the solution. Please click  <a href=/node/' . $form_state['node']->nid . '>"Here"</a> to view the request detail.';
+						
+							//// Node Image
+							if(isset($node->field_image[LANGUAGE_NONE][0]['fid'])){
+								$node_fid = $node->field_image[LANGUAGE_NONE][0]['fid'];
+								$file = file_load($node_fid);
+								$uri = $file->uri;
+								$url = file_create_url($uri);
+								
+								
+								$msg_body .= '<img typeof="foaf:Image" class="img-responsive" src="'.$url.'" width="100" height="67" alt="">';
+							}
+							// Node Desc
+							if(isset($node->body[LANGUAGE_NONE][0]['value'])){
+								$prod_desc =  $node->body[LANGUAGE_NONE][0]['value'];
+								$msg_body .= '<br />Product Description: '.$prod_desc;
+							}
+								
+						
+						}else if($workflow_state == 'Update Required'){
+							$msg_subject = 'Update required for your solution '.$node->title;						
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the update required for solution '.$node->title;							
+							if($form_state['node']->workflow_custom_comment){
+								$msg_body .= '<br />The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							}
+							$msg_body .='<br /><br /> Please click  <a href=/node/' . $form_state['node']->nid . '/edit>"Here"</a> to update the solution.<br />';
+						
+						} else if($workflow_state == 'Reject'){
+							$msg_subject = 'Your solution '.$node->title.' is rejected';						
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the solution '.$node->title .' is rejected.';
+							
+							if($form_state['node']->workflow_custom_comment){
+								$msg_body .= '<br />The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							}
+							
+							$msg_body .='<br /><br />Please click  <a href=/node/' . $form_state['node']->nid . '/edit>"Here"</a> to update the solution.<br />';
+						
+						}
+						$msg_body .= ' Regards , <br /> Intel Solutions Directory Team';
+				
+						
+							$get_message_thread_id = privatemsg_new_thread($recipients, $msg_subject, $msg_body, $options = array());
+						
+							$message_thread_id = 	$get_message_thread_id['message'];
+							$m_thread_id = $message_thread_id->thread_id;
+							
+						try {
+							if($m_thread_id){
+							 if($workflow_state == 'Approved By FSE/FAE'){ // Email only for Approve
+									foreach ($recipients as $recipient) {
+										solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);	
+									}	
+                               }									
+										drupal_set_message('Message successfully sent to ODM Intel Admin.');
+								
+							}
+						} catch (Exception $e){
+							drupal_set_message('Message not sent.','error');			
+						}
+					}  else {
+						drupal_set_message('Message not sent. Recipient(s) does not have permissions for private message.','error');
+					}	
+			} elseif(!empty($node->approvers) && (in_array('ODM Intel Admin',$user->roles)) && ($workflow_state == 'Publish' || $workflow_state == 'Update Required' || $workflow_state == 'Reject')){
+				// Mail to Admin and Approvers   ||| 30 Jan 2018
+				
+						$recipients= array();					
+							
+					// Mail to Approvers 
+					if(isset($form_state['node']->approvers)){
+						$recips = $form_state['node']->approvers;
+						
+						foreach($recips as $recip){
+							$recipient_id = $recip;
+							$recipients[] = user_load($recipient_id);	
+
+								//Provide permission for all recipients to write and read message 
+							read_write_pri_message(user_load($recipient_id));
+							
+							$pm_disable = privatemsg_is_disabled(user_load($recipient_id));
+							if(!$pm_disable) {
+								$mail_flag_1 = true;
+							} else {
+								$mail_flag_1 = false;
+							}						
+						}
+					}
+					
+					
+					//CC to SDE 
+					///// Node's author is the recipient
+					
+							$recipients[] = user_load($node->uid);
+							//Provide permission for all recipients to write and read message 
+							read_write_pri_message(user_load($node->uid));
+							
+							$pm_disable = privatemsg_is_disabled(user_load($node->uid));
+							if(!$pm_disable) {
+								$mail_flag_2 = true;
+							} else {
+								$mail_flag_2 = false;
+							}
+							
+							
+					if($mail_flag_1 == true && $mail_flag_2 == true){		
+						if($workflow_state == 'Publish'){
+							$nodeurl = drupal_get_path_alias('node/' . $node->nid);
+							$msg_subject = 'Your Solution "'.$node->title.'" is published on Solutions Directory';	
+							$msg_body = 'Dear '.$node_user_info->name.' , <br /> Please note solution "'.$node->title .'" is approved and published on Solutions Directory.';
+							$msg_body .='You may click <a href="'.$nodeurl.'" target="_blank">"Here"</a> to check the solution details.';
+						} else if($workflow_state == 'Update Required'){
+							$msg_subject = 'Update required for your solution '.$node->title;						
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the update required for solution '.$node->title;
+							
+							if($form_state['node']->workflow_custom_comment){
+								$msg_body .= '<br />The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							}
+							
+							$msg_body .='<br /><br /> Please click  <a href=/node/' . $form_state['node']->nid . '/edit>"Here"</a> to update the solution.<br />';
+							
+						} else if($workflow_state == 'Reject'){
+							$msg_subject = 'Your solution '.$node->title.' is rejected';						
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the solution '.$node->title .' is rejected.';
+							if($form_state['node']->workflow_custom_comment){
+								$msg_body .= '<br />The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							}
+							$msg_body .='<br /><br /> Please click  <a href=/node/' . $form_state['node']->nid . '/edit>"Here"</a> to update the solution.<br />';
+						
+						}
+							
+						$msg_body .= '<br /> Regards , <br /> Intel Solutions Directory Team';
+						
+							$get_message_thread_id = privatemsg_new_thread($recipients, $msg_subject, $msg_body, $options = array());
+						
+							$message_thread_id = 	$get_message_thread_id['message'];
+							$m_thread_id = $message_thread_id->thread_id;
+							$node_user = user_load($node->uid);		
+						try {
+							if($m_thread_id){
+								if($workflow_state == 'Reject'){ // Email only for Reject
+									foreach ($recipients as $recipient) {
+										solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);	
+									}	
+								}				
+										drupal_set_message('Message successfully sent to Intel Admin.');
+								
+							}
+						} catch (Exception $e){
+							drupal_set_message('Message not sent.','error');			
+						}
+					}  else {
+						drupal_set_message('Message not sent. Recipient(s) does not have permissions for private message.','error');
+					}
+							
+				} 		
+	  } // partner products are not empty ##### ODM Solution type
+	  
+	 ######### Solution type ISA ###############################
+	 } else if(in_array('embedded iot',$solution_type)){ 
+		 $workflow_state = workflow_get_state_name($node->workflow);
+		 
+		  
+				if(empty($node->approvers) && (in_array('Intel Admin',$user->roles)) && ($workflow_state == 'Publish' || $workflow_state == 'Update Required' || $workflow_state == 'Reject')){
+				// Send notification to node's Author //////////////
+							$recipients[] = user_load($node->uid);
+							//Provide permission for all recipients to write and read message 
+							read_write_pri_message(user_load($node->uid));
+							
+							$pm_disable = privatemsg_is_disabled(user_load($node->uid));
+							if(!$pm_disable) {
+								$mail_flag = true;
+							} else {
+								$mail_flag = false;
+							}
+						$node_user = user_load($node->uid);		
+				
+						//echo $role_ODMA->rid; exit;
+					/*	echo '<pre>';
+						print_r($recipients); 
+						exit;*/
+			if($mail_flag){	
+			  if($workflow_state == 'Publish'){
+			             $nodeurl = drupal_get_path_alias('node/' . $node->nid);
+						$msg_subject = 'Your Solution "'.$node->title.'" is published on Solutions Directory';	
+						$msg_body = 'Dear '.$node_user_info->name.' , <br /> Please note solution "'.$node->title .'" is approved and published on Solutions Directory.';
+						$msg_body .='You may click <a href="'.$nodeurl.'" target="_blank">"Here"</a> to check the solution details.';
+				} else if($workflow_state == 'Update Required'){
+							$msg_subject = 'Update required for your solution '.$node->title;						
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the update required for solution '.$node->title;
+							
+							if($form_state['node']->workflow_custom_comment){
+								$msg_body .= '<br /> The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							}
+							$msg_body .='<br /><br /> Please click  <a href=/node/' . $form_state['node']->nid . '/edit>"Here"</a> to update the solution.<br />';
+						
+						} else if($workflow_state == 'Reject'){
+							$msg_subject = 'Your solution '.$node->title.' is rejected';						
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the solution '.$node->title.' is rejected.';
+							if($form_state['node']->workflow_custom_comment){
+								$msg_body .= '<br />The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							}
+							$msg_body .='<br /><br /> Please click  <a href=/node/'.$form_state['node']->nid.'/edit>"Here"</a> to update the solution.<br />';
+						
+						}
+				$msg_body .= '<br /> Regards , <br /> Intel Solutions Directory Team';
+				
+				$get_message_thread_id = privatemsg_new_thread($recipients, $msg_subject, $msg_body, $options = array());
+				
+				$message_thread_id = 	$get_message_thread_id['message'];
+				$m_thread_id = $message_thread_id->thread_id;	
+					
+				$node_user = user_load($node->uid);					
+				try {					
+					
+					if($m_thread_id){
+						if($workflow_state == 'Reject'){ // Email only for Reject
+							foreach ($recipients as $recipient) {
+										solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);	
+							}					
+							drupal_set_message('Message successfully sent to '.$node_user->name .'.');
+						}	
+					}
+				} catch (Exception $e){
+					drupal_set_message('Message not sent.','error');			
+				}
+			} else {
+					drupal_set_message('Message not sent. Recipient(s) does not have permissions for private message.','error');
+			}	
+		
+		} else {
+		 
+				//Mail to be sent to approvers only when its in Pending FSE/FAE Approval state.
+				if(!empty($node->approvers) && (in_array('Intel Admin',$user->roles) || in_array('ODM Intel Admin',$user->roles)) && ($workflow_state == 'Pending FSE/FAE Approval')) { 
+				
+				$priv_mesg_recipients= array();	
+					
+					if(isset($form_state['node']->approvers)){
+						$recips = $form_state['node']->approvers;
+						
+						foreach($recips as $recip){
+							$recipient_id = $recip;
+							$priv_mesg_recipients[] = user_load($recipient_id);
+		
+						}
+					}
+			
+					$part_user = user_load($node->uid);
+					$partner_user = $part_user->name;
+			foreach($priv_mesg_recipients as $recipient){
+					
+					    $url = $GLOBALS['base_url'].base_path().'/node/' . $node_id ;
+						$msg_subject = "Please review solution '".$node->title ."' from company ".$company_name." on Solutions Directory.";
+												
+						$msg_body = 'Dear '.$recipient->name.',  <br />
+						'.$partner_user.' from your account '.$company_name.' has submitted the solution '.$node->title.'. Please help validate if this product can be published. Please click <a href="'.$url.'" target="_blank">Here</a> to check the solution details.';
+
+						$msg_body .= '<br />The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+						
+						
+						//// Node Image
+				if(isset($node->field_image[LANGUAGE_NONE][0]['fid'])){
+					$node_fid = $node->field_image[LANGUAGE_NONE][0]['fid'];
+					$file = file_load($node_fid);
+					$uri = $file->uri;
+					$url_image = file_create_url($uri);
+					
+					
+					$msg_body .= '<img typeof="foaf:Image" class="img-responsive" src="'.$url_image.'" width="100" height="67" alt="">';
+				}
+				// Node Desc
+				if(isset($node->body[LANGUAGE_NONE][0]['value'])){
+					$prod_desc =  $node->body[LANGUAGE_NONE][0]['value'];
+					$msg_body .= '<br />Product Description: '.$prod_desc;
+				}
+						
+						$msg_body .= '<br />Appreciate your timely support to publish this product soon!<br /> Regards , <br /> Intel Solutions Directory Team';
+					
+					}
+					
+				$get_message_thread_id = privatemsg_new_thread($priv_mesg_recipients, $msg_subject, $msg_body, $options = array());
+				
+				$message_thread_id = 	$get_message_thread_id['message'];
+				$m_thread_id = $message_thread_id->thread_id;	
+				
+				if($m_thread_id){				
+						try {						
+							foreach($priv_mesg_recipients as $recipient){								
+								solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);	
+								drupal_set_message('Message successfully sent to '.$recipient->name.'.');
+								}
+						
+						} catch (Exception $e){
+							drupal_set_message('Email not sent.','error');			
+						}
+				 }
+	  } elseif(!empty($node->approvers) && (in_array($user->uid,$approver_id)) && ($workflow_state == 'Update Required' || $workflow_state == 'Reject' || $workflow_state == 'Approved By FSE/FAE' )) {
+						
+						$recipients= array();
+					    $role_IA = user_role_load_by_name('Intel Admin');
+						$selected_users_IA = getUsersByRole($role_IA->rid);
+										
+							///// Intel Admin recipients 
+						foreach ($selected_users_IA as $res_IA_key => $recipient_IA) {
+							$recipients[] = user_load($res_IA_key);
+								//Provide permission for all recipients to write and read message 
+							read_write_pri_message(user_load($res_IA_key));
+							
+							$pm_disable = privatemsg_is_disabled(user_load($res_IA_key));
+							if(!$pm_disable) {
+								$mail_flag = true;
+							} else {
+								$mail_flag = false;
+							}							
+						}
+						
+							///// Node's author is the recipient
+							if($workflow_state == 'Reject' || $workflow_state == 'Update Required'){
+								$recipients[] = user_load($node->uid);
+								//Provide permission for all recipients to write and read message 
+								read_write_pri_message(user_load($node->uid));
+								
+								$pm_disable = privatemsg_is_disabled(user_load($node->uid));
+								if(!$pm_disable) {
+									$mail_flag_1 = true;
+								} else {
+									$mail_flag_1 = false;
+								}
+						}
+							
+					
+				if($mail_flag == true || $mail_flag_1 == true){	
+				
+					if($workflow_state == 'Approved By FSE/FAE'){
+							$fse_fae = user_load($user->uid);
+							$msg_subject = strtolower($fse_fae->name).' has approved "'.$node->title .'"  from the company '.$company_name;
+							
+							$msg_body = 'Dear Intel Admin, <br /> The solution "'.$node->title .'" from company "'.$company_name.'" has been approved by '.strtolower($fse_fae->name)." .";
+							$msg_body .='<br />Please take the action to approve or reject the solution. Please click  <a href=/node/' . $form_state['node']->nid . '>"Here"</a> to view the request detail.';
+						
+							/// Node Image
+							if(isset($node->field_image[LANGUAGE_NONE][0]['fid'])){
+								$node_fid = $node->field_image[LANGUAGE_NONE][0]['fid'];
+								$file = file_load($node_fid);
+								$uri = $file->uri;
+								$url = file_create_url($uri);
+								
+								
+								$msg_body .= '<img typeof="foaf:Image" class="img-responsive" src="'.$url.'" width="100" height="67" alt="">';
+							}
+							// Node Desc
+							if(isset($node->body[LANGUAGE_NONE][0]['value'])){
+								$prod_desc =  $node->body[LANGUAGE_NONE][0]['value'];
+								$msg_body .= '<br />Product Description: '.$prod_desc;
+							}
+								
+						
+						}else if($workflow_state == 'Update Required'){
+							$msg_subject = 'Update required for your solution '.$node->title;						
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the update required for solution '.$node->title;
+							if($form_state['node']->workflow_custom_comment){							
+								$msg_body .= '<br />The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							}
+							$msg_body .='<br /><br /> Please click  <a href=/node/' . $form_state['node']->nid . '/edit>"Here"</a> to update the solution.<br />';
+						
+						} else if($workflow_state == 'Reject'){
+							$msg_subject = 'Your solution '.$node->title.' is rejected';						
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the solution '.$node->title .' is rejected.';
+							if($form_state['node']->workflow_custom_comment){
+								$msg_body .= '<br />The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							}
+							$msg_body .='<br /><br /> Please click  <a href=/node/' . $form_state['node']->nid . '/edit>"Here"</a> to update the solution.<br />';
+						
+						}
+						
+						$msg_body .= '<br /> Regards , <br /> Intel Solutions Directory Team';
+						
+						$get_message_thread_id = privatemsg_new_thread($recipients, $msg_subject, $msg_body, $options = array());
+					
+						$message_thread_id = 	$get_message_thread_id['message'];
+						$m_thread_id = $message_thread_id->thread_id;
+						$node_user = user_load($node->uid);		
+						try {
+							if($m_thread_id){
+							  if($workflow_state == 'Approved By FSE/FAE'){ // Email only for Approve
+								foreach ($recipients as $recipient) {
+									solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);	
+								 }
+								}
+									drupal_set_message('Message successfully sent to Intel Admin.');
+							
+							}
+						} catch (Exception $e){
+							drupal_set_message('Message not sent.','error');			
+						}
+					}  else {
+						drupal_set_message('Message not sent. Recipient(s) does not have permissions for private message.','error');
+					}	
+				}  elseif(!empty($node->approvers) && (in_array('Intel Admin',$user->roles)) && ($workflow_state == 'Publish' || $workflow_state == 'Update Required' || $workflow_state == 'Reject')){
+				// Mail to Admin and Approvers   ||| 30 Jan 2018
+				
+					
+						$recipients= array();
+				
+					// Mail to FSE/FAE
+					if(isset($form_state['node']->approvers)){
+						$recips = $form_state['node']->approvers;
+						
+						foreach($recips as $recip){
+							$recipient_id = $recip;
+							$recipients[] = user_load($recipient_id);	
+
+								//Provide permission for all recipients to write and read message 
+							read_write_pri_message(user_load($recipient_id));
+							
+							$pm_disable = privatemsg_is_disabled(user_load($recipient_id));
+							if(!$pm_disable) {
+								$mail_flag_1 = true;
+							} else {
+								$mail_flag_1 = false;
+							}						
+						}
+					}
+					
+						///// Node's author is the recipient
+							$recipients[] = user_load($node->uid);
+							//Provide permission for all recipients to write and read message 
+							read_write_pri_message(user_load($node->uid));
+							
+							$pm_disable = privatemsg_is_disabled(user_load($node->uid));
+							if(!$pm_disable) {
+								$mail_flag_2 = true;
+							} else {
+								$mail_flag_2 = false;
+							}
+					
+					if($mail_flag_1 == true && $mail_flag_2 == true){		
+						if($workflow_state == 'Publish'){
+							 $nodeurl = drupal_get_path_alias('node/' . $node->nid);
+							$msg_subject = 'Your Solution "'.$node->title.'" is published on Solutions Directory';		
+							$msg_body = 'Dear '.$node_user_info->name.' , <br /> Please note solution "'.$node->title .'" is approved and published on Solutions Directory.';
+							$msg_body .='You may click <a href="'.$nodeurl.'" target="_blank">"Here"</a> to check the solution details.';
+						} else if($workflow_state == 'Update Required'){
+							$msg_subject = 'Update required for your solution '.$node->title;						
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the update required for solution '.$node->title;						
+							if($form_state['node']->workflow_custom_comment){
+								$msg_body .= '<br />The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							}
+							$msg_body .='<br /><br /> Please click  <a href=/node/' . $form_state['node']->nid . '/edit>"Here"</a> to update the solution.<br />';
+						
+						} else if($workflow_state == 'Reject'){
+							$msg_subject = 'Your solution '.$node->title.' is rejected';						
+							
+							$msg_body = 'Dear '.$node_user_info->name.' <br /> Please note the solution '.$node->title .' is rejected.';
+							if($form_state['node']->workflow_custom_comment){
+								$msg_body .= '<br />The comment/notes added is <br /><br />'.$form_state['node']->workflow_custom_comment;
+							}
+							$msg_body .='<br /><br /> Please click  <a href=/node/' . $form_state['node']->nid . '/edit>"Here"</a> to update the solution.<br />';
+						
+						}
+						
+						$msg_body .= '<br /> Regards , <br /> Intel Solutions Directory Team';
+						
+							$get_message_thread_id = privatemsg_new_thread($recipients, $msg_subject, $msg_body, $options = array());
+						
+												
+							$message_thread_id = 	$get_message_thread_id['message'];
+							$m_thread_id = $message_thread_id->thread_id;
+								
+						try {
+							if($m_thread_id){
+							   if($workflow_state == 'Reject'){ // Email only for Reject
+									foreach ($recipients as $recipient) {
+										solution_mailer($m_thread_id,$recipient,$user->mail,$msg_subject,$msg_body);	
+									}
+								}
+										drupal_set_message('Message successfully sent to Intel Admin.');
+								
+							}
+						} catch (Exception $e){
+							drupal_set_message('Message not sent.','error');			
+						}
+					}  else {
+						drupal_set_message('Message not sent. Recipient(s) does not have permissions for private message.','error');
+					}
+							
+				} 	
+	  }
+	}  ####################### Solution Type is Embedded IoT #############################################################
+	
+ } // node type = solution 
+
+
+}
+
+
+
+function intel_ea_partner_upload_node_insert($node){
+ global $user;
+ 
+  if($node->type == 'solution'){
+    $node = node_load($node->nid);
+  /*echo 'am here';
+  echo '<pre>';
+  print_r($_POST['workflow_custom_comment']);exit;*/
+ 
+  $workflow_custom_comment = $_POST['workflow_custom_comment'];
+  
+   
+  if ($workflow_custom_comment) {
+   		
+			/**** Update the workflow comments into workflow_node_history table  ****/
+			
+			 $old_sid = workflow_node_current_state($node);
+			 
+			 // Change the state.
+			  $data = array(
+				'nid' => $node->nid,
+				'sid' => $node->workflow,
+				'uid' =>  $user->uid,
+				'stamp' => REQUEST_TIME,
+				);
+
+			  // Workflow_update_workflow_node places a history comment as well.
+			  workflow_update_workflow_node($data, $old_sid,$workflow_custom_comment);
+  
+    } 
+  //node_save($node->nid);
+  }
+}
+
+/*
+function intel_ea_partner_upload_node_update($node){
+ global $user;
+ $user_id = user_load($user->uid);
+  if($node->type == 'solution'){
+    $node = node_load($node->nid);
+	
+	$nid=$node->nid;
+	$query = db_query('SELECT w.sid FROM {workflow_node} w WHERE w.nid = :nid LIMIT 1', array(':nid' => $nid));
+    $result = $query->fetchAll(); 
+    $sidresult = $result[0]->sid;
+  
+  $workflow_custom_comment = $_POST['workflow_custom_comment'];
+		if($node->workflow_state_name === '(creation)'){
+			$workflow_id = 2;
+		} else if(array_key_exists(20, $user_id->roles) && empty(array_key_exists(36, $user_id->roles))	&& empty(array_key_exists(9, $user_id->roles)) &&  $sidresult == 22 && $node->status == 0) {
+			$workflow_id = 2;
+		} else {
+			$workflow_id = $node->workflow;
+		}
+		
+echo '<pre>';
+print_r($node);
+
+
+    echo 'sidresult='.$sidresult;
+	echo '<br />';
+	echo 'workflow_id='.$workflow_id; exit;
+   
+  if ($workflow_custom_comment) {
+   		
+			/**** Update the workflow comments into workflow_node_history table  ****/
+		/*
+			 $old_sid = workflow_node_current_state($node);
+			 
+			 // Change the state.
+			  $data = array(
+				'nid' => $node->nid,
+				//'sid' => ($_POST['workflow'])?$_POST['workflow']:$node->workflow,
+				'sid' => ($_POST['workflow'])?$_POST['workflow']:$workflow_id,
+				'uid' =>  $user->uid,
+				'stamp' => REQUEST_TIME,
+				);
+			/*	echo 'form_state'.$node->workflow_custom_comment;
+				echo 'post workflow comment'.$_POST['workflow_custom_comment'];
+			  echo 'am in hook node update'; exit; */
+			  
+			  // Workflow_update_workflow_node places a history comment as well.
+		/*	  workflow_update_workflow_node($data, $old_sid,$workflow_custom_comment);
+  
+    }
+  }
+}
+*/
+
+/******** Get the users with the RID *********/
+function getUsersByRole($rid = 1) { // rid = Role Id from users_roles table
+    $query = db_select('users', 'u');
+    $query->fields('u', array('uid', 'name'));
+    $query->innerJoin('users_roles', 'r', 'r.uid = u.uid');
+    $query->condition('r.rid', $rid);
+    $query->orderBy('u.name');
+
+    $result = $query->execute();
+	
+    $users = array();
+    foreach ($result as $user) {
+        $users[$user->uid] = $user->name;
+    }
+
+    return $users;
+}
+
+
+function check_solution($nid,$flag){
+
+$node_id = $nid;
+
+
+	$result = db_query("SELECT ps.entity_id FROM {field_data_field_promotion_products} ps  where ps.field_promotion_products_target_id = :node_id  and ps.bundle = :bundle ORDER BY ps.entity_id DESC LIMIT 1", array(':node_id' => $node_id,':bundle' => 'promotion'));
+	
+	while ($row = $result->fetchAssoc()) {
+		$promo_sol = $row['entity_id'];    
+	}
+			
+	$result_rpf = db_query("SELECT rfps.entity_id FROM {field_data_field_recommended_products} rfps  where rfps.field_recommended_products_target_id = :node_id  
+	and rfps.bundle = :bundle ORDER BY rfps.entity_id DESC LIMIT 1", array(':node_id' => $node_id,':bundle' => 'proposal'));
+	
+	while ($row_rfp = $result_rpf->fetchAssoc()) {
+		$rfp_sol = $row_rfp['entity_id'];    
+	}
+	
+	if(isset($promo_sol) && isset($rfp_sol)){
+	 if($flag == 'Archive'){
+		$sol_mapped_promo_rfp = 'This solution cannot be Archived. There is a Promotion and a proposal from an RFP attached to it. Please remove the solution from promotion and the proposal to archive this solution.';
+
+
+		return $sol_mapped_promo_rfp;
+		}
+		if($flag == 'Save_SE'){
+			$_sol_mapped_promo_rfp = 'This solution cannot be Edited. There is a Promotion and a proposal from an RFP attached to it. Please remove the solution from promotion and the proposal to edit this solution.';
+			return $_sol_mapped_promo_rfp;
+		}	
+	}
+	
+	if(isset($promo_sol)){
+		if($flag == 'Archive'){
+				$sol_mapped_promotion = 'This solution cannot be Archived. There is a Promotion attached to it. Please remove the solution from the attached promotion to archive this solution.';		
+				return $sol_mapped_promotion;	
+			}
+			if($flag == 'Save_SE'){
+				$_sol_mapped_promotion = 'This solution cannot be Edited. There is a Promotion attached to it. Please remove the solution from the attached promotion to edit this solution.';		
+
+
+				return $_sol_mapped_promotion;	
+			}
+	}
+	
+	if(isset($rfp_sol)){
+			if($flag == 'Archive'){
+				$sol_mapped_rfp = 'This solution cannot be Archived. There is a proposal from an RFP attached to it. Please remove the solution from the proposal to archive this solution.';
+				return $sol_mapped_rfp;
+		    }
+			if($flag == 'Save_SE'){
+				$_sol_mapped_rfp = 'This solution cannot be Edited. There is a proposal from an RFP attached to it. Please remove the solution from the proposal to edit this solution.';
+
+
+				return $_sol_mapped_rfp;
+			}
+	}
+	
+	
+}
+
+/*********** Update  the workflow state to DRAFT state automatically for the unpulished solutions ***********/
+/*
+function intel_ea_partner_upload_node_access_records_alter(&$grants, $node) {
+
+	if($node->type == 'solution'){
+			$exists_sid = db_query('SELECT sid FROM {workflow_node} WHERE nid = :nid', array(':nid' => $node->nid))->fetchField();
+			//echo '$_POST_workflow'.$_POST['workflow'];echo '<br />\exists'.$exists_sid;
+		//	exit; 
+		if(!$_POST['workflow'] && $exists_sid == 22){
+			// If the solution is un-published then change the workflow state to DRAFT
+				 // Get max hid
+				$max_hid = db_query('SELECT max(hid) as hid FROM {workflow_node_history} WHERE nid = :nid', array(':nid' => $node->nid))->fetchField();	
+				
+		
+				 db_update('workflow_node')
+				  ->fields(array('sid' => 2,))
+				  ->condition('nid', $node->nid)
+				  ->execute();
+		  
+				 db_update('workflow_node_history')
+				  ->fields(array('sid' => 2,))
+				  ->condition('nid',  $node->nid)
+				  ->condition('hid',  $max_hid)
+				  ->execute();
+		  
+				//$wn = db_query("UPDATE {workflow_node} SET sid=%d WHERE nid=%d",  2, $node->nid);
+				//$wnh = db_query("UPDATE {workflow_node_history} SET sid= %d WHERE (nid=%d AND hid=%d)",  2,  $node->nid,  $max_hid);
+		}
+
+	  }
+	
+}
+*/

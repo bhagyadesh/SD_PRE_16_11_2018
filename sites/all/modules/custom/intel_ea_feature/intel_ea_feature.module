@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Intel EA Feature feature.
+ */
+
+include_once 'intel_ea_feature.features.inc';

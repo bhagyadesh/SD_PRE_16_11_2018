@@ -1,0 +1,151 @@
+<?php
+header("Content-type: text/plain");
+?>
+#
+# robots.txt
+#
+# This file is to prevent the crawling and indexing of certain parts
+# of your site by web crawlers and spiders run by sites like Yahoo!
+# and Google. By telling these "robots" where not to go on your site,
+# you save bandwidth and server resources.
+#
+# This file will be ignored unless it is at the root of your host:
+# Used:    http://example.com/robots.txt
+# Ignored: http://example.com/site/robots.txt
+#
+# For more information about the robots.txt standard, see:
+# http://www.robotstxt.org/robotstxt.html
+
+# Block all spiders and then allow the big ones below
+
+User-agent: *
+Disallow: /
+
+<?php
+
+$user_agents = array(
+  'Googlebot',
+  'Applebot',
+  'Slurp',
+  'bingbot',
+  'Baiduspider',
+  'Sogou',
+  'Yandex',
+);
+
+foreach($user_agents as $user_agent){
+  print '
+# Restrictions for ' .  $user_agent . '
+User-agent:' .  $user_agent . '
+Crawl-delay: 10
+Allow: /
+Disallow: */feed*
+Disallow: *solutions-directory?*
+Disallow: *member-roster/field_*
+Disallow: */nojs*
+Disallow: *solutions-directory/stds_usb_usb2
+Disallow: *solutions-directory/chipsets
+Disallow: *solutions-directory/intel_wireless
+Disallow: *solutions-directory/application
+Disallow: *solutions-directory/display_independent
+Disallow: *solutions-directory/display_hdmi
+Disallow: *solutions-directory/display_lvds
+Disallow: *solutions-directory/display_other
+Disallow: *solutions-directory/display_pcie_x16
+Disallow: *solutions-directory/display_size
+Disallow: *solutions-directory/display_total
+Disallow: *solutions-directory/display_vga
+Disallow: *solutions-directory/ethernet_controllers
+Disallow: *solutions-directory/intel_technologies
+Disallow: *solutions-directory/memory_ecc
+Disallow: *solutions-directory/stds_pcie_as
+Disallow: *solutions-directory/processors_count
+Disallow: *solutions-directory/memory_max
+Disallow: *solutions-directory/memory_type
+Disallow: *solutions-directory/processors_list
+Disallow: *solutions-directory/stds_camera
+Disallow: *solutions-directory/processors_list
+Disallow: *solutions-directory/stds_camera
+Disallow: *solutions-directory/software_solutions
+Disallow: *solutions-directory/stds_audio
+Disallow: *solutions-directory/power
+Disallow: *solutions-directory/stds_csix
+Disallow: *solutions-directory/stds_pcie_mini
+Disallow: *solutions-directory/stds_eth_ports
+Disallow: *solutions-directory/stds_gps
+Disallow: *solutions-directory/stds_pcie_rev
+Disallow: *solutions-directory/stds_pcie_x2
+Disallow: *solutions-directory/stds_eth
+Disallow: *solutions-directory/stds_pcie_x1
+Disallow: *solutions-directory/stds_pcie_x16
+Disallow: *solutions-directory/display_port_edp
+Disallow: *solutions-directory/stds_pcie_x4
+Disallow: *solutions-directory/stds_pcie_x8
+Disallow: *solutions-directory/stds_sim
+Disallow: *solutions-directory/stds_pc_104
+Disallow: *solutions-directory/stds_processor_socketed
+Disallow: *solutions-directory/stds_sd_sdio_emmc
+Disallow: *solutions-directory/stds_spi
+Disallow: *solutions-directory/stds_storage_raid
+Disallow: *solutions-directory/geographic_location
+Disallow: *solutions-directory/stds_storage_cfst
+Disallow: *solutions-directory/stds_storage_ide
+Disallow: *solutions-directory/stds_storage_sata
+Disallow: *solutions-directory/stds_storage_ssd_size
+Disallow: *solutions-directory/stds_systems
+Disallow: *solutions-directory/stds_usb_on_the_go
+Disallow: *solutions-directory/stds_usb_usb1
+Disallow: *solutions-directory/stds_usb_usb3
+Disallow: *solutions-directory/stds_wlan
+Disallow: *solutions-directory/stds_wpan
+Disallow: *solutions-directory/stds_wwan
+Disallow: *solutions-directory/categories
+Disallow: *solutions-directory/market_segments
+Disallow: *solutions-directory/company
+
+# Directories
+Disallow: /includes/
+Disallow: /misc/
+Disallow: /modules/
+Disallow: /profiles/
+Disallow: /scripts/
+Disallow: /themes/
+# Files
+Disallow: /CHANGELOG.txt
+Disallow: /cron.php
+Disallow: /INSTALL.mysql.txt
+Disallow: /INSTALL.pgsql.txt
+Disallow: /INSTALL.sqlite.txt
+Disallow: /install.php
+Disallow: /INSTALL.txt
+Disallow: /LICENSE.txt
+Disallow: /MAINTAINERS.txt
+Disallow: /update.php
+Disallow: /UPGRADE.txt
+Disallow: /xmlrpc.php
+# Paths (clean URLs)
+Disallow: /admin/
+Disallow: /comment/reply/
+Disallow: /filter/tips/
+Disallow: /node/add/
+Disallow: /node
+Disallow: /node/*
+Disallow: /search/
+Disallow: /user/register/
+Disallow: /user/password/
+Disallow: /user/login/
+Disallow: /user/logout/
+# Paths (no clean URLs)
+Disallow: /?q=admin/
+Disallow: /?q=comment/reply/
+Disallow: /?q=filter/tips/
+Disallow: /?q=node/add/
+Disallow: /?q=node/*
+Disallow: /?q=node
+Disallow: /?q=search/
+Disallow: /?q=user/password/
+Disallow: /?q=user/register/
+Disallow: /?q=user/login/
+Disallow: /?q=user/logout/
+';
+}

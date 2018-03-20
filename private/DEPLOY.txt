@@ -1,0 +1,41 @@
+#!/bin/bash
+#
+# Deployment script.
+#
+
+#
+# Put the server in maintenance mode.
+#
+drush vset --always-set maintenance_mode 1 && drush cc all
+
+#
+# Disable and uninstall modules.
+#
+
+#
+# Pull the latest updates from the repository.
+#
+git pull
+
+#
+# Enable new modules.
+#
+
+#
+# Manual update steps.
+#
+
+#
+# Run updates.
+#
+drush -y updb
+
+#
+# Revert site features.
+#
+drush -y fra
+
+#
+# Take the server out of maintenance mode.
+#
+drush vset --always-set maintenance_mode 0 && drush cc all

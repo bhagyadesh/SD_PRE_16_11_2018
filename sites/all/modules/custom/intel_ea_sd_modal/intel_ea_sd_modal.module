@@ -1,0 +1,119 @@
+<?php
+/**
+ * @file
+ * Intel EA SD Modal.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function intel_ea_sd_modal_menu() {
+  $items['solutions-directory/ajax/%'] = array(
+    'page callback' => 'intel_ea_sd_modal_contents',
+    'page arguments' => array(1, 2),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+
+  $items['member-resource-center/video/%'] = array(
+    'page callback' => 'intel_ea_mrc_modal_contents',
+    'page arguments' => array(1, 2),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+/**
+ * The page callback for SD modal.
+ *
+ * @param $js
+ *   boolean CTools determination whether the user's browser is javascript enabled.
+ * @param $nid
+ *   string The node ID passed as an argument from hook_menu().
+ *
+ * @return
+ *   string The contents of the node that will placed in the modal.
+ */
+function intel_ea_sd_modal_contents($js = NULL, $nid = NULL) {
+  // Return access denied if a node ID was not provided.
+  if (!$nid) {
+    return MENU_ACCESS_DENIED;
+  }
+  ctools_include('ajax');
+  ctools_include('modal');
+
+  // Load the node and return the CTools modal.
+  $node = node_load($nid);
+  $contents = render(node_view($node, 'solution_list_quickview', NULL));
+
+  return ctools_modal_render($node->title, $contents);
+}
+
+/**
+ * The page callback for MRC modal.
+ *
+ */
+function intel_ea_mrc_modal_contents($path = null, $version = null) {
+  $content = '';
+
+  switch ($version) {
+    case 1:
+      $content = '<iframe src="//player.vimeo.com/video/93523297" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+      break;
+    case 2:
+      $content = '<iframe src="//player.vimeo.com/video/108593027#t=0m55s" width="800" height="600" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+      break;
+    case 3:
+      $content = '<iframe src="//player.vimeo.com/video/61310908" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+      break;
+    case 4:
+      $content = '<iframe src="//player.vimeo.com/video/59765141" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+      break;
+    case 5:
+      $content = '<iframe src="//player.vimeo.com/video/108593028" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+      break;
+  }
+
+  print $content;
+  drupal_exit();
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function intel_ea_sd_modal_views_pre_render(&$view) {
+  // Add the necessary files and settings to the Solutions Directory view.
+  if ($view->name == 'solutions_directory') {
+    ctools_include('ajax');
+    ctools_include('modal');
+
+    ctools_modal_add_js();
+
+    $intel_ea_sd_modal_style = array(
+      'intel-ea-sd-modal-style' => array(
+        'modalSize' => array(
+          'type' => 'fixed',
+          'width' => 250,
+          'height' => 300,
+          'contentRight' => 0,
+          'contentBottom' => 0,
+        ),
+        'modalOptions' => array(
+          'background-color' => '#fff',
+          'opacity' => 0.1,
+        ),
+        'animation' => 'show',
+        'animationSpeed' => 'fast',
+        'modalTheme' => 'intel_ea_sd_modal',
+        'throbber' => theme('image', array('path' => ctools_image_path('throbber.gif'), 'alt' => t('Loading...'), 'title' => t('Loading...'))),
+        'closeImage' => theme('image', array('path' => ctools_image_path('modal-close.png', 'intel_ea_sd_modal'), 'alt' => t('Close'), 'title' => t('Close'))),
+      ),
+    );
+
+    drupal_add_js($intel_ea_sd_modal_style, 'setting');
+    ctools_add_js('intel_ea_sd_modal', 'intel_ea_sd_modal');
+    ctools_add_css('intel_ea_sd_modal', 'intel_ea_sd_modal');
+  }
+}

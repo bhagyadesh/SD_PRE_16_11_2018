@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Intel ISDM User Import Feature feature.
+ */
+
+include_once 'intel_isdm_user_import_feature.features.inc';

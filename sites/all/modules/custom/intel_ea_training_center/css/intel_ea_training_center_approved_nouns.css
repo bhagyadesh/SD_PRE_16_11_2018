@@ -1,0 +1,26 @@
+/**
+ * @file
+ * Intel EA Training Center Approved Nouns CSS.
+ */
+
+/* content */
+div.ctools-modal-intel-ea-training-center {
+  border: 3px solid #bbc4c4;
+  position: relative;
+}
+
+div.ctools-modal-intel-ea-training-center .modal-content.popups-body {
+  padding: 0;
+}
+
+/* close */
+div.ctools-modal-intel-ea-training-center span.popups-close {
+  position: absolute;
+  right: 20px;
+  top: 13px;
+  z-index: 1002;
+}
+
+div.ctools-modal-intel-ea-training-center a.close {
+  float: none;
+}

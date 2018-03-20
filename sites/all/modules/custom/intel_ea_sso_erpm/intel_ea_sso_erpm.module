@@ -1,0 +1,183 @@
+<?php
+
+// Include features strongarm values associated with the project.
+include_once 'intel_ea_sso_erpm.features.inc';
+
+// Include private functions.
+module_load_include('inc', 'intel_ea_sso_erpm', 'includes/intel_ea_sso_erpm.private');
+module_load_include('inc', 'intel_ea_sso_erpm', 'includes/intel_ea_sso_erpm.forms');
+
+/**
+ * Implements hook_menu().
+ *
+ * PURPOSE: Declare administrative page which allows switching saml values
+ * based on environment.
+ */
+function intel_ea_sso_erpm_menu() {
+  $items = array();
+
+  $items['admin/config/people/simplesamlphp_auth/environment-selector'] = array(
+    'title' => 'Environment Selector',
+    'description' => 'Environment Selector allows quickly setting SAML values for your environment.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('intel_ea_sso_erpm_settings_form'),
+    'access arguments' => array('administer simpleSAMLphp authentication'),
+    'type' => MENU_LOCAL_TASK,
+  );
+
+  $items['admin/config/people/simplesamlphp_auth/erpm-credentials'] = array(
+    'title' => 'ERPM Credentials',
+    'description' => 'Admin interface for storing ERPM credentials',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('intel_ea_sso_erpm_credentials_form'),
+    'access arguments' => array('administer simpleSAMLphp authentication'),
+    'type' => MENU_LOCAL_TASK,
+  );
+
+  $items['admin/config/people/simplesamlphp_auth/bulk-import-companies'] = array(
+    'title' => 'Bulk import all companies',
+    'description' => 'Environment Selector allows quickly setting SAML values for your environment.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('intel_ea_sso_erpm_import_companies_batch_form'),
+    'access arguments' => array('administer simpleSAMLphp authentication'),
+    'type' => MENU_LOCAL_TASK,
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_simplesamlphp_auth_pre_login();
+ *
+ * PURPOSE: Hooks into all SSO eRPM.
+ */
+function intel_ea_sso_erpm_simplesamlphp_auth_pre_login($attributes, $ext_user) {
+  // Wrap the user, so we can easily set field values.
+  //$attr = simplesamlphp_auth_get_attributes(); 
+  //global $_simplesamlphp_auth_saml_attributes; 
+  
+   //echo '<pre>'; print_r($attributes);exit;
+  $wrapped_user = entity_metadata_wrapper('user', $ext_user);
+  
+  
+
+  // Check if the user has no enterprise ID value. If so, first time from SSO.
+  if ($wrapped_user->field_sso_enterprise_id->value() == NULL) {
+    // Set basic user profiles values with SSO values.
+    $wrapped_user->field_first_name->set($attributes['FirstName'][0]);
+    $wrapped_user->field_last_name->set($attributes['LastName'][0]);
+    $wrapped_user->field_sso_enterprise_id->set($attributes['EnterpriseID'][0]);
+    //ravish
+    $wrapped_user->field_erpm_login_id->set($attributes['LoginID'][0]);
+
+
+    // Save the updated user.
+    $wrapped_user->save();
+  }
+  
+  $wrapped_user->field_erpm_login_id->set($attributes['LoginID'][0]);
+  $wrapped_user->save();
+
+  // If ERPM is enabled, proceed with ERPM user sync.
+  if (variable_get('intel_ea_sso_erpm_enabled', FALSE)) {
+    intel_ea_sso_erpm_get_erpm_user_data($wrapped_user);
+  }
+}
+
+/**
+ * Implements hook_cron().
+ *
+ * PURPOSE: Fetch companies from ERPM since last updated and update/create.
+ */
+function intel_ea_sso_erpm_cron() {
+  // Initialize basic values
+  $max_companies_to_process = 155;
+  // Proceed only if the ERPM integration is enabled.
+  if (variable_get('intel_ea_sso_erpm_enabled', FALSE)) {
+    // Check if companies data returned successfully.
+    if ($companies_data = intel_ea_sso_erpm_get_companies(TRUE)) {
+      // Report inability to proceed with cron as it is too many companies.
+      if (count($companies_data) > $max_companies_to_process) {
+        // Report failure due to a company amount in excess of max per cron.
+        watchdog(
+            'intel_ea_sso_erpm', t('There was an issue with CRON for companies ERPM. The amount returned (@ companies) exceed the maximum of %.', array(
+          '@' => count($companies_data),
+          '%' => $max_companies_to_process)
+            ), NULL, WATCHDOG_ERROR
+        );
+      }
+      
+      $companycronupdate = array();
+      $companycronuadd = array();
+      // Loop through and process all return values.
+      
+      foreach ($companies_data as $company_data) {
+		 
+	   
+	   $obj=intel_ea_sso_erpm_check_erpm_id($company_data['AccountNbr']);
+
+		if (!empty($obj)) {
+			$companycronupdate[] = array(
+            'CompanyName' => $company_data['CompanyNm'],
+            'Company_ID' => $company_data['AccountNbr'],
+          );
+		}
+		  
+        else {
+			//echo 'obj value is true<br/>';print_r($obj);
+			 if(intval($company_data['ISAITPBusIDTxt']) > 0
+				&& $node = node_load(intval($company_data['ISAITPBusIDTxt']))) {
+					$companycronupdate[] = array(
+            'CompanyName' => $company_data['CompanyNm'],
+            'Company_ID' => $company_data['AccountNbr'],
+          );
+				}
+    
+			else { 
+			  if(trim($company_data['TierTxt']) != 'UNDETERMND') {
+					
+					$companycronuadd[] = array(
+				  
+					'CompanyName' => $company_data['CompanyNm'],
+					'Company_ID' => $company_data['AccountNbr'],
+				  );
+			  }
+				}
+		}
+        intel_ea_sso_erpm_populate_company($company_data, TRUE);
+		
+      }
+//echo '<pre>'; print_r($companycronuadd);
+      if ($companycronuadd) {
+		  
+		  //echo 'companycronuadd';exit;
+        $op = "<pre><h1>Following companies were added</h1>";
+        $op .= "<table><tr><td>Company Name</td><td>Company ID</td></tr>";
+        foreach ($companycronuadd as $value) {
+          $op .= "<tr><td>" . $value['CompanyName'] . "</td><td>" . $value['Company_ID'] . "</td></tr>";
+        }
+        $op .= "</table>";
+        $op .= "</pre>";
+        watchdog('intel_ea_sso_erpm', $op);
+      }
+//echo '<pre>'; print_r($companycronupdate);
+      if ($companycronupdate) {
+		 //echo 'companycronupdate';exit;
+        $op = "<pre><h1>Following companies were updated</h1>";
+        $op .= "<table><tr><td>Company Name</td><td>Company ID</td></tr>";
+        foreach ($companycronupdate as $value) {
+          $op .= "<tr><td>" . $value['CompanyName'] . "</td><td>" . $value['Company_ID'] . "</td></tr>";
+        }
+        $op .= "</table>";
+        $op .= "</pre>";
+        watchdog('intel_ea_sso_erpm', $op);
+      }
+
+    }
+    else {
+      // Report failure to load companies data.
+      watchdog('intel_ea_sso_erpm', t('There was an issue with CRON and querying the ERPM.'), NULL, WATCHDOG_ERROR);
+    }
+  }
+  
+}

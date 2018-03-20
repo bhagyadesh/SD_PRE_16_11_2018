@@ -1,0 +1,7 @@
+name = RFP Proposal management
+description = Proposal CRUD.
+core = 7.x
+package = RFP
+
+stylesheets[all][] = rfpproposal.css
+scripts[] = script.js

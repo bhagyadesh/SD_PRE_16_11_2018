@@ -1,0 +1,303 @@
+<?php
+
+/**
+ * Implements hook_menu();
+ *
+ * Purpose: Create submission form endpoint for sending out
+ * new registration email for users.
+ */
+function intel_mrc_mail_new_users_menu(){
+  // Initialize empty array.
+  $items = array();
+
+  // Create administrative page for sending emails.
+  $items['admin/people/mrc_mail_new_users'] = array(
+    'title' => 'MRC -- Send T&C registration',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('intel_mrc_mail_new_users_form'),
+    'access argument' => array('administer users'),
+    'type' => MENU_NORMAL_ITEM,
+  );
+
+  // Create endpoint for unblocking users.
+  $items['user/mrc_agree_tnc/%/%'] = array(
+    'title' => 'Agree to Terms and Conditions (MRC)',
+    'page callback' => 'intel_mrc_agree_tnc_endpoint',
+    'page arguments' => array(2,3),
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+/**
+ * Returns form for mailing TnC's to menu item for intel MRC new user email.
+ */
+function intel_mrc_mail_new_users_form($form, &$form_state){
+  // Email 'subject' line text field
+  $form['subject'] = array(
+    '#title' => t('Subject Line for Email'),
+    '#type' => 'textfield',
+    '#description' => t('Add the text you want to appear in the emails subject line.'),
+  );
+
+  // Terms and conditions text area.
+  $form['tnc'] = array(
+    '#title' => t('Terms and conditions'),
+    '#type' => 'text_format',
+    '#description' => t('Enter the terms and conditons here. These will be emailed to the user to accept.'),
+  );
+
+  // User ID's.
+  $form['uids'] = array(
+    '#title' => t('User ID values:'),
+    '#type' => 'textarea',
+    '#description' => t('Provide a comma seperated list of users to send T&C emails to.'),
+  );
+
+  // Form submission button.
+  $form['submit'] = array(
+    '#value' => 'Send registration email to users',
+    '#type' => 'submit',
+  );
+
+  return $form;
+}
+
+/**
+ * Validation function for MRC TNC form. Mostly checks validity of UID's.
+ */
+function intel_mrc_mail_new_users_form_validate($form, &$form_state){
+  // String comparison
+  $only_commas_and_ints_expression = '/^\d+(?:,\d+)*$/';
+
+  // Make sure string is only integers and commas.
+  if (!preg_match($only_commas_and_ints_expression, $form_state['values']['uids'])) {
+    form_set_error('uids','UIDs can only by numbers and commas');
+    return FALSE;
+  }
+  else {
+    // Stash user accounts in $users array for later appending to form values.
+    $users = array();
+    // Bust UID text into array..
+    $uids = str_getcsv($form_state['values']['uids']);
+    // Variable for tracking user load errors and kicking out if TRUE.
+    $user_load_error = FALSE;
+
+    // Loop through all UIDS to make sure they're legitimate workable users.
+    foreach ($uids as $uid) {
+      // Check if user is a valid user.
+      if($user = user_load($uid)){
+
+        // Make sure user has logged in.
+        if(!$user->status) {
+          $users[] = $user;
+        }
+        else{
+          // Set user load error.
+          $user_load_error = TRUE;
+          // UID has logged in. Add error. drupal_set_message(
+          drupal_set_message(
+            t(
+              'UID @ is not currently blocked and therefore cannot be activated via this workflow.',
+              array('@' => $uid)
+            ),
+            'error'
+          );
+        }
+      }else{
+        // Set user load error.
+        $user_load_error = TRUE;
+        // Add error message. Use set message so we can output an issue per user.
+        drupal_set_message(
+          t(
+            'UID @ could not be loaded. Make sure this is a valid UID.',
+            array('@' => $uid)
+          ),
+          'error'
+        );
+      }
+    }
+    // Check for user load error and return error if this occured.
+    if($user_load_error){
+      form_set_error('uid', 'Issue with one or more of the UIDs entered');
+      return FALSE;
+    }
+  }
+  // If users to email and no errors stash users value in form state.
+  if(!$user_load_error && !empty($users)){
+    $form_state['processed_users'] = $users;
+  }
+}
+
+/**
+ * Form submission function for sending TNC to new users.
+ *
+ * @TODO:
+ * Populating the body and adding in the one time login link thus far is fine. Test sending emails.
+ *
+ * See that emails are getting sent out to all users in list.
+ * NOTE: See this for capturing mail locally
+ *
+ * See if it transfers HTML into plain text fine when emails are sent.
+ *
+ */
+function intel_mrc_mail_new_users_form_submit($form, &$form_state){
+  // Loop through all users, and send out an email.
+  foreach($form_state['processed_users'] as $user) {
+    // Create variable to hold from address for email
+    $from_address = 'Susie Bachman <donoreply@thenewgroup.com>';
+    
+    // Create variable to hold sender address for email
+    $sender = 'intel.communications.alliance.admin@intel.com';
+
+    // Create variable to hold 'Reply To' address for email
+    $replyto = 'susie@inteliot.partners';
+
+    // Create variable to hold email subject
+    $email_subject = '';
+
+    // Create blank email body.
+    $email_body = '';
+
+    // Add subject to variable
+    $email_subject = $form_state['values']['subject'];
+
+    // Add TNC to Email body.
+    $email_tnc = $form_state['values']['tnc']['value'];
+
+    // Generate textual link and one time login.
+    $one_time_login_link =
+      t('After clicking the URL below to confirm your company\'s participation in the Advantage program you will be sent to the Partner Resource Center to access training materials and program tools..')
+      . '<p />' . $GLOBALS['base_url'] . intel_mrc_agree_tnc_generate_link($user) . '<p />';
+
+    // Signature block text for email
+    $email_signature_block = "
+        We look forward to working with you.<p />
+        Sincerely,<br />
+        Peggy Mahler<br />
+        Partner Marketing Strategist, Internet of Things<br />
+        Intel Partner Marketing Group<br />";
+
+    // Append one time login link to email body.
+    $email_body = $email_tnc . '<br />';
+    $email_body .= $one_time_login_link . '<br />';
+    $email_body .= $email_signature_block;
+
+    // create 'params' array to pass to mail
+    $params = array(
+      'subject' => $email_subject,
+      'body' => $email_body,
+      'headers' => array(
+        'From' => $from_address,
+        'From_header' => $from_address,
+        'Reply-to' => $replyto,
+        'Sender' => $sender,
+        'Return-Path' => $sender,
+      ),
+    );
+
+    // call function that evaluates whether or not user has logged in before
+    // if they have not logged into the system EVER, send the email
+    if(intel_mrc_mail_user_login($user)) {
+      // Call to drupal mail
+      drupal_mail(
+        'intel_mrc_mail_new_users',
+        'tnc_onetimelogin',
+        $user->mail,
+        user_preferred_language($user),
+        $params
+      );
+    }
+  }
+}
+
+
+/**
+ * Callback from drupal mail above that appends email body to message.
+ *
+ * @TODO: Test that this is working and sending actual emails.
+ */
+function intel_mrc_mail_new_users_mail($key, &$message, $params) {
+  // Make headers, particularly the 'from/sender', part of email
+  $message['from'] = $params['headers']['From'];
+  $message['headers']['From'] = $params['headers']['From_header'];
+  $message['Reply-to'] = $params['headers']['Reply-to'];
+  $message['headers']['Reply-to'] = $params['headers']['Reply-to'];
+  $message['headers']['Sender'] = $params['headers']['Sender'];
+  $message['headers']['Return-Path'] = $params['headers']['Return-Path'];
+  // Make email subject part of message
+  $message['subject'] = $params['subject'];
+  // Make email body a part of the message.
+  $message['body'][] = $params['body'];
+}
+
+/**
+ * Helper function to generate a TNC acceptance unblocking link.
+ *
+ * @param object $user
+ *   Fully loaded user object.
+ *
+ * @return string
+ *   URL for user login.
+ */
+function intel_mrc_agree_tnc_generate_link($user){
+  return 'user/mrc_agree_tnc/' . $hashed_email = crypt($user->mail,'intel_mrc_mail_salt') . '/' . $user->uid;
+}
+
+/**
+ * Menu callback for agree to terms and conditions.
+ *
+ * @param string $passed_hash
+ *   A crypted value against a string. Used to compare to actual email value.
+ *
+ * @param int $uid
+ *   A user ID to load and compare hash, which if matches unblocks user.
+ */
+function intel_mrc_agree_tnc_endpoint($passed_hash, $uid) {
+  // Check that this endpoint isn't being flooded. Protective measure.
+  if (flood_is_allowed('intel_mrc_agree_tnc', 5)) {
+    // Register event for flood control.
+    flood_register_event('intel_mrc_agree_tnc');
+
+    // Load user and get hashed email for comparison.
+    $user = user_load(intval($uid));
+    $hashed_email = crypt($user->mail,'intel_mrc_mail_salt');
+
+    // Compare user hashed email and password compare, check user is disabled.
+    if($hashed_email == $passed_hash && $user->status == 0) {
+      // Set user status to zero.
+      $user->status = 1;
+      user_save($user);
+      // Set message to say thank you to user for accepting T&C's.
+      $user_pass_reset_url = user_pass_reset_url($user);
+      drupal_set_message('Thank you for accepting terms and conditions, you may now access your account.');
+      drupal_goto($user_pass_reset_url);
+      drupal_exit();
+    }
+    else{
+      // User is not inactive, OR hash doesn't match. Redirect to home page.
+      // @TODO: Add watchdog reporting on issue?
+      drupal_goto('');
+      drupal_exit();
+    }
+  }
+  else {
+    // Flood control. No legit reason to be here. Send user to home page.
+    //@TODO: Add watchdog to log that some one has flood controlled endpoint?
+    drupal_goto('');
+    drupal_exit();
+  }
+}
+
+//function intel_mrc_mail_user_login(&$edit, $account) {
+function intel_mrc_mail_user_login($account) {
+  if ($account->access == 0) {
+    // The user has never logged in before.
+    return True;
+  }
+  else {
+    return False;
+  }
+}

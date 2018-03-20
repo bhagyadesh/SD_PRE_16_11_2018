@@ -1,0 +1,7 @@
+name = Intel EA Customizations
+description = Miscellaneous Custom Intel EA code.
+package = Intel EA
+core = 7.x
+dependencies[] = views_php
+dependencies[] = views_data_export
+dependencies[] = views_pdf

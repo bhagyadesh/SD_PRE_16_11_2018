@@ -1,0 +1,78 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the Intel EA Feature module.
+ */
+
+/**
+ * Implements hook_update_N().
+ *
+ * Update all user roles to take into account new complimentary roles.
+ */
+function intel_ea_feature_update_7100(&$sandbox) {
+  // Ensure all users with the Primary Marketing Contact role (rid = 18) also
+  // have the Solutions Directory Editor role (rid = 20).
+  $user_query = db_select('users', 'u')
+    ->fields('u', array('uid'));
+  $user_query->join('users_roles', 'ur', 'u.uid = ur.uid');
+  $user_query->addExpression(20, 'rid');
+  $user_query->groupBy('u.uid');
+  $user_query->having("FIND_IN_SET('18', GROUP_CONCAT(ur.rid)) AND NOT FIND_IN_SET('20', GROUP_CONCAT(ur.rid))");
+
+  db_insert('users_roles')
+    ->from($user_query)
+    ->execute();
+
+  // Ensure all users with the Primary Admin Contact role (rid  = 14) also have
+  // the Member Admin role (rid = 30).
+  $user_query = db_select('users', 'u')
+    ->fields('u', array('uid'));
+  $user_query->join('users_roles', 'ur', 'u.uid = ur.uid');
+  $user_query->addExpression(30, 'rid');
+  $user_query->groupBy('u.uid');
+  $user_query->having("FIND_IN_SET('14', GROUP_CONCAT(ur.rid)) AND NOT FIND_IN_SET('30', GROUP_CONCAT(ur.rid))");
+
+  db_insert('users_roles')
+    ->from($user_query)
+    ->execute();
+
+  // Ensure all users with the Primary Contact role (rid  = 17) also have
+  // the Primary Admin Contact (rid = 14).
+  $user_query = db_select('users', 'u')
+    ->fields('u', array('uid'));
+  $user_query->join('users_roles', 'ur', 'u.uid = ur.uid');
+  $user_query->addExpression(14, 'rid');
+  $user_query->groupBy('u.uid');
+  $user_query->having("FIND_IN_SET('17', GROUP_CONCAT(ur.rid)) AND NOT FIND_IN_SET('14', GROUP_CONCAT(ur.rid))");
+
+  db_insert('users_roles')
+    ->from($user_query)
+    ->execute();
+
+  // Ensure all users with the Primary Contact role (rid  = 17) also have the
+  // Solutions Directory Editor role (rid = 20).
+  $user_query = db_select('users', 'u')
+    ->fields('u', array('uid'));
+  $user_query->join('users_roles', 'ur', 'u.uid = ur.uid');
+  $user_query->addExpression(20, 'rid');
+  $user_query->groupBy('u.uid');
+  $user_query->having("FIND_IN_SET('17', GROUP_CONCAT(ur.rid)) AND NOT FIND_IN_SET('20', GROUP_CONCAT(ur.rid))");
+
+  db_insert('users_roles')
+    ->from($user_query)
+    ->execute();
+
+  // Ensure all users with the Primary Contact role (rid  = 17) also have the
+  // Member Admin role (rid = 30).
+  $user_query = db_select('users', 'u')
+    ->fields('u', array('uid'));
+  $user_query->join('users_roles', 'ur', 'u.uid = ur.uid');
+  $user_query->addExpression(30, 'rid');
+  $user_query->groupBy('u.uid');
+  $user_query->having("FIND_IN_SET('17', GROUP_CONCAT(ur.rid)) AND NOT FIND_IN_SET('30', GROUP_CONCAT(ur.rid))");
+
+  db_insert('users_roles')
+    ->from($user_query)
+    ->execute();
+}

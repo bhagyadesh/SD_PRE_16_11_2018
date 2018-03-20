@@ -1,0 +1,412 @@
+<?php
+/*
+Implements hook_views_api().
+*/
+function joinpromoreport_views_api() {
+	return array(
+	'api' => '3',
+	'path' => drupal_get_path('module', 'joinpromoreport'). '/views',
+	);
+}
+
+/*
+Implements hook_menu().
+*/
+
+function joinpromoreport_menu() {
+  $items['promotioncount'] = array(
+    'title' => 'Promotion Count',
+    'page callback' => 'promotioncount',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+
+function promotioncount() {
+
+  $terms = (isset($_POST['param'])) ? $_POST['param'] : '13,null';
+  $terms = explode(",", $terms);
+  global $user;
+  $user_fields = user_load($user->uid);
+
+ $felds = array(
+    'userid' => $terms[0],
+	'username' => user_load($terms[0])->name,
+    'created' => time(),
+    'status' => 'Joined',
+	  );
+
+  
+if($terms[0] && $terms[1]) 
+{
+	
+$query=db_query("select count(*) from joinpromoreport where promotionid=:promotionid and buyercompid=:buyercompid and status=:status ",
+ array(':promotionid' => $terms[1],':buyercompid' =>user_load($terms[0])->field_company['und']['0']['target_id'] ,':status'=>'Joined'));
+$result=$query->fetchField();
+	
+	if($result == 1){
+		 $data = array('valid' => 3);
+		 
+	}
+	if($result == 0){
+			//$data = array('valid' => 1);
+  try {
+	  
+		   $return_value = db_update('joinpromoreport')
+        ->fields($felds)
+		->condition('promotionid',$terms[1],'=')
+		->condition('promotiontype','Join','=')
+		->condition('buyercompid',user_load($terms[0])->field_company['und']['0']['target_id'],'=')
+        ->execute();
+         if($return_value == 1){
+					$data = array('valid' => 4);
+		}
+		else
+			    $data = array('valid' => 2);
+	     }
+  catch (Exception $e) {
+    $data = array('valid' => 2);
+    drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+  }
+  //Join Notification to buyer
+  if ($user_fields->field_receive_members_email['und'][0]['value'] && $user_fields->status == 1 && privatemsg_is_disabled($user_fields) === false) {	 //logged in user
+  join_noti_to_buyer(node_load($terms[1]),3);
+  //msg notification to submitter
+  msgs_to_submitter_on_buyerjoin(node_load($terms[1]),3);
+  }
+	}
+  drupal_json_output($data);
+}
+}
+function promotionqnreport($nodeid,$uid) {
+   global $user;
+  $user_fields = user_load($user->uid);
+  $buyercomp = user_load($uid);
+  $buyercompid = $buyercomp->field_company['und']['0']['target_id'];
+$tag_id=3;
+ $felds = array(
+    'userid' => $uid,
+	'username' => user_load($uid)->name,
+    'promotionid' => $nodeid,
+	'promotionname' => node_load($nodeid)->title,
+    'created' => time(),
+    'status' => '3'? 'Asked question':'',
+	'subject' => (node_load($nodeid)->field_subject_english_['und']['0']['safe_value']) ? node_load($nodeid)->field_subject_english_['und']['0']['safe_value']:'',
+	'buyercompid' => $buyercompid,
+	'promotiontype' => 'Question',
+  );
+  
+  try {
+	  
+		   $return_value = db_insert('joinpromoreport')
+							->fields($felds)
+							->execute();
+        
+	     }
+  catch (Exception $e) {
+  
+    drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+  }
+ if ($user_fields->field_receive_members_email['und'][0]['value'] && $user_fields->status == 1 && privatemsg_is_disabled($user_fields) === false) {	 //logged in user
+  msgs_to_submitter_on_buyerqns(node_load($nodeid), $tag_id);  //notification to submitter on questions.
+ }
+}
+
+//Notification to buyer on joining
+function join_noti_to_buyer($node,$tag_id)
+{	
+	global $user;
+    $user_fields = user_load($user->uid);
+    $usercompid = $user_fields->field_company['und']['0']['target_id'];
+	$usercompname = node_load($usercompid)->title;
+	$name = ucfirst($user_fields->field_first_name['und'][0]['value']) . ' '. ucfirst($user_fields->field_last_name['und'][0]['value']);
+	
+   // $nodeauthor = ($node->uid);
+   // $authordet = user_load($nodeauthor);
+	//$authorcompanyid = $authordet->field_company['und']['0']['target_id'];
+	
+	$nodeauthor = $node->nid;
+	$nodedet = node_load($nodeauthor); //node loaded
+    $authordet = user_load($nodedet->uid);// user loaded
+	$authorcompanyid = $nodedet->field_company['und']['0']['target_id'];
+	
+	$authcompname = node_load($authorcompanyid)->title;
+	$promonodeurl = url(drupal_get_path_alias('node/' . $node->nid), array('absolute' => TRUE)); 
+	
+   	$b2bmsg_subject = 'You have joined '.$authcompname.'s online promotion via Intel Partner Product Catalog';
+	  
+	$b2bmsg_body = <<<EOF
+<p>Dear {$name} {$usercompname},</p>
+
+<p>Thank you for the interest in {$authcompname} 's {$node->title} . We have notified {$authcompname} of your response.</p> 
+
+<p>Please expect {$authcompname} to contact you in the next few days to follow up.</p>
+
+<p>If you have any questions, please contact us via IntelConnectSupport@intel.com</p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team
+
+
+EOF;
+$recipient = user_load($user->uid);
+	if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {	  
+	 $thread = privatemsg_new_thread(array($recipient), $b2bmsg_subject, $b2bmsg_body, $options = array());
+     $thread_id = $thread['message']->thread_id;		 
+		     db_merge('pm_tags_index')
+          ->key(array(
+            'tag_id' => $tag_id,
+            'uid' => $recipient->uid,
+            'thread_id' => $thread_id,
+          ))
+          ->execute();
+		  
+	 $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $user_fields->mail,
+          'pm_email_sender' => $user_fields->mail,
+          'pm_email_subject' => $b2bmsg_subject,
+          'pm_email_message' => $b2bmsg_body,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }	
+
+		}	
+if(!empty($recipient->field_company)){
+			insert_user_company($thread_id, $recipient->field_company['und'][0]['target_id']);
+        }			
+    }	   
+	
+		
+}
+
+
+// Notifications to Submitter on joining
+
+function msgs_to_submitter_on_buyerjoin($node, $tag_id)
+                {
+                global $user;
+                $user_fields = user_load($user->uid);
+                $usercompid = $user_fields->field_company['und']['0']['target_id'];
+	            $usercompname = node_load($usercompid)->title;
+   $recipients = array();
+               // $nodeauthor = ($node->uid);
+               // $authordet = user_load($nodeauthor);
+               // $authorcompanyid = $authordet->field_company['und']['0']['target_id'];
+				
+				$nodeauthor = $node->nid;
+	$nodedet = node_load($nodeauthor); //node loaded
+    $authordet = user_load($nodedet->uid);// user loaded
+	$authorcompanyid = $nodedet->field_company['und']['0']['target_id'];
+				
+				
+				$authorcompname = node_load($authorcompanyid)->title;
+				
+				//$query = db_query("select mid from report_message where author=:author and nid=:nid order by mid desc limit 1 ", array(':author' =>$user->uid ,':nid'=>$node->nid));
+              // $mid=$query->fetchField(); 
+              // $promonodeurl = url(drupal_get_path_alias('messages/view/' . $mid) , array(
+              //                 'absolute' => TRUE
+              // ));
+			//$promonodeurl ='promotion';
+                $buyermsg_subject = $usercompname.' is interested to learn more about your promotion '.$node->title;
+
+              //  foreach($authordet->field_company['und']['0']['target_id'] as $key => $value)
+                              //  {
+									//print_r($value);exit;
+                                $user_mails = views_embed_view('promotionsubmittercompanyuser', 'default', $authorcompanyid); // listing mails
+                                $user_mails_data = json_decode(strip_tags($user_mails));
+                //print_r($user_mails_data);exit;
+                                foreach($user_mails_data as $key => $value)
+                                                {
+                                                $recipient = user_load_by_mail($value->mail);
+                                                if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false)
+                                                                {
+                                                                $recipients[] = $recipient;
+                                                                }
+                                                }
+                               // }
+
+                foreach($recipients as $key => $value)
+                                {
+
+                                $sendername = ucfirst($value->field_first_name['und'][0]['value']) . ' '. ucfirst($value->field_last_name['und'][0]['value']);          
+                $buyermsg_body = <<<EOF
+Dear {$authorcompname},
+
+<p>From: {$usercompname} </p>
+
+<p>Subject: I want to join for {$node->title}.</p> 
+
+<p>Content:</p>
+
+<p>I want to join for {$node->title}.</p> 
+
+<p>Please follow up with the buyer by replying this message.</p>
+
+<p>If you have any questions, please contact us via IntelConnectSupport@intel.com</p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team
+
+EOF;
+                                $thread = privatemsg_new_thread(array(
+                                                user_load_by_mail($value->mail)
+                                ) , $buyermsg_subject, $buyermsg_body, $options = array());
+                                
+                                $thread_id = $thread['message']->thread_id;
+                                db_merge('pm_tags_index')->key(array(
+                                                'tag_id' => $tag_id,
+                                                'uid' => $value->uid,
+                                                'thread_id' => $thread_id,
+                                ))->execute();
+                                $felds = array(
+                                                'pm_email_mid' => $thread_id,
+                                                'pm_email_to' => $value->mail,
+                                                'pm_email_sender' => $user_fields->mail,
+                                                'pm_email_subject' => $buyermsg_subject,
+                                                'pm_email_message' => $buyermsg_body,
+                                                'pm_email_flag' => 'unsent',
+                                );
+                                $return_value = NULL;
+                                if (db_table_exists('pm_email_custom'))
+                                                {
+                                                try
+                                                                {
+                                                                $return_value = db_insert('pm_email_custom')->fields($felds)->execute();
+                                                                }
+
+                                                catch(Exception $e)
+                                                                {
+                                                                drupal_set_message(t('db_insert failed. Message = %message, query= %query', array(
+                                                                                '%message' => $e->getMessage() ,
+                                                                                '%query' => $e->query_string
+                                                                )) , 'error');
+                                                                }
+                                                }
+												
+												if(!empty($value->field_company)){
+                                                       insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+                                                           }
+                                }
+                }
+// Notifications to Submitter on questions
+
+function msgs_to_submitter_on_buyerqns($node, $tag_id)
+                {
+                global $user;
+                $user_fields = user_load($user->uid);
+                $usercompid = $user_fields->field_company['und']['0']['target_id'];
+	            $usercompname = node_load($usercompid)->title;
+   $recipients = array();
+               // $nodeauthor = ($node->uid);
+               // $authordet = user_load($nodeauthor);
+               // $authorcompanyid = $authordet->field_company['und']['0']['target_id'];
+				
+				$nodeauthor = $node->nid;
+	$nodedet = node_load($nodeauthor); //node loaded
+    $authordet = user_load($nodedet->uid);// user loaded
+	$authorcompanyid = $nodedet->field_company['und']['0']['target_id'];
+				
+				$authorcompname = node_load($authorcompanyid)->title;
+				
+				$query = db_query("select mid from report_message where author=:author and nid=:nid order by mid desc limit 1", array(':author' =>$user->uid ,':nid'=>$node->nid));
+                $mid=$query->fetchField(); 
+                $promonodeurl = url(drupal_get_path_alias('messages/view/' . $mid) , array(
+                                'absolute' => TRUE
+                ));
+                $buyermsg_subject = $usercompname.' is interested to learn more about your promotion '.$node->title;
+
+              //  foreach($authordet->field_company['und']['0']['target_id'] as $key => $value)
+                              //  {
+									//print_r($value);exit;
+                                $user_mails = views_embed_view('promotionsubmittercompanyuser', 'default', $authorcompanyid); // listing mails
+                                $user_mails_data = json_decode(strip_tags($user_mails));
+                //print_r($user_mails_data);exit;
+                                foreach($user_mails_data as $key => $value)
+                                                {
+                                                $recipient = user_load_by_mail($value->mail);
+                                                if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false)
+                                                                {
+                                                                $recipients[] = $recipient;
+                                                                }
+                                                }
+                               // }
+
+                foreach($recipients as $key => $value)
+                                {
+
+                                $sendername = ucfirst($value->field_first_name['und'][0]['value']) . ' '. ucfirst($value->field_last_name['und'][0]['value']);          
+                $buyermsg_body = <<<EOF
+<p>Dear {$authorcompname},</p>
+
+<p>From: {$usercompname}<p> 
+
+<p>Subject: I Have question for {$node->title}.</p> 
+
+<p>Content:</p>
+
+<p>I Have question for {$node->title}.</p> 
+
+<p>Please click <a href= {$promonodeurl} > "Here" </a> to reply.</p>
+
+<p>If you have any questions, please contact us via IntelConnectSupport@intel.com</p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team
+
+EOF;
+                                $thread = privatemsg_new_thread(array(
+                                                user_load_by_mail($value->mail)
+                                ) , $buyermsg_subject, $buyermsg_body, $options = array());
+                                
+                                $thread_id = $thread['message']->thread_id;
+                                db_merge('pm_tags_index')->key(array(
+                                                'tag_id' => $tag_id,
+                                                'uid' => $value->uid,
+                                                'thread_id' => $thread_id,
+                                ))->execute();
+                                $felds = array(
+                                                'pm_email_mid' => $thread_id,
+                                                'pm_email_to' => $value->mail,
+                                                'pm_email_sender' => $user_fields->mail,
+                                                'pm_email_subject' => $buyermsg_subject,
+                                                'pm_email_message' => $buyermsg_body,
+                                                'pm_email_flag' => 'unsent',
+                                );
+                                $return_value = NULL;
+                                if (db_table_exists('pm_email_custom'))
+                                                {
+                                                try
+                                                                {
+                                                                $return_value = db_insert('pm_email_custom')->fields($felds)->execute();
+                                                                }
+
+                                                catch(Exception $e)
+                                                                {
+                                                                drupal_set_message(t('db_insert failed. Message = %message, query= %query', array(
+                                                                                '%message' => $e->getMessage() ,
+                                                                                '%query' => $e->query_string
+                                                                )) , 'error');
+                                                                }
+                                                }
+												if(!empty($value->field_company)){
+                                                      insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+                                              }
+												
+                                }
+                }

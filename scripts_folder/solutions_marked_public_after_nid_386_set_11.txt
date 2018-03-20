@@ -1,0 +1,2000 @@
+TPC-1571H ---------- 14747 -------- Saved 
+TPC-1571H ---------- 14748 -------- Saved 
+FWA-6500 Intel® Xeon® Processor 5500/5600 系列 2U 10 GbE 網路伺服器 ---------- 14749 -------- Saved 
+Servidor de rede FWA-6500 Intel® Xeon® Processador 5500/5600 Series 2U 10 GbE ---------- 14750 -------- Saved 
+RTC-1000i（加固式平板電腦） ---------- 14751 -------- Saved 
+RTC-1000i (Computador Tablet Robusto) ---------- 14752 -------- Saved 
+ISIS ICE： Intel® Atom™ processor 工業緊湊型外殼 ---------- 14753 -------- Saved 
+ISIS ICE: Processador Intel® Atom™ com gabinete compacto industrial ---------- 14754 -------- Saved 
+ARK-3403 ---------- 14755 -------- Saved 
+ARK-3403 ---------- 14756 -------- Saved 
+x86 Real-Time Hypervisor ---------- 14757 -------- Saved 
+Hypervisor x86 em tempo real ---------- 14758 -------- Saved 
+D3071-S 工業系列 μATX 主機板 ---------- 14759 -------- Saved 
+Placa principal D3071-S Industrial Series μATX ---------- 14760 -------- Saved 
+CR 101-D Mini-ITX 採用第 3/2 代 Intel® Core™ Processors 和 Intel® HM76 chipset ---------- 14761 -------- Saved 
+CR 101-D Mini-ITX com processadores de 3ª/2ª geração Intel® Core™ e chipset Intel® HM76 ---------- 14762 -------- Saved 
+Peartree2 Intel® Atom® Z6xx 系列行動式開發平台 ---------- 14763 -------- Saved 
+Plataforma de desenvolvimento móvel Peartree2 Intel® Atom® Z6xx series ---------- 14764 -------- Saved 
+TRC4011 |4U 機架安裝電腦 | 符合 CE 標準 | 20 英吋深度 (TRC4011) ---------- 14765 -------- Saved 
+TRC4011 | computador montado em rack 4U | compatível com CE | Profundidade de 20 polegadas (TRC4011) ---------- 14766 -------- Saved 
+Cool XpressRunner-GS45 ---------- 14767 -------- Saved 
+Cool XpressRunner-GS45 ---------- 14768 -------- Saved 
+CT950-B Intel&reg; 945GME/ICH7M 3.5" 主機板 ---------- 14769 -------- Saved 
+placa-mãe 3.5" CT950-B Intel&reg; 945GME/ICH7M ---------- 14770 -------- Saved 
+X7DBE 擴充型 ATX ---------- 14771 -------- Saved 
+X7DBE Extended ATX ---------- 14772 -------- Saved 
+ARK-3202 ---------- 14773 -------- Saved 
+ARK-3202 ---------- 14774 -------- Saved 
+AIMB-273 ---------- 14775 -------- Saved 
+AIMB-273 ---------- 14776 -------- Saved 
+MI-890 ---------- 14777 -------- Saved 
+MI-890 ---------- 14778 -------- Saved 
+ARK-DS303 ---------- 14779 -------- Saved 
+ARK-DS303 ---------- 14780 -------- Saved 
+RTC-700T（耐用型平板） ---------- 14781 -------- Saved 
+RTC-700T (Tablet resistente) ---------- 14782 -------- Saved 
+ARK-3420 ---------- 14783 -------- Saved 
+ARK-3420 ---------- 14784 -------- Saved 
+COM Express® 基本 COMe-bIP# 電腦模組 ---------- 14785 -------- Saved 
+COM Express® basic COMe-bIP# Computer-on-Modules ---------- 14786 -------- Saved 
+Catalyst TC： Intel® Atom™ 低功耗，小外形尺寸 ---------- 14787 -------- Saved 
+Catalyst TC: Intel® Atom™ de baixo consumo de energia, pequeno fator de forma ---------- 14788 -------- Saved 
+採用第 3 代 Intel® Core™ i7 Processor（行動四核心）的 BIS-6922 無風扇雙 NIC 系統 ---------- 14789 -------- Saved 
+Sistema BIS-6922 Fanlesss Dual NIC com processador de 3ª geração Intel® Core™ i7 (Mobile quad-core) ---------- 14790 -------- Saved 
+XVAULT XNVR300 4U 24 托加機架安裝 ---------- 14791 -------- Saved 
+XVAULT XNVR300 4U RACKMOUNT BAÍA 24 ---------- 14792 -------- Saved 
+D3076-S 工業系列 ATX 主機板 ---------- 14793 -------- Saved 
+Placa principal D3076-S Série Industrial ATX ---------- 14794 -------- Saved 
+Phoenix BIOS 開發和授權 ---------- 14795 -------- Saved 
+Licença e desenvolvimento Phoenix BIOS ---------- 14796 -------- Saved 
+EN50155 認證平板 (HMITR) ---------- 14797 -------- Saved 
+Painel certificado EN50155 (HMITR) ---------- 14798 -------- Saved 
+Ocelot (VL-EPMs-21) SUMIT-104 單板電腦 ---------- 14799 -------- Saved 
+Computador de placa única Ocelot (VL-EPMs-21) SUMIT-104 ---------- 14800 -------- Saved 
+ SV4-Q67A6  ---------- 14801 -------- Saved 
+ SV4-Q67A6  ---------- 14802 -------- Saved 
+Toucan ---------- 14803 -------- Saved 
+Toucan ---------- 14804 -------- Saved 
+ARK-DS520 ---------- 14805 -------- Saved 
+ARK-DS520 ---------- 14806 -------- Saved 
+VT-M2M-TC ---------- 14807 -------- Saved 
+VT-M2M-TC ---------- 14808 -------- Saved 
+ATCA-XE100 ---------- 14809 -------- Saved 
+ATCA-XE100 ---------- 14810 -------- Saved 
+POS-P100 ---------- 14815 -------- Saved 
+POS-P100 ---------- 14816 -------- Saved 
+PROFIVE® P12 COM Express® Module ---------- 14817 -------- Saved 
+PROFIVE® P12 COM Express® Module ---------- 14818 -------- Saved 
+MANO831 -- Intel® Atom® D2550 Mini ITX 主機板 ---------- 14819 -------- Saved 
+MANO831 -- placa-mãe Intel® Atom® D2550 Mini ITX ---------- 14820 -------- Saved 
+PICO831 -- Pico ITX SBC，採用 Intel® Atom® N2600/2800  ---------- 14821 -------- Saved 
+PICO831 - Pico ITX SBC com Intel® Atom® N2600/2800  ---------- 14822 -------- Saved 
+PICO822 -- Intel Atom™ E6xx Series Pico-ITX SBC，配備 LVDS、SATA、LAN 和 SSD ---------- 14823 -------- Saved 
+PICO822 - Intel Atom™ E6xx Series Pico-ITX SBC com LVDS, SATA, LAN e SSD ---------- 14824 -------- Saved 
+解決方案系列 M2M 應用平台 ---------- 14825 -------- Saved 
+Plataforma Solution Family M2M Application ---------- 14826 -------- Saved 
+PROFIVE® F75 - 單板電腦 ---------- 14827 -------- Saved 
+PROFIVE® F75 - computador de placa única ---------- 14828 -------- Saved 
+D3162-B µATX 主機板 ---------- 14829 -------- Saved 
+Placa principal D3162-B µATX ---------- 14830 -------- Saved 
+X9SBAA-F 超微嵌入式主機板 ---------- 14831 -------- Saved 
+Placa-mãe embarcada X9SBAA-F Supermicro ---------- 14832 -------- Saved 
+藍牙接距離安全 ---------- 14833 -------- Saved 
+Segurança baseada em proximidade de Bluetooth ---------- 14834 -------- Saved 
+BCM BI255-67QMD - 基於 Intel® QM67 chipset 的小型準系統 ---------- 14835 -------- Saved 
+BCM BI255-67QMD - Pequeno sistema Barebone baseado no chipset Intel® QM67 ---------- 14836 -------- Saved 
+Quantum Channel Designer - QCD ---------- 14837 -------- Saved 
+Quantum Channel Designer - QCD ---------- 14838 -------- Saved 
+Dell PowerEdge R420 ---------- 14839 -------- Saved 
+Dell PowerEdge R420 ---------- 14840 -------- Saved 
+QuadMo747-EXTREME ---------- 14841 -------- Saved 
+QuadMo747-EXTREME ---------- 14842 -------- Saved 
+FW-8893 ---------- 14843 -------- Saved 
+FW-8893 ---------- 14844 -------- Saved 
+EM Box ICP-BoxPC-85 ---------- 14845 -------- Saved 
+ICP-BoxPC-85 EM Box ---------- 14846 -------- Saved 
+ELIT-1650 數位電子看板  ---------- 14847 -------- Saved 
+Sinalização digital ELIT-1650  ---------- 14848 -------- Saved 
+OPS860 -- 採用 Intel® QM67 的 OPS 標準電子看板播放機模組 ---------- 14849 -------- Saved 
+OPS860 - Módulo de leitor de sinalização compatível com OPS com Intel® QM67 ---------- 14850 -------- Saved 
+BCM BC87Q – 桌上型 ATX 主機板，採用第 4 代 Intel® Core™ 平台和 Intel Q87 chipset ---------- 14851 -------- Saved 
+BCM BC87Q — placa-mãe desktop ATX com a 4ª geração da plataforma Intel® Core™ e Chipset Intel Q87 ---------- 14852 -------- Saved 
+IPN251 ---------- 14853 -------- Saved 
+IPN251 ---------- 14854 -------- Saved 
+PROFIVE® P14 COM Express® Module ---------- 14855 -------- Saved 
+Módulo PROFIVE® P14 COM Express® ---------- 14856 -------- Saved 
+FW-7575 ---------- 14857 -------- Saved 
+FW-7575 ---------- 14858 -------- Saved 
+PICO821 -- Pico ITX SBC，採用 Intel® Atom™ Processor Z510/Z530 系列  ---------- 14859 -------- Saved 
+PICO821 -- Pico ITX SBC com processador Intel® Atom™ Z510/Z530 Series  ---------- 14860 -------- Saved 
+MANO872 -- LGA1155 Intel® Core™ Mini ITX 主機板，採用 Intel® Q77 ---------- 14863 -------- Saved 
+MANO872 -- placa-mãe LGA1155 Intel® Core™ Mini ITX com Intel® Q77 ---------- 14864 -------- Saved 
+Linux 和 Android 服務 ---------- 14865 -------- Saved 
+Serviços Linux e Android ---------- 14866 -------- Saved 
+PROFIVE® P15 COM Express® Module ---------- 14867 -------- Saved 
+Módulo PROFIVE® P15 COM Express® ---------- 14868 -------- Saved 
+CAPA831 - Intel® Atom® D2550/N2600/N2800 3.5 英吋嵌入式 SBC，配備 LVDS/DP/VGA、雙 LAN ---------- 14871 -------- Saved 
+CAPA831 - SBC embarcada 3,5 polegadas Intel® Atom® D2550/N2600/N2800 com LVDS/DP/VGA, Dual LAN ---------- 14872 -------- Saved 
+PrAMC 7311 進階夾層卡 ---------- 14873 -------- Saved 
+PrAMC 7311 Advanced Mezzanine Card ---------- 14874 -------- Saved 
+EM Compact ICP-CP14 ---------- 14875 -------- Saved 
+EM Compact ICP-CP14 ---------- 14876 -------- Saved 
+6WINDGate 軟體 ---------- 14877 -------- Saved 
+Software 6WINDGate ---------- 14878 -------- Saved 
+BCM RX77Q uATX 主機板 ---------- 14879 -------- Saved 
+Placa-mãe BCM RX77Q uATX ---------- 14880 -------- Saved 
+OPS870-HM - (OPS) 電子看板播放機，採用第 3 代 Intel® Core™ ---------- 14881 -------- Saved 
+OPS870-HM - leitor de sinalização (OPS) com 3ª geração Intel® Core™ ---------- 14882 -------- Saved 
+ NEX 609 工業級主機板 ---------- 14885 -------- Saved 
+ placa-mãe industrial NEX 609 ---------- 14886 -------- Saved 
+QuadMo747-Z5xx ---------- 14887 -------- Saved 
+QuadMo747-Z5xx ---------- 14888 -------- Saved 
+PROFIVE® F12 - 單板電腦 ---------- 14889 -------- Saved 
+PROFIVE ® F12 - computador de placa única ---------- 14890 -------- Saved 
+EM Vision ---------- 14891 -------- Saved 
+EM Vision ---------- 14892 -------- Saved 
+ATCA-7370 AdvancedTCA Processor 刀片 ---------- 14893 -------- Saved 
+ATCA-7370 AdvancedTCA Processor Blade ---------- 14894 -------- Saved 
+NCS-IGM427 ---------- 14895 -------- Saved 
+NCS-IGM427 ---------- 14896 -------- Saved 
+5017A-EP 超微伺服器 ---------- 14897 -------- Saved 
+Servidor Supermicro 5017A-EP ---------- 14898 -------- Saved 
+MANO861 -- LGA1155 Intel® Core™ Mini ITX 主機板，採用 Intel® H61 ---------- 14899 -------- Saved 
+MANO861 -- placa-mãe LGA1155 Intel® Core™ Mini ITX com Intel® H61 ---------- 14900 -------- Saved 
+汽車技術平台 (ATP)  ---------- 14901 -------- Saved 
+Automotive Technology Platform (Plataforma de tecnologia automotiva) (ATP)  ---------- 14902 -------- Saved 
+PROFIVE® P45 COM Express® Module ---------- 14903 -------- Saved 
+Módulo PROFIVE® P45 COM Express® ---------- 14904 -------- Saved 
+SuperServer 1017A-MP - 嵌入式箱型電腦 ---------- 14905 -------- Saved 
+SuperServer 1017A-MP - PC Box embarcado ---------- 14906 -------- Saved 
+DSB-500-860 - 高效能 Intel® Core™ 數位電子看板播放機 ---------- 14907 -------- Saved 
+DSB-500-860 - Leitor de sinalização digital de alto desempenho Intel® Core™ ---------- 14908 -------- Saved 
+ARK-DS762 ---------- 14909 -------- Saved 
+ARK-DS762 ---------- 14910 -------- Saved 
+Dell PowerEdge R720t 伺服器 ---------- 14911 -------- Saved 
+Servidor Dell PowerEdge R720t ---------- 14912 -------- Saved 
+EM Compact ICP-CP75 ---------- 14913 -------- Saved 
+EM Compact ICP-CP75 ---------- 14914 -------- Saved 
+BCM MX81H – Mini ITX 主機板支援第 4 代 Intel® Core™ i7/i5/i3 Processor ---------- 14915 -------- Saved 
+BCM MX81H - Placa-mãe Mini-ITX com suporte para a 4ª geração dos processadores Intel® Core™ i7/i5/i3 ---------- 14916 -------- Saved 
+G22 - 3U CompactPCI® Serial Intel® Core™ i7 CPU Board ---------- 14917 -------- Saved 
+G22 - Placa de CPU 3U CompactPCI ® série Intel ® Core ™ i7 ---------- 14918 -------- Saved 
+ PROFIVE® F85 - 單板電腦 ---------- 14919 -------- Saved 
+ PROFIVE® F85 - computador de placa única ---------- 14920 -------- Saved 
+EM Box ICP-BoxPC-12 ---------- 14921 -------- Saved 
+EM Box ICP-BoxPC-12 ---------- 14922 -------- Saved 
+M 1920 專家醫務站  ---------- 14923 -------- Saved 
+Estação médica especialista M 1920  ---------- 14924 -------- Saved 
+PROFIVE® G95： 在單箱式 PC 中實現顯示和網路切換  ---------- 14927 -------- Saved 
+PROFIVE ® G95: Switch de monitor e de rede em uma única caixa de PC  ---------- 14928 -------- Saved 
+IPC914-213-FL -- 採用適用於 Intel® Core™ i7/ i5/ i3 Processor 的通訊端 G2 的 4 插槽無風扇系統 ---------- 14929 -------- Saved 
+IPC914-213-FL - sistema sem ventoinha de 4 slots com processador para Soquete G2 Intel ® Core ™ i7 / i5 / i3 ---------- 14930 -------- Saved 
+IMB204 -- 配備 Intel® B75 PCH 的 LGA1155 Intel® Core™ ATX Motherboard ---------- 14931 -------- Saved 
+Placa Mãe IMB204 - LGA1155 Intel ® Core ™ ATX com Intel ® B75 PCH ---------- 14932 -------- Saved 
+解決方案產生器 ---------- 14933 -------- Saved 
+Construtor de solução ---------- 14934 -------- Saved 
+PROFIVE® F15 - 單板電腦 ---------- 14935 -------- Saved 
+PROFIVE ® F15 - computador de placa única ---------- 14936 -------- Saved 
+EM Compact ICP-CP85 ---------- 14937 -------- Saved 
+ICP-CP85 EM Compact ---------- 14938 -------- Saved 
+X9SCAA 超微嵌入式主機板 ---------- 14939 -------- Saved 
+Placa-mãe embarcada com Supermicro X9SCAA ---------- 14940 -------- Saved 
+eBOX530-830-FL -- 無風扇嵌入式箱型電腦，採用 Intel® Atom® N2600 ---------- 14941 -------- Saved 
+eBOX530-830-FL - caixa de computador sem ventoinha embarcada com Intel ® Atom®N2600 ---------- 14942 -------- Saved 
+ARK-DS262 ---------- 14943 -------- Saved 
+ARK-DS262 ---------- 14944 -------- Saved 
+GOT5120T-832 -- 12.1" XGA/SVGA TFT 無風扇觸控式面板電腦，採用 Intel® Atom™ Processor N2600 ---------- 14945 -------- Saved 
+GOT5120T-832 - Computador com painel de toque sem ventoinha de 12,1" SVGA/XGA TFT com processador Intel ® Atom ™ N2600 ---------- 14946 -------- Saved 
+GENE-TC05 (ESB 3.5") ---------- 14947 -------- Saved 
+GENE-TC05 (ESB 3.5 ") ---------- 14948 -------- Saved 
+BCM BI255-255D - 小型無風扇准系統，採用了雙核 Intel® Atom®  ---------- 14949 -------- Saved 
+BCM BI255 - 255D - pequeno sistema de Barebone sem ventoinha, com  Intel ® Atom® dual core  ---------- 14950 -------- Saved 
+基於第 4 代的 conga-TC87 COM Express Compact Type 6 模組 Intel® Core™ ULT processor ---------- 14951 -------- Saved 
+conga-TC87 - Módulo COM Express Compact tipo 6 baseado na 4ª geração dos processadores Intel® Core™ ULT ---------- 14952 -------- Saved 
+QuadMo747-E6xx  ---------- 14953 -------- Saved 
+QuadMo747-E6xx  ---------- 14954 -------- Saved 
+PROFIVE® P11 - 超小型 COM Express 模組 ---------- 14955 -------- Saved 
+PROFIVE ® P11 - módulo COM Express ultrapequeno ---------- 14956 -------- Saved 
+EM Box ICP-BoxPC-75 ---------- 14957 -------- Saved 
+EM Box ICP-BoxPC-75 ---------- 14958 -------- Saved 
+ARES-6663 能源控制器 ---------- 14959 -------- Saved 
+Controlador de energia ARES-6663 ---------- 14960 -------- Saved 
+Xitrix 55-inch Windows 8 一體化觸控式 PC  ---------- 14961 -------- Saved 
+PC Windows 8  all-in-one Xitrix de 55 polegadas de toque  ---------- 14962 -------- Saved 
+UNO-4671A ---------- 14963 -------- Saved 
+UNO-4671A ---------- 14964 -------- Saved 
+M&A Companion Touch8 ---------- 14969 -------- Saved 
+M&A Companion Touch8 ---------- 14970 -------- Saved 
+M&A PC CANS， IP 遠端桌面 ---------- 14971 -------- Saved 
+M&A PC CANS, área de trabalho remota por IP ---------- 14972 -------- Saved 
+Genius Station，互動式的教學平台 ---------- 14973 -------- Saved 
+Genius Station, uma plataforma interativa e instrucional ---------- 14974 -------- Saved 
+裝置測試自動化框架 (DTAF) ---------- 14975 -------- Saved 
+Framework de automação de teste de dispositivo (DTAF) ---------- 14976 -------- Saved 
+ARGOS IPv6 移植 ---------- 14977 -------- Saved 
+Portas ARGOS IPv6 ---------- 14978 -------- Saved 
+AGORA - 服務交付平台 ---------- 14979 -------- Saved 
+AGORA - plataforma de distribuição de serviço ---------- 14980 -------- Saved 
+AEGIS 家庭自動化 ---------- 14981 -------- Saved 
+Automação Residencial  AEGIS ---------- 14982 -------- Saved 
+嵌入式軟體和系統開發 ---------- 14983 -------- Saved 
+Desenvolvimento de sistemas e software embarcado ---------- 14984 -------- Saved 
+硬體產品工程 ---------- 14985 -------- Saved 
+Engenharia de produto de hardware ---------- 14986 -------- Saved 
+UNO-4673A ---------- 14987 -------- Saved 
+UNO-4673A ---------- 14988 -------- Saved 
+UNO-4683 ---------- 14989 -------- Saved 
+UNO-4683 ---------- 14990 -------- Saved 
+UNO-4672 ---------- 14991 -------- Saved 
+UNO-4672 ---------- 14992 -------- Saved 
+Wind River Hypervisor ---------- 14993 -------- Saved 
+Wind River Hypervisor ---------- 14994 -------- Saved 
+SECOMExp-iCORE ---------- 14999 -------- Saved 
+SECOMExp-iCORE ---------- 15000 -------- Saved 
+SECOMExp-x2000  ---------- 15001 -------- Saved 
+SECOMExp-x 2000  ---------- 15002 -------- Saved 
+SECOnITX-ION ---------- 15003 -------- Saved 
+SECOnITX-ION ---------- 15004 -------- Saved 
+SECOpITX-x2000 ---------- 15005 -------- Saved 
+SECOpITX-x 2000 ---------- 15006 -------- Saved 
+1717663 小體積 Mini-ITX 系統，搭載 Intel® Core™i7 ---------- 15009 -------- Saved 
+Sistema Mini-ITX 1717663 de perfil baixo com Intel® Core™ i7 ---------- 15010 -------- Saved 
+EMB-LN8T（嵌入式主機板） ---------- 15011 -------- Saved 
+EMB-LN8T (Placa-mãe embarcada) ---------- 15012 -------- Saved 
+SBC84832 - Intel® Atom™ 3.5" 嵌入式 SBC ---------- 15013 -------- Saved 
+SBC84832 - SBC embarcado no Intel ® Atom ™ 3.5 " ---------- 15014 -------- Saved 
+BCM NX260N Intel® Atom™ N2600 1.66 GHz dual-core Nano ITX Motherboard ---------- 15015 -------- Saved 
+Placa-mãe BCM NX260N Intel ® Atom ™ N2600 1.66 GHz dual-core Nano ITX ---------- 15016 -------- Saved 
+EC300-CR6880 - 無風扇嵌入式系統，使用第 3 代 Intel® Core™ Processor ---------- 15017 -------- Saved 
+EC300-CR6880 - Sistema sem ventoinha embarcado com 3ª geração do processador Intel ® Core ™ ---------- 15018 -------- Saved 
+eBOX510-820-FL - 無風扇嵌入式系統，採用 Intel® Atom™ Processor ---------- 15019 -------- Saved 
+eBOX510-820-FL - Sistema embarcado sem ventoinha com processador Intel ® Atom ™ ---------- 15020 -------- Saved 
+IMBA-Q770 ---------- 15021 -------- Saved 
+IMBA-Q770 ---------- 15022 -------- Saved 
+MB331-CRM - microATX 嵌入式主機板，使用第 3 代 Intel® Core™ Processor ---------- 15023 -------- Saved 
+MB331-CRM - placa embarcada microATX com a 3ª geração dos processadores Intel® Core™ ---------- 15024 -------- Saved 
+VT-HMI-6151 ---------- 15025 -------- Saved 
+VT-HMI-6151 ---------- 15026 -------- Saved 
+NANO-CV-D25501 ---------- 15027 -------- Saved 
+NANO-CV-D25501 ---------- 15028 -------- Saved 
+KINO-CV-D25501 ---------- 15029 -------- Saved 
+KINO-CV-D25501 ---------- 15030 -------- Saved 
+NANO-QM770 ---------- 15031 -------- Saved 
+NANO-QM770 ---------- 15032 -------- Saved 
+IMB-C2160 ---------- 15033 -------- Saved 
+IMB-C2160 ---------- 15034 -------- Saved 
+NANO-CV-N26001 ---------- 15035 -------- Saved 
+NANO-CV-N26001 ---------- 15036 -------- Saved 
+EPI-QM77 - EPIC 模組，配備 Intel® QM77 Chipset ---------- 15037 -------- Saved 
+EPI-QM77 - módulo EPIC com o Chipset Intel ® QM77 ---------- 15038 -------- Saved 
+ETX-945GSE（計算機模組，ETX） ---------- 15039 -------- Saved 
+ETX-945GSE (computador no módulo, ETX) ---------- 15040 -------- Saved 
+EPIC-9457（EPIC 主機板） ---------- 15041 -------- Saved 
+ÉPICO-9457 (placa EPIC) ---------- 15042 -------- Saved 
+OPS830 - 採用 Intel® Atom® D2550 的 OPS 電子看板播放機 ---------- 15043 -------- Saved 
+OPS830 - leitor de sinalização OPS com Intel ® Atom® D2550 ---------- 15044 -------- Saved 
+GENE-9455（3.5" 超緊湊型單板電腦） ---------- 15045 -------- Saved 
+GENE-9455 (placa do subcompacto de 3.5 ") ---------- 15046 -------- Saved 
+ITX-M4S2GAP-2 ---------- 15047 -------- Saved 
+ITX-M4S2GAP-2 ---------- 15048 -------- Saved 
+POS-6510-MIT，互動式資訊站 ---------- 15049 -------- Saved 
+Quiosque interativo, POS-6510-MIT ---------- 15050 -------- Saved 
+IOPS-Q67（符合 Intel® OPS 的數位電子看板可插入模組 PC 支援 Intel® Core™ i5/i3/Celeron®） ---------- 15051 -------- Saved 
+IOPS-Q67 (Suporte ao Intel ® OPS compatível com módulo PC de sinalização digital conectável com processador Intel ® Core ™ i5/i3/Celeron ®) ---------- 15052 -------- Saved 
+ITX-M25D62B ---------- 15053 -------- Saved 
+ITX-M25D62B ---------- 15054 -------- Saved 
+X9SAE-V 超微 ATX 主機板 ---------- 15055 -------- Saved 
+Placa-mãe X9SAE-V Supermicro ATX ---------- 15056 -------- Saved 
+PEAK 886VL2 - PICMG 1.3 全尺寸單板電腦 ---------- 15057 -------- Saved 
+PEAK 886VL2 - computador de placa única em tamanho PICMG 1.3 ---------- 15058 -------- Saved 
+NA-360 - 1U 機架安裝式網路裝置，基於 Intel® Communications Chipset 89xx Series ---------- 15059 -------- Saved 
+NA-360 - dispositivo de rede montável em rack 1U baseado no chipset Intel® Communications série 89xx ---------- 15060 -------- Saved 
+ITX-M41X41E ---------- 15061 -------- Saved 
+ITX-M41X41E ---------- 15062 -------- Saved 
+Portwell PCOM-B219 ---------- 15063 -------- Saved 
+Portwell PCOM-B219 ---------- 15064 -------- Saved 
+ITX-M52X42A ---------- 15065 -------- Saved 
+ITX-M52X42A ---------- 15066 -------- Saved 
+HS-N0801A ---------- 15067 -------- Saved 
+HS-N0801A ---------- 15068 -------- Saved 
+ITX-M42X61E ---------- 15069 -------- Saved 
+ITX-M42X61E ---------- 15070 -------- Saved 
+PL-80430 ---------- 15071 -------- Saved 
+PL-80430 ---------- 15072 -------- Saved 
+X9DRD-7LN4F - 雙處理器超微主機板 ---------- 15073 -------- Saved 
+X9DRD-7LN4F - Placa-Mãe Supermicro de Processador Dual ---------- 15074 -------- Saved 
+COM-TC（COM Express CPU 模組） ---------- 15075 -------- Saved 
+COM-TC (módulo de CPU COM Express) ---------- 15076 -------- Saved 
+高效能 NI 智慧照相機 ---------- 15077 -------- Saved 
+Câmeras de alto desempenho NI Smart ---------- 15078 -------- Saved 
+MB630-CRM - Intel® Q77 ATX motherboard ---------- 15079 -------- Saved 
+Placa-mãe ATX MB630-CRM - Intel® Q77 ---------- 15080 -------- Saved 
+ITX-M61X11E ---------- 15081 -------- Saved 
+ITX-M61X11E ---------- 15082 -------- Saved 
+SV1-H6126 高效能 Mini-ITX 主機板 ---------- 15083 -------- Saved 
+Placa-mãe Mini-ITX de alto desempenho de SV1-H6126 ---------- 15084 -------- Saved 
+AMS100-807 無風扇嵌入式系統採用了 Intel® Atom® Processor D2550 ---------- 15085 -------- Saved 
+Sistema embarcado sem ventoinha AMS100-807 com processador Intel® Atom® D2550 ---------- 15086 -------- Saved 
+Portwell WADE-8013 ---------- 15087 -------- Saved 
+Portwell WADE-8013 ---------- 15088 -------- Saved 
+DFI EC200 T 系列無風扇嵌入式系統支援寬溫度/電壓範圍 ---------- 15089 -------- Saved 
+O sistema embarcado sem ventoinha série A DFI EC200 T suporta grande amplitude de tensão/temperatura ---------- 15090 -------- Saved 
+ITX-M52X61E ---------- 15091 -------- Saved 
+ITX-M52X61E ---------- 15092 -------- Saved 
+SA-5592，超薄小巧、高效能的迷你 PC ---------- 15093 -------- Saved 
+SA-5592, Slim,  PC compacto do tamanho de um livro e de alto Desempenho ---------- 15094 -------- Saved 
+GOT3846T-832 - 8.4" SVGA TFT 無風扇觸控式面板電腦，採用了 Intel® Atom™ Processor（寬溫，-20°C ~ +55°C） ---------- 15095 -------- Saved 
+Computador de painel de toque sem ventoinha SVGA TFT GOT3846T-832 - 8,4" com processador Intel® Atom™ (Ampla Temp,-20° C ~ + 55° C) ---------- 15096 -------- Saved 
+ITX-M41X41S ---------- 15097 -------- Saved 
+ITX-M41X41S ---------- 15098 -------- Saved 
+嵌入式 3.5" SBC 主機板： JNF36-2550 (Intel® Atom™ D2550 Processor) ---------- 15099 -------- Saved 
+Placa-mãe de SBC de 3.5" embarcada: JNF36-2550 (Processador Intel® Atom™ D2550) ---------- 15100 -------- Saved 
+PICO830 -- Intel® Atom® N2600/N2800 Pico-ITX SBC，配有 LAN、LVDS/顯示或 VGA ---------- 15101 -------- Saved 
+PICO830 -- Intel® Atom® N2600/N2800 Pico-ITX SBC com LAN, tela de LVDS/ou VGA ---------- 15102 -------- Saved 
+ITX-M51X41E ---------- 15103 -------- Saved 
+ITX-M51X41E ---------- 15104 -------- Saved 
+NSA 2120 網路安全平台 ---------- 15105 -------- Saved 
+Plataforma de Segurança de Rede NSA 2120 ---------- 15106 -------- Saved 
+TPC150 - Intel® H61 15" Touch Panel PC ---------- 15107 -------- Saved 
+TPC150 - PC com Painel de toque 15" Intel® H61 ---------- 15108 -------- Saved 
+BFC-1507 ---------- 15109 -------- Saved 
+BFC-1507 ---------- 15110 -------- Saved 
+NA-550 - 1U 機架安裝式網路裝置平台，採用了 LGA1155 Intel® C206/C216，高達 26 LAN ---------- 15111 -------- Saved 
+AT-550 - Plataforma de Utilitário de rede de montagem em bastidor 1U com LGA1155 Intel® C206/C216 e até 26 LANs ---------- 15112 -------- Saved 
+免費獲取統一 Windows CE 6.0 BSP 和手冊，包括支援 Intel® Atom® ---------- 15113 -------- Saved 
+Unificação Livre Windows CE 6.0 BSP e manual, incluindo suporte para Intel® Atom® ---------- 15114 -------- Saved 
+系統設計 & 工程服務 ---------- 15115 -------- Saved 
+Serviços de projetos e engenharia de sistemas ---------- 15116 -------- Saved 
+PIC-H61 - Intel® H61 全尺寸 PICMG 1.3 主機板 ---------- 15117 -------- Saved 
+PIC-H61 - placa PICMG 1.3 tamanho padrão com Intel® H61 ---------- 15118 -------- Saved 
+CPIC PCI Express 參考平台適合 Intel® Communications chipset 89xx 系列 ---------- 15119 -------- Saved 
+Plataforma de referência CPIC PCI Express para o chipset de comunicações Intel® Série 89xx ---------- 15120 -------- Saved 
+FWA6304-D25 - 採用了 Intel® Atom® Processor D2550 的網路安全裝置 ---------- 15121 -------- Saved 
+FWA6304-D25 - Utilitário de segurança de rede com processador Intel® Atom®  D2550 ---------- 15122 -------- Saved 
+SA-5082，Intel® Atom® D25 Book Size PC ---------- 15123 -------- Saved 
+PC do tamanho de livro SA-5082, Intel® Atom® D25 ---------- 15124 -------- Saved 
+PMB-822LF，Intel® Atom® N455/D525 ---------- 15125 -------- Saved 
+PMB-822LF, Intel® Atom® N455/D525 ---------- 15126 -------- Saved 
+DT122-CR - Intel® QM77 Destktop Box PC ---------- 15127 -------- Saved 
+DT122-CR - PC Box Desktop Intel® QM77 ---------- 15128 -------- Saved 
+EDC： Everyware Device Cloud ---------- 15129 -------- Saved 
+EDC: Everyware Device Cloud (Nuvem de dispositivo Everyware) ---------- 15130 -------- Saved 
+GOT-5100T-830 - 10.4" 無風扇觸控式平板電腦 Intel® Atom™ Processor N270 ---------- 15131 -------- Saved 
+TEM-5100T-830 - Computador de Painel de Toque Sem Ventoinha de 10,4" com o Processador Intel® Atom™ N270 ---------- 15132 -------- Saved 
+rBOX111-4COM - 穩健的 Din 導軌無風扇嵌入式系統支援 Intel® Atom® Processor Z510PT/ Z520PT，4 個隔離 COM，SATA SSD ---------- 15133 -------- Saved 
+O rBOX111-4COM - sistema robusto de guia Din embarcado sem ventoinha com o processador Intel® Atom® Z510PT / Z520PT, 4 COM isoladas, SSD SATA ---------- 15134 -------- Saved 
+TPC170 - Intel® H61 17" Touch Panel PC ---------- 15135 -------- Saved 
+TPC170 - PC de Painel d Toque Intel® H61 de 17" ---------- 15136 -------- Saved 
+嵌入式 Mini-ITX 主機板： JNF96U-525-LF (Intel® Atom™ D525 Processor) ---------- 15137 -------- Saved 
+Placa-Mãe Mini-ITX embarcada: JNF96U-525-LF (processador Intel® Atom™ D525) ---------- 15138 -------- Saved 
+軟體整合服務 ---------- 15139 -------- Saved 
+Serviços de integração de soluções ---------- 15140 -------- Saved 
+SB102-D - 低成本 Mini-ITX 主機板，搭載了第 3 代/第 2 代 Intel® Core™ Processor Family ---------- 15141 -------- Saved 
+SB102-D - placa Mini-ITX de baixo custo equipada pela 2ª/3ª geração da família de processadores Intel® Core™ ---------- 15142 -------- Saved 
+FWA8208 - 第 3 代 Intel® Core™ i7/i5/i3 / Xeon Network Security Appliance w/ 8 GbE 連接埠 ---------- 15143 -------- Saved 
+FWA8208 - 3 ª geração Intel® Core™ i7/i5/i3 / Utilitário de segurança de rede Xeon com 8 portas GbE ---------- 15144 -------- Saved 
+NA-560 - 1U 機架安裝式網路裝置平台，採用了 LGA1155 Intel® H61/ B65/ Q67，多達 8 個 LAN ---------- 15145 -------- Saved 
+NA-560 - Plataforma de utilitário rede montada em bastidor 1U com LGA1155 Intel® H61 / B65 / Q67 e até 8 LANs ---------- 15146 -------- Saved 
+BIS-6660 - 新一代專有「ICEFIN」無風扇盒式 PC，採用了 Intel® Atom® CPU ---------- 15147 -------- Saved 
+BIS-6660 - PC Box Sem Ventoinha de Última Geração Proprietária "ICEFIN" com processadores Intel® Atom® ---------- 15148 -------- Saved 
+X9DRD-EF - 雙處理器超微主機板 ---------- 15149 -------- Saved 
+X9DRD-EF - Placa-Mãe Supermicro de Processador Dual ---------- 15150 -------- Saved 
+ITX-M27X42A ---------- 15151 -------- Saved 
+ITX-M27X42A ---------- 15152 -------- Saved 
+X9SPV-F-3217UE 超微嵌入式主機板 ---------- 15153 -------- Saved 
+Placa-mãe supermicro embarcada X9SPV-F-3217UE ---------- 15154 -------- Saved 
+ITX-M42X82A ---------- 15155 -------- Saved 
+ITX-M42X82A ---------- 15156 -------- Saved 
+PMB-891LF，ATX MB 採用了 Intel® Core™ i7/i5/i3 和 Pentium® CPU ---------- 15157 -------- Saved 
+PMB-891LF - placa-mãe ATX com CPUs Intel® Core™ i7/i5/i3 e Pentium® ---------- 15158 -------- Saved 
+ITX-MYX5LA ---------- 15159 -------- Saved 
+ITX-MYX5LA ---------- 15160 -------- Saved 
+ITX M4S2GAP 無風扇 ---------- 15161 -------- Saved 
+ITX M4S2GAP sem ventoinha ---------- 15162 -------- Saved 
+ITX-M27X62D ---------- 15163 -------- Saved 
+ITX-M27X62D ---------- 15164 -------- Saved 
+X9SPV-F-3610ME 超微嵌入式主機板 ---------- 15165 -------- Saved 
+Placa-mãe Supermicro embarcada X9SPV-F-3610ME ---------- 15166 -------- Saved 
+X9DRL-3F - 雙處理器超微主機板 ---------- 15167 -------- Saved 
+X9DRL-3F - Placa-Mãe Supermicro de Processador Dual ---------- 15168 -------- Saved 
+ITX-M45X82A ---------- 15169 -------- Saved 
+ITX-M45X82A ---------- 15170 -------- Saved 
+PMB-897LF - Mini-ITX MB ---------- 15171 -------- Saved 
+PMB-897LF - placa-mãe Mini-ITX ---------- 15172 -------- Saved 
+ITX-M42X21D ---------- 15173 -------- Saved 
+ITX-M42X21D ---------- 15174 -------- Saved 
+ITX M61X62A ---------- 15175 -------- Saved 
+ITX M61X62A ---------- 15176 -------- Saved 
+DT122-SB - Intel® Q67 Desktop Box PC ---------- 15177 -------- Saved 
+DT122-SB - Desktop Box PC Intel® Q67 ---------- 15178 -------- Saved 
+工業級微型 ATX 主機板： JNMF93-Q77（第 3 代 Intel® Core™ i3, i5, i7 Processor） ---------- 15179 -------- Saved 
+Placa-mãe Industrial Micro ATX: JNMF93-Q77 (3ª geração de processadores Intel® Core™ i3, i5, i7) ---------- 15180 -------- Saved 
+ITX-M27X62S ---------- 15181 -------- Saved 
+ITX-M27X62S ---------- 15182 -------- Saved 
+X9SPV-LN4F-3LE 超微嵌入式主機板 ---------- 15183 -------- Saved 
+Placa-mãe Supermicro embarcada X9SPV-LN4F-3LE ---------- 15184 -------- Saved 
+Cybera ONE SCA-315 ---------- 15185 -------- Saved 
+Cybera ONE SCA-315 ---------- 15186 -------- Saved 
+FLX-2000： 新一代強大的抗衝擊、防振動硬體平台採用了可變尺寸設計 ---------- 15187 -------- Saved 
+FLX-2000: Nova geração de plataforma de hardware com proteção contra impacto e vibração e projeto de dimensões variáveis ---------- 15188 -------- Saved 
+ITX-M52X21E ---------- 15189 -------- Saved 
+ITX-M52X21E ---------- 15190 -------- Saved 
+Catalyst CV： 超低功耗和多核 CPU 模組基於 Intel® Atom™ N2x00 Processor ---------- 15191 -------- Saved 
+Catalyst CV: Módulo de CPU consumo ultrabaixo de energia e Multicore baseado no processador Intel® Atom™ N2x00 ---------- 15192 -------- Saved 
+POS-6920-PPC，無風扇 15" 真正的觸控式面板 PC ---------- 15193 -------- Saved 
+POS-6920-PPC, 15" O PC sem ventoinha de Painel de Toque True Flat ---------- 15194 -------- Saved 
+X9SAE 超微 ATX 主機板 ---------- 15195 -------- Saved 
+Placa-mãe X9SAE Supermicro ATX ---------- 15196 -------- Saved 
+NSA 3130 網路安全硬體 ---------- 15197 -------- Saved 
+Hardware de segurança de rede 3130 NSA ---------- 15198 -------- Saved 
+NDiS M532 - OPS 數位電子看板播放器 ---------- 15199 -------- Saved 
+NDiS M532 - OPS Player de Sinalização Digital ---------- 15200 -------- Saved 
+ITX-M4S2GAP ---------- 15201 -------- Saved 
+ITX-M4S2GAP ---------- 15202 -------- Saved 
+SB336-Ni - microATX 嵌入式主機板支援 10 個序列 COM 供 ATM/POS 解決方案使用 ---------- 15203 -------- Saved 
+SB336-Ni - placa embarcada microATX suporta 10 COM seriais para solução de ATM/POS ---------- 15204 -------- Saved 
+POS-6510，無風扇高度整合& 效能 15" POS ---------- 15205 -------- Saved 
+POS-6510, o POS de 15" sem ventoinha de desempenho altamente integrado & ---------- 15206 -------- Saved 
+ITX-M42X41S ---------- 15207 -------- Saved 
+ITX-M42X41S ---------- 15208 -------- Saved 
+X9SRH-7TF 超微嵌入式主機板 ---------- 15209 -------- Saved 
+Placa-mãe embarcada Supermicro X9SRH-7TF ---------- 15210 -------- Saved 
+BPC-8076，高效能桌上型電腦 Inte® Core™ i3 / i5 / i7 Processor Book PC ---------- 15211 -------- Saved 
+BPC-8076, PC Book Desktop com  processadores de alto desempenho Intel® Core™ i3 / i5 / i7 ---------- 15212 -------- Saved 
+ITX-M52X82A ---------- 15213 -------- Saved 
+ITX-M52X82A ---------- 15214 -------- Saved 
+iS-1620 - 數位電子看板播放器 ---------- 15215 -------- Saved 
+iS-1620 - Player de Sinalização Digital ---------- 15216 -------- Saved 
+ITX-M52X21D ---------- 15217 -------- Saved 
+ITX-M52X21D ---------- 15218 -------- Saved 
+POS-6630，高效能一體 POS 終端 ---------- 15219 -------- Saved 
+POS-6630, o  Terminal POS de alto desempenho All-in-One ---------- 15220 -------- Saved 
+X9DR7-TF+ - 雙處理器超微主機板 ---------- 15221 -------- Saved 
+X9DR7-TF - Placa-Mãe Supermicro de Processador Dual ---------- 15222 -------- Saved 
+ITX-M25D61E ---------- 15223 -------- Saved 
+ITX-M25D61E ---------- 15224 -------- Saved 
+ITX-M42X61D ---------- 15225 -------- Saved 
+ITX-M42X61D ---------- 15226 -------- Saved 
+ITX-M61X11B ---------- 15227 -------- Saved 
+ITX-M61X11B ---------- 15228 -------- Saved 
+CompactPCI 3U： CP305 ---------- 15229 -------- Saved 
+CompactPCI 3U: CP305 ---------- 15230 -------- Saved 
+存儲解決方案整合服務 ---------- 15231 -------- Saved 
+Serviços de integração de soluções de armazenamento ---------- 15232 -------- Saved 
+IOPS-H61（Intel® OPS OPS Compliant Digital Signage Pluggable Module PC，支援 Intel® Core™ i5/i3/Celeron®） ---------- 15233 -------- Saved 
+IOPS-H61 (PC de módulo conectável de Sinalização Digital compatível com Intel® OPS com suporte de processador Intel® Core™ i5/i3/Celeron®) ---------- 15234 -------- Saved 
+NANO831 - Intel® Atom® N2600/N2800 Nano-ITX，配備 LVDS/VGA、雙 LAN ---------- 15235 -------- Saved 
+NANO831 - Intel® Atom® N2600/N2800 Nano-ITX SBC com LVDS/VGA, Dual LAN ---------- 15236 -------- Saved 
+EC800 - 無風扇嵌入式系統，採用 Intel® NM10 ---------- 15237 -------- Saved 
+EC800 - sistema embarcado sem ventoinha com Intel® NM10 ---------- 15238 -------- Saved 
+Hardware Archeology ™ ---------- 15239 -------- Saved 
+Hardware Archeology ™ ---------- 15240 -------- Saved 
+NA-340FL - 無風扇桌面網路設備平台，配備 Intel® Atom™ Processor D525 和 6 個  LAN ---------- 15241 -------- Saved 
+AT-340FL - Plataforma de aparelho de rede de desktop sem ventoinha com processador Intel® Atom™ D525 e 6 LANs ---------- 15242 -------- Saved 
+X9SPV-LN4F-3QE 超微嵌入式主機板 ---------- 15243 -------- Saved 
+Placa-mãe embarcada Supermicro X9SPV-LN4F-3QE ---------- 15244 -------- Saved 
+NSA 7120B ---------- 15245 -------- Saved 
+NSA 7120B ---------- 15246 -------- Saved 
+Mentor Embedded Linux ---------- 15247 -------- Saved 
+Linux com Mentor embarcado ---------- 15248 -------- Saved 
+Gladius G1220 耐用型平板 PC ---------- 15249 -------- Saved 
+Gladius G1220 Tablet PC robusto ---------- 15250 -------- Saved 
+Quantum-SI ---------- 15251 -------- Saved 
+Quantum-SI ---------- 15252 -------- Saved 
+Wind River 智慧網路平台 ---------- 15253 -------- Saved 
+Plataforma de rede Inteligente Wind River ---------- 15254 -------- Saved 
+EM Tough ICP-TB-14 ---------- 15255 -------- Saved 
+Resistente EM ICP-TB-14 ---------- 15256 -------- Saved 
+OPS870 - 配有第 3 代 Intel ® Core™ i7 / i5 / i3 Processor 的電子看板播放機 ---------- 15257 -------- Saved 
+OPS870 - leitor de sinalização com processadores da 3ª geração Intel®Core™ i7/ i5/ i3 ---------- 15258 -------- Saved 
+BCM MX87QD – Mini ITX 主機板配有第 4 代 Intel® Core™  platform Desktop processor、Intel® Q87 Chipset 和寬範圍直流電源 ---------- 15259 -------- Saved 
+BCM MX87QD – Mini placa-mãe ITX com processadores da plataforma Intel® Core™ da 4ª geração para desktop, Chipset Intel® Q87 e ampla faixa de alimentação CC ---------- 15260 -------- Saved 
+NISE 3640E - 無風扇電腦  ---------- 15261 -------- Saved 
+NISE 3640E - computador sem ventoinha  ---------- 15262 -------- Saved 
+D3222-B µATX 主機板 ---------- 15263 -------- Saved 
+Placa principal D3222-B µATX ---------- 15264 -------- Saved 
+Solution Manager ---------- 15265 -------- Saved 
+Gerenciador de Soluções ---------- 15266 -------- Saved 
+N2000 ---------- 15267 -------- Saved 
+N2000 ---------- 15268 -------- Saved 
+eo a7400 Ultra-Mobile Tablet PC ---------- 15269 -------- Saved 
+Tablet PC eo a7400 Ultra-Mobile ---------- 15270 -------- Saved 
+DynaVIS 10-00： 具有連接性和耐用性的行動式顯示電腦 ---------- 15271 -------- Saved 
+DynaVIS 10-00: Computador móvel dom tela, conectado, robusto ---------- 15272 -------- Saved 
+ReliaGATE 50-21： 多業務閘道與邊緣控制器 ---------- 15273 -------- Saved 
+ReliaGATE 50-21: Gateway multisserviços & controlador de borda ---------- 15274 -------- Saved 
+X9SCAA-L 超小型嵌入式主機板 ---------- 15277 -------- Saved 
+Supermicro X9SCAA-L placa-mãe embarcada ---------- 15278 -------- Saved 
+X9SPV-M4 超小型嵌入式主機板 ---------- 15279 -------- Saved 
+Placa-mãe supermicro X9SPV-M4  embarcada ---------- 15280 -------- Saved 
+eBOX623-831-FL 是無風扇嵌入式箱型電腦，配有 Intel ® Atom® Processor N2600  ---------- 15281 -------- Saved 
+eBOX623-831-FL, computador de gabinete incorporado sem ventoinha com processador Intel® Atom® N2600  ---------- 15282 -------- Saved 
+PA-3350 - 15" POS 終端 ---------- 15283 -------- Saved 
+PA-3350 - Terminal POS 15" ---------- 15284 -------- Saved 
+P1127E-871 -- 第 3 代 基於 Intel ® Core™ 12.1" XGA TFT 工業平板電腦，其配有 2 個 PCIe 擴充槽 ---------- 15285 -------- Saved 
+P1127E-871 -- terceira geração. Computador de painel industrial XGA TFT de 12,1" baseado em Intel® Core™ com 2 Slots de expansão PCIe ---------- 15286 -------- Saved 
+EPIC-QM77（EPIC 主機板） ---------- 15287 -------- Saved 
+EPIC-QM77 (placa EPIC) ---------- 15288 -------- Saved 
+PCM-QM77（5.25" 緊湊型主機板） ---------- 15289 -------- Saved 
+PCM-QM77 (placa compacta 5,25 ") ---------- 15290 -------- Saved 
+IP-90380 WIN SoNIC 卡 ---------- 15291 -------- Saved 
+Cartão WIN SoNIC 90380-IP ---------- 15292 -------- Saved 
+BCM BC67Q - Intel® Q67 ATX Motherboard ---------- 15293 -------- Saved 
+BCM BC67Q - Placa-mãe ATX  Intel ® Q67 ---------- 15294 -------- Saved 
+GOT3157W-832-PCT -- 15.6" WXGA TFT 無風扇多觸控式平板電腦採用 Intel ® Atom® Processor (-10°C ~ + 50 °C) ---------- 15295 -------- Saved 
+GOT3157W-832-PCT - computador de painel multi toque WXGA TFT de 15,6" sem ventoinha com processador Intel® Atom® (-10 ° C ~ + 50 ° C) ---------- 15296 -------- Saved 
+PROFIVE ® M2 - PC/104-Express CPU 模組 ---------- 15297 -------- Saved 
+PROFIVE® M2 - módulo de CPU do PC/104-Express ---------- 15298 -------- Saved 
+5017A-EF 超微伺服器 ---------- 15299 -------- Saved 
+Servidor Supermicro 5017A-EF ---------- 15300 -------- Saved 
+CAPA830 - Intel® Atom® D2550/N2600/N2800 3.5-inch Embedded SBC，配有 LVDS/HDMI/VGA、雙 LAN ---------- 15813 -------- Saved 
+CAPA830 - SBC Embarcado de 3,5" com Intel® Atom® D2550/N2600/N2800 e LVDS/HDMI/VGA, Dual LAN ---------- 15814 -------- Saved 
+第 3 代嵌入式系統。 ULV Intel® Core™ i7 3517UE Processor ---------- 15819 -------- Saved 
+Sistema embarcado com a 3a ger. do processador ULV Intel® Core™ i7 3517UE ---------- 15820 -------- Saved 
+MBX X-60 儲存伺服器 ---------- 15821 -------- Saved 
+Servidor de armazenamento MBX-X60 ---------- 15822 -------- Saved 
+S3316 儲存伺服器 ---------- 15823 -------- Saved 
+Servidor de armazenamento S3316 ---------- 15824 -------- Saved 
+S2312 2U 儲存伺服器 ---------- 15825 -------- Saved 
+Servidor de armazenamento S2312 2U ---------- 15826 -------- Saved 
+TS-269 Pro ---------- 15827 -------- Saved 
+TS-269 Pro ---------- 15828 -------- Saved 
+TS-869L ---------- 15829 -------- Saved 
+TS-869L ---------- 15830 -------- Saved 
+TS-669L ---------- 15831 -------- Saved 
+TS-669L ---------- 15832 -------- Saved 
+TS-569L ---------- 15833 -------- Saved 
+TS-569L ---------- 15834 -------- Saved 
+TS-469L ---------- 15835 -------- Saved 
+TS-469L ---------- 15836 -------- Saved 
+P1177S-871 -- 17" SXGA TFT Intel® Core™ i7/ i5/ i3 Slim Industrial Touch Panel Computer ---------- 15839 -------- Saved 
+P1177S-871 - Panel PC industrial slim com tela de toque 17" SXGA TFT e Intel® Core™ i7/ i5/ i3 ---------- 15840 -------- Saved 
+GOT3187W-832-PCT -- 18.5" WXGA TFT 無風扇多觸控平板電腦，採用了 Intel® Atom® Processor (-10C ~ +50C) ---------- 15841 -------- Saved 
+GOT3187W-832-PCT -- panel PC multi toque sem ventoinha com tela WXGA TFT de 18,5" e processador Intel® Atom® (-10C ~ +50C) ---------- 15842 -------- Saved 
+GOT5152T-832 - 15" XGA TFT 無風扇觸控平板電腦，採用了 Intel® Atom® Processor D2550 ---------- 15843 -------- Saved 
+GOT5152T-832 - panel PC com tela de toque sem ventoinha com tela XGA TFT de 15" e processador Intel® Atom® D2550 ---------- 15844 -------- Saved 
+MANO873 - LGA1155 插座 Intel® Core™ i7/ i5/ i3/Celeron® Mini ITX SBC，支援 Intel® Q77 PCH、VGA/DVI-D、雙 LAN 和 USB 3.0 ---------- 15845 -------- Saved 
+MANO873 - SBC Mini ITX soquete LGA1155 com Intel® Core™ i7/ i5/ i3/Celeron® com Intel® Q77 PCH, VGA/DVI-D, Dual LANs e USB 3.0 ---------- 15846 -------- Saved 
+eBOX730-860-FL -- 無風扇嵌入式系統，採用了 Intel® Core™ i7/ i3/ Celeron® Processor、支援隔離 COM 和數位 I/O ---------- 15847 -------- Saved 
+eBOX730-860-FL -- Sistema embarcado sem ventoinha com processador Intel® Core™ i7/ i3/ Celeron®, COM isolado e I/O digital ---------- 15848 -------- Saved 
+P1157S-871 -- 15" XGA TFT Intel® Core™ i7/ i5/ i3 Slim Industrial Touch Panel Computer ---------- 15849 -------- Saved 
+P1157S-871 - Panel PC industrial slim com tela de toque 15" XGA TFT e Intel® Core™ i7/ i5/ i3 ---------- 15850 -------- Saved 
+OPS871-HM -- OPS 相容的電子看板播放機模組，配備了 Intel® HM76 和 TPM 1.2 ---------- 15851 -------- Saved 
+OPS871-HM -- Módulo de reprodução de sinalização compatível com OPS com Intel® HM76 e TPM 1.2 ---------- 15852 -------- Saved 
+OPS871 -- OPS 相容的電子看板播放機模組，配備了 Intel® QM77 和 TPM 1.2 ---------- 15853 -------- Saved 
+OPS871 -- Módulo de reprodução de sinalização compatível com OPS com Intel® QM77 e TPM 1.2 ---------- 15854 -------- Saved 
+POS-3152 ---------- 15859 -------- Saved 
+POS-3152 ---------- 15860 -------- Saved 
+POS-3520 ---------- 15861 -------- Saved 
+POS-3520 ---------- 15862 -------- Saved 
+PA-3252 ---------- 15863 -------- Saved 
+PA-3252 ---------- 15864 -------- Saved 
+POS-6920 ---------- 15865 -------- Saved 
+POS-6920 ---------- 15866 -------- Saved 
+SageBIOS™、Coreboot® Distribution ---------- 15867 -------- Saved 
+SageBIOS ™, uma distribuição Coreboot® ---------- 15868 -------- Saved 
+WADE-8015 ---------- 15869 -------- Saved 
+WADE-8015 ---------- 15870 -------- Saved 
+WADE-8015 ---------- 15871 -------- Saved 
+NSA 5150 - 1U 網路安全設備 ---------- 15872 -------- Saved 
+NSA 5150 - 1U ネットワーク・セキュリティ・アプライアンス ---------- 15873 -------- Saved 
+NSA 5150 - Dispositivo de segurança de rede 1U ---------- 15874 -------- Saved 
+RUBY-D716VG2AR ---------- 15875 -------- Saved 
+RUBY-D716VG2AR ---------- 15876 -------- Saved 
+RUBY-D716VG2AR ---------- 15877 -------- Saved 
+PCOM-B630VG ---------- 15878 -------- Saved 
+PCOM-B630VG ---------- 15879 -------- Saved 
+PCOM-B630VG ---------- 15880 -------- Saved 
+OPS880 -- 第 4 代 Intel® Core™ i5 Open Pluggable Specification (OPS) 數位電子看板播放機 ---------- 15881 -------- Saved 
+OPS880 -- 第 4 世代 Intel Core™ i5 Open Pluggable Specification (OPS) のデジタル・サイネージ・プレイヤー ---------- 15882 -------- Saved 
+OPS880 - Reprodutor de sinalização digital Open Pluggable Specification (OPS) com a 4ª geração do Intel ® Core™ i5 ---------- 15883 -------- Saved 
+NPC-8223 ---------- 15884 -------- Saved 
+NPC-8223 ---------- 15885 -------- Saved 
+NPC-8223 ---------- 15886 -------- Saved 
+NI PXIe-8133 ---------- 15890 -------- Saved 
+NI PXIe-8133 ---------- 15891 -------- Saved 
+NI PXIe-8133 ---------- 15892 -------- Saved 
+SHB130 PICMG 1.3 單板電腦，專為第 4 代 Intel® Core™ Processors 設計 ---------- 15893 -------- Saved 
+第 4 世代 Intel® Core™ プロセッサー用に設計された SHB130 PICMG 1.3 シングル・ボード・コンピューター ---------- 15894 -------- Saved 
+SHB130 PICMG 1.3 computador de placa única projetado para a quarta geração dos processadores Intel ® Core ™ ---------- 15895 -------- Saved 
+Express-HL - COM Express Type 6 Module，配備第 4 代 Intel® Core™ i7/i5/i3 Processor  ---------- 15896 -------- Saved 
+Express-HL: 第 4 世代 Intel® Core™ i7/i5/i3 プロセッサー搭載の COM Express Type 6 モジュール ---------- 15897 -------- Saved 
+Express-HL - módulo COM Express tipo 6 com a 4ª geração dos processadores Intel® Core™ i7/i5/i3  ---------- 15898 -------- Saved 
+FW-8771 ---------- 15899 -------- Saved 
+FW-8771 ---------- 15900 -------- Saved 
+FW-8771 ---------- 15901 -------- Saved 
+LEC-7950 ---------- 15905 -------- Saved 
+第 2 世代 Intel® Core™ i3-2310 or Intel® Celeron® 847E CPU 搭載の LEC-7950 ファンレス産業用コンピューター ---------- 15906 -------- Saved 
+LEC-7950 ---------- 15907 -------- Saved 
+LEC-2280 ---------- 15908 -------- Saved 
+LEC-2280-第 3 世代 Intel® Core™ i7/i5/i3 搭載のファンレス・エンベデッド・コンピューター ---------- 15909 -------- Saved 
+LEC-2280 ---------- 15910 -------- Saved 
+LEC-2260 ---------- 15911 -------- Saved 
+LEC-2260-多目的 Intel® Celeron® 807UE 産業用 PC ---------- 15912 -------- Saved 
+LEC-2260 ---------- 15913 -------- Saved 
+NDiS B533 -  無風扇數位電子看板播放器 ---------- 15914 -------- Saved 
+NDiS B533 - ファンレス・デジタル・サイネージ・プレーヤー ---------- 15915 -------- Saved 
+NDiS B533 - Reprodutor de sinalização digital sem ventoinha ---------- 15916 -------- Saved 
+TS-869 Pro ---------- 15917 -------- Saved 
+TS-869 Pro ---------- 15918 -------- Saved 
+TS-869 Pro ---------- 15919 -------- Saved 
+TS-669 Pro ---------- 15920 -------- Saved 
+TS-669 Pro ---------- 15921 -------- Saved 
+TS-669 Pro ---------- 15922 -------- Saved 
+TS-569 Pro ---------- 15923 -------- Saved 
+TS-569 Pro ---------- 15924 -------- Saved 
+TS-569 Pro ---------- 15925 -------- Saved 
+TS-469 Pro ---------- 15926 -------- Saved 
+TS-469 Pro ---------- 15927 -------- Saved 
+TS-469 Pro ---------- 15928 -------- Saved 
+面向雲終端應用的 TEA-E1702 ---------- 15929 -------- Saved 
+クラウド端末アプリケーション向け TEA- E1702 ---------- 15930 -------- Saved 
+TEA-E1702 concebida para aplicação de terminal em nuvem ---------- 15931 -------- Saved 
+BA-0951 ---------- 15932 -------- Saved 
+BA-0951 ---------- 15933 -------- Saved 
+BA-0951 ---------- 15934 -------- Saved 
+Dell PowerEdge R210 II ---------- 15935 -------- Saved 
+Dell PowerEdge R210 II ---------- 15936 -------- Saved 
+Dell PowerEdge R210 II ---------- 15937 -------- Saved 
+Dell Precision R7610 ---------- 15938 -------- Saved 
+Dell Precision R7610 ---------- 15939 -------- Saved 
+Dell Precision R7610 ---------- 15940 -------- Saved 
+ICES 268 COM Express Type 2 基本模組 ---------- 15941 -------- Saved 
+ICES 268 COM Express Type 2 の基本的なモジュール ---------- 15942 -------- Saved 
+Módulo básico COM Express tipo 2 ICES 268 ---------- 15943 -------- Saved 
+ROBO-8112VG2AR ---------- 15947 -------- Saved 
+ROBO-8112VG2AR ---------- 15948 -------- Saved 
+ROBO-8112VG2AR ---------- 15949 -------- Saved 
+XPedite7501 基于第 5 代 Intel® Core™ i7 处理器的传导或空冷 XMC 模块 ---------- 15958 -------- Saved 
+XPedite7501 基於第 4 代 Intel® Core™ i7 Processor 的導冷或風冷 XMC 模組 ---------- 15959 -------- Saved 
+XPedite7501 第 5 世代 Intel® Core™ i7 プロセッサーをベースにした伝導冷却式または空冷式 XMC モジュール ---------- 15960 -------- Saved 
+Módulo XMC resfriado por condução ou ar baseado no processador XPedite7501 de quarta geração Intel® Core™ i7 ---------- 15961 -------- Saved 
+XCalibur4530 基于第 4 代 Intel® Core™ i7 处理器的传导或风冷 6U VME 模块 ---------- 15962 -------- Saved 
+XCalibur4530 基於第 4 代 Intel® Core™ i7 Processor 的導冷或風冷 6U VME 模組 ---------- 15963 -------- Saved 
+XCalibur4530 第 4 世代 Intel® Core™ i7 プロセッサーをベースにした伝導冷却式または空冷式 6U VME モジュール ---------- 15964 -------- Saved 
+Módulo 6U VME resfriado por condução ou ar, baseados no processador XCalibur4530 de quarta geração Intel® Core™ i7 ---------- 15965 -------- Saved 
+X10SLH-F 超微嵌入式主板 ---------- 15966 -------- Saved 
+X10SLH-F 超微嵌入式主機板 ---------- 15967 -------- Saved 
+X10SLH-F Supermicro エンベデッド・マザーボード ---------- 15968 -------- Saved 
+Placa-mãe embarcada com Supermicro X10SLH-F ---------- 15969 -------- Saved 
+Supermicro Superserver 1018D-73MTF ---------- 15970 -------- Saved 
+超微 Superserver 1018 D-73MTF ---------- 15971 -------- Saved 
+Supermicro Superserver 1018D-73MTF ---------- 15972 -------- Saved 
+Supermicro Superserver 1018D-73MTF ---------- 15973 -------- Saved 
+超微 Superserver 5038ML-H8TRF MicroCloud ---------- 15974 -------- Saved 
+超微 Superserver 5038ML-H8TRF MicroCloud ---------- 15975 -------- Saved 
+Supermicro Superserver 5038ML H8TRF MicroCloud ---------- 15976 -------- Saved 
+Supermicro Superserver 5038ML-H8TRF MicroCloud ---------- 15977 -------- Saved 
+X10SLM +-LN4F 超微 uATX 主板 ---------- 15978 -------- Saved 
+X10SLM+-LN4F 超微 uATX 主機板 ---------- 15979 -------- Saved 
+X10SLM +-LN4F Supermicro uATX マザーボード ---------- 15980 -------- Saved 
+Placa-mãe Supermicro uATX X10SLM +-LN4F ---------- 15981 -------- Saved 
+X10SL7-F 超微 uATX 主板 ---------- 15982 -------- Saved 
+X10SL7-F 超微 uATX 主機板 ---------- 15983 -------- Saved 
+X10SL7-F Supermicro uATX マザーボード ---------- 15984 -------- Saved 
+Placa-mãe Supermicro uATX X10SL7-F ---------- 15985 -------- Saved 
+X10SAE 超微 ATX 主板 ---------- 15986 -------- Saved 
+X10SAE 超微 ATX 主機板 ---------- 15987 -------- Saved 
+X10SAE Supermicro ATX マザーボード ---------- 15988 -------- Saved 
+Placa-mãe Supermicro ATX X10SAE ---------- 15989 -------- Saved 
+超微 Superserver 5038 ML-H12TRF MicroCloud ---------- 15990 -------- Saved 
+超微 Superserver 5038ML-H12TRF MicroCloud ---------- 15991 -------- Saved 
+Supermicro Superserver 5038 ML-H12TRF MicroCloud ---------- 15992 -------- Saved 
+Supermicro Superserver 5038ML-H12TRF MicroCloud ---------- 15993 -------- Saved 
+超微 Superserver 5018D-MTLN4F ---------- 15994 -------- Saved 
+超微 Superserver 5018D-MTLN4F ---------- 15995 -------- Saved 
+Supermicro Superserver 5018 D-MTLN4F ---------- 15996 -------- Saved 
+Supermicro Superserver 5018D-MTLN4F ---------- 15997 -------- Saved 
+超微 Superserver 5018D-MTRF ---------- 15998 -------- Saved 
+超微 Superserver 5018D-MTRF ---------- 15999 -------- Saved 
+Supermicro Superserver 5018 D-MTRF ---------- 16000 -------- Saved 
+Supermicro Superserver 5018D-MTRF ---------- 16001 -------- Saved 
+验证并测试第四代 Intel® Core™ 处理器系列产品 OS （VTOS™）（原代号为 “Haswell”）。 ---------- 16002 -------- Saved 
+驗證和測試 OS (VTOS™)，面向第 4 代 Intel® Core™ processor 系列（原代號「Haswell」）。 ---------- 16003 -------- Saved 
+第 4 世代 Intel® Core ™ プロセッサー・ファミリー（以前のコードネーム「Haswell」） 用の検証およびテストOS (VTOS ™) 。 ---------- 16004 -------- Saved 
+Verificação e teste OS (VTOS™) para a família de processadores Intel® Core™  de quarta geração (anteriormente conhecido pelo codinome "Haswell"). ---------- 16005 -------- Saved 
+Entreda Unify 云管理装置 ---------- 16006 -------- Saved 
+Entreda Unify 雲管理設備 ---------- 16007 -------- Saved 
+Entreda Unify クラウド管理アプライアンス ---------- 16008 -------- Saved 
+Dispositivo gerenciado em nuvem Entreda Unify ---------- 16009 -------- Saved 
+MI980VF ---------- 16010 -------- Saved 
+MI980VF ---------- 16011 -------- Saved 
+MI980VF ---------- 16012 -------- Saved 
+MI980VF ---------- 16013 -------- Saved 
+带有第 3 代 Intel® Core™ i7 的 XPedite7472 VPX-REDI ---------- 16014 -------- Saved 
+XPedite7472 VPX-REDI，採用第 3 代 Intel® Core™ i7 ---------- 16015 -------- Saved 
+第 3 世代Intel® Core™ i7 付きの XPedite7472 VPX-REDI ---------- 16016 -------- Saved 
+XPedite7472 VPX-REDI com Intel® Core™ i7 de 3ª geração ---------- 16017 -------- Saved 
+Vess A2000 系列  ---------- 16022 -------- Saved 
+Vess A2000 系列  ---------- 16023 -------- Saved 
+Vess A2000 シリーズ  ---------- 16024 -------- Saved 
+Série Vess A2000  ---------- 16025 -------- Saved 
+SmartStor NS6700/4700 ---------- 16026 -------- Saved 
+SmartStor NS6700/4700 ---------- 16027 -------- Saved 
+SmartStor NS6700/4700 ---------- 16028 -------- Saved 
+SmartStor NS6700/4700 ---------- 16029 -------- Saved 
+CDT-HTPC1212 ---------- 16030 -------- Saved 
+CDT-HTPC1212 ---------- 16031 -------- Saved 
+CDT-HTPC1212 ---------- 16032 -------- Saved 
+CDT-HTPC1212 ---------- 16033 -------- Saved 
+VessRAID 1000 ---------- 16034 -------- Saved 
+VessRAID 1000 ---------- 16035 -------- Saved 
+VessRAID 1000 ---------- 16036 -------- Saved 
+VessRAID 1000 ---------- 16037 -------- Saved 
+TR B12/msd 第 4 代 Intel® Core™ 处理器 3U VPX SBC ---------- 16050 -------- Saved 
+TR B12/msd 第 4 代 Intel® Core™ processor 3U VPX SBC ---------- 16051 -------- Saved 
+TR B12/msd 第 4 世代 Intel® Core ™ プロセッサー 3U VPX SBC ---------- 16052 -------- Saved 
+Processador Intel ® Core ™ de quarta geração TR B12/msd 3U VPX SBC ---------- 16053 -------- Saved 
+MB980VF ---------- 16054 -------- Saved 
+MB980VF ---------- 16055 -------- Saved 
+MB980VF ---------- 16056 -------- Saved 
+MB980VF ---------- 16057 -------- Saved 
+PA-6970 ---------- 16058 -------- Saved 
+PA-6970 ---------- 16059 -------- Saved 
+PA-6970 ---------- 16060 -------- Saved 
+PA-6970 ---------- 16061 -------- Saved 
+COM Express™6 型模块 — COMe8400 ---------- 16062 -------- Saved 
+COM Express™ Type 6 Module-COMe8400 ---------- 16063 -------- Saved 
+COM Express™  Type 6 モジュール-COMe8400 ---------- 16064 -------- Saved 
+Módulo COM Express™ tipo 6 -COMe8400 ---------- 16065 -------- Saved 
+PA-3570 ---------- 16066 -------- Saved 
+PA-3570 ---------- 16067 -------- Saved 
+PA-3570 ---------- 16068 -------- Saved 
+PA-3570 ---------- 16069 -------- Saved 
+用于 Intel® 处理器的 Wind River® Linux 板卡支持包 （BSP） ---------- 16074 -------- Saved 
+面向 Intel Processors 的 Wind River Linux 5 Board Support Package (BSP) ---------- 16075 -------- Saved 
+Wind River® Linux ボード・サポート・パッケージ (BSP)、Intel プロセッサー用 ---------- 16076 -------- Saved 
+Wind River Linux 5 Board Support Package (BSP) para os processadores Intel ---------- 16077 -------- Saved 
+SBC326 ---------- 16078 -------- Saved 
+SBC326 ---------- 16079 -------- Saved 
+SBC326 ---------- 16080 -------- Saved 
+SBC326 ---------- 16081 -------- Saved 
+XPedite7472 基于 Intel® Core™ i7 处理器的 3U 传导或空冷 VPX-REDI 单板计算机 ---------- 16082 -------- Saved 
+XPedite7472 採用基於 Intel® Core™ i7 Processor 的 3U 導冷或氣冷 VPX-REDI 模組，配備 SecureCOTS™ ---------- 16083 -------- Saved 
+XPedite7472 Intel® Core™ i7 プロセッサーをベースにした 3U 伝導冷却式または空冷式 VPX-REDI シングルボード・コンピューター ---------- 16084 -------- Saved 
+Módulo 3U VPX-REDI com SecureCOTS™ resfriado por condução ou ar, baseado no processador XPedite7472 Intel® Core™ i7 ---------- 16085 -------- Saved 
+VG-QM87 嵌入式主板 ---------- 16086 -------- Saved 
+VG-QM87 嵌入式主機板 ---------- 16087 -------- Saved 
+VG-QM87 エンベデッド・マザーボード ---------- 16088 -------- Saved 
+Placa-mãe VG-QM87 embarcada ---------- 16089 -------- Saved 
+ICES 670 — COM Express Type 6 基本模块 ---------- 16090 -------- Saved 
+ICES 670 - COM Express Type 6 基本模組 ---------- 16091 -------- Saved 
+ICES 670 - COM Express Type  6 ベーシックモジュール ---------- 16092 -------- Saved 
+Módulo básico ICES 670 COM Express tipo 6 ---------- 16093 -------- Saved 
+NDiS M533 — OPS 数字标牌播放器 ---------- 16094 -------- Saved 
+NDiS M533 - OPS 數位電子看板播放機 ---------- 16095 -------- Saved 
+NDiS M533 - OPS デジタル・サイネージ・プレイヤー ---------- 16096 -------- Saved 
+NDiS M533 - reprodutor de sinalização digital OPS ---------- 16097 -------- Saved 
+验证和测试操作系统 （VTOS™)  ---------- 16098 -------- Saved 
+驗證和測試 OS (VTOS™) ---------- 16099 -------- Saved 
+検証とテスト OS (VTOS™) ---------- 16100 -------- Saved 
+Verificação e teste OS VTOS ™) ---------- 16101 -------- Saved 
+COM-QM87 ---------- 16102 -------- Saved 
+COM-QM87 ---------- 16103 -------- Saved 
+COM-QM87 ---------- 16104 -------- Saved 
+COM-QM87 ---------- 16105 -------- Saved 
+ IMBA-Q87A ---------- 16106 -------- Saved 
+ IMBA-Q87A ---------- 16107 -------- Saved 
+ IMBA-Q87A ---------- 16108 -------- Saved 
+ IMBA-Q87A ---------- 16109 -------- Saved 
+EMB-QM87A ---------- 16110 -------- Saved 
+EMB-QM87A ---------- 16111 -------- Saved 
+EMB-QM87A ---------- 16112 -------- Saved 
+EMB-QM87A ---------- 16113 -------- Saved 
+KINO-DQM871-R10 ---------- 16118 -------- Saved 
+KINO-DQM871-R10 ---------- 16119 -------- Saved 
+KINO-DQM871-R10 ---------- 16120 -------- Saved 
+KINO-DQM871-R10 ---------- 16121 -------- Saved 
+NANO-QM871-R10 ---------- 16126 -------- Saved 
+NANO-QM871-R10 ---------- 16127 -------- Saved 
+NANO-QM871 R10 ---------- 16128 -------- Saved 
+NANO-QM871-R10 ---------- 16129 -------- Saved 
+eIPC380 嵌入式工业 PC ---------- 16130 -------- Saved 
+eIPC380 嵌入式工業 PC ---------- 16131 -------- Saved 
+eIPC380 エンベデッド産業用 PC ---------- 16132 -------- Saved 
+PC Industrial eIPC380 embarcado ---------- 16133 -------- Saved 
+KTQ87/mITX — 嵌入式迷你 ITX 主板采用 Intel®Q87 芯片组和第 4 代 Intel® i7/i5/i3 双核和四核 CPU ---------- 16134 -------- Saved 
+KTQ87/mITX - 配備 Intel®Q87 Chipset 和第 4 代 Intel® i7/i5/i3 雙核心和四核心 CPU 的嵌入式 Mini-ITX 主機板 ---------- 16135 -------- Saved 
+KTQ87/mITX - エンベデッド Mini-ITX マザーボード、Intel®Q87 チップセットおよび第 4 世代 Intel® i7/i5/i3 デュアルおよびクアッドコア CPU 搭載 ---------- 16136 -------- Saved 
+KTQ87/mITX - placa-mãe embarcada Mini-ITX com chipset Intel®Q87 e CPUs de 4ª geração Intel® i7/i5/i3 Dual e Quad Core ---------- 16137 -------- Saved 
+Symkloud MS2900 媒体 — 适用于解决延迟和云转码基础架构可扩展性差的媒体云平台 ---------- 16138 -------- Saved 
+Symkloud MS2900 媒體 - 用以解決延遲和雲轉碼基礎設施可擴充性差等問題的媒體雲平台 ---------- 16139 -------- Saved 
+Symkloud MS2900 Media - クラウドのトランスコーディング・インフラストラクチャのレイテンシーやスケーラビリティの欠如を解決するメディア・クラウド・プラットフォーム ---------- 16140 -------- Saved 
+Symkloud MS2900 Media - plataforma de mídia na nuvem para lidar com latência e escalabilidade precária da infraestrutura de transcodificação na nuvem ---------- 16141 -------- Saved 
+CP6005(X)-SA — 基于系统/外设 CPU 的 CPCI/PICMG 2.16 第 4 代 Intel® Core™ 处理器 ---------- 16142 -------- Saved 
+CP6005(X)-SA - CPCI/PICMG 2.16 基於系統/週邊 CPU 的第 4 代 Intel® Core™ Processor ---------- 16143 -------- Saved 
+CP6005(X)-SA - システム/周辺機器 CPU をベースにした CPCI/PICMG 2.16 第 4 世代 Intel® Core™ プロセッサー ---------- 16144 -------- Saved 
+CP6005 (X) - SA - CPCI/PICMG 2.16 CPU periférica/de sistema baseada no processador de 4ª geração Intel® Core™ ---------- 16145 -------- Saved 
+COMe-bHL6 - COM Express® 基本款，最多四核，基于第 4 代 Intel® Core™ i-CPU ---------- 16146 -------- Saved 
+基於第 4 代 Intel® Core™ i-CPU 的 COMe-bHL6 - COM Express® 基礎版高達四核心 ---------- 16147 -------- Saved 
+COMe-bHL6 - 第 4 世代 Intel® Core™ i-CPUs をベースとした最大クアッドコアを持つ COM Express ® ベーシック ---------- 16148 -------- Saved 
+COMe-bHL6 - COM Express® básico até Quad Core baseado na quarta geração de i-CPUs Intel® Core™ ---------- 16149 -------- Saved 
+ESPRIMO Q510 ---------- 16150 -------- Saved 
+ESPRIMO Q510 ---------- 16151 -------- Saved 
+ESPRIMO Q510 ---------- 16152 -------- Saved 
+ESPRIMO Q510 ---------- 16153 -------- Saved 
+ESPRIMO P910-L ---------- 16154 -------- Saved 
+ESPRIMO P910-L ---------- 16155 -------- Saved 
+ESPRIMO P910-L ---------- 16156 -------- Saved 
+ESPRIMO P910-L ---------- 16157 -------- Saved 
+ESPRIMO Q920 ---------- 16158 -------- Saved 
+ESPRIMO Q920 ---------- 16159 -------- Saved 
+ESPRIMO Q920 ---------- 16160 -------- Saved 
+ESPRIMO Q920 ---------- 16161 -------- Saved 
+ESPRIMO C910-L ---------- 16162 -------- Saved 
+ESPRIMO C720-L ---------- 16163 -------- Saved 
+ESPRIMO C910-L ---------- 16164 -------- Saved 
+ESPRIMO C720-L ---------- 16165 -------- Saved 
+ITX-M25J61B ---------- 16170 -------- Saved 
+ITX-M25J61B ---------- 16171 -------- Saved 
+ITX-M25J61B ---------- 16172 -------- Saved 
+ITX-M25J61B ---------- 16173 -------- Saved 
+ ITX-M25I62A ---------- 16174 -------- Saved 
+ ITX-M25I62A ---------- 16175 -------- Saved 
+ ITX-M25I62A ---------- 16176 -------- Saved 
+ ITX-M25I62A ---------- 16177 -------- Saved 
+ITX-M25G21A ---------- 16182 -------- Saved 
+ITX-M25G21A ---------- 16183 -------- Saved 
+ITX M25G21A ---------- 16184 -------- Saved 
+ITX-M25G21A ---------- 16185 -------- Saved 
+NuPRO-E42 - PICMG® 1.3 全尺寸 LGA1150 第 4 代 Intel® Core™ i7/i5/i3 SHB  ---------- 16186 -------- Saved 
+NuPRO-E42 - PICMG® 1.3 全尺寸 LGA1150 第 4 代 Intel® Core™ i7/i5/i3 SHB  ---------- 16187 -------- Saved 
+NuPRO-E42 - PICMG® 1.3 フルサイズ LGA1150 第 4 世代 Intel® Core™ i7/i5/i3 SHB  ---------- 16188 -------- Saved 
+NuPRO-E42 - SHB PICMG® 1.3 de tamanho padrão com a quarta geração do LGA1150 Intel® Core™ i7/i5/i3  ---------- 16189 -------- Saved 
+IMB210 — LGA1150 ATX 主板支持 Intel® Xeon® E3-1200 处理器 v3 系列 Intel® C226 芯片组 ---------- 16190 -------- Saved 
+IMB210 -- LGA1150 ATX 主機板，支援 Intel® Xeon® E3-1200 processor v3 系列與 Intel® C226 chipset ---------- 16191 -------- Saved 
+IMB210--LGA1150 ATX マザーボードが Intel® C226 チップセット搭載の Intel® Xeon ® E3-1200 プロセッサー v3 シリーズをサポート ---------- 16192 -------- Saved 
+IMB210 - placa-mãe LGA1150 ATX compatível com o processador Intel® Xeon® E3-1200 v3 Series com o chipset Intel® C226 ---------- 16193 -------- Saved 
+GENE-QM87 ---------- 16194 -------- Saved 
+GENE-QM87 ---------- 16195 -------- Saved 
+GENE-QM87 ---------- 16196 -------- Saved 
+GENE-QM87 ---------- 16197 -------- Saved 
+基于 conga-TS87 第 4 代 Intel® Core™ i7 处理器的 COM Express 6 型模块 ---------- 16198 -------- Saved 
+基於 COM Express Type 6 模組的 conga-TS87 第 4 代 Intel® Core™ i7 processor ---------- 16199 -------- Saved 
+COM Express タイプ 6 モジュールを基盤とした conga-TS87 第 4 世代 Intel® Core™ i7 プロセッサー ---------- 16200 -------- Saved 
+Módulo Express COM tipo 6 baseado em processador Intel® Core™ i7 conga-TS87 de 4ª geração ---------- 16201 -------- Saved 
+ITX-M25E61B 2013 ---------- 16202 -------- Saved 
+ITX-M25E61B 2013 ---------- 16203 -------- Saved 
+ITX-M25E61B 2013 ---------- 16204 -------- Saved 
+ITX-M25E61B 2013 ---------- 16205 -------- Saved 
+ICE-QM871-R10 ---------- 16206 -------- Saved 
+ICE-QM871-R10 ---------- 16207 -------- Saved 
+ICE-QM871-R10 ---------- 16208 -------- Saved 
+ICE-QM871-R10 ---------- 16209 -------- Saved 
+KINO-AQ870-R10 ---------- 16210 -------- Saved 
+KINO-AQ870-R10 ---------- 16211 -------- Saved 
+KINO-AQ870-R10 ---------- 16212 -------- Saved 
+KINO-AQ870-R10 ---------- 16213 -------- Saved 
+CHAMP-AV9 6U OpenVPX 四核第 4 代 Intel® Core™ i7 DSP 卡 ---------- 16234 -------- Saved 
+CHAMP-AV9 6U OpenVPX 四核心第 4 代 Intel® Core™ i7 DSP Card ---------- 16235 -------- Saved 
+CHAMP-AV9 6U OpenVPX クアッドコア第 4 世代 Intel® Core™ i7 DSP カード ---------- 16236 -------- Saved 
+Cartão CHAMP-AV9 6U OpenVPX quad-core 4ª geração Intel® Core™ i7 DSP ---------- 16237 -------- Saved 
+VME-1908 6U VME Intel Core i7 第 4 代单板计算机 ---------- 16238 -------- Saved 
+VME-1908 6U VME Intel Core i7 第 4 代單板電腦 ---------- 16239 -------- Saved 
+VME-1908 6U VME Intel Core i7 第 4 世代シングルボード・コンピューター ---------- 16240 -------- Saved 
+Computador com placa única de 4ª geração VME-1908 6U VME Intel Core i7 ---------- 16241 -------- Saved 
+PRM-130 AMC 处理器卡 ---------- 16242 -------- Saved 
+PRM-130 AMC 處理器卡 ---------- 16243 -------- Saved 
+PRM-130 AMC プロセッサー・カード ---------- 16244 -------- Saved 
+Placa de processador PRM-130 AMC ---------- 16245 -------- Saved 
+MicroATX AIMB-584 ---------- 16246 -------- Saved 
+MicroATX AIMB-584 ---------- 16247 -------- Saved 
+MicroATX AIMB-584 ---------- 16248 -------- Saved 
+MicroATX AIMB-584 ---------- 16249 -------- Saved 
+Mini-ITX AIMB-274 ---------- 16250 -------- Saved 
+Mini-ITX AIMB-274 ---------- 16251 -------- Saved 
+Mini-ITX AIMB-274 ---------- 16252 -------- Saved 
+Mini-ITX AIMB-274 ---------- 16253 -------- Saved 
+FPC5152 ---------- 16254 -------- Saved 
+FPC5152 ---------- 16255 -------- Saved 
+FPC5152 ---------- 16256 -------- Saved 
+FPC5152 ---------- 16257 -------- Saved 
+PC8177 ---------- 16258 -------- Saved 
+PC8177 ---------- 16259 -------- Saved 
+PC8177 ---------- 16260 -------- Saved 
+PC8177 ---------- 16261 -------- Saved 
+Micro ATX 工业主板 JNMF95-Q87 （第 4 代 Intel® Core™ i3、i5、i7 处理器） ---------- 16262 -------- Saved 
+工業級微型 ATX 主機板： JNMF93-Q77（第 4 代 Intel®Core™ i3、i5、i7 Processor） ---------- 16263 -------- Saved 
+産業用 Micro ATX マザーボード: JNMF95-Q87（第 4 世代 Intel® Core™ i3、i5、i7 プロセッサー） ---------- 16264 -------- Saved 
+Placa-mãe Industrial Micro ATX: JNMF93-Q77 (4ª geração dos processadores Intel® Core™ i3, i5, i7) ---------- 16265 -------- Saved 
+工业 ATX 主板： JNMF95-Q87（第 4 代 Intel® Core™ i3、i5、i7 处理器） ---------- 16266 -------- Saved 
+工業級 ATX 主機板： JNAF95-Q87（第 4 代 Intel®Core™ i3、i5、i7 Processor） ---------- 16267 -------- Saved 
+産業用 ATX マザーボード: JNAF95-Q87（第 4 世代 Intel® Core™ i3, i5, i7 プロセッサー） ---------- 16268 -------- Saved 
+Placa-mãe industrial ATX: JNAF95-Q87 (4ª geração dos processadores Intel® Core™ i3, i5, i7) ---------- 16269 -------- Saved 
+FES2213 ---------- 16270 -------- Saved 
+FES2213 ---------- 16271 -------- Saved 
+FES2213 ---------- 16272 -------- Saved 
+FES2213 ---------- 16273 -------- Saved 
+嵌入式 3.5 英寸 SBC Network Appliance 主板： JNF38QLB-525（Intel® Atom® D525 处理器） ---------- 16274 -------- Saved 
+嵌入式 3.5" SBC 網路裝置主機板： JNF38QLB-525 (Intel® Atom™ D525 Processor) ---------- 16275 -------- Saved 
+3.5 インチの SBC ネットワーク・アプライアンス・エンベデッド・マザーボード: JNF38QLB-525 (Intel® Atom® D525 プロセッサー） ---------- 16276 -------- Saved 
+Placa-mãe de dispositivo de rede SBC embarcado de 3,5": JNF38QLB-525 (processador Intel® Atom™ D525) ---------- 16277 -------- Saved 
+嵌入式 Mini-ITX Network Appliance 主板： JNF9HQL-525 （Intel® Atom™ D525 处理器） ---------- 16278 -------- Saved 
+嵌入式 Mini-ITX 網路裝置主機板： JNF9HQL-525 (Intel® Atom™ D525 Processor) ---------- 16279 -------- Saved 
+エンベデッド Mini-ITX ネットワーク・アプライアンス・マザーボード: JNF9HQL-525（Intel® Atom D525 プロセッサー） ---------- 16280 -------- Saved 
+Placa-mãe Mini-ITX de dispositivo de rede embarcado: JNF9HQL-525 (Processador Intel® Atom™ D525) ---------- 16281 -------- Saved 
+Dell OptiPlex XE2 ---------- 16290 -------- Saved 
+Dell OptiPlex XE2 ---------- 16291 -------- Saved 
+Dell OptiPlex XE2 ---------- 16292 -------- Saved 
+Dell OptiPlex XE2 ---------- 16293 -------- Saved 
+rBOX310-4COM -- 强固型导轨式无风扇嵌入式系统，搭载 Intel® Atom® 处理器 N2800 1.86GHz、Intel® NM10 芯片组、4 个 COM、SATA SSD、音频和 RTC ---------- 16294 -------- Saved 
+rBOX310-4COM -- 搭載 Intel® Atom® Processor N2800 1.86GHz、Intel® NM10 Chipset、4 COM、SATA SSD、Audio 和 RTC 的加固型導軌式無風扇嵌入式系統 ---------- 16295 -------- Saved 
+rBOX310-4COM -- 堅牢な Din-rail ファンレス・エンベデッド・システム（Intel® Atom® プロセッサー N2800 1.86GHz、Intel® NM10 チップセット、4 COM、SATA SSD、オーディオ、RTC を搭載） ---------- 16296 -------- Saved 
+rBOX310-4COM - sistema embarcado robusto sem ventoinha com trilho din e o processador Intel® Atom® N2800 de 1,86 GHz, chipset Intel® NM10, 4 COM, SSD SATA, áudio e RTC ---------- 16297 -------- Saved 
+C7H61 超微 ATX 主板 ---------- 16300 -------- Saved 
+C7H61 超微 ATX 主機板 ---------- 16301 -------- Saved 
+C7H61 Supermicro ATX マザーボード ---------- 16302 -------- Saved 
+Placa-mãe Supermicro ATX C7H61 ---------- 16303 -------- Saved 
+C7B75 超微 uATX 主板 ---------- 16304 -------- Saved 
+C7B75 超微 uATX 主機板 ---------- 16305 -------- Saved 
+C7B75 Supermicro uATX マザーボード ---------- 16306 -------- Saved 
+Placa-mãe Supermicro uATX C7B75 ---------- 16307 -------- Saved 
+X10SLQ 超微 uATX 主板 ---------- 16308 -------- Saved 
+X10SLQ 超微 uATX 主機板 ---------- 16309 -------- Saved 
+X10SLQ Supermicro uATX マザーボード ---------- 16310 -------- Saved 
+Placa-mãe Supermicro uATX X10SLQ ---------- 16311 -------- Saved 
+LVC-5570 — 双核 Intel® Core™ i7-3517UE 车载计算机 ---------- 16312 -------- Saved 
+LVC-5570 ---------- 16313 -------- Saved 
+LVC-5570 - デュアルコア Intel® Core™ i7-3517UE 車載用コンピューター ---------- 16314 -------- Saved 
+LVC-5570 ---------- 16315 -------- Saved 
+Avalue ECM-QM87 - 3.5" SBC，配有 Intel® QM87 高速芯片组  ---------- 16316 -------- Saved 
+Avalue ECM-QM87 - 3.5" SBC，採用 Intel® QM87 Express chipset  ---------- 16317 -------- Saved 
+Avalue ECM-QM87 - 3.5 インチ SBC（Intel® QM87 Express チップセットを搭載）  ---------- 16318 -------- Saved 
+AValue ECM-QM87 - 3.5 "SBC com chipset Intel® QM87 Express  ---------- 16319 -------- Saved 
+ICES 667- 工业主板 ---------- 16320 -------- Saved 
+ICES 667- 工業級主機板 ---------- 16321 -------- Saved 
+ICES 667-産業用マザーボード ---------- 16322 -------- Saved 
+ICES 667 - Placa-mãe Industrial ---------- 16323 -------- Saved 
+KINO-AH612 ---------- 16324 -------- Saved 
+KINO-AH612 ---------- 16325 -------- Saved 
+KINO-AH612 ---------- 16326 -------- Saved 
+KINO-AH612 ---------- 16327 -------- Saved 
+KINO-AQ670 ---------- 16328 -------- Saved 
+KINO-AQ670 ---------- 16329 -------- Saved 
+KINO-AQ670 ---------- 16330 -------- Saved 
+KINO-AQ670 ---------- 16331 -------- Saved 
+KINO-CV-N26001 ---------- 16332 -------- Saved 
+KINO-CV-N26001 ---------- 16333 -------- Saved 
+KINO-CV-N26001 ---------- 16334 -------- Saved 
+KINO-CV-N26001 ---------- 16335 -------- Saved 
+KINO-PV-D4252/D5252 ---------- 16336 -------- Saved 
+KINO-PV-D4252/D5252 ---------- 16337 -------- Saved 
+KINO-PV-D4252/D5252 ---------- 16338 -------- Saved 
+KINO-PV-D4252/D5252 ---------- 16339 -------- Saved 
+定制系统制造服务 ---------- 16340 -------- Saved 
+自訂系統製造服務 ---------- 16341 -------- Saved 
+カスタム・システム製造サービス ---------- 16342 -------- Saved 
+Serviços de manufatura personalizados ---------- 16343 -------- Saved 
+EMB-Q77A （工业主板） ---------- 16344 -------- Saved 
+EMB-Q77A（工業級主機板） ---------- 16345 -------- Saved 
+EMB-Q77A （産業用マザーボード） ---------- 16346 -------- Saved 
+EMB-Q77A (placa-mãe industrial) ---------- 16347 -------- Saved 
+EMB-LN9T Rev.B ---------- 16348 -------- Saved 
+EMB-LN9T Rev.B ---------- 16349 -------- Saved 
+EMB-LN9T Rev.B ---------- 16350 -------- Saved 
+EMB-LN9T Rev.B ---------- 16351 -------- Saved 
+Android 软件开发服务： ---------- 16352 -------- Saved 
+Android 軟體開發服務 ---------- 16353 -------- Saved 
+Android ソフトウェア開発サービス： ---------- 16354 -------- Saved 
+Serviços de desenvolvimento de software Android: ---------- 16355 -------- Saved 
+SOM-5894 COM Express 基本型 ---------- 16364 -------- Saved 
+SOM-5894 COM Express Basic ---------- 16365 -------- Saved 
+SOM-5894 COM Express ベーシック ---------- 16366 -------- Saved 
+COM Express básico SOM-5894 ---------- 16367 -------- Saved 
+PC9150 ---------- 16368 -------- Saved 
+PC9150 ---------- 16369 -------- Saved 
+PC9150 ---------- 16370 -------- Saved 
+PC9150 ---------- 16371 -------- Saved 
+PC9120 ---------- 16372 -------- Saved 
+PC9120 ---------- 16373 -------- Saved 
+PC9120 ---------- 16374 -------- Saved 
+PC9120 ---------- 16375 -------- Saved 
+PC9070 ---------- 16376 -------- Saved 
+PC9070 ---------- 16377 -------- Saved 
+PC9070 ---------- 16378 -------- Saved 
+PC9070 ---------- 16379 -------- Saved 
+EMB-H81A ---------- 16380 -------- Saved 
+EMB-H81A ---------- 16381 -------- Saved 
+EMB-H81A ---------- 16382 -------- Saved 
+EMB-H81A ---------- 16383 -------- Saved 
+FES5313 ---------- 16384 -------- Saved 
+FES5313 ---------- 16385 -------- Saved 
+FES5313 ---------- 16386 -------- Saved 
+FES5313 ---------- 16387 -------- Saved 
+FES5312 ---------- 16388 -------- Saved 
+FES5312 ---------- 16389 -------- Saved 
+FES5312 ---------- 16390 -------- Saved 
+FES5312 ---------- 16391 -------- Saved 
+FES2215 ---------- 16392 -------- Saved 
+FES2215 ---------- 16393 -------- Saved 
+FES2215 ---------- 16394 -------- Saved 
+FES2215 ---------- 16395 -------- Saved 
+HIT-W181 — 病人信息娱乐系统 （床头计算机终端）  ---------- 16396 -------- Saved 
+HIT-W181 - 病患資訊娛樂系統（床頭電腦終端）  ---------- 16397 -------- Saved 
+HIT-W181 - 患者インフォテイメント・システム（ベッドサイド・コンピューター端末）  ---------- 16398 -------- Saved 
+HIT-W181 - Sistema de Entretenimento e Informação a Paciente (terminal de computador de cabeceira)  ---------- 16399 -------- Saved 
+FWA-3230 ---------- 16400 -------- Saved 
+FWA-3230 ---------- 16401 -------- Saved 
+FWA-3230 ---------- 16402 -------- Saved 
+FWA-3230 ---------- 16403 -------- Saved 
+COM-QM77 Rev.B ---------- 16404 -------- Saved 
+COM-QM77 Rev.B ---------- 16405 -------- Saved 
+COM-QM77 Rev.B ---------- 16406 -------- Saved 
+COM-QM77 Rev.B ---------- 16407 -------- Saved 
+OPS885 — 符合开放式可插拔规范 (OPS) 的 IPSS 第 4 代 Intel® Core™ i5 数字标牌播放器 ---------- 16408 -------- Saved 
+OPS885 -- 第 4 代 Intel® Core™ i5 開放性可插拔規範 (OPS) 數位電子看板播放機 ---------- 16409 -------- Saved 
+OPS885 -- IPSS 第 4 世代 Intel® Core™ i5 Open Pluggable Specification (OPS) デジタル・サイネージ・プレイヤー ---------- 16410 -------- Saved 
+OPS885 - reprodutor de sinalização digital Open Pluggable Specification (OPS) com a 4ª geração do Intel ® Core™ i5 ---------- 16411 -------- Saved 
+2I268HW/HB-Intel® Atom® N2600/N2800 2.5" SBC ---------- 16412 -------- Saved 
+2I268HW/HB-Intel® Atom® N2600/N2800 2.5" SBC ---------- 16413 -------- Saved 
+2I268HW/HB-Intel® Atom® N2600/N2800 2.5 インチの BC ---------- 16414 -------- Saved 
+2I268HW/HB-Intel® Atom® N2600/N2800 2.5" SBC ---------- 16415 -------- Saved 
+MB837-D25 - Intel® Atom® D2550 网络磁盘大小 SBC，带 Intel® NM10 PCH ---------- 16420 -------- Saved 
+MB837-D25 - Intel® Atom® D2550 網路磁碟大小的 SBC，配備 Intel® NM10 PCH ---------- 16421 -------- Saved 
+MB837-D25 - Intel® Atom® D2550 ネットワーキング・ディスクサイズ SBC（Intel® NM10 PCH を搭載） ---------- 16422 -------- Saved 
+MB837-D25 - Intel® Atom® D2550 SBC do Tamanho do Disco de Rede com Intel® NM10 PCH ---------- 16423 -------- Saved 
+MI802 - 基于 Intel® Atom® D2550/ N2600 的 Mini-ITX 主板，带 Intel® NM10 芯片组 ---------- 16424 -------- Saved 
+MI802 - 基於 Intel® Atom® D2550/ N2600 的 Mini-ITX 主機板，配備 Intel® NM10 Chipset ---------- 16425 -------- Saved 
+MI802 - Intel® Atom® D2550/ N2600 ベースのMini-ITX マザーボード（Intel® NM10 チップセットを搭載） ---------- 16426 -------- Saved 
+MI802 - Placa-mãe Mini-ITX Intel® Atom® D2550/N2600  com Chipset Intel® NM10 ---------- 16427 -------- Saved 
+MANO870 — Socket G2 Intel® Core™ i7/ i5/ i3/ Celeron® Mini ITX SBC 配备 Intel® QM77 PCH、HDMI/ DVI-D/VGA/LVDS、第 3 代 PCI Express、SATA-600、双 LAN 以及高清音频 ---------- 16428 -------- Saved 
+MANO870 -- Socket G2 Intel® Core™ i7/ i5/ i3/ Celeron® Mini ITX SBC，配備 Intel® QM77 PCH、HDMI/ DVI-D/VGA/LVDS、PCI Express Gen3、SATA-600、雙 LAN 和 HD 音訊 ---------- 16429 -------- Saved 
+MANO870 - ソケット G2 Intel® Core™ i7/ i5/ i3/ Celeron® Mini ITX SBC （Intel® QM77 PCH、HDMI/ DVI-D/VGA/LVDS、PCI Express Gen3、SATA-600、デュアル LAN、および HD オーディオを搭載） ---------- 16430 -------- Saved 
+MANO870 -- Soquete G2 Intel® Core™ i7/ i5/ i3/ Celeron® Mini ITX SBC com Intel® QM77 PCH, HDMI/DVI-D/VGA/LVDS, PCI Express Gen3, SATA-600, LANs Duplos e áudio HD ---------- 16431 -------- Saved 
+FES2924 ---------- 16432 -------- Saved 
+FES2924 ---------- 16433 -------- Saved 
+FES2924 ---------- 16434 -------- Saved 
+FES2924 ---------- 16435 -------- Saved 
+FPC7161 ---------- 16436 -------- Saved 
+FPC7161 ---------- 16437 -------- Saved 
+FPC7161 ---------- 16438 -------- Saved 
+FPC7161 ---------- 16439 -------- Saved 
+NISE 300- 无风扇工业计算机 ---------- 16440 -------- Saved 
+NISE 300- 無風扇工業電腦 ---------- 16441 -------- Saved 
+NISE 300- 産業用ファンレス・コンピューター ---------- 16442 -------- Saved 
+NISE 300 - Computador industrial sem ventoinha ---------- 16443 -------- Saved 
+FX-7220 ---------- 16444 -------- Saved 
+FX-7220 ---------- 16445 -------- Saved 
+FX-7220 ---------- 16446 -------- Saved 
+FX-7220 ---------- 16447 -------- Saved 
+FW-7610 ---------- 16448 -------- Saved 
+FW-7610 ---------- 16449 -------- Saved 
+FW-7610 ---------- 16450 -------- Saved 
+FW-7610 ---------- 16451 -------- Saved 
+FW-8895 ---------- 16452 -------- Saved 
+FW-8895 ---------- 16453 -------- Saved 
+FW-8895 ---------- 16454 -------- Saved 
+FW-8895 ---------- 16455 -------- Saved 
+NSA 7120B/7120R — 网络安全平台 ---------- 16456 -------- Saved 
+NSA 7120B/7120R- 網路安全平台 ---------- 16457 -------- Saved 
+NSA 7120B/7120R- ネットワーク・セキュリティ・プラットフォーム ---------- 16458 -------- Saved 
+NSA 7120B/7120R - Plataforma de Segurança de Rede ---------- 16459 -------- Saved 
+Sahara Slate PC i535 ---------- 16464 -------- Saved 
+Sahara Slate PC i535 ---------- 16465 -------- Saved 
+Sahara Slate PC i535 ---------- 16466 -------- Saved 
+Sahara Slate PC i535 ---------- 16467 -------- Saved 
+NEX 885- 工业主板 ---------- 16472 -------- Saved 
+NEX 885- 工業級主機板 ---------- 16473 -------- Saved 
+NEX 885- 産業用マザーボード ---------- 16474 -------- Saved 
+NEX 885 - Placa-mãe industrial ---------- 16475 -------- Saved 
+PEAK 887VL2- PICMG 1.3 全尺寸 SBC ---------- 16476 -------- Saved 
+PEAK 887VL2- PICMG 1.3 全尺寸 SBC ---------- 16477 -------- Saved 
+PEAK 887VL2- PICMG 1.3 フルサイズ SBC ---------- 16478 -------- Saved 
+PEAK 887VL2 - computador de placa única em tamanho PICMG 1.3 ---------- 16479 -------- Saved 
+SBS 耐用型处理器模块-COMe9120 ---------- 16480 -------- Saved 
+SBS 耐用型處理器模組 COMe9120 ---------- 16481 -------- Saved 
+SBS 頑丈なプロセッサー・モジュール- COMe9120 ---------- 16482 -------- Saved 
+Módulo de Processador Robusto SBS - COMe9120 ---------- 16483 -------- Saved 
+SBS 耐用型处理器模块 - COMe9020 ---------- 16484 -------- Saved 
+SBS 耐用型處理器模組 COMe9020 ---------- 16485 -------- Saved 
+SBS 頑丈なプロセッサー・モジュール - COMe9020 ---------- 16486 -------- Saved 
+Módulo de processador robusto SBS - COMe9020 ---------- 16487 -------- Saved 
+SBS 耐用型处理器模块 - SCM9022 ---------- 16488 -------- Saved 
+SBS 耐用型處理器模組-SCM9022 ---------- 16489 -------- Saved 
+SBS 頑丈なプロセッサー・モジュール - SCM9022 ---------- 16490 -------- Saved 
+Módulo de processador robusto SBS-SCM9022 ---------- 16491 -------- Saved 
+SBS 耐用型处理器模块-ECX9010 ---------- 16492 -------- Saved 
+SBS 耐用型處理器模組-ECX9010 ---------- 16493 -------- Saved 
+SBS 頑丈なプロセッサー・モジュール- ECX9010 ---------- 16494 -------- Saved 
+Módulo de Processador Robusto SBS - ECX9010 ---------- 16495 -------- Saved 
+SBS 耐用性处理器模块-ITX3010 ---------- 16496 -------- Saved 
+SBS 耐用型處理器模組 ITX3010 ---------- 16497 -------- Saved 
+SBS 頑丈なプロセッサー・モジュール- ITX3010 ---------- 16498 -------- Saved 
+Módulo de Processador Robusto SBS - ITX3010 ---------- 16499 -------- Saved 
+SBS 耐用型处理器模块 COM9510 ---------- 16500 -------- Saved 
+SBS 耐用型處理器模組 COM9510 ---------- 16501 -------- Saved 
+SBS 頑丈なプロセッサー・モジュール COM9510 ---------- 16502 -------- Saved 
+Módulo de processador robusto SBS - COM9510 ---------- 16503 -------- Saved 
+SBS 高可靠性处理器模块 CPCI-6811 ---------- 16504 -------- Saved 
+SBS 高可靠性處理器模組 CPCI-6811 ---------- 16505 -------- Saved 
+SBS 高信頼性プロセッサー・モジュール CPCI-6811 ---------- 16506 -------- Saved 
+Módulo Processador SBS de Alta Confiabilidade CPCI-6811 ---------- 16507 -------- Saved 
+COM Express 6 型模块-COMe8030 ---------- 16508 -------- Saved 
+COM Express Type 6 Module-COMe8030 ---------- 16509 -------- Saved 
+COM Express タイプ 6 モジュール-COMe8030 ---------- 16510 -------- Saved 
+Módulo COM Express tipo 6 - COMe8030 ---------- 16511 -------- Saved 
+ASMB-822I  ---------- 16512 -------- Saved 
+ASMB-822I  ---------- 16513 -------- Saved 
+ASMB-822I  ---------- 16514 -------- Saved 
+ASMB-822I  ---------- 16515 -------- Saved 
+ASMB-820I ---------- 16516 -------- Saved 
+ASMB-820I ---------- 16517 -------- Saved 
+ASMB-820I ---------- 16518 -------- Saved 
+ASMB-820I ---------- 16519 -------- Saved 
+ASMB-920IR ---------- 16520 -------- Saved 
+ASMB-920IR ---------- 16521 -------- Saved 
+ASMB-920IR ---------- 16522 -------- Saved 
+ASMB-920IR ---------- 16523 -------- Saved 
+ASMB-784 ---------- 16524 -------- Saved 
+ASMB-784 ---------- 16525 -------- Saved 
+ASMB-784 ---------- 16526 -------- Saved 
+ASMB-784 ---------- 16527 -------- Saved 
+ASMB-584  ---------- 16528 -------- Saved 
+ASMB-584  ---------- 16529 -------- Saved 
+ASMB-584  ---------- 16530 -------- Saved 
+ASMB-584  ---------- 16531 -------- Saved 
+PCE-5128 ---------- 16532 -------- Saved 
+PCE-5128 ---------- 16533 -------- Saved 
+PCE-5128 ---------- 16534 -------- Saved 
+PCE-5128 ---------- 16535 -------- Saved 
+AIMB-784 ---------- 16536 -------- Saved 
+AIMB-784 ---------- 16537 -------- Saved 
+AIMB-784 ---------- 16538 -------- Saved 
+AIMB-784 ---------- 16539 -------- Saved 
+MIC-6311 ---------- 16540 -------- Saved 
+MIC-6311 ---------- 16541 -------- Saved 
+MIC-6311 ---------- 16542 -------- Saved 
+MIC-6311 ---------- 16543 -------- Saved 
+FES8912 ---------- 16544 -------- Saved 
+FES8912 ---------- 16545 -------- Saved 
+FES8912 ---------- 16546 -------- Saved 
+FES8912 ---------- 16547 -------- Saved 
+FES8639 ---------- 16548 -------- Saved 
+FES8639 ---------- 16549 -------- Saved 
+FES8639 ---------- 16550 -------- Saved 
+FES8639 ---------- 16551 -------- Saved 
+TPC-671H/1071H/1271H/1571H/1771H ---------- 16552 -------- Saved 
+TPC-671H/1071H/1271H/1571H/1771H ---------- 16553 -------- Saved 
+TPC-671H/1071H/1271H/1571H/1771H ---------- 16554 -------- Saved 
+TPC-671H/1071H/1271H/1571H/1771H ---------- 16555 -------- Saved 
+FWA-6510 ---------- 16560 -------- Saved 
+FWA-6510 ---------- 16561 -------- Saved 
+FWA-6510 ---------- 16562 -------- Saved 
+FWA-6510 ---------- 16563 -------- Saved 
+MIC-3396 ---------- 16564 -------- Saved 
+MIC-3396 ---------- 16565 -------- Saved 
+MIC-3396 ---------- 16566 -------- Saved 
+MIC-3396 ---------- 16567 -------- Saved 
+Sahara Slate PC i575 ---------- 16568 -------- Saved 
+Sahara Slate PC i575 ---------- 16569 -------- Saved 
+Sahara Slate PC i575 ---------- 16570 -------- Saved 
+Sahara Slate PC i575 ---------- 16571 -------- Saved 
+ATX-6951 工业 ATX 主板 ---------- 16572 -------- Saved 
+ATX-6951 工業級 ATX 主機板 ---------- 16573 -------- Saved 
+ATX-6951 産業用 ATX マザーボード: ---------- 16574 -------- Saved 
+Placa-mãe industrial ATX ATX-6951 ---------- 16575 -------- Saved 
+COM Express - CEQM87 ---------- 16576 -------- Saved 
+COM Express - CEQM87 ---------- 16577 -------- Saved 
+COM Express - CEQM87 ---------- 16578 -------- Saved 
+COM Express - CEQM87 ---------- 16579 -------- Saved 
+SPCIE-C2260-R10 ---------- 16580 -------- Saved 
+SPCIE-C2260-R10 ---------- 16581 -------- Saved 
+SPCIE-C2260-R10 ---------- 16582 -------- Saved 
+SPCIE-C2260-R10 ---------- 16583 -------- Saved 
+PCIE-Q870-R10 ---------- 16584 -------- Saved 
+PCIE-Q870-R10 ---------- 16585 -------- Saved 
+PCIE-Q870-R10 ---------- 16586 -------- Saved 
+PCIE-Q870-R10 ---------- 16587 -------- Saved 
+IMB-Q870-R10 ---------- 16588 -------- Saved 
+IMB-Q870-R10 ---------- 16589 -------- Saved 
+IMB-Q870-R10 ---------- 16590 -------- Saved 
+IMB-Q870-R10 ---------- 16591 -------- Saved 
+IMBA-Q870-R10 ---------- 16592 -------- Saved 
+IMBA-Q870-R10 ---------- 16593 -------- Saved 
+IMBA-Q870-R10 ---------- 16594 -------- Saved 
+IMBA-Q870-R10 ---------- 16595 -------- Saved 
+IMBA-C2260-R10 ---------- 16596 -------- Saved 
+IMBA-C2260-R10 ---------- 16597 -------- Saved 
+IMBA-C2260-R10 ---------- 16598 -------- Saved 
+IMBA-C2260-R10 ---------- 16599 -------- Saved 
+MIX-110： 迷你 ITX 嵌入式计算机系统 ---------- 16600 -------- Saved 
+MIX-110 - Mini-ITX 嵌入式電腦系統 ---------- 16601 -------- Saved 
+MIX-110: Mini-ITX エンベデッド・コンピューター・システム ---------- 16602 -------- Saved 
+MIX-110 - sistema de computador Mini-ITX embarcado ---------- 16603 -------- Saved 
+cPCI-6520 ---------- 16604 -------- Saved 
+cPCI-6520 ---------- 16605 -------- Saved 
+cPCI-6520 ---------- 16606 -------- Saved 
+cPCI-6520 ---------- 16607 -------- Saved 
+cPCI-6620 — 超值的 6U CompactPCI® 低功耗第 2 代 Intel® Core™ i7 / Celeron® 处理器刀片 ---------- 16608 -------- Saved 
+cPCI-6620 - 高價值 6U CompactPCI® 低功耗第 2 代 Intel® Core™ i7 / Celeron® Processor Blade ---------- 16609 -------- Saved 
+cPCI-6620 - 高価値の 6U CompactPCI® 低消費電力の第 2 世代 Intel® Core™ i7 / Celeron® プロセッサー・ブレード ---------- 16610 -------- Saved 
+cPCI-6620 - lâmina de processadores 6U CompactPCI® Value de baixo consumo de energia para a 2ª geração do processador Intel® Core™ i7/Celeron® ---------- 16611 -------- Saved 
+aTCA-9300 — Intel® Xeon® E3 四核 10 千兆以太网 AdvancedTCA® 处理器刀片 ---------- 16612 -------- Saved 
+aTCA-9300 - Intel® Xeon® E3 Quad-Core 10 千兆乙太網 AdvancedTCA® Processor Blade ---------- 16613 -------- Saved 
+aTCA-9300 - Intel® Xeon® E3 クアッド・コア 10 ギガビット・イーサネット AdvancedTCA® プロセッサー・ブレード ---------- 16614 -------- Saved 
+aTCA-9300 - Lâmina de processador Intel® Xeon® E3 quad-core 10 Gigabit Ethernet AdvancedTCA® ---------- 16615 -------- Saved 
+CoreModule 720： 采用 Intel® Atom® 处理器 E600T 系列 的 Extreme Rugged™ PC/104-Plus 单板计算机  ---------- 16616 -------- Saved 
+CoreModule 720 ---------- 16617 -------- Saved 
+CoreModule 720: Intel® Atom® プロセッサー E600T シリーズを搭載した Extreme Rugged™ PC/104-Plus シングル ボード・コンピューター ---------- 16618 -------- Saved 
+CoreModule 720 ---------- 16619 -------- Saved 
+ReadyBoard 910 ---------- 16620 -------- Saved 
+ReadyBoard 910 ---------- 16621 -------- Saved 
+ReadyBoard 910 ---------- 16622 -------- Saved 
+ReadyBoard 910 ---------- 16623 -------- Saved 
+SEM-200 SATA 存储 AMC 卡 ---------- 16624 -------- Saved 
+SEM-200 SATA 存儲 AMC 卡 ---------- 16625 -------- Saved 
+SEM-200 SATA ストレージ AMC カード ---------- 16626 -------- Saved 
+Cartão AMC de armazenamento SATA SEM-200 ---------- 16627 -------- Saved 
+StarVX (HPEC) 系統 ---------- 16629 -------- Saved 
+Sistema StarVX (HPEC) ---------- 16631 -------- Saved 
+Express-CVC： 配备双核 Intel® Atom® 处理器和 Intel® NM10 高速芯片组的 Compact COM Express® 模块 ---------- 16632 -------- Saved 
+Express-CVC - 緊湊型 COM Express® 模組，採用雙核心 Intel® Atom® Processor 和 Intel® NM10 Express Chipset ---------- 16633 -------- Saved 
+Express-CVC: シングル/デュアルコア Intel® Atom® プロセッサーおよび Intel® NM10 チップセット搭載の コンパクト COM Express® モジュール ---------- 16634 -------- Saved 
+Express-CVC - módulo COM Express® Compact com o processador Intel® Atom® dual e chipset Intel® NM10 Express ---------- 16635 -------- Saved 
+Express-IB： 配备第 3 代 Intel® Core™ i7/i5/i3 处理器和 Intel® QM77 高速芯片组的 COM Express® 6 型模块 ---------- 16636 -------- Saved 
+Express-IB -COM Express® Type 6 模組，採用第 3 代 Intel® Core™ i7/i5/i3 Processor 和 Intel® QM77 Express Chipset ---------- 16637 -------- Saved 
+Express-IB: 第 3 世代 Intel® Core™ i7/i5/i3 プロセッサーおよび Intel® QM77 Express チップセットを搭載した COM Express® Type 6 モジュール ---------- 16638 -------- Saved 
+Express-IB - Módulo COM Express® tipo 6 com a 3ª geração do processador Intel® Core™ i7/i5/i3 e chipset Intel® QM77 Express ---------- 16639 -------- Saved 
+Express-HRR： 配备 Intel® Core™ i7 处理器和 Intel® QM67 芯片组的 Extreme Rugged™ COM Express® 6 型嵌入式计算机模块 ---------- 16640 -------- Saved 
+Express-HRR ---------- 16641 -------- Saved 
+Express-HRR: Intel® Core™ i7 プロセッサーおよび Intel® QM67 チップセット搭載の Extreme Rugged™ COM Express® Type 6 コンピューター・オン・モジュール ---------- 16642 -------- Saved 
+Express-HRR ---------- 16643 -------- Saved 
+BH-0927 ---------- 16644 -------- Saved 
+BH-0927 ---------- 16645 -------- Saved 
+BH-0927 ---------- 16646 -------- Saved 
+BH-0927 ---------- 16647 -------- Saved 
+PSB-873LF ---------- 16648 -------- Saved 
+PSB-873LF ---------- 16649 -------- Saved 
+PSB-873LF ---------- 16650 -------- Saved 
+PSB-873LF ---------- 16651 -------- Saved 
+Express-HR： 配备第二代 Intel® Core™ i7/i5/i3 处理器和移动式 Intel® QM67 芯片组的 COM Express® 6 型模块  ---------- 16652 -------- Saved 
+Express-HR ---------- 16653 -------- Saved 
+Express-HR: 第 2 世代 Intel® Core™ i7/i5/i3 プロセッサーおよびモバイル Intel® QM67チップセットを搭載した COM Express® Type 6 モジュール  ---------- 16654 -------- Saved 
+Express-HR ---------- 16655 -------- Saved 
+PMB-901LF ---------- 16656 -------- Saved 
+PMB-901LF ---------- 16657 -------- Saved 
+PMB-901LF ---------- 16658 -------- Saved 
+PMB-901LF ---------- 16659 -------- Saved 
+PMB-871LF ---------- 16660 -------- Saved 
+PMB-871LF ---------- 16661 -------- Saved 
+PMB-871LF ---------- 16662 -------- Saved 
+PMB-871LF ---------- 16663 -------- Saved 
+SA-5897 ---------- 16664 -------- Saved 
+SA-5897 ---------- 16665 -------- Saved 
+SA-5897 ---------- 16666 -------- Saved 
+SA-5897 ---------- 16667 -------- Saved 
+MM-7017 ---------- 16668 -------- Saved 
+MM-7017 ---------- 16669 -------- Saved 
+MM-7017 ---------- 16670 -------- Saved 
+MM-7017 ---------- 16671 -------- Saved 
+SP-6205/6207/6209 ---------- 16672 -------- Saved 
+SP-6205/6207/6209 ---------- 16673 -------- Saved 
+SP-6205/6207/6209 ---------- 16674 -------- Saved 
+SP-6205/6207/6209 ---------- 16675 -------- Saved 
+SP-6122 ---------- 16676 -------- Saved 
+SP-6122 ---------- 16677 -------- Saved 
+SP-6122 ---------- 16678 -------- Saved 
+SP-6122 ---------- 16679 -------- Saved 
+SP-6120 ---------- 16680 -------- Saved 
+SP-6120 ---------- 16681 -------- Saved 
+SP-6120 ---------- 16682 -------- Saved 
+SP-6120 ---------- 16683 -------- Saved 
+SP-6128 ---------- 16684 -------- Saved 
+SP-6128 ---------- 16685 -------- Saved 
+SP-6128 ---------- 16686 -------- Saved 
+SP-6128 ---------- 16687 -------- Saved 
+SE-8210 ---------- 16688 -------- Saved 
+SE-8210 ---------- 16689 -------- Saved 
+SE-8210 ---------- 16690 -------- Saved 
+SE-8210 ---------- 16691 -------- Saved 
+SE-8122 ---------- 16692 -------- Saved 
+SE-8122 ---------- 16693 -------- Saved 
+SE-8122 ---------- 16694 -------- Saved 
+SE-8122 ---------- 16695 -------- Saved 
+PA-6223-PPC ---------- 16696 -------- Saved 
+PA-6223-PPC ---------- 16697 -------- Saved 
+PA-6223-PPC ---------- 16698 -------- Saved 
+PA-6223-PPC ---------- 16699 -------- Saved 
+PA-6970-PPC ---------- 16700 -------- Saved 
+PA-6970-PPC ---------- 16701 -------- Saved 
+PA-6970-PPC ---------- 16702 -------- Saved 
+PA-6970-PPC ---------- 16703 -------- Saved 
+POS-6511-MIT ---------- 16704 -------- Saved 
+POS-6511-MIT ---------- 16705 -------- Saved 
+POS-6511-MIT ---------- 16706 -------- Saved 
+POS-6511-MIT ---------- 16707 -------- Saved 
+POS-6511-PPC ---------- 16708 -------- Saved 
+POS-6511-PPC ---------- 16709 -------- Saved 
+POS-6511-PPC ---------- 16710 -------- Saved 
+POS-6511-PPC ---------- 16711 -------- Saved 
+PA-6223 ---------- 16712 -------- Saved 
+PA-6223 ---------- 16713 -------- Saved 
+PA-6223 ---------- 16714 -------- Saved 
+PA-6223 ---------- 16715 -------- Saved 
+PA-3320 ---------- 16716 -------- Saved 
+PA-3320 ---------- 16717 -------- Saved 
+PA-3320 ---------- 16718 -------- Saved 
+PA-3320 ---------- 16719 -------- Saved 
+PA-3170 ---------- 16720 -------- Saved 
+PA-3170 ---------- 16721 -------- Saved 
+PA-3170 ---------- 16722 -------- Saved 
+PA-3170 ---------- 16723 -------- Saved 
+PC9080 ---------- 16724 -------- Saved 
+PC9080 ---------- 16725 -------- Saved 
+PC9080 ---------- 16726 -------- Saved 
+PC9080 ---------- 16727 -------- Saved 
+FPC5121 ---------- 16728 -------- Saved 
+FPC5121 ---------- 16729 -------- Saved 
+FPC5121 ---------- 16730 -------- Saved 
+FPC5121 ---------- 16731 -------- Saved 
+FPC5105 ---------- 16732 -------- Saved 
+FPC5105 ---------- 16733 -------- Saved 
+FPC5105 ---------- 16734 -------- Saved 
+FPC5105 ---------- 16735 -------- Saved 
+KTHM65/mITX - 具有超常使用寿命的嵌入式&迷你 ITX 板，配备 Intel® HM65 芯片组，拥有更高的性价比 ---------- 16736 -------- Saved 
+KTHM65/mITX - 嵌入式 & 長期可用 Mini ITX 主機板，配備 Intel® HM65 Chipset 以最佳化性價比 ---------- 16737 -------- Saved 
+KTHM65/mITX - 最適な価格/パフォーマンス率を実現するために Intel® HM65 チップセットが搭載された、エンベデッド、そして長期利用が可能な Mini ITXMini ITX ボード ---------- 16738 -------- Saved 
+KTHM65/mITX - placa embarcada & e disponível em longo prazo com chipset Intel® HM65 para uma relação preço-desempenho otimizada ---------- 16739 -------- Saved 
+FW-7551 ---------- 16748 -------- Saved 
+FW-7551 ---------- 16749 -------- Saved 
+FW-7551 ---------- 16750 -------- Saved 
+FW-7551 ---------- 16751 -------- Saved 
+FW-7573 ---------- 16752 -------- Saved 
+FW-7573 ---------- 16753 -------- Saved 
+FW-7573 ---------- 16754 -------- Saved 
+FW-7573 ---------- 16755 -------- Saved 
+FW-7571 ---------- 16756 -------- Saved 
+FW-7571 ---------- 16757 -------- Saved 
+FW-7571 ---------- 16758 -------- Saved 
+FW-7571 ---------- 16759 -------- Saved 
+LVC-5770 — 双核 Intel® Core™ i7-3517UE 车载计算机 ---------- 16760 -------- Saved 
+LVC-5770 ---------- 16761 -------- Saved 
+LVC-5770- デュアルコア Intel® Core™ i7-3517UE 車載用コンピューター ---------- 16762 -------- Saved 
+LVC-5770 ---------- 16763 -------- Saved 
+WADE-8077 ---------- 16764 -------- Saved 
+WADE-8077 ---------- 16765 -------- Saved 
+WADE-8077 ---------- 16766 -------- Saved 
+WADE-8077 ---------- 16767 -------- Saved 
+iS-2840 ---------- 16768 -------- Saved 
+iS-2840 ---------- 16769 -------- Saved 
+iS-2840 ---------- 16770 -------- Saved 
+iS-2840 ---------- 16771 -------- Saved 
+SourcePoint 调试程序 ---------- 16772 -------- Saved 
+SourcePoint 偵錯器 ---------- 16773 -------- Saved 
+SourcePoint デバッガー ---------- 16774 -------- Saved 
+Depurador SourcePoint ---------- 16775 -------- Saved 
+LX-1000 ---------- 16776 -------- Saved 
+LX-1000 ---------- 16777 -------- Saved 
+LX-1000 ---------- 16778 -------- Saved 
+LX-1000 ---------- 16779 -------- Saved 
+NViS 5240- 4 Bay Tower NVR 零售监测 ---------- 16780 -------- Saved 
+NViS 5240- 4 托架塔式 NVR 零售監視 ---------- 16781 -------- Saved 
+NViS 5240- 4 ベイ・タワー NVR リテール・サーベイランス ---------- 16782 -------- Saved 
+NViS 5240 - Vigilância NVR para varejo em torre com 4 baias ---------- 16783 -------- Saved 
+NViS 6220 - 混合 NVR/DVR 企业监控 ---------- 16784 -------- Saved 
+NViS 6220- 混合 NVR/DVR 企業監視 ---------- 16785 -------- Saved 
+NViS 6220- ハイブリッド NVR/DVR エンタープライズ・サーベイランス ---------- 16786 -------- Saved 
+NViS 6220- Vigilância empresaria NVR/DVR híbrida ---------- 16787 -------- Saved 
+NViS 3542 — 移动式 NVR ---------- 16788 -------- Saved 
+NViS 3542 － 行動式 NVR ---------- 16789 -------- Saved 
+NViS 3542- モバイル NVR ---------- 16790 -------- Saved 
+NViS 3542- NVR móvel ---------- 16791 -------- Saved 
+Mini-ITX AIMB-214 ---------- 16792 -------- Saved 
+Mini-ITX AIMB-214 ---------- 16793 -------- Saved 
+Mini-ITX AIMB-214 ---------- 16794 -------- Saved 
+Mini-ITX AIMB-214 ---------- 16795 -------- Saved 
+Avalue ESM-QM87 — 采用 Intel® QM87 高速芯片组的 COM Express ---------- 16796 -------- Saved 
+Avalue ESM-QM87 - COM Express 採用 Intel® QM87 Express Chipset ---------- 16797 -------- Saved 
+Avalue ESM-QM87 - Intel® QM87 Express チップセットを搭載した COM Express ---------- 16798 -------- Saved 
+AValue ESM-QM87 - COM Express com chipset Intel® QM87 Express ---------- 16799 -------- Saved 
+LVC-5000N4 - 双核 Intel® Celeron® 847E 车载计算机 ---------- 16800 -------- Saved 
+LVC-5000N4/N4-7A ---------- 16801 -------- Saved 
+LVC-5000N4 - デュアルコア Intel® Celeron® 847E 車載用コンピューター ---------- 16802 -------- Saved 
+LVC-5000N4/N4-7A ---------- 16803 -------- Saved 
+LVC-5000 ---------- 16804 -------- Saved 
+LVC-5000 ---------- 16805 -------- Saved 
+LVC-5000 ---------- 16806 -------- Saved 
+LVC-5000 ---------- 16807 -------- Saved 
+X7SPA-L 超微迷你 ITX 主板 ---------- 16808 -------- Saved 
+X7SPA-L 超微 mini-ITX 主機板 ---------- 16809 -------- Saved 
+X7SPA-L スーパーマイクロミニ ITX マザーボード ---------- 16810 -------- Saved 
+Placa-mãe mini-ITX Supermicro X7SPA-L ---------- 16811 -------- Saved 
+X7SPA-H 超微迷你 ITX 主板 ---------- 16812 -------- Saved 
+X7SPA-H 超微 mini-ITX 主機板 ---------- 16813 -------- Saved 
+X7SPA-H スーパーマイクロ・ミニ  ITX マザーボード ---------- 16814 -------- Saved 
+Placa-mãe mini-ITX Supermicro X7SPA-H ---------- 16815 -------- Saved 
+X7SPA-H-D525 超微迷你 ITX 主板 ---------- 16816 -------- Saved 
+X7SPA-H-D525 超微 mini-ITX 主機板 ---------- 16817 -------- Saved 
+X7SPA-H-D525 スーパーマイクロミニ ITX マザーボード ---------- 16818 -------- Saved 
+Placa-mãe mini-ITX Supermicro X7SPA-H-D525 ---------- 16819 -------- Saved 
+Klocwork Cahoots ---------- 16820 -------- Saved 
+Klocwork Cahoots ---------- 16821 -------- Saved 
+Klocwork Cahoots ---------- 16822 -------- Saved 
+Klocwork Cahoots ---------- 16823 -------- Saved 
+C7H61-L 超微 ATX 主板 ---------- 16824 -------- Saved 
+C7H61-L 超微 ATX 主機板 ---------- 16825 -------- Saved 
+C7H61-L スーパーマイクロ ATX マザーボード ---------- 16826 -------- Saved 
+Placa-mãe ATX C7H61-L Supermicro ---------- 16827 -------- Saved 
+ M1922 19" 无风扇医疗站 ---------- 16828 -------- Saved 
+ M1922 19" 無風扇醫務站 ---------- 16829 -------- Saved 
+ M1922 19 インチ ファンレス医療ステーション ---------- 16830 -------- Saved 
+ Estação médica sem ventoinha M1922 de 19" ---------- 16831 -------- Saved 
+HD310-Q87 — 配备第 4 代 Intel® Core™ 处理器的 microATX 嵌入式主板 ---------- 16832 -------- Saved 
+HD310-Q87 - 第 4 世代 Intel® Core™ プロセッサーを搭載した microATX エンベデッド・ボード ---------- 16833 -------- Saved 
+I212AR 存储设备 ---------- 16834 -------- Saved 
+I212AR 存儲裝置 ---------- 16835 -------- Saved 
+I212AR ストレージ・アプライアンス ---------- 16836 -------- Saved 
+Dispositivo de armazenamento I212AR ---------- 16837 -------- Saved 
+Axeda M2M 平台 ---------- 16838 -------- Saved 
+Axeda M2M 平台 ---------- 16839 -------- Saved 
+Axeda M2M プラットフォーム ---------- 16840 -------- Saved 
+Plataforma Axeda M2M ---------- 16841 -------- Saved 
+COM Express C6B-7S ---------- 16842 -------- Saved 
+COM Express C6B-7S ---------- 16843 -------- Saved 
+COM Express C6B-7S ---------- 16844 -------- Saved 
+COM Express C6B-7S ---------- 16845 -------- Saved 
+Insight Connect 设备管理平台 ---------- 16846 -------- Saved 
+InSight Connect 裝置管理平台 ---------- 16847 -------- Saved 
+InSight Connect デバイス管理プラットフォーム ---------- 16848 -------- Saved 
+Plataforma de gerenciamento de dispositivo InSight Connect ---------- 16849 -------- Saved 
+7" PoE 客户端平板电脑  ---------- 16850 -------- Saved 
+7" PoE 用戶端平板 PC  ---------- 16851 -------- Saved 
+7 インチ PoE クライアント・パネル PC  ---------- 16852 -------- Saved 
+Panel PC de 7" para cliente PoE  ---------- 16853 -------- Saved 
+UNO2I260A 紧凑型 PoE 客户端解决方案 ---------- 16854 -------- Saved 
+UNO2I260A-緊湊型 PoE 用戶端解決方案 ---------- 16855 -------- Saved 
+UNO2I260A 小型 PoE クライアント・ソリューション ---------- 16857 -------- Saved 
+UNO2I260A - Solução compacta para cliente PoE ---------- 16858 -------- Saved 
+Nemo-IP66/67 防水解决方案 ---------- 16859 -------- Saved 
+Nemo-IP66/67 防水解決方案 ---------- 16860 -------- Saved 
+Nemo-IP66/67 耐水性ソリューション ---------- 16861 -------- Saved 
+Solução impermeável Nemo-IP66/67 ---------- 16862 -------- Saved 
+新款 10.4" 液晶电脑 -IP66/67 防水液晶电脑解决方案 ---------- 16863 -------- Saved 
+Nemo 10.4" 平板 PC -IP66/67 防水平板 PC 解決方案 ---------- 16864 -------- Saved 
+Nemo 10.4 インチパネル PC -IP66/67 耐水パネル PC ソリューション ---------- 16865 -------- Saved 
+Solução de Panel PC Nemo de 10,4" impermeável IP66/67 ---------- 16866 -------- Saved 
+Bunker XRV-5241 1U 耐用型服务器 ---------- 16867 -------- Saved 
+Bunker XRV-5241 1U 加固型伺服器 ---------- 16868 -------- Saved 
+Bunker XRV-5241 1U 堅牢なサーバー ---------- 16869 -------- Saved 
+Servidor robusto 1U bunker XRV-5241 ---------- 16870 -------- Saved 
+3I847A/C - Intel® Celeron® 处理器 847E CPU，3.5" SBC ---------- 16871 -------- Saved 
+3I847A/C - Intel® Celeron® Processor 847E CPU, 3.5" SBC ---------- 16872 -------- Saved 
+3I847A/C - Intel® Celeron® プロセッサー 847E CPU、3.5 インチ SBC ---------- 16873 -------- Saved 
+3I847A/C - SBC de 3,5" com processador Intel® Celeron® CPU 847E ---------- 16874 -------- Saved 
+CI770C - 第 3 代 Intel® Core™ 处理器 (LEX STD) SBC ---------- 16875 -------- Saved 
+CI770C - 第 3 代 Intel® Core™ Processor (LEX STD) SBC ---------- 16876 -------- Saved 
+CI770C - 第 3 世代 Intel® Core™ プロセッサー (LEX STD) SBC ---------- 16877 -------- Saved 
+CI770C - SBC com 3ª Geração de Processador Intel® Core™ (LEX STD) ---------- 16878 -------- Saved 
+CI770A - 第 3 代 Intel® Core™ 处理器 (LEX STD) SBC ---------- 16879 -------- Saved 
+CI770A - 第 3 代 Intel® Core™ Processor (LEX STD) SBC ---------- 16880 -------- Saved 
+CI770A - 第 3 世代 Intel® Core™ プロセッサー (LEX STD) SBC ---------- 16881 -------- Saved 
+CI770A - SBC com 3ª Geração de Processador Intel® Core™ (LEX STD) ---------- 16882 -------- Saved 
+NI525A-Intel® Atom® D525 (LEX STD) SBC ---------- 16883 -------- Saved 
+NI525A-Intel® Atom® D525 (LEX STD) SBC ---------- 16884 -------- Saved 
+NI525A-Intel® Atom® D525 (LEX STD) SBC ---------- 16885 -------- Saved 
+NI525A - SBC Intel ® Atom® D525 (LEX STD) ---------- 16886 -------- Saved 
+3I525CW-Intel® Atom® D525 3.5" SBC ---------- 16887 -------- Saved 
+3I525CW-Intel® Atom® D525 3.5" SBC ---------- 16888 -------- Saved 
+3I525CW-Intel® Atom® D525 3.5 インチ SBC ---------- 16889 -------- Saved 
+3I525CW - SBC de 3,5" com Intel® Atom® D525 ---------- 16890 -------- Saved 
+3I525AW-Intel® Atom® D525 3.5" SBC ---------- 16891 -------- Saved 
+3I525AW-Intel® Atom® D525 3.5" SBC ---------- 16892 -------- Saved 
+3I525AW-Intel® Atom® D525 3.5 インチ SBC ---------- 16893 -------- Saved 
+3I525AW - SBC Intel® Atom® D525 de 3,5" ---------- 16894 -------- Saved 
+2I260D-Intel® Atom® N2600 2.5" SBC ---------- 16895 -------- Saved 
+2I260D-Intel® Atom® N2600 2.5" SBC ---------- 16896 -------- Saved 
+2I260D-Intel® Atom® N2600 2.5 インチ SBC ---------- 16897 -------- Saved 
+2I260D - SBC de 2,5" com Intel® Atom® N2600 ---------- 16898 -------- Saved 
+2I260A-Intel® Atom® N2600 2.5" SBC ---------- 16899 -------- Saved 
+2I260A-Intel® Atom® N2600 2.5" SBC ---------- 16900 -------- Saved 
+2I260A-Intel® Atom® N2600 2.5 インチ SBC ---------- 16901 -------- Saved 
+2I260A - SBC de 2,5" com Intel® Atom® N2600 ---------- 16902 -------- Saved 
+2I268C-Intel® Atom® N2600/N2800 2.5" SBC ---------- 16903 -------- Saved 
+2I268C-Intel® Atom® N2600/N2800 2.5" SBC ---------- 16904 -------- Saved 
+2I268C-Intel® Atom® N2600/N2800 2.5 インチ SBC ---------- 16905 -------- Saved 
+2I268C - SBC de 2,5" com Intel® Atom® N2600/N2800 ---------- 16906 -------- Saved 
+Stratus MCS ---------- 16907 -------- Saved 
+Stratus MCS ---------- 16908 -------- Saved 
+Stratus MCS ---------- 16909 -------- Saved 
+Stratus MCS ---------- 16910 -------- Saved 
+Intel® Xeon Phi™ 协处理器 Orion 开发工作站  ---------- 16911 -------- Saved 
+Intel® Xeon Phi™ Coprocessor 的 Orion 開發工作站  ---------- 16912 -------- Saved 
+Intel® Xeon Phi™ コプロセッサー向け Orion 開発ステーション  ---------- 16913 -------- Saved 
+Estação de trabalho Orion Development para o coprocessador Intel® Xeon Phi™  ---------- 16914 -------- Saved 
+FW-8759 ---------- 16915 -------- Saved 
+FW-8759 ---------- 16917 -------- Saved 
+EHS6 ---------- 16919 -------- Saved 
+EHS6 ---------- 16920 -------- Saved 
+EHS6 ---------- 16921 -------- Saved 
+EHS6 ---------- 16922 -------- Saved 
+BGS5 ---------- 16923 -------- Saved 
+BGS5 ---------- 16924 -------- Saved 
+BGS5 ---------- 16925 -------- Saved 
+BGS5 ---------- 16926 -------- Saved 
+嵌入式主板 EPIC (Intel® Celeron® 847 NM70) 1212 ---------- 16927 -------- Saved 
+嵌入式主機板 EPIC (Intel® Celeron® 847 NM70) 1212 ---------- 16928 -------- Saved 
+エンベデッド・ボード EPIC (Intel® Celeron® 847 NM70) 1212 ---------- 16929 -------- Saved 
+Placa embarcada EPIC (Intel® Celeron® 847 NM70) 1212 ---------- 16930 -------- Saved 
+FEG D2700 MINI-Box v0.0 ---------- 16931 -------- Saved 
+FEG D2700 MINI-Box v0.0 ---------- 16932 -------- Saved 
+FEG D2700 MINI-Box v0.0 ---------- 16933 -------- Saved 
+FEG D2700 MINI-Box v0.0 ---------- 16934 -------- Saved 
+D3236-S 工业系列 ATX 主板 ---------- 16935 -------- Saved 
+D3236-S インダストリアル・シリーズ ATX メインボード ---------- 16936 -------- Saved 
+MTC-6 ---------- 16939 -------- Saved 
+MTC-6 ---------- 16940 -------- Saved 
+MTC-6 ---------- 16941 -------- Saved 
+TREK-753 ---------- 16945 -------- Saved 
+TREK-753 ---------- 16946 -------- Saved 
+TREK-753 ---------- 16947 -------- Saved 
+ANT2I260A — 手掌大小的瘦客户端/数字标牌解决方案 ---------- 16948 -------- Saved 
+ANT2I260A 掌上精簡型用戶端/數位電子看板解決方案 ---------- 16949 -------- Saved 
+ANT2I260A - Solução thin client/sinalização digital compacta ---------- 16950 -------- Saved 
+配备第 4 代 Intel® Xeon® 处理器的 DL631-C226 ATX 主板 ---------- 16951 -------- Saved 
+DL631-C226 ATX 主機板採用第 4 代 Intel® Xeon® processor ---------- 16952 -------- Saved 
+Placa-mãe DL631-C226 ATX com processadores de 4ª geração Intel® Xeon® ---------- 16953 -------- Saved 
+VMC 3000/3001 — 车载计算机 ---------- 16954 -------- Saved 
+VMC 3000/3001 - 車載電腦 ---------- 16955 -------- Saved 
+VMC 3000/3001 - computador para montagem em veículos ---------- 16956 -------- Saved 
+VMC 3500/35001 — 车载计算机  ---------- 16957 -------- Saved 
+VMC 3500/35001- 車載電腦  ---------- 16958 -------- Saved 
+VMC 3500/35001- computador para montagem em veículos  ---------- 16959 -------- Saved 
+COM Express Carrier C6-AD-T6T2 ---------- 16963 -------- Saved 
+COM Express Carrier C6-AD-T6T2 ---------- 16964 -------- Saved 
+Placa de expansão COM Express C6-AD-T6T2 ---------- 16965 -------- Saved 
+COM Express Carrier C6-MB-EVA ---------- 16966 -------- Saved 
+COM Express Carrier C6-MB-EVA ---------- 16967 -------- Saved 
+Placa de expansão COM Express C6-MB-EVA ---------- 16968 -------- Saved 
+COM Express C6B-8S ---------- 16969 -------- Saved 
+COM Express C6B-8S ---------- 16970 -------- Saved 
+COM Express C6B-8S ---------- 16971 -------- Saved 
+FPC8759 ---------- 16972 -------- Saved 
+FPC8759 ---------- 16973 -------- Saved 
+FPC8759 ---------- 16974 -------- Saved 
+Twister CI770A-Intel® Core™ i5/i7 重型无风扇系统  ---------- 16975 -------- Saved 
+Twister CI770A-Intel® Core™ i5/i7 重型無風扇系統  ---------- 16976 -------- Saved 
+Twister CI770A - Sistema sem ventoinha para trabalho pesado Intel® Core™ i5/i7  ---------- 16977 -------- Saved 
+Twister NI525A- 4 通道 PoE 服务器解决方案 ---------- 16978 -------- Saved 
+Twister NI525A- 4 通道 PoE 伺服器解決方案 ---------- 16979 -------- Saved 
+Twister NI525A- Solução para servidor com 4 canais PoE ---------- 16980 -------- Saved 
+RMC8333A ---------- 16984 -------- Saved 
+RMC8333A ---------- 16985 -------- Saved 
+RMC8333A ---------- 16986 -------- Saved 
+RMC7132 ---------- 16987 -------- Saved 
+RMC7132 ---------- 16988 -------- Saved 
+RMC7132 ---------- 16989 -------- Saved 
+支持第 4 代 Intel® Core™ 处理器，可进行复杂处理器板的验证及测试 ---------- 16990 -------- Saved 
+支援第 4 代 Intel® Core™ processor 驗證和測試複雜的處理器板 ---------- 16991 -------- Saved 
+Suporta a quarta geração dos processadores Intel® Core™ para validação e teste de placas de processador complexas ---------- 16992 -------- Saved 
+UTC-515B ---------- 17001 -------- Saved 
+UTC-515B ---------- 17002 -------- Saved 
+UTC-515B ---------- 17003 -------- Saved 
+UTC-515B ---------- 17004 -------- Saved 
+UTC-532C ---------- 17005 -------- Saved 
+UTC-532C ---------- 17006 -------- Saved 
+UTC-532C ---------- 17007 -------- Saved 
+UTC-532C ---------- 17008 -------- Saved 
+ADE-8063 ---------- 17009 -------- Saved 
+ADE-8063 ---------- 17010 -------- Saved 
+ADE-8063 ---------- 17011 -------- Saved 
+ADE-8063 ---------- 17012 -------- Saved 
+DS-060 ---------- 17013 -------- Saved 
+DS-060 ---------- 17014 -------- Saved 
+DS-060 ---------- 17015 -------- Saved 
+DS-060 ---------- 17016 -------- Saved 
+S4336 V3 4U 存储服务器 ---------- 17017 -------- Saved 
+S4336 儲存伺服器 ---------- 17018 -------- Saved 
+S4336 V3 4U ストレージ・サーバー ---------- 17019 -------- Saved 
+Servidor de armazenamento S4336 ---------- 17020 -------- Saved 
+S4324 V3 4U 存储服务器 ---------- 17021 -------- Saved 
+S4324 儲存伺服器 ---------- 17022 -------- Saved 
+S4324 V3 4U ストレージ・サーバー ---------- 17023 -------- Saved 
+Servidor de armazenamento S4324 ---------- 17024 -------- Saved 
+客户软件服务 ---------- 17025 -------- Saved 
+自訂軟體服務 ---------- 17026 -------- Saved 
+カスタム・ソフトウェア・サービス ---------- 17027 -------- Saved 
+Serviços de software personalizados ---------- 17028 -------- Saved 
+工程研发服务 ---------- 17029 -------- Saved 
+工程研發服務 ---------- 17030 -------- Saved 
+エンジニアリング R&D サービス ---------- 17031 -------- Saved 
+Serviços de engenharia de P&D ---------- 17032 -------- Saved 
+XVR16 ---------- 17033 -------- Saved 
+XVR16 ---------- 17034 -------- Saved 
+XVR16 ---------- 17035 -------- Saved 
+XVR16 ---------- 17036 -------- Saved 
+LEC-7070 - 由第 3 代 Intel® Celeron® 处理器驱动的紧凑型高性能 IPC ---------- 17045 -------- Saved 
+LEC-7070 ---------- 17046 -------- Saved 
+LEC-7070-コンパクト高性能 IPC、第 3 世代 Intel® Celeron® プロセッサーを搭載 ---------- 17047 -------- Saved 
+LEC-7070 ---------- 17048 -------- Saved 
+NDiS OPS-M50 — OPS 数字标牌播放器 ---------- 17053 -------- Saved 
+NDiS OPS-M50- OPS 數位電子看板播放機 ---------- 17054 -------- Saved 
+NDiS OPS-M50- OPS デジタル・サイネージ・プレーヤー ---------- 17055 -------- Saved 
+NDiS OPS-M50- reprodutor de sinalização digital OPS ---------- 17056 -------- Saved 
+NDiS B532 — 高性能数字标牌播放器 ---------- 17057 -------- Saved 
+NDiS B532 - 高效能數位電子看板播放機 ---------- 17058 -------- Saved 
+NDiS B532 - 高性能 Intel® Coreデジタル・サイネージ・プレーヤー ---------- 17059 -------- Saved 
+NDiS B532- reprodutor de sinalização digital de alto desempenho ---------- 17060 -------- Saved 
+NDiS B322 — 高性价比的数字标牌播放器 ---------- 17061 -------- Saved 
+NDiS B322 - 低成本數位電子看板播放機 ---------- 17062 -------- Saved 
+NDiS B322 - コスト効果の高いデジタル・サイネージ・プレーヤー ---------- 17063 -------- Saved 
+NDiS B322 - reprodutor de sinalização digital de baixo custo ---------- 17064 -------- Saved 
+NDiS 126 — 经济实惠的数字标牌播放器 ---------- 17065 -------- Saved 
+NDiS 126 - 低成本數位電子看板播放機 ---------- 17066 -------- Saved 
+NDiS 126- コスト効果の高いデジタル・サイネージ・プレーヤー ---------- 17067 -------- Saved 
+NDiS 126 - reprodutor de sinalização digital de baixo custo ---------- 17068 -------- Saved 
+ClusterStor™ 6000 HPC 存储解决方案 ---------- 17073 -------- Saved 
+ClusterStor ™ 6000 HPC 存儲解決方案 ---------- 17074 -------- Saved 
+ClusterStor™ 6000 HPC ストレージ・ソリューション ---------- 17075 -------- Saved 
+Solução de armazenamento ClusterStor™ 6000 HPC ---------- 17076 -------- Saved 
+Insyde 软件 BIOS 定制和源代码授权 ---------- 17077 -------- Saved 
+Insyde Software BIOS 自訂和原始程式碼許可 ---------- 17078 -------- Saved 
+Insyde Software の BIOS カスタマイズとソースコード・ライセンシング ---------- 17079 -------- Saved 
+Personalização de BIOS e licenciamento de código-fonte Insyde Software ---------- 17080 -------- Saved 
+ANT2I260D — 手掌大小薄型客户 / 网络解决方案 ---------- 17081 -------- Saved 
+ANT2I260D-掌上型瘦用戶端/網路解決方案 ---------- 17082 -------- Saved 
+ANT2I260D-手のひらサイズのシンクライアント/ネットワーキング・ソリューション ---------- 17083 -------- Saved 
+ANT2I260D - solução thin client/networking compacta ---------- 17084 -------- Saved 
+Thecus N4520  ---------- 17085 -------- Saved 
+Thecus N4520  ---------- 17086 -------- Saved 
+M2M 网关中间件 ---------- 17105 -------- Saved 
+M2M 閘道仲介軟體 ---------- 17106 -------- Saved 
+ORION RS 服务器 ---------- 17109 -------- Saved 
+ORION 資料中心伺服器 ---------- 17110 -------- Saved 
+T 系列 40G 平台（T40） ---------- 17111 -------- Saved 
+T 系列 40G 平台 (T40) ---------- 17112 -------- Saved 
+NORCO EMB-4922 - Intel® HM76 基于 EPIC 板，带有多个显示器 ---------- 17121 -------- Saved 
+NORCO EMB-4922 - 基於 Intel® HM76 的 EPIC 主機板，帶多顯示 ---------- 17122 -------- Saved 
+NORCO BIS-6330A Intel® Core™ i3/i5 适用 OPS 模块  ---------- 17123 -------- Saved 
+NORCO BIS-6330A Intel® Core™ i3/i5 OPS 模組  ---------- 17124 -------- Saved 
+由 HB132 Intel® Core™ 支持的迷你 ITX 主板配备十个 USB 和十个 COM 端口 ---------- 17125 -------- Saved 
+搭載 HB132 Intel® Core™ 的 Mini ITX Motherboard，配備十個 USB 和十個 COM 埠 ---------- 17126 -------- Saved 
+配备双 NIC 和六个 COM 端口的 HB131 低功耗 Intel® Atom® 迷你 ITX 主板 ---------- 17127 -------- Saved 
+HB131 低功耗 Intel® Atom® Mini ITX 主機板，帶雙 NIC 和六個 COM 埠 ---------- 17128 -------- Saved 
+BIS-6595 Intel Intel® Atom® 支持的 “ICEFIN” 无风扇嵌入式系统  ---------- 17129 -------- Saved 
+BIS-6595 Intel Intel® Atom® 驅動「ICEFIN」無風扇嵌入系統  ---------- 17130 -------- Saved 
+PWS-770 ---------- 17131 -------- Saved 
+PWS-770 ---------- 17132 -------- Saved 
+CMB-A9SP2 ---------- 17133 -------- Saved 
+CMB-A9SP2 ---------- 17134 -------- Saved 
+CMB-A9SC2 ---------- 17135 -------- Saved 
+CMB-A9SC2 ---------- 17136 -------- Saved 
+CMB-A9DP2 ---------- 17137 -------- Saved 
+CMB-A9DP2 ---------- 17138 -------- Saved 
+HSB-525I ---------- 17139 -------- Saved 
+HSB-525I ---------- 17140 -------- Saved 
+FSB-B75G ---------- 17141 -------- Saved 
+FSB-B75G ---------- 17142 -------- Saved 
+IMBM-H61B ---------- 17143 -------- Saved 
+IMBM-H61B ---------- 17144 -------- Saved 
+IMBM-H61A ---------- 17145 -------- Saved 
+IMBM-H61A ---------- 17146 -------- Saved 
+IMBM-Q67A ---------- 17147 -------- Saved 
+IMBM-Q67A ---------- 17148 -------- Saved 
+IMBA-H61A（工业 ATX 主板） ---------- 17149 -------- Saved 
+IMBA-H61A（工業級 ATX 主機板） ---------- 17150 -------- Saved 
+EMB-9459T Rev.B ---------- 17151 -------- Saved 
+EMB-9459T Rev.B ---------- 17152 -------- Saved 
+EMB-H61B ---------- 17153 -------- Saved 
+EMB-H61B ---------- 17154 -------- Saved 
+EMB-B75B （嵌入式主板） ---------- 17155 -------- Saved 
+EMB-B75B（嵌入式主機板） ---------- 17156 -------- Saved 
+EMB-B75A （嵌入式主板） ---------- 17157 -------- Saved 
+EMB-B75A（嵌入式主機板） ---------- 17158 -------- Saved 
+MIX-220： 配备 Intel® Core™ i7/i5 MI-220 迷你 ITX 主板的嵌入式计算机系统 ---------- 17159 -------- Saved 
+採用 Core i7/i5 MI-220 Mini-ITX 主機板的 MIX-220 嵌入式電腦系統 ---------- 17160 -------- Saved 
+SP-15W03 ---------- 17162 -------- Saved 
+SP-803 ---------- 17163 -------- Saved 
+SP-803 ---------- 17164 -------- Saved 
+BFS-15W02 ---------- 17166 -------- Saved 
+AU970 Fanless Rugged Computer with Intel® Core™ Processor ---------- 17169 -------- Saved 
+LGX AU972 Fanless Rugged Expandable Computer with Intel® Core™ Processor ---------- 17170 -------- Saved 
+ML300 Fanless NUC Industrial Computer ---------- 17171 -------- Saved 
+ML250 Fanless Industrial Computer with Intel® Core™ i3/i5/Celeron ---------- 17172 -------- Saved 
+Kopis 1967 Portable AV Recorder ---------- 17173 -------- Saved 
+Software/Firmware Engineering ---------- 17177 -------- Saved 
+PXI-3980 - 3U Intel® Core™ i7-2715QE 2.1 GHz Quad-Core Processor-based PXI Controller ---------- 17178 -------- Saved 
+EOS-1200 - 4-CH GigE Vision Embedded Vision System with 2nd/3rd Generation Intel® Core™ i5/i7 Processor ---------- 17179 -------- Saved 
+McAfee Embedded Control ---------- 17180 -------- Saved 
+TPZ-1300 Series -- Intel® Atom® D2550/ N2600 Medical Computer with Rich I/O ---------- 17181 -------- Saved 
+NISE 2200- Industrial Fanless Computer ---------- 17182 -------- Saved 
+NISE 3640E- Industrial Fanless Computer ---------- 17183 -------- Saved 
+APPC 1530T- Applied Panel PC ---------- 17184 -------- Saved 
+APPC 1930T- Applied Panel PC ---------- 17185 -------- Saved 
+APPC 1730T- Applied Panel PC ---------- 17186 -------- Saved 
+IEC 61131 CONTROL Programming System ---------- 17189 -------- Saved 
+M2M Gateway Middleware ---------- 17190 -------- Saved 
+Servidores DataCenter ORION ---------- 17192 -------- Saved 
+Plataforma T-Series 40G (T40) ---------- 17193 -------- Saved 
+NORCO EMB-4922 - placa-mãe EPIC baseada no Intel® HM76 com exibição múltipla ---------- 17195 -------- Saved 
+Módulo compatível com OPS NORCO BIS-6330A Intel® Core™ i3/i5  ---------- 17196 -------- Saved 
+Placa-mãe Mini ITX HB132 da plataforma Intel® Core™ com dez portas USB e dez portas COM ---------- 17197 -------- Saved 
+Placa-mãe Mini ITX de baixo consumo de energia HB131 Intel® Atom® com Dual NIC e seis portas COM ---------- 17198 -------- Saved 
+Sistema embarcado sem ventoinha BIS-6595 "ICEFIN" com Intel® Atom®  ---------- 17199 -------- Saved 
+PWS-770 ---------- 17200 -------- Saved 
+CMB-A9SP2 ---------- 17201 -------- Saved 
+CMB-A9SC2 ---------- 17202 -------- Saved 
+CMB-A9DP2 ---------- 17203 -------- Saved 
+HSB-525I ---------- 17204 -------- Saved 
+FSB-B75G ---------- 17205 -------- Saved 
+IMBM-H61B ---------- 17206 -------- Saved 
+IMBM-H61A ---------- 17207 -------- Saved 
+IMBM-Q67A ---------- 17208 -------- Saved 
+IMBA-H61A (Placa-mãe industrial ATX) ---------- 17209 -------- Saved 
+EMB-9459T Rev.B ---------- 17210 -------- Saved 
+EMB-H61B ---------- 17211 -------- Saved 
+EMB-B75B (Placa-mãe embarcada) ---------- 17212 -------- Saved 
+EMB-B75A (Placa-mãe embarcada) ---------- 17213 -------- Saved 
+Sistema de computação embarcada MIX-220 placa-mãe Mini-ITX MI-220 para Core i7/i5 ---------- 17214 -------- Saved 
+SP-15W03 ---------- 17215 -------- Saved 
+SP-803 ---------- 17216 -------- Saved 
+BFS-15W02 ---------- 17217 -------- Saved 
+Burke High-Density Image Generator ---------- 17219 -------- Saved 
+X10SLV Supermicro mini-ITX Motherboard ---------- 17220 -------- Saved 
+IEC 61131 CONTROL Runtime System ---------- 17221 -------- Saved 
+IEC 61508 SAFETY Programming System ---------- 17222 -------- Saved 
+IEC 61508 SAFETY Configuration Tool ---------- 17223 -------- Saved 
+IEC 61508 SAFETY Runtime System ---------- 17224 -------- Saved 
+PROFINET Communication Stacks ---------- 17225 -------- Saved 
+The Application of TEB-N7040-4D in Network Security ---------- 17227 -------- Saved 
+The application of TEB-N7040-5A in network security ---------- 17229 -------- Saved 
+The Application of TEA-N2704 in Network Security ---------- 17230 -------- Saved 
+The Application of TEA-N1806 in Network Security ---------- 17231 -------- Saved 
+The Application of TEA-N1704 in Network Security ---------- 17232 -------- Saved 
+MIC-5332 ATCA 10 GbE dual slot, CPU blade and Intel® Xeon® processor E5-2600 ---------- 17234 -------- Saved 
+FWA-6510 2U Network Application Platform based on Intel® Xeon® Processor E5-2600 Series ---------- 17235 -------- Saved 
+ASMB-920IR ---------- 17236 -------- Saved 
+A10200 ---------- 17237 -------- Saved 
+VR11 ---------- 17240 -------- Saved 
+SBC340 ---------- 17243 -------- Saved 
+VBOX-3600 - On-Board Computer ---------- 17247 -------- Saved 
+PCH7793 ---------- 17248 -------- Saved 
+PCH3582 ---------- 17250 -------- Saved 
+PCH3098 ---------- 17251 -------- Saved 
+FES2953 ---------- 17252 -------- Saved 
+FES8730 ---------- 17253 -------- Saved 
+XVAULT XNVR200 PEDESTAL ---------- 17255 -------- Saved 
+XVAULT XNVR200 2U 4 BAY ---------- 17257 -------- Saved 
+XVAULT XNVR200 2U 8 BAY ---------- 17258 -------- Saved 
+XVAULT XNVR200 2U 12 BAY ---------- 17259 -------- Saved 
+Penang Hill Development Reference ---------- 17260 -------- Saved 
+XVAULT XNVR200 3U 16 BAY ---------- 17261 -------- Saved 
+XVAULT XNVR400 PEDESTAL ---------- 17263 -------- Saved 
+XVAULT XNVR400 2U 4 BAY ---------- 17264 -------- Saved 
+XVAULT XNVR400 2U 8 BAY ---------- 17265 -------- Saved 
+XVAULT XNVR400 2U 12 BAY ---------- 17266 -------- Saved 
+XVAULT XNVR400 3U 16 BAY ---------- 17267 -------- Saved 
+XVAULT XVIEW400 DESKTOP ---------- 17269 -------- Saved 
+DNA 1150- Desktop Network Appliance ---------- 17273 -------- Saved 
+conga-BP77 COM Express™ Basic Type 2 module based on 3rd Generation Intel® Core™ processor family ---------- 17276 -------- Saved 
+conga-QA3 Qseven Module featuring the new Intel® Atom® Processor E3xxx series ---------- 17280 -------- Saved 
+Burke 2333 Computer for Medical Apps ---------- 17281 -------- Saved 
+Burke G456 Image Generator for Simulators ---------- 17282 -------- Saved 
+Engineering Services ---------- 17283 -------- Saved 
+CT-XHW01 - Embedded Mini-ITx MB with Q87 Chipset ---------- 17284 -------- Saved 
+NA361 -- Compact Network Appliance Platform with Intel® Atom® Processor and 6 LANs ---------- 17286 -------- Saved 
+RCC Reference Platform for the Intel® Atom® Processor C2000 Family ---------- 17288 -------- Saved 
+NA552 - 1U Rackmount Network Appliance Platform ---------- 17290 -------- Saved 
+GOT3106T-832 - 10.4" SVGA TFT Extended Temperature Fanless Touch Panel Computer ---------- 17292 -------- Saved 
+GOT3156T-832 - 15" XGA TFT Fanless Touch Panel Computer ---------- 17293 -------- Saved 
+GOT5840T-832 - 8.4" SVGA TFT Fanless Touch Panel Computer ---------- 17295 -------- Saved 
+conga-TCA3 ---------- 17298 -------- Saved 
+GSDK Gigabit SDN Development Kit Based on the Intel® Atom® Processor C2758 ---------- 17299 -------- Saved 
+M2M ゲートウェイ・ミドルウェア ---------- 17300 -------- Saved 
+ORION RS サーバー ---------- 17302 -------- Saved 
+T-Series 40G プラットフォーム (T40) ---------- 17303 -------- Saved 
+NORCO EMB-4922 - Intel® HM76 ベースの EPIC マザーボード、マルチディスプレイ ---------- 17305 -------- Saved 
+NORCO BIS-6330A Intel® Core™ i3/i5 対応 OPS モジュール  ---------- 17306 -------- Saved 
+HB132 Intel® Core™ 搭載、ミニ ITX マザーボード、10 個の USB、10 個の COM ポート ---------- 17307 -------- Saved 
+HB131 低電力 Intel® Atom® ミニITX マザーボード、デュアル NIC および 6 COM ポート搭載 ---------- 17308 -------- Saved 
+BIS-6595 Intel Intel® Atom® 搭載「ICEFIN」ファンレス・エンベデッド・システム  ---------- 17309 -------- Saved 
+PWS-770 ---------- 17310 -------- Saved 
+CMB-A9SP2 ---------- 17311 -------- Saved 
+CMB-A9SC2 ---------- 17312 -------- Saved 
+CMB-A9DP2 ---------- 17313 -------- Saved 
+HSB-525I ---------- 17314 -------- Saved 
+FSB-B75G ---------- 17315 -------- Saved 
+IMBM-H61B ---------- 17316 -------- Saved 
+IMBM-H61A ---------- 17317 -------- Saved 
+IMBM-Q67A ---------- 17318 -------- Saved 
+IMBA-H61A (産業用 ATX マザーボード) ---------- 17319 -------- Saved 
+EMB-9459T Rev.B ---------- 17320 -------- Saved 
+EMB-H61B ---------- 17321 -------- Saved 
+EMB-B75B (エンベデッド・マザーボード) ---------- 17322 -------- Saved 
+EMB-B75A (エンベデッド・マザーボード) ---------- 17323 -------- Saved 
+MIX-220: Intel® Core™ i7/i5 MI-220 Mini-ITX マザーボード搭載のエンベデッド・コンピューター・システム ---------- 17324 -------- Saved 
+SP-803 ---------- 17326 -------- Saved 
+TRL-40 — 配备双 Intel® Xeon® 处理器 E5 和 E5 v2 系列扩展 ATX 服务器板的 4U 服务器级系统  ---------- 17329 -------- Saved 
+TRL-40 - 4U 伺服器級系統，配備兩個 Intel® Xeon® Processor E5 擴充 ATX 伺服器板 ---------- 17330 -------- Saved 
+TRL-40_4U サーバー・グレードのシステム、デュアル Intel® Xeon® プロセッサー E5 と E5 v2 ファミリーの拡張 ATX サーバーボードを搭載  ---------- 17331 -------- Saved 
+TRL-40 - placa de servidor ATX estendida 4U com sistema para servidores e processador Intel® Xeon® E5 ---------- 17332 -------- Saved 
+NuPRO-A40H - PICMG 1.0 全尺寸 Intel® Core™ i7/i5/i3 LGA1155 SBC ---------- 17333 -------- Saved 
+NuPRO-A40H - PICMG 1.0 全尺寸 Intel® Core™ i7/i5/i3 LGA1155 SBC ---------- 17334 -------- Saved 
+NuPRO-A40H - PICMG 1.0 フルサイズ Intel® Core™ i7/i5/i3 LGA1155 SBC ---------- 17335 -------- Saved 
+NuPRO-A40H - SBC PICMG 1.0 de tamanho padrão com Intel® Core™ i7/i5/i3 LGA1155 ---------- 17336 -------- Saved 
+MIX-250： 配备 Intel® Core™ i7/i5/i3 IMB-T40H 迷你 ITX 主板的嵌入式计算机系统 ---------- 17337 -------- Saved 
+MIX-250: Intel® Core™ i7/i5/i3 IMB-T40H Mini-ITX マザーボードを搭載したエンベデッド・コンピューター・システム ---------- 17339 -------- Saved 
+IMB-M40H - ATX Intel® Core™ i7/i5/i3 工业主板 ---------- 17345 -------- Saved 
+IMB-M40H - ATX Intel® Core™ i7/i5/i3 工業級主機板 ---------- 17346 -------- Saved 
+IMB-M40H - ATX Intel® Core™ i7/i5/i3 産業用マザーボード ---------- 17347 -------- Saved 
+IMB-M40H - Placa-mãe industrial ATX com processador Intel® Core™ i7/i5/i3 ---------- 17348 -------- Saved 
+HPERC-IBR-MC - 采用第 3 代 Intel® Core™ i7 CPU 的高性能极端耐用型™  翅片安装系统 ---------- 17349 -------- Saved 
+HPERC-IBR-MC - 高效能 Extreme Rugged™ 冷卻板安裝系統，採用第 3 代 Intel® Core™ i7 CPU ---------- 17350 -------- Saved 
+HPERC-IBR-MC - 第 3 世代 Intel® Core ™ i7 CPU を搭載するハイパフォーマンス Extreme Rugged™ Coldplate マウント・システム ---------- 17351 -------- Saved 
+HPERC-IBR-MC - sistema Extreme Rugged™ de alto desempenho e montagem em placa fria com a 3ª geração da PU Intel® Core™ i7 ---------- 17352 -------- Saved 
+Express-IBER： 采用第 3 代 Intel® Core™ i7 处理器的 Extreme Rugged™ COM Express® 6 型模块 ---------- 17353 -------- Saved 
+Express-IBER - Extreme Rugged™ COM Express® Type 6 模組，採用第 3 代 Intel® Core™ i7 Processor ---------- 17354 -------- Saved 
+Express-IBER: 第 3 世代 Intel® Core™ i7 プロセッサーを搭載した Extreme Rugged™ COM Express® Type 6 モジュール ---------- 17355 -------- Saved 
+Express-IBER - módulo COM Express tipo 6 Extreme Rugged™ com a 3ª geração dos processadores Intel® Core™ i7 ---------- 17356 -------- Saved 
+Express-IBE2： 配备 Intel® Core™ i7/i5/i3 处理器和 Intel® QM77 芯片组的 COM Express® 2 型模块 ---------- 17357 -------- Saved 
+Express-IBE2 - COM Express® Type 2 模組，採用 Intel® Core™ i7/i5/i3 Processor 和 Intel® QM77 Chipset ---------- 17358 -------- Saved 
+Express-IBE2: Intel® Core™ i7/i5/i3 プロセッサーおよび Intel® QM77 チップセットを搭載した COM Express® Type 2 モジュール ---------- 17359 -------- Saved 
+Express-IBE2 - módulo COM Express® tipo 2 com o processador Intel® Core™ i7/i5/i3 e chipset Intel® QM77 ---------- 17360 -------- Saved 
+带有 ECC 的 ADLINK cPCI-3971 3U CompactPCI® PlusIO 第 2 代 Intel® Core™ i7 处理器刀片 ---------- 17365 -------- Saved 
+cPCI-3971 ---------- 17366 -------- Saved 
+ADLINK cPCI-3971 3U CompactPCI® PlusIO 第 2 世代 Intel® Core™ i7 プロセッサー・ブレード、ECC 対応 ---------- 17367 -------- Saved 
+cPCI-3971 ---------- 17368 -------- Saved 
+HD101-H81 - 配备第 4 代 Intel® Core™ 处理器的迷你 ITX 主板 ---------- 17369 -------- Saved 
+HD101-H81 Mini-ITX 主機板，採用第 4 代 Intel® Core™ processor ---------- 17370 -------- Saved 
+HD101-H81 Mini-ITX マザーボード、第 4 世代の Intel® Core™ プロセッサー ---------- 17371 -------- Saved 
+Placa-mãe Mini-ITX HD101-H81 com a 4ª geração do processador Intel® Core™ ---------- 17372 -------- Saved 
+系統的設計、整合和製造服務 ---------- 17373 -------- Saved 
+システム設計、統合および製造サービス ---------- 17374 -------- Saved 
+Serviços de design de sistemas, integração e manufatura ---------- 17375 -------- Saved 
+Digifort IP 监控系统 ---------- 17376 -------- Saved 
+Digifort IP 監控系統 ---------- 17377 -------- Saved 
+Digifort IP サーベイランス・システム ---------- 17378 -------- Saved 
+Sistema de vigilância IP Digifort ---------- 17379 -------- Saved 
+机架安装式平台 ---------- 17384 -------- Saved 
+SCB-9651 機架安裝式平台 ---------- 17385 -------- Saved 
+SCB-9651 ラックマウント・プラットフォーム ---------- 17386 -------- Saved 
+Plataforma de montagem em rack SCB-9651 ---------- 17387 -------- Saved 
+ROBO-8112VG2AR-Q87 ---------- 17388 -------- Saved 
+ROBO-8112VG2AR-Q87 ---------- 17389 -------- Saved 
+ROBO-8112VG2AR-Q87 ---------- 17390 -------- Saved 
+ROBO-8112VG2AR-Q87 ---------- 17391 -------- Saved 
+RUBY-D717VG2AR ---------- 17392 -------- Saved 
+RUBY-D717VG2AR ---------- 17393 -------- Saved 
+RUBY-D717VG2AR ---------- 17394 -------- Saved 
+RUBY-D717VG2AR ---------- 17395 -------- Saved 
+配备第 4 代 Intel® Core™ 处理器的 HM920-HM86 -COMe ---------- 17404 -------- Saved 
+HM920-HM86 -COMe 搭載第 4 代 Intel® Core™ processor ---------- 17405 -------- Saved 
+HM920-HM86 -COMe、第 4 世代 Intel® Core™ プロセッサー ---------- 17406 -------- Saved 
+HM920-HM86 - COM Express com a 4ª geração dos processadores Intel® Core™ ---------- 17407 -------- Saved 
+配备第 4 代 Intel® Core™ 处理器的 HM960-HM86 - COM Express 模块 ---------- 17408 -------- Saved 
+HM960-HM86 - COM Express Module，採用第 4 代 Intel® Core™ processor ---------- 17409 -------- Saved 
+HM960-HM86 - 第 4 世代 Intel® Core™ プロセッサーを搭載した COM Express モジュール ---------- 17410 -------- Saved 
+HM960-HM86 - Módulo COM Express com a 4ª geração dos processadores Intel® Core™ ---------- 17411 -------- Saved 
+HD630-H81 - 配备第 4 代 Intel® Core™ 处理器的 ATX 主板 ---------- 17412 -------- Saved 
+HD630-H81 - ATX 主機板，採用第 4 代 Intel® Core™ Processor ---------- 17413 -------- Saved 
+HD630-H81 - 第 4 世代 Intel® Core™ プロセッサーを搭載した ATX エンベデッド・ボード ---------- 17414 -------- Saved 
+Placa-mãe ATX HD630-H81 com a 4ª geração dos processadores Intel® Core™ ---------- 17415 -------- Saved 
+HD632-H81 - 配备第 4 代 Intel® Core™ 处理器的 ATX 主板 ---------- 17416 -------- Saved 
+HD632-H81 ATX 主機板使用第 4 代 Intel® Core™ Processor ---------- 17417 -------- Saved 
+HD632-H81 ATX マザーボード、第 4 世代 Intel® Core™ プロセッサー搭載 ---------- 17418 -------- Saved 
+Placa-mãe ATX HD632-H81 com a 4ª geração dos processadores Intel® Core™ ---------- 17419 -------- Saved 
+HD330-H81 - 配备第 4 代 Intel® Core™ 处理器的微型 ATX 主板 ---------- 17420 -------- Saved 
+HD330-H81 - microATX 主機板，採用第 4 代 Intel® Core™ processor ---------- 17421 -------- Saved 
+HD330-H81 - 第 4 世代 Intel® Core™ プロセッサーを搭載した microATX エンベデッド・ボード ---------- 17422 -------- Saved 
+Placa-mãe microATX HD330-H81 com a 4ª geração dos processadores Intel® Core™ ---------- 17423 -------- Saved 
+EmQ-i2506 Intel® Atom® N2600 Qseven™ CPU 模块 ---------- 17428 -------- Saved 
+EmQ-i2506 Intel® Atom® N2600 Qseven™ CPU 模組 ---------- 17429 -------- Saved 
+EmQ-i2506 Intel® Atom® N2600 Qseven™ CPU モジュール ---------- 17430 -------- Saved 
+Módulo de CPU EmQ-i2506 Intel® Atom® N2600 Qseven™ ---------- 17431 -------- Saved 
+SOM-5894 COM Express Basic Module ---------- 17433 -------- Saved 
+EmETXe-i87M0 COM Express 基本 6 型 CPU 模块 ---------- 17436 -------- Saved 
+EmETXe-i87M0 COM Express Basic Type 6 CPU 模組 ---------- 17437 -------- Saved 
+EmETXe-i87M0 COM Express Basic Type 6 CPU モジュール ---------- 17438 -------- Saved 
+Módulo de CPU COM Express básico tipo 6 EmETXe-i87M0 ---------- 17439 -------- Saved 
+CDT-MTX1 ---------- 17440 -------- Saved 
+CDT-MTX1 ---------- 17441 -------- Saved 
+CDT-MTX1 ---------- 17442 -------- Saved 
+CDT-MTX1 ---------- 17443 -------- Saved 
+ADLINK MXE-1300 系列 -- Intel® Atom® D2550/ N2600 无风扇嵌入式计算机 with Rich I/O，配备多个 I/O  ---------- 17444 -------- Saved 
+ADLINK MXE-1300 系列--Intel® Atom® D2550/ N2600 無風扇嵌入式電腦，配備豐富的 I/O  ---------- 17445 -------- Saved 
+ADLINK MXE-1300 シリーズ--Intel® Atom® D2550/ N2600 ファンレス設計のエンベデッド・コンピューター、多彩な I/O 付き  ---------- 17446 -------- Saved 
+ADLINK série MXE-1300 -- Computador embarcado sem ventoinha com Intel® Atom® D2550 / N2600 e riqueza de I/O  ---------- 17447 -------- Saved 
+ADLINK MXC-6300/6310 系列 -- 基于高性能第三代 Intel® Core™ i7/i5/i3 处理器的无风扇系统，配备 PCI/PCIe（第二代）插槽  ---------- 17448 -------- Saved 
+ADLINK MXC-6300/6310 系列 ---------- 17449 -------- Saved 
+ADLINK MXC-6300/6310 シリーズ -- 高性能の第 3 世代 Intel® Core™ i7/i5/i3 プロセッサーをベースにした、 PCI/PCIe (Gen2) スロット搭載のファンレス・システム  ---------- 17450 -------- Saved 
+ADLINK série MXC-6300/6310 ---------- 17451 -------- Saved 
+SP-15LW03 ---------- 17453 -------- Saved 
+SP-15LW03 ---------- 17455 -------- Saved 
+APPC 1730T — 应用液晶电脑 ---------- 17456 -------- Saved 
+APPC 1730T - 應用平板 PC ---------- 17457 -------- Saved 
+APPC 1730T - 応用パネル PC ---------- 17458 -------- Saved 
+APPC 1930T — 应用平板电脑 ---------- 17459 -------- Saved 
+APPC 1930T - 應用平板 PC ---------- 17460 -------- Saved 
+APPC 1930T - 応用パネル PC ---------- 17461 -------- Saved 
+APPC 1530T — 应用液晶电脑 ---------- 17462 -------- Saved 
+APPC 1530T - 應用平板 PC ---------- 17463 -------- Saved 
+APPC 1530T - 応用パネル PC ---------- 17464 -------- Saved 
+NISE 3640E - 无风扇工业计算机 ---------- 17465 -------- Saved 
+NISE 3640E - 無風扇工業電腦 ---------- 17466 -------- Saved 
+NISE 3640E - 産業用ファンレス・コンピューター ---------- 17467 -------- Saved 
+NISE 2200 - 无风扇工业计算机 ---------- 17468 -------- Saved 
+NISE 2200- 無風扇工業電腦 ---------- 17469 -------- Saved 
+NISE 2200- 産業用ファンレス・コンピューター ---------- 17470 -------- Saved 
+TPZ-1300 系列 -- 配有大量 I/O 的 Intel® Atom® D2550/ N2600 医学计算机 ---------- 17471 -------- Saved 
+TPZ-1300 系列 -- Intel® Atom® D2550/ N2600 醫療電腦，配備豐富的 I/O ---------- 17472 -------- Saved 
+TPZ-1300 シリーズ--Intel® Atom® D2550/N2600 医療コンピューター（豊富な I/O を搭載） ---------- 17473 -------- Saved 
+McAfee 嵌入式控制 ---------- 17474 -------- Saved 
+McAfee 嵌入式控制 ---------- 17475 -------- Saved 
+McAfee Embedded Control ---------- 17476 -------- Saved 
+软件/固件工程 ---------- 17477 -------- Saved 
+軟體/韌體工程 ---------- 17478 -------- Saved 
+ソフトウェア/ファームウェア・エンジニアリング ---------- 17479 -------- Saved 
+Kopis 1967 便携式 AV 记录仪  ---------- 17483 -------- Saved 
+Kopis 1967 可攜式 AV 錄影機 ---------- 17484 -------- Saved 
+Kopis 1967 ポータブル AV レコーダー ---------- 17485 -------- Saved 
+配备 Intel® Core™ i3/i5/Celeron 的 ML250 无风扇工业计算机 ---------- 17486 -------- Saved 
+採用 Intel® Core™ i3/i5/Celeron 的 LGX ML250 無風扇工業電腦 ---------- 17487 -------- Saved 
+Intel® Core™ i3/i5/Celeron 搭載の ML250 ファンレス産業用コンピューター ---------- 17488 -------- Saved 
+ML300 无风扇 NUC 工业计算机 ---------- 17489 -------- Saved 
+LGX ML300 無風扇 NUC 工業電腦 ---------- 17490 -------- Saved 
+ML300 ファンレス NUC 産業用コンピューター ---------- 17491 -------- Saved 
+配备 Intel® Core™ 处理器的 LGX AU972 无风扇耐用型可扩展计算机 ---------- 17492 -------- Saved 
+採用 Intel® Core™ Processor 的 LGX AU972 無風扇加固型可擴充電腦 ---------- 17493 -------- Saved 
+Intel® Core™ プロセッサーを搭載したファンレスの頑丈で拡張可能なコンピューター、LGX AU972 ---------- 17494 -------- Saved 
+配备 Intel® Core™ 处理器的 AU970 无风扇耐用型计算机 ---------- 17495 -------- Saved 
+LGX AU970 無風扇加固型電腦採用 Intel® Core™ Processor ---------- 17496 -------- Saved 
+Intel® Core™ プロセッサー搭載の AU970 高耐久性ファンレス・コンピューター ---------- 17497 -------- Saved 
+COM Express CXE-CD945 ---------- 17501 -------- Saved 
+LEC-6020-Fanless Industrial DIN Rail Security Platform with Intel® Atom® N2600 CPU ---------- 17502 -------- Saved 
+ACP-2153 - 15" Multi-Touch Panel Computer ---------- 17503 -------- Saved 
+GENE-QM77 Rev.A  - 3.5" SubCompact Board ---------- 17504 -------- Saved 
+GENE-QM77 Rev.B - 3.5" SubCompact Board ---------- 17505 -------- Saved 
+NanoCOM-CV Rev.A - COM Express CPU Module ---------- 17506 -------- Saved 
+NanoCOM-CV Rev.B - COM Express CPU Module ---------- 17507 -------- Saved 
+COM-CV Rev.A 1.1 - COM Express CPU Module ---------- 17508 -------- Saved 
+COM-CV Rev.B - COM Express CPU Module ---------- 17509 -------- Saved 
+COM-QM77 Rev. B - COM Express CPU Module ---------- 17510 -------- Saved 
+COM-QM87 Rev. A  ---------- 17511 -------- Saved 
+FES2695 ---------- 17512 -------- Saved 
+FES8916 ---------- 17513 -------- Saved 
+aTCA-9700 - Dual Intel® Xeon® E5-2600 v2 Family 40G Ethernet AdvancedTCA® Processor Blade ---------- 17514 -------- Saved 
+RL830-C602-J/C604 EATX Motherboard with Intel® Xeon® E5-2600 v2 processors ---------- 17515 -------- Saved 
+CD101-N Mini-ITX with Intel® Atom® D2550/N2800/N2600 ---------- 17516 -------- Saved 
+CD952 Series 3.5” SBC based on Intel® Atom® D2550/N2800/N2600   ---------- 17517 -------- Saved 
+Bsquare Intelligent Systems for Retail ---------- 17518 -------- Saved 
+FES7035 ---------- 17521 -------- Saved 
+DFI - CR902-BL COM Express - Basic ---------- 17522 -------- Saved 
+DFI - CR960-QM77 COM Express with Intel®  Core™ processors ---------- 17523 -------- Saved 
+X500 Fully Rugged Notebook ---------- 17524 -------- Saved 
+B300 Fully Rugged Notebook ---------- 17525 -------- Saved 
+X500 Fully Rugged Mobile Server ---------- 17526 -------- Saved 
+S400 Semi-rugged Notebook ---------- 17527 -------- Saved 
+V100 Fully Rugged Convertible Notebook ---------- 17528 -------- Saved 
+V200 Fully Rugged Convertible Notebook ---------- 17529 -------- Saved 
+E110 Fully Rugged Tablet ---------- 17530 -------- Saved 
+Ensemble® 6000 Series OpenVPX Intel® Xeon® 12-Core HDS6603 Module ---------- 17532 -------- Saved 
+APPC 1730T - panel PC aplicado ---------- 17534 -------- Saved 
+APPC 1930T - panel PC aplicado ---------- 17535 -------- Saved 
+APPC 1530T - panel PC aplicado ---------- 17536 -------- Saved 
+NISE 3640E - Computador industrial sem ventoinha ---------- 17537 -------- Saved 
+NISE 2200 - Computador industrial sem ventoinha ---------- 17538 -------- Saved 
+Série TPZ-1300 -- Computador médico com Intel® Atom® D2550 / N2600 e riqueza de I/O ---------- 17539 -------- Saved 
+Controle embarcado McAfee ---------- 17540 -------- Saved 
+Engenharia de software/Firmware ---------- 17541 -------- Saved 
+Gravador AV portátil Kopis 1967 ---------- 17543 -------- Saved 
+LGX ML250 - Computador industrial sem ventoinha com o Intel® Core™ i3/i5/Celeron  ---------- 17544 -------- Saved 
+Computador industrial NUC sem ventoinha LGX ML300 ---------- 17545 -------- Saved 
+LGX AU972 Computador robusto expansível com processador Intel® Core™ ---------- 17546 -------- Saved 
+LGX AU970 Computador robusto sem ventoinha com processador Intel® Core™ ---------- 17547 -------- Saved 
+conga-QA3 Qseven 模块采用全新 Intel® Atom® 处理器 E3xxx 系列 ---------- 17549 -------- Saved 
+conga-QA3 Qseven 模組配備全新的 Intel® Atom® Processor E3xxx 系列 ---------- 17550 -------- Saved 
+新しい Intel® Atom® プロセッサー E3xxx シリーズを搭載した conga-QA3 Qseven モジュール ---------- 17551 -------- Saved 
+Módulo Qseven conga-QA3 com a nova série de processadores Intel® Atom® E3xx ---------- 17552 -------- Saved 
+conga-BP77 COM Express™ Basic Type 2 模块，基于第三代 Intel® Core™ 处理器系列 ---------- 17553 -------- Saved 
+基於第 3 代 Intel® Core™ processor 系列的 conga-BS77 COM Express™ Basic Type 2 模組 ---------- 17554 -------- Saved 
+conga-BP77 COM Express™ Basic タイプ 2 モジュールは、第 3 世代 Intel® Core™ プロセッサー・ファミリーをベースとしています。 ---------- 17555 -------- Saved 
+Módulo COM Express™ Basic tipo 2 conga-BP77 baseado na família de processadores Intel® Core™ de 3ª geração. ---------- 17556 -------- Saved 
+DNA 1150 - 桌面网络设备 ---------- 17557 -------- Saved 
+DNA 1150- 桌上型網路裝置 ---------- 17558 -------- Saved 
+DNA 1150 - デスクトップ・ネットワーク・アプライアンス ---------- 17559 -------- Saved 
+Appliance de rede de área de trabalho DNA 1150 ---------- 17560 -------- Saved 
+XVAULT XVIEW400 查看站 ---------- 17561 -------- Saved 
+XVAULT XVIEW400 機架 ---------- 17562 -------- Saved 
+XVAULT XVIEW400 表示ステーション ---------- 17563 -------- Saved 
+XVAULT XVIEW400 COM MONTAGEM EM RACK ---------- 17564 -------- Saved 
+XVAULT XVIEW400 台式机机箱 ---------- 17565 -------- Saved 

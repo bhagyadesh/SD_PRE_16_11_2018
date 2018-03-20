@@ -1,0 +1,84 @@
+.page-header {
+    font-family: 'intel_clear_probold';
+    font-size:50px;
+    text-transform: uppercase;
+    color:#1273c2;
+}  
+@font-face {
+    font-family: 'intel_clearbold';
+    src: url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_bd-webfont.eot');
+    src: url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_bd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_bd-webfont.woff2') format('woff2'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_bd-webfont.woff') format('woff'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_bd-webfont.ttf') format('truetype'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_bd-webfont.svg#intel_clearbold') format('svg');
+    font-weight: normal;
+    font-style: normal;  
+}
+@font-face {
+    font-family: 'intel_clearbold_italic';
+    src: url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_bdit-webfont.eot');
+    src: url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_bdit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_bdit-webfont.woff2') format('woff2'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_bdit-webfont.woff') format('woff'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_bdit-webfont.ttf') format('truetype'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_bdit-webfont.svg#intel_clearbold_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'intel_clearitalic';
+    src: url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_it-webfont.eot');
+    src: url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_it-webfont.woff2') format('woff2'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_it-webfont.woff') format('woff'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_it-webfont.ttf') format('truetype'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_it-webfont.svg#intel_clearitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'intel_clearlight';
+    src: url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_lt-webfont.eot');
+    src: url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_lt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_lt-webfont.woff2') format('woff2'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_lt-webfont.woff') format('woff'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_lt-webfont.ttf') format('truetype'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_lt-webfont.svg#intel_clearlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'intel_clearlight_italic';
+    src: url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_ltit-webfont.eot');
+    src: url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_ltit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_ltit-webfont.woff2') format('woff2'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_ltit-webfont.woff') format('woff'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_ltit-webfont.ttf') format('truetype'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_ltit-webfont.svg#intel_clearlight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'intel_clearregular';
+    src: url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_rg-webfont.eot');
+    src: url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_rg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_rg-webfont.woff2') format('woff2'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_rg-webfont.woff') format('woff'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_rg-webfont.ttf') format('truetype'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclear_rg-webfont.svg#intel_clearregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'intel_clear_probold';
+    src: url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclearpro_bd-webfont.eot');
+    src: url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclearpro_bd-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclearpro_bd-webfont.woff2') format('woff2'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclearpro_bd-webfont.woff') format('woff'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclearpro_bd-webfont.ttf') format('truetype'),
+         url('/sites/all/themes/custom/intel_isdm_bootstrap/fonts/intelclearpro_bd-webfont.svg#intel_clear_probold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

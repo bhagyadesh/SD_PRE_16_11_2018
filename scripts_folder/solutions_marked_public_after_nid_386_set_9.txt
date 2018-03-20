@@ -1,0 +1,2000 @@
+AIS-Q452 (controlador de sistema avançado) ---------- 11739 -------- Saved 
+X7DBU (12 "x 13") ---------- 11740 -------- Saved 
+X7SBi ATX ---------- 11741 -------- Saved 
+FSB - 945G (Full-Size SBC) ---------- 11742 -------- Saved 
+FWS-7300 (aparelho de rede) ---------- 11743 -------- Saved 
+Sistema de transmissão embarcado de transmissão de múltiplas redes BIS-6552 com base em X86 ---------- 11744 -------- Saved 
+SuperServer 5015A-EHF-D525 ---------- 11745 -------- Saved 
+X7DBR-3 ATX estendido ---------- 11746 -------- Saved 
+AIS-Q454 (controlador de sistema avançado) ---------- 11747 -------- Saved 
+X7DBX-8 (16,24" x 11,24") ---------- 11748 -------- Saved 
+AEC-6872 (Controlador embarcado) ---------- 11749 -------- Saved 
+X7DBP-i (16.24" x 11.23") ---------- 11750 -------- Saved 
+X7SB3-F ATX ---------- 11751 -------- Saved 
+FWS-7600 (aparelho de rede) ---------- 11752 -------- Saved 
+X7SLM mATX ---------- 11753 -------- Saved 
+AHP-2122 (solução de painel de toque HMI resistente) ---------- 11754 -------- Saved 
+SuperServer 5015A-PHF ---------- 11755 -------- Saved 
+PL-80090 ---------- 11756 -------- Saved 
+Placa HT-P112 6U CPCI Intel ® 5100 ---------- 11757 -------- Saved 
+PS3100 ---------- 11758 -------- Saved 
+PL-10560 ---------- 11759 -------- Saved 
+ARK-3202V ---------- 11760 -------- Saved 
+tpc-1251H ---------- 11761 -------- Saved 
+Placa-mãe AIMB-763 Intel ® Core ™ 2 Duo ATX ---------- 11762 -------- Saved 
+POC-155 ---------- 11763 -------- Saved 
+PPC-125T ---------- 11764 -------- Saved 
+Placa-mãe Mini-ITX embarcada: JNF9F-H61 (2 ª geração Intel ® Core ™ i3, i5, i7 processadores) ---------- 11766 -------- Saved 
+Sistema de Sinalização Digital Full HD de 31,5 polegadas - DSA-132 ---------- 11767 -------- Saved 
+Placa-mãe AIMB-556 Intel ® Core ™ 2 Duo MicroATX ---------- 11768 -------- Saved 
+AIMB-764 Intel ® Core ™ 2 Quad / Core ™ 2 Duo ATX ---------- 11769 -------- Saved 
+XCalibur4401 ---------- 11770 -------- Saved 
+PPC-L158T ---------- 11771 -------- Saved 
+POC-176 ---------- 11772 -------- Saved 
+AFC-6571 ---------- 11773 -------- Saved 
+ARCA-1503 ---------- 11774 -------- Saved 
+MIC-3395 ---------- 11775 -------- Saved 
+POC-S157 ---------- 11776 -------- Saved 
+XPedite7371 ---------- 11777 -------- Saved 
+Sistema de Sinalização Digital de Nível Industrial de 42 polegadas Full HD- DSH-142 ---------- 11778 -------- Saved 
+FWA-1305 ---------- 11780 -------- Saved 
+IP de gráficos 3D PICA®200 ---------- 11781 -------- Saved 
+PPC-177T ---------- 11782 -------- Saved 
+TS-659 Pro+ ---------- 11783 -------- Saved 
+POC-S176 ---------- 11784 -------- Saved 
+AIMB-581 ---------- 11785 -------- Saved 
+Sistema de sinalização digital Full HD OFP240-825 de 24 polegadas ---------- 11788 -------- Saved 
+Placa-mãe Mini-ITX embarcada: JNF9A-Q67 (2ª geração de processadores Intel® Core™ i3, i5, i7) ---------- 11789 -------- Saved 
+Plataforma de referência Intel® Atom® E6xx ---------- 11790 -------- Saved 
+Windows Embedded Server ---------- 11792 -------- Saved 
+Módulo COMe9010 embarcado com núcleo robusto ---------- 11793 -------- Saved 
+Placa-mãe Mini-ITX embarcada: JNC9E-525 (Processador Intel® Atom™ D525) ---------- 11794 -------- Saved 
+COM Express CEZ5XL ---------- 11795 -------- Saved 
+Connected Services Gateway ---------- 11796 -------- Saved 
+Placa-mãe de terminais de autoatendimento SV1-D5226-M ---------- 11797 -------- Saved 
+Placa-mãe embarcada SBC 3.5": JNF36-2600 (Processador Intel® Atom® N2600) ---------- 11798 -------- Saved 
+Wind River VxWorks ---------- 11799 -------- Saved 
+AEV-6312 (solução de controlador embarcado no veículo) ---------- 11800 -------- Saved 
+Wind River Platform for Industrial Devices ---------- 11801 -------- Saved 
+TS-EC879U-RP ---------- 11802 -------- Saved 
+eKINO-945GSE (Placa-mãe mini-ITX) ---------- 11803 -------- Saved 
+GENE-9310 (Placa subcompacta de 3.5") ---------- 11804 -------- Saved 
+Plataforma Carrier Grade Linux ---------- 11805 -------- Saved 
+TS-859U-RP+ ---------- 11806 -------- Saved 
+DA6011 ---------- 11807 -------- Saved 
+Placa-mãe Mini ITX de AIMB-252 Intel ® Pentium ® M ---------- 11808 -------- Saved 
+ÉPICO-9457W1 (placa de ampla temperatura) ---------- 11809 -------- Saved 
+Placa-mãe embarcada SBC 3.5": JNF36-2800 (Processador Intel® Atom® N2800) ---------- 11810 -------- Saved 
+MITX-6910 - Intel ® QM57 com base em placa-mãe Mini-ITX ---------- 11811 -------- Saved 
+Wind River Workbench ---------- 11812 -------- Saved 
+Tuxera NTFS para sistemas embarcados ---------- 11813 -------- Saved 
+N8900 ---------- 11814 -------- Saved 
+Especificações SOM-6670 Qseven Sistema em módulo com processador Intel® Atom® E6XX ---------- 11815 -------- Saved 
+RDM Embedded Plus Edition ---------- 11816 -------- Saved 
+PICA®200 3D Graphics IP ---------- 11817 -------- Saved 
+Unidades gráficas SeaWind OpenGL para Intel ---------- 11818 -------- Saved 
+CL345-1 - IPC sem ventoinha ---------- 11819 -------- Saved 
+Plataformas de armazenamento embarcadas OneStor ---------- 11820 -------- Saved 
+Exposição dupla vxWorks plataforma baseado no chipset  Intel ® 945GME ---------- 11821 -------- Saved 
+POC-S177 ---------- 11822 -------- Saved 
+MB-80100 ---------- 11823 -------- Saved 
+UNO-2174A ---------- 11824 -------- Saved 
+ExpressSAS R680 - adaptador RAID 6Gb para Direct Attached Storage, armazenamento ---------- 11825 -------- Saved 
+PL-80310 ---------- 11826 -------- Saved 
+PL-80120 ---------- 11827 -------- Saved 
+PL-10600 ---------- 11828 -------- Saved 
+PCE-5124 LGA775 Intel ® Core ™ 2 Quad cartão CPU ---------- 11829 -------- Saved 
+PCE-5126/PCE-5126QG2/PCE-5126QVG/PCE-5126WG2 ---------- 11830 -------- Saved 
+Placa resistente HT-C105B Intel ® Core ™ Duo / Intel ® Core ™ 2 Duo ---------- 11831 -------- Saved 
+PL-60590 ---------- 11832 -------- Saved 
+HIT-W151 ---------- 11833 -------- Saved 
+FSC-1817 ---------- 11835 -------- Saved 
+PL-80140 ---------- 11837 -------- Saved 
+Plataforma de referência futura geração Dual Intel ® Xeon ® ATCA ---------- 11838 -------- Saved 
+Quiosque/all-in-one PMW19B-GM45 ---------- 11839 -------- Saved 
+15" all-in-one Intel ® Atom® N270/D510/D525 Terminal de POS - PT5000 series ---------- 11840 -------- Saved 
+PL-80350 ---------- 11841 -------- Saved 
+HT-C111 3U placa de Intel ® Atom® CPCI ---------- 11842 -------- Saved 
+UTC-520 ---------- 11843 -------- Saved 
+Aparelho de GPGPU ---------- 11844 -------- Saved 
+ACP-5152 (solução multi-touch de informação e entretenimento no veículo) ---------- 11845 -------- Saved 
+SCB-6975 Desktop Intel ® Atom® sistema de rede, seis GbE, CF, SATA, Mini-Card, Bypass, Cavium 505 ---------- 11846 -------- Saved 
+PPC-791XF ---------- 11847 -------- Saved 
+PL-60780 ---------- 11848 -------- Saved 
+BIS-6623II ---------- 11849 -------- Saved 
+PCISA-945GSE (metade do tamanho cartão de CPU) ---------- 11850 -------- Saved 
+PPC-157T ---------- 11851 -------- Saved 
+PL-80360 ---------- 11852 -------- Saved 
+Sandy Creek ---------- 11854 -------- Saved 
+PL-80230 ---------- 11855 -------- Saved 
+Plataforma PC embarcado COMSys ---------- 11856 -------- Saved 
+Monitoramento do paciente médico P174B-A320P ---------- 11857 -------- Saved 
+PDSLM Mini ITX ---------- 11858 -------- Saved 
+TS-559 Pro II ---------- 11859 -------- Saved 
+Módulo CM-7301 Intel® Core™ 2 Duo COM Express com CRT/18-bit LVDS, LAN & Áudio ---------- 11860 -------- Saved 
+SiGa CX-100 ---------- 11861 -------- Saved 
+Placa-mãe embarcada Mini-ITX: JNF98-QM57-LF (processadores Intel® Core™ i3, i5, i7) ---------- 11862 -------- Saved 
+ECN-381B (caixa multimídia sem ventoinha móvel Intel® Core™ 2 Duo de 45nm) ---------- 11863 -------- Saved 
+EC7-1816L2NA ---------- 11864 -------- Saved 
+Placa-mãe Mini-ITX embarcada: JNC98-525E-LF (processador Intel® Atom™ D525) ---------- 11865 -------- Saved 
+NanoCOM-U15 A2.0 (módulo de CPU COM Express ) ---------- 11866 -------- Saved 
+Barebone de segurança de rede FW-7911 NORCO 2U 12LAN XEON ---------- 11867 -------- Saved 
+QM57IX ---------- 11868 -------- Saved 
+O sistema"Golden-Eye III" S902R robusto, pequeno, leve, com Dual/Quad Core i7® e unidade removível ---------- 11869 -------- Saved 
+Série SysCentreModule™ - COMe9440 ---------- 11870 -------- Saved 
+Placa-mãe EPIC EMB-4670 baseada no processador Intel® Atom® E620T ---------- 11871 -------- Saved 
+NS830 ---------- 11872 -------- Saved 
+Gerenciamento de testes de Wind River ---------- 11873 -------- Saved 
+Analisador de protocolo Beagle USB 480 ---------- 11874 -------- Saved 
+Computador de automação com UNO-2182 Core™ 2 Duo embarcado ---------- 11875 -------- Saved 
+ACP-5185 ---------- 11876 -------- Saved 
+IT-MPC200 ---------- 11877 -------- Saved 
+EMB-9459T Rev. A2.0 (placa-mãe embarcada) ---------- 11878 -------- Saved 
+BL345-1 - IPC sem ventoinha ---------- 11879 -------- Saved 
+Plataforma de computação IFC-9400 Qseven de baixo consumo de energia ---------- 11880 -------- Saved 
+TS-859 Pro+ ---------- 11881 -------- Saved 
+Placa de sinalização digital TEB-I6110 ---------- 11882 -------- Saved 
+Drivers de gráficos embarcados para processadores Intel® ---------- 11883 -------- Saved 
+Módulo COM Express EUROCOM 500 ---------- 11884 -------- Saved 
+Solução de segurança PI-8040U-RP Enterprise NVR ---------- 11885 -------- Saved 
+ACP-5212 ---------- 11886 -------- Saved 
+SBC Mini ITX MANO800 com Intel® Core™ i7/i5/i3/Pentium LGA1156 e chipset Intel® Q57 Chipset ---------- 11887 -------- Saved 
+SBC86860 - SBC Mini-ITX Core™2 Duo/Core™2 Quad ---------- 11888 -------- Saved 
+N7700PRO ---------- 11889 -------- Saved 
+BSP (pacote de suporte à placa) de referência do Windows CE 6.0 para o Intel® Atom® ---------- 11890 -------- Saved 
+BIS-6580 - computador Embedded sem ventoinha baseado no Intel® Atom® N270 ---------- 11891 -------- Saved 
+SV-F2726-H - placa-mãe de terminais de auto-atendimento ---------- 11892 -------- Saved 
+ETX7100: Módulo Intel® Pentium® M ETX ---------- 11893 -------- Saved 
+COM Express CEZ5XT ---------- 11894 -------- Saved 
+EP830, soquete M para processadores Intel&reg; móvel Core™ 2 Duo, Core™ Duo, Core™ Solo EPIC SBC ---------- 11895 -------- Saved 
+NanoCOM-TC (módulo de CPU COM Express ) ---------- 11896 -------- Saved 
+NANO-PV-D510A (EPIC SBC com processador Dual Core Intel® Atom® D510) ---------- 11897 -------- Saved 
+EMB-LN9T (placa-mãe embarcada) ---------- 11898 -------- Saved 
+HT-3008 3.5" Intel® Atom® N270 SBC ---------- 11899 -------- Saved 
+Windows Embedded Compact 7 (anteriormente CE) ---------- 11900 -------- Saved 
+VS-8024 ---------- 11901 -------- Saved 
+Placa-mãe Mini-ITX MITX-6893 baseada no Intel® G41 ---------- 11902 -------- Saved 
+Treinamentos de Windows Embedded CE ---------- 11903 -------- Saved 
+Computador embarcado sem ventoinha baseado em BIS-6591Intel® Atom® N270 ---------- 11904 -------- Saved 
+IG-SV4-F2742 - placa-mãe de segurança de rede ---------- 11905 -------- Saved 
+Módulo HT-E105 Intel® Core™ Duo ETX ---------- 11906 -------- Saved 
+Placa-mãe Mini-ITX embarcada: JNC9KSL-2550 (processador Intel® Atom™ D2550) ---------- 11907 -------- Saved 
+NS2430 ---------- 11908 -------- Saved 
+Windows Embedded Compact 7 referência BSP para Intel® Atom® ---------- 11909 -------- Saved 
+PICA®200 para FPGA 3D Graphics IP ---------- 11910 -------- Saved 
+Treinamento do Windows Embedded Standard 7 ---------- 11911 -------- Saved 
+Placa-mãe AIMB-258 Intel® Core™2 Duo Mini ITX ---------- 11912 -------- Saved 
+Windows Embedded para Thin Clients ---------- 11913 -------- Saved 
+SBC embarcada EM-7500 Intel® Pentium® M com VGA/LVDS, 8 COM, PC/104, 3 LANs, Áudio & SSD ---------- 11914 -------- Saved 
+Analisador de protocolo Beagle USB 12 ---------- 11915 -------- Saved 
+Placa-mãe Mini-ITX embarcada: JNF99FL-525 (processador Intel® Atom™ D525) ---------- 11916 -------- Saved 
+TS-EC1279U-RP ---------- 11917 -------- Saved 
+BL306-1 - Super Mini PC sem ventoinha ---------- 11918 -------- Saved 
+Placa-mãe Mini-ITX embarcada: JNC9C-455-LF (processador Intel® Atom™ N455) ---------- 11919 -------- Saved 
+Placa-mãe MITX-6930&#9472;Mini ITX baseada no chipset Intel® NM10 ---------- 11920 -------- Saved 
+ACP-5182 (Multi-Touch painel de all-in-one computador) ---------- 11921 -------- Saved 
+POC-196 ---------- 11922 -------- Saved 
+HT-P104 6U CPCI 2ª geração Intel ® Core ™ 2 Duo processador placa ---------- 11924 -------- Saved 
+AFL-057A (5,7 "Power over Ethernet, POE, all-in-one PC com processador Intel ® Atom® Z510/Z530) ---------- 11925 -------- Saved 
+POS PC-AU3810 / AU3820 ---------- 11926 -------- Saved 
+PL-10450 ---------- 11927 -------- Saved 
+PL-80260 ---------- 11928 -------- Saved 
+POC-227 ---------- 11929 -------- Saved 
+S10A ---------- 11930 -------- Saved 
+FWA-3210 ---------- 11931 -------- Saved 
+BIS-6625 ---------- 11932 -------- Saved 
+XCalibur4301 ---------- 11933 -------- Saved 
+PPC-179T ---------- 11934 -------- Saved 
+PIN-M106 ---------- 11935 -------- Saved 
+AIMB-781 ---------- 11936 -------- Saved 
+XPedite7470 VPX-REDI com Intel® Core™ i7 de 2ª/3ª geração ---------- 11937 -------- Saved 
+HIT-W121 ---------- 11938 -------- Saved 
+ARCA-1120 ---------- 11939 -------- Saved 
+FSC-1814V2NA ---------- 11940 -------- Saved 
+PIT-1502W ---------- 11941 -------- Saved 
+POC-S197 ---------- 11942 -------- Saved 
+ASMB-781 ---------- 11943 -------- Saved 
+Placa-mãe Industrial ATX: JNAF91R-G41 (Processadores Intel® Core™2 Duo) ---------- 11944 -------- Saved 
+ARCA-1360 ---------- 11945 -------- Saved 
+XPedite7332 ---------- 11946 -------- Saved 
+WAFER-945GSE3 (3,5 SBC com processador Intel® Atom® N270 1.6 G, LVDS/TTL, 4 COM e PC/104) ---------- 11947 -------- Saved 
+Placa-mãe embarcada SBC 3.5": JNF33-270-LF (processador Intel® Atom™ N270) ---------- 11948 -------- Saved 
+Drives de estado sólido RealSSD P300 Enterprise ---------- 11949 -------- Saved 
+TS-1279U-RP ---------- 11950 -------- Saved 
+SysCentreModule™ Series-STM9040 ---------- 11951 -------- Saved 
+Flypaper ---------- 11952 -------- Saved 
+SV1-D5226-L - placa-mãe de terminais de autoatendimento ---------- 11953 -------- Saved 
+MIC-5212 ---------- 11954 -------- Saved 
+EMB-9658T (placa-mãe embarcada) ---------- 11955 -------- Saved 
+COM-LN (módulo COM Express CPU) ---------- 11956 -------- Saved 
+TS-459 Pro II ---------- 11957 -------- Saved 
+NanoCOM-LN (Módulo COM Express CPU) ---------- 11958 -------- Saved 
+IVI IOH para processador Intel® Atom® E600 Series ---------- 11959 -------- Saved 
+Computador de placa única Leopard (VL-EPM-35) PC-104 ---------- 11960 -------- Saved 
+ICE-GM45A (ETX / COM EXPRESS / Q7) ---------- 11961 -------- Saved 
+Placa-mãe embarcada EMB-4870NORCO EPIC com processador Intel® Atom® N450 (single-core) ---------- 11962 -------- Saved 
+Soluções de desenvolvimento de produto ---------- 11963 -------- Saved 
+SMAPH®-H Vector/3D híbrido IP ---------- 11964 -------- Saved 
+Raima Database Manager (RDM) ---------- 11965 -------- Saved 
+CL306-1 - Super Mini PC sem ventoinha ---------- 11966 -------- Saved 
+TKS-E50-9456 (Chassis Turn-Key, EmBOX) ---------- 11967 -------- Saved 
+TS-459U-RP+ ---------- 11968 -------- Saved 
+DSB-300 - caixa de sinalização digital independente ---------- 11969 -------- Saved 
+SOM-5890 ---------- 11970 -------- Saved 
+AL306-1 - Super Mini PC sem ventoinha ---------- 11971 -------- Saved 
+Placa-mãe Mini-ITX embarcada: JNF96FL-525-LF (processador Intel® Atom™ D525) ---------- 11972 -------- Saved 
+Módulo DRAM de classe industrial ---------- 11973 -------- Saved 
+CPC-8408H-2 ---------- 11974 -------- Saved 
+TKS-G20-9310 (Chassis Turn-Key, EmBOX) ---------- 11975 -------- Saved 
+GENE-LN05W1 (placas de temperatura largas) ---------- 11976 -------- Saved 
+COM-LN B1.0 (módulo COM Express CPU) ---------- 11977 -------- Saved 
+Placa mãe Mini-ITX MITX-6920 baseada no Intel® QM67 ---------- 11978 -------- Saved 
+NANO-PV-D5252 (EPIC SBC com processador Intel® Atom® D525 e solução DDR3) ---------- 11979 -------- Saved 
+NET-1815VD6N ---------- 11980 -------- Saved 
+Pareon ---------- 11981 -------- Saved 
+Analisador de protocolo Beagle I2C/SPI/MDIO ---------- 11982 -------- Saved 
+SysCentreModule ™ Série-COMe9420 ---------- 11983 -------- Saved 
+Plataforma de computação portátil SYS9410 ---------- 11984 -------- Saved 
+TS-879U-RP ---------- 11985 -------- Saved 
+PMI: Módulo Intel® Pentium® M PC/104 ---------- 11986 -------- Saved 
+COM Express CEQM57XT ---------- 11987 -------- Saved 
+Memória Flash NOR série múltipla I/O (N25Q) ---------- 11988 -------- Saved 
+Placa TEB-M7063 Mini ITX com Intel® Atom® de 3ª geração ---------- 11989 -------- Saved 
+NANDrive embarcado SATA/PATA SSDs ---------- 11990 -------- Saved 
+FlexNet Producer Suite ---------- 11991 -------- Saved 
+Módulo Core embarcado resistente COM1800 ---------- 11992 -------- Saved 
+Q35SBC de alto desempenho embarcado Multicore SBC ---------- 11993 -------- Saved 
+SV1-D5226 - placa-mãe de terminais de autoatendimento ---------- 11994 -------- Saved 
+104-1715CLD2N ---------- 11995 -------- Saved 
+MIC-5203 ---------- 11996 -------- Saved 
+StorFly 200 – Slim SATA ---------- 11997 -------- Saved 
+PCM-9363 ---------- 11998 -------- Saved 
+CAPA801 - placa embarcada 3,5 polegadas com processador Intel® Atom™ D425/N455/D525 e compatível com DDR3 ---------- 11999 -------- Saved 
+Integração de Sistemas ---------- 12000 -------- Saved 
+yaSSL Embedded Web Server ---------- 12001 -------- Saved 
+NANO-HM551 (SBC EPIC compatível com soquete G1 para CPUs Intel® Core™ i7/i5/i3/Celeron®) ---------- 12002 -------- Saved 
+Windows Embedded Automotive 7 ---------- 12003 -------- Saved 
+COM-45SP (Módulo COM Express CPU) ---------- 12004 -------- Saved 
+XPedite7330 ---------- 12005 -------- Saved 
+O dispositivo multitelas WebDT MS1600 ---------- 12006 -------- Saved 
+MITX-6892:Placa-mãe Mini-ITX baseado no Intel® GM45 ---------- 12007 -------- Saved 
+CPC1600 - PC/104-Plus Intel® Pentium® M SBC ---------- 12008 -------- Saved 
+Sistema embarcado EBPC-3500L-61SE Intel® Atom® N270 ---------- 12009 -------- Saved 
+Solução de armazenamento ClusterStor 3000 HPC ---------- 12010 -------- Saved 
+VLP – perfil muito baixo ---------- 12011 -------- Saved 
+EC3-1813 ---------- 12012 -------- Saved 
+FSC-1814V2NAR ---------- 12013 -------- Saved 
+Mediaphone IOH para processador Intel® Atom® E600 Series ---------- 12014 -------- Saved 
+Computador de placa única Mamba (VL-EBX-37) EBX ---------- 12015 -------- Saved 
+TS-239 Pro II+ ---------- 12016 -------- Saved 
+O dispositivo multitelas WebDT MS200 ---------- 12017 -------- Saved 
+Q57MX ---------- 12018 -------- Saved 
+Software de Sinalização Digital BroadSign ---------- 12019 -------- Saved 
+Lucero ---------- 12020 -------- Saved 
+TS-879 Pro ---------- 12021 -------- Saved 
+Windows Embedded Enterprise System ---------- 12022 -------- Saved 
+Módulo 945CMX-2 Com Express ---------- 12023 -------- Saved 
+RTX 2009 SMP ---------- 12024 -------- Saved 
+WebDT MS400 Multi Screen Appliance ---------- 12025 -------- Saved 
+Placa-mãe embarcada EMB-5872 com fator de forma de 5,25" baseada no processador Intel® Atom® D510 ---------- 12026 -------- Saved 
+Computador com segurança de rede BIS-7870 com processador Intel® Atom® N450 ---------- 12027 -------- Saved 
+Computador de placa única 945GSBC 3.5" ---------- 12028 -------- Saved 
+Placa-mãe embarcada PCMB-6872--PC104 com base em Intel® Atom® N450 ---------- 12029 -------- Saved 
+Placa-mãe DVMB-764 ATX ---------- 12031 -------- Saved 
+KINO-945GSE2 (Mini-ITX SBC com Intel® Atom® N270 1.6G) ---------- 12032 -------- Saved 
+TS-659 Pro II ---------- 12033 -------- Saved 
+Placa-mãe X9SCV-Q - Mini-ITX ---------- 12034 -------- Saved 
+AHP-1152 (HMI painel PC) ---------- 12035 -------- Saved 
+Cinnamon Bay EX ---------- 12036 -------- Saved 
+SBC86832, Core™2 Duo Mini ITX SBC com DVI-I ---------- 12037 -------- Saved 
+CorBrick 945GSB Micro Industrial System ---------- 12038 -------- Saved 
+ECN-581A-QM57 (Caixa de multimídia com monitor duplo DVI com processador Intel® Core™ i5) ---------- 12039 -------- Saved 
+DYNASIGN Online Service ---------- 12040 -------- Saved 
+MB-73200 ---------- 12041 -------- Saved 
+Conhecimento em Android, Linux e Windows Embedded ---------- 12043 -------- Saved 
+Hermes ---------- 12044 -------- Saved 
+CAPA800 - SBC embarcado de 3,5” Intel® Atom™ N450/D410/D510 com chipset Intel® ICH8M ---------- 12045 -------- Saved 
+SiGa XL-100 ---------- 12047 -------- Saved 
+COM-U15 A2.0 (Módulo COM Express CPU) ---------- 12048 -------- Saved 
+SMAPH ®-F Vector Graphics IP ---------- 12049 -------- Saved 
+Processador gráfico SM750 ---------- 12050 -------- Saved 
+NOVA-945GSE (5,25" SBC) ---------- 12051 -------- Saved 
+Placa-mãe embarcada Mini-ITX MITX-6870 baseada no processador Intel® Atom® N450/D410/D510 ---------- 12052 -------- Saved 
+AGP-3175 (Panel PC robusto com tela sensível ao toque) ---------- 12053 -------- Saved 
+PM-945GSE (PCI-104 SBC com CPU de 1.6GHz Intel® Atom®) ---------- 12054 -------- Saved 
+AIMB-272 ---------- 12055 -------- Saved 
+NOVA-GM45A (5,25" SBC com soquete P para CPU de 45nm móvel Intel® Core™ 2 Quad/Duo) ---------- 12056 -------- Saved 
+Data Storage Serial NOR Flash Memory (M25P) ---------- 12057 -------- Saved 
+MB-80190 ---------- 12058 -------- Saved 
+VTrak Ex30 ---------- 12059 -------- Saved 
+Windows Embedded Standard 7 ---------- 12060 -------- Saved 
+Versão de Sinalização digital Flypaper ---------- 12061 -------- Saved 
+Fator de forma SCM9100 padrão PC/104 e módulo núcleo embarcado robusto ---------- 12062 -------- Saved 
+SBC81205 - placa de CPU PICMG 1.0 de tamanho integral Intel® Core™2 Quad ---------- 12063 -------- Saved 
+Computador embarcado IFC-9450 Low-Profile Mini-ITX ---------- 12064 -------- Saved 
+Plataforma de videovigilância em vídeo DVS-500 ---------- 12065 -------- Saved 
+EC5-1712CLDNA (B) ---------- 12066 -------- Saved 
+KINO-G410 (Mini-ITX SBC suporta soquete da CPU LGA775 Intel® Core™ 2 Quad) ---------- 12067 -------- Saved 
+NANO-945GSE2 (EPIC SBC) ---------- 12068 -------- Saved 
+DDR2 SDRAM ---------- 12069 -------- Saved 
+MB-80200 ---------- 12070 -------- Saved 
+AIMB-210 ---------- 12071 -------- Saved 
+SMAPH®-S 3D Graphics IP ---------- 12072 -------- Saved 
+EC7-1814L2NA ---------- 12073 -------- Saved 
+COM-LN A1.0 (módulo CPU COM express) ---------- 12074 -------- Saved 
+CPC805 - SBC EPIC baseado no Intel ® Atom® N450 de 1.66 GHz com conector de expansão COM104 ---------- 12075 -------- Saved 
+Módulos de memória de temperatura estendida ---------- 12076 -------- Saved 
+EC4-1812CLDNA ---------- 12077 -------- Saved 
+AQ7-LN (módulo Qseven) ---------- 12078 -------- Saved 
+N2200XXX ---------- 12079 -------- Saved 
+AL345-1: IPC sem ventoinha ---------- 12080 -------- Saved 
+SV6-G6614 ---------- 12081 -------- Saved 
+Computador em módulo COM Express HT-EC05 Intel® Core™ Duo/Intel® Core™ 2 Duo ---------- 12082 -------- Saved 
+LynxSecure para o Intel® Atom® ---------- 12083 -------- Saved 
+Placa-mãe Mini-ITX embarcada: JNC9MGL-525 (processador Intel® Atom™ D525) ---------- 12084 -------- Saved 
+Sistema de sinalização digital de hospedagem CampaignManager/SAAS ---------- 12085 -------- Saved 
+Motor digital DE67-HA ---------- 12086 -------- Saved 
+EMB-9459TW1 Rev. A (placas de temperatura ampla) ---------- 12087 -------- Saved 
+Wind River Simics ---------- 12088 -------- Saved 
+AEC-6860 (controlador embarcado, BOXER 2) ---------- 12089 -------- Saved 
+AIMB-213 ---------- 12090 -------- Saved 
+Serviços de engenharia embarcados ---------- 12091 -------- Saved 
+Serviços de semicondutores ---------- 12092 -------- Saved 
+N4200PRO ---------- 12093 -------- Saved 
+PICOe-945GSE (placa de CPU da metade do tamanho) ---------- 12094 -------- Saved 
+Biblioteca SSL com CyaSSL incorporada ---------- 12095 -------- Saved 
+UTC-W101 ---------- 12096 -------- Saved 
+TS-439 Pro II + ---------- 12097 -------- Saved 
+NANO-GM45A2 (o SBC EPIC suporta o processador Intel® 45nm Core ™ 2 Duo móvel com plataforma Intel® GM45 & ICH9M) ---------- 12098 -------- Saved 
+N5200XXX ---------- 12099 -------- Saved 
+Suporte de personalização Intel® BLDK ---------- 12100 -------- Saved 
+LGX PT901: sistema para ambiente extremo sem ventoinha com Intel© Core ™ 2 Duo ---------- 12101 -------- Saved 
+Serviços de projetos eletrônicos ---------- 12102 -------- Saved 
+DDR3 ---------- 12104 -------- Saved 
+Placa-mãe Mini-ITX embarcada: Processador Intel® Atom® N2600 JNF9C-2600 ---------- 12105 -------- Saved 
+ZTE exFAT para sistemas embarcados ---------- 12106 -------- Saved 
+Soluções de firmware UEFI ---------- 12107 -------- Saved 
+ETX-LN (módulo CPU ETX) ---------- 12108 -------- Saved 
+IBX-300 (Dual Core Box sem ventoinha para segurança e vigilância digital com processador Intel® Atom® D510) ---------- 12109 -------- Saved 
+Computador de placa única Tiger (VL-EPM-24) PC/104-Plus ---------- 12110 -------- Saved 
+NOVA-HM551 (SBC de 5,25" com soquete G1 e processador Intel® Core™ i7/i5/i3 e Intel® Celeron® de 32nm/45nm) ---------- 12111 -------- Saved 
+ALTELL HyperBIOS ---------- 12112 -------- Saved 
+AU110 LGX: sistema de temperatura estendida sem ventoinha com Intel Atom© ™ ---------- 12113 -------- Saved 
+Placa-mãe Mini-ITX embarcada: Processador Intel® Atom® JNF9C-2800 ---------- 12114 -------- Saved 
+CommandCenterHD ---------- 12115 -------- Saved 
+Módulo ICE-945GSE Express COM base tipo 2 ---------- 12116 -------- Saved 
+Módulo de núcleo SCM9200 PC104 / PC104 + robusto embarcado ---------- 12117 -------- Saved 
+KINO-HM551 (SBC Mini-ITX com soquete G1 para CPUs móveis Intel® Core™ i7/i5/i3 e Celeron®) ---------- 12118 -------- Saved 
+Computador robusto sem ventoinha LGX AU115 com Intel© Atom™ ---------- 12119 -------- Saved 
+BOLACHA-945GSE (3,5 "SBC) ---------- 12120 -------- Saved 
+CampaignManager Software de Sinalização Digital ---------- 12121 -------- Saved 
+TS-259 Pro + ---------- 12122 -------- Saved 
+NANO-945GSE3 (EPIC SBC com Intel® Atom® N270 1.6 GHz) ---------- 12124 -------- Saved 
+DDR3 SDRAM ---------- 12125 -------- Saved 
+COM Express CEQM57 ---------- 12126 -------- Saved 
+WebDT 180 thin client ---------- 12127 -------- Saved 
+Computador robusto sem ventoinha LGX AU910 com Intel© Core™ Mobile ---------- 12128 -------- Saved 
+TKS-G20-9455 (Chassis de Turn-Key, EmBOX) ---------- 12129 -------- Saved 
+NANO-QM57A (EPIC SBC com processador móvel Intel® Core™/i7/i5/i3) ---------- 12130 -------- Saved 
+Módulo HT-E108 Intel ® Atom® N270 ETX ---------- 12131 -------- Saved 
+NET-1816VD6N-2BP ---------- 12132 -------- Saved 
+MB-80050 ---------- 12133 -------- Saved 
+SiGa CX-200 ---------- 12134 -------- Saved 
+1UR - sistema de montagem em rack SolidLogic com Intel© Atom™ ---------- 12135 -------- Saved 
+Telemática Android ---------- 12136 -------- Saved 
+COM Express CEQM67 ---------- 12137 -------- Saved 
+Título gratuito de Soluções IA Boot Loader de Engenharia ADI ---------- 12138 -------- Saved 
+LGX PT110 - Sistema sem ventoinha de ambiente extremo com Intel© Atom™ ---------- 12139 -------- Saved 
+Windows Embedded Handheld 6.5 ---------- 12140 -------- Saved 
+Módulo de CPU tamanho E600 Série CoreExpress ---------- 12141 -------- Saved 
+Placa-mãe embarcada ao supermicro X9SCV-QV4 ---------- 12142 -------- Saved 
+COM Express CEQM67HD ---------- 12143 -------- Saved 
+MP67-D ---------- 12144 -------- Saved 
+GS-L05 - Sistema Mini-ITX SolidLogic sem ventoinha com Intel© Atom™ ---------- 12145 -------- Saved 
+Dispositivo de armazenamento de servidor PHSS-210 ---------- 12146 -------- Saved 
+GENE-U15B (ESB 3,5") ---------- 12147 -------- Saved 
+AEC-6876 (controlador embarcado) ---------- 12148 -------- Saved 
+PFM-LNP (módulo PC/104) ---------- 12149 -------- Saved 
+AHP-2153 (exibição no painel de toque) ---------- 12150 -------- Saved 
+GENE-QM67 (3,5" SBC) ---------- 12151 -------- Saved 
+PCM-LN02 (placa compacta) ---------- 12152 -------- Saved 
+COM-CV Rev.B (COM Express) ---------- 12153 -------- Saved 
+MEC-5003B ---------- 12154 -------- Saved 
+EMB-H61A (placa-mãe Mini-ITX) ---------- 12155 -------- Saved 
+TKS-G21-CV05 (caixa embarcada) ---------- 12156 -------- Saved 
+X7DB3 Extended ATX ---------- 12157 -------- Saved 
+EC7-1818CLD2NA ---------- 12158 -------- Saved 
+Minicomputador industrial sem ventoinha LGX AG150 com Intel© Atom™ ---------- 12159 -------- Saved 
+GENE-9455 Rev.B (ESB 3,5") ---------- 12160 -------- Saved 
+AEC-6967 (controlador embarcado) ---------- 12161 -------- Saved 
+V7875 ---------- 12162 -------- Saved 
+AHP-2176 (exibição no painel de toque) ---------- 12163 -------- Saved 
+LGX PT912 - Sistema sem ventoinha para ambientes extremos com Intel© Core™ i5/i7 ---------- 12164 -------- Saved 
+GENE-QM77 (SBC 3,5") ---------- 12165 -------- Saved 
+Projeto de sistemas embarcados ---------- 12166 -------- Saved 
+GCS-1500i (Green Communication System) ---------- 12167 -------- Saved 
+AEC-6612 Rev.B (controlador embarcado) ---------- 12168 -------- Saved 
+GENE-CV05 (ESB 3,5") ---------- 12169 -------- Saved 
+AFP-6123 (computador de painel de toque) ---------- 12170 -------- Saved 
+GENE-9655 (ESB 3,5") ---------- 12171 -------- Saved 
+GCS-2500 (Green Communication System) ---------- 12172 -------- Saved 
+GENE-LN05 Rev.B (ESB 3,5") ---------- 12173 -------- Saved 
+AEC-6613 (controlador embarcado) ---------- 12174 -------- Saved 
+KINO-945GSE (placa-mãe Mini ITX) ---------- 12175 -------- Saved 
+Placa-mãe Micro ATX industrial: JNMF91-G41 (processadores Intel® Core™ 2 Duo) ---------- 12176 -------- Saved 
+AFP-6152 (computador de painel de toque) ---------- 12177 -------- Saved 
+CT12 ---------- 12178 -------- Saved 
+EPIC-CV07 (placa EPIC) ---------- 12179 -------- Saved 
+Sistema embarcado sem ventoinha: HBJC360F33W-B (processador Intel® Atom™ N270) ---------- 12180 -------- Saved 
+EMB-QM67 (placa-mãe Mini-ITX) ---------- 12181 -------- Saved 
+Placa-mãe Industrial ATX: JNAF92-Q67 (2ª geração de processadores Intel® Core™ i3, i5, i7) ---------- 12182 -------- Saved 
+AEC-6511 (controlador embarcado) ---------- 12183 -------- Saved 
+Sistema embarcado sem ventoinha AFC-6640 de baixo consumo de energia baseado no processador Intel® Atom® N270 ---------- 12184 -------- Saved 
+Plataforma de armazenamento de objeto Dell DX ---------- 12185 -------- Saved 
+EPIC-QM57 (Placa EPIC Express) ---------- 12186 -------- Saved 
+GENE-QM57 (ESB 3,5") ---------- 12187 -------- Saved 
+Programa Dell OEM XL ---------- 12188 -------- Saved 
+Sistema embarcado sem ventoinha: HBJC362F35W-2600-B (processador Intel® Atom™ N2600) ---------- 12189 -------- Saved 
+COM-CV Rev.A (Módulo COM Express) ---------- 12190 -------- Saved 
+Placa-mãe Micro ATX industrial: JNMF92-H61 (processadores de 2ª geração Intel® Core™ i3, i5, i7) ---------- 12191 -------- Saved 
+FWS-2200 (equipamento de rede) ---------- 12192 -------- Saved 
+EMB-CV1 (Placa-mãe Mini-ITX) ---------- 12193 -------- Saved 
+Dell OptiPlex XE ---------- 12194 -------- Saved 
+XCR14 ---------- 12195 -------- Saved 
+SBC324 ---------- 12196 -------- Saved 
+V7865 - 6U VME, Core ™ 2 Duo SBC ---------- 12197 -------- Saved 
+Placa-mãe Intel SR330-N&reg; GME965/ICH8M &micro; ATX ---------- 12198 -------- Saved 
+ACR301 ---------- 12199 -------- Saved 
+SBC341 ---------- 12200 -------- Saved 
+CR5 ---------- 12201 -------- Saved 
+SBC622 ---------- 12202 -------- Saved 
+CR12 ---------- 12203 -------- Saved 
+SBC624 ---------- 12204 -------- Saved 
+Plug-N-Run G6 ---------- 12205 -------- Saved 
+CC11 ---------- 12206 -------- Saved 
+V7768 ---------- 12207 -------- Saved 
+IPN250 ---------- 12208 -------- Saved 
+XVP14 ---------- 12209 -------- Saved 
+CL11 ---------- 12210 -------- Saved 
+VP12 ---------- 12211 -------- Saved 
+DSP280 ---------- 12212 -------- Saved 
+XVR14 ---------- 12213 -------- Saved 
+Placa-mãe SB600-C Intel® B65 ATX ---------- 12214 -------- Saved 
+Placa-mãe industrial DFI ATX - Processador PT630-NRM Supports New Quad-Core Intel® Core™ i7 ---------- 12215 -------- Saved 
+Placa embarcada SB331-D - Intel® H61 microATX ---------- 12216 -------- Saved 
+Placa-mãe industrial PT631-IPM - Intel® Q57 ATX ---------- 12217 -------- Saved 
+Placa-mãe EL339-B Intel&reg; G41/ICH7 uATX ---------- 12218 -------- Saved 
+Placa Embarcada SB601-C Intel ® B65 ATX ---------- 12219 -------- Saved 
+Sistemas Embarcados sem ventoinha DFI ES951 ---------- 12220 -------- Saved 
+Placa SB100-NRM Intel® Q67 Mini-ITX ---------- 12221 -------- Saved 
+Placa-mãe ATX EL620-C com suporte para aplicações de Barramento ISA ---------- 12222 -------- Saved 
+Série CD905-B - Intel® Atom® D2700/N2800/N2600 + NM10 COM Express R2.0 compacto, tipo 2 ---------- 12223 -------- Saved 
+LR100-N16D uma Placa-mãe Industrial Mini-ITX com base no novo processador dual-core Intel&reg; Atom™ D510 ---------- 12224 -------- Saved 
+Placa-mãe industrial SB630-CRM - ATX com Suporte de Processador de 2ª geração Intel® Core™ ---------- 12225 -------- Saved 
+Placa Intel SR960-N&reg; GME965/ICH8M EPIC ---------- 12226 -------- Saved 
+Placa-mãe industrial DFI LR101 B16M Intel&reg; Atom™ N450 / Intel&reg; ICH8M mini-ITX ---------- 12227 -------- Saved 
+Série CD951- 3.5 "SBC com processadores Intel® Atom® D2700/N2800/N2600 e NM10 ---------- 12228 -------- Saved 
+G7L332-L nova placa-mãe micro-ATX &custo-benefício Intel® 945GC/ICH7 ---------- 12229 -------- Saved 
+Placa-mãe LR100-N16M Intel&reg; ICH8M mini-ITX ---------- 12230 -------- Saved 
+Sistema Embarcado ST101 Série Mini-ITX ---------- 12231 -------- Saved 
+CP330-NRM - placa-mãe industrial microATX da DFI com chipset móvel Intel® QM57 Express ---------- 12232 -------- Saved 
+Intel NP951-B16C&reg; 945GSE/ICH7M de 3,5" SBC com 12V DC-in ---------- 12233 -------- Saved 
+Computador embarcado ES122-NP com baixo consumo de energia  para aplicações com sinalização digital. ---------- 12234 -------- Saved 
+SB331-IPM - Plataforma de vigilância de vídeo microATX com novo processador Intel® Core ™ de 2ª geração ---------- 12235 -------- Saved 
+Placa-mãe G7B630-N  Intel&reg; Q965/ICH8 ATX ---------- 12236 -------- Saved 
+Novo Intel&reg; Atom ™ NP100-N16C baseado na placa-mãe 945GSE/ICH7M Mini- ITX ---------- 12237 -------- Saved 
+Placa-mãe Mini-ITX móvel HR100-CRM Intel® QM67 ---------- 12238 -------- Saved 
+Placa-mãe Mini-ITX GLE960/ICH8M  Intel&reg; SR100-L20C ---------- 12239 -------- Saved 
+Mini-ITX MightyBoard 800 ---------- 12240 -------- Saved 
+Express-ATC - módulo COM Express Compact com o processador Intel® Atom® N270 e chipset Intel® 945GSE/ICH7-M ---------- 12241 -------- Saved 
+ReadySystem 850 ---------- 12242 -------- Saved 
+Express-MG ---------- 12243 -------- Saved 
+cPCI-6615 - lâmina de servidor 6U CompactPCI® para Intel® Atom™ D525 ---------- 12244 -------- Saved 
+aTCA-8505 ---------- 12246 -------- Saved 
+nanoX-ML - módulo de tamanho reduzido compatível com COM Express tipo 1 ---------- 12247 -------- Saved 
+Módulo de CPU COM Express CP900-B com Intel&reg;HM55 ---------- 12248 -------- Saved 
+Módulo de base COM Express HR900-B ---------- 12249 -------- Saved 
+NuPRO-A301 ---------- 12250 -------- Saved 
+Mini-ITX MightyBoard 821 ---------- 12251 -------- Saved 
+Express-ATR - módulo COM Express Extreme Rugged™ com o processador Intel® Atom® N270 e chipset Intel® 945GSE/ICH7-M ---------- 12252 -------- Saved 
+Módulo Intel NP900-B16C&reg; 945GSE/ICH7M COM Express ---------- 12253 -------- Saved 
+DS910-CD - Intel® Atom ™ N2600 computador embarcado sem ventoinha ---------- 12254 -------- Saved 
+EPIC ReadyBoard 820 ---------- 12256 -------- Saved 
+cPCI-3970 - lâmina de processadores 3U CompactPCI® para a 2ª geração do processador Intel® Core™ i7 ---------- 12257 -------- Saved 
+MilSystem 840 ---------- 12258 -------- Saved 
+cPCI-6965 ---------- 12259 -------- Saved 
+Placa embarcada SB300-C Intel ® B65 microATX ---------- 12260 -------- Saved 
+A placa NP905-B16C Intel &reg;Atom™, 945GSE/ICH7M Micro COM Express ---------- 12261 -------- Saved 
+O sistema da séria EC200 possui construção Modular visando aplicações de Informática Industrial ---------- 12262 -------- Saved 
+M-321 ---------- 12263 -------- Saved 
+COM 840 ---------- 12264 -------- Saved 
+NuPRO-A331 - SBC PICMG® 1.0 de tamanho padrão com LGA1156 Intel® Core™ i7/i5/i3 ---------- 12265 -------- Saved 
+cPCI-6210 - lâmina de periféricos/servidor 6U CompactPCI® para a 2ª geração do processador Intel® Core™ i7 quad-core ---------- 12267 -------- Saved 
+NuPRO-E320 ---------- 12268 -------- Saved 
+aTCA-6100 ---------- 12269 -------- Saved 
+Express-CBE - módulo COM Express® com o processador Intel® Core™ i7/i5/i3 e chipset Intel® QM57 ---------- 12270 -------- Saved 
+Placa SB330-CRM Intel ® Q67 microATX ---------- 12271 -------- Saved 
+Placa-mãe G5G100-L10C Intel ® 910GMLE/ICH6M ITX ---------- 12272 -------- Saved 
+Placa mãe Intel G7B336-P &reg;Q965/ICH8 ATX&micro; ---------- 12273 -------- Saved 
+ETX-PVR - módulo ETX® com os processadores Intel® Atom® com um ou dois núcleos e chipset Intel® ICH8M ---------- 12274 -------- Saved 
+M-322 ---------- 12275 -------- Saved 
+ETX-NR667 ---------- 12276 -------- Saved 
+cPCI-6510 - lâmina universal 6U CompactPCI para o processador Intel® Core™ i7 com dois locais PMC ---------- 12277 -------- Saved 
+CoreModule 800 ---------- 12278 -------- Saved 
+aTCA-6150 ---------- 12279 -------- Saved 
+M-342 - Placa-mãe industrial ATX com processador Intel® Core™ i7/i5/i3 ---------- 12280 -------- Saved 
+CT-60 ---------- 12281 -------- Saved 
+NuPRO-935A ---------- 12282 -------- Saved 
+Placa-mãe G4M300-M12 Intel&reg; 852GM/ICH4 µ ATX ---------- 12283 -------- Saved 
+MilSystem 735 ---------- 12284 -------- Saved 
+cPCI-3965 ---------- 12285 -------- Saved 
+MI-220 - Placa-mãe industrial Mini-ITX com Intel® Core™ i7/i5/i3 ---------- 12286 -------- Saved 
+CP100-NRM - placa-mãe industrial Mini-ITX com chipset Intel® QM57 ---------- 12287 -------- Saved 
+EBX LittleBoard 800 ---------- 12288 -------- Saved 
+Portwell PCOM-B215VG ---------- 12289 -------- Saved 
+Portwell CAR-3000 ---------- 12290 -------- Saved 
+Portwell RUBY-9719VG2AR ---------- 12291 -------- Saved 
+Portwell WADE-8011 ---------- 12292 -------- Saved 
+ROBO-8210VG2AR ---------- 12293 -------- Saved 
+ReadyBoard 740 - computador de placa única EPIC Intel® Atom® Dual-Core com decodificador de vídeo h.264 por hardware ---------- 12294 -------- Saved 
+Portwell PQ7-M105IT ---------- 12295 -------- Saved 
+EPIC ReadyBoard 800 ---------- 12296 -------- Saved 
+CAD-0210 ---------- 12297 -------- Saved 
+cPCI-3615 - lâmina de processadores 3U básica CompactPCI® Dual-Core Intel® Atom™ ---------- 12298 -------- Saved 
+Portwell PCOM-B216VG ---------- 12299 -------- Saved 
+TANC-5320 ---------- 12300 -------- Saved 
+RUBY-9716VGAR ---------- 12301 -------- Saved 
+Portwell CAR-4010 ---------- 12302 -------- Saved 
+ROBO-8779VG2AR ---------- 12303 -------- Saved 
+Portwell RUBY-9911 ---------- 12304 -------- Saved 
+Portwell WADE-8020 ---------- 12305 -------- Saved 
+WADE-8012 ---------- 12306 -------- Saved 
+Portwell ROBO-8120VG2R ---------- 12307 -------- Saved 
+Portwell PCOM-B217VG ---------- 12309 -------- Saved 
+NuPRO-E315 ---------- 12310 -------- Saved 
+Express-LPC - módulo COM Express® Compact com o processador Intel® Atom® single/dual core e chipset Intel® ICH8M ---------- 12311 -------- Saved 
+RUBY-9720VGAR ---------- 12312 -------- Saved 
+Portwell WEBS-3560B ---------- 12313 -------- Saved 
+Express-NR ---------- 12314 -------- Saved 
+ETX-AT - módulo ETX® com o processador Intel® Atom® N270 e chipset Intel® 945GSE/ICH7-M ---------- 12315 -------- Saved 
+Portwell CAR-5010 ---------- 12316 -------- Saved 
+Portwell RUBY-D711VG2AR ---------- 12317 -------- Saved 
+Portwell PCOM-B218VG ---------- 12318 -------- Saved 
+WADE-8180 ---------- 12319 -------- Saved 
+WADE-8075/8076 ---------- 12320 -------- Saved 
+NANO - 8045L ---------- 12321 -------- Saved 
+PEB-3732VLA ---------- 12322 -------- Saved 
+Portwell NAR-7102 ---------- 12323 -------- Saved 
+Portwell RUBY-D712VG2AR ---------- 12324 -------- Saved 
+Portwell PQ7-M101G ---------- 12325 -------- Saved 
+WADE-8556 ---------- 12326 -------- Saved 
+CoreModule 745 - computador de placa única PC/104-Plus com processador Intel® Atom® e chipset Intel® ICH8-M ---------- 12327 -------- Saved 
+Portwell NANO-6040 ---------- 12328 -------- Saved 
+ROBO-8913VG2AR ---------- 12329 -------- Saved 
+RUBY-9713VG2AR ---------- 12330 -------- Saved 
+Portwell CAD-0205 / 0206 / 0208 ---------- 12331 -------- Saved 
+ROBO-8914VG2AR ---------- 12332 -------- Saved 
+Portwell RUBY-9716VG2AR ---------- 12333 -------- Saved 
+Portwell RUBY-M710VG2AR ---------- 12334 -------- Saved 
+ROBO-8110VG2AR ---------- 12335 -------- Saved 
+NuPRO-E340 - SHB PICMG® 1.3 de tamanho padrão com LGA1155 Intel® Core™ i7/i5/i3 ---------- 12336 -------- Saved 
+Portwell PQ7-M103XL ---------- 12337 -------- Saved 
+MI950 - placa-mãe Mini-ITX baseada em Q45 da Intel® ---------- 12338 -------- Saved 
+IB892 - Intel® Atom® série E600 SBC de tamanho de disco de 3,5 polegadas com Chipset Intel® EG20T ---------- 12339 -------- Saved 
+SBC (computador de placa única) TP A41/30x 3U CompactPCI® com Intel® Atom™ ---------- 12340 -------- Saved 
+Sistema embarcado LUGE LEC-7500 HDMI pronto sem ventoinha ---------- 12341 -------- Saved 
+AMI200-953 - sistema mini-ITX em alumínio sem ventoinha com Intel® Core ™ i7-620M ---------- 12342 -------- Saved 
+IB935 - placa CPU de tamanho completo Intel® Q35 PICMG 1,3 ---------- 12343 -------- Saved 
+IB827 - placa de CPU tamanho completo ---------- 12344 -------- Saved 
+Computador LEC-7100 com Intel® Atom® dual-core sem ventoinha ---------- 12345 -------- Saved 
+MI890 - placa-mãe Intel® Atom® D525/N455/D425 mini-ITX ---------- 12346 -------- Saved 
+SBC 3U CompactPCI® TP 462/34x com processador Intel® Core ™ 2 Duo ---------- 12347 -------- Saved 
+CSB200-888 - sistema portátil sem ventoinha para aplicações sem fio ---------- 12348 -------- Saved 
+IB905 - SBC Intel® Core™ i7/i5/i3 da 2ª geração de tamanho do disco de 3,5 polegadas com Chipset Intel® QM67 ---------- 12349 -------- Saved 
+Computador sem ventoinha NISE 3100e ---------- 12350 -------- Saved 
+CMI300-890 - sistema sem ventoinha baseado no Processador Intel® Atom® N455 ---------- 12351 -------- Saved 
+NSA 7110W: Plataforma de segurança de rede de montagem em rack de 2U com LAN 24 GbE ---------- 12352 -------- Saved 
+LEC-7920 ---------- 12353 -------- Saved 
+Placa NEX 852VL2 com Intel® Pentium® M/Celeron® M ULV/LV ATX com monitor duplo e LAN 2x ---------- 12354 -------- Saved 
+RSB200-884T - sistema de temperatura abrangente sem ventoinha  embarcado ---------- 12355 -------- Saved 
+SY AMC/2xx - sistema de desenvolvimento MicroTCA ---------- 12356 -------- Saved 
+Placa-mãe Mini-ITX MI953 com Intel® Core™ i7/Core™ i5 ---------- 12357 -------- Saved 
+IB957 - O SBC (computador de placa única) com tamanho do disco de 5,25 polegadas com Intel® Core ™ i7 e chipset Intel® QM57 ---------- 12358 -------- Saved 
+Computador de veículo VTC6110 certificado para EN50155 e PCTRB ---------- 12359 -------- Saved 
+CSB100-891 - sistema embarcado sem ventoinha Intel® Atom® N450 ---------- 12360 -------- Saved 
+IB950 - SBC de tamanho de disco 5,25" com Intel® GM965 ---------- 12361 -------- Saved 
+WADE-8070 ---------- 12362 -------- Saved 
+SI-96 - projetado para a aplicação de sinalização com SBC IBASE IB826 ---------- 12363 -------- Saved 
+LEC-3010 - Intel® Atom® N450 IPC e montagem em DIN ---------- 12364 -------- Saved 
+Aparelho de rede FW-7539 com Intel® Atom® D510 e D410 da Lanner ---------- 12365 -------- Saved 
+EBC 310 - SBC embarcada de 3,5” baseada no Intel® Atom® E6xx ---------- 12366 -------- Saved 
+ASB200-883-6COM - sistema sem ventoinha com suporte a 6 portas seriais ---------- 12367 -------- Saved 
+Equipamento de rede FW-8750 ---------- 12368 -------- Saved 
+IB960 - placa CPU de tamanho completo PICMG 1.3 com Intel® Core ™ i7/i5/i3 de 2 ª geração e chipset Intel® Q67 ---------- 12369 -------- Saved 
+MI935 - Placa-mãe mini-ITX com Intel® Q35 ---------- 12370 -------- Saved 
+IB888 - SBC de 3,5 polegadas baseado no Intel® Atom™ com chipset Intel SCH US15W XL ---------- 12371 -------- Saved 
+Sistema embarcado LUGE LEC-2010 sem ventoinha ---------- 12372 -------- Saved 
+IB805 - computador de placa única PCI-104 ---------- 12373 -------- Saved 
+MPPC 2210 - PC de painel multimídia all-in-one de 22 pol com tela de toque opcional ---------- 12374 -------- Saved 
+LEC-2050 ---------- 12375 -------- Saved 
+MI888 - placa-mãe Intel® Atom® N450/D510 mini-ITX ---------- 12376 -------- Saved 
+MI957 - Intel® Core™ i7 - 610E, Intel® Core™ i3 - 330E com Mini-ITX ECC ---------- 12377 -------- Saved 
+iPPC-1700 - Panel PC Intel® Core™ i7/i5 ---------- 12378 -------- Saved 
+Plug-N-Run L2 ---------- 12379 -------- Saved 
+CMI300-810 - sistema sem ventoinha estreito e leve ---------- 12380 -------- Saved 
+Sistema de computação em veículos I-VC5 com Intel® Atom® N450 de 1,66 GHz ---------- 12381 -------- Saved 
+IB891 - tamanho de disco de 3,5 polegadas Intel® Atom® SBC com processador N450/D510 ---------- 12382 -------- Saved 
+AMI402 - sistema sem ventoinha com dois slots de expansão ---------- 12383 -------- Saved 
+IB825 - placa de CPU Intel® Atom ™ N270 de meio tamanho com Chipset Intel® 945GSE ---------- 12384 -------- Saved 
+LEC-5510 ---------- 12385 -------- Saved 
+MI889 Placa-mãe Mini-ITX Intel® Atom® com processador N450/D510 ---------- 12386 -------- Saved 
+FW-8865 ---------- 12387 -------- Saved 
+EBC 354 ---------- 12388 -------- Saved 
+Computador de veículo sem ventoinha VTC 6200Intel® Atom® D510 ---------- 12389 -------- Saved 
+NISE 2000 - computador de ventoinha de baixo consumo de energia e de alto desempenho ---------- 12390 -------- Saved 
+Placa EBC 500 embarcada de 5,25" com 2 LAN GbE PCIe e 1 slot de expansão PCIe ---------- 12391 -------- Saved 
+SBC (Computador de placa única) VX 541/06x com processador Intel® Core ™ 2 Duo VXS/VME ---------- 12392 -------- Saved 
+NSA 5120: Aparelho de rede de montagem em rack de 1U com 8 portas para LAN Gb ---------- 12393 -------- Saved 
+Leitor de sinalização digital NDiS 111 baseado no processador Intel® Atom® E620 ---------- 12394 -------- Saved 
+ICES 300 - CPU da família Core™2 Duo e soquete P Intel® , módulo COM Express ---------- 12395 -------- Saved 
+NISE 2020 - computador industrial sem ventoinha com 2 slots de expansão PCI ---------- 12396 -------- Saved 
+SBC (computador de placa única) VX 81x/09x com Intel® Core ™ i7 VME/VXS de 2ª geração ---------- 12397 -------- Saved 
+NISE 3500 - computador sem ventoinha com expansão mini-PCIe ---------- 12398 -------- Saved 
+ICES 170 - placa de baixo consumo de energia ETX COM ---------- 12399 -------- Saved 
+Computador de veículo com telemática, VTC 6200-NI, para vigilância em veículos ---------- 12400 -------- Saved 
+SBC (computador de placa única) TR 80x/39x com processador Intel® Core ™ i7 OpenVPX ™ de 2ª geração ---------- 12401 -------- Saved 
+NISE 3110 - computador sem ventoinha com Intel® Core ™ 2 Duo embarcado e 1 PCIe ---------- 12402 -------- Saved 
+Computador de veículo a telemática e sinalização de veículos - VTC 2000 ---------- 12403 -------- Saved 
+TP 702/38x - SBC CompactPCI 3U baseado no processador Intel® Core™ i7 de 32 nm ---------- 12405 -------- Saved 
+Computador NISE 100 sem ventoinha com uma LAN GbE e interfaces ricas de I/O ---------- 12406 -------- Saved 
+NSA 1083/1043: Plataforma de segurança de rede de 1 U com LAN GbE 8/4 ---------- 12407 -------- Saved 
+Sistema de vigilância inteligente,  NViS 2140, com solução DVR, IP e câmeras analógicas ---------- 12408 -------- Saved 
+PP 712/08x - SBC PMC/XMC CompactPCI dual baseada no processador Intel® Core™ i7 de 32 nm ---------- 12409 -------- Saved 
+Leitor de sinalização digital NDiS 161 ---------- 12410 -------- Saved 
+PP 68x/M71 - SBC (computador de placa única) Intel® Xeon® de 4/6 núcleos  6U Compact PCI® ---------- 12411 -------- Saved 
+SBC XMC XP 732/x8x com processador Intel® Core™ i7 ---------- 12412 -------- Saved 
+PC de painel de classe industrial de 15 pol com tela de toque nivelada, APPC 1520T/1521T ---------- 12413 -------- Saved 
+NISE 3140M - computador sem ventoinha de classe médica alimentado por processador Intel® Core ™ 2 Duo para alta velocidade de processamento de imagem e diagnóstico auxiliado por computador ---------- 12414 -------- Saved 
+Computador de veículo de alto desempenho - VTC 6120 ---------- 12415 -------- Saved 
+Sistema de vigilância NVR móvel NViS 2280 ---------- 12416 -------- Saved 
+TP 86x/39x - SBC (computador de placa única) com Intel® Core ™ i7 3U de 2 ª geração e CompactPCI ---------- 12417 -------- Saved 
+Mini PC sem ventoinha NISE 101 baseado no Intel® Atom® com duas GbE LAN e duas saídas para monitor ---------- 12418 -------- Saved 
+VX 407/04x - placa de processador VXS/VME com processador Intel® Core™ 2 Duo ---------- 12419 -------- Saved 
+Placa embarcada de 3,5" - EBC 310 ---------- 12420 -------- Saved 
+PICO 870VL2 ---------- 12421 -------- Saved 
+TP 402/35x - SBC (computador de placa única) com Core™ 2 Duo, 3U CompactPCI ---------- 12422 -------- Saved 
+EBC 352 - ECX de  3,5" com  CPU Intel® Atom® D525 de 1,8 GHz na placa ---------- 12423 -------- Saved 
+PC de painel de 17" sem ventoinha com tela de toque nivelada, APPC1720T/1721T ---------- 12424 -------- Saved 
+SBC (computador de placa única) com processador Intel® Core ™ 2 Duo AM 210/x0x AdvancedMC ---------- 12425 -------- Saved 
+VP A45/01 x - SBC (computador de placa única) Intel® Atom™ N270, 6U VME ---------- 12426 -------- Saved 
+EBC 353 ---------- 12427 -------- Saved 
+NISE 103: Computador sem ventoinha de tamanho mini ---------- 12428 -------- Saved 
+VX 511/06, o SBC (computador de placa única) com processador Intel® Core™ 2 Duo VXS/VME ---------- 12429 -------- Saved 
+MRC 2200: Tablet PC de 8,4" com tela de toque e módulos de comunicação ---------- 12430 -------- Saved 
+Leitor de mídia de sinalização digital NDiS 166 - suporta Intel® Core ™ i5/i7 e vídeos duplos Full HD ---------- 12431 -------- Saved 
+TP 442/34 x - SBC (computador de placa única) Intel® Core™ 2 Duo, 3U CompactPCI ---------- 12432 -------- Saved 
+Computador de veículo para telemática e sinalização de veículos - VTC 2100 ---------- 12433 -------- Saved 
+AM 31x/x0x SBC com Intel® Core ™ i7 de 2 ª geração AdvancedMC ---------- 12434 -------- Saved 
+VR 737/08x - SBC VPX 6U baseado no processador Intel® Core™ i7 ---------- 12435 -------- Saved 
+NISE 3150e - sistema sem ventoinha com Intel® Pentium® M / Celeron® M e Slim DVD Combo ---------- 12436 -------- Saved 
+Módulo COM Express 200 baseado no soquete Intel® Core ™ Duo M com Intel® GMA950 suportando até 21 pistas Express ---------- 12437 -------- Saved 
+F17 - 3U CompactPCI (Express) - Core™ 2 Duo ---------- 12438 -------- Saved 
+Tablet PC G0820 industrial robusto ---------- 12439 -------- Saved 
+DuraCOR 810: Plataforma de processador COTS robusto baseado em Intel® Pentium® M738 ---------- 12440 -------- Saved 
+Controlador 752 rígido embarcado resistente ---------- 12441 -------- Saved 
+VX - 120P: Processadores Intel® Celeron® M, Intel® Core ™ Duo, Intel® Core ™ i5/i7  em um computador de painel com tela de toque TFT LCD de 12,1" ---------- 12442 -------- Saved 
+PC de caixa robusta FPC-7310 ---------- 12443 -------- Saved 
+EmETXe-i2903 ---------- 12444 -------- Saved 
+MBX-1736A (aparelho de rede) ---------- 12445 -------- Saved 
+Zypad BR2000: Flexível e robusto computador para uso humano com ampla conectividade de I/O e comunicações ---------- 12446 -------- Saved 
+MM2 - série ESMini COM Intel® Atom® E600 ---------- 12447 -------- Saved 
+HiCORE-i67Q1 ---------- 12448 -------- Saved 
+Tablet PC rígido G1050 ---------- 12449 -------- Saved 
+Catalisador CV ---------- 12450 -------- Saved 
+A20 - SBC (computador de placa única) 6U VME 2eSST Intel® Core™ 2 Duo ---------- 12451 -------- Saved 
+VX-121F-N270: PC de painel sem ventoinha com baixa consumo de energia e Intel® Atom™  - tela TFT de 12,1" e um slot de expansão PCI ---------- 12452 -------- Saved 
+Controlador embarcado FPC-7500 ---------- 12453 -------- Saved 
+ITX-i2701 ---------- 12454 -------- Saved 
+PC de painel P1585 ---------- 12455 -------- Saved 
+SC21 - SBC Intel® Atom®  para monitores inteligentes ---------- 12456 -------- Saved 
+ITX-i45M2 ---------- 12457 -------- Saved 
+F19P - SBC (computador de placa única) 3U CompactPCI PlusIO Intel Core™ 2 Duo ---------- 12458 -------- Saved 
+D9 - 6U CompactPCI Core ™ 2 Duo SBC ---------- 12459 -------- Saved 
+VX-121P: Processadores Intel® Celeron® M, Intel® Core™ Duo, Intel® Core™ i5/i7  em um PC de painel com tela de toque TFT LCD de 12,1" e um slot de expansão PCI ---------- 12460 -------- Saved 
+Controlador embarcado FPC-7502 ---------- 12461 -------- Saved 
+ITX-i2705 ---------- 12462 -------- Saved 
+PC de caixa rígida 310 sem ventoinha robusta ---------- 12463 -------- Saved 
+EmCORE-i8520 (miniplaca de 5,25") ---------- 12464 -------- Saved 
+ITX-i9453 ---------- 12465 -------- Saved 
+XM2 - ESMexpress® com processador Intel® Core™ 2 Duo ---------- 12466 -------- Saved 
+DC2 - Panel PC robusto com tela de toque ---------- 12467 -------- Saved 
+F21P - SBC 3U CompactPCI® PlusIO Intel® Core™ i7 (2nd Ger.) ---------- 12468 -------- Saved 
+EmETXe-i9652 (Computador em módulo) ---------- 12469 -------- Saved 
+HiCORE-i35Q (SBC de tamanho integral) ---------- 12470 -------- Saved 
+F14 - SBC 3U CompactPCI (Express) - Pentium M ---------- 12471 -------- Saved 
+EmCORE-i55M0 ---------- 12472 -------- Saved 
+G0710 (Tablet PC médico) ---------- 12473 -------- Saved 
+Advme8028: Computador de placa única 6U barramento VME baseado em processador Intel® Atom™ ---------- 12474 -------- Saved 
+Terminal M1726 de informação e entretenimento do paciente ---------- 12475 -------- Saved 
+Rigid-730 PC robusto e sem ventoinha montado em caixa ---------- 12476 -------- Saved 
+Placa XMC/PMS XP A40/x03 com processador Intel® Atom™ ---------- 12477 -------- Saved 
+EmXTX-i9150 (computador em módulo) ---------- 12478 -------- Saved 
+MB-i3453 ---------- 12479 -------- Saved 
+Assistente clínico móvel M1040 ---------- 12480 -------- Saved 
+F15 - SBC 3U CompactPCI (Express) - Core Duo ---------- 12481 -------- Saved 
+Tablet PC industrial robusto G0720 ---------- 12482 -------- Saved 
+Servidor de rede MBX-1820 ---------- 12483 -------- Saved 
+Rigid-732 ---------- 12485 -------- Saved 
+Computador veicular robusto FPC-3500 ---------- 12486 -------- Saved 
+PP 432/05x - PMC SBC CompactPCI dual baseada no processador Core™2 Duo (inclui opções para temperatura estendido) ---------- 12487 -------- Saved 
+VX-80F-N270: Panel PC sem ventoinha baseado no Intel® Atom™ N270 com tela de toque TFT de 8,4" ---------- 12488 -------- Saved 
+DuraCOR DC 1200: Computador robusto integrado móvel baseado no Intel® Atom™/Intel® Celeron® M com funcionalidades GPS, Wi-Fi e sem fio ---------- 12489 -------- Saved 
+Placa-mãe embarcada: KTQ45/FLEX ---------- 12490 -------- Saved 
+AdvancedMC: módulo processador: AM4001 (Intel&reg; Pentium&reg; M) ---------- 12491 -------- Saved 
+Vx-151F-N270: Panel PC Intel® Atom™ de baixo consumo de energia com tela TFT 15" e um slot de expansão PCI ---------- 12492 -------- Saved 
+Sistema MicroTCA: OM6040 ---------- 12493 -------- Saved 
+AdvancedTCA; placa de expansão: AT8402 ---------- 12494 -------- Saved 
+Sistema AdvancedTCA: OM9020 ---------- 12495 -------- Saved 
+VX6060 ---------- 12496 -------- Saved 
+TIGW1U - Servidor para operadoras ---------- 12497 -------- Saved 
+DuraCOR DC 1400: Computador de bordo móvel robusto de alta integração com base no Intel® Atom™ ---------- 12498 -------- Saved 
+VX-151P: Panel PC com tela LCD TFT de 15" e sensível ao toque com processadores Intel® Celeron® M, Intel® Core™ Duo, Intel® Core i5/i7 e um slot de expansão PCI ---------- 12499 -------- Saved 
+Toucan-QM57 ---------- 12500 -------- Saved 
+DuraCOR 810-Duo: Plataforma de computação robusta Dual-Core com base em processador Intel® Core™ 2 Duo ---------- 12501 -------- Saved 
+KISS 1U ---------- 12502 -------- Saved 
+ANTARES ICE 1U: Computador industrial de 19" montado em rack com processador Intel® Core i7/i5 ---------- 12503 -------- Saved 
+GEMINI ICE: Computador industrial Core ™ 2 Duo com gabinete 1U de 19" ---------- 12504 -------- Saved 
+AdvancedMC: módulo de armazenamento: AM4500 ---------- 12505 -------- Saved 
+VX-170P: Panel PC com tela LCD TFT de 17" e sensível ao toque com processadores Intel® Celeron® M, Intel® Core™ Duo, Intel® Core i5/i7 ---------- 12506 -------- Saved 
+Sistema MicroTCA: OM6120 ---------- 12507 -------- Saved 
+DuraCOR 820: Computador para missão de tática com fator de forma pequeno baseado no processador Intel® Pentium® M ---------- 12509 -------- Saved 
+Módulo processador Kontron AdvancedMC AM5020 ---------- 12510 -------- Saved 
+Adbc8034: Poderosa placa COM Express baseada na 2ª geração do Intel® Core™ i7 ---------- 12511 -------- Saved 
+Bx-400F-N270: Computador industrial intel® Atom™ sem ventoinha e de baixo consumo montado em caixa ---------- 12512 -------- Saved 
+Adbc8022: um módulo COM Express equipado com os processadores Intel® Core™ Duo ou Intel ®Core™ 2 Duo ---------- 12513 -------- Saved 
+PROTEUS: Módulo COM Express baseado n Intel® Atom™ ---------- 12515 -------- Saved 
+VX-171P: Panel PC com tela LCD TFT de 17" e sensível ao toque com processadores Intel® Celeron® M, Intel® Core™ Duo, Intel® Core i5/i7 e um slot de expansão PCI ---------- 12516 -------- Saved 
+Placa-mãe embarcada ATX KTQ67/ATXE ---------- 12517 -------- Saved 
+DuraCOR 820-A： 小型戰術任務電腦，搭載了 Intel® Atom™ processor ---------- 12520 -------- Saved 
+DuraCOR 820-A: Computador de fator de forma pequeno de missão tática com processador Intel ® Atom ™ ---------- 12521 -------- Saved 
+Kontron 嵌入式主機板 KTQ67/FLEX ---------- 12522 -------- Saved 
+Placa-mãe Kontron embarcada KTQ67/FLEX ---------- 12523 -------- Saved 
+Vx-150F-N270： 無風扇低功耗 Intel® Atom™ 平板電腦 - 15" TFT 顯示幕 ---------- 12524 -------- Saved 
+Vx-150F-N270: Computador de Painel Intel® Atom™ sem ventoinha, de baixo consumo de energia - Monitor 15" TFT ---------- 12525 -------- Saved 
+AdvancedTCA：載板： AT8404 ---------- 12526 -------- Saved 
+AdvancedTCA: placa de armazenamento: AT8404 ---------- 12527 -------- Saved 
+CoreExpress®-ECO2 ---------- 12528 -------- Saved 
+CoreExpress ®-ECO2 ---------- 12529 -------- Saved 
+BX-400P： 這款緊湊電腦可壁掛或 DIN 安裝，基於 Intel® Celeron® / Intel® Core™ Duo/ Intel® Core™ i5/i7 processor ---------- 12530 -------- Saved 
+BX - 400P: Computador de caixa compacta com montagem de parede ou DIN baseado nos processadores Intel® Celeron®/Intel® Core™ Duo/ Intel® Core™ i5/i7 ---------- 12531 -------- Saved 
+nanoETXexpress Starterkit VxWorks ---------- 12532 -------- Saved 
+nanoETXexpress Starterkit VxWorks ---------- 12533 -------- Saved 
+嵌入式主機板： 986LCD-M/mITX (BGA) ---------- 12534 -------- Saved 
+Placa-mãe embarcada: 986LCD-M/mITX (BGA) ---------- 12535 -------- Saved 
+PROTEUS: 基於 Intel® Atom™ 的單板電腦 ---------- 12536 -------- Saved 
+PROTEUS: Computador de placa única, com base em Intel® Atom™ ---------- 12537 -------- Saved 
+VX-60F-N270: 基於 Intel® Atom™ N270 的無風扇平板電腦，配有 TFT 6.5" 觸控式螢幕的顯示器 ---------- 12538 -------- Saved 
+VX-60F-N270: PC de Painel baseado em Intel® Atom™ N270 sem ventoinha com monitor TFT 6,5" com tela de toque ---------- 12539 -------- Saved 
+ATX 嵌入式主機板 KTQM67/ATXP ---------- 12540 -------- Saved 
+Placa-mãe ATX embarcada KTQM67/ATXP ---------- 12541 -------- Saved 
+DuraCOR 830： 小型加固電腦，板載 Intel® Atom™ Processor ---------- 12542 -------- Saved 
+DuraCOR 830: Computador de fator de forma pequeno de missão tática com processador Intel® Atom™ ---------- 12543 -------- Saved 
+Kontron 嵌入式主機板 KTQM67/mITX ---------- 12544 -------- Saved 
+Placa-mãe embarcada Kontron KTQM67/mITX ---------- 12545 -------- Saved 
+VX-150P： 平板電腦 LCD 顯示器 TFT 15" 觸控式螢幕，搭載了 Intel® Celeron® M、Intel® Core™ Duo、Intel® Core™ i5/i7 processor ---------- 12546 -------- Saved 
+VX-150P: PC de Painel monitor LCD TFT 15" tela de toque com processadores Intel® Celeron® M, Intel® Core™ Duo, Intel® Core™ i5/i7 ---------- 12547 -------- Saved 
+AdvancedTCA：fabric 交換板： AT8904 ---------- 12548 -------- Saved 
+AdvancedTCA: estrutura do hub da placa: AT8904 ---------- 12549 -------- Saved 
+6U CompactPCI® 處理器主機板 CP6003-RA/RC ---------- 12550 -------- Saved 
+Placas processadoras 6U CompactPCI® CP6003-RA/RC ---------- 12551 -------- Saved 
+ALUDRA： EBX 尺寸的單板電腦，搭載 Intel® Atom™ ---------- 12552 -------- Saved 
+ALUDRA: Computador de placa única em fator de forma EBX com Intel® Atom™ ---------- 12553 -------- Saved 
+Vx-120F-N270: Computador de Painel Intel® Atom™ sem ventoinha, de baixo consumo de energia - Monitor 12.1" TFT ---------- 12554 -------- Saved 
+COMe-mTT10 ---------- 12555 -------- Saved 
+FLEET-M ---------- 12556 -------- Saved 
+CSIPL ---------- 12557 -------- Saved 
+Placa-mãe G7B630-NR Intel&reg; Q965 ATX ---------- 12559 -------- Saved 
+ADLINK aTCA-6200 ---------- 12560 -------- Saved 
+NI PXI-8102 ---------- 12561 -------- Saved 
+COM Express CXC-US15WP ---------- 12562 -------- Saved 
+Placa-mãe Flex-ATX embarcada KTQM67/FLEX ---------- 12563 -------- Saved 
+QSeven Q7-TCTC-FD ---------- 12564 -------- Saved 
+Netkeeper Series Intrusion Prevention System ---------- 12565 -------- Saved 
+MB960 - Placa-mãe ATX de 2ª geração Intel® Core™ i7/i5/i3 com Chipset Intel® Q67 ---------- 12566 -------- Saved 
+Barebone de segurança de rede FW-2024 2U Gigabit Intel® Xeon® com BYPASS ---------- 12567 -------- Saved 
+FFTW ---------- 12568 -------- Saved 
+NI PXI-8108 ---------- 12569 -------- Saved 
+ETX ETE-A945GSE ---------- 12570 -------- Saved 
+Placas processadoras Kontron 6U CompactPCI CP6003-SA ---------- 12571 -------- Saved 
+AdvancedTCA: estrutura do hub da placa: AT8901 ---------- 12572 -------- Saved 
+Prism ---------- 12573 -------- Saved 
+Placa de CPU  Kontron 3U VPX VX3035 ---------- 12574 -------- Saved 
+CP3002-RC/CP3002-RA ---------- 12575 -------- Saved 
+MICROSPACE MSMST PCIe/104 ---------- 12576 -------- Saved 
+Liberator ---------- 12577 -------- Saved 
+Verificador de preço Touch&Go ---------- 12578 -------- Saved 
+SDK DPI ixEngine ---------- 12579 -------- Saved 
+XTX-945GSE (módulo de CPU XTX) ---------- 12580 -------- Saved 
+Computador NISE 3140 sem ventoinha com sistema Intel® Core™ 2 Duo sem ventoinha com Slot de expansão 1 x PCI/PCIe x 1 ---------- 12581 -------- Saved 
+NI PXI-8109 ---------- 12582 -------- Saved 
+AdvancedMC: AM4002 (Intel&reg; Pentium&reg; M) ---------- 12583 -------- Saved 
+KISS 2U ---------- 12584 -------- Saved 
+AdvancedTCA: placa de hub básica/de matriz: AT8902 ---------- 12585 -------- Saved 
+Kontron ETXexpress-SC ---------- 12586 -------- Saved 
+COM Express CXB-6S ---------- 12587 -------- Saved 
+MI956 - 2 ª geração Intel® Core ™ i7/i5/i3 Placa-mãe Mini-ITX com Chipset Intel® QM67 ---------- 12588 -------- Saved 
+AMC602, AMC CompactFlash c/ módulo de disco rígido SATA de 2,5 polegadas ---------- 12589 -------- Saved 
+PCI Kontron MSM-LP/SBC 104-Express ---------- 12590 -------- Saved 
+MCH UTC001 para Chassis uTCA ---------- 12591 -------- Saved 
+Veclib ---------- 12592 -------- Saved 
+NI PXIe-8102 ---------- 12593 -------- Saved 
+ADLQM67PC ---------- 12594 -------- Saved 
+Servidor Industrial Silencioso Kontron (KISS) 4U PCI761 ---------- 12595 -------- Saved 
+COM Express CXE-CD945 ---------- 12596 -------- Saved 
+COM Express CXB-A945M ---------- 12597 -------- Saved 
+VSIPL ---------- 12598 -------- Saved 
+FLEET ---------- 12599 -------- Saved 
+Placas de CPU PCI-6880 para Slot com barramento PCI ---------- 12600 -------- Saved 
+Wind River Linux 5 para Intel® Xeon®, Intel® Core™ i-Series® e processadores Intel® Atom® ---------- 12601 -------- Saved 
+NI PXIe-8108 ---------- 12602 -------- Saved 
+AdvancedMC: AM5010 ---------- 12603 -------- Saved 
+COM Express CXC-PV525 ---------- 12604 -------- Saved 
+A790 - Notebook extremamente robusto ---------- 12605 -------- Saved 
+Computador de placa única SHB-770 ---------- 12606 -------- Saved 
+Placa-mãe embarcada: 986LCD-M/ATX ---------- 12607 -------- Saved 
+Módulo EQM-CDV Avalue Qseven com Chipset Intel® NM10 Express ---------- 12608 -------- Saved 
+PCOM-B211VG ---------- 12609 -------- Saved 
+MI-945S ---------- 12610 -------- Saved 
+ATCA-1200 ---------- 12611 -------- Saved 
+CompactPCI 6U: CP6016 ---------- 12612 -------- Saved 
+IB945 - Placa de CPU de tamanho integral PICMG 1.0 baseada em Intel® Q45 ---------- 12613 -------- Saved 
+Placa-mãe embarcada: 986LCD-M/FLEX ---------- 12614 -------- Saved 
+Módulo SOM-XTX SOM-4780 Intel® Core ™ 2 Duo ---------- 12615 -------- Saved 
+Vx-120F-N270： 無風扇低功耗 Intel® Atom™ 平板電腦 - 12.1" TFT 顯示幕 ---------- 12616 -------- Saved 
+COMe-mTT10 ---------- 12617 -------- Saved 
+FLEET-M ---------- 12618 -------- Saved 
+CSIPL ---------- 12619 -------- Saved 
+G7B630-NR Intel&reg; Q965 ATX 主機板 ---------- 12621 -------- Saved 
+ADLINK aTCA-6200 ---------- 12622 -------- Saved 
+NI PXI-8102 ---------- 12623 -------- Saved 
+COM Express CXC-US15WP ---------- 12624 -------- Saved 
+Flex-ATX 嵌入式主機板 KTQM67/FLEX ---------- 12625 -------- Saved 
+QSeven Q7-TCTC-FD ---------- 12626 -------- Saved 
+Netkeeper 系列入侵防禦系統 ---------- 12627 -------- Saved 
+MB960 - 第 2 代 Intel® Core™ i7/i5/i3 ATX 主機板，配有 Intel® Q67 晶片組 ---------- 12628 -------- Saved 
+FW-2024 2U 千兆 Intel® Xeon® 網路安全准系統，帶旁路 ---------- 12629 -------- Saved 
+FFTW ---------- 12630 -------- Saved 
+NI PXI-8108 ---------- 12631 -------- Saved 
+ETX ETE-A945GSE ---------- 12632 -------- Saved 
+Kontron 6U CompactPCI processor 板 CP6003-SA ---------- 12633 -------- Saved 
+AdvancedTCA：基本交換板： AT8901 ---------- 12634 -------- Saved 
+Prism ---------- 12635 -------- Saved 
+Kontron 3U VPX CPU 板 VX3035 ---------- 12636 -------- Saved 
+CP3002-RC / CP3002-RA ---------- 12637 -------- Saved 
+MICROSPACE MSMST PCIe/104 ---------- 12638 -------- Saved 
+Liberator ---------- 12639 -------- Saved 
+Touch&Go pricechecker ---------- 12640 -------- Saved 
+ixEngine DPI SDK ---------- 12641 -------- Saved 
+XTX-945GSE（XTX CPU 模組） ---------- 12642 -------- Saved 
+NISE 3140 無風扇電腦，支援 Intel® Core™2 雙核無風扇系統，配有 1 x PCI/PCIe x 1 擴充槽 ---------- 12643 -------- Saved 
+NI PXI-8109 ---------- 12644 -------- Saved 
+AdvancedMC： AM4002 (Intel&reg; Pentium&reg; M) ---------- 12645 -------- Saved 
+KISS 2U ---------- 12646 -------- Saved 
+AdvancedTCA：base/fabric 交換板： AT8902 ---------- 12647 -------- Saved 
+Kontron ETXexpress-SC ---------- 12648 -------- Saved 
+COM Express CXB-6S ---------- 12649 -------- Saved 
+MI956 - 第 2 代 Intel® Core™ i7/i5/i3 Mini-ITX 主機板，支援 Intel® QM67 晶片組 ---------- 12650 -------- Saved 
+AMC602，AMC CompactFlash 帶 2.5 英吋 SATA 磁碟機模組 ---------- 12651 -------- Saved 
+MSM-LP Kontron PCI/104-Express SBC ---------- 12652 -------- Saved 
+RuffSystem 840 ---------- 12653 -------- Saved 
+Placa-mãe Mini-ITX embarcada: JNF95A-270-LF (processador Intel® Atom ™ N270) ---------- 12654 -------- Saved 
+cPCI-6920 ---------- 12655 -------- Saved 
+EPIC-9456 (Placa EPIC Express) ---------- 12656 -------- Saved 
+PSG-GB-1URARUP01 ---------- 12657 -------- Saved 
+iQ7-US15W ---------- 12658 -------- Saved 
+NOVO-3153 ---------- 12660 -------- Saved 
+COM (Computer on Module): ETX-CD ---------- 12661 -------- Saved 
+Suporte ATCA para módulos AMC (8) ---------- 12662 -------- Saved 
+CM-5100 ---------- 12663 -------- Saved 
+SBC XCalibur4341 VPX 6U Intel® Core™ i7 ---------- 12664 -------- Saved 
+NuPRO-730 ---------- 12665 -------- Saved 
+Express-CB - módulo COM Express® com o processador Intel® Core™ i7/i5/i3 e chipset Intel® QM57 ---------- 12666 -------- Saved 
+ETX ETE-PV510 ---------- 12667 -------- Saved 
+PCIE-Q57A (placa de CPU de tamanho completo PICMG 1.3 com soquete LGA1156 para processador Intel® Core ™ i7 / i5 / i3) ---------- 12668 -------- Saved 
+Computador de placa única PCI-104 Wildcat (VL-EPMp-34) ---------- 12669 -------- Saved 
+PC industrial: ThinkIO-Duo ---------- 12670 -------- Saved 
+Mini placa-mãe industrial 945ITX ---------- 12671 -------- Saved 
+AMC603, módulo AMC de dois drives com 2,5 polegadas ---------- 12672 -------- Saved 
+CEM850 - COM Express Intel® Core ™ 2 Duo ---------- 12673 -------- Saved 
+NuPRO-E330 - SHB PICMG® 1.3 de tamanho padrão com LGA1156 Intel® Core™ i7/i5/i3 ---------- 12674 -------- Saved 
+Aplicação de rede FW-8760 1U fox hollow ---------- 12675 -------- Saved 
+Touch&Go Messenger 65 Retrato ou Paisagem ---------- 12676 -------- Saved 
+MI945X - placa Mini-ITX com Chipset Intel® GM45 ---------- 12677 -------- Saved 
+Placas de CPU com slot para barramento ISA PCA-6774 ---------- 12678 -------- Saved 
+V7769 ---------- 12679 -------- Saved 
+EmCORE-i761 ((Pentium M)) ---------- 12680 -------- Saved 
+Placa-mãe uATX PT330-DRM Intel&reg; Q57 ---------- 12681 -------- Saved 
+CPCI XCalibur4101 Intel® Core ™ 2 Duo SBC ---------- 12682 -------- Saved 
+EMB-945T Rev.B (placa-mãe Industrial Mini-ITX) ---------- 12683 -------- Saved 
+Express-MC800 ---------- 12684 -------- Saved 
+MB-62000 ---------- 12685 -------- Saved 
+Placa-mãe embarcada: 986LCD-M/mITX (Intel&reg; Core ™ Duo & Intel&reg; Core ™ Solo) ---------- 12686 -------- Saved 
+MB-i965Q (Placa-mãe Industrial ATX) ---------- 12687 -------- Saved 
+MB950 - placa-mãe ATX para Intel® Core ™ 2 i7 / i5 / i3 ---------- 12688 -------- Saved 
+PPC-22W05 - solução de PC em painel plástico multifuncional Avalue 22" TFT sem ventoinha com Intel® Atom® Dual Core ---------- 12690 -------- Saved 
+ATX PDSME+ ---------- 12691 -------- Saved 
+BCM MX525DC - Placa-mãe Mini-ITX de baixo consumo de energia com Intel® Atom ™ D525 de 1,8 GHz com 5 portas COM, 8x USB, LVDS, DVI, VGA, LAN Gigabit dupla e Áudio HD com amplificador ---------- 12692 -------- Saved 
+EmCORE-i9457 ---------- 12693 -------- Saved 
+Micromódulo de 3,5" AValue Intel® Atom® N270 com Chipset Intel® 945GSE + ICH7-M ---------- 12694 -------- Saved 
+COM Express CXB-CD9455 ---------- 12695 -------- Saved 
+Micromódulo de 3,5 "com o Chipset Intel® de Hub de controle de plataforma EG20T ---------- 12696 -------- Saved 
+EC0-1815V2NAR ---------- 12697 -------- Saved 
+SPC-1505 - PC com painel de toque sem ventoinha de Chassis de inox com classificação integral IP-65 ---------- 12698 -------- Saved 
+Solução Mini-ITX SR100-N Intel&reg; GME965 ---------- 12699 -------- Saved 
+BCM MX965GME - Mini-ITX Intel® GME965 Mobile Core ™ 2 Duo  com HDMI, DVI, LVDS, saída de TV, PCIe x4, duas portas LAN ---------- 12700 -------- Saved 
+MPC-21W5 - PC de painel com 21" HD de sinalização digital com processador de núcleo duplo Intel® Atom® ---------- 12701 -------- Saved 
+BCM RX67Q - placa-mãe Industrial mATX - suporta seis monitores independentes simultâneos ---------- 12702 -------- Saved 
+EmCORE-i9651 ---------- 12703 -------- Saved 
+Placa-mãe Nano ITX AValue Intel® Atom® PNV-M / PNV-D ---------- 12704 -------- Saved 
+Placas-mãe Mini-ITX AValue EMX-G41 Intel® Core ™ 2 Quad / Core ™ 2 Duo  com o Chipset Intel® G41 + ICH7-R ---------- 12705 -------- Saved 
+Placa CompactPCI MIC-3392 com Intel® Core ™ 2 Duo 6U ---------- 12706 -------- Saved 
+Placa-mãe Mini-ITX BCM MX260N Intel® Atom® N2600 dual-core ---------- 12707 -------- Saved 
+bCOM2-L1100 ---------- 12708 -------- Saved 
+Módulo Intel® Atom® XTX com Chipset Intel® ICH8-M ---------- 12709 -------- Saved 
+ESM-945ETX - Módulo ETX com Intel® 945GME Core ™ Duo / Core ™ 2 Duo / Celeron® M ---------- 12710 -------- Saved 
+MTP-1503 - Pc com painel de toque multifuncional 15" TFT sem ventoinha da Avalue ---------- 12711 -------- Saved 
+Placa-mãe Industrial Mini-ITX 270ITX ---------- 12712 -------- Saved 
+Módulo COM Express da AValue com Intel® Core ™ i7 / Core ™ i5 / Celeron® e Chipset Intel® QM57 ---------- 12713 -------- Saved 
+Placa-mãe Mini-ITX AValue EMX-QM57 com Chipset Intel® QM57 ---------- 12714 -------- Saved 
+UTC001 MCH 配有 uTCA 機箱 ---------- 12715 -------- Saved 
+Veclib ---------- 12716 -------- Saved 
+NI PXIe-8102 ---------- 12717 -------- Saved 
+ADLQM67PC ---------- 12718 -------- Saved 
+Kontron 工業級別靜音伺服器 (KISS) 4U PCI761 ---------- 12719 -------- Saved 
+COM Express CXB-A945M ---------- 12720 -------- Saved 
+VSIPL ---------- 12721 -------- Saved 
+FLEET ---------- 12722 -------- Saved 
+PCI-6880 PCI 匯流排插槽 CPU 卡 ---------- 12723 -------- Saved 
+Wind River Linux 5 用於 Intel® Xeon®、Intel® Core™ i-Series® 和 Intel® Atom® Processor ---------- 12724 -------- Saved 
+NI PXIe-8108 ---------- 12725 -------- Saved 
+AdvancedMC： AM5010 ---------- 12726 -------- Saved 
+COM Express CXC-PV525 ---------- 12727 -------- Saved 
+A790 - 超堅固筆記本 ---------- 12728 -------- Saved 
+SHB-770 單板電腦 ---------- 12729 -------- Saved 
+嵌入式主機板： 986LCD-M/ATX ---------- 12730 -------- Saved 
+EQM-CDV Avalue Qseven 模組，採用 Intel® NM10 Express 晶片組 ---------- 12731 -------- Saved 
+PCOM-B211VG ---------- 12732 -------- Saved 
+MI-945S ---------- 12733 -------- Saved 
+ATCA-1200 ---------- 12734 -------- Saved 
+CompactPCI 6U： CP6016 ---------- 12735 -------- Saved 
+IB945 - Intel® Q45 PICMG 1.0 全尺寸 CPU 卡 ---------- 12736 -------- Saved 
+嵌入式主機板： 986LCD-M/FLEX ---------- 12737 -------- Saved 
+SOM-4780 Intel® Core™2 Duo SOM-XTX 模組 ---------- 12738 -------- Saved 
+RuffSystem 840 ---------- 12739 -------- Saved 
+Embedded Mini-ITX Motherboard： JNF95A-270-LF (Intel® Atom™ N270 Processor) ---------- 12740 -------- Saved 
+cPCI-6920 ---------- 12741 -------- Saved 
+EPIC-9456 (EPIC Express Board) ---------- 12742 -------- Saved 
+PSG-GB-1URARUP01 ---------- 12743 -------- Saved 
+iQ7-US15W ---------- 12744 -------- Saved 
+NOVO-3153 ---------- 12746 -------- Saved 
+電腦模組： ETX-CD ---------- 12747 -------- Saved 
+可安裝 (8) 個 AMC 模組的 ATCA 載體 ---------- 12748 -------- Saved 
+CM-5100 ---------- 12749 -------- Saved 
+XCalibur4341 6U VPX Intel® Core™ i7 SBC ---------- 12750 -------- Saved 
+NuPRO-730 ---------- 12751 -------- Saved 
+EBM-CDV da AValue - Minimódulo de 5,25" com Intel® Atom® 5,25" e Chipset Intel® NM10 Express ---------- 12752 -------- Saved 
+BCM MX57QM - Mini-ITX Intel® QM57 com o último design para dois Chips, suporta processadores Mobile Intel® Core ™ i7, i5, i3, 6x COM, 5x SATA RAID ---------- 12753 -------- Saved 
+AM 100/20x - placa AdvancedMC para processador Intel Dual-Core&reg; Xeon&reg; ---------- 12754 -------- Saved 
+Micromódulo ECM-CDV Avalue 3,5" com Chipset Intel® NM10 Express ---------- 12755 -------- Saved 
+ROBO-8911VG2A ---------- 12756 -------- Saved 
+PC com painel de toque multifuncional XGA de 15" TFT da AValue, LPC-1507-PCT sem ventoinha ---------- 12757 -------- Saved 
+Micromódulo AValue de 3,5" com Intel® Core™ i7-620LE /620UE e chipset Intel® QM57 ---------- 12758 -------- Saved 
+PRD_2U34VS ---------- 12759 -------- Saved 
+FPC-08W05 - PC com painel de toque multifuncional TFT de 8,9" WSVGA sem ventoinha com processador Intel® Atom® D525 Dual Core ---------- 12760 -------- Saved 
+BCM NX450N - Placa-mãe Nano-ITX baseada em Intel® Atom® N450 de baixa potência sem ventoinha* com alimentação de 12 VCC ---------- 12761 -------- Saved 
+Módulo EPIC AValue EPI-QM67 Intel® Core ™ i3/i5/i7 com Chipset Intel® QM67 ---------- 12762 -------- Saved 
+Placa-mãe mATX RX67Q com Intel® Q67 soquete H2 LGA1155 - suporta 2ª geração de processadores Intel® Core ™ i7/i5/i3 ---------- 12763 -------- Saved 
+EPIC EPI-QM57 com o processador Intel® Core™ i7 e o chipset móvel Intel® QM57 ---------- 12764 -------- Saved 
+PDSM4+ ATX ---------- 12765 -------- Saved 
+BCM MX45GM2 - Mini-ITX Mobile Intel® GM45 suporta processadores de 45 nm Intel® Core ™ 2 Extreme / Core ™ 2 Quad /  Core ™ 2 Duo com alimentação ATX ---------- 12766 -------- Saved 
+PRD_3UQ57IC ---------- 12767 -------- Saved 
+LPC-1505 - PC com painel de toque multifuncional XGA de 15" TFT sem ventoinha ---------- 12768 -------- Saved 
+Micro PC sem ventoinha SEM-5300 com processador Intel® Atom® N450, D510, D410, VGA, GbE dupla, COM, USB, áudio, SATA, CF & mini PCI ---------- 12769 -------- Saved 
+COM Express CX-MB-EVA2 ---------- 12770 -------- Saved 
+Sistema embarcado minúsculo AValue EPC-945 com Intel® Core ™ 2 Duo de 945GME ---------- 12771 -------- Saved 
+Micromódulo de 3,5" AValue Intel® Atom® D510 com Chipset Intel® ICH8-M ---------- 12772 -------- Saved 
+Terminal informação e entretenimento de paciente PIT-1702 Intel® Core ™ 2 Duo ---------- 12773 -------- Saved 
+Módulo COM Express EUROCOM 450 ---------- 12774 -------- Saved 
+Módulo Express COM US15CMX ---------- 12775 -------- Saved 
+Computador de placa única EPIC Komodo (VL-EPICs-36) ---------- 12776 -------- Saved 
+kPOST (autoteste de ligação) ---------- 12777 -------- Saved 
+MM1 - ESMini COM utilizando Intel® Atom® ---------- 12778 -------- Saved 
+Hurricane-QM57 - computador de placa única EPIC-Express - processador Intel® Core™ i7, 2,53 GHz/1,06 GHz ---------- 12779 -------- Saved 
+ANTARES: Computador de placa única de 5,25" com Intel® Core ™ i7/Core™ i5 ---------- 12780 -------- Saved 
+SBC AMC XPedite7040 Intel® Core ™ Duo ou Intel® Core ™ 2 Duo ---------- 12781 -------- Saved 
+AMC600, módulo AMC de drive com 2,5 polegadas ---------- 12782 -------- Saved 
+Telum ASLP11 ---------- 12783 -------- Saved 
+PC do apoio para a cabeça do carro ---------- 12784 -------- Saved 
+NANO-945GSE (SBC EPIC) ---------- 12785 -------- Saved 
+AMC606, unidade SAS AMC de 2,5 polegadas com expansão ---------- 12786 -------- Saved 
+ET820 - módulo de CPU ETX baseado em Intel® Atom™ ---------- 12787 -------- Saved 
+Express-MV ---------- 12788 -------- Saved 
+AMC601, módulo AMC de dois drives com 1,8 polegada ---------- 12789 -------- Saved 
+SequenceRunner ---------- 12790 -------- Saved 
+LUGE EM-F345 ---------- 12791 -------- Saved 
+SOM-5780 ---------- 12792 -------- Saved 
+ET830 - módulo Nano ETX COM Express com processador Intel® Atom ™ Z530 ---------- 12793 -------- Saved 
+Deos RTOS ---------- 12794 -------- Saved 
+Sinalização digital BIS-6540HD para reprodução de vídeo em alta definição integral com 1080p ---------- 12795 -------- Saved 
+Aquarius MB_PSG-M-AQDP5100-110 ---------- 12796 -------- Saved 
+SBC XPedite7370 VPX 3U Intel® Core™ i7 ---------- 12797 -------- Saved 
+Mecanismo de streaming  Cinemo ---------- 12798 -------- Saved 
+XM1L - ESMexpress® com Intel® Atom® XL ---------- 12799 -------- Saved 
+Plataforma de referência MID/UMPC baseada em Intel® Atom™ ---------- 12800 -------- Saved 
+SBC com Intel® Atom® e tamanho EBX integra novo COMIT ---------- 12801 -------- Saved 
+Touch&Go Messenger 32P ---------- 12802 -------- Saved 
+POS-7853 ---------- 12803 -------- Saved 
+HSB-910I (SBC de tamanho médio) ---------- 12804 -------- Saved 
+NSA 2189LN8 ---------- 12805 -------- Saved 
+AMI401 - sistemas embarcados com placa-mãe baseada em Intel® GM45 ---------- 12806 -------- Saved 
+Módulo XPedite7170 3U VPX Intel® Core™ 2 Duo ---------- 12807 -------- Saved 
+iGo1000 ---------- 12808 -------- Saved 
+HeartOS RTOS ---------- 12809 -------- Saved 
+GEMINI: Computador de placa única com Intel® Core™2 Duo ---------- 12810 -------- Saved 
+Aries MB_PSG-M-ARUP3210-110 ---------- 12811 -------- Saved 
+Módulo XPedite7201 PMC/XMC Intel® Atom™ ---------- 12812 -------- Saved 
+KINO-QM57A (SBC Mini-ITX com soquete G para processador móvel Intel® Core™ i5/i7) ---------- 12813 -------- Saved 
+Express-CB - COM Express® 模組，採用 Intel® Core i7/i5/i3 Processor 和 Intel® QM57 Chipset ---------- 12814 -------- Saved 
+ETX ETE-PV510 ---------- 12815 -------- Saved 
+PCIE-Q57A（PICMG 1.3 全尺寸 CPU 卡，配備用於 Intel® Core™ i7/ i5/ i3 處理器的 LGA1156 插槽） ---------- 12816 -------- Saved 
+BIS-6592GM Intel® GM45 com BoxPC Embarcado Sem Ventoinha ---------- 12817 -------- Saved 
+AFC-6573 ---------- 12818 -------- Saved 
+Express-AT - módulo COM Express® com o processador Intel® Atom® N270 e chipset Intel® 945GSE/ICH7-M ---------- 12819 -------- Saved 
+Gemini MB_PSG-M-GEDP036D-110 ---------- 12820 -------- Saved 
+Placa-mãe Mini-ITX embarcada: JNF92-270-LF (Processador Intel® Atom™ N270) ---------- 12821 -------- Saved 
+AMC604, AMC 2,5 polegadas SAS/SATA, gráficos e USB 2.0 ---------- 12822 -------- Saved 
+Software InterPort Carrier Ethernet ---------- 12823 -------- Saved 
+COM Express CXB-CD945 ---------- 12824 -------- Saved 
+ReadyBoard 850 ---------- 12825 -------- Saved 
+AMC340, adaptador de vídeo AMC Dual DVI/VGA ---------- 12826 -------- Saved 
+ATCA XE80 Calcular Dual Intel® Xeon 5600 série ---------- 12827 -------- Saved 
+Advanced Mezzanine Card MIC-5602 processador de alto desempenho Intel® Core™ 2 Duo AMC ---------- 12828 -------- Saved 
+Terminal de POS PT5300 ---------- 12829 -------- Saved 
+Stratix&reg; II ---------- 12830 -------- Saved 
+NI CompactRIO ---------- 12831 -------- Saved 
+VS-8148 Pro+ ---------- 12832 -------- Saved 
+Touch&Go Paigezilla ---------- 12833 -------- Saved 
+AdvancedMC: módulo GbE quad: AM4301 ---------- 12834 -------- Saved 
+aTCA-6250 ---------- 12835 -------- Saved 
+CompactPCI 3U: CP307 (Intel&reg; Core™ Duo) ---------- 12836 -------- Saved 
+Computador PPC-L128T Panel PC Sem ventoinha de 12,1 polegadas com processador Intel® Atom® N270 ---------- 12837 -------- Saved 
+Terminal de POS PT6300 ---------- 12838 -------- Saved 
+NAR-7090 ---------- 12839 -------- Saved 
+Software Trillium Femtocell Access Point (Home NodeB) ---------- 12840 -------- Saved 
+Módulo CM-7100 Intel® Core™ 2 Duo ETX com CRT/LVDS, LAN, Áudio SATA & ---------- 12841 -------- Saved 
+NAD-2100 ---------- 12842 -------- Saved 
+F11S - 3U CompactPCI® Intel® Atom® SBC ---------- 12843 -------- Saved 
+iGo19-TIRI ---------- 12845 -------- Saved 
+Série HardCopy ASIC ---------- 12846 -------- Saved 
+NAR-5520 ---------- 12847 -------- Saved 
+VS-8124 Pro+ ---------- 12848 -------- Saved 
+CT-30 ---------- 12849 -------- Saved 
+Klocwork Insight ---------- 12850 -------- Saved 
+CompactPCI 3U: CP307-V ---------- 12851 -------- Saved 
+RUBY-9712VG2A ---------- 12852 -------- Saved 
+AdvancedMC: AM4010 ---------- 12853 -------- Saved 
+Thin Client Intel® Atom® D2550 L800 ---------- 12855 -------- Saved 
+X7SB3 ATX ---------- 12856 -------- Saved 
+CG2100 - Carrier Grade Server ---------- 12857 -------- Saved 
+Serial ATA I/II Host Controller para FPGAs Xilinx ---------- 12858 -------- Saved 
+Serviços de Engenharia da RadiSys ---------- 12859 -------- Saved 
+NET-1818VD10N ---------- 12860 -------- Saved 
+NAR-5530 ---------- 12861 -------- Saved 
+Carrier Hub UTCA-5503 MicroTCA ---------- 12862 -------- Saved 
+VS-8132 Pro+ ---------- 12863 -------- Saved 
+PC industrial: CP-ASM-3 ---------- 12864 -------- Saved 
+Computador de placa única PEAK 8920 VL2 com Intel® Dual-Core 2 PCIe LAN Gigabit ---------- 12865 -------- Saved 
+Express-CBR - módulo COM Express® Extreme Rugged™ com o processador Intel® Core™ i7 e chipset Intel® QM57 ---------- 12866 -------- Saved 
+EC7-1819V2NA ---------- 12867 -------- Saved 
+NET-1821VD2N ---------- 12868 -------- Saved 
+FSB - 960H (SBC integral) ---------- 12869 -------- Saved 
+Stratix&reg; Gx ---------- 12870 -------- Saved 
+Servidor de rede IP: NSN2U ---------- 12871 -------- Saved 
+NAR-5630 ---------- 12872 -------- Saved 
+iGo13 ---------- 12873 -------- Saved 
+O SPCIE-5100DX (a placa de CPU PICMG1.3 de tamanho padrão suporta processadores de soquete duplo LGA 771 Intel® Xeon®) ---------- 12874 -------- Saved 
+VS-8140 Pro+ ---------- 12875 -------- Saved 
+H6055 - Módulo Qseven com Intel® Atom® E620T/E640T/E680T ---------- 12877 -------- Saved 
+NuPRO-965 ---------- 12878 -------- Saved 
+IMBM-935 (placa-mãe industrial) ---------- 12879 -------- Saved 
+Placa-mãe SV1-G4128 Mini-ITX de alto desempenho ---------- 12880 -------- Saved 
+ATCA SYS-6002 ---------- 12881 -------- Saved 
+IMBI-Q45 ---------- 12882 -------- Saved 
+Placa-mãe ATX Intel LT600-D&reg; 945G/ICH7 ---------- 12883 -------- Saved 
+iGo17 ---------- 12884 -------- Saved 
+H6812 - módulo COM Express com Intel® Atom® D525/D425/N455 ---------- 12885 -------- Saved 
+RTC-1000A (Computador Tablet Robusto) ---------- 12886 -------- Saved 
+SBC325 ---------- 12887 -------- Saved 
+ATCA SYS-6014/6016-40G ---------- 12888 -------- Saved 
+PEB-2737 ---------- 12889 -------- Saved 
+PSG-NB-1UFARUP01 ---------- 12890 -------- Saved 
+Placa-mãe de terminais de autoatendimento SV1-D4212 ---------- 12891 -------- Saved 
+Tablet PC - MRC 2000-E com Intel® Atom® ---------- 12892 -------- Saved 
+Plug-N-Run E1 ---------- 12893 -------- Saved 
+ATCA SYS-6206-40G ---------- 12894 -------- Saved 
+Panel PC PPC-L157T de 15 polegadas, Sem ventoinha, com processador Intel® Atom® N270 ---------- 12895 -------- Saved 
+PSG-NB-1UFARUP02 ---------- 12896 -------- Saved 
+Rev G7B330-B. B ---------- 12897 -------- Saved 
+EMB-9459T Rev.B (Placa-mãe Embarcada, Mini-ITX) ---------- 12898 -------- Saved 
+Placa-mãe de 3,5" com Intel® Atom® N2800/D2700 de alto desempenho ---------- 12899 -------- Saved 
+Placa-mãe de terminais de autoatendimento SV1-D4216 ---------- 12900 -------- Saved 
+XVB602 ---------- 12901 -------- Saved 
+ADLD25PC ---------- 12902 -------- Saved 
+ATCA SYS-6214-40G ---------- 12903 -------- Saved 
+Serviços de engenharia ---------- 12904 -------- Saved 
+PDSBA-Q+ ATX ---------- 12905 -------- Saved 
+Placa-mãe de terminais de autoatendimento SV1-D4216-L ---------- 12906 -------- Saved 
+NDiS 163 - plataforma de Sinalização Digital ---------- 12907 -------- Saved 
+Fator de forma EC5-1817LNAR EPIC de 5,25" com chipset Intel® QM67 ---------- 12908 -------- Saved 
+NS-520 ---------- 12909 -------- Saved 
+IMBI-Q57 (placa-mãe industrial) ---------- 12910 -------- Saved 
+Touch&Go Paige10 ---------- 12911 -------- Saved 
+iGo-102AT ---------- 12912 -------- Saved 
+ATCA ATCA-FM40 ---------- 12913 -------- Saved 
+IMBI-Q45 ---------- 12914 -------- Saved 
+TS-1079 Pro ---------- 12915 -------- Saved 
+G20 - 3U CompactPCI® série Intel® Core ™ i7 SBC ---------- 12916 -------- Saved 
+PL-62000 ---------- 12917 -------- Saved 
+AMC-3201/2 ---------- 12918 -------- Saved 
+Placa-Mãe Mini-ITX TEB-M7064 ---------- 12919 -------- Saved 
+COQOS ---------- 12920 -------- Saved 
+Computador de placa única PCI-104, PC/104-Plus: CMX158886CX (1.0 GHz Celeron&reg; M de Voltagem Ultra Baixa) ---------- 12921 -------- Saved 
+Placa-mãe miniITX EC7-1817LNAR(B) ---------- 12922 -------- Saved 
+Placa-mãe Industrial MB930 - Intel® Q35 ATX ---------- 12923 -------- Saved 
+Placa-mãe ATX de alto desempenho ATX-6895	para o Intel® Core™2 Quad/Intel® Core™2 Duo ---------- 12924 -------- Saved 
+Placa-mãe ATX BL631-D Intel&reg; Q35/ICH9 ---------- 12926 -------- Saved 
+Midinux embarcado ---------- 12927 -------- Saved 
+ADLGS45PC ---------- 12928 -------- Saved 
+Data Fortris 1430 ---------- 12929 -------- Saved 
+A placa-mãe ATX ATX-6931 suporta os CPUs de 22 nm/32 nm Intel® Core™ i7/i5/i3 LGA1155. ---------- 12930 -------- Saved 
+DPX-S425 ---------- 12931 -------- Saved 
+TEB-T7100 no setor de vigilância ---------- 12932 -------- Saved 
+HS-425TD para POS ---------- 12933 -------- Saved 
+Placa-mãe Mini-ITX embarcada: JNF94-270-LF (processador Intel® Atom™ N270) ---------- 12934 -------- Saved 
+Placa-mãe BL330-BR Intel&reg; Q35/ICH9R micro-ATX ---------- 12935 -------- Saved 
+AMC-1000 ---------- 12936 -------- Saved 
+Placa de CPU de tamanho integral SHB-960 PICMG1.3 baseada no chipset Intel® Q67/Q77 ---------- 12937 -------- Saved 
+Placa-mãe TE-945M de 3.5" para Terminal de cliente na nuvem ---------- 12938 -------- Saved 
+Sistema operacional de Marketing Digital Beabloo ---------- 12939 -------- Saved 
+Data Fortris 3220 ---------- 12940 -------- Saved 
+eBOX530-820-FL, sistema embarcado sem ventoinha com o Processador Intel® Atom™ ---------- 12941 -------- Saved 
+HS-525TD para POS ---------- 12942 -------- Saved 
+TEB-0001 para segurança de rede ---------- 12943 -------- Saved 
+F600Q ---------- 12944 -------- Saved 
+ADLD2000PC ---------- 12945 -------- Saved 
+ATCA-2210 ---------- 12946 -------- Saved 
+O TEB-V7040 na Indústria de sinalização digital ---------- 12947 -------- Saved 
+XProtect Corporate ---------- 12948 -------- Saved 
+TEB-M8100 no aplicativo de transporte inteligente ---------- 12950 -------- Saved 
+TEB-0003 para segurança de rede ---------- 12951 -------- Saved 
+P600Q ---------- 12952 -------- Saved 
+ATCA-2340 ---------- 12953 -------- Saved 
+Plataforma de Hardware SCANFLEX ---------- 12954 -------- Saved 
+TEA-N1601 baseado no Intel® Atom® D525 para montagem em rack ---------- 12956 -------- Saved 
+SBC86831, Soquete M Core™ 2 Duo Mini ITX SBC ---------- 12957 -------- Saved 
+Gerenciamento de rede e de elementos ---------- 12958 -------- Saved 
+Placa mãe Mini-ITX MITX-6922 baseada no Intel® QM67/QM77 ---------- 12960 -------- Saved 
+Placa-mãe CL630-CRM ATX com Processador Intel® Xeon® da família E3-1200v2 ---------- 12961 -------- Saved 
+U600Q ---------- 12962 -------- Saved 
+Pilha de protocolos Bluetooth da ClarinoxBlue ---------- 12963 -------- Saved 
+Plataforma de software SYSTEM CASCON ---------- 12964 -------- Saved 
+Rapier 1140 ---------- 12965 -------- Saved 
+IEM-945GSE (ETX / COM EXPRESS / Q7) ---------- 12966 -------- Saved 
+ADL945PC ---------- 12967 -------- Saved 
+BIS-6624 ---------- 12968 -------- Saved 
+AFB100 ---------- 12969 -------- Saved 
+Placa-mãe POS-7933 baseada no Intel® Q67/Q77 dedicada a aplicações de POS ---------- 12970 -------- Saved 
+TEA-E1801 baseado no Intel ® Atom® P4505/i5-520E no segmento de transporte inteligente ---------- 12971 -------- Saved 
+ADLS15PC ---------- 12972 -------- Saved 
+Aegis A4801 ---------- 12973 -------- Saved 
+TEA-R4700 no setor de vigilância ---------- 12974 -------- Saved 
+Placa-mãe Mini-ITX TEB-M7100 para uso em quiosque ---------- 12975 -------- Saved 
+A placa-mãe BCM RX61H mATX suporta os processadores Intel® Core i7/i5/i3/Celeron 22nm/32nm, Chipset Intel H61, 2 slots PCIe x1, LPT ---------- 12976 -------- Saved 
+TEB-S6040 para aplicações médicas ---------- 12977 -------- Saved 
+Computador de placa única VPX3-1256 3U VPX Intel® Core™ i7 ---------- 12978 -------- Saved 
+TS-EC1679U-RP ---------- 12979 -------- Saved 
+Sistema de processamento robusto de 2 slots 3U MPMC-9320 ---------- 12980 -------- Saved 
+TE-945GSE para Thin Client ---------- 12981 -------- Saved 
+TEB-M7067 para POS ---------- 12982 -------- Saved 
+Placa de processamento de sinal digital CHAMP-AV8 Intel® Core ™  i7 6U VPX ---------- 12983 -------- Saved 
+Sistema de Processador Robusto de 5 slots MPMC-9650 6U ---------- 12984 -------- Saved 
+Placa-mãe sem ventoinha de baixo consumo de energia BCM MX255D Intel® Atom® D2550 Mini ITX, Intel GMA3600, LVDS, DVI, 7 portas USB, DOM de USB, 12 VCC ---------- 12985 -------- Saved 
+Processador de sinal digital CHAMP-AV5 Dual Intel® Core™ i7 620e VME ---------- 12986 -------- Saved 
+TS-1679U-RP ---------- 12987 -------- Saved 
+TEB-S6310 para aplicações médicas ---------- 12988 -------- Saved 
+Computador de placa única VPX3-1257 3U VPX Intel® Core™ i7 Quad-Core ---------- 12989 -------- Saved 
+Sistema de Processador Robusto de 3 slots MPMC-9335 3U ---------- 12990 -------- Saved 
+TEB-M7080 para terminais de autoatendimento ---------- 12991 -------- Saved 
+Computador de placa única SCP/DCP-1201 3U CPCI Intel® Core™2 Duo ---------- 12992 -------- Saved 
+Sistema de processador robusto com 5 slots MPMC-9655 6U ---------- 12993 -------- Saved 
+TEB-M6060 em aplicações de POS ---------- 12994 -------- Saved 
+Placa-mãe BCM RX67QV mATX, chipset Intel® Q67, DVI, HDMI, LVDS canal duplo 18/24 bits na placa, SATAII 3, eSATA, AMT 7.0 ---------- 12995 -------- Saved 
+Computador de placa única VPX6-1956 6U VPX Intel® Core™ i7 ---------- 12996 -------- Saved 
+TE-945FS para aplicações de autoatendimento ---------- 12997 -------- Saved 
+Sistema de processador robusto de 4 slots MPMC-9341 3U ---------- 12998 -------- Saved 
+TEA-E2700 para o transporte inteligente ---------- 12999 -------- Saved 
+SBC SVME/DMV-1901 6U VME Intel® Core™2 Duo ---------- 13000 -------- Saved 
+PL-60580 ---------- 13001 -------- Saved 
+SC-M7068 para aplicações de máquina lotérica ---------- 13002 -------- Saved 
+TEB-M7060 para clientes Thin ---------- 13003 -------- Saved 
+Lynx OS SE ---------- 13004 -------- Saved 
+COM Express CE915GME ---------- 13005 -------- Saved 
+TEA-N6601-4 para segurança de rede ---------- 13006 -------- Saved 
+Sistema de processamento robusto 5 slots MPMC-9350 3U ---------- 13007 -------- Saved 
+SBC SVME/DMV-1905 6U VME Intel® Core™i7 ---------- 13008 -------- Saved 
+Subsistema MPMC-9020 ---------- 13009 -------- Saved 
+TE-945BK em Thin Client ---------- 13010 -------- Saved 
+TEB-M7061 para Thin Clients ---------- 13011 -------- Saved 
+A placa-mãe BCM MX61H Mini ITX suporta o Chipset Intel H61, DVI, LVDS, 4 COM ---------- 13012 -------- Saved 
+Sistema de processador robusto MPMC-9610, 6U, 1 slot ---------- 13013 -------- Saved 
+TEB-C6100 para aplicações médicas ---------- 13014 -------- Saved 
+WAFER-945GSE2 (3,5 "SBC) ---------- 13015 -------- Saved 
+A placa-mãe BCM BC206C ATX suporta processadores Intel® Xeon® e memória ECC, Chipset C206 da Intel, 3 PCI, 2 PCIe x1, Intel TXT, Turbo, TPM ---------- 13016 -------- Saved 
+VPX3-1252 3U VPX Intel® Core™ 2 Duo SBC ---------- 13017 -------- Saved 
+Suite QNX Aviage Multimedia ---------- 13018 -------- Saved 
+PCM-9362 Intel® Atom® N450 / D510 3,5 "SBC ---------- 13019 -------- Saved 
+Sistema de 1-slot MPMC-9310 3U ---------- 13020 -------- Saved 
+TE-945GMS em Thin Client ---------- 13021 -------- Saved 
+Sistema de processador VME MPMC-9620, 6U, 2 slots ---------- 13022 -------- Saved 
+TEB-H8100 para aplicações de loteria ---------- 13023 -------- Saved 
+CSB200-883 - sistema sem ventoinha baseado no processador Intel® Atom™ ---------- 13024 -------- Saved 
+FW-1109 ---------- 13025 -------- Saved 
+Série VMT6000 de terminais ---------- 13026 -------- Saved 
+TEA-N1606 de segurança da rede ---------- 13027 -------- Saved 
+Placa-mãe BL330-B Intel&reg; Q35/ICH9 micro-ATX ---------- 13028 -------- Saved 
+Plataforma de referência IA de alto desempenho embarcada ---------- 13029 -------- Saved 
+Placa-mãe G5C630-DR Intel® 945GME/ICH7R ATX ---------- 13030 -------- Saved 
+XVR15 ---------- 13031 -------- Saved 
+cPCI-6880 ---------- 13032 -------- Saved 
+Placa do processador CompactPCI® CP3003 de 3U ---------- 13033 -------- Saved 
+TEB-M7101 para terminais de autoatendimento ---------- 13034 -------- Saved 
+TEA-N1610 de segurança da rede ---------- 13035 -------- Saved 
+Mini computador em módulo COM Express® COMe-mCT10 ---------- 13036 -------- Saved 
+F18 - 3U CompactPCI/Express Core ™ 2 Duo SBC ---------- 13037 -------- Saved 
+Computador NISE 3600e industrial sem ventoinha ---------- 13038 -------- Saved 
+Computador VX3042 com placa única VPX de 3U ---------- 13039 -------- Saved 
+MB970 - 3 ª geração Intel® Core™ i7/i5/i3/Pentium® placa-mãe ATX c/Intel® Q77 PCH ---------- 13040 -------- Saved 
+Sistema de rede SCB-7971 de 1U montado em rack Intel® Atom®, seis GbE, CF, SATA, Mini-PCI, PCI, LCM, Bypass & 4 ~ 8 portas de Switch ---------- 13041 -------- Saved 
+XCR15 ---------- 13042 -------- Saved 
+PLSA-120 ---------- 13043 -------- Saved 
+BCM RX35Q - Intel Q35 Core™ 2 Quad/Core™ 2 Duo 775 mATX com TPM, PCIe x16/1 x, 5 SATAII, 2 IEEE1394 ---------- 13044 -------- Saved 
+PM-US15W ---------- 13045 -------- Saved 
+Solução de computação baseada no Intel® Atom™ --fator de forma QSeven ---------- 13046 -------- Saved 
+TEA-N1600 para segurança da rede ---------- 13047 -------- Saved 
+Placa de CPU SBC81206 - Intel® Duo Core™ 2 PICMG 1,0 tamanho completo ---------- 13048 -------- Saved 
+PCE-5127G2 ---------- 13049 -------- Saved 
+PQ7-M100G ---------- 13050 -------- Saved 
+Tablet personalizado com soluções médicas ---------- 13051 -------- Saved 
+EP850 - Intel® Duo Core™ 2 EPIC SBC ---------- 13052 -------- Saved 
+Computador VX3044 com placa única VPX de 3U ---------- 13053 -------- Saved 
+ASMB-782 ---------- 13054 -------- Saved 
+Placa-mãe Mini-ITX embarcada KTQM77/mITX ---------- 13055 -------- Saved 
+TEA-N1850 para segurança da rede ---------- 13056 -------- Saved 
+Sistemas inteligentes de produtos customizados ads-tec ---------- 13057 -------- Saved 
+SBC625 ---------- 13058 -------- Saved 
+PEM-E200VLA ---------- 13059 -------- Saved 
+KINO-QM57 ---------- 13060 -------- Saved 
+Placa-mãe embarcada: KT965/Flex (Intel&reg; Duo Core™ 2 ) ---------- 13061 -------- Saved 
+TEA-N6040 para segurança da rede ---------- 13062 -------- Saved 
+TEA-N2850 para segurança de rede ---------- 13063 -------- Saved 
+Placa-mãe ML936-B16C Intel&reg; US15WP SCH ECX ---------- 13064 -------- Saved 
+Placa-mãe embarcada do supermicro X9SPV-F ---------- 13065 -------- Saved 
+Tablet PC série ITC1000 ads-tec - luz e sem ventoinha, baseado em Intel® Atom® ---------- 13066 -------- Saved 
+TEA-N1601-4 para segurança da rede ---------- 13067 -------- Saved 
+TEA-N6000 para segurança da rede ---------- 13068 -------- Saved 
+EmETX-i945M (computador no módulo) ---------- 13069 -------- Saved 
+Catalyst LP: Intel® Atom™ N450/D510 em fator de forma pequeno ---------- 13070 -------- Saved 
+GM-0010 para a indústria de jogos ---------- 13071 -------- Saved 
+TEA-N6601 para segurança da rede ---------- 13072 -------- Saved 
+Processador fino AdvancedTCA AT8060 ---------- 13073 -------- Saved 
+Placa-mãe embarcada supermicro X9SPV-LN4F ---------- 13074 -------- Saved 
+AIMB-782 ---------- 13075 -------- Saved 
+MI - 945H ---------- 13077 -------- Saved 
+AXISLib-GPU ---------- 13078 -------- Saved 
+CompactPCI 6U: CP 6001 ---------- 13079 -------- Saved 
+Placa-mãe EMB-4852 EPIC baseada no processador Intel® Atom® N270 ---------- 13080 -------- Saved 
+PC Medical Tablet M1042 ---------- 13081 -------- Saved 
+KINO-QM770 ---------- 13082 -------- Saved 
+SHB120 - placa de CPU PICMG 1.3 Full-Size para processadores Intel® Core™ de 3 ª geração ---------- 13083 -------- Saved 
+MPC-10W5 - Computador de sinalização digital de 10 polegadas ---------- 13084 -------- Saved 
+Módulo de processador AdvancedMC AM4022 ---------- 13085 -------- Saved 
+KINO-CV-N26001 ---------- 13086 -------- Saved 
+FW-8892 Intel ® Xeon ® 5500 processador Network Appliance ---------- 13087 -------- Saved 
+SequenceReporter ---------- 13088 -------- Saved 
+AXISLib - x86 ---------- 13089 -------- Saved 
+Placa-mãe G7L331-B LGA775 Intel&reg; 945G &micro; ATX ---------- 13090 -------- Saved 
+IMB-G41A (placa-mãe Micro ATX com suporte para a CPU Intel® Core™2 quad core LGA775 de 45nm) ---------- 13091 -------- Saved 
+KINO-CVR-N26002 ---------- 13092 -------- Saved 
+Placa de servidor X9DR7-TF+ embarcada com processador de Intel® Xeon® E5-2600 soquete duplo. ---------- 13093 -------- Saved 
+Placa Intel G5C100-N&reg; 945GM/945GME/ICH7R ---------- 13094 -------- Saved 
+WAFER-OT-Z670/Z650 ---------- 13095 -------- Saved 
+Placa-mãe Intel CA100-D&reg; mini-ITX GM45/ICH9M ---------- 13096 -------- Saved 
+IMBA-C2160 ---------- 13097 -------- Saved 
+AXISView ---------- 13098 -------- Saved 
+IBX-530-945GSE (sistema embarcado) ---------- 13099 -------- Saved 
+IMB-Q770 ---------- 13100 -------- Saved 
+Kit para construtor de solução M2M ---------- 13101 -------- Saved 
+AEC-6831 (controlador embarcado sem ventoinha) ---------- 13102 -------- Saved 
+EPS-AT270-2PCI ---------- 13103 -------- Saved 
+CR900-B - COM Express 基本模組，採用第 3 代 Intel® Core™ Processor ---------- 13104 -------- Saved 
+Módulo básico CR900-B - Express COM com processador Intel® Core™ de 3ª geração. ---------- 13105 -------- Saved 
+M1858 病患資訊娛樂終端 ---------- 13106 -------- Saved 
+Terminal para informação e entretenimento do paciente M1858 ---------- 13107 -------- Saved 
+OPM-CDV - 數位電子看板解決方案，符合 Intel® 開放可插拔規範 ---------- 13108 -------- Saved 
+OPM-CDV - solução de sinalização digital com especificação conectável aberta da Intel® ---------- 13109 -------- Saved 
+PCA-6194 LGA775 Intel® Core™2 Duo 卡 ---------- 13110 -------- Saved 
+Cartão de PCA-6194 LGA775 Intel® Core™ 2 Duo ---------- 13111 -------- Saved 
+EPS-AT270-2PCI ---------- 13112 -------- Saved 
+PQ7-M102XL ---------- 13113 -------- Saved 
+PQ7-M102XL ---------- 13114 -------- Saved 
+ICE-QM770 - Com Express Module ---------- 13115 -------- Saved 
+Módulo ICE-QM770 - Express Com ---------- 13116 -------- Saved 
+AXISFlow ---------- 13117 -------- Saved 
+AXISFlow ---------- 13118 -------- Saved 
+插槽 CPU： PICMG 1.3： PCI-960 ---------- 13119 -------- Saved 
+Slot-CPU: PICMG 1.3: PCI-960 ---------- 13120 -------- Saved 
+CR901-B - COM Express 基本模組，採用第 3 代 Intel® Core™ Processor ---------- 13121 -------- Saved 
+Módulo CR901-B - COM Express Basic com processador Intel® Core™ de 3ª geração. ---------- 13122 -------- Saved 
+MB330-CRM - microATX 嵌入式主機板，使用第 3 代 Intel® Core™ Processor ---------- 13123 -------- Saved 
+MB330-CRM - placa embarcada microATX com a 3ª geração dos processadores Intel® Core™ ---------- 13124 -------- Saved 
+MXE-5300 系列 - 功能強大的第 2 代 Intel® Core™ i7 無風扇嵌入式電腦 ---------- 13125 -------- Saved 
+Série MXE-5300 - Poderoso computador embarcado sem ventoinha com a 2ª Geração do processador Intel® Core™ i7 ---------- 13126 -------- Saved 
+LGX AU957 無風扇工業電腦，採用 Intel® Core™ i7-2610UE ---------- 13127 -------- Saved 
+Computador sem ventoinha, industrial, LGX AU957 com processador Intel® Core™ i7-2610UE ---------- 13128 -------- Saved 
+LGX AU950 系列無風扇加固型電腦 ---------- 13129 -------- Saved 
+Computador robusto sem ventoinha série LGX AU950 ---------- 13130 -------- Saved 
+LGX AG960 Intel® Core™ i3 NUC 工業電腦 ---------- 13131 -------- Saved 
+Computador industrial NUC LGX AG960 Intel® Core™ i3 ---------- 13132 -------- Saved 
+AFL2-W07A-CV ---------- 13133 -------- Saved 
+AFL2-W07A-CV ---------- 13134 -------- Saved 
+CUDA6USK1 初學者工具組 ---------- 13135 -------- Saved 
+Kit inicializador CUDA6USK1 ---------- 13136 -------- Saved 
+PPC19W-45GM - 基於 Intel® GM45 的工業級平板電腦 ---------- 13137 -------- Saved 
+PPC19W-45GM - PC Industrial Grade Panel baseado em Intel® GM45 ---------- 13138 -------- Saved 
+conga-BS77 基於第 3 代 Intel® Core™ processor 的 COM Express Type 2 模組 ---------- 13139 -------- Saved 
+Módulo Express Basic tipo 2 baseado em Processador Intel® Core™ conga-BS77 de 3ª geração. ---------- 13140 -------- Saved 
+AXISLib-AVX ---------- 13141 -------- Saved 
+AXISLib-AVX ---------- 13142 -------- Saved 
+conga-TS77 基於第 3 代 Intel® Core™ i7 Processor 的 COM Express Type 6 模組 ---------- 13143 -------- Saved 
+conga-TS77 - módulo COM Express tipo 6 baseado na 3ª geração dos processadores Intel® Core™ i7 ---------- 13144 -------- Saved 
+MIC-5333 ---------- 13145 -------- Saved 
+MIC-5333 ---------- 13146 -------- Saved 
+ATCA-4618（8 核心） ---------- 13147 -------- Saved 
+ATCA-4618 (8-core) ---------- 13148 -------- Saved 
+AFL2-W10A-CV ---------- 13149 -------- Saved 
+AFL2-W10A-CV ---------- 13150 -------- Saved 
+MIC-5603 ---------- 13151 -------- Saved 
+MIC-5603 ---------- 13152 -------- Saved 
+XPedite7431 CompactPCI，配備 Intel® Core™ i7 ---------- 13153 -------- Saved 
+CompactPCI XPedite7431 com Intel® Core™ i7 ---------- 13154 -------- Saved 
+ECW-281B（無風扇 Intel® Atom® Processor 嵌入式系統） ---------- 13155 -------- Saved 
+ECW-281B (processador sem ventoinha Intel® Atom® embarcado com o sistema) ---------- 13156 -------- Saved 
+CEQM67-2610-0 ---------- 13157 -------- Saved 
+CEQM67-2610-0 ---------- 13158 -------- Saved 
+DA6001 ---------- 13159 -------- Saved 
+DA6001 ---------- 13160 -------- Saved 
+ROBO-8777VG2A ---------- 13161 -------- Saved 
+ROBO-8777VG2A ---------- 13162 -------- Saved 
+conga-BM57 - COM Express 基本模組，配備 Intel® HM55 或 QM57 Platform Controller Hub ---------- 13163 -------- Saved 
+conga-BM57 - módulo COM Express básico com hub controlador de plataforma Intel® HM55 ou QM57. ---------- 13164 -------- Saved 
+5017P-TLN4F 超微伺服器 ---------- 13165 -------- Saved 
+Servidor Supermicro 5017P-TLN4F ---------- 13166 -------- Saved 
+無風扇嵌入式系統： HBJC372F35W-2600-B (Intel® Atom™ N2600 Processor) ---------- 13167 -------- Saved 
+Sistema embarcado sem ventoinha: HBJC372F35W-2600-B (Processador Intel® Atom™ N2600) ---------- 13168 -------- Saved 
+CEQM67HD-2610-0： 2610UE、Intel® Core™ i7、2-Core ---------- 13169 -------- Saved 
+CEQM67HD-2610-0: 2610UE, Intel® Core™ i7, Core 2 ---------- 13170 -------- Saved 
+基於 Intel® 915GME Chipset 的 conga-X915 - XTX 模組 ---------- 13171 -------- Saved 
+conga-X915 - módulo XTX baseado no chipset Intel® 915GME ---------- 13172 -------- Saved 
+WAFER-CV-D25501/N26001 ---------- 13173 -------- Saved 
+WAFER-CV-D25501/N26001 ---------- 13174 -------- Saved 
+AFL2-08A-CV ---------- 13175 -------- Saved 
+AFL2-08A-CV ---------- 13176 -------- Saved 
+Flex-ATX KTQ77/Flex 嵌入式主機板 ---------- 13177 -------- Saved 
+Flex-ATX KTQ77/placa-mãe Flex embarcada ---------- 13178 -------- Saved 
+Conga-CA6 - 基於 Intel® Atom® E600 Processor 的 COM Express Compact 模組 ---------- 13179 -------- Saved 
+conga-CA6 - módulo COM Express compacto baseado no processador Intel® Atom® E600 ---------- 13180 -------- Saved 
+CEQM67-2655-0 ---------- 13181 -------- Saved 
+CEQM67-2655-0 ---------- 13182 -------- Saved 
+PCM-9452（5.25" 緊湊板） ---------- 13183 -------- Saved 
+PCM-9452 (5,25" placa compacta) ---------- 13184 -------- Saved 
+Embedded Mini-ITX Motherboard： JNC9I-525-OC (Intel® Atom™ D525 Processor) ---------- 13185 -------- Saved 
+Placa-mãe Mini-ITX embarcada: JNC9I-525-OC (Processador Intel® Atom™ D525) ---------- 13186 -------- Saved 
+ACP-Q45DV - Q45 Intel® Core™2 Quad Micro ATX Motherboard ---------- 13187 -------- Saved 
+ACP-Q45DV - placa-mãe Q45 Intel® Core ™ 2 Quad Micro ATX ---------- 13188 -------- Saved 
+conga-BM67 - COM Express 小外形尺寸模組，採用第 2 代 Intel® Core™ Processor 系列 ---------- 13189 -------- Saved 
+conga-BM67 - módulo COM Express compacto baseado na 2ª geração da família de processadores Intel® Core™ ---------- 13190 -------- Saved 
+conga-TCA - 入門級模組，供配備新 Intel® Atom® dual-core processor 的 COM Express Type 6 使用 ---------- 13193 -------- Saved 
+conga-TCA - módulo nível de entrada para COM Express tipo 6 com os novos processadores dual-core Intel® Atom® ---------- 13194 -------- Saved 
+AFL2-10A-CV ---------- 13195 -------- Saved 
+AFL2-10A-CV ---------- 13196 -------- Saved 
+M1525 - 醫療電腦 ---------- 13197 -------- Saved 
+M1525 - Medical PC ---------- 13198 -------- Saved 
+AEC-6915（嵌入式控制器） ---------- 13199 -------- Saved 
+AEC-6915 (controlador embarcado) ---------- 13200 -------- Saved 
+conga-B945 -COM Express Basic Module、Intel® 945GME Chipset、Intel® Core 2 Duo Processor、4 GByte 雙通道記憶體 ---------- 13201 -------- Saved 
+conga-B945 - módulo COM Express básico, chipset Intel® 945GME, processador Intel® Duo Core 2, memória dual channel de 4 GB. ---------- 13202 -------- Saved 
+CEQM67-2715-0 ---------- 13203 -------- Saved 
+CEQM67-2715-0 ---------- 13204 -------- Saved 
+nanoX-TCR - Extreme Rugged™ COM Express® Type 10 迷你電腦模組，採用 Intel® Atom® Processor E6xxT ---------- 13205 -------- Saved 
+nanoX-TCR - computador em módulos COM Express® tipo 10 Extreme Rugged™ com tamanho reduzido e o processador Intel® Atom® E6xxT ---------- 13206 -------- Saved 
+6U OpenVPX 開發機箱 ---------- 13207 -------- Saved 
+Chassi de desenvolvimento OpenVPX 6U ---------- 13208 -------- Saved 
+conga-TM67 -COM Express Type 6 模組支援第 2 代 Intel® Core™ Processor 系列 ---------- 13209 -------- Saved 
+conga-TM67 - módulo COM Express tipo 6 com a 2ª geração da família de processadores Intel® Core™ ---------- 13210 -------- Saved 
+配有 Intel® Xeon® Processor E5-2600 Dual Socket 的 X9DRD-7LN4F 嵌入式伺服器板 ---------- 13211 -------- Saved 
+Placa de servidor X9DR7-TLN4F+ embarcada com processador Intel® Xeon® E5-2600 soquete duplo. ---------- 13212 -------- Saved 
+ATCA-4648（40G 連通性的 8 核心） ---------- 13215 -------- Saved 
+ATCA-4648 (8-core com conectividade de 40 G) ---------- 13216 -------- Saved 
+配有 Intel® Core™ i7/ i5/ i3 的 ESM QM77 COM Express ---------- 13217 -------- Saved 
+ESM-QM77 COM Express com Intel® Core™ i7/i5/i3 ---------- 13218 -------- Saved 
+conga-CAx - COM Express Compact Module 適用於所有工業溫度範圍，基於 Intel® Atom™ Z520PT Processor 和 US15WPT System Controller Hub ---------- 13219 -------- Saved 
+conga-CAx - módulo COM Express compacto específico para faixa integral de temperatura industrial, com base no processador Intel® Atom™ Z520PT e hub controlador de sistema US15WPT ---------- 13220 -------- Saved 
+CEQM67HD-2655-0 ---------- 13221 -------- Saved 
+CEQM67HD-2655-0 ---------- 13222 -------- Saved 
+MPC170-831-FL，Core™2 Duo Fanless Medical Grade Panel Computer ---------- 13223 -------- Saved 
+MPC170-831-FL, Duo Core™ 2 sem ventoinha, computador Medical Grade Panel ---------- 13224 -------- Saved 
+基於 RICH-300B Intel® 945G+ICH7 的 4U 機架式工業控制電腦 ---------- 13225 -------- Saved 
+Computador de controle industrial RICH-300B montado em rack 4U e baseado no Intel 945G+ICH7 ---------- 13226 -------- Saved 
+6U CompactPCI processor board CP6004-SA ---------- 13227 -------- Saved 
+Placa do processador CompactPCI® CP6004-SA de 6U ---------- 13228 -------- Saved 
+conga-TS67 - 支援低功耗處理器，包括僅 10 瓦 TDP 的 Intel® Celeron® 807UE（1M 快取，1.0 GHz） ---------- 13229 -------- Saved 
+conga-TS67 - suporta processadores de baixo consumo de energia, incluindo o Intel® Celeron® 807UE (Cache de 1 M, 1,0 GHz) com apenas TDP de 10 watts. ---------- 13230 -------- Saved 
+LittleBoard 735 - EBX 單板電腦，採用 Intel® Atom® Processor，功能豐富，向後相容 ---------- 13231 -------- Saved 
+LittleBoard 735 - computador de placa única EBX com processador Intel® Atom®, rico em recursos, compatível com dispositivos legados ---------- 13232 -------- Saved 
+GL865-DUAL ---------- 13235 -------- Saved 
+GL865-DUAL ---------- 13236 -------- Saved 
+conga-BS45 - 低功耗 COM Express Basic Type 2 模組 ---------- 13237 -------- Saved 
+conga-BS45 - Módulo de baixo consumo COM Express básico tipo 2 ---------- 13238 -------- Saved 
+conga-CCA - 新一代 Intel® Atom® Dual Core Processor，初始電源消耗為 3.5 瓦 ---------- 13239 -------- Saved 
+conga-CCA - processadores Intel® Atom® Dual Core de última geração, começando com consumo de energia de 3,5 watts. ---------- 13240 -------- Saved 
+GE864-QUAD V2 ---------- 13241 -------- Saved 
+GE864-QUAD V2 ---------- 13242 -------- Saved 
+LISA-U1 3.75G HSPA 模組系列 ---------- 13243 -------- Saved 
+Série de módulos LISA-U1 3.75G HSPA ---------- 13244 -------- Saved 
+conga-BE57 - 提供修正記憶體錯誤功能，可確保最大可靠性 ---------- 13245 -------- Saved 
+conga-BE57 - oferece o recurso de correção de erro de memória, que garante a máxima confiabilidade ---------- 13246 -------- Saved 
+CR908-B - COM Express R2.1 Compact Type 6 Module ---------- 13247 -------- Saved 
+CR908-B - módulo COM Express R2.1 compacto tipo 6 ---------- 13248 -------- Saved 
+GL865-QUAD ---------- 13253 -------- Saved 
+GL865-QUAD ---------- 13254 -------- Saved 
+conga-Cs45 COM Express Type 2 Module 具備高級圖形效能 ---------- 13255 -------- Saved 
+conga-CS45 - módulo COM Express tipo 2 com desempenho gráfico superior ---------- 13256 -------- Saved 
+GE864-QUAD-ATEX ---------- 13257 -------- Saved 
+GE864-QUAD-ATEX ---------- 13258 -------- Saved 
+conga-XA945 - 低功率 XTX 模組 ---------- 13259 -------- Saved 
+conga-XA945 - módulo de baixo consumo de energia XTX ---------- 13260 -------- Saved 
+LISA-U2 3.75G UMTS/HSPA+ 模組系列 ---------- 13261 -------- Saved 
+Série de módulos LISA-U2 3.75G UMTS/HSPA+ ---------- 13262 -------- Saved 
+基於第 2 代 Intel® Core™i7 的 BIS-6330 OPS 模組 ---------- 13263 -------- Saved 
+Módulo OPS BIS-6330 baseado na 2ª geração do Intel® Core™ i7 ---------- 13264 -------- Saved 
+GT863-PY ---------- 13265 -------- Saved 
+GT863-PY ---------- 13266 -------- Saved 
+Everyware Software Framework ---------- 13267 -------- Saved 
+Everyware Software Framework ---------- 13268 -------- Saved 
+MK150 - 可擴充的 1.5U 機架式電腦，採用 Intel® Atom™ ---------- 13269 -------- Saved 
+MK150 - computador expansível montado em rack 1.5U com Intel® Atom™ ---------- 13270 -------- Saved 
+MC500 - Intel® Atom™ Mini-ITX Computer ---------- 13271 -------- Saved 
+MC500 - computador Mini-ITX Intel® Atom™ ---------- 13272 -------- Saved 
+LGX AU145 - 可支援寬溫的 Intel® Atom™ D2550 電腦 ---------- 13273 -------- Saved 
+LGX AU145 - computador Intel® Atom™ D2550 com temperatura operacional estendida ---------- 13274 -------- Saved 
+LGX AU131 - 支援寬溫的 Intel® Atom™ 電腦 ---------- 13275 -------- Saved 
+LGX AU131 - computador Intel® Atom™ com temperatura operacional estendida ---------- 13276 -------- Saved 
+FOX-121（IP-67 多功能防水解決方案） ---------- 13277 -------- Saved 
+FOX-121 (solução de múltiplas finalidades e à prova d'água IP-67) ---------- 13278 -------- Saved 
+ML250 - 工業 Intel® Atom™ Fanless Computer ---------- 13279 -------- Saved 
+ML250 - computador industrial Intel® Atom™ sem ventoinha ---------- 13280 -------- Saved 
+MI-965GM ---------- 13281 -------- Saved 
+MI-965GM ---------- 13282 -------- Saved 
+Sun Netra CP3250 ATCA 刀片伺服器 ---------- 13283 -------- Saved 
+Servidor Sun Netra CP3250 ATCA Blade ---------- 13284 -------- Saved 
+MegaRAC® PM ---------- 13285 -------- Saved 
+MegaRAC® PM ---------- 13286 -------- Saved 
+GE864-QUAD-Automotive V2 ---------- 13287 -------- Saved 
+GE864-QUAD-Automotive V2 ---------- 13288 -------- Saved 
+conga-B915 為 COM Express 提供了最佳價格/效能比 ---------- 13289 -------- Saved 
+conga-B915 Oferece a melhor relação preço/desempenho para COM Express ---------- 13290 -------- Saved 
+OFP320（OPS 相容的數位電子看板平台） ---------- 13291 -------- Saved 
+OFP320 (OPS Compliant Digital Signage Platform) ---------- 13292 -------- Saved 
+G30 ---------- 13293 -------- Saved 
+G30 ---------- 13294 -------- Saved 
+M2M 閘道 ---------- 13295 -------- Saved 
+Porta de comunicação M2M ---------- 13296 -------- Saved 
+GT864-QUAD-PY ---------- 13297 -------- Saved 
+GT864-QUAD-PY ---------- 13298 -------- Saved 
+conga-X945 - XTX 模組，採用 Intel® 945GME Chipset ---------- 13299 -------- Saved 
+conga-X945 - módulo XTX baseado no chipset Intel® 945GME ---------- 13300 -------- Saved 
+- VTC 7110 系列車載電腦 ---------- 13301 -------- Saved 
+Série VTC 7110 no computador do veículo ---------- 13302 -------- Saved 
+MegaRAC® SP-X ---------- 13305 -------- Saved 
+MegaRAC® SP-X ---------- 13306 -------- Saved 
+GE865-QUAD ---------- 13307 -------- Saved 
+GE865-QUAD ---------- 13308 -------- Saved 
+UE910 系列 ---------- 13309 -------- Saved 
+GC864-QUAD V2 ---------- 13310 -------- Saved 
+cPCI-6930 - 6U CompactPCI 刀片與八核心 32nm Intel® Xeon® Processor E5 ---------- 13311 -------- Saved 
+cPCI-6930 - lâmina 6U CompactPCI com processador de 32nm Intel® Xeon® E5 com oito núcleos ---------- 13312 -------- Saved 
+HE910 系列 ---------- 13313 -------- Saved 
+Família HE910 ---------- 13314 -------- Saved 
+conga-BS57： 節能型 COM Express Basic Type 2 Module ---------- 13315 -------- Saved 
+conga-BS57: Módulo de baixo consumo COM Express básico tipo 2  ---------- 13316 -------- Saved 
+Plug-N-Run G5 ---------- 13317 -------- Saved 
+Plug-N-Run G5 ---------- 13318 -------- Saved 
+Wind River 服務 ---------- 13321 -------- Saved 
+Wind River Services ---------- 13322 -------- Saved 
+MegaRAC® XMS ---------- 13323 -------- Saved 
+MegaRAC® XMS ---------- 13324 -------- Saved 
+GE910 ---------- 13325 -------- Saved 
+GE910 ---------- 13326 -------- Saved 
+PSG-SB-2URAQDP01 ---------- 13327 -------- Saved 
+PSG-SB-2URAQDP01 ---------- 13328 -------- Saved 
+NuPRO-852 ---------- 13329 -------- Saved 
+NuPRO-852 ---------- 13330 -------- Saved 
+GE864-GPS ---------- 13331 -------- Saved 
+GE864-GPS ---------- 13332 -------- Saved 
+PEB-7710VLA ---------- 13333 -------- Saved 
+PEB-7710VLA ---------- 13334 -------- Saved 
+LEON G100，G200 GSM/GPRS 2.5G 模組 ---------- 13335 -------- Saved 
+módulos LEON-G100, G200 GSM/GPRS 2.5G ---------- 13336 -------- Saved 
+SCB-7975 1U Rack-Mount Intel® Core™2 Quad Network System，10 x GbE，SATA，CF，LCM ---------- 13337 -------- Saved 
+SCB-7975 1U - sistema de rede para montagem em rack Intel® Core™2 Quad, 10 x GbE, SATA, CF, LCM ---------- 13338 -------- Saved 
+CEHM65-2340-0 ---------- 13339 -------- Saved 
+CEHM65-2340-0 ---------- 13340 -------- Saved 
+conga-BS67 - COM Express 小尺寸模組基於第 2 代 Intel® Core™ Processor 系列 ---------- 13341 -------- Saved 
+conga-BS67 - módulo COM Express compacto (SFF) baseado na 2ª geração da família de processadores Intel® Core™ ---------- 13342 -------- Saved 
+XTX-CV (XTX CPU Module) ---------- 13343 -------- Saved 
+XTX-CV (módulo de CPU XTX) ---------- 13344 -------- Saved 
+NanoCOM-TCW2 （寬溫 板） ---------- 13345 -------- Saved 
+NanoCOM-TCW2 (Placa alta var. temp placa) ---------- 13346 -------- Saved 
+G7L630-B Intel&reg; 945G/ICH7 ATX motherboard ---------- 13347 -------- Saved 
+Placa-mãe G7L630-B Intel&reg; ATX 945G/ICH7 ---------- 13348 -------- Saved 
+IMBA-Q77（ATX 主機板） ---------- 13349 -------- Saved 
+IMBA-Q77 (placa-mãe ATX) ---------- 13350 -------- Saved 
+CEQM77E-3612E-0： 3612m Intel® Core™ i7，4-Core ---------- 13351 -------- Saved 
+CEQM77E-3612E-0: 3612m Intel® Core™ i7, 4 núcleos ---------- 13352 -------- Saved 
+RC1 - 加固型 MIPIOS Box Computer ---------- 13353 -------- Saved 
+RC1 - computador industrial MIPIOS montado em caixa ---------- 13354 -------- Saved 
+PFM-CVS (PC/104 Module) ---------- 13355 -------- Saved 
+PFM-CVS (módulo PC/104) ---------- 13356 -------- Saved 
+GENE-TC05W2（寬溫 板） ---------- 13357 -------- Saved 
+GENE-TC05W2 (Placa alta var. temp placa) ---------- 13358 -------- Saved 
+CEQM77-3610： 3610ME, Intel® Core™ i5, 2-Core ---------- 13359 -------- Saved 
+CEQM77-3610: 3610ME, Intel® Core™ i5, 2 núcleos ---------- 13360 -------- Saved 
+COM-QM57 (COM Express CPU Module) ---------- 13361 -------- Saved 
+COM-QM57 (módulo de CPU COM Express) ---------- 13362 -------- Saved 
+Vector： 採用了 Intel® Atom™ Z5xx 的單板電腦 ---------- 13363 -------- Saved 
+Vector: computador de placa única (SBC) com Intel® Atom™ Z5xx ---------- 13364 -------- Saved 
+EMB-QM77 (Mini-ITX) ---------- 13365 -------- Saved 
+EMB-QM77 (Mini-ITX) ---------- 13366 -------- Saved 
+BCM NX530Z - Intel® Atom® Z530P 1.6 GHz 或 Z510P 1.1 GHz Nano ITX，無風扇運行，適用於資訊站、銷售點 (POS)、ATM、工業控制，4.72"x4.72" ---------- 13367 -------- Saved 
+BCM NX530Z - Intel® Atom® Z530P 1,6 GHz ou Z510P 1,1 GHz Nano ITX, operação sem ventoinha, para quiosque, ponto de venda (POS), caixa eletrônico, controle industrial, 4,72" x 4,72" ---------- 13368 -------- Saved 
+IMBI-QM57（工業級主機板） ---------- 13369 -------- Saved 
+IMBI-QM57 (placa-mãe industrial) ---------- 13370 -------- Saved 
+CEQM77HDE-3517-0： 3517UE, Intel® Core™ i7, 2-Core ---------- 13371 -------- Saved 
+CEQM77HDE-3517-0: 3517UE, Intel® Core™ i7, 2 núcleos ---------- 13372 -------- Saved 
+DPX-S410 ---------- 13373 -------- Saved 
+DPX-S410 ---------- 13374 -------- Saved 
+PFM-CVSW1/W2（寬溫 板） ---------- 13375 -------- Saved 
+PFM-CVSW1/W2 (Placa alta var. temp placa) ---------- 13376 -------- Saved 
+CEQM77-3612-0： 3612QE，Intel® Core™ i7，4 Core ---------- 13377 -------- Saved 
+CEQM77-3612-0: 3612QE, Intel® Core™ i7, 4 núcleos ---------- 13378 -------- Saved 
+NAR-5650 ---------- 13379 -------- Saved 
+NAR-5650 ---------- 13380 -------- Saved 
+COM QM77 Rev.B (COM Express CPU Module) ---------- 13381 -------- Saved 
+COM-QM77 (módulo de CPU COM Express) ---------- 13382 -------- Saved 
+遠程資訊車載電腦 - VTC6100 ---------- 13383 -------- Saved 
+Computador de telemática veicular - VTC6100 ---------- 13384 -------- Saved 
+ATCA-4616（6 核） ---------- 13385 -------- Saved 
+ATCA-4616 (6 núcleos) ---------- 13386 -------- Saved 
+IMBM-B75A（微型 ATX 工業級主機板） ---------- 13387 -------- Saved 
+IMBM-B75A (placa-mãe industrial Micro ATX) ---------- 13388 -------- Saved 
+CEQM77HDE-3555-0： 3555LE、Intel® Core™ i7、2 Core ---------- 13389 -------- Saved 
+CEQM77HDE-3555-0: 3555LE, Intel® Core™ i7, 2 núcleos ---------- 13390 -------- Saved 
+BCM BC77Q ATX 主機板支援 22nm/32 nm Intel® Core ™ i7/i5/i3 Processor。 透過 2 個 DisplayPort、DVI 和/或 VGA，支援 3 獨立的顯示 ---------- 13391 -------- Saved 
+A placa-mãe BCM BC77Q ATX suporta processadores 22nm/32nm Intel® Core ™ i7/i5/i3. Suporta 3 dispositivos de exibição independentes através de 2 DisplayPorts, DVI e/ou VGA ---------- 13392 -------- Saved 
+M2M 智慧服務開發人員套件 ---------- 13393 -------- Saved 
+Kit de desenvolvimento de serviços inteligentes de M2M ---------- 13394 -------- Saved 
+AdvancedMC： AM4020 ---------- 13395 -------- Saved 
+AdvancedMC: AM4020 ---------- 13396 -------- Saved 
+CEQM77-3615-0： 3615QE，Intel® Core ™ i7，4 Core ---------- 13397 -------- Saved 
+CEQM77-3615-0: 3615QE, Intel® Core™ i7, 4 núcleos ---------- 13398 -------- Saved 
+Q35ATX 工業級主機板 ---------- 13399 -------- Saved 
+placa-mãe industrial Q35ATX ---------- 13400 -------- Saved 
+BGS2 ---------- 13401 -------- Saved 
+BGS2 ---------- 13402 -------- Saved 
+AHP-1081（工業級 HMI 面板 PC） ---------- 13403 -------- Saved 
+AHP-1081 (PC industrial HMI em painel) ---------- 13404 -------- Saved 
+Adbc8031： COM Express 模組中採用 Intel® Core ™ i7 ---------- 13405 -------- Saved 
+Adbc8031: Intel® Core ™ i7 em módulo COM Express ---------- 13406 -------- Saved 
+CEQM77HDE-3612-0： 3612QE、Intel® Core ™ i7，4 核心 ---------- 13407 -------- Saved 
+CEQM77HDE-3612-0: 3612QE, Intel® Core™ i7, 4 núcleos ---------- 13408 -------- Saved 
+PICO-CV01 (PICO-ITX) ---------- 13409 -------- Saved 
+PICO-CV01 (PICO-ITX) ---------- 13410 -------- Saved 
+HSB-CV1P（半尺寸 SBC） ---------- 13411 -------- Saved 
+HSB-CV1P (SBC com metade do tamanho) ---------- 13412 -------- Saved 
+FSB-B75H (PICMG 1.3 SBC) ---------- 13415 -------- Saved 
+FSB-B75H (PICMG 1.3 SBC) ---------- 13416 -------- Saved 
+BGS2T ---------- 13417 -------- Saved 
+BGS2T ---------- 13418 -------- Saved 
+GENE-QM77 Rev.B (3.5" ESB) ---------- 13419 -------- Saved 
+GENE-QM77 Rev.B (3,5" ESB) ---------- 13420 -------- Saved 
+CEQM77-3517-0： 3517UE，Intel® Core ™ i7，2 核心 ---------- 13421 -------- Saved 
+CEQM77-3517-0: 3517UE, Intel® Core™ i7, 2 núcleos ---------- 13422 -------- Saved 
+AHP-1122（工業 HMI 觸控式面板） ---------- 13423 -------- Saved 
+AHP-1122 (Painel industrial HMI sensível ao toque) ---------- 13424 -------- Saved 
+EMB-9458T（迷你 ITX、工業級主機板） ---------- 13425 -------- Saved 
+EMB-9458T (Mini ITX, placa-mãe industrial) ---------- 13426 -------- Saved 
+RMS420-5520DT ---------- 13427 -------- Saved 
+RMS420-5520DT ---------- 13428 -------- Saved 
+IMBA-880（ATX 工業級主機板） ---------- 13429 -------- Saved 
+IMBA-880 (placa-mãe industrial ATX) ---------- 13430 -------- Saved 
+IMBA-967（ATX 主機板） ---------- 13431 -------- Saved 
+IMBA-967 (placa-mãe ATX) ---------- 13432 -------- Saved 
+PFM-945CW1（寬溫度範圍 板） ---------- 13435 -------- Saved 
+PFM-945CW1 (Placa alta var. temp placa) ---------- 13436 -------- Saved 
+BGS2-W miniPCIe ---------- 13437 -------- Saved 
+BGS2-W miniPCIe ---------- 13438 -------- Saved 
+COM-TCW2（寬範圍溫度 板） ---------- 13439 -------- Saved 
+COM-TCW2 (Placa alta var. temp placa) ---------- 13440 -------- Saved 
+CEQM77-3555-0： 3555LE、Intel® Core™ i7、2 Core ---------- 13441 -------- Saved 
+CEQM77-3555-0: 3555LE, Intel® Core™ i7, 2 núcleos ---------- 13442 -------- Saved 
+COM Express CXE-C2D965 ---------- 13443 -------- Saved 
+COM Express CXE-C2D965 ---------- 13444 -------- Saved 
+ITX2010： Intel® Pentium® M Mini-ITX 模組 ---------- 13445 -------- Saved 
+ITX2010: Módulo Intel® Pentium® M Mini-ITX ---------- 13446 -------- Saved 
+AEC-6930（箱式 PC） ---------- 13447 -------- Saved 
+AEC-6930 (PC em caixa) ---------- 13448 -------- Saved 
+HFMB-26 ---------- 13449 -------- Saved 
+HFMB-26 ---------- 13450 -------- Saved 
+AGP-3125（堅固耐用的可擴充型觸控式螢幕） ---------- 13451 -------- Saved 
+AGP-3125 (Panel PC robusto com tela sensível ao toque) ---------- 13452 -------- Saved 
+ICEROCK-08A ---------- 13453 -------- Saved 
+ICEROCK-08A ---------- 13454 -------- Saved 
+LatticeMachXO ---------- 13455 -------- Saved 
+LatticeMachXO ---------- 13456 -------- Saved 
+網路應用程式可見庫 (NAVL) ---------- 13457 -------- Saved 
+Biblioteca de visibilidade de aplicativos na rede (NAVL) ---------- 13458 -------- Saved 
+Tyan S5207 ---------- 13459 -------- Saved 
+Tyan S5207 ---------- 13460 -------- Saved 
+AEC-6625（無風扇箱式 PC） ---------- 13461 -------- Saved 
+AEC-6625 (PC em caixa sem ventoinha) ---------- 13462 -------- Saved 
+EHS5 ---------- 13463 -------- Saved 
+EHS5 ---------- 13464 -------- Saved 
+LatticeSC/M ---------- 13465 -------- Saved 
+LatticeSC/M ---------- 13466 -------- Saved 
+PCOM-B210VG ---------- 13467 -------- Saved 
+PCOM-B210VG ---------- 13468 -------- Saved 
+HFMB-60 ---------- 13469 -------- Saved 
+HFMB-60 ---------- 13470 -------- Saved 
+AGP-3155（加固型可擴充的觸控式面板） ---------- 13471 -------- Saved 
+AGP-3155 (Panel PC robusto com tela sensível ao toque) ---------- 13472 -------- Saved 
+AE Linux ---------- 13473 -------- Saved 
+AE Linux ---------- 13474 -------- Saved 
+iKarPC-W08A ---------- 13475 -------- Saved 
+iKarPC-W08A ---------- 13476 -------- Saved 
+採用 Intel® Atom Processor 且具有高圖形效能的 conga-BA945 COM Express Type 2 模組 ---------- 13477 -------- Saved 
+módulo COM Express tipo 2 conga-BA945 com um processador Intel® Atom e alto desempenho gráfico ---------- 13478 -------- Saved 
+AVL-2000PLUS ---------- 13479 -------- Saved 
+AVL-2000PLUS ---------- 13480 -------- Saved 
+QSeven Q7-US15W ---------- 13481 -------- Saved 
+QSeven Q7-US15W ---------- 13482 -------- Saved 
+GA-6KIEL-RH ---------- 13483 -------- Saved 
+GA-6KIEL-RH ---------- 13484 -------- Saved 
+WiMAX 16e 行動站和基站 ---------- 13485 -------- Saved 
+Estação móvel e base WiMAX 16e ---------- 13486 -------- Saved 
+COM Express CXB-GM45 ---------- 13487 -------- Saved 
+COM Express CXB-GM45 ---------- 13488 -------- Saved 
+ASB200-883 - 基於 Intel® Atom™ Processor 的無風扇系統 ---------- 13489 -------- Saved 
+ASB200-883 - sistema sem ventoinha baseado no processador Intel® Atom™ ---------- 13490 -------- Saved 
+Tyan S5376 ---------- 13491 -------- Saved 
+Tyan S5376 ---------- 13492 -------- Saved 
+eVM Windows 平台 ---------- 13493 -------- Saved 
+Plataforma eVM para Windows ---------- 13494 -------- Saved 
+QSeven Q7-US15W-FD ---------- 13495 -------- Saved 
+QSeven Q7-US15W-FD ---------- 13496 -------- Saved 
+cPCI-6520 - 6U CompactPCI 第 3 代 Intel® Core™ i7 Processor Blade，配備 ECC SDRAM ---------- 13497 -------- Saved 
+cPCI-6520 - lâmina de processadores 6U CompactPCI para a 3ª geração do processador Intel® Core™ i7 com SDRAM ECC ---------- 13498 -------- Saved 
+AGS2 ---------- 13499 -------- Saved 
+AGS2 ---------- 13500 -------- Saved 
+PSB-701LF ---------- 13501 -------- Saved 
+PSB-701LF ---------- 13502 -------- Saved 
+FWA-6104 - 基於入門級 Intel® Atom™ N270 的無風扇網路設備，帶 4 GbE 連接埠 ---------- 13503 -------- Saved 
+FWA-6104 - dispositivo de rede básico sem ventoinha baseado no Intel® Atom™ N270 c/ 4 portas GbE ---------- 13504 -------- Saved 
+LatticeECP2/M ---------- 13505 -------- Saved 
+LatticeECP2/M ---------- 13506 -------- Saved 
+ICEFIRE-T10A ---------- 13507 -------- Saved 
+ICEFIRE-T10A ---------- 13508 -------- Saved 
+conga-QA6 Qseven 模組特有全新的 Intel® Atom® Processor E6xx 系列 ---------- 13509 -------- Saved 
+Módulo Qseven conga-QA6 com a nova série de processadores Intel® Atom® E6xx ---------- 13510 -------- Saved 
+Tyan S5180 ---------- 13511 -------- Saved 
+Tyan S5180 ---------- 13512 -------- Saved 
+E100 - 完全加固型平板電腦 ---------- 13513 -------- Saved 
+E100 - Tablet totalmente robusto  ---------- 13514 -------- Saved 
+CM-7305 Intel® Atom® Z5xx serial Processor COM Express Module 支援 2 個 PCI-E、6 個 USB、GbE、LVDS、SDVO、IDE、PCI、2 個 SATA ---------- 13515 -------- Saved 
+Módulo COM Express CM-7305 com processador Intel® Atom® Z5xx com 2 PCI-E, 6 USB, GbE, LVDS, SDVO, IDE, PCI, 2 SATA ---------- 13516 -------- Saved 
+P5110 緊湊型 PCI 機箱系統 ---------- 13517 -------- Saved 
+P5110 Sistema compacto de chassi PCI ---------- 13518 -------- Saved 
+PMP： Intel® Pentium® M PC/104+ 模組 ---------- 13519 -------- Saved 
+PMP: Módulo PC/104+ Intel® Pentium® M  ---------- 13520 -------- Saved 
+phyCORE-Z5x0PT-Module ---------- 13521 -------- Saved 
+Módulo phyCORE-Z5x0PT ---------- 13522 -------- Saved 
+BCM RX945GC - Intel® 945GC Core™2 Duo LGA775 mATX，配有 PCIe x 16/x1、2 個 PCI、4 個 SATAII、可選 TPM ---------- 13523 -------- Saved 
+BCM RX945GC - Intel® 945GC Core™2 Duo LGA775 mATX com PCIe x16/x1, 2 PCI, 4 SATAII, TPM opcional ---------- 13524 -------- Saved 
+Tyan S5220 ---------- 13525 -------- Saved 
+Tyan S5220 ---------- 13526 -------- Saved 
+Touch&Go Paige17 ---------- 13527 -------- Saved 
+Touch&Go Paige17 ---------- 13528 -------- Saved 
+MITX-6891 Intel® G45 based Mini-ITX Motherboard ---------- 13529 -------- Saved 
+Placa-mãe Mini-ITX MITX-6891 baseada no Intel® G45 ---------- 13530 -------- Saved 
+CPC1301 - COM Express 模組基於 Intel® Core™2 Duo CPU ---------- 13531 -------- Saved 
+CPC1301 - módulo COM Express baseado na CPU Intel® Core™ 2 Duo  ---------- 13532 -------- Saved 
+快速開發工具組 phyCORE Z5x0PT，配有 Linux 或 Win XP Embedded ---------- 13533 -------- Saved 
+Kit para desenvolvimento rápido phyCORE-Z5x0PT com Linux ou Win XP embarcado ---------- 13534 -------- Saved 
+LatticeXP2 ---------- 13535 -------- Saved 
+LatticeXP2 ---------- 13536 -------- Saved 
+LTE eNodeB L2 L3 堆疊 ---------- 13537 -------- Saved 
+LTE eNodeB L2 L3 Stack ---------- 13538 -------- Saved 
+電腦模組：microETXexpress-SP ---------- 13539 -------- Saved 
+Computador modular: microETXexpress-SP ---------- 13540 -------- Saved 
+PP 512/06x - 45nm Intel® Core™2 Duo processor，基於 CompactPCI dual PMC/XMC SBC ---------- 13541 -------- Saved 
+PP 512/06 x - PMC/XMC SBC CompactPCI dual baseada no processador Intel® Core™ 2 Duo de 45nm  ---------- 13542 -------- Saved 
+LinuxLink ---------- 13543 -------- Saved 
+LinuxLink ---------- 13544 -------- Saved 
+PPC-3308 ---------- 13545 -------- Saved 
+PPC-3308 ---------- 13546 -------- Saved 
+mpDemon™ ---------- 13547 -------- Saved 
+mpDemon™ ---------- 13548 -------- Saved 
+AMI Debug Rx ---------- 13549 -------- Saved 
+AMI Debug Rx ---------- 13550 -------- Saved 
+PSA-110 ATCA AMC Carrier 10G Managed Switch ---------- 13551 -------- Saved 
+Switch Gerenciado 10G PSA-110 ATCA com expansão AMC ---------- 13552 -------- Saved 
+MITX-6934 Intel® Atom® Powered 4 千兆 Mini-ITX 主機板 ---------- 13553 -------- Saved 
+Placa-mãe 4 Gigabit Mini-ITX MITX-6934 com Intel® Atom® ---------- 13554 -------- Saved 
+整合服務 ---------- 13555 -------- Saved 
+Serviços de integração ---------- 13556 -------- Saved 
+NI LabVIEW ---------- 13557 -------- Saved 
+NI LabVIEW ---------- 13558 -------- Saved 
+BIS-6331 ---------- 13559 -------- Saved 
+BIS-6331 ---------- 13560 -------- Saved 
+裝置驅動程式開發 ---------- 13561 -------- Saved 
+Desenvolvimento de drivers de dispositivo ---------- 13562 -------- Saved 
+COM-945（電腦模組，COM） ---------- 13563 -------- Saved 
+COM-945 (Computer On Module, COM) ---------- 13564 -------- Saved 
+Aardvark I2C/SPI 主機介面卡 ---------- 13565 -------- Saved 
+Adaptador host Aardvark I2C/SPI ---------- 13566 -------- Saved 
+PMB-601LF ---------- 13567 -------- Saved 
+PMB-601LF ---------- 13568 -------- Saved 
+自訂平台 ---------- 13569 -------- Saved 
+Plataformas personalizadas ---------- 13570 -------- Saved 
+Raven ---------- 13571 -------- Saved 
+Raven ---------- 13572 -------- Saved 
+AVL-3000 ---------- 13573 -------- Saved 
+AVL-3000 ---------- 13574 -------- Saved 
+MITX-6936 Intel® Atom® Powered Mini ITX Motherboard ---------- 13575 -------- Saved 
+Placa-mãe Mini ITX MITX-6936 com Intel® Atom® ---------- 13576 -------- Saved 
+VX 405/04x - Intel® Core™ Duo VME Processor Board ---------- 13577 -------- Saved 
+VX 405/04 x - placa Processador Intel® Core ™ Duo VME  ---------- 13578 -------- Saved 
+NAR-7100 ---------- 13579 -------- Saved 
+NAR-7100 ---------- 13580 -------- Saved 
+NI Real-Time Hypervisor ---------- 13581 -------- Saved 
+NI Real-Time Hypervisor ---------- 13582 -------- Saved 
+軟體開發服務 ---------- 13583 -------- Saved 
+Serviço de desenvolvimento de software ---------- 13584 -------- Saved 
+M2M 解決方案產生器 ---------- 13585 -------- Saved 
+M2M Solutions Builder ---------- 13586 -------- Saved 
+產品開發與工程服務 ---------- 13587 -------- Saved 
+Serviços de desenvolvimento de produtos e engenharia ---------- 13588 -------- Saved 
+Sprite ---------- 13589 -------- Saved 
+Sprite ---------- 13590 -------- Saved 
+面向 IA32 GNU/Linux 的 Sourcery CodeBench ---------- 13591 -------- Saved 
+Sourcery CodeBench para IA32 GNU/Linux ---------- 13592 -------- Saved 
+BIOS & UEFI 自訂 ---------- 13593 -------- Saved 
+Personalização de BIOS & UEFI ---------- 13594 -------- Saved 
+Telit HE910，配備 Mini PCIe 配接器 ---------- 13595 -------- Saved 
+Telit HE910 com adaptador Mini PCIe ---------- 13596 -------- Saved 
+PXI ---------- 13597 -------- Saved 
+PXI ---------- 13598 -------- Saved 
+Copperhead (EBX-41EAF) EBX Extended-temp Dual Core Single Board Computer ---------- 13599 -------- Saved 
+Computador de placa única Dual Core e de temperatura estendida EBX Copperhead (EBX-41EAF) ---------- 13600 -------- Saved 
+Green Hills Probe ---------- 13601 -------- Saved 
+Green Hills Probe ---------- 13602 -------- Saved 
+嵌入式軟體和硬體設計服務 ---------- 13603 -------- Saved 
+Serviço de projeto de hardware e software embarcado ---------- 13604 -------- Saved 
+工程服務 ---------- 13605 -------- Saved 
+Serviços de engenharia ---------- 13606 -------- Saved 
+XVAULT XNVR300 3U 16 托架機架安裝 ---------- 13607 -------- Saved 
+XVAULT XNVR300 3U 16 BAY RACKMOUNT ---------- 13608 -------- Saved 
+面向 IA32 Windows 的 Sourcery CodeBench ---------- 13609 -------- Saved 
+Sourcery CodeBench para IA32 Windows ---------- 13610 -------- Saved 
+P8000 系列 Compact PCI 系統 ---------- 13611 -------- Saved 
+Sistemas PCI compactos série P8000 ---------- 13612 -------- Saved 
+PRM-100 Intel® Core™2 Duo PrAMC ---------- 13613 -------- Saved 
+PRM-100 Intel® Core™2 Duo PrAMC ---------- 13614 -------- Saved 
+MI970 - Mini-ITX 主機板，採用 Mobile Intel® QM77 Express Chipset ---------- 13615 -------- Saved 
+Placa-mãe Mini-ITX MI970 no chipset Mobile Intel® QM77 Express ---------- 13616 -------- Saved 
+COM-945GSE ---------- 13617 -------- Saved 
+COM-945GSE ---------- 13618 -------- Saved 
+自訂和交鑰匙解決方案 ---------- 13619 -------- Saved 
+Soluções personalizadas e chave na mão ---------- 13620 -------- Saved 
+LabVIEW Real-Time Module ---------- 13621 -------- Saved 
+Módulo LabVIEW Real-Time ---------- 13622 -------- Saved 
+Wiggler ---------- 13623 -------- Saved 
+Wiggler ---------- 13624 -------- Saved 
+iGo15-P87 ---------- 13625 -------- Saved 
+iGo15-P87 ---------- 13626 -------- Saved 
+訊號解決方案 ---------- 13627 -------- Saved 
+Soluções de sinalização ---------- 13628 -------- Saved 
+mCosm 提供零售解決方案和服務 ---------- 13629 -------- Saved 
+mCosm oferece soluções e serviços de varejo ---------- 13630 -------- Saved 
+自訂的電子產品設計和開發 ---------- 13631 -------- Saved 
+Projeto desenvolvimento de produtos eletrônicos personalizados ---------- 13632 -------- Saved 
+PRM-120 AMC Intel® Core™ i7 Processor Card ---------- 13633 -------- Saved 
+Placa processadora PRM-120 AMC Intel® Core™ i7 ---------- 13634 -------- Saved 
+PCB 版面配置和工業/機械設計 ---------- 13635 -------- Saved 
+Layout de placa de circuitos impresso e design industrial/mecânico ---------- 13636 -------- Saved 
+系統整合 ---------- 13637 -------- Saved 
+Integração de Sistemas ---------- 13638 -------- Saved 
+Trillium 3G 高速資料包存取 (HSPA) 軟體 ---------- 13639 -------- Saved 
+Trillium 3 G High Speed Packet Access (HSPA) Software ---------- 13640 -------- Saved 
+Cheetah SPI 主機介面卡 ---------- 13641 -------- Saved 
+Adaptador host Cheetah SPI ---------- 13642 -------- Saved 
+XVAULT XNVR300 底座 ---------- 13643 -------- Saved 
+SUPORTE XNVR300 XVAULT ---------- 13644 -------- Saved 
+MicroTCA 系統： OM6062 ---------- 13645 -------- Saved 
+Sistema MicroTCA: OM6062 ---------- 13646 -------- Saved 
+XVAULT XNVR300 2U 12 托架機架安裝 ---------- 13647 -------- Saved 
+XVAULT XNVR300 2U 12 BAY RACKMOUNT ---------- 13648 -------- Saved 
+conga-QA - QSeven Module，Intel® Atom™ Processor Z5xx 系列和 Intel® USW15 ---------- 13649 -------- Saved 
+conga-QA - módulo QSeven, processador Intel® Atom™ série Z5xx e chipset Intel® USW15 ---------- 13650 -------- Saved 
+工業電腦： Kiss Short (Intel &reg; Core™ Duo) ---------- 13651 -------- Saved 
+PC industrial: Kiss Short (Intel &reg; Core™ Duo) ---------- 13652 -------- Saved 
+CompactPCI 3U： CP307-64 ---------- 13653 -------- Saved 
+CompactPCI 3U: CP307-64 ---------- 13654 -------- Saved 
+AdvancedMC： AM5030 ---------- 13655 -------- Saved 
+AdvancedMC: AM5030 ---------- 13656 -------- Saved 
+Model 526 - 小外形尺寸 uATX 標準可轉換 MicroTower/Desktop ---------- 13657 -------- Saved 
+Modelo 526 - uATX com fator de forma pequeno, compatível com microtorre/desktop ---------- 13658 -------- Saved 
+XVAULT XNVR300 2U 4 托架機架安裝 ---------- 13659 -------- Saved 
+XVAULT XNVR300 2U 4 BAY RACKMOUNT ---------- 13660 -------- Saved 
+EPIC-9457 Rev. B（EPIC 主機板） ---------- 13661 -------- Saved 
+EPIC-9457 Rev. B (placa EPIC) ---------- 13662 -------- Saved 
+PEAK 760VL2(LF) ---------- 13663 -------- Saved 
+PICO 760VL2(LF) ---------- 13664 -------- Saved 
+WSB-945GSE（全尺寸 CPU 卡） ---------- 13665 -------- Saved 
+WSB-945GSE (placa de CPU de tamanho completo) ---------- 13666 -------- Saved 
+AdvancedMC：存儲模組： AM4520 ---------- 13667 -------- Saved 
+AdvancedMC: módulo de armazenamento: AM4520 ---------- 13668 -------- Saved 
+cPCI-3610 - 3U CompactPCI® Dual-Core Intel® Atom™ 入門級處理器刀片 ---------- 13669 -------- Saved 
+cPCI-3610 - lâmina de processadores 3U básica CompactPCI® Dual-Core Intel® Atom™ ---------- 13670 -------- Saved 
+XVAULT XNVR300 2U 8 托架機架安裝 ---------- 13673 -------- Saved 
+XVAULT XNVR300 2U 8 BAY RACKMOUNT ---------- 13674 -------- Saved 
+cPCI-3920 ---------- 13677 -------- Saved 
+cPCI-3920 ---------- 13678 -------- Saved 
+AIMB- 865 ---------- 13681 -------- Saved 
+AIMB-865 ---------- 13682 -------- Saved 
+MicroTCA 系統： OM5080 ---------- 13683 -------- Saved 
+Sistema MicroTCA: OM5080 ---------- 13684 -------- Saved 
+Phoenix ATX Express ---------- 13685 -------- Saved 
+Phoenix ATX Express ---------- 13686 -------- Saved 
+AMC605，AMC 2.5 英吋 SAS 磁碟機 ---------- 13687 -------- Saved 
+AMC605, unidade SAS de 2,5 polegadas AMC ---------- 13688 -------- Saved 
+Phoenix MicroATX Express - 長壽命控制器 ---------- 13689 -------- Saved 
+Phoenix MicroATX Express - controlador de longa duração ---------- 13690 -------- Saved 
+RMS-220-RC224AC ---------- 13691 -------- Saved 
+RMS-220-RC224AC ---------- 13692 -------- Saved 
+Infinity Streamer（迷你） ---------- 13693 -------- Saved 
+Infinity Streamer (mini) ---------- 13694 -------- Saved 
+BIS-6630 ---------- 13695 -------- Saved 
+BIS-6630 ---------- 13696 -------- Saved 
+RMS-220-RC120DC ---------- 13697 -------- Saved 
+RMS-220-RC120DC ---------- 13698 -------- Saved 
+PP 91x/x1x - 第 3 代 Intel® Core™ Processor Single/Dual PMC/XMC Carrier ---------- 13699 -------- Saved 
+PP 91x/x1x - Portadora PMC/XMC Simples/Dupla Intel® Core™ de 3ª geração ---------- 13700 -------- Saved 
+PrAMC-7210 ---------- 13701 -------- Saved 
+PrAMC-7210 ---------- 13702 -------- Saved 
+eBOX621-801-FL 無風扇嵌入式系統，採用 Intel® Atom™ ProcessorD525 1.8 GHz 和寬溫度 ---------- 13703 -------- Saved 
+Sistema embarcado sem ventoinha eBOX621-801-FL com processador Intel® Atom™ D525 1,8 GHz e StaWide-temp ---------- 13704 -------- Saved 
+CR100-CRM - Mini-ITX 採用第 3/2 代 Intel® Core™ Processor 和 Intel® QM77 chipset ---------- 13705 -------- Saved 
+CR100-CRM-Mini-ITX com processadores de 2ª e 3ª geração Intel® Core™ e chipset Intel® QM77 ---------- 13706 -------- Saved 
+AM 90x/x1x- 第 3 代 Intel® Core™ Processor AdvancedMC Module ---------- 13707 -------- Saved 
+AM 90x/x1x - Módulo AdvancedMC com processador de 3ª geração Intel® Core™ ---------- 13708 -------- Saved 
+RMS-220-RC224DC ---------- 13709 -------- Saved 
+RMS-220-RC224DC ---------- 13710 -------- Saved 
+ATCA-7365-CE AdvancedTCA Processor Blade ---------- 13711 -------- Saved 
+Blade de processador ATCA-7365-CE AdvancedTCA ---------- 13712 -------- Saved 
+Multistreamer Gearbox IP/IP (Maxi) ---------- 13713 -------- Saved 
+Caixa de Ferramentas Multistreamer IP/IP (Maxi) ---------- 13714 -------- Saved 
+Centellis 3600，R3.2 AdvancedTCA 通訊伺服器 ---------- 13715 -------- Saved 
+Centellis 3600, r 3.2 AdvancedTCA Communications Server ---------- 13716 -------- Saved 
+PSG-WB-3UFAQDP01 ---------- 13717 -------- Saved 
+PSG-WB-3UFAQDP01 ---------- 13718 -------- Saved 
+McAfee 嵌入式安全 ---------- 13719 -------- Saved 
+Segurança McAfee embarcada ---------- 13720 -------- Saved 
+BIS-6650 系列 ---------- 13721 -------- Saved 
+Série BIS-6650 ---------- 13722 -------- Saved 
+H6046 - Intel® Atom® ETX 模組 ---------- 13723 -------- Saved 
+H6046 - Módulo ETX Intel ® Atom® ---------- 13724 -------- Saved 
+RMS-220-RC124AC ---------- 13725 -------- Saved 
+RMS-220-RC124AC ---------- 13726 -------- Saved 
+ATCA-7150 ---------- 13727 -------- Saved 
+ATCA-7150 ---------- 13728 -------- Saved 
+IPC912-213-FL - 無風扇系統採用了 Intel® Core™ i7/i5/i3 Processor，支援 2.5GHz 主頻，Intel® HM65 Chipset ---------- 13729 -------- Saved 
+IPC912-213-FL - sistema sem ventoinha com Intel® Core ™ i7/i5/i3 processadores até 2.5 GHz, chipset Intel® HM65 ---------- 13730 -------- Saved 
+GA-6QPCV-RH ---------- 13731 -------- Saved 
+GA-6QPCV-RH ---------- 13732 -------- Saved 
+LT600-L Intel&reg; 945GC/ICH7 ATX motherboard ---------- 13733 -------- Saved 
+Placa-mãe Intel LT600-L&reg; 945GC/ICH7 ATX ---------- 13734 -------- Saved 
+PP 93x/x1x - 第 3 代 Intel® Core™ Processor 單/雙 PMC/XMC 載體 ---------- 13735 -------- Saved 
+PP 93x/x1x - Processador 3ª geração Intel®Core ™ Single/Dual PMC/XMC Carrier ---------- 13736 -------- Saved 
+FWS-7200（網路裝置） ---------- 13737 -------- Saved 
+FWS-7200 (aparelho de rede) ---------- 13738 -------- Saved 
+965ATX 工業級主機板 ---------- 13739 -------- Saved 
+Placa-mãe industrial 965ATX ---------- 13740 -------- Saved 
+AM 92x/x1x- 第 3 代 Intel® Core™ Processor AdvancedMC Module ---------- 13741 -------- Saved 
+Módulo AM 92x/x1x-3ª geração Intel® Core ™ Processador AdvancedMC módulo ---------- 13742 -------- Saved 
+VX 91x/01x - 第 3 代 Intel® Core™ Processor Dual PMC / XMC VITA 41.4 Controller ---------- 13743 -------- Saved 
+VX 91 x / 01 x - 3 ª geração Intel ® Core ™ processador Dual PMC / XMC VITA 41,4 controlador ---------- 13744 -------- Saved 
+MultiStreamer Midi ---------- 13745 -------- Saved 
+MultiStreamer Midi ---------- 13746 -------- Saved 
+Centellis 4100 ATCA 10GbE 14 插槽平台 ---------- 13747 -------- Saved 
+Centellis 4100 ATCA 10GbE slot 14 Plataforma ---------- 13748 -------- Saved 
+PL-80160 ---------- 13749 -------- Saved 
+PL-80160 ---------- 13750 -------- Saved 
+WMS-2000 連通性和應用程式控制器 ---------- 13751 -------- Saved 
+Controlador de aplicação e de conectividade do WMS-2000 ---------- 13752 -------- Saved 
+H6049-Qseven Module 配有 Intel® Atom® ---------- 13753 -------- Saved 
+H6049 - Módulo Qseven com Intel® Atom® ---------- 13754 -------- Saved 
+RMS-220-RC124DC ---------- 13755 -------- Saved 
+RMS-220-RC124DC ---------- 13756 -------- Saved 
+Ad Serter ---------- 13757 -------- Saved 
+Anúncio Serter ---------- 13758 -------- Saved 
+ATCA-7367 AdvancedTCA 處理器刀片 ---------- 13759 -------- Saved 
+Lâmina de processador AdvancedTCA ATCA-7367 ---------- 13760 -------- Saved 
+Wind River JTAG 調試解決方案 ---------- 13761 -------- Saved 
+Soluções de depuração Wind River JTAG ---------- 13762 -------- Saved 
+IMBA-Q454（ATX 主機板） ---------- 13763 -------- Saved 
+IMBA-Q454 (placas-mãe ATX) ---------- 13764 -------- Saved 
+EPU-2610 (Falcon) 嵌入式處理單元 ---------- 13765 -------- Saved 
+Unidade de processamento EPU-2610 (Falcon) embarcada ---------- 13766 -------- Saved 
+965MTX 主機板 ---------- 13767 -------- Saved 
+Placa-mãe 965MTX ---------- 13768 -------- Saved 
+RMS420-C600 ---------- 13769 -------- Saved 
+RMS420-C600 ---------- 13770 -------- Saved 
+MultiStreamer Mini ---------- 13771 -------- Saved 
+Mini multiStreamer ---------- 13772 -------- Saved 
+電腦級模組： ETXexpress-AI ---------- 13773 -------- Saved 
+COM (Computer on Module): ETXexpress-AI ---------- 13774 -------- Saved 
+H6052 - Intel® Core™ i3/i5/i7 Micro COM Express 模組 ---------- 13775 -------- Saved 
+H6052 - módulo Micro COM Express com Intel® Core™ i3/i5/i7 ---------- 13776 -------- Saved 
+RMS-220-RC220AC ---------- 13777 -------- Saved 
+RMS-220-RC220AC ---------- 13778 -------- Saved 
+VP 91x/x1x - 第 3 代 Intel® Core™ Processor 嵌入式控制器 ---------- 13779 -------- Saved 
+VP 91 x/x1x - 3ª geração Intel® Core™ processador controlador embarcado ---------- 13780 -------- Saved 
+延遲伺服器 IP/IP ---------- 13781 -------- Saved 
+IP/IP do Delay Server ---------- 13782 -------- Saved 
+PRD_KPOD ---------- 13783 -------- Saved 
+PRD_KPOD ---------- 13784 -------- Saved 
+EFI 遷移管理 ---------- 13785 -------- Saved 
+Gestão da migração de EFI ---------- 13786 -------- Saved 
+MANO871 - LGA1155 Socket Intel® Core™ i7/ i5/ i3/Celeron® Mini ITX SBC，支援 Intel® Q77 PCH、HDMI/DVI-I/LVDS、雙 LAN 和 USB 3.0 ---------- 13787 -------- Saved 
+MANO871 - SBC Mini ITX soquete LGA1155 com Intel® Core™ i7/i5/i3/Celeron® com PCH Intel® Q77, VGA/DVI-D/LVDS, Dual LANs e USB 3.0 ---------- 13788 -------- Saved 
+PL-80460 ---------- 13789 -------- Saved 
+PL-80460 ---------- 13790 -------- Saved 
+COMX-315： 緊湊型 COM Express 模組 ---------- 13791 -------- Saved 
+COMX-315: Módulo compacto COM Express ---------- 13792 -------- Saved 
+RMS-220 網路設備 ---------- 13793 -------- Saved 
+Equipamento de Network RMS-220 ---------- 13794 -------- Saved 
+PP 81x/09x 第 2 代 Intel® Core™ Processor 雙 PMC/XMC 載板 ---------- 13795 -------- Saved 
+PP 81x/09x 2ª geração Intel® Core™ processador Dual PMC/XMC Carrier ---------- 13796 -------- Saved 
+數位電子看板軟體 ---------- 13797 -------- Saved 
+Soluções em sinalização digital ---------- 13798 -------- Saved 
+低功耗和高效能的 GMX-IL1900 Intel® Atom® D525 Mini-ITX ---------- 13799 -------- Saved 

@@ -1,0 +1,3 @@
+core = "7.x"
+description = "Import the content from CSV file"
+name = "CSV Import Intel Module"

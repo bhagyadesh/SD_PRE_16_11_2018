@@ -1,0 +1,30 @@
+/**
+ * @file
+ * Intel EA SD Modal CSS.
+ */
+
+/* content */
+div.ctools-modal-intel-ea-sd-modal-content {
+  border: 1px solid #e3e3e3;
+  position: relative;
+
+  -moz-box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0.25); /* FF3.5 - 3.6 */
+  -webkit-box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0.25); /* Saf3-4 */
+  box-shadow: 0 0 8px 6px rgba(0, 0, 0, 0.25); /* Opera 10.5, IE9, FF4+, Chrome 10+ */
+}
+
+div.ctools-modal-intel-ea-sd-modal-content .modal-content.popups-body {
+  padding: 0;
+}
+
+/* close */
+div.ctools-modal-intel-ea-sd-modal-content span.popups-close {
+  position: absolute;
+  right: 20px;
+  top: 13px;
+  z-index: 1002;
+}
+
+div.ctools-modal-intel-ea-sd-modal-content a.close {
+  float: none;
+}

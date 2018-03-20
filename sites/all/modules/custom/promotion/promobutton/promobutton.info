@@ -1,0 +1,4 @@
+name  = Promotion Field button Change
+description  = Promotion Field button change
+core = 7.x
+package = Promotion

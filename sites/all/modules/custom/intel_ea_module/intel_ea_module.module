@@ -1,0 +1,1728 @@
+	<?php
+define ("INTEL_ONLY_NODE", "intel_only");
+define ("LOGGED_IN_USERS_NODE", "logged_in");
+define ("PUBLIC_NODE", "public_node");
+define ("INTEL_ONLY_USER", "intel_only_user");
+/**
+ * @file
+ * Custom Intel EA code.
+ */
+
+// All page and block call backs.
+module_load_include('inc', 'intel_ea_module', 'includes/intel_ea_module.callbacks');
+// All functions that just return HTML or themed content.
+module_load_include('inc', 'intel_ea_module', 'includes/intel_ea_module.content');
+// All form related functionality, INCLUDING CORE HOOKS!
+module_load_include('inc', 'intel_ea_module', 'includes/intel_ea_module.forms');
+// All private functions, IE: Functionality with limited and specific use.
+module_load_include('inc', 'intel_ea_module', 'includes/intel_ea_module.private');
+// All public functions, IE: Functionality with utility purposes beyond single use.
+module_load_include('inc', 'intel_ea_module', 'includes/intel_ea_module.public');
+
+
+/**
+ * Implements hook_menu().
+ */
+function intel_ea_module_menu() {
+  $items = array();
+
+  // Generates an XML list of companies for consumption by Aprimo.
+  $items['aprimo/companies.xml'] = array(
+    'title' => 'Aprimo Companies XML',
+    'page callback' => '_intel_ea_module_aprimo_companies_xml',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+
+  // Routes a user to their company feed if one exists, or to create one.
+  $items['member-resource-center/manage-feed'] = array(
+    'title' => 'Manage Company News Feed',
+    'page callback' => '_intel_ea_module_manage_feed',
+    'access arguments' => array('edit associated feed'),
+    'menu_name' => 'menu-administration',
+  );
+
+  return $items;
+}
+
+/**
+ * Implements hook_block_info().
+ *
+ * @TODO: REview for any outdated blocks that can be removed.
+ */
+function intel_ea_module_block_info() {
+  $blocks['mrc_bread_crumb'] = array(
+    'info' => t('MRC Breadcrumb'),
+  );
+  $blocks['mrc_header_graphic'] = array(
+    'info' => t('MRC Header Graphic'),
+  );
+  $blocks['mdf_tool_login'] = array(
+    'info' => t('MDF Tool Login'),
+  );
+  $blocks['mdf_opp_login'] = array(
+    'info' => t('MDF Opportunity Login'),
+  );
+  $blocks['member_roster_print'] = array(
+    'info' => t('Member Roster Print'),
+  );
+  $blocks['solutions_directory_facet_text'] = array(
+    'info' => t('Solutions Directory Facet Text'),
+  );
+  $blocks['member_roster_facet_text'] = array(
+    'info' => t('Member Roster Facet Text'),
+  );
+  $blocks['aprimo_solution_company_btn'] = array(
+    'info' => t('Aprimo Solution Company Button'),
+  );
+  $blocks['aprimo_solution_intel_btn'] = array(
+    'info' => t('Aprimo Solution Intel Button'),
+  );
+  $blocks['aprimo_company_contact_btn'] = array(
+    'info' => t('Aprimo Company Contact Button'),
+  );
+  $blocks['aprimo_company_contact_member'] = array(
+    'info' => t('Aprimo Company Contact Member Button'),
+  );
+  $blocks['aprimo_formula_integrator_links'] = array(
+    'info' => t('Aprimo Formula Integrator Links'),
+  );
+  $blocks['intel_contact_links'] = array(
+    'info' => t('Intel Contact Links'),
+  );
+  $blocks['mrc_help_links'] = array(
+    'info' => t('MRC Help Links'),
+  );
+  $blocks['mrc_membership'] = array(
+    'info' => t('MRC: Membership'),
+  );
+  $blocks['mrc_marketing_programs'] = array(
+    'info' => t('MRC: Alliance Marketing Programs'),
+  );
+  $blocks['mrc_program_contacts'] = array(
+    'info' => t('MRC: Program Contacts'),
+  );
+  $blocks['mrc_request_gateway_kit'] = array(
+    'info' => t('MRC: Request Gateway Kit'),
+  );
+  $blocks['iot_comarketing_track'] = array(
+    'info' => t('IoT Co-Marketing Track'),
+  );
+  $blocks['mrc_cloud_co_marketing_track'] = array(
+    'info' => t('MRC: Cloud Co Marketing Track'),
+  );
+  $blocks['mrc_member_trainings_events'] = array(
+    'info' => t('MRC: Alliance Member-Only Trainings & Events'),
+  );
+  $blocks['mrc_co_marketing_programs'] = array(
+    'info' => t('MRC: Co-Marketing Opportunities'),
+  );
+  $blocks['mrc_program_newsletters'] = array(
+    'info' => t('MRC: Alliance Program Newsletters'),
+  );
+  $blocks['mrc_leads_management_system'] = array(
+    'info' => t('MRC: Alliance Leads Management System'),
+  );
+  $blocks['mrc_brand_programs'] = array(
+    'info' => t('MRC: Alliance Brand Programs'),
+  );
+  $blocks['mrc_marketing_support_materials'] = array(
+    'info' => t('MRC: Alliance Marketing Support Materials'),
+  );
+  $blocks['user_statistics'] = array(
+    'info' => t('User Statistics'),
+  );
+  $blocks['company_statistics'] = array(
+    'info' => t('Company Statistics'),
+  );
+  $blocks['company_memberships'] = array(
+    'info' => t('Company Memberships'),
+  );
+  $blocks['solution_statistics'] = array(
+    'info' => t('Solution Statistics'),
+  );
+  $blocks['download_pdf'] = array(
+    'info' => t('Download PDF'),
+  );
+  $blocks['google_analytics_filter_form'] = array(
+    'info' => t('Google Analytics filter form'),
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function intel_ea_module_block_view($delta = '') {
+  // Initialize block array.
+  $block = array();
+
+  switch ($delta) {
+    case 'mdf_tool_login':
+      $block['subject'] = '';
+      $block['content'] = _intel_ea_module_mdf_login_contents('mdf_tool_login');
+      break;
+    case 'mdf_opp_login';
+      $block['subject'] = t('Apply Today');
+      $block['content'] = _intel_ea_module_mdf_login_contents('mdf_opp_login');
+      break;
+    case 'member_roster_print':
+      $block['subject'] = '';
+      $block['content'] = _intel_ea_module_member_roster_print_contents();
+      break;
+//    case 'solutions_directory_facet_text':
+//      $block['subject'] = '';
+//      $block['content'] = t('Filter Solutions Directory below by Category and Characteristic') . ':';
+//      break;
+    case 'member_roster_facet_text':
+      $block['subject'] = '';
+      $block['content'] = t('Search for Alliance Members below by Category') . ':';
+      break;
+    case 'aprimo_solution_company_btn':
+      $block['subject'] = '';
+      $block['content'] = _intel_ea_module_aprimo_btn_contents('company');
+      break;
+    case 'aprimo_solution_intel_btn':
+      $block['subject'] = '';
+      $block['content'] = _intel_ea_module_aprimo_btn_contents('intel');
+      break;
+    case 'aprimo_company_contact_btn':
+      $block['subject'] = '';
+      $block['content'] = _intel_ea_module_aprimo_btn_contents('contact');
+      break;
+    case 'aprimo_company_contact_member':
+      $block['subject'] = '';
+      $block['content'] = _intel_ea_module_aprimo_btn_contents('contact-member');
+      break;
+    case 'aprimo_formula_integrator_links':
+      $block['subject'] = '';
+      $block['content'] = _intel_ea_module_aprimo_btn_contents('integrator');
+      break;
+    case 'intel_contact_links':
+      $block['subject'] = t('For help with this website - Contact Us');
+      $block['content'] = _intel_ea_module_intel_contact_links();
+      break;
+    case 'mrc_bread_crumb':
+      $block['subject'] = '';
+      $block['content'] = _intel_ea_module_mrc_breadcrumb();
+      break;
+    case 'mrc_header_graphic':
+      $block['subject'] = t('');
+      $block['content'] = _intel_ea_module_mrc_header_graphic();
+      break;
+    case 'mrc_help_links':
+      //$block['subject'] = t('Program Contact Information');
+      $block['subject'] = t('');
+      $block['content'] = _intel_ea_module_mrc_help_links();
+      break;
+    case 'mrc_membership':
+      // Check if user is a non alliance member or not.
+      if(intel_ea_module_is_user_alliance_member()){
+        $block['subject'] = t('Membership');
+      } else {
+        $block['subject'] = t('Partnership Information');
+      }
+      $block['content'] = _intel_ea_module_mrc_membership();
+      break;
+    case 'mrc_marketing_programs':
+      $block['subject'] = t('Alliance Marketing Programs');
+      $block['content'] = _intel_ea_module_mrc_marketing_programs();
+      break;
+    case 'mrc_program_contacts':
+      $block['subject'] = t('Program Contacts');
+      $block['content'] = _intel_ea_module_mrc_user_programs_links();
+      break;
+    case 'mrc_request_gateway_kit':
+      $block['subject'] = t('Software Resources');
+      $block['content'] = _intel_ea_module_mrc_request_gateway_kit();
+      break;
+    case 'iot_comarketing_track':
+      $block['subject'] = t('Intel® Partner Advantage Program: IoT Co-Marketing Track');
+      $block['content'] = _intel_ea_module_iot_comarketing_track();
+      break;
+    case 'mrc_cloud_co_marketing_track':
+      $block['subject'] = t('Intel® Partner Advantage Program: Cloud Service Provider Co-Marketing Track');
+      $block['content'] = _intel_ea_module_mrc_cloud_co_marketing_track();
+      break;
+    case 'mrc_member_trainings_events':
+      $block['subject'] = t('Alliance Member-Only Trainings & Events');
+      $block['content'] = _intel_ea_module_mrc_member_trainings_events();
+      break;
+    case 'mrc_co_marketing_programs':
+      $block['subject'] = t('Co-Marketing Opportunities');
+      $block['content'] = _intel_ea_module_mrc_co_marketing_programs();
+      break;
+    case 'mrc_program_newsletters':
+      $block['subject'] = t('Alliance Program Newsletters');
+      $block['content'] = _intel_ea_module_mrc_program_newsletters();
+      break;
+    case 'mrc_leads_management_system':
+      $block['subject'] = t('Alliance Leads Management System');
+      $block['content'] = _intel_ea_module_mrc_leads_management_system();
+      break;
+    case 'mrc_brand_programs':
+      $block['subject'] = t('Alliance Brand Programs');
+      $block['content'] = _intel_ea_module_mrc_brand_programs();
+      break;
+    case 'mrc_marketing_support_materials':
+      $block['subject'] = t('Marketing Support Materials');
+      $block['content'] = _intel_ea_module_mrc_marketing_support_materials();
+      break;
+    case 'user_statistics':
+      $block['subject'] = t('User Statistics');
+      $block['content'] = _intel_ea_module_user_statistics();
+      break;
+    case 'company_statistics':
+      $block['subject'] = t('Company Statistics');
+      $block['content'] = _intel_ea_module_company_statistics();
+      break;
+    case 'company_memberships':
+      $block['subject'] = t('Company Memberships');
+      $block['content'] = _intel_ea_module_company_memberships();
+      break;
+    case 'solution_statistics':
+      $block['subject'] = t('Solution Statistics');
+      $block['content'] = _intel_ea_module_solution_statistics();
+      break;
+    case 'download_pdf':
+      $block['subject'] = t('');
+      $block['content'] = _intel_ea_module_download_pdf();
+      break;
+    case 'google_analytics_filter_form':
+      $block['content'] = drupal_get_form('intel_ea_module_google_analytics_filter_form');
+      break;
+  }
+
+  return $block;
+}
+
+/**
+ * Implements hook_permission().
+ */
+function intel_ea_module_permission() {
+  return array(
+    'edit any company name' => array(
+      'title' => t('Edit any company name'),
+      'description' => t('Editing a company name is restricted to users with this permission.'),
+    ),
+    'edit associated company' => array(
+      'title' => t('Edit associated company'),
+    ),
+	'view any intel only solution' => array(
+      'title' => t('View any intel only solution'),
+    ),
+	'view own intel only solution' => array(
+      'title' => t('View own intel only solutions'),
+      'description' => t('View intel only solutions owned by the users company.'),
+    ),
+	'view any logged in solution' => array(
+      'title' => t('View any logged in solution'),
+    ),
+	'view own logged in solution' => array(
+      'title' => t('View own logged in solution'),
+    ),
+    'edit associated solution' => array(
+      'title' => t('edit associated solution'),
+      'description' => t('Edit solutions owned by the users company.'),
+    ),
+	'view any intel only formula' => array(
+      'title' => t('View any intel_only formula'),
+    ),
+	'view own intel only formula' => array(
+      'title' => t('View own intel only formulas'),
+      'description' => t('View intel only formulas owned by the users company.'),
+    ),
+	'view any logged in formula' => array(
+      'title' => t('View any logged in formula'),
+    ),
+	'view own logged in formula' => array(
+      'title' => t('View own logged in formula'),
+    ),
+    'edit associated formula' => array(
+      'title' => t('edit associated formula'),
+      'description' => t('Edit formulas owned by the users company.'),
+    ),
+    'administer user settings' => array(
+      'title' => t('Administer user settings'),
+    ),
+    'administer any user' => array(
+      'title' => t('Administer any user'),
+      'description' => t('Create, view, edit, and delete any user.'),
+    ),
+    'administer associated user' => array(
+      'title' => t('administer associated user'),
+      'description' => t('Create, view, edit, and delete users owned by the users company.'),
+    ),
+    'edit associated feed' => array(
+      'title' => t('edit associated feed'),
+      'description' => t('Edit feeds owned by the users company.'),
+    ),
+    'edit associated story' => array(
+      'title' => t('edit associated story'),
+      'description' => t('Edit stories owned by the users company.'),
+    ),
+  );
+}
+
+/**
+ * Implements hook_menu_alter().
+ *
+ * Override access arguments/callbacks for some User related menu items.
+ */
+function intel_ea_module_menu_alter(&$items) {
+  // Restricts the following paths to people that are 'Admin', 'Intel Admin', 'Alliance Admin'
+  $items['admin/people/create']['access callback'] = '_intelea_module_is_user_role_admin';
+  $items['admin/people/people']['access callback'] = '_intelea_module_is_user_role_admin';
+  $items['admin/config/people/accounts']['access callback'] = '_intelea_module_is_user_role_admin';
+  $items['user/%user']['access callback'] = '_intelea_module_is_user_role_admin';
+  $items['user/%user/cancel']['access callback'] = '_intelea_module_is_user_role_admin';
+  $items['user/%user/edit']['access callback'] = '_intelea_module_is_user_role_admin';
+  $items['member-resource-center/manage-users']['access callback'] = '_intelea_module_is_user_role_admin';
+  
+  //Restricts users having solutions editor role but not assigned to company
+  $items['node/add/solution']['access callback']='_intel_ea_module_solution_editor_access';
+  $items['node/add/formula']['access callback'] = '_intel_ea_module_solution_editor_access';
+  $items['node/add/story']['access callback'] = '_intel_ea_module_solution_editor_access';
+
+  // Alter some node adds to also double check for alliance member status.
+  $alliance_view_access_check = 'intel_ea_module_alliance_view_access_check';
+  $items['member-resource-center/manage-solutions']['access callback'] = $alliance_view_access_check;
+  $items['member-resource-center/manage-formulas']['access callback'] = $alliance_view_access_check;
+  $items['member-resource-center/manage-stories']['access callback'] = $alliance_view_access_check;
+  
+  //Restricts Intel employees to those links
+  $items['node/add/solution']['access callback']='_intel_ea_module_intel_employee_access';
+  $items['node/add/formula']['access callback'] = '_intel_ea_module_intel_employee_access';
+  $items['node/add/story']['access callback'] = '_intel_ea_module_intel_employee_access';
+  $items['member-resource-center/manage-solutions']['access callback'] = '_intel_ea_module_intel_employee_access';
+  $items['member-resource-center/manage-formulas']['access callback'] = '_intel_ea_module_intel_employee_access';
+  $items['member-resource-center/manage-stories']['access callback'] = '_intel_ea_module_intel_employee_access'; 
+  
+  //retrict online messaging for the users not opting for pvt messaging service
+  $items['messages']['access callback']='_intel_ea_module_hide_messages';
+}
+
+/**
+ * Implements hook_token_info().
+ */
+function intel_ea_module_token_info() {
+  // Types
+  $info['types']['intel_ea_ga'] = array(
+    'name' => t('Intel EA GA'),
+    'description' => t('Intel EA Google Analytics variables'),
+  );
+  // Tokens
+  $info['tokens']['intel_ea_ga']['company_session'] = array(
+    'name' => t('Company Session'),
+    'description' => t('Company ID for a user session.'),
+  );
+  $info['tokens']['intel_ea_ga']['company_page'] = array(
+    'name' => t('Company Page'),
+    'description' => t('Company ID for a company page.'),
+  );
+  $info['tokens']['intel_ea_ga']['company_product'] = array(
+    'name' => t('Company Product'),
+    'description' => t('Company ID for a product.'),
+  );
+  $info['tokens']['intel_ea_ga']['product_page'] = array(
+    'name' => t('Product Page'),
+    'description' => t('Product ID for a product page.'),
+  );
+
+  return $info;
+}
+
+/**
+ * Implements hook_tokens().
+ */
+function intel_ea_module_tokens($type, $tokens, array $data = array(), array $options = array()) {
+  $replacements = array();
+
+  if ($type == 'intel_ea_ga') {
+    foreach ($tokens as $name => $original) {
+      switch ($name) {
+        // Company Session
+        case 'company_session':
+          global $user;
+          if ($user->uid != 0) {
+            $account = user_load($user->uid);
+            $replacements[$original] = $account->field_company[LANGUAGE_NONE][0]['target_id'];
+          }
+          break;
+        // Company Page
+        case 'company_page':
+          if (isset($data['node']->type)) {
+            $replacements[$original] = ($data['node']->type == 'company') ? $data['node']->nid : '';
+          }
+          break;
+        // Company Product
+        case 'company_product':
+          if (isset($data['node']->type) && isset($data['node']->field_company)) {
+            $replacements[$original] = ($data['node']->type == 'solution') ? $data['node']->field_company[LANGUAGE_NONE][0]['target_id'] : '';
+          }
+          break;
+        // Product Page
+        case 'product_page':
+          if (isset($data['node']->type)) {
+            $replacements[$original] = ($data['node']->type == 'solution') ? $data['node']->nid : '';
+          }
+          break;
+      }
+    }
+  }
+
+  return $replacements;
+}
+
+/**
+ * Implements hook_url_inbound_alter().
+ *
+ * @TODO: Review this code. It's hitting EVERY single link running a comparison
+ * on it. This may be overkill!
+ */
+function intel_ea_module_url_inbound_alter(&$path, $original_path, $path_language) {
+  // Redirect the default Solutions Directory FacetAPI path for a single facet
+  // to its pretty path.
+  if ($original_path == 'solutions-directory') {
+    $facet_path = '';
+
+    // If a single FacetAPI argument filter is set.
+    if (isset($_GET['f'][0]) && !isset($_GET['f'][1])) {
+      list($field, $value) = explode(':', $_GET['f'][0]);
+      $searcher = 'search_api@solutions';
+      $adapter = facetapi_adapter_load($searcher);
+      $facet = facetapi_facet_load($field, $searcher);
+
+      // If a FacetAPI adapter and facet can be found.
+      if ($adapter && $facet) {
+        // Get the facet alias from the FacetAPI URL Processor.
+        $facet_alias = $adapter->getUrlProcessor()->getFacetPrettyPathsAlias($facet);
+        $facet_path = "$facet_alias/$value";
+      }
+
+      drupal_goto("$original_path/$facet_path");
+    }
+  }
+}
+
+/**
+ * Implements template_preprocess_page().
+ *
+ * @TODO: Declare purpose and comment out.
+ */
+function intel_ea_module_preprocess_page(&$variables) {
+  // Include javascript on company, solution and formula pages.
+  if (isset($variables['node']->type)) {
+    if ($variables['node']->type == 'company' || $variables['node']->type == 'solution' || $variables['node']->type == 'formula') {
+      drupal_add_js(drupal_get_path('module', 'intel_ea_module') . '/js/intel_ea_module.js', 'file');
+    }
+  }
+}
+
+
+/**
+ * Implements hook_revisioning_access_node_revision().
+ */
+function intel_ea_module_revisioning_access_node_revision($revision_op, $node) {
+  $access = &drupal_static(__FUNCTION__, array());
+
+  // Statically cache access by revision ID, user account ID, and operation.
+  global $user;
+  $cid = "$node->vid:$user->uid:$revision_op";
+
+  if (!isset($access[$cid])) {
+    // Check the revision-aspect of the operation.
+    if (!$node_op = revisioning_user_node_access($revision_op, $node)) {
+
+      // Handle custom permissions.
+      if (user_access('edit associated company') || user_access('edit associated solution') || user_access('edit associated formula')) {
+        switch ($revision_op) {
+          case 'compare to current':
+          case 'view revisions':
+          case 'view revision list':
+          case 'edit revisions':
+            $node_op = 'update';
+            break;
+        }
+      }
+    }
+
+    $access[$cid] = $node_op && node_access($node_op, $node) != FALSE ? NODE_ACCESS_ALLOW : NODE_ACCESS_DENY;
+  }
+
+  return $access[$cid];
+}
+
+/**
+ * Implements hook_node_grants().
+ *
+ * @TODO: Document purpose.
+ * @TODO: restrict this to
+ */
+function intel_ea_module_node_grants( $account, $op) {
+  // Only handle authenticated users.
+	global $user;
+	//drupal_alter('user_access', array('key1' => 'value1', 'key2' => 'value2'));
+	ini_set('display_errors', 1);
+	//error_reporting(E_ALL);
+	
+	//	override_function('user_access', '$string,$account', 'echo "Federeation Error"; exit();');
+	$account = entity_metadata_wrapper('user', $account);
+	$comp_query = db_select('field_data_field_company', 'fc')
+         ->fields('fc', array('field_company_target_id'))
+         ->condition('fc.entity_id', $user->uid, '=')
+		 ->condition('fc.entity_type', 'user', '=');
+    $company = $comp_query->execute()->fetchField();
+	$grants = array();
+	//echo "<pre>Check:"; print_r($account->value()); exit();
+	if ($_SERVER['REQUEST_METHOD'] !== 'POST' && $op == 'view') {
+		if(user_access('view any intel only solution', $user)){
+			$grants['GRANT_INTEL_ONLY'][] = 0;
+		}
+		if(user_access('view own intel only solution', $user)){
+			$grants['GRANT_AUTHOR_ONLY'][] = $company;
+		}
+		if(user_access('view any logged in solution', $user)){
+			$grants['GRANT_LOGGED_IN'][] = 0;
+		}
+		if(user_access('view own logged in solution', $user)){
+			$grants['GRANT_AUTHOR_ONLY_LOGGED_IN'][] = $company;
+		}
+		
+		if(user_access('view any intel only formula', $user)){
+			$grants['GRANT_INTEL_ONLY'][] = 0;
+		}
+		if(user_access('view own intel only formula', $user)){
+			$grants['GRANT_AUTHOR_ONLY'][] = $company;
+		}
+		if(user_access('view any logged in formula', $user)){
+			$grants['GRANT_LOGGED_IN'][] = 0;
+		}
+		if(user_access('view own logged in formula', $user)){
+			$grants['GRANT_AUTHOR_ONLY_LOGGED_IN'][] = $company;
+		}
+	}
+	if ($user->uid > 0) {
+    try {
+      //$account = entity_metadata_wrapper('user', $account);
+      if ($op == 'view' || $op == 'update') {
+        // If the user has the 'edit associated company' permission, allow the
+        // user to edit the company associated with them via the field_company
+        // field.
+        if (user_access('edit associated company', $user)) {	
+          $grants['intel_ea_module_edit_own_company'][] = $account->field_company->nid->value();
+        }
+        // If the user has the 'edit associated solution' permission, allow the
+        // user to edit solutions associated with them via the field_company field
+        // of both the user and the solution.
+        if (user_access('edit associated solution', $user)) {
+			//echo 'ddd';print_r($account->value());exit;
+          $grants['intel_ea_module_edit_own_company_solutions'][] = $account->field_company->nid->value();
+        }
+        // If the user has the 'edit associated formula' permission, allow the
+        // user to edit formulas associated with them via the field_company field
+        // of both the user and the formula.
+        if (user_access('edit associated formula', $user)) {
+          $grants['intel_ea_module_edit_own_company_formulas'][] = $account->field_company->nid->value();
+        }
+        // If the user has the 'edit associated feed' permission, allow the user
+        // to edit feeds associated with them via the field_company field of both
+        // the user and the feed.
+        if (user_access('edit associated feed', $user)) {
+          $grants['intel_ea_module_edit_own_company_feeds'][] = $account->field_company->nid->value();
+        }
+        // If the user has the 'edit associated story' permission, allow the
+        // user to edit feeds associated with them via the field_company field
+        // of both the user and the feed.
+        if (user_access('edit associated story', $user)) {
+          $grants['intel_ea_module_edit_own_company_stories'][] = $account->field_company->nid->value();
+        }
+        // Allow intel account managers to edit companies they manage.
+        $query = db_select('node', 'n');
+        $query->addField('n', 'nid');
+        $query->join('field_data_field_account_managers', 'fam', 'n.nid = fam.entity_id');
+        $query->condition('n.type', 'company');
+        $query->condition('fam.field_account_managers_target_id', $account->uid->value());
+        $result = $query->execute();
+        foreach ($result as $node) {
+          $grants['intel_ea_module_intel_account_manager'][] = $node->nid;
+        }
+      }
+    }
+    catch (exception $e) {
+		watchdog_exception('intel_ea_module', $e);
+    }
+  }
+  //echo "GRANTS<p>"; print_r($grants);echo "</p>";
+  return $grants;
+}
+
+/**
+ * Implements hook_node_access()
+ *
+ * PURPOSE: Restrict notifications based on selected values inside of the node.
+ */
+function intel_ea_module_node_access($node, $op, $account){
+  // For some reason $node is sometimes a string?!? Skip those
+  if(is_object($node)){
+    // Check permissions on notifications
+    if($node->type == 'notification') {
+      // Check that we're dealing with an authenticated user.
+      if ($account->uid > 0) {
+        // Wrap the node entity.
+        $wrapped_node = entity_metadata_wrapper('node', $node);
+        // Get users membership type for comparison.
+        $user_company_membership_type = intel_ea_module_get_user_company_tid($account->uid);
+        // Populate membership types for comparison based on values in node.
+        $allowed_membership_types = array_map(function($membership) {
+          return $membership->tid;
+          }, $wrapped_node->field_membership_type_unlimited->value()
+        );
+        // See if the companies membership type is in the allowed values
+        return in_array($user_company_membership_type, $allowed_membership_types) ? NODE_ACCESS_ALLOW : NODE_ACCESS_DENY;
+      }
+      else{
+        return NODE_ACCESS_DENY;
+      }
+    }
+  }
+  // No conditions triggered if here have no affect upon node access.
+  return NODE_ACCESS_IGNORE;
+}
+
+/**
+ * Implements hook_node_access_records().
+ */
+function intel_ea_module_node_access_records($node) {
+  try {
+    $node = entity_metadata_wrapper('node', $node);
+    $grants = array();
+
+    if ($node->type->value() == 'company') {
+      // For the intel_ea_module_edit_own_company realm, the grant ID (gid) is
+      // the company node ID (nid).
+      $grants[] = array(
+        'realm' => 'intel_ea_module_edit_own_company',
+        'gid' => $node->nid->value(),
+        'grant_view' => 1,
+        'grant_update' => 1,
+        'grant_delete' => 0,
+        'priority' => 0,
+      );
+      // For the intel_ea_module_intel_account_manager realm, the grand ID (gid)
+      // is the company node ID (nid).
+      $grants[] = array(
+        'realm' => 'intel_ea_module_intel_account_manager',
+        'gid' => $node->nid->value(),
+        'grant_view' => 1,
+        'grant_update' => 1,
+        'grant_delete' => 0,
+        'priority' => 0,
+      );
+    }
+    elseif ($node->type->value() == 'solution' && $node->field_company->nid->value()) {
+      // For the intel_ea_module_edit_own_company_solutions realm, the grant ID
+      // (gid) is the company node ID (nid).
+      $grants[] = array(
+        'realm' => 'intel_ea_module_edit_own_company_solutions',
+        'gid' => $node->field_company->nid->value(),
+        'grant_view' => 1,
+        'grant_update' => 1,
+        'grant_delete' => 0,
+        'priority' => 0,
+      );
+    }
+    elseif ($node->type->value() == 'formula' && $node->field_company->nid->value()) {
+      // For the intel_ea_module_edit_own_company_formulas realm, the grant ID
+      // (gid) is the company node ID (nid).
+      $grants[] = array(
+        'realm' => 'intel_ea_module_edit_own_company_formulas',
+        'gid' => $node->field_company->nid->value(),
+        'grant_view' => 1,
+        'grant_update' => 1,
+        'grant_delete' => 0,
+        'priority' => 0,
+      );
+    }
+    elseif ($node->type->value() == 'feed' && $node->field_company->nid->value()) {
+      // For the intel_ea_module_edit_own_company_feeds realm, the grant ID
+      // (gid) is the company node ID (nid).
+      $grants[] = array(
+        'realm' => 'intel_ea_module_edit_own_company_feeds',
+        'gid' => $node->field_company->nid->value(),
+        'grant_view' => 1,
+        'grant_update' => 1,
+        'grant_delete' => 0,
+        'priority' => 0,
+      );
+    }
+    elseif ($node->type->value() == 'story' && $node->field_company->nid->value()) {
+      // For the intel_ea_module_edit_own_company_stories realm, the grant ID
+      // (gid) is the company node ID (nid).
+      $grants[] = array(
+        'realm' => 'intel_ea_module_edit_own_company_stories',
+        'gid' => $node->field_company->nid->value(),
+        'grant_view' => 1,
+        'grant_update' => 1,
+        'grant_delete' => 0,
+        'priority' => 0,
+      );
+    }
+
+    return $grants;
+  }
+  catch (exception $e) {
+    watchdog_exception('intel_ea_module', $e);
+  }
+}
+
+/**
+ * Implements hook_node_access_records_alter().
+ */
+function intel_ea_module_node_access_records_alter(&$grants, $node) {
+
+  if($node->type == 'solution' || $node->type == 'formula') {
+		$node_type = get_node_type($node);
+		$node_company = $node->field_company['und'][0]['target_id'];
+			switch ($node_type) {
+				case INTEL_ONLY_NODE:
+					unset_grant_all_attribute($grants);
+						$grants[] = array(
+						  'realm' => 'GRANT_INTEL_ONLY',
+						  'gid' => 0,
+						  'grant_view' => 1, 
+						  'grant_update' => 0,
+						  'grant_delete' => 0,
+						  'priority' => 0,
+						);
+					
+					$grants[] = array(
+					  'realm' => 'GRANT_AUTHOR_ONLY',
+					  'gid' => $node_company,
+					  'grant_view' => 1, 
+					  'grant_update' => 0,
+					  'grant_delete' => 0,
+					  'priority' => 0,
+					);
+					break;
+				case LOGGED_IN_USERS_NODE:
+					unset_grant_all_attribute($grants);
+						$grants[] = array(
+						  'realm' => 'GRANT_LOGGED_IN',
+						  'gid' => 0,
+						  'grant_view' => 1, 
+						  'grant_update' => 0,
+						  'grant_delete' => 0,
+						  'priority' => 0,
+						);
+						$grants[] = array(
+						  'realm' => 'GRANT_AUTHOR_ONLY_LOGGED_IN',
+						  'gid' => $node_company,
+						  'grant_view' => 1, 
+						  'grant_update' => 0,
+						  'grant_delete' => 0,
+						  'priority' => 0,
+						);
+						break;
+				case PUBLIC_NODE:
+					unset_grant_all_attribute($grants);
+						$grants[] = array(
+						  'realm' => 'all',
+						  'gid' => 0,
+						  'grant_view' => 1, 
+						  'grant_update' => 0,
+						  'grant_delete' => 0,
+						  'priority' => 0,
+						);
+					break;
+			}
+  }
+  if($node->type == 'company'){
+		//Save all the users belonging to the same company to assigned roles
+		$partner_roles = $node->field_partner_role['und'];
+		$query = db_select('field_data_field_company', 'fc');
+		$query->fields('fc', array('entity_id'));
+		$query->condition('fc.field_company_target_id', $node->nid);
+		$query->condition('fc.bundle', "user");
+		$result = $query->execute();
+		foreach($result as $record){
+			delete_users_already_assigned_roles_of_partner_only($record->entity_id);
+			foreach($partner_roles as $partner_role){
+				insert_query_users_roles($record->entity_id, $partner_role['rid']);
+			}
+		}
+		mark_with_fse_fae($node);
+	}
+}
+
+/**
+ * Implements hook_entity_view().
+ *
+ * @TODO: Review that this isn't hitting every entity whatsoever
+ */
+function intel_ea_module_entity_view($entity, $type, $view_mode, $langcode) {
+
+  try {
+    // Display the End User Description if the Technical Description is empty.
+    if (isset($entity->body) && isset($entity->field_end_user_description)) {
+      $wrapper = entity_metadata_wrapper($type, $entity);
+
+      if ($wrapper->body->value() == "" && $wrapper->field_end_user_description->value() == "") {
+        $wrapper->body->set($wrapper->field_end_user_description->value());
+      }
+    }
+  }
+  catch (exception $e) {
+    watchdog_exception('intel_ea_module', $e);
+  }
+}
+
+/**
+ * Implements hook_node_presave().
+ *
+ * Ensures all translation nodes have the same 'created' date as their source.
+ */
+function intel_ea_module_node_presave($node) {
+  if ($node->is_new) {
+    if (isset($node->translation_source)) {
+      $node->created = $node->translation_source->created;
+    }
+  }
+  return $node;
+}
+
+
+
+/**
+ * Implements hook_user_presave().
+ *
+ * @TODO: Determine if this is of any real value.
+// */
+//function intel_ea_module_user_presave(&$edit, $account, $category) {
+//  // Determine allowed roles based on Company.
+//  // Determine allowed roles based on Company.
+//  if (isset($edit['field_company']['und'][0]['target_id'])) {
+//    $company = node_load($edit['field_company']['und'][0]['target_id']);
+//  }
+//  elseif (!empty($account->field_company['und'][0]['target_id'])) {
+//    $company = node_load($account->field_company['und'][0]['target_id']);
+//  }
+//  else {
+//    return;
+//  }
+//
+//  // Copy roles from the user if none were passed in.
+//  if (empty($edit['roles'])) {
+//    $edit['roles'] = $account->roles;
+//  }
+//
+//  $allowed_roles = _intel_ea_module_company_roles($company, user_roles());
+//  $unallowed_roles = array_diff_key($edit['roles'], $allowed_roles, array(2 => 'authenticated user'));
+//
+//  if ($unallowed_roles) {
+//    foreach ($unallowed_roles as $rid => $role) {
+//      unset($edit['roles'][$rid]);
+//    }
+//
+//    $unallowed_roles = join(' and ', array_filter(array_merge(array(join(', ', array_slice($unallowed_roles, 0, -1))), array_slice($unallowed_roles, -1)), 'strlen'));
+//    drupal_set_message(t('The membership type of !company does not allow users to have the !roles role(s). These role(s) have been been removed from !user.', array('!company' => $company->title, '!roles' => $unallowed_roles, '!user' => $account->name)), 'warning');
+//  }
+//
+//  // Ensure special 'employee' roles are set for users based on their companies
+//  // membership type.
+//  switch ($company->field_membership_type[LANGUAGE_NONE][0]['tid']) {
+//    // Intel Member => Intel Employee
+//    case 562:
+//      $edit['roles'][10] = TRUE;
+//      break;
+//
+//    // Alliance Staff Member => Alliance Staff Employee
+//    case 556:
+//      $edit['roles'][4] = TRUE;
+//      break;
+//
+//    // Non-Alliance Member => Non-Alliance Employee
+//    case 1154:
+//      $edit['roles'][31] = TRUE;
+//      break;
+//  }
+//
+//  // Add in any missing companion roles.
+//  $edit['roles'] = _intel_ea_module_companion_roles($edit['roles']);
+//}
+
+/**
+ * Implements hook_entity_info_alter().
+ *
+ * @TODO: Declare purpose or add comments?
+ */
+function intel_ea_module_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['formula_list'] = array(
+    'label' => t('Formula List'),
+    'custom settings' => FALSE,
+  );
+  $entity_info['node']['view modes']['formula_teaser'] = array(
+    'label' => t('Formula Teaser'),
+    'custom settings' => FALSE,
+  );
+  $entity_info['node']['view modes']['solution_list'] = array(
+    'label' => t('Solution List'),
+    'custom settings' => FALSE,
+  );
+  $entity_info['node']['view modes']['solution_list_quickview'] = array(
+    'label' => t('Solution List Quickview'),
+    'custom settings' => FALSE,
+  );
+  $entity_info['node']['view modes']['opp_list_sticky'] = array(
+    'label' => t('Opportunity List Sticky'),
+    'custom settings' => FALSE,
+  );
+  $entity_info['node']['view modes']['opp_list'] = array(
+    'label' => t('Opportunity List'),
+    'custom settings' => FALSE,
+  );
+  $entity_info['node']['view modes']['roster_list_premier'] = array(
+    'label' => t('Member Roster List Premier'),
+    'custom settings' => FALSE,
+  );
+  $entity_info['node']['view modes']['roster_list'] = array(
+    'label' => t('Member Roster List'),
+    'custom settings' => FALSE,
+  );
+  $entity_info['taxonomy_term']['view modes']['opp_resource_list'] = array(
+    'label' => t('Opportunity Resource List'),
+    'custom settings' => FALSE,
+  );
+  $entity_info['field_collection_item']['view modes']['single'] = array(
+    'label' => t('Single'),
+    'custom settings' => FALSE,
+  );
+  $entity_info['field_collection_item']['view modes']['multiple'] = array(
+    'label' => t('Multiple'),
+    'custom settings' => FALSE,
+  );
+}
+
+/**
+ * Implements hook_entity_property_info_alter().
+ *
+ * Copies field definitions for access by all node types.
+ */
+function intel_ea_module_entity_property_info_alter(&$info) {
+  // Get a list of fields that formulas inherit.
+  $fields = _intel_ea_module_formula_inherited_fields();
+
+  // Copy all formula inherited field definitions for all node types.
+  foreach ($fields as $field) {
+    $info['node']['properties'][$field] = array('getter callback' =>'intel_ea_module_entity_metadata_field_property_get') + $info['node']['bundles']['solution']['properties'][$field];
+  }
+}
+
+/**
+ * Implements hook_entity_update().
+ */
+function intel_ea_module_entity_update($entity, $type) {
+  // Call entity specific hooks.
+  $function = __FUNCTION__ . "_$type";
+  if (function_exists($function)) {
+    $function($entity);
+  }
+}
+
+/**
+ * Implement hook_entity_update() for nodes.
+ *
+ * Marks associated nodes as needing to be re-indexed.
+ * @todo Move code into bundle specific implementations.
+ *
+ * @see search_api_track_item_change()
+ */
+function intel_ea_module_entity_update_node($entity) {
+  // List of ids to be indexed.
+  $ids = array();
+
+  // Re-index companies associated with updated content.
+  if (isset($entity->field_company)) {
+    $ids[] = $entity->field_company[LANGUAGE_NONE][0]['target_id'];
+  }
+
+  // Re-index formulas associated with updated components and solutions.
+  if ($entity->type == 'component' || $entity->type == 'solution') {
+    // Get all field_collection_groups the node is associated with.
+    $query = new EntityFieldQuery();
+    $query->entityCondition('entity_type', 'field_collection_item')
+          ->entityCondition('bundle', 'field_component_group')
+          ->fieldCondition('field_component_options', 'target_id', $entity->nid, '=');
+    $result = $query->execute();
+
+    // If associated field_collection_groups were found.
+    if (isset($result['field_collection_item'])) {
+      $field_collection_groups = array_keys($result['field_collection_item']);
+
+      // Get all formulas the field_collection_groups are associated with.
+      $query = new EntityFieldQuery();
+      $query->entityCondition('entity_type', 'node')
+            ->entityCondition('bundle', 'formula')
+            ->fieldCondition('field_component_group', 'value', $field_collection_groups, 'IN');
+      $result = $query->execute();
+
+      // Add formulas to the list of ids to be indexed.
+      if (isset($result['node'])) {
+        $ids = array_merge($ids, array_keys($result['node']));
+      }
+    }
+  }
+
+  // Flag all ids as needing to be indexed.
+  if (!empty($ids)) {
+    _intel_ea_module_search_api_flag('node', $ids);
+  }
+
+  // Call bundle specific hooks.
+  $function = __FUNCTION__ . "_$entity->type";
+  if (function_exists($function)) {
+    $function($entity);
+  }
+}
+
+/**
+ * Implements hook_node_presave() for company nodes.
+ */
+function intel_ea_module_entity_update_node_company($node) {
+  $company = entity_metadata_wrapper('node', $node);
+  $original = entity_metadata_wrapper('node', $node->original);
+
+  // Update all users associated with a given company if the companies
+  // membership group changes.
+  //
+  // If this is the translation set source node.
+  if (_intel_ea_module_node_is_source($company)) {
+    // If the updated node is not being moderated.
+    if (!_intel_ea_module_node_is_moderated($node)) {
+      // If the companies membership type has changed.
+      if ($company->field_membership_type->raw() != $original->field_membership_type->raw()) {
+        // Get the membership groups for the updated company and for the
+        // original company.
+        $company_group = _intel_ea_module_get_membership_type_group($company->field_membership_type->raw());
+        $original_group = _intel_ea_module_get_membership_type_group($original->field_membership_type->raw());
+
+        // If the companies membership group has changed.
+        if ($company_group != $original_group) {
+          // Get all user ids associated with the company.
+          $query = new EntityFieldQuery();
+          $result = $query
+            ->entityCondition('entity_type', 'user')
+            ->entityCondition('bundle', 'user')
+            ->fieldCondition('field_company', 'target_id', $company->nid->value())
+            ->execute();
+
+          // Add each user ID to the intel_ea_module_user_save queue for processing.
+          $queue = DrupalQueue::get('intel_ea_module_user_save');
+          foreach (array_keys($result['user']) as $uid) {
+            $queue->createItem($uid);
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implement hook_entity_update() for taxonomy terms.
+ *
+ * Marks associated nodes as needing to be re-indexed.
+ *
+ * @see search_api_track_item_change()
+ */
+function intel_ea_module_entity_update_taxonomy_term($entity) {
+  $wrapper = entity_metadata_wrapper('taxonomy_term', $entity);
+
+  // Get a list of opportunities associated with the updated Opportunity Group.
+  if (isset($wrapper->field_opportunities)) {
+    $ids = $wrapper->field_opportunities->raw();
+  }
+
+  // Flag all ids as needing to be indexed.
+  if (!empty($ids)) {
+    _intel_ea_module_search_api_flag('node', $ids);
+  }
+}
+
+
+/**
+ * Implements hook_entity_view_mode_alter().
+ *
+ * @TODO: Make sure this is the right place as it seems theme related.
+ */
+function intel_theme_entity_view_mode_alter(&$view_mode, $context) {
+  // If a formula teaser is displayed, check if multi-display and update view mode.
+  if ($view_mode == 'formula_teaser') {
+    $nid = $context['entity']->nid;
+    if(in_array($nid, $GLOBALS['multi_display'])) {
+      $view_mode = 'formula_list';
+    }
+  }
+}
+
+/**
+ * Implements hook_block_view_alter().
+ */
+function intel_ea_module_block_view_alter(&$data, $block) {
+  /*
+   * if user non alliance, disable all 3rd column/right column blocks
+   * 471 = "members resource center at a glance"
+   * 250 = "mrc marketing programs newsletter
+   * 248 = "mrc member trainings & events
+   * 255 = "industry events calendar"
+   * 258 = "mrc brand programs"
+   */
+  if ($block->bid == 471 || $block->bid == 250 || $block->bid == 248 || $block->bid == 255 || $block->bid == 258) {
+    if(!intel_ea_module_is_user_alliance_member()){
+      // Set content to an empty string and it doesn't display!
+      $data['content'] = '';
+    }
+  }
+  
+  
+  //Anirban
+  if ($block->bid == 'superfish-1' && (!_intel_ea_module_isa_partner_menu_access())){
+    // Set content to an empty string and it doesn't display!
+    $data['content'] = '';
+  }
+  
+  if ($block->bid == 'superfish-2' && (!_intel_ea_module_isa_partner_menu_access())){
+    // Set content to an empty string and it doesn't display!
+    $data['content'] = '';
+  }
+  /*
+   * 800 - 'Members Resource Center at a Glance
+   * 978 - 'MRC Newsletters'
+   * 976 - MRC Member Training Events
+   * 801 - Industry Events Calendar
+   * 961 - MRC Brand Programs
+   * 963 - Cloud Co Marketing Track
+   * 956 - IOT Co Marketing Track
+   * 971 - MRC Marketing Programs
+   * 979 - Gateway Request Kit
+   * 965 - MRC Co Marketing Programs
+   * 969 - MRC Leads Management System
+   * 972 - MRC Marketing Support Materials
+   * 802 - Alliance Sales Support Materials
+   * 811 - ??name, module: delta_blocks
+   * 1056 - ??name, module: tb-megamenu
+   * 807 - ??name, module: current-search, delta: partner-companies
+   * 808 - ??name, mdoule: current-search, delta: solutions_directory
+   * 743 - ??
+   * system-help - ??
+   * system-main - ??
+   * masquerade-masquerade - Masquerade
+   * intel_theme-sidebar_title_block - Sidebar Title Block
+   * views-a4d368b58db956208626a0bb0c90ed69 - View: Current User: Intel Account Managers
+   * views-current_user-block_1 - View: Current User: Alliance Marketing Expert
+   * intel_ea_module-mrc_program_contacts - MRC: Program Contacts
+   * views-current_user-primary_contact - View: Current User: Primary Contact
+   * menu-menu-administration - Members Database Admin Area
+   * menu-menu-reports - Members Database Reporting
+   * intel_ea_module-mrc_membership - MRC: Membership
+   * intel_ea_module-mrc_help_links - MRC Help Links
+   *
+   */
+//
+//  $blocked_for_alliance_bids = array(800, 978, 961, 801, 976, 802, 972, 969, 971, 965,'system-main');
+//  $blocks_for_user_with_programs = array(800, 978, 961, 801, 976, 802, 972, 969, 971, 965,);
+//  $blocked_for_all_bids = array('intel_ea_module-mrc_membership', 'intel_ea_module-mrc_help_links');
+//  // 1155:ISV 1156: Disti 1157: PMG IOT 1158: PMG Cloud
+//  $programs = array(1155,1156,1157,1158);
+//
+//  // Load user to get user programs to determine if user should see program blocks
+//  global $user;
+//  $account = user_load($user->uid);
+//  $wrapped_account = entity_metadata_wrapper('user', $account);
+//
+//  // Add users programs to array for comparison
+//  $show_programs = array();
+//  // If the user has a company field, build array of programs.
+//  if($wrapped_account->field_company->getIdentifier()) {
+//    foreach($wrapped_account->field_company->field_programs->value() as $index => $program) {
+//      $show_programs[] = $program->tid;
+//    }
+//  }
+//
+//  // determine if user has any of the allowed programs
+//  $compare = array_intersect($show_programs, $programs) ? TRUE : FALSE;
+//
+//  // Evaluates items in $blocked_for_alliance_bids array and blocks the display of
+//  // content for alliance users
+//  if($compare) {
+//    foreach($blocks_for_user_with_programs as $bids) {
+//      if(($block->bid == $bids) && (intel_ea_module_is_user_alliance_member())) {
+//        $data['content'] = '';
+//      }
+//    }
+//  } else {
+//      foreach($blocked_for_alliance_bids as $bids) {
+//        if(($block->bid == $bids) && (intel_ea_module_is_user_alliance_member())) {
+//          $data['content'] = '';
+//        }
+//      }
+//  }
+
+  // @TODO: Manual revert of some code, review to ensure this is kosher.
+
+  $blocked_for_alliance_bids = array(800, 978, 961, 801, 976, 802, 972, 969, 971, 965,);
+  $blocked_for_all_bids = array('intel_ea_module-mrc_membership', 'intel_ea_module-mrc_help_links');
+
+  // Evaluates items in $blocked_for_alliance_bids array and blocks the display of
+  // content for alliance users
+  foreach($blocked_for_alliance_bids as $bids) {
+    if(($block->bid == $bids) && (intel_ea_module_is_user_alliance_member())) {
+      $data['content'] = '';
+    }
+  }
+
+  // Evaluates items in $blocked_for_all_bids array and blocks the display of
+  // content for all users
+  foreach($blocked_for_all_bids as $bids) {
+    if($block->bid == $bids) {
+      $data['content'] = '';
+    }
+  }
+  /*
+   * remove marketing support materials block for non alliace
+   */
+  if ($block->bid == 259) {
+    if(!intel_ea_module_is_user_alliance_member()){
+      // Set content to an empty string and it doesn't display!
+      $data['content'] = '';
+    }
+  }
+  /*
+   * evaluate alliance marketing expert/partner marketing contact block
+   * for alliance/non alliance, display title pending returned condition
+   */
+  if ($block->bid == 'views-current_user-block_1') {
+    /* check to see if user is alliance member */
+    if(intel_ea_module_is_user_alliance_member()){
+      /* if user is alliance member, render this block title */
+      $data['subject'] = 'Alliance Marketing Expert';
+    } else {
+      /* if user is not alliance, render this block title */
+      $data['subject'] = 'Partner Marketing Contact';
+    }
+  }
+  /*
+   * evaluate Intel Market Development Manager/Intel Contact block
+   * for alliance/non alliance, display title pending returned condition
+   */
+  if ($block->bid == 'views-a4d368b58db956208626a0bb0c90ed69') {
+    /* check to see if user is alliance member */
+    if (intel_ea_module_is_user_alliance_member()) {
+      /* if user is alliance member, render this block title */
+      $data['subject'] = 'Intel Market Development Manager';
+      /* if user is not alliance, render this block title */
+    } else {
+      $data['subject'] = 'Intel Contact';
+    }
+  }
+
+  // Grab just the alliance sales support materials block. BID is 257.
+  if ($block->bid == 257) {
+    // If user isn't alliance hide Alliance Sales Support Materials block.
+    if(!intel_ea_module_is_user_alliance_member()){
+      // Set content to an empty string and it doesn't display!
+      $data['content'] = '';
+    }
+  }
+
+  // Grab just the alliance leads management system block. BID is 251.
+  if ($block->bid == 251) {
+    // If user isn't alliance hide alliance leads management system block.
+    if(!intel_ea_module_is_user_alliance_member()){
+      // Set content to an empty string and it doesn't display!
+      $data['content'] = '';
+    }
+  }
+
+  // Grab the mrc_marketing_programs block, test for alliance membership
+  // dont display if non alliance
+  if ($block->bid == 260) {
+    // dont display if non alliance
+    if(!intel_ea_module_is_user_alliance_member()){
+      // Set content to an empty string and it doesn't display!
+      $data['content'] = '';
+    }
+  }
+  
+    
+  if ($block->bid == 'menu-menu-administration' && _intel_ea_module_buyer_emp()){
+    // Set content to an empty string and it doesn't display!
+    $data['content'] = '';
+  }
+
+  // Grab and hide database reporting for non-alliance members.
+  if ($block->delta == 'menu-reports' && $block->bid == 'menu-menu-reports' && !intel_ea_module_is_user_alliance_member()){
+    // Set content to an empty string and it doesn't display!
+    $data['content'] = '';
+  }
+
+  // Remove the title(subject) from navigation menus.
+  if ($block->module == 'menu' && ($block->delta == 'menu-site-navigation' || $block->delta == 'menu-member-roster-navigation')) {
+    $data['subject'] = '';
+  }
+}
+
+/**
+ * Implements hook_cron().
+ */
+function intel_ea_module_cron(){
+  // Check current month is last node_counter truncated month.
+  // Ideally will trigger on first day of month, resetting node_counter table.
+  if(date('M') !== variable_get('intel_ea_module_node_counter_truncated_month', NULL)) {
+    // Truncate node_counter table.
+    db_truncate('node_counter')->execute();
+    // Set variable for month last truncated. Prevents from firing again.
+    variable_set('intel_ea_module_node_counter_truncated_month', date('M'));
+  }
+}
+
+/**
+ * Implements hook_cron_queue_info().
+ */
+function intel_ea_module_cron_queue_info() {
+  $queues['intel_ea_module_user_save'] = array(
+    'worker callback' => '_intel_ea_module_user_save',
+  );
+
+  return $queues;
+}
+
+/**
+ * Implements hook_revisionapi().
+ */
+function intel_ea_module_revisionapi($op, $node_revision) {
+  if ($op == 'post unpublish') {
+    // Unpublish all translations in a translation set when one of the
+    // translations is unpublished.
+    if ($node_revision->tnid != 0) {
+      $nids = array();
+
+      // Get nids of all related translations.
+      $translations = translation_node_get_translations($node_revision->tnid);
+      foreach ($translations as $key => $translation) {
+        if ($key != $node_revision->language) {
+          $nids[] = $translation->nid;
+        }
+      }
+
+      // Unpublish all related translations.
+      $nodes = node_load_multiple($nids);
+      foreach ($nodes as $node) {
+        if ($node->status == 1) {
+          $node->status = 0;
+          node_save($node);
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_facetapi_facet_info_alter().
+ *
+ * Purpose: Make facet API label easier to read.
+ */
+function intel_ea_module_facetapi_facet_info_alter(array &$facet_info, array $searcher_info) {
+  foreach ($facet_info as &$facet) {
+    $facet['map options']['value callback'] = '_intel_ea_module_facetapi_facet_value_callback';
+  }
+}
+
+/**
+ * Implements hook_search_api_query_alter().
+ *
+ * @TODO: Review if this is reloading the node once for every single node facet on a page.
+ */
+function intel_ea_module_search_api_query_alter(SearchApiQueryInterface $query) {
+  // Change the solutions_directory:company_facets to use the translation source
+  // node.
+  if ($query->getOption('search id') == 'search_api_views:solutions_directory:company_facets') {
+    $filters = &$query->getFilter()->getFilters();
+    list($field, $value, $opperator) = $filters[1];
+    unset($filters[1]);
+    $node = node_load($value);
+    $value = $node->tnid ? $node->tnid : $node->nid;
+    $query->condition($field, $value, $opperator);
+	
+  }
+}
+
+/**
+ * Implements hook_views_api().
+ */
+function intel_ea_module_views_api() {
+  return array("version" => "3.0");
+}
+
+/**
+ * Implements hook_facetapi_filters().
+ */
+function intel_ea_module_facetapi_filters() {
+  return array(
+    'intel_ea_module' => array(
+      'handler' => array(
+        'label' => t('Custom Intel EA Module Filters'),
+        'class' => 'FacetapiFilterIntelEAModule',
+      ),
+    ),
+  );
+}
+
+/**
+ * Implements hook_user_login().
+ */
+function intel_ea_module_user_login(&$edit, $account) {
+
+  try {
+    // Store relevant company field values in the users session.
+    $user = entity_metadata_wrapper('user', $account);
+    $_SESSION['intel_ea_module']['company']['field_membership_type'] =
+      $user->field_company->field_membership_type->tid->value();
+  }
+  catch (exception $e) {
+    watchdog_exception('intel_ea_module', $e);
+  }
+}
+
+/**
+ * Implements function hook_feeds_presave().
+ */
+function intel_ea_module_feeds_presave(FeedsSource $source, $entity, $item) {
+
+  try {
+    // Set the company field on feed_items created from a feed.
+    if ($entity->feeds_item->id == 'feed') {
+      $wrapper = entity_metadata_wrapper('node', $entity);
+      $feed = entity_metadata_wrapper('node', $entity->feeds_item->feed_nid);
+      $wrapper->field_company->set($feed->field_company->nid->value());
+    }
+  }
+  catch (exception $e) {
+    watchdog_exception('intel_ea_module', $e);
+  }
+}
+
+/**
+ * Implements hook_facetapi_pretty_paths_coders_alter().
+ */
+function intel_ea_module_facetapi_pretty_paths_coders_alter(&$coders) {
+  // Force the taxonomy coder handler to use the Default class rather than the
+  // Taxonomy class so that we only use the term id in URLs rather than the
+  // taxonomy term name that can change.
+  $coders['taxonomy']['handler']['class'] = 'FacetApiPrettyPathsCoderDefault';
+}
+
+/**
+ * Implements hook_services_resources_alter().
+ *
+ * @TODO: Declare purpose.
+ */
+function intel_ea_module_services_resources_alter(&$resources, &$endpoint) {
+  // Specify a custom index callback for nodes.
+  $resources['node']['operations']['index']['callback'] = '_intel_ea_module_node_resource_index';
+}
+
+/**
+ * Implements hook_services_request_postprocess_alter().
+ *
+ * @TODO: Declare purpose.
+ */
+function intel_ea_module_services_request_postprocess_alter($controller, $args, &$result) {
+
+  switch ($controller['callback']) {
+    case '_node_resource_retrieve':
+
+      // Remove Intel data
+      if ($result->type == 'company') {
+        unset($result->field_acceptable_domains);
+        unset($result->field_cnda);
+        unset($result->field_address[LANGUAGE_NONE][0]['name_line']);
+        unset($result->field_agreed);
+        unset($result->field_agreement_date);
+        unset($result->field_agreement_indentifier);
+        unset($result->field_future_agreement_date);
+        unset($result->field_future_membership);
+        unset($result->field_acceptance_date);
+        unset($result->field_future_membership_type);
+        unset($result->field_embedded_processor_support);
+        unset($result->field_sponsoring_business_units);
+        unset($result->field_future_membership_type);
+        unset($result->field_account_managers);
+        unset($result->field_applications_engineers);
+        unset($result->field_marketing_expert);
+        unset($result->field_application_engineers);
+        unset($result->field_sales_engineers);
+        unset($result->field_renewal_signee);
+      }
+
+      break;
+    case '_taxonomy_term_resource_retrieve':
+      $parents = taxonomy_get_parents($result->tid);
+      foreach ($parents as $parent) {
+        $result->parent[] = $parent->tid;
+      }
+      unset($result->metatags);
+      unset($result->rdf_mapping);
+      unset($result->checkbox_radio_tree_cardinality);
+      unset($result->field_image[LANGUAGE_NONE][0]['rdf_mapping']);
+      unset($result->field_image[LANGUAGE_NONE][0]['image_dimensions']);
+      unset($result->field_image[LANGUAGE_NONE][0]['field_file_image_alt_text']);
+      unset($result->field_image[LANGUAGE_NONE][0]['field_file_image_title_text']);
+  }
+
+  return FALSE;
+}
+
+/**
+ * Implements hook_ctools_plugin_api().
+ *
+ * Purpose: Bring in a custom services endpoint for intel to get dash info.
+ */
+function intel_ea_module_ctools_plugin_api($owner, $api) {
+  if ($owner == 'services' && $api == 'services') {
+    return array(
+      'version' => 3,
+      'file' => 'services/intel_ea_module.services.inc'
+    );
+  }
+}
+/* field update for conntent page*/
+function get_updated_author($nid){
+  $userid = db_query('SELECT uid FROM node_revision WHERE nid = :nid ORDER BY vid DESC LIMIT 0,1', array(':nid' => $nid))->fetchField();
+  $user_det = user_load($userid);
+  if($userid == 0){
+       return 'Job';
+  } else {
+  return $user_det->name;
+         }
+}
+function get_user_type_from_account($account) {
+	if (in_array('anonymous user', $account->roles)) {
+		$user_type = 'PUBLIC_USER';
+	}
+	if (in_array('authenticated user', $account->roles)) {
+		$user_mail = $account->mail;
+		$domains = array('intel.com');
+		$pattern = "/^[a-z0-9._%+-]+@[a-z0-9.-]*(" . implode('|', $domains) . ")$/i";
+		if (preg_match($pattern, $user_mail) !== 0) {
+			$user_type = 'INTEL_ONLY_USER';
+		} else {
+			$user_type = 'LOGGED_IN_USER';
+		}
+	}
+	return $user_type;
+}
+/*function get_node_type($node){
+	switch($node->field_intel_only['und'][0]['value']){
+		case 1:
+			return INTEL_ONLY_NODE;
+	}
+}*/
+function unset_grant_all_attribute(&$grants){
+	foreach ($grants as $key => $grant) {
+      if ($grant['realm'] == 'all') {
+        unset($grants[$key]);
+      }
+    }
+
+}
+
+function get_node_type($node){
+	//switch($node->field_node_accessibility['und'][0]['value']){
+	$access_value = ($node->type == "solution") ? $node->field_access['und'][0]['value'] : $node->field_access_formula['und'][0]['value'];
+	switch($access_value){
+		case 0:
+			return PUBLIC_NODE;
+		case 1:
+			return LOGGED_IN_USERS_NODE;
+		case 2:
+			return INTEL_ONLY_NODE;
+	}
+}
+
+function intel_ea_module_user_presave(&$edit, $account, $category) {
+	$user_company = $edit['field_company']['und'][0]['target_id'];
+	$query = db_select('field_data_field_partner_role', 'fpr');
+	$query->fields('fpr', array('field_partner_role_rid'));
+	$query->condition('fpr.entity_id', $user_company);
+	$query->condition('fpr.bundle', 'company');
+	$result = $query->execute();
+	foreach ($result as $record) {
+		$user_roles[] = $record->field_partner_role_rid;
+	}
+	delete_users_already_assigned_roles_of_partner_only($account->uid, "user", $edit);
+	foreach ($user_roles as $user_role) {
+			$edit['roles'][$user_role] = $user_role;
+	}
+}
+function delete_users_already_assigned_roles_of_partner_only($user_id, $entity = "default", &$edit = NULL){
+	$field_info = field_info_field("field_partner_role");
+	foreach($field_info["settings"]["referenceable_roles"] as $key => $role){
+		if($role !== 0){
+			if($entity == "default"){
+				$delete_roles = db_delete("users_roles");
+				$delete_roles->condition('uid', $user_id);
+				$delete_roles->condition('rid', $key);
+				$delete_roles->execute();
+			}
+			if($entity == "user"){
+				//$edit['roles'][$key] = 0;
+				unset($edit['roles'][$key]);
+			} 
+		}
+	}
+}
+function insert_query_users_roles($uid, $rid){
+	//echo "<br>".$uid."-".$rid;
+	$count_query = "SELECT count(uid) FROM users_roles WHERE uid = ". $uid . " AND rid = ".$rid;
+	$count = db_query($count_query)->fetchField();
+	if($count < 1){
+	$insert_query = db_insert('users_roles')
+					->fields(array('uid' => $uid,
+								'rid' => $rid,
+								)
+							)
+					->execute();
+	}
+}
+
+function mark_with_fse_fae($field){
+	//echo "<pre>"; print_r($field); exit();
+	foreach($field->field_applications_engineers['und'] as $fae){
+		insert_query_users_roles($fae['target_id'], 11);
+	}
+	foreach($field->field_client_fae['und'] as $fae){
+		insert_query_users_roles($fae['target_id'], 11);
+	}
+	foreach($field->field_server_fae['und'] as $fae){
+		insert_query_users_roles($fae['target_id'], 11);
+	}
+	foreach($field->field_eiot_fae['und'] as $fae){
+		insert_query_users_roles($fae['target_id'], 11);
+	}
+	
+	foreach($field->field_sales_engineers['und'] as $fse){
+		insert_query_users_roles($fse['target_id'], 12);
+	}
+	foreach($field->field_client_fse['und'] as $fse){
+		insert_query_users_roles($fse['target_id'], 12);
+	}
+	foreach($field->field_client_fse['und'] as $fse){
+		insert_query_users_roles($fse['target_id'], 12);
+	}
+	foreach($field->field_eiot_fse['und'] as $fse){
+		insert_query_users_roles($fse['target_id'], 12);
+	}
+}
+
+

@@ -1,0 +1,9 @@
+name  = Joined Promotion Report
+description  = Users joined in promotion
+core = 7.x
+package = Promotion
+
+dependencies[] = views
+files[] = views/joinpromoreport.views.inc"
+
+scripts[] = promo.js

@@ -1,0 +1,2000 @@
+IVS-100-BT Vehicle Fleet Management System ---------- 27583 -------- Saved 
+SURF HMP ---------- 27588 -------- Saved 
+SysCentreModule™ Series—COM9615 ---------- 27591 -------- Saved 
+OPS-H81CR2 - LG1150 Digital Signage Player with Intel® H81 chipset ---------- 27593 -------- Saved 
+ITX-J1900-10CD8 - Integrated Intel® Celeron® J1900 MINI ITX Embedded Board ---------- 27594 -------- Saved 
+NANO-J1900-ICIR - nano-ITX Embedded Motherboard with Intel® Celeron® J1900 ---------- 27595 -------- Saved 
+COM1410 - COM-Express board ---------- 27603 -------- Saved 
+Gateway SRC-0802-4C ---------- 27604 -------- Saved 
+Gateway SRC-0803-4D ---------- 27605 -------- Saved 
+SRC-0600B-14E - IoT Gateway ---------- 27606 -------- Saved 
+LVR-5700 - High Performance Fanless Railway System with Intel® Core™ i7-3517UE Processor ---------- 27607 -------- Saved 
+LVR-2010 - EN50155 Certified & IP67-Rated Railway Embedded PC with Intel® Atom® E3845 Processor ---------- 27608 -------- Saved 
+Simularity AI ---------- 27609 -------- Saved 
+ITX-H81T-6CD81L - LGA1150 Thin MINI-ITX Embedded Board with Intel® H81 Chipset ---------- 27610 -------- Saved 
+LAN-D525-4L - Network Security Board with 4*RJ-45 GLAN and Intel® Atom® D525 + Intel ICH8M ---------- 27611 -------- Saved 
+1037F - Mini-ITX motherboard with onboard RAM 2GB ---------- 27613 -------- Saved 
+M618SE - 3.5inch motherboard with onboard 2G Ram support 2xGBE Lan ---------- 27614 -------- Saved 
+EM5800D - DC 12V POS Mini-ITX motherboard based on Intel® Celeron® 1037U, Supports Dual VGA ---------- 27615 -------- Saved 
+Intelligent Audio Analysis ---------- 27618 -------- Saved 
+ CPCI Rackmount Enclosure, 3 Slots, 3U Cards with Conduction Cooling ---------- 27619 -------- Saved 
+PXS0460 6U ATCA Chassis ---------- 27620 -------- Saved 
+Modular Enclosure Solutions  ---------- 27621 -------- Saved 
+BX-956 Fanless, Rugged Industrial Thin Client Computer w/ Intel® Atom® Processor D510 ---------- 27626 -------- Saved 
+SBS Rugged Embedded Panel PC TVC-1042B Series ---------- 27627 -------- Saved 
+HP Elite x2 1011 for Healthcare ---------- 27628 -------- Saved 
+Micro-SD / Micro-SDHC ---------- 27629 -------- Saved 
+SD / SDHC ---------- 27630 -------- Saved 
+Compact Flash ---------- 27631 -------- Saved 
+CFast SSD ---------- 27632 -------- Saved 
+DDR3 ---------- 27633 -------- Saved 
+DDR2 ---------- 27635 -------- Saved 
+PATA SSD ---------- 27636 -------- Saved 
+conga-TC170 ---------- 27637 -------- Saved 
+NCA-5510 - 1U High Performance x86 Network Appliance for Enterprise Firewall, UTM and IPS ---------- 27647 -------- Saved 
+ADE-2001 ---------- 27648 -------- Saved 
+ICS-7003 ---------- 27649 -------- Saved 
+ADE-6080 ---------- 27650 -------- Saved 
+ADE-7002  ---------- 27651 -------- Saved 
+ADE-7061 ---------- 27652 -------- Saved 
+COM-1602  ---------- 27653 -------- Saved 
+ADE-6091  ---------- 27654 -------- Saved 
+Hades  ---------- 27655 -------- Saved 
+IPS-7003 - Demeter POS ---------- 27656 -------- Saved 
+Titan POS System ---------- 27657 -------- Saved 
+ADE-6065  ---------- 27659 -------- Saved 
+ADE-6066  ---------- 27660 -------- Saved 
+ADE-6067  ---------- 27661 -------- Saved 
+PA-6225 ---------- 27662 -------- Saved 
+PA-6225: 15" Waterproof Bezel Free Touch POS Terminal ---------- 27663 -------- Saved 
+NAS BSW board ---------- 27665 -------- Saved 
+DFI BW171/BW173 - Thin Mini-ITX based on Intel® Pentium® N3700/ Intel® Celeron® N3050 processor ---------- 27669 -------- Saved 
+PL-80900 - IoT Gateway ---------- 27670 -------- Saved 
+IPS-2001  - Human Machine Interface ---------- 27675 -------- Saved 
+M.2 2242 / 2260 / 2280 ---------- 27678 -------- Saved 
+Smart Building ---------- 27680 -------- Saved 
+Osprey Visual IoT Platform ---------- 27681 -------- Saved 
+Ferri-eMMC ---------- 27682 -------- Saved 
+MI808 Mini-ITX Motherboard - Powered by Intel® Pentium® N3700 or Celeron® N3000 processor ---------- 27684 -------- Saved 
+IB899 3.5-inch disk-size SBC - Supports Intel® Pentium® N3700 running or Celeron® N3000 processor ---------- 27685 -------- Saved 
+SBC328 3U VPX Single Board Computer ---------- 27686 -------- Saved 
+XPedite7574 | 5th Gen Intel® Core™ i7 Processor-Based 3U VPX-REDI Single Board Computer ---------- 27687 -------- Saved 
+CSoC Platform / Digital Subsystem IP for IoT ---------- 27688 -------- Saved 
+Smart manufacuturing enabling via system integration with industrial IoT solution ---------- 27689 -------- Saved 
+DS7400 - High Density Media Processing Platform ---------- 27690 -------- Saved 
+SATA SSD ---------- 27691 -------- Saved 
+mSATA / Mini-mSATA ---------- 27692 -------- Saved 
+Half Slim SATA SSD ---------- 27693 -------- Saved 
+SATA Module (a.k.a. SATA DOM) ---------- 27694 -------- Saved 
+D25G6 - Fanless Mini-ITX Motherboard with support for 6x RS232 and Dual GBE Lan ---------- 27696 -------- Saved 
+COMEX-IC40D Computer-on-Module ---------- 27697 -------- Saved 
+CENTRI IoTAS - Internet of Things Advanced Security ---------- 27700 -------- Saved 
+AerPPC PP-9645 Ultra Slim High Performance Panel PC ---------- 27702 -------- Saved 
+ATX-6971 - ATX Industrial Motherboard ---------- 27704 -------- Saved 
+MB990 - ATX Motherboard Supports Latest 7th/6th Gen Intel® Core™ Processors ---------- 27707 -------- Saved 
+POS JS-960 - POS System Motherboard ---------- 27708 -------- Saved 
+PPOS-Q57 - POS System Motherboard ---------- 27709 -------- Saved 
+ADE-6082 - Mini-ITX Motherboard ---------- 27710 -------- Saved 
+S026   低成本，双系统OPS  ---------- 27712 -------- Saved 
+S026   低成本，双系统OPS  ---------- 27713 -------- Saved 
+cloud in a box ---------- 27714 -------- Saved 
+S035  播放终端/云终端BOX ---------- 27715 -------- Saved 
+S045  播放终端/云终端BOX ---------- 27716 -------- Saved 
+S022  OPS-C 规范H81系列整机 ---------- 27717 -------- Saved 
+MI990 - Mini-ITX Motherboard Supports Latest 6th Gen Intel® Core™ Processors ---------- 27719 -------- Saved 
+IB915 - 3.5-inch disk-size SBC supports 6th Generation Intel® Core™ U-series processors ---------- 27721 -------- Saved 
+AerPPC PP-9635 Ultra Slim Fanless Panel PC ---------- 27731 -------- Saved 
+S023  多媒体播放终端 ---------- 27733 -------- Saved 
+S026 低成本双系统OPS ---------- 27735 -------- Saved 
+AIMB-705 ATX Motherboards ---------- 27737 -------- Saved 
+AIMB-785 ---------- 27738 -------- Saved 
+MIC-7500 Revolutionary Industrial PC for IoT Era ---------- 27739 -------- Saved 
+Express-SL: COM Express Basic Size Type6 Module with 6th Gen Intel®  Core™, Xeon® and Celeron®  Processors ---------- 27740 -------- Saved 
+cExpress-SL: COM Express Compact Size Type 6 Module with 6th Generation Intel® Core™ and Celeron® Processors ---------- 27741 -------- Saved 
+IMBA-Q170-i2 ATX Motherboard with 6th Generation Intel® Core™ Platform ---------- 27742 -------- Saved 
+NI InsightCM Enterprise ---------- 27751 -------- Saved 
+SharpServer™ Microserver Card ---------- 27752 -------- Saved 
+2-Bay Business Network Attached Storage  ---------- 27753 -------- Saved 
+1U 4-Bay Business Network Attached Storage ---------- 27756 -------- Saved 
+XPedite7479 | 3rd Gen Intel® Core™ i7 Processor-Based 3U VPX SBC with Full XMC J16 I/O Routing ---------- 27757 -------- Saved 
+AmITX-SL-G: Mini-ITX Embedded Board with 6th/7th Gen Intel® Core™ i7/i5/i3 Desktop Processor ---------- 27768 -------- Saved 
+4-bay Business Network Attached Storage ---------- 27769 -------- Saved 
+2U 12-bay Business Network Attached Storage ---------- 27770 -------- Saved 
+ITX-I89H0 - Embedded Mini-ITX Motherboard with Intel® Xeon® Processor E3-1505L ---------- 27781 -------- Saved 
+SD630-H110 ATX Motherboard based on 6th Gen Intel® Core™ Processor ---------- 27782 -------- Saved 
+SU171/SU173 Thin Mini-ITX Motherboard based on 6th Gen Intel® Core™ Processor ---------- 27783 -------- Saved 
+COMe8600 — SysCentreModule™ Series ---------- 27784 -------- Saved 
+EMBOX TypeT3564 Atom プロセッサー搭載 IoT用ゲートウェイ ---------- 27785 -------- Saved 
+DFI BW968 - COM Express based on Intel® Pentium® N3700/ Intel® Celeron® N3050 Processor ---------- 27786 -------- Saved 
+DFI BW551 - 3.5" SBC based on Intel® Pentium® N3700/ Intel® Celeron® N3050 ---------- 27787 -------- Saved 
+SD330-H110 microATX Motherboard based on 6th Gen Intel® Core™ Processor ---------- 27788 -------- Saved 
+SD330-Q170 microATX Motherboard based on 6th Gen Intel® Core™ Processor ---------- 27789 -------- Saved 
+SU968 COM Express based on 6th Gen Intel® Core™ Processor ---------- 27790 -------- Saved 
+IX-5050 Intel® Core™ プロセッサーベースのエンベデッドボード ---------- 27791 -------- Saved 
+NCA-4210 1U - High Performance x86 Network Appliance for Enterprise Firewall, UTM and IPS. ---------- 27792 -------- Saved 
+SHB140 -- LGA1151 6th Generation Intel® Core™, Pentium®, Celeron® PICMG 1.3 Full-size CPU Card with Intel® Q170, SATA3, USB 3.0, LAN and DVI-I ---------- 27793 -------- Saved 
+MANO500 -- LGA1151 7th Generation Intel® Core™, Pentium® and Celeron® Mini-ITX Motherboard with Intel® H110, HDMI/DP/VGA/LVDS/eDP, Dual LAN and USB 3.0 ---------- 27795 -------- Saved 
+CEM501 -- 6th Generation Intel® Core™ i7/i5/i3 & Celeron® Processors COM Express Type 6 Module ---------- 27796 -------- Saved 
+PICO500 -- 6th Generation Intel® Core™, Celeron® processor Pico ITX Motherboard with HDMI/LVDS, GbE & Audio ---------- 27797 -------- Saved 
+NCA-4010 - 1U High Performance x86 Network Appliance for Enterprise Firewall, UTM and IPS ---------- 27798 -------- Saved 
+VX-6050 Intel® Atom™  プロセッサーベースのエンベデッドボード ---------- 27799 -------- Saved 
+TR E5x/msd Intel® Xeon® processor E3-1500 v5 family based 3U VPX board ---------- 27800 -------- Saved 
+OFP-10W01 - Intel® Atom® Processor Z3735F 1.33GHz 7"/10.1"/15.6"/21.5" Quad Core Open Frame Tablet with PCAP Touch, WiFi, Bluetooth, 2 GB RAM, 32 GB eMMC ---------- 27801 -------- Saved 
+RX-7030 Intel® Core™ プロセッサー ベースのエンベデッド・ボード ---------- 27803 -------- Saved 
+TX-70/T75  ---------- 27804 -------- Saved 
+AIIS-1440 - USB3 CAM Control System, Supports Intel® Core™ i7/i5/i3 CPU, 4-CH dedicated USB3 controller ---------- 27805 -------- Saved 
+AIIS-1240 - PoE Compact System, Supports Intel® Core™ i7/i5/i3 CPU, 4-CH GbE PoE ---------- 27806 -------- Saved 
+AIMC-3421 - Micro computer, Intel® Core™ i7/i5/i3 CPU, H81, 4 Expansions 2PCI/2PCIe, 300W 80Plus PSU ---------- 27807 -------- Saved 
+AIMC-3402 - Front Access Micro Computer, Intel® Core™ i7/i5/i3 CPU with 10 COM, 8 USB and 4 Expansion ---------- 27808 -------- Saved 
+AIMC-3201 - Micro Computer, Intel® Core™ i7/i5/i3 CPU, H81, 2 Expansions, 250W 80Plus PSU ---------- 27809 -------- Saved 
+AIMC-2100 - Micro Computer, Intel® Core™ i7/i5/i3 CPU, 1 Expansion, 250W 80Plus PSU ---------- 27810 -------- Saved 
+TM-i Advance ---------- 27811 -------- Saved 
+Device Hub-Extreme ---------- 27812 -------- Saved 
+K2 POS MB ---------- 27814 -------- Saved 
+PPOS 945GSE ---------- 27815 -------- Saved 
+PPOS GM45 ---------- 27816 -------- Saved 
+JS-950 ---------- 27817 -------- Saved 
+NM POS ---------- 27818 -------- Saved 
+POS Taitan ---------- 27819 -------- Saved 
+POS Columbus ---------- 27820 -------- Saved 
+POS Columbus-II ---------- 27821 -------- Saved 
+POS P1515 ---------- 27822 -------- Saved 
+POS M8750 ---------- 27823 -------- Saved 
+SlimPOS D525 ---------- 27824 -------- Saved 
+SlimPOS IvyBridge ---------- 27825 -------- Saved 
+ARK-5261 - Intel® Celeron® Processor J1900 Fanless Embedded BOX PC with PCI/PCIe Expansion and Dual Mobile HDDs/SSDs ---------- 27826 -------- Saved 
+ARK-5420 - 3rd Generation Intel® Core™ Processor Fanless System with PCIEx4 & PCI Slot ® ---------- 27827 -------- Saved 
+TX-70/LOGIA C4 ---------- 27828 -------- Saved 
+eBOX626-842-FL -- Fanless Embedded System with Intel® Celeron® J1900, HDMI, VGA, 2 GbE LAN, 4 USB, 3 COM and 10~34VDC input ---------- 27829 -------- Saved 
+EMBOX TypeT7062 ---------- 27830 -------- Saved 
+MANO842 -- Intel® Celeron® Processor J1900 (up to 2.42 GHz) SoC Mini-ITX SBC with VGA/HDMI/LVDS, USB 3.0, PCI Express Mini Card, PCIe x1 and HD Audio ---------- 27831 -------- Saved 
+NANO840 -- Intel® Atom® Processor E3845/E3827 Nano-ITX Motherboard with LVDS/ VGA/HDMI, Dual LANs and Audio ---------- 27832 -------- Saved 
+NSA 7135 - Network Security Appliance ---------- 27833 -------- Saved 
+EMBOX TypeT7065 ---------- 27836 -------- Saved 
+EMBOX TypeT5065 ---------- 27837 -------- Saved 
+EMBOX TypeT5065 ---------- 27838 -------- Saved 
+EMBOX TypeT3665 ---------- 27839 -------- Saved 
+EMBOX TypeC50 ---------- 27840 -------- Saved 
+C800 - ultra-compact thin client for Virtual Desktop solutions ---------- 27841 -------- Saved 
+MXC-6400 Series 6th Generation Intel® Core™ i7/i5/i3 Processor-Based Fanless Expandable Embedded Computer with PCI/PCIe Expansion ---------- 27842 -------- Saved 
+10.1" Semi-Rugged Tablet with Intel® Atom® Processor Z3735F for warehousing / mPOS applications ---------- 27844 -------- Saved 
+NDiS B535 4K2K Digital Signage Player ---------- 27846 -------- Saved 
+NIFE 300 IoT Controller ---------- 27847 -------- Saved 
+PE310G4TSF4I71 - Quad Port SFP+ 10 Gigabit Ethernet PCI Express Time Stamp Server Adapter ---------- 27849 -------- Saved 
+PE340G2Qi71 - Dual Port Fiber 40 Gigabit Ethernet PCI Express Server Adapter ---------- 27850 -------- Saved 
+Silicom Hybrid Networking Application Switch - NA226401 ---------- 27851 -------- Saved 
+ADLINK IMB-M43 ATX Intel® Core™ i7/i5 Industrial Motherboard ---------- 27852 -------- Saved 
+ D3402-B - Extended Lifecycle Mainboard ---------- 27853 -------- Saved 
+openSMILE ---------- 27857 -------- Saved 
+sensAI - Emotion Recognition and Paralinguistic Information Extraction ---------- 27858 -------- Saved 
+XPedite7575 | 5th Gen Intel® Core™ i7 Processor-Based 3U VPX-REDI Single Board Computer ---------- 27859 -------- Saved 
+B800 瘦客户端配备了节能型 Intel® Pentium® N3700 或 Intel® Celeron® N3150 处理器 ---------- 27860 -------- Saved 
+電源効率の高い Intel® Pentium® N3700 または Intel® Celeron® N3150 プロセッサーを備えた B800 シンクライアント ---------- 27861 -------- Saved 
+MB-8305 — 超薄迷你 ITX 主板  ---------- 27864 -------- Saved 
+MB-8305 - 薄型 Mini-ITX マザーボード ---------- 27865 -------- Saved 
+NUCserver ---------- 27868 -------- Saved 
+NUCserver ---------- 27869 -------- Saved 
+SP-6206/6208/6201 — 液晶电脑 ---------- 27870 -------- Saved 
+SP-6206/6208/6201 - パネル PC ---------- 27871 -------- Saved 
+LE910 V2 LTE 单模 LTE 模块 ---------- 27872 -------- Saved 
+LE910 V2 LTE シングルモード LTE モジュール ---------- 27873 -------- Saved 
+SP-7925/7927/7929 — 液晶电脑 ---------- 27874 -------- Saved 
+SP-7925/7927/7929 - パネル PC ---------- 27875 -------- Saved 
+SP-7625/7627/7629 — 液晶电脑 ---------- 27876 -------- Saved 
+SP-7625/7627/7629 - パネル PC ---------- 27877 -------- Saved 
+SA-5942 — 高性能书式台式 PC ---------- 27878 -------- Saved 
+SA-5942 - 高性能のブックサイズ・デスクトップ PC ---------- 27879 -------- Saved 
+PMB-892LF — 迷你 ITX MB ---------- 27880 -------- Saved 
+PMB-892LF - Mini ITX MB ---------- 27881 -------- Saved 
+BM-0947 — 迷你 ITX MB ---------- 27882 -------- Saved 
+BM-0947 - Mini ITX MB ---------- 27883 -------- Saved 
+BM-0962 — 迷你 ITX MB ---------- 27884 -------- Saved 
+BM-0962 - Mini ITX MB ---------- 27885 -------- Saved 
+BE-0961 — 3.5 英寸 SBC ---------- 27886 -------- Saved 
+BE-0961 - 3.5 インチ SBC ---------- 27887 -------- Saved 
+BE-0966 — 3.5 英寸 SBC ---------- 27888 -------- Saved 
+BE-0966 - 3.5 インチ SBC ---------- 27889 -------- Saved 
+PA-6222-PPC — 12.1 英寸防水无挡板触摸式液晶电脑 ---------- 27890 -------- Saved 
+PA-6222-PPC - 12.1 インチの耐水ベゼルフリー・タッチパネル PC ---------- 27891 -------- Saved 
+PA-6225-PPC — 15 英寸防水无挡板触摸式液晶电脑  ---------- 27892 -------- Saved 
+PA-6225-PPC - 15 インチの耐水ベゼルフリー・タッチパネル PC  ---------- 27893 -------- Saved 
+PA-6222 — 12.1 英寸防水无挡板触摸式 POS 终端 ---------- 27894 -------- Saved 
+PA-6222 - 12.1 インチの耐水ベゼルフリー・タッチ POS 端末 ---------- 27895 -------- Saved 
+PA-6225 - 15 インチの耐水ベゼルフリー・タッチ POS 端末 ---------- 27896 -------- Saved 
+PA-7225 — 17 英寸无风扇超薄 POS 终端 ---------- 27897 -------- Saved 
+PA-7225 - 17 インチのファンレス・スリム POS 端末 ---------- 27898 -------- Saved 
+PA-3053 — 高性能 POS 终端 ---------- 27899 -------- Saved 
+PA-3053 - 高性能 POS 端末 ---------- 27900 -------- Saved 
+PA-3522 — 高度集成无风扇 15 英寸 POS 终端 ---------- 27901 -------- Saved 
+PA-3522 - 高度に統合されたファンレス 15 インチ POS 端末 ---------- 27902 -------- Saved 
+PA-3122 — 高度集成无风扇 10.4 英寸 POS 终端 ---------- 27903 -------- Saved 
+PA-3122 - 高度に統合されたファンレス 10.4 インチ POS 端末 ---------- 27904 -------- Saved 
+PA-8525 — 高度集成的无风扇 15 英寸 POS 终端  ---------- 27905 -------- Saved 
+PA-8525 - 高度に統合されたファンレス 15 インチ POS 端末  ---------- 27906 -------- Saved 
+PA-8225 — 高度集成无风扇 10.4 英寸 POS 终端  ---------- 27907 -------- Saved 
+PA-8225 - 高度に統合されたファンレス 10.4 インチ POS 端末  ---------- 27908 -------- Saved 
+配备 Intel® Atom® N3000 系列 CPU、DP/VGA/2LAN/音频/USB 3.0 的 BM-0972 — 迷你 ITX MB ---------- 27909 -------- Saved 
+BM-0972 - Intel® Atom® N3000 シリーズ CPU、DP/ VGA/ 2LAN/ オーディオ/ USB 3.0 搭載の Mini-ITX MB ---------- 27910 -------- Saved 
+AmITX-HL-G： 配备第 4 代 Intel® Core™ i7/i5/i3 台式处理器的迷你 ITX 主板  ---------- 27911 -------- Saved 
+AmITX-HL-G: 第 4 世代 Intel® Core™ i7/i5/i3 デスクトップ・プロセッサーを搭載した Mini-ITX ボード ---------- 27912 -------- Saved 
+采用 Intel Atom® E3845 处理器的 LVC-2001 无风扇车用计算机 ---------- 27913 -------- Saved 
+LVC-2001 ファンレス車両用コンピューター、Intel Atom® E3845 プロセッサー ---------- 27914 -------- Saved 
+ITX-N1307T-DCU3 — 配备 Intel® HM77 芯片组的超薄迷你 ITX 嵌入式主板 ---------- 27925 -------- Saved 
+ITX-N1307T-DCU3 -  Intel® HM77 チップセット搭載の薄型 MINI-ITX エンベデッド・マザーボード ---------- 27926 -------- Saved 
+ICES 621 COM Express ---------- 27927 -------- Saved 
+ICES 621 COM Express ---------- 27928 -------- Saved 
+EBC 356 3.5 英寸 SBC ---------- 27929 -------- Saved 
+EBC 356 3.5 インチ SBC ---------- 27930 -------- Saved 
+NDiS M335 OPS 数字标牌播放器 ---------- 27931 -------- Saved 
+NDiS M335 OPS デジタル・サイネージ・プレイヤー ---------- 27932 -------- Saved 
+ITX-1037P-2LHD — 配备 Intel® Celeron® 1037U 的超薄迷你 ITX 嵌入式主板 ---------- 27933 -------- Saved 
+ITX-1037P-2LHD - Intel® Celeron® 1037U 搭載の薄型 MINI-ITX エンベデッド・マザーボード ---------- 27934 -------- Saved 
+ ITX-1037P-AT — 配备 Intel® Celeron® 的迷你 ITX 嵌入式主板  ---------- 27935 -------- Saved 
+ ITX-1037P-AT -  Intel® Celeron® を備えた MINI-ITX エンベデッド・マザーボード  ---------- 27936 -------- Saved 
+ITX-1037P — 配备 Intel® Celeron® 1037U 的迷你 ITX 嵌入式主板 ---------- 27937 -------- Saved 
+ITX-1037P -  Intel® Celeron® 1037U 搭載の MINI-ITX エンベデッド・マザーボード ---------- 27938 -------- Saved 
+ ITX-1037T-2L — 配备 Intel® Celeron® 1037U 的超薄迷你 ITX 嵌入式主板 ---------- 27939 -------- Saved 
+ ITX-1037T-2L -  Intel® Celeron® 1037U 搭載の薄型 MINI-ITX エンベデッド・マザーボード ---------- 27940 -------- Saved 
+ITX-1037T-2U — 配备 Intel® Celeron® 1037U 的超薄迷你 ITX 嵌入式主板 ---------- 27941 -------- Saved 
+ITX-1037T-2U - 薄型 MINI-ITX エンベデッド・マザーボード Intel® Celeron® 1037U ---------- 27942 -------- Saved 
+ITX-H61-2CD8 — 超薄迷你 ITX 嵌入式主板 ---------- 27943 -------- Saved 
+ITX-H61-2CD8 - 薄型 MINI-ITX エンベデッド・マザーボード ---------- 27944 -------- Saved 
+Express-BL： 采用第 5 代 Intel® Core™ 和 Xeon® 处理器的 COM Express 基础 6 型模块 ---------- 27945 -------- Saved 
+Express-BL: 第 5 世代 Intel® Core™ および Xeon® プロセッサー搭載の COM Express ベーシック・サイズ Type 6 モジュール ---------- 27946 -------- Saved 
+BCM MX3160N 超薄迷你 ITX 主板采用 Intel® Celeron® N3160 四核板载处理器 ---------- 27949 -------- Saved 
+Intel® Celeron® N3160 クアッドコア・プロセッサーを搭載した BCM MX3160N 薄型 Mini ITX マザーボード　 ---------- 27950 -------- Saved 
+配备 Intel® Pentium® 处理器 N3000/N3700NCA-1020 的紧凑型无风扇 x86 网络装置  ---------- 27951 -------- Saved 
+Intel® Pentium® プロセッサー N3000/N3700 搭載の NCA-1020 コンパクト・ファンレス x86 ネットワーク・アプライアンス ---------- 27952 -------- Saved 
+AIMB-231 — 迷你 ITX 主板 ---------- 27957 -------- Saved 
+AIMB-231 - Mini-ITX マザーボード ---------- 27958 -------- Saved 
+SOM-6896 — COM Express 主板 ---------- 27959 -------- Saved 
+SOM-6896 - COM Express ボード ---------- 27960 -------- Saved 
+NANO-1037-1CIR — 配备双核 Intel® Celeron® 1037U 的 NANO-ITX 嵌入式主板 ---------- 27961 -------- Saved 
+NANO-1037-1CIR - デュアルコア Intel® Celeron® 1037U 搭載の NANO-ITX エンベデッド・マザーボード  ---------- 27962 -------- Saved 
+ITX-1037T-2U2C — 配备 Intel® Celeron® 处理器 1037U 的超薄迷你 ITX 嵌入式主板 ---------- 27963 -------- Saved 
+ITX-1037T-2U2C -  Intel® Celeron® プロセッサー 1037U 搭載の薄型 MINI-ITX エンベデッド・マザーボード ---------- 27964 -------- Saved 
+采用第 4 代 Intel® Core™ i7 处理器的 VPX3-1258 3U VPX SBC  ---------- 27965 -------- Saved 
+第 4 世代の Intel® Core™ i7 プロセッサーを搭載した VPX3-1258 3U VPX SBC ---------- 27966 -------- Saved 
+ITX-J1900T-2CD8 — 配备 Intel® Celeron® J1900 处理器的超薄迷你 ITX 嵌入式主板 ---------- 27967 -------- Saved 
+ITX-J1900T-2CD8 - Intel® Celeron® J1900 プロセッサー搭載の薄型 MINI-ITX エンベデッド・マザーボード ---------- 27968 -------- Saved 
+Q87T - 迷你 ITX 主板 ---------- 27973 -------- Saved 
+DYNASTY - 一体式 POS 终端 ---------- 27974 -------- Saved 
+Moxa MC-7270-MP-T 海洋计算机系列 ---------- 27975 -------- Saved 
+Moxa MC-7270-DC-CP-T 海洋计算机系列 ---------- 27976 -------- Saved 
+MobileV  ---------- 27978 -------- Saved 
+RD-107 Core™ i7 工业计算机 ---------- 27980 -------- Saved 
+Moxa V2406A 系列工业铁路计算机 ---------- 27981 -------- Saved 
+Moxa V2416A 系列工业铁路计算机 ---------- 27982 -------- Saved 
+Moxa V2426A 系列工业铁路计算机 ---------- 27983 -------- Saved 
+COMe-cBW6 - COM Express 板 ---------- 27984 -------- Saved 
+conga-QA4 - 采用第 4 代 Intel® Atom® / Celeron® 处理器的最高性能的 Qseven 模块    ---------- 27987 -------- Saved 
+MB-945G-I5P2L - 工业主板采用 Intel® Core™ 2 双核/Pentium® D/Pentium® 4/Celeron® D 处理器和 Intel® 945G+ICH7 芯片组 ---------- 27988 -------- Saved 
+LAN-D2550-4L - 网络安全板配备 4 个 RJ-45 GLAN、Intel® Atom® D2550 处理器和 Intel® NM10 芯片组 ---------- 27989 -------- Saved 
+EC3-N2600-5CS8 - 3.5 英寸嵌入式板采用 Intel® Atom® N2600 处理器 + Intel® NM10 芯片组 + Intel® PowerVR SGX545 GPU ---------- 27990 -------- Saved 
+Emotient Analytics ---------- 27993 -------- Saved 
+ITX-HTPCH61 - 迷你 ITX 嵌入式板配备 LGA 1155 处理器 + Intel® H61 芯片组 ---------- 27995 -------- Saved 
+COMe9621 SysCentreModule™ 系列 COM Express 板  ---------- 27996 -------- Saved 
+ITX-DH61A-S - 超薄迷你 ITX 嵌入式板配备 Intel® H61 芯片组  ---------- 27997 -------- Saved 
+ITX-3217U-6CD8 - 超薄迷你 ITX 嵌入式板 Intel® Core™ i3 3217U 处理器 + Intel® HM65 芯片组 ---------- 27998 -------- Saved 
+ITX-D525-2CHB - 迷你 ITX 嵌入式板配备 Intel® Atom® D525 处理器 + Intel® ICH8HB 芯片组 + Intel® GM3150 GPU ---------- 27999 -------- Saved 
+SOM-7568 迷你模块采用 Intel® Pentium™ 和 Celeron™ N3000 系列 SoC   ---------- 28000 -------- Saved 
+ITX-D525-6CHB - 迷你 ITX 嵌入式板配备 Intel® Atom® D525 处理器 + Intel® ICH8HB 芯片组 + Intel® GM3150 GPU ---------- 28001 -------- Saved 
+ITX-D525-SL - 迷你 ITX 嵌入式板配备 Intel® Atom® D525 处理器 + Intel® NM10 芯片组 + Intel® GM3150 GPU ---------- 28002 -------- Saved 
+ITX-D525-DL - 迷你 ITX 嵌入式板配备 Intel® Atom® D525 处理器 + Intel® NM10 芯片组 + Intel® GM3150 GPU ---------- 28003 -------- Saved 
+ITX-D525-ATPCD2 - 迷你 ITX 嵌入式板配备 Intel® Atom® D525 处理器 + Intel® ICH8M 芯片组 + Intel® GM3150 GPU ---------- 28004 -------- Saved 
+ITX-3110M-6CD8 - 超薄迷你 ITX 嵌入式板采用 Intel® Core™ i3 3110M 处理器 + Intel® HM65 芯片组 ---------- 28005 -------- Saved 
+BX-220 - 无风扇工业瘦客户端采用 Intel® Atom® 处理器 E3845 ---------- 28006 -------- Saved 
+COM Express CXB-8S ---------- 28008 -------- Saved 
+MB-G41-5P2L - 工业 ATX 主板配备 G41 + ICH7 芯片组 ---------- 28009 -------- Saved 
+SV1a-37114P 超薄迷你 ITX 板 ---------- 28010 -------- Saved 
+MW50-SV0 工作站主板 ---------- 28013 -------- Saved 
+MW70-3S0 工作站主板 ---------- 28014 -------- Saved 
+COM Express C10M-BT ---------- 28015 -------- Saved 
+COM Express CXC-BT ---------- 28016 -------- Saved 
+LAN-Z87SFP-4L - 网络安全板配备 Intel® Z87 芯片组 ---------- 28017 -------- Saved 
+IQGATE-100 - 智能传感器网关解决方案 ---------- 28018 -------- Saved 
+ LAN-D2550-4L - 网络安全板配备 Intel® Atom™ D2550 处理器 D2550 + Intel® NM10 芯片组 ---------- 28019 -------- Saved 
+LAN-1037-8L - 网络安全板配备 Intel® Celeron® 处理器 1037U + Intel® HM77 芯片组 ---------- 28020 -------- Saved 
+LAN-B75-6L - 网络安全板配备 Intel® B75 芯片组  ---------- 28021 -------- Saved 
+X11SBA-LN4F 迷你 ITX 主板  ---------- 28022 -------- Saved 
+LAN-D525-6L - 网络安全板配备 6 个 RJ-45 GLAN 和 Intel® Atom® D525 + Intel ICH8M ---------- 28023 -------- Saved 
+COM Express C6B-8SB ---------- 28024 -------- Saved 
+COM Express C6C-BW ---------- 28025 -------- Saved 
+GE866-QUAD ---------- 28026 -------- Saved 
+UE866  ---------- 28027 -------- Saved 
+GE910-QUAD AUTO ---------- 28028 -------- Saved 
+GL865-DUAL V3 ---------- 28029 -------- Saved 
+GE910-QUAD V3 ---------- 28030 -------- Saved 
+LE910 V2 ---------- 28031 -------- Saved 
+LAN-B75SFP-6L - 网络安全板配备 32nm/22nm LGA1155 和 Intel® B75 芯片组 ---------- 28033 -------- Saved 
+LAN-1037SFP-8L - 网络安全板配备双核 Intel® Celeron® 1037U/ HM77 芯片组 ---------- 28034 -------- Saved 
+LAN-1037-6L/ 6 个 RJ-45 GLAN/ - 网络安全板配备双核 Intel® Celeron® 1037U ---------- 28035 -------- Saved 
+Dell 边缘网关 5000 系列  ---------- 28038 -------- Saved 
+NISE 106 无风扇计算机 ---------- 28039 -------- Saved 
+ESM-BDW - 采用第 5 代 Intel® Core™ SoC 处理器 i7/i5/i3 的 6 型 COMe 紧凑型模块 ---------- 28040 -------- Saved 
+NViS 1410 NVR ---------- 28041 -------- Saved 
+MZBAYAD 物联网网关主板  ---------- 28042 -------- Saved 
+EC3-1037-DOB 3.5 英寸嵌入式板，配备双核 Intel® Celeron® 1037U + Intel® NM70 芯片组 ---------- 28043 -------- Saved 
+MZBAYAG 物联网网关主板 ---------- 28044 -------- Saved 
+MZBAYAC 物联网网关主板  ---------- 28045 -------- Saved 
+MZBAYVP 数字标牌主板 ---------- 28046 -------- Saved 
+EPIC-D525-6CID - 采用 Intel® Atom® D525+Intel® ICH8M 芯片组的 EPIC 嵌入式板  ---------- 28048 -------- Saved 
+ EPIC-N2600 EPIC 嵌入式板采用 Intel® Atom® N2600 和 Intel® NM10 芯片组 ---------- 28049 -------- Saved 
+适用于家庭和中小企业的 GR-EZI04H 4 托架 NAS  ---------- 28050 -------- Saved 
+GB-SIOPS2 OPS 数字标牌系统 ---------- 28051 -------- Saved 
+GB-SIOPS1 OPS 数字标牌系统 ---------- 28052 -------- Saved 
+ITX-1037T-U3 - 配备 Intel® Celeron® 1037U 的超薄迷你 ITX 嵌入式主板 ---------- 28053 -------- Saved 
+ GB-TCV2A 3G 通信嵌入式系统 ---------- 28054 -------- Saved 
+针对物联网的 GB-KMA1 参考设计 ---------- 28055 -------- Saved 
+针对物联网的 GB-KMA3 参考设计  ---------- 28056 -------- Saved 
+ITX-H81T-6CD8 - 超薄迷你 ITX 嵌入式板配备 Intel® H81 芯片组 ---------- 28057 -------- Saved 
+ ITX-H61-ATP - 配备 Intel® H61 芯片组的迷你 ITX 嵌入式主板 ---------- 28058 -------- Saved 
+ATP 工业级 CF 卡   ---------- 28059 -------- Saved 
+MS-98H4 - 迷你 ITX 板 ---------- 28060 -------- Saved 
+POS260 系列 - 基于 Windows 的掌上平板电脑，适用于酒店业、零售业及商店管理 ---------- 28061 -------- Saved 
+KS150-BT - 15 英寸轻型工业液晶电脑采用 Intel® Atom® SoC 处理器   ---------- 28063 -------- Saved 
+IB909 - 迷你 ITX 主板 ---------- 28064 -------- Saved 
+AmITX-BW-I： 采用纤细设计的迷你 ITX 嵌入式板配备 Intel® Pentium® 和 Celeron® 处理器  ---------- 28065 -------- Saved 
+ITX-N1037T-2CD8 — 超薄迷你 ITX 嵌入式主板 ---------- 28066 -------- Saved 
+ ITX-1037P-10CD8 — 迷你 ITX 嵌入式主板 ---------- 28067 -------- Saved 
+Scanalytics SoleSensor - 地面传感器分析平台 ---------- 28068 -------- Saved 
+OPS-1037A1 - 数字标牌播放器 ---------- 28071 -------- Saved 
+OPS-1037A1 - デジタル・サイネージ・プレイヤー ---------- 28072 -------- Saved 
+SETO-1000 - 至尊户外服务器，采用 Intel® Xeon® 处理器 E5-2400 v2 系列 ---------- 28075 -------- Saved 
+SETO-1000 - Extreme Outdoor サーバー、Intel® Xeon® プロセッサー E5-2400 v2 シリーズ搭載 ---------- 28076 -------- Saved 
+MinnowBoard 支持 ---------- 28077 -------- Saved 
+MinnowBoard サポート ---------- 28078 -------- Saved 
+NFN29_2L - Nano-ITX 主板 ---------- 28081 -------- Saved 
+NFN29_2L - Nano-ITX ボード ---------- 28082 -------- Saved 
+ITX-M9F VER1.1 - 迷你 ITX 主板 ---------- 28083 -------- Saved 
+ITX-M9F VER1.1 - Mini-ITX ボード ---------- 28084 -------- Saved 
+MaxCore™ 计算和边缘/雾服务器平台 ---------- 28085 -------- Saved 
+MaxCore™ Compute & Edge/Fog サーバー・プラットフォーム ---------- 28086 -------- Saved 
+HP Pro Slate 10 EE 医用平板电脑 ---------- 28089 -------- Saved 
+HP Pro Slate 10 EE 医療タブレット ---------- 28090 -------- Saved 
+1TW22040V3 1U 服务器 ---------- 28099 -------- Saved 
+1TW22040V3 1U サーバー ---------- 28100 -------- Saved 
+1A3020SOC 1U 服务器 ---------- 28101 -------- Saved 
+1A3020SOC 1U サーバー ---------- 28102 -------- Saved 
+122081V3 1U 服务器 ---------- 28103 -------- Saved 
+122081V3 1U サーバー ---------- 28104 -------- Saved 
+122101V3 1U 服务器 ---------- 28105 -------- Saved 
+122101V3 1U サーバー ---------- 28106 -------- Saved 
+123040V3 1U 服务器 ---------- 28107 -------- Saved 
+123040V3 1U サーバー ---------- 28108 -------- Saved 
+ATP 16GB DDR3 解决方案 ---------- 28109 -------- Saved 
+ATP 16GB DDR3 ソリューション ---------- 28110 -------- Saved 
+NANO-J1900-ICIR - nano-ITX 嵌入式模板，采用 Intel® Celeron® J1900 ---------- 28111 -------- Saved 
+NANO-J1900-ICIR - Intel® Celeron® J1900 搭載の NANO-ITX エンベデッド・マザーボード ---------- 28112 -------- Saved 
+PXIe-8880 ---------- 28113 -------- Saved 
+PXIe-8880 ---------- 28114 -------- Saved 
+PXIe-1085 ---------- 28115 -------- Saved 
+PXIe-1085 ---------- 28116 -------- Saved 
+CPC600 - 6U VME64/VME64X Intel® Pentium® M SBC ---------- 28117 -------- Saved 
+CPC600 - 6U VME64/VME64X Intel® Pentium® M SBC ---------- 28118 -------- Saved 
+S022 H81 series machine in OPS-C specification ---------- 28119 -------- Saved 
+S045 player terminal/cloud terminal BOX ---------- 28120 -------- Saved 
+S035 player terminal/cloud terminal BOX ---------- 28121 -------- Saved 
+HSCloud™ In-a-Box ---------- 28122 -------- Saved 
+S026, low-cost and dual-system OPS  ---------- 28123 -------- Saved 
+S026, low-cost and dual-system OPS  ---------- 28124 -------- Saved 
+S026 low cost dual-system OPS Media Player ---------- 28125 -------- Saved 
+S023 multimedia playback terminal ---------- 28126 -------- Saved 
+实达9050X2M终端计算机/云终端盒子 ---------- 28128 -------- Saved 
+实达9060X2Y终端计算机 ---------- 28129 -------- Saved 
+实达STMS终端管理系统 ---------- 28130 -------- Saved 
+Start 9050x2m terminal computer/cloud terminal box ---------- 28131 -------- Saved 
+Start 9060x2y terminal computer ---------- 28132 -------- Saved 
+实达9060X2Y终端计算机 ---------- 28133 -------- Saved 
+Start 9060x2y terminal computer ---------- 28134 -------- Saved 
+Start terminal Management system ---------- 28135 -------- Saved 
+conga-TCA4 ---------- 28141 -------- Saved 
+RCC-VE Network Edge Device and Virtual CPE ---------- 28142 -------- Saved 
+RCC-DFF Nano-ITX NFV-Enbaled Edge Device ---------- 28143 -------- Saved 
+MinnowBoard Turbot ---------- 28144 -------- Saved 
+SBS Rugged Panel PC SPC-1008B ---------- 28148 -------- Saved 
+Caerus - Server board with Intel® Atom® Processor C2500/2700 Family ---------- 28149 -------- Saved 
+FerriSSD®  ---------- 28150 -------- Saved 
+FerriSSD®  ---------- 28151 -------- Saved 
+FWS-7520 (Network Appliance) ---------- 28153 -------- Saved 
+EMB-H110B (Mini-ITX Motherboard) ---------- 28154 -------- Saved 
+3U VPX ボードをベースにした TR E5x/msd Intel® Xeon® プロセッサー E3-1500 v5 ファミリー ---------- 28155 -------- Saved 
+TR E5x/msd Intel® Xeon® processor E3-1500 v5 family based 3U VPX board ---------- 28156 -------- Saved 
+基于 3U VPX 板的 TR E5x/msd Intel® Xeon® 处理器 E3-1500 v5 产品系列 ---------- 28157 -------- Saved 
+TR E5x/msd Intel® Xeon® processor E3-1500 v5 family based 3U VPX board ---------- 28158 -------- Saved 
+EMB-Q170B (Mini-ITX Motherboard) ---------- 28159 -------- Saved 
+EMB-Q170A (Mini-ITX Motherboard) ---------- 28160 -------- Saved 
+IMBM-Q170A (Industrial Motherboard) ---------- 28161 -------- Saved 
+FWS-7820 (Network Appliance) ---------- 28162 -------- Saved 
+Q87T - Mini-ITX マザーボード ---------- 28163 -------- Saved 
+DYNASTY - オール・イン・ワン POS 端末 ---------- 28164 -------- Saved 
+Moxa MC-7270-MP-T 舶用コンピューター・シリーズ ---------- 28165 -------- Saved 
+Moxa MC-7270-DC-CP-T 海洋コンピューター・シリーズ ---------- 28166 -------- Saved 
+MobileV ---------- 28168 -------- Saved 
+RD-107 Core™ i7 産業用コンピューター ---------- 28170 -------- Saved 
+Moxa V2406A シリーズ産業用鉄道コンピューター ---------- 28171 -------- Saved 
+Moxa V2416A シリーズ産業用鉄道コンピューター ---------- 28172 -------- Saved 
+Moxa V2426A シリーズ産業用鉄道コンピューター ---------- 28173 -------- Saved 
+conga-QA4 - 第 4 世代 Intel® Atom® / Celeron® プロセッサー搭載の高性能 Qseven モジュール ---------- 28177 -------- Saved 
+MB-945G-I5P2L -Intel® Core™ 2 Duo/Pentium® D/Pentium® 4/Celeron® D プロセッサーと Intel® 945G+ICH7 チップセット搭載の産業用マザーボード ---------- 28178 -------- Saved 
+LAN-D2550-4L - 4*RJ-45 GLAN、Intel® Atom® D2550 プロセッサー、Intel® NM10 チップセット搭載のネットワーク・セキュリティ・ボード ---------- 28179 -------- Saved 
+EC3-N2600-5CS8 - 3.5 インチ・エンベデッドボード、Intel® Atom® N2600 プロセッサー + Intel® NM10 チップセット + Intel® PowerVR SGX545 GPU 搭載 ---------- 28180 -------- Saved 
+Emotient Analytics ---------- 28183 -------- Saved 
+ITX-HTPCH61 - Mini-ITX エンベデッドボード、LGA 1155 プロセッサー + Intel® H61 チップセットを搭載 ---------- 28185 -------- Saved 
+COMe9621 SysCentreModule™ シリーズ COM Express ボード ---------- 28186 -------- Saved 
+ITX-DH61A-S - 薄型 Mini-ITX エンベデッドボード、Intel® H61 チップセットを搭載  ---------- 28187 -------- Saved 
+ITX-3217U-6CD8 - Intel® Core™ i3 3217U プロセッサー + Intel® HM65 チップセット搭載の薄型 Mini-ITX エンベデッドボード ---------- 28188 -------- Saved 
+ITX-D525-2CHB - Mini-ITX エンベデッドボード、Intel® Atom® D525 プロセッサー + Intel® ICH8HB チップセット + Intel® GM3150 GPU ---------- 28189 -------- Saved 
+Intel® Pentium™ および Celeron™ N3000 Series SoC を搭載した SOM-7568 ミニ・モジュール  ---------- 28190 -------- Saved 
+ITX-D525-6CHB - MINI-ITX エンベデッドボード、Intel® Atom® D525 プロセッサー + Intel® ICH8HB チップセット + Intel® GM3150 GPU ---------- 28191 -------- Saved 
+ITX-D525-SL - MINI-ITX エンベデッドボード、Intel® Atom® D525 プロセッサー + Intel® NM10 チップセット + Intel® GM3150 GPU を搭載 ---------- 28192 -------- Saved 
+ITX-D525-DL - MINI-ITX エンベデッドボード、Intel® Atom® D525 プロセッサー + Intel® NM10 チップセット + Intel® GM3150 GPU ---------- 28193 -------- Saved 
+ITX-D525-ATPCD2 - MINI-ITX エンベデッドボード、Intel® Atom® D525 プロセッサー + Intel® ICH8M チップセット + Intel® GM3150 GPU ---------- 28194 -------- Saved 
+ITX-3110M-6CD8 - Intel® Core™ i3 3110M プロセッサー + Intel® HM65 チップセット搭載の薄型 MINI-ITX エンベデッドボード ---------- 28195 -------- Saved 
+BX-220 - Intel® Atom® プロセッサー E3845 搭載のファンレス産業用シンクライアント ---------- 28196 -------- Saved 
+COM Express CXB-8S ---------- 28198 -------- Saved 
+MB-G41-5P2L - G41 + ICH7 チップセットを搭載した産業用 ATX マザーボード ---------- 28199 -------- Saved 
+SV1a-37114P 薄型 Mini-ITX ボード ---------- 28200 -------- Saved 
+MW50-SV0 ワークステーション・マザーボード ---------- 28203 -------- Saved 
+MW70-3S0 ワークステーション・マザーボード ---------- 28204 -------- Saved 
+COM Express C10M-BT ---------- 28205 -------- Saved 
+COM Express CXC-BT ---------- 28206 -------- Saved 
+LLAN-Z87SFP-4L - Intel® Z87 チップセット搭載のネットワーク・セキュリティ・ボード ---------- 28207 -------- Saved 
+IQGATE-100 - スマートセンサー・ゲートウェイ・ソリューション ---------- 28208 -------- Saved 
+ LAN-D2550-4L - Intel® Atom™ プロセッサー  D2550 + Intel® NM10 チップセット搭載のネットワーク・セキュリティ・ボード ---------- 28209 -------- Saved 
+LAN-1037-8L - Intel® Celeron® プロセッサー 1037U + Intel® HM77 チップセット搭載のネットワーク・セキュリティ・ボード ---------- 28210 -------- Saved 
+LAN-B75-6L - Intel® B75 チップセット搭載のネットワーク・セキュリティ・ボード  ---------- 28211 -------- Saved 
+X11SBA-LN4F Mini-ITX マザーボード  ---------- 28212 -------- Saved 
+LAN-D525-6L - 6*RJ-45 GLAN と Intel® Atom® D525 + Intel ICH8M 搭載のネットワーク・セキュリティ・ボード ---------- 28213 -------- Saved 
+COM Express C6B-8SB ---------- 28214 -------- Saved 
+COM Express C6C-BW ---------- 28215 -------- Saved 
+GE866-QUAD ---------- 28216 -------- Saved 
+UE866 ---------- 28217 -------- Saved 
+GE910-QUAD AUTO ---------- 28218 -------- Saved 
+GL865-DUAL V3 ---------- 28219 -------- Saved 
+GE910-QUAD V3 ---------- 28220 -------- Saved 
+LE910 V2 ---------- 28221 -------- Saved 
+LAN-B75SFP-6L - 32nm/22nm LGA1155 と Intel® B75 チップセット搭載のネットワーク・セキュリティ・ボード ---------- 28223 -------- Saved 
+LAN-1037SFP-8L - デュアルコア Intel® Celeron® 1037U/HM77 チップセット搭載のネットワーク・セキュリティ・ボード ---------- 28224 -------- Saved 
+LAN-1037-6L/ 6*RJ-45 GLAN/ - デュアルコア Intel® Celeron® 1037U 搭載のネットワーク・セキュリティ・ボード ---------- 28225 -------- Saved 
+Dell Edge Gateway 5000 シリーズ ---------- 28228 -------- Saved 
+NISE 106 ファンレス・コンピューター ---------- 28229 -------- Saved 
+ESM-BDW - 第 5 世代 Intel® Core™ SoC プロセッサー i7/i5/i3 搭載タイプ 6 COMe コンパクト・モジュール ---------- 28230 -------- Saved 
+NViS 1410 NVR ---------- 28231 -------- Saved 
+MZBAYAD IoT ゲートウェイ・マザーボード  ---------- 28232 -------- Saved 
+Intel® Celeron® 1037U + Intel® NM70 チップセット搭載の EC3-1037-DOB 3.5 インチ・エンベデッド・ボード ---------- 28233 -------- Saved 
+MZBAYAG IoT ゲートウェイ・マザーボード ---------- 28234 -------- Saved 
+MZBAYAC IoT ゲートウェイ・マザーボード  ---------- 28235 -------- Saved 
+MZBAYVP デジタル・サイネージ・マザーボード ---------- 28236 -------- Saved 
+EPIC-D525-6CID - Intel® Atom® D525+Intel® ICH8M チップセットを搭載した EPIC エンベデッド・ボード ---------- 28238 -------- Saved 
+ Intel® Atom® N2600 と Intel® NM10 チップセットを搭載した EPIC-N2600 EPIC エンベデッド・ボード ---------- 28239 -------- Saved 
+家庭と中小企業向け GR-EZI04H 4 ベイ NAS  ---------- 28240 -------- Saved 
+GB-SIOPS2 OPS デジタル・サイネージ・システム ---------- 28241 -------- Saved 
+GB-SIOPS1 OPS デジタル・サイネージ・システム ---------- 28242 -------- Saved 
+ITX-1037T-U3 -  Intel® Celeron® 1037U 搭載の薄型 MINI-ITX エンベデッド・マザーボード ---------- 28243 -------- Saved 
+ GB TCV2A 3 G 通信組み込みシステム ---------- 28244 -------- Saved 
+IoT 用 GB-KMA1 リファレンス・デザイン ---------- 28245 -------- Saved 
+IoT 用 GB-KMA3 リファレンス・デザイン ---------- 28246 -------- Saved 
+ITX-H81T-6CD8 - 薄型 MINI-ITX エンベデッドボード、Intel® H81 チップセット ---------- 28247 -------- Saved 
+ ITX-H61-ATP - Intel® H61 チップセット搭載の MINI-ITX エンベデッド・マザーボード ---------- 28248 -------- Saved 
+MS-98H4 - Mini-ITX ボード ---------- 28249 -------- Saved 
+POS260 シリーズ - ホスピタリティ、リテール、ストア管理用の Windows ベース携帯タブレット ---------- 28250 -------- Saved 
+KS150-BT - Intel® Atom® SoC プロセッサーを搭載した 15 インチの軽量産業パネル PC  ---------- 28252 -------- Saved 
+IB909 - Mini-ITX マザーボード ---------- 28253 -------- Saved 
+AmITX-BW-I: Intel® Pentium® と Celeron® プロセッサーを搭載した、薄型 Mini-ITX エンベデッド・ボード ---------- 28254 -------- Saved 
+ITX-N1037T-2CD8 - 薄型 MINI-ITX エンベデッド・マザーボード ---------- 28255 -------- Saved 
+ ITX-1037P-10CD8 - MINI-ITX エンベデッド・マザーボード ---------- 28256 -------- Saved 
+Scanalytics SoleSensor - 床センサー分析プラットフォーム ---------- 28257 -------- Saved 
+SBC-iBT ---------- 28258 -------- Saved 
+SBC-iBT ---------- 28259 -------- Saved 
+Avalue EBM-BSW - Intel® Pentium®/Celeron® SoC 处理器 5.25 英寸迷你模块  ---------- 28260 -------- Saved 
+Avalue EBM-BSW - Intel® Pentium®/Celeron® SoC プロセッサー 5.25 インチ ミニ・モジュール ---------- 28261 -------- Saved 
+人工智能   ---------- 28262 -------- Saved 
+人工知能  ---------- 28263 -------- Saved 
+eMCP (LPDDR2 & LPDDR3)  ---------- 28264 -------- Saved 
+eMCP (LPDDR2 & LPDDR3)  ---------- 28265 -------- Saved 
+工业用简化解决方案 e.MMC ---------- 28266 -------- Saved 
+産業用簡易ソリューション e.MMC ---------- 28267 -------- Saved 
+简单、可扩展、高效的串行 NOR 闪存 ---------- 28268 -------- Saved 
+簡単でスケーラブルで効率的なシリアル NOR フラッシュ ---------- 28269 -------- Saved 
+低功耗 DRAM (LPDRAM)  ---------- 28270 -------- Saved 
+低消費電力 DRAM (LPDRAM) ---------- 28271 -------- Saved 
+物联网和蜂窝 M2M 应用 MCP 解决方案 ---------- 28272 -------- Saved 
+IoT やセルラー M2M アプリケーションの MCP ソリューション ---------- 28273 -------- Saved 
+SODIMM (ECC 和非 ECC) ---------- 28274 -------- Saved 
+SODIMMs (ECC とnon-ECC) ---------- 28275 -------- Saved 
+SODIMM (ECC 和非 ECC)  ---------- 28276 -------- Saved 
+UDIMM (ECC とnon-ECCC) ---------- 28277 -------- Saved 
+DDR4 SDRAM  ---------- 28278 -------- Saved 
+DDR4 SDRAM  ---------- 28279 -------- Saved 
+FB20/FB20M ---------- 28280 -------- Saved 
+FB20/FB20M ---------- 28281 -------- Saved 
+IT8 ---------- 28286 -------- Saved 
+IT8 ---------- 28287 -------- Saved 
+DD151 液晶电脑 ---------- 28290 -------- Saved 
+DD151 パネル PC ---------- 28291 -------- Saved 
+M870/880/970/980 液晶电脑 ---------- 28292 -------- Saved 
+M870/880/970/980 パネル PC ---------- 28293 -------- Saved 
+Plotly 企业服务器专门用于协作数据可视化和分析 ---------- 28296 -------- Saved 
+共同のデータの可視化と分析用 Plotly Enterprise サーバー ---------- 28297 -------- Saved 
+Tempo 物联网音频编解码器 ---------- 28298 -------- Saved 
+Tempo IoT Audio Codecs ---------- 28299 -------- Saved 
+XPand6020 - 配备嵌入式路由器和第 3 代 Intel® Core™ i7 SBC 的小型 （SFF） 系统 ---------- 28306 -------- Saved 
+XPand6020 - エンベデッド・ルーターと第 3 世代 Intel® Core™ i7 SBC 搭載のスモール・フォームファクター (SFF) システム ---------- 28307 -------- Saved 
+XPand6903 - 强固式全密封 Intel® Atom® 嵌入式箱式电脑 ---------- 28308 -------- Saved 
+XPand6903 - 堅牢密封型 Intel® Atom® エンベデッド・ボックス PC ---------- 28309 -------- Saved 
+XCalibur4444 - 6U VPX 第 3 代 Intel® Core™ i7 SBC ---------- 28310 -------- Saved 
+XCalibur4444 - 6U VPX 第 3 世代 Intel® Core™ i7 SBC ---------- 28311 -------- Saved 
+XPedite7670 - 基于 Intel® Xeon® D-1500 系列处理器的 3U VPX-REDI SBC 配备双 10 千兆以太网和一个 XMC 站点 ---------- 28314 -------- Saved 
+XPedite7670 - デュアル 10 ギガビット・イーサネットと XMC サイトを備えた、Intel® Xeon® D-1500 ファミリー・プロセッサーをベースにした 3U VPX-REDI SBC ---------- 28315 -------- Saved 
+Infobright 企业版 （IEE）  ---------- 28316 -------- Saved 
+Infobright Enterprise Edition (IEE) ---------- 28317 -------- Saved 
+SE-8124： 超薄紧凑型嵌入式计算机 ---------- 28318 -------- Saved 
+SE-8124: 超スリムでコンパクトなエンベデッド PC ---------- 28319 -------- Saved 
+SE-8300： 一个具有丰富 I/O 和无风扇嵌入式计算机的全新系列 ---------- 28320 -------- Saved 
+SE-8300 : 豊富な I/O とファンレス・エンベデッド PC の新シリーズ ---------- 28321 -------- Saved 
+PassKit SDK  ---------- 28322 -------- Saved 
+PassKit SDK  ---------- 28323 -------- Saved 
+Facebook 通行证 ---------- 28324 -------- Saved 
+Facebook Pass ---------- 28325 -------- Saved 
+RX-7030 Intel® Core™ Processor-based Embedded Board ---------- 28338 -------- Saved 
+VX-6050 Intel® Atom® Processor-based Embedded Board ---------- 28339 -------- Saved 
+EMBOX Type C50 ---------- 28340 -------- Saved 
+EMBOX Type T3665 ---------- 28341 -------- Saved 
+EMBOX Type T5065 ---------- 28342 -------- Saved 
+EMBOX Type T5065 ---------- 28343 -------- Saved 
+EMBOX Type T7065 ---------- 28344 -------- Saved 
+EMBOX Type T7062 ---------- 28345 -------- Saved 
+TX-70/LOGIA C4 ---------- 28346 -------- Saved 
+TX-70/T75  ---------- 28347 -------- Saved 
+IoT gateway with EMBOX Type T3564 Intel® Atom® Processor ---------- 28348 -------- Saved 
+IX-5050 Intel® Core™ Processor-based Embedded Board ---------- 28349 -------- Saved 
+Data Center Environmental Monitor ---------- 28350 -------- Saved 
+Internet of Things Gateway for Wireless Envrionmental Sensors ---------- 28351 -------- Saved 
+MT200 for Financial Application  ---------- 28352 -------- Saved 
+VT1020 - 10.4" Rugged In-Vehicle Terminal ---------- 28353 -------- Saved 
+NAS BSW 面板 ---------- 28357 -------- Saved 
+PA-6225： 15" 防水无挡板触摸 POS 终端 ---------- 28359 -------- Saved 
+ADE-6067  ---------- 28360 -------- Saved 
+ADE-6066  ---------- 28361 -------- Saved 
+ADE-6065  ---------- 28362 -------- Saved 
+Titan POS 系统 ---------- 28364 -------- Saved 
+IPS-7003 - Demeter POS ---------- 28365 -------- Saved 
+Hades  ---------- 28366 -------- Saved 
+ADE-6091  ---------- 28367 -------- Saved 
+COM-1602  ---------- 28368 -------- Saved 
+ADE-7061 ---------- 28369 -------- Saved 
+ADE-7002  ---------- 28370 -------- Saved 
+ADE-6080 ---------- 28371 -------- Saved 
+ICS-7003 ---------- 28372 -------- Saved 
+ADE-2001 ---------- 28373 -------- Saved 
+NCA-5510 - 1U 高性能 x86 网络设备，适用于企业防火墙、UTM 和 IPS ---------- 28374 -------- Saved 
+PATA SSD ---------- 28377 -------- Saved 
+DDR2 ---------- 28378 -------- Saved 
+DDR3 ---------- 28380 -------- Saved 
+CFast 固态硬盘 ---------- 28381 -------- Saved 
+紧凑型闪存  ---------- 28382 -------- Saved 
+SD / SDHC ---------- 28383 -------- Saved 
+Micro-SD / Micro-SDHC ---------- 28384 -------- Saved 
+HP Elite x2 1011  ---------- 28385 -------- Saved 
+SBS 耐用型嵌入式液晶电脑 TVC-1042B 系列 ---------- 28386 -------- Saved 
+BX-956 无风扇耐用型工业瘦客户端计算机采用 Intel® Atom™ 处理器 D510 ---------- 28387 -------- Saved 
+模块化机箱解决方案   ---------- 28388 -------- Saved 
+PXS0460 6U ATCA 机箱 ---------- 28389 -------- Saved 
+ CPCI 机架式机箱、3 个插槽、带有传导冷却的 3U 卡 ---------- 28390 -------- Saved 
+智能音频分析 ---------- 28391 -------- Saved 
+EM5800D - 直流 12V POS 迷你 ITX 主板基于 Intel® Celeron® 1037U，支持双 VGA ---------- 28393 -------- Saved 
+M618SE - 配备板载 2G 内存的 3.5 英寸主板，支持 2 个千兆以太网局域网 ---------- 28394 -------- Saved 
+1037F - 带有板载 RAM 2GB 的迷你 ITX 主板  ---------- 28395 -------- Saved 
+ LAN-D525-4L - 网络安全板配备 4 个 RJ-45 GLAN 和 Intel® Atom® D525 + Intel ICH8M ---------- 28396 -------- Saved 
+ITX-H81T-6CD81L - LGA1150 超薄迷你 ITX 嵌入式板配备 Intel® H81 芯片组 ---------- 28397 -------- Saved 
+Simularity AI ---------- 28398 -------- Saved 
+LVR-2010 - EN50155 认证& IP67 级铁路嵌入式计算机采用 Intel® Atom® E3845 处理器 ---------- 28399 -------- Saved 
+LVR-5700 - 采用 Intel® Core™ i7-3517UE 处理器的高性能无风扇铁路系统 ---------- 28400 -------- Saved 
+SRC-0600B-14E - 物联网网关 ---------- 28401 -------- Saved 
+Gateway SRC-0803-4D ---------- 28402 -------- Saved 
+Gateway SRC-0802-4C ---------- 28403 -------- Saved 
+COM1410 - COM-Express 板 ---------- 28404 -------- Saved 
+NANO-J1900-ICIR - 采用 Intel® Celeron® J1900 的 nano-ITX 嵌入式主板 ---------- 28407 -------- Saved 
+ITX-J1900-10CD8 - 集成的 Intel® Celeron® J1900 迷你 ITX 嵌入式板 ---------- 28408 -------- Saved 
+OPS-H81CR2 - LG1150 数字标牌播放器采用 Intel® H81 芯片组 ---------- 28409 -------- Saved 
+SysCentreModule™ 系列 — COM9615 ---------- 28411 -------- Saved 
+SURF HMP ---------- 28414 -------- Saved 
+IVS-100-BT 车队管理系统 ---------- 28415 -------- Saved 
+Intense PC ---------- 28421 -------- Saved 
+IPC2 ---------- 28422 -------- Saved 
+RS9113 - 多协议无线迷你 PCI Express （PCIe） 卡 ---------- 28423 -------- Saved 
+DDR3 SDRAM ---------- 28425 -------- Saved 
+配备第 4 代 Intel® Core™ 处理器的 ML600G-50 工业无风扇计算机 ---------- 28426 -------- Saved 
+ML600G-30 配备热插拔和第 4 代 Intel® Core™ 处理器的工业无风扇服务器 ---------- 28427 -------- Saved 
+ML600G-10 采用 Intel® Atom® 处理器 C2000 服务器产品系列的工业无风扇服务器  ---------- 28428 -------- Saved 
+Honeywell 手持扫描仪 （Xenon 1900 二维影像扫描仪） ---------- 28432 -------- Saved 
+Honeywell 台式扫描仪 （Genesis 7580g 二维影像扫描仪） ---------- 28433 -------- Saved 
+ADE-6082 - Mini-ITX マザーボード ---------- 28435 -------- Saved 
+PPOS-Q57 - POS システム・マザーボード ---------- 28436 -------- Saved 
+POS JS-960 - POS システム・マザーボード ---------- 28437 -------- Saved 
+ATX-6971 - ATX 産業用 マザーボード ---------- 28438 -------- Saved 
+CENTRI IoTAS - Internet of Things Advanced Security ---------- 28441 -------- Saved 
+COMEX-IC40D コンピューター・オン・モジュール ---------- 28444 -------- Saved 
+D25G6 - 6 つの RS232 およびデュアル GBE Lan をサポートするファンレス Mini-ITX マザーボード ---------- 28445 -------- Saved 
+SATA モジュール (別名 SATA DOM) ---------- 28447 -------- Saved 
+ハーフスリム SATA SSD ---------- 28448 -------- Saved 
+mSATA / Mini-mSATA ---------- 28449 -------- Saved 
+SATA SSD ---------- 28450 -------- Saved 
+DS7400 - 高密度メディア処理プラットフォーム ---------- 28451 -------- Saved 
+産業用 IoT ソリューションを使用して、システムを統合しスマート製造を実現 ---------- 28452 -------- Saved 
+IoT 用 CSoC プラットフォーム/デジタル・サブシステム  IP ---------- 28453 -------- Saved 
+XPedite7574 | 第 5 世代 Intel® Core™ i7 プロセッサーベースの 3U VPX-REDI シングルボード・コンピューター ---------- 28454 -------- Saved 
+SBC328 3U VPX シングルボード・コンピューター ---------- 28455 -------- Saved 
+IB899 3.5 インチのディスク・サイズ SBC - Intel® Pentium® N3700 実行または Celeron® N3000 プロセッサーをサポート ---------- 28456 -------- Saved 
+ MI808 Mini-ITX マザーボード - Intel® Pentium® N3700 または Celeron ® N3000 プロセッサーを搭載 ---------- 28457 -------- Saved 
+Ferri-eMMC ---------- 28458 -------- Saved 
+Osprey Visual IoT プラットフォーム ---------- 28459 -------- Saved 
+スマートビルディング  ---------- 28460 -------- Saved 
+M.2 2242 / 2260 / 2280 ---------- 28462 -------- Saved 
+IPS-2001 - ヒューマン・マシン・インターフェイス ---------- 28464 -------- Saved 
+PL-80900 - IoT ゲートウェイ ---------- 28465 -------- Saved 
+DFI BW171/BW173 - Intel® Pentium® N3700/ Intel® Celeron® N3050 プロセッサーをベースにした 薄型 Mini-ITX ---------- 28466 -------- Saved 
+TEA-S1803 for Thin Client Application ---------- 28468 -------- Saved 
+TEB-M9302在自助终端的应用 ---------- 28469 -------- Saved 
+COM-SKUC6 (COM Express CPU Module) ---------- 28470 -------- Saved 
+VTC 6210-R Fanless Railway Computer & IoT Gateway ---------- 28471 -------- Saved 
+VTC 7220-R Fanless Railway Computer ---------- 28472 -------- Saved 
+COM-SKHB6 (COM Express CPU Module) ---------- 28473 -------- Saved 
+ATP 2.5" SSD - Velocity SI Lite ---------- 28474 -------- Saved 
+ATP 2.5" SSD - Velocity XE ---------- 28475 -------- Saved 
+ATP 2.5" SSD - Velocity M IV ---------- 28476 -------- Saved 
+ATP 2.5" SSD - Velocity SI Pro ---------- 28477 -------- Saved 
+ATP SATA DOM ---------- 28478 -------- Saved 
+ATP SATA DOM ---------- 28479 -------- Saved 
+ATP 2.5 インチ SSD - Velocity SI Pro ---------- 28480 -------- Saved 
+ATP 2.5 インチ SSD - Velocity M IV ---------- 28481 -------- Saved 
+ATP 2.5 インチ SSD - Velocity XE ---------- 28482 -------- Saved 
+ATP 2.5 インチ SSD - Velocity SI Lite ---------- 28483 -------- Saved 
+BK-0940 Flex ATX MB supports 4th Gen. Intel® Core™ i7/i5/i3/ Pentium® Processor ---------- 28484 -------- Saved 
+SP-6145 Intel® Atom® E3845/E3826/ Celeron® J1900 processor Fanless and Low Power 15" Panel PC ---------- 28487 -------- Saved 
+SP-6140 Intel® Atom® E3845/E3826/Celeron® J1900 processor Fanless and Low Power 10.4" Panel PC ---------- 28488 -------- Saved 
+SP-7629 High Performance Intel® 3rd Gen. Core™ i5/i3 and Pentium® Processor 19" Panel PC ---------- 28489 -------- Saved 
+SP-7929 Fanless and Low Power 19" Intel® Atom® D2550 Panel PC ---------- 28490 -------- Saved 
+SP-6208 Fanless and High performance 18.5" Panel PC ---------- 28491 -------- Saved 
+SP-7627 High Performance 3rd Gen. Intel® Core™ i5/i3 and Pentium® Processor 17" Panel PC ---------- 28492 -------- Saved 
+SP-7927 Fanless and Low Power 17" Intel® Atom® D2550 Panel PC ---------- 28493 -------- Saved 
+SP-7925 Fanless and Low Power 15" Intel® Atom® D2550 Panel PC ---------- 28494 -------- Saved 
+PA-6722 The 15" Fanless Slim POS Terminal ---------- 28495 -------- Saved 
+PA-6722-PPC The 15" Fanless Slim Panel PC ---------- 28496 -------- Saved 
+GOT3217W-881 -- 21.5" Full HD TFT Fanless Multi Touch Panel Computer with LGA1150 Socket Intel® Core™ i7/i5/i3 & Celeron® Processor ---------- 28497 -------- Saved 
+XCalibur4643 | Intel® Xeon® D-1500 Family Processor-Based 6U VPX SBC with Dual 10GbE, Dual XMC/PMC Sites, and Onboard FPGA ---------- 28498 -------- Saved 
+組込み用マザーボード　TEM150 ---------- 28501 -------- Saved 
+Embedded motherboard TEM150 ---------- 28502 -------- Saved 
+ARCHMI-912(P) - Fanless 12.1" flat bezel LCD screen with  Intel® Core™ i3/i5/i7 Processor HMI ---------- 28504 -------- Saved 
+IT9 Mini-ITX Motherboard with 6th Gen Intel® Core™ Mobile CPU  ---------- 28505 -------- Saved 
+EC3-J1900-6CDP2L - 3.5" Integrated Intel® Celeron® J1900 SOC Embedded board ---------- 28507 -------- Saved 
+NANO-6061 - Nano-ITX 板 ---------- 28510 -------- Saved 
+CAR-1020 - 网络设备 ---------- 28511 -------- Saved 
+VTR-0700B-650 - SBS 车载驾驶监控系统 ---------- 28512 -------- Saved 
+SB122-PH - 10 盘位存储服务器 ---------- 28513 -------- Saved 
+CodeSonar ---------- 28516 -------- Saved 
+手机钱包营销大师班 (MWMM) ---------- 28518 -------- Saved 
+蓝牙扫描应用客户商标  ---------- 28519 -------- Saved 
+蓝牙扫描应用 ---------- 28520 -------- Saved 
+Chop Pass ---------- 28521 -------- Saved 
+帐户管理工具 ---------- 28522 -------- Saved 
+Top Up Pass ---------- 28523 -------- Saved 
+SMS 活动  ---------- 28524 -------- Saved 
+Loopy Loyalty  ---------- 28525 -------- Saved 
+全面客户商标 ---------- 28526 -------- Saved 
+基本客户商标（适用于单个帐户） ---------- 28527 -------- Saved 
+Pass Designer  ---------- 28528 -------- Saved 
+LMS-2450 ---------- 28529 -------- Saved 
+列车主动控制 （PTC）  ---------- 28530 -------- Saved 
+KISS 2U PCI 762 ---------- 28531 -------- Saved 
+KISS 2U Short KTQ87 ---------- 28532 -------- Saved 
+KISS 2U KTQ87 ---------- 28533 -------- Saved 
+KISS 4U KTQ 87 ---------- 28535 -------- Saved 
+KISS 1U PCI 762 ---------- 28536 -------- Saved 
+KISS 1U Short KTQM87 ---------- 28537 -------- Saved 
+COMEX-IC50L 计算机模块 ---------- 28538 -------- Saved 
+COMEX-IE38 计算机模块 ---------- 28539 -------- Saved 
+GMB811 -- 配备第四代 Intel® Core™ 处理器、Intel® H81 PCH、DP、DVI-D、VGA、双 LAN 和 6 个 COM 端口 ---------- 28542 -------- Saved 
+P1177S-881 -- 17" SXGA TFT 第五代/第四代 Intel® Core™ i7/i5/i3 & Celeron® 处理器超薄工业触摸屏计算机 ---------- 28543 -------- Saved 
+CAPA840 — Intel® Atom® 处理器，E3845/E3827 3.5 英寸嵌入式 SBC，LVDS/VGA/HDMI 接口、双 LAN、音频和 ZIO ---------- 28544 -------- Saved 
+FDK172-834 -- 17 英寸 SXGA TFT 开架式平板电脑，搭载 Intel® Celeron® 处理器 J1900 ---------- 28545 -------- Saved 
+配备 Intel® Atom® E3827 的 GOT3126T-834 - 12.1 英寸 XGA TFT 宽温度无风扇触摸屏计算机 ---------- 28546 -------- Saved 
+OPS883 - Intel® Core™ i5/i3 & Celeron® 处理器开放可插拔规范 (OPS) 数字标牌播放器 ---------- 28547 -------- Saved 
+KBox A-202 ---------- 28548 -------- Saved 
+KBox A-103 ---------- 28549 -------- Saved 
+无风扇 CSB200-897 系统适用于加固型应用 ---------- 28550 -------- Saved 
+BYTEM-W071-PC - 7 英寸平边框投射式电容平板电脑 ---------- 28551 -------- Saved 
+Aislelabs 端到端基于位置的导航、营销和行为分析 ---------- 28552 -------- Saved 
+SPARKL 测序引擎 ---------- 28553 -------- Saved 
+GemTot Beacon （支持 iOS 和 Android）  ---------- 28554 -------- Saved 
+LEC-7230L - 紧凑型无风扇嵌入式计算机 ---------- 28555 -------- Saved 
+地板传感器分析 - 企业 SDK ---------- 28556 -------- Saved 
+COVALENCE 健康分析平台 ---------- 28557 -------- Saved 
+地板传感器分析 - 互动点 ---------- 28558 -------- Saved 
+地板传感器分析 - 入口点 ---------- 28559 -------- Saved 
+Beaconstac ---------- 28560 -------- Saved 
+NP 系列平板 PC ---------- 28562 -------- Saved 
+FC 系列嵌入式设备控制器 ---------- 28563 -------- Saved 
+NAS BSW ボード ---------- 28567 -------- Saved 
+PA-6225: 15 インチの耐水ベゼルフリー・タッチ POS 端末 ---------- 28569 -------- Saved 
+ADE-6067  ---------- 28570 -------- Saved 
+ADE-6066  ---------- 28571 -------- Saved 
+ADE-6065  ---------- 28572 -------- Saved 
+Titan POS システム ---------- 28574 -------- Saved 
+IPS-7003 - Demeter POS ---------- 28575 -------- Saved 
+Hades  ---------- 28576 -------- Saved 
+ADE-6091  ---------- 28577 -------- Saved 
+COM-1602  ---------- 28578 -------- Saved 
+ADE-7061 ---------- 28579 -------- Saved 
+ADE-7002  ---------- 28580 -------- Saved 
+ADE-6080 ---------- 28581 -------- Saved 
+ICS-7003 ---------- 28582 -------- Saved 
+ADE-2001 ---------- 28583 -------- Saved 
+NCA-5510 - エンタープライズ・ファイアウォール、UTM、IPS 向け 1U 高性能 x86 ネットワーク・アプライアンス ---------- 28584 -------- Saved 
+PATA SSD ---------- 28587 -------- Saved 
+DDR2 ---------- 28588 -------- Saved 
+DDR3 ---------- 28590 -------- Saved 
+CFast SSD ---------- 28591 -------- Saved 
+コンパクト・フラッシュ ---------- 28592 -------- Saved 
+SD/SDHC ---------- 28593 -------- Saved 
+Micro-SD/Micro-SDHC ---------- 28594 -------- Saved 
+HP Elite x2 1011  ---------- 28595 -------- Saved 
+SBS 堅牢エンベデッドパネル PC TVC-1042B シリーズ ---------- 28596 -------- Saved 
+Intel® Atom® プロセッサー D510 搭載 BX-956 ファンレス高耐久性、産業用シンクライアント・コンピューター ---------- 28597 -------- Saved 
+モジュラー・エンクロージャ・ソリューション  ---------- 28598 -------- Saved 
+PXS0460 6U ATCA シャーシ ---------- 28599 -------- Saved 
+ 伝導冷却式 CPCI ラックマウント型エンクロージャ、3 つのスロット、3U カード ---------- 28600 -------- Saved 
+インテリジェント・オーディオ分析 ---------- 28601 -------- Saved 
+EM5800D - Intel® Celeron® 1037U ベースの DC12V POS Mini-ITX マザーボード、デュアル VGA をサポート ---------- 28603 -------- Saved 
+M618SE - オンボード 2G RAM 搭載の 3.5 インチ・マザーボード、2xGBE LAN をサポート ---------- 28604 -------- Saved 
+1037F - オンボード RAM 2GB 搭載 Mini-ITX マザーボード  ---------- 28605 -------- Saved 
+ LAN-D525-4L - 4*RJ-45 GLAN と Intel® Atom® D525 + Intel ICH8M 搭載のネットワーク・セキュリティ・ボード ---------- 28606 -------- Saved 
+ITX-H81T-6CD81L - LGA1150 薄型 MINI-ITX エンベデッドボード、Intel® H81 チップセット搭載 ---------- 28607 -------- Saved 
+Simularity AI ---------- 28608 -------- Saved 
+LVR-2010 - EN50155 認定&Intel® Atom® E3845 搭載の IP67 準拠鉄道用エンベデッド PC ---------- 28609 -------- Saved 
+LVR-5700 - Intel® Core™ i7-3517UE プロセッサーを搭載した高パフォーマンス・ファンレス鉄道システム ---------- 28610 -------- Saved 
+SRC-0600B-14E - IoT ゲートウェイ ---------- 28611 -------- Saved 
+ゲートウェイ SRC-0803-4D ---------- 28612 -------- Saved 
+ゲートウェイ SRC-0802-4C ---------- 28613 -------- Saved 
+COM1410 - COM-Express board ボード ---------- 28614 -------- Saved 
+NANO-J1900-ICIR - Intel® Celeron® J1900 搭載の nano-ITX エンベデッド・マザーボード ---------- 28617 -------- Saved 
+ITX-J1900-10CD8 - 統合 Intel® Celeron® J1900 MINI ITX エンベデッド・ボード ---------- 28618 -------- Saved 
+OPS-H81CR2 - LG1150 Intel® H81 チップセットを搭載したデジタル・サイネージ・プレーヤー ---------- 28619 -------- Saved 
+SysCentreModule™ シリーズ-COM9615 ---------- 28621 -------- Saved 
+SURF HMP ---------- 28624 -------- Saved 
+IVS-100-BT 車両運行管理システム ---------- 28625 -------- Saved 
+Intense PC ---------- 28631 -------- Saved 
+IPC2 ---------- 28632 -------- Saved 
+RS9113 - マルチプロトコル・ワイヤレス Mini PCI Express (PCIe) カード ---------- 28633 -------- Saved 
+DDR3 SDRAM ---------- 28635 -------- Saved 
+ML600G-50 産業用ファンレス・コンピューター、第 4 世代 Intel® Core™ プロセッサーを搭載 ---------- 28636 -------- Saved 
+第 4 世代 Intel® Core™ プロセッサー搭載の産業用ファンレス・ホットスワップ・サーバー ML600G-30 ---------- 28637 -------- Saved 
+サーバー用 Intel® Atom® プロセッサー C2000 製品ファミリー搭載の ML600G-10 産業ファンレス・サーバー ---------- 28638 -------- Saved 
+Honeywell ハンドヘルド・スキャナ (Xenon 1900 エリア・イメージング・スキャナ) ---------- 28642 -------- Saved 
+Honeywell カウンタートップ・スキャナー (Genesis 7580g エリア・イメージスキャナー) ---------- 28643 -------- Saved 
+ADE-6082 - 迷你 ITX 主板  ---------- 28645 -------- Saved 
+PPOS-Q57 - POS 系统主板 ---------- 28646 -------- Saved 
+POS JS-960-POS 系统主板 ---------- 28647 -------- Saved 
+ATX-6971 - ATX 工业主板  ---------- 28648 -------- Saved 
+CENTRI IoTAS - 物联网高级安全性 ---------- 28651 -------- Saved 
+COMEX-IC40D 计算机模块 ---------- 28654 -------- Saved 
+D25G6 - 无风扇 Mini-ITX 主板，支持 6 个 RS232 和双 GBE LAN ---------- 28655 -------- Saved 
+SATA 模块（又称为 SATA DOM） ---------- 28657 -------- Saved 
+半纤薄型 SATA SSD ---------- 28658 -------- Saved 
+mSATA / Mini-mSATA ---------- 28659 -------- Saved 
+SATA SSD ---------- 28660 -------- Saved 
+DS7400 - 高密度媒体处理平台 ---------- 28661 -------- Saved 
+系统与工业物联网解决方案一体化实现了智能制造 ---------- 28662 -------- Saved 
+适用于物联网的 CSoC 平台 / 数字子系统 IP ---------- 28663 -------- Saved 
+XPedite7574 | 基于第 5 代 Intel® Core™ i7 处理器的 3U VPX-REDI 单板计算机 ---------- 28664 -------- Saved 
+IB899 3.5 英寸磁盘大小 SBC - 支持 Intel® Pentium® N3700 运行或 Celeron® N3000 处理器  ---------- 28665 -------- Saved 
+ MI808 Mini-itx 主板 — 由 Intel® Pentium® N3700 或 Celeron® N3000 处理器驱动 ---------- 28666 -------- Saved 
+Ferri-eMMC ---------- 28667 -------- Saved 
+Osprey 可视化物联网平台 ---------- 28668 -------- Saved 
+智能建筑 ---------- 28669 -------- Saved 
+M.2 2242/2260/2280 ---------- 28671 -------- Saved 
+IPS-2001 - 人机接口 ---------- 28673 -------- Saved 
+PL-80900 — 物联网网关 ---------- 28674 -------- Saved 
+基于 Intel® Pentium® N3700/ Intel® Celeron® N3050 处理器的 DFI BW171/BW173 超薄迷你 ITX  ---------- 28675 -------- Saved 
+基于 XPedite7479 | 基于第 3 代 Intel® Core™ i7 处理器的 3U VPX SBC 配备全面 XMC J16 I/O 路由 ---------- 28676 -------- Saved 
+XPedite7479 | 第 3 世代 Intel® Core™ i7 プロセッサ・ベースの 3U VPX SBC、フル XMC J16 I/O ルーティング ---------- 28677 -------- Saved 
+1U 4-盘位商业网络附加存储 ---------- 28678 -------- Saved 
+1U 4 ベイ・ビジネス・ネットワーク接続ストレージ ---------- 28679 -------- Saved 
+2-盘位商业网络附加存储  ---------- 28682 -------- Saved 
+ 2 ベイ・ビジネス・ネットワーク接続ストレージ  ---------- 28683 -------- Saved 
+SharpServer ™ Microserver 卡 ---------- 28684 -------- Saved 
+SharpServer ™ マイクロサーバーカード ---------- 28685 -------- Saved 
+NI InsightCM 企业版 ---------- 28686 -------- Saved 
+NI InsightCM Enterprise ---------- 28687 -------- Saved 
+配备第 6 代 Intel® Core™ 平台的 IMBA-Q170-i2 ATX 主板 ---------- 28688 -------- Saved 
+第 6 世代 Intel® Core™ プラットフォームの IMBA-Q170-i2 ATX マザーボード ---------- 28689 -------- Saved 
+cExpress-SL： COM Express 紧凑 6 型模块采用第 6 代 Intel® Core™ 和 Celeron® 处理器   ---------- 28690 -------- Saved 
+cExpress-SL: 第 6 世代 Intel® Core™ および Celeron® プロセッサー搭載の COM Express コンパクトサイズ Type 6 モジュール ---------- 28691 -------- Saved 
+Express-SL： 采用第 6 代 Intel® Core™、Xeon® 和 Celeron® 处理器的 COM Express 基础 6 型模块 ---------- 28692 -------- Saved 
+Express-SL: 第 6 世代 Intel® Core™、Xeon® および Celeron® プロセッサー搭載の COM Express ベーシックサイズ Type6 モジュール ---------- 28693 -------- Saved 
+AerPPC PP-9635 超薄无风扇平板电脑 ---------- 28704 -------- Saved 
+AerPPC PP-9635 超スリムなファンレス・パネル PC ---------- 28705 -------- Saved 
+SBC328 3U VPX 单板计算机  ---------- 28706 -------- Saved 
+IB915 — 配备第 6 代 Intel® Core™ U 系列处理器的 3.5 英寸磁盘大小 SBC  ---------- 28709 -------- Saved 
+MI990 - 迷你 ATX 主板支持最新的第 6 代 Intel® Core™ 处理器   ---------- 28711 -------- Saved 
+MI990 - Mini-ITX マザーボードは、最新第 6 世代 Intel® Core™ プロセッサーをサポート ---------- 28712 -------- Saved 
+MB990 - ATX 主板支持最新的第 7 代/第 6 代 Intel® Core™ 处理器 ---------- 28713 -------- Saved 
+MB990 - ATX マザーボードは最新の第 6/7 世代 Intel® Core™ プロセッサーをサポート ---------- 28714 -------- Saved 
+AerPPC PP-9645 超薄高性能液晶电脑 ---------- 28715 -------- Saved 
+AerPPC PP-9645 超スリム型高性能パネル PC ---------- 28716 -------- Saved 
+sensAI - 情感识别和副语言信息提取 ---------- 28717 -------- Saved 
+sensAI - 感情認識およびパラ言語情報抽出 ---------- 28718 -------- Saved 
+openSMILE ---------- 28719 -------- Saved 
+ D3402-B - 延长生命周期的主板  ---------- 28724 -------- Saved 
+ D3402-B - 拡張ライフサイクル・メインボード ---------- 28725 -------- Saved 
+ADLINK IMB-M43 ATX Intel® Core™ i7/i5 工业主板     ---------- 28726 -------- Saved 
+ADLINK IMB-M43 ATX Intel® Core™ i7/i5 産業用マザーボード ---------- 28727 -------- Saved 
+Silicom Hybrid 网络应用交换机 - NA226401 ---------- 28728 -------- Saved 
+Silicom ハイブリッド・ネットワーク・アプリケーション・スイッチ - NA226401 ---------- 28729 -------- Saved 
+PE340G2Qi71 - 双端口光纤 40 千兆以太网 PCI Express 服务器适配器 ---------- 28730 -------- Saved 
+PE340G2Qi71 - デュアルポート・ファイバー 40 ギガビット・イーサネット PCI Express サーバー・アダプター ---------- 28731 -------- Saved 
+PE310G4TSF4I71 - 四端口 SFP+ 10 千兆以太网 PCI Express 时间戳服务器适配器 ---------- 28732 -------- Saved 
+PE310G4TSF4I71 - クアッド ポート SFP + 10 ギガビット・イーサネット  PCI Express タイムスタンプ・サーバー・アダプター ---------- 28733 -------- Saved 
+MXC-6400 系列基于第 6 代 Intel® Core™ i7/i5/i3 处理器的无风扇可扩展嵌入式计算机，带有 PCI/PCIe 扩展     ---------- 28744 -------- Saved 
+MXC-6400 シリーズ第 6 世代 Intel® Core™ i7/i5/i3 プロセッサーをベースにした、 PCI/PCIe 拡張機能付きファンレス拡張可能エンベデッド・コンピューター ---------- 28745 -------- Saved 
+C800 - 面向虚拟桌面解决方案的超紧凑型瘦客户端  ---------- 28746 -------- Saved 
+C800 - 仮想デスクトップ・ソリューション向け超小型シンクライアント ---------- 28747 -------- Saved 
+NSA 7135 - 网络安全设备 ---------- 28750 -------- Saved 
+NSA 7135 - ネットワーク・セキュリティ・アプライアンス ---------- 28751 -------- Saved 
+NANO840 -- 带有 LVDS/ VGA/HDMI、双局域网和音频的 Intel® Atom® 处理器 E3845/E3827 Nano-ITX 主板 ---------- 28752 -------- Saved 
+NANO840 -- Intel® Atom® プロセッサー E3845/E3827 Nano-ITX マザーボード、LVDS/ VGA/HDMI、デュアル LANs およびオーディオ搭載 ---------- 28753 -------- Saved 
+MANO842 -- Intel® Celeron® 处理器 J1900 （高达 2.42 GHz） SoC 迷你 ITX SBC 配备 VGA/HDMI/LVDS、USB 3.0、PCI Express 迷你卡、PCIe x1 和高清音频 ---------- 28754 -------- Saved 
+MANO842 -- Intel® Celeron® プロセッサー J1900 (最大 2.42 GHz) SoC ミニ ITX SBC（VGA/HDMI/LVDS 搭載）、USB 3.0、PCI Express ミニカード、PCIe x1 および HD オーディオ ---------- 28755 -------- Saved 
+eBOX626-842-FL -- 无风扇嵌入式系统配备 Intel® Celeron® J1900、HDMI、VGA、2 个千兆以太网局域网、4 个 USB、3 个 COM 和 10~34V 直流电源输入 ---------- 28756 -------- Saved 
+eBOX626-842-FL -- Intel® Celeron® J1900、HDMI、VGA、2 GbE LAN、4 USB、3 COM および 10~34VDC 入力を備えたファンレス・エンベデッド・システム ---------- 28757 -------- Saved 
+ARK-5420 - 第 3 代 Intel® Core™ 处理器无缝山系统，配备 PCIEx4 & PCI 插槽 ® ---------- 28758 -------- Saved 
+ARK-5420 - PCIEx4 & PCI Slot ® 搭載の第 3 世代 Intel® Core™ プロセッサー・ファンレス・システム   ---------- 28759 -------- Saved 
+ARK-5261 - Intel® Celeron® 处理器 J1900 无风扇嵌入式箱式电脑配备 PCI/PCIe 扩展和双移动硬盘/固态硬盘 ---------- 28760 -------- Saved 
+ARK-5261 - PCI/PCIe 拡張およびデュアル・モバイル HDD/SSD 搭載の Intel® Celeron® プロセッサー J1900 ファンレス・エンベデッド BOX PC  ---------- 28761 -------- Saved 
+AIMC-2100 - 微型电脑，Intel® Core™ i7/i5/i3 CPU，1 个扩展，250W 80Plus PSU ---------- 28764 -------- Saved 
+AIMC-2100 - マイクロ・コンピューター、Intel® Core™ i7/i5/i3 CPU、1 拡張、250W 80Plus PSU ---------- 28765 -------- Saved 
+AIMC-3201 - 微型电脑，Intel® Core™ i7/i5/i3 CPU，H81，2 个扩展，250W 80Plus PSU ---------- 28766 -------- Saved 
+AIMC-3201 - マイクロ・コンピューター、Intel® Core™ i7/i5/i3 CPU、H81、2 拡張、250W 80Plus PSU ---------- 28767 -------- Saved 
+AIMC-3402 - 前访问微型计算机，Intel® Core™ i7/i5/i3 CPU、10 个 COM、8 个 USB 和 4 个扩展 ---------- 28768 -------- Saved 
+AIMC-3402 - フロントアクセス・マイクロコンピューター、Intel® Core™ i7/i5/i3 CPU、10 x COM、8 x USB、4 x 拡張 ---------- 28769 -------- Saved 
+AIMC-3421 - 微型计算机，Intel® Core™ i7/i5/i3 CPU、H81、4 个扩展 2PCI/2PCIe、300W 80Plus PSU ---------- 28770 -------- Saved 
+AIMC-3421 - マイクロコンピューター、Intel® Core™ i7/i5/i3 CPU、H81、4 x 拡張 2PCI/2PCIe、300W 80Plus 電源ユニット ---------- 28771 -------- Saved 
+AIIS-1240 - PoE 紧凑系统，支持 Intel® Core™ i7/i5/i3 CPU，4 英寸 GbE PoE ---------- 28772 -------- Saved 
+AIIS-1240 - PoE コンパクト・システム、Intel® Core™ i7/i5/i3 CPU、4-CH GbE PoE をサポート ---------- 28773 -------- Saved 
+AIIS-1440-USB3 凸轮控制系统，支持 Intel® Core™ i7/i5/i3 CPU，4 英寸专用 USB3 控制器 ---------- 28774 -------- Saved 
+AIIS-1440 - USB3  CAM 制御システム、Intel® Core™ i7/i5/i3 CPU、4-CH 専用 USB3 コントローラーをサポート ---------- 28775 -------- Saved 
+PICO500 -- 第 6 代 Intel® Core™ Celeron® 处理器 Pico ITX 主板，支持 HDMI/LVDS、GbE 和音频 ---------- 28782 -------- Saved 
+PICO500 -- HDMI/LVDS、GbE & オーディオを装備した第 6 世代 Intel® Core™、Celeron® プロセッサー Pico ITX マザーボード ---------- 28783 -------- Saved 
+CEM501 — 第 6 代 Intel® Core™ i7/i5/i3 和 Celeron® 处理器 COM Express Type 6 模块 ---------- 28784 -------- Saved 
+CEM501 -- 第 6 世代 Intel® Core™ i7/i5/i3 & Celeron® プロセッサー COM Express タイプ 6 モジュール ---------- 28785 -------- Saved 
+MANO500 -- LGA1151 第 7 代 Intel® Core™、Pentium® 和 Celeron® 迷你 ITX 主板，带有 Intel® H110、HDMI/DP/VGA/LVDS/eDP、双 LAN 和 USB 3.0 ---------- 28786 -------- Saved 
+MANO500 -- Intel® H110、HDMI/DP/VGA/LVDS/eDP、デュアル LAN、USB 3.0 搭載の LGA1151 第 7 世代 Intel® Core™、Pentium®、Celeron® Mini-ITX マザーボード ---------- 28787 -------- Saved 
+SHB140 -- LGA1151 第 6 代 Intel® Core™、Pentium®、Celeron® PICMG 1.3 全尺寸 CPU 卡，配备 Intel® Q170、SATA3、USB 3.0、局域网和 DVI-I ---------- 28790 -------- Saved 
+SHB140 -- LGA1151 第 6 世代 Intel® Core™、Pentium®、Celeron® PICMG 1.3 フルサイズ CPU カード、Intel® Q170、SATA3、USB 3.0、LAN および DVI-I 搭載 ---------- 28791 -------- Saved 
+NCA-4210 1U - 高性能 x86 网络设备，适用于企业防火墙、UTM 和 IPS。 ---------- 28792 -------- Saved 
+NCA-4210 1U - エンタープライズ・ファイアウォール、UTM、IPS用 1U 高性能 x86 ネットワーク・アプライアンス ---------- 28793 -------- Saved 
+DFI BW551 - 基于 Intel® Pentium® N3700/ Intel® Celeron® N3050 的 3.5 英寸 SBC  ---------- 28800 -------- Saved 
+DFI BW551 - Intel® Pentium® N3700/ Intel® Celeron® N3050 をベースにした 3.5 インチ SBC  ---------- 28801 -------- Saved 
+基于 Intel® Pentium® N3700/ Intel® Celeron® N3050 处理器的 DFI BW968 - COM Express  ---------- 28802 -------- Saved 
+DFI BW968 - Intel® Pentium® N3700/ Intel® Celeron® N3050 プロセッサーをベースにした COM Express ---------- 28803 -------- Saved 
+COMe8600 — SysCentreModule™ 系列 ---------- 28804 -------- Saved 
+COMe8600 — SysCentreModule™ シリーズ ---------- 28805 -------- Saved 
+2U 12-盘位商业网络附加存储 ---------- 28812 -------- Saved 
+2U 12 ベイ・ビジネス・ネットワーク接続ストレージ ---------- 28813 -------- Saved 
+4-盘位商业网络附加存储 ---------- 28814 -------- Saved 
+4 ベイ・ビジネス・ネットワーク接続ストレージ ---------- 28815 -------- Saved 
+AmITX-SL-G： 配备第 6 代/第 7 代 Intel® Core™ i7/i5/i3 台式处理器的迷你 ITX 嵌入式板 ---------- 28816 -------- Saved 
+AmITX-SL-G: 第 6/7 世代 Intel® Core™ i7/i5/i3 デスクトップ・プロセッサーを搭載した Mini-ITX エンベデッド・ボード ---------- 28817 -------- Saved 
+NANO-6061 - Nano-ITX ボード ---------- 28818 -------- Saved 
+EmQ-i2200 Intel® Pentium®/Celeron® N3000 ファミリー SoC Qseven® R2.0 CPU モジュール ---------- 28819 -------- Saved 
+VT1020 - 10.4 英寸耐用型车载终端    ---------- 28820 -------- Saved 
+VT1020 - 10.4 インチ堅牢型車載用端末 ---------- 28821 -------- Saved 
+FerriSSD®  ---------- 28836 -------- Saved 
+Caerus - 采用 Intel® Atom® 处理器 C2500/2700 系列的服务器板  ---------- 28837 -------- Saved 
+Caerus - Intel® Atom® プロセッサー C2500/2700 ファミリーを搭載したサーバーボード ---------- 28838 -------- Saved 
+SBS 耐用型液晶电脑 SPC-1008B  ---------- 28839 -------- Saved 
+SBS 堅牢なパネル PC SPC-1008B ---------- 28840 -------- Saved 
+MinnowBoard Turbot  ---------- 28843 -------- Saved 
+MinnowBoard Turbot ---------- 28844 -------- Saved 
+RCC-DFF Nano-ITX NFV 可用边缘设备  ---------- 28845 -------- Saved 
+RCC-DFF Nano-ITX NFV 機能付きエッジ・デバイス ---------- 28846 -------- Saved 
+RCC-VE 网络边缘设备和虚拟 CPE  ---------- 28847 -------- Saved 
+RCC VE ネットワーク・エッジ・デバイスと仮想 CPE ---------- 28848 -------- Saved 
+conga-TCA4 ---------- 28849 -------- Saved 
+conga-TCA4 ---------- 28850 -------- Saved 
+SlimPOS IvyBridge  ---------- 28853 -------- Saved 
+SlimPOS IvyBridge ---------- 28854 -------- Saved 
+SlimPOS D525  ---------- 28855 -------- Saved 
+SlimPOS D525 ---------- 28856 -------- Saved 
+POS M8750  ---------- 28857 -------- Saved 
+POS M8750 ---------- 28858 -------- Saved 
+POS P1515 ---------- 28859 -------- Saved 
+POS P1515 ---------- 28860 -------- Saved 
+POS Columbus-II  ---------- 28861 -------- Saved 
+POS Columbus-II ---------- 28862 -------- Saved 
+POS Columbus  ---------- 28863 -------- Saved 
+POS Columbus ---------- 28864 -------- Saved 
+POS Taitan  ---------- 28865 -------- Saved 
+POS Taitan ---------- 28866 -------- Saved 
+NM POS  ---------- 28867 -------- Saved 
+NM POS ---------- 28868 -------- Saved 
+JS-950  ---------- 28869 -------- Saved 
+JS-950 ---------- 28870 -------- Saved 
+PPOS GM45  ---------- 28871 -------- Saved 
+PPOS GM45 ---------- 28872 -------- Saved 
+PPOS 945GSE  ---------- 28873 -------- Saved 
+PPOS 945GSE ---------- 28874 -------- Saved 
+K2 POS MB  ---------- 28875 -------- Saved 
+K2 POS MB ---------- 28876 -------- Saved 
+设备中枢 - 极致  ---------- 28877 -------- Saved 
+Device Hub-Extreme ---------- 28878 -------- Saved 
+TM-i Advance  ---------- 28879 -------- Saved 
+TM-i アドバンス ---------- 28880 -------- Saved 
+ITX-I89H0 - 采用 Intel® Xeon® 处理器 E3-1505L 的嵌入式迷你 ITX 主板 ---------- 28881 -------- Saved 
+ITX-I89H0 - Intel® Xeon® プロセッサー E3-1505L 搭載のエンベデッド Mini-ITX マザーボード ---------- 28882 -------- Saved 
+MT200 for Financial Application  ---------- 28883 -------- Saved 
+TEB-M9303在自助终端的应用 ---------- 28884 -------- Saved 
+ITX-J1900P-6CD8/ Integrated Intel® Celeron® J1900 Embedded Motherboard ---------- 28885 -------- Saved 
+EC3-J1900T-6CDP2L - 3.5"  Integrated Intel® Celeron® J1900 Embedded board ---------- 28886 -------- Saved 
+ITX-4100UT-6CD8 - 17*17CM Integrated Intel® Core™ i3 4100U THIN-MINI ITX ---------- 28887 -------- Saved 
+ITX-J1900P-6C2L - 17*17CM Integrated Intel® Celeron® J1900 MINI-ITX Board ---------- 28888 -------- Saved 
+OPS整机TOP-H61 ---------- 28889 -------- Saved 
+ITX-H81P-10CAT - 17*17CM Intel® LGA 1150 processor MINI-ITX board ---------- 28892 -------- Saved 
+ITX-N1037T-10CD8 - 17*17CM Dual core Intel® Celeron® 1037U MINI-ITX Board ---------- 28893 -------- Saved 
+ITX-2637M-6CD8 - 17*17CM Intel® Core™ i7 2637M processor + Intel® HM65 chipset THIN MINI-ITX Board ---------- 28894 -------- Saved 
+LAN-B85SFP-6L - 23*23CM 6*LAN Intel® B85 Industrial Board/ supports Intel® Core™ i7/ Core™ i5/ Core™ i3/ Pentium®/ Celeron® LGA 1150 processor ---------- 28897 -------- Saved 
+坚固型移动平板电脑DT313H ---------- 28898 -------- Saved 
+GNSS平板电脑DT391GS ---------- 28899 -------- Saved 
+医疗推车专用电脑DT592IB ---------- 28900 -------- Saved 
+X11SBA-F Supermicro Embedded Motherboard ---------- 28902 -------- Saved 
+X11SBA-LN4F Supermicro Embedded Motherboard ---------- 28903 -------- Saved 
+C7H160 Supermicro Embedded Motherboard ---------- 28904 -------- Saved 
+X11SSZ-QF Supermicro Embedded Motherboard ---------- 28905 -------- Saved 
+X11SSV-Q Supermicro Embedded Motherboard ---------- 28906 -------- Saved 
+X11SSQ Supermicro Embedded Motherboard ---------- 28907 -------- Saved 
+Supermicro X10SDV-4C-TLN2F Mini-ITX Motherboard ---------- 28908 -------- Saved 
+BC-0928 COM Express Intel® 4th Gen. Core™ i7/i5/i3 CPU Module ---------- 28909 -------- Saved 
+S042 OPS-C 规范 独显系列整机 ---------- 28911 -------- Saved 
+MH70S Rugged 19" Modular Storage System ---------- 28913 -------- Saved 
+BPC-6977 - EPIC Embedded Motherboard supports 5th Gen Intel® Core™ i3 / i5 / i7 processor  ---------- 28914 -------- Saved 
+EMB-4926 - EPIC 4 inch Embedded Industrial Motherboard supports 5th Gen. Intel® Core™ processors ---------- 28915 -------- Saved 
+MITX-6111 - MINI ITX Motherboard based on Gen. 5 Intel® Core™ i3 / i5 / i7 processor ---------- 28916 -------- Saved 
+Giada MI-N3150SL Mini-ITX 主板基于 Intel® Celeron™ N3150 N3150 处理器 ---------- 28917 -------- Saved 
+PCE-9228 - Dual LGA 2011-R3 Intel Xeon® E5-2600v3 SHB Server Board with DDR4, DDR4/SATA3.0/USB3.0/Dual GbE ---------- 28919 -------- Saved 
+Giada MI-5200DL Mini-ITX 主板基于 Intel® Core™ i5-5200U i5-5200U 处理器 ---------- 28920 -------- Saved 
+Giada MI-J1900SL-N Mini-ITX 主板基于 Intel® BayTrail-D™ J1900 处理器 ---------- 28922 -------- Saved 
+Giada MG-5200SL Mini-ITX 主板基于 Intel® Core™ i5-5200U i5-5200U 处理器 ---------- 28923 -------- Saved 
+Giada EN-N2807Dl 3.5英寸 主板基于 Intel® Baytrail™ N2807处理器 ---------- 28924 -------- Saved 
+Giada DN-H81SL V2 Mini-ITX 主板基于 Intel® Haswell™ 处理器 ---------- 28925 -------- Saved 
+Giada F200 ---------- 28926 -------- Saved 
+Giada F202 ---------- 28927 -------- Saved 
+Giada F202 ---------- 28928 -------- Saved 
+Giada F109 ---------- 28930 -------- Saved 
+Giada P268 ---------- 28931 -------- Saved 
+Giada i58B ---------- 28932 -------- Saved 
+Giada F110D ---------- 28933 -------- Saved 
+Giada GT200 ---------- 28934 -------- Saved 
+Giada GT400 ---------- 28935 -------- Saved 
+Giada N21M-MV ---------- 28936 -------- Saved 
+Giada N30M-VA ---------- 28937 -------- Saved 
+Giada N50M-BU ---------- 28938 -------- Saved 
+FWA-3260 - 1U Rackmount Network Application Platform with Intel® Xeon® Processor D Family ---------- 28939 -------- Saved 
+Giada N50M-BD ---------- 28940 -------- Saved 
+Giada N50S-O ---------- 28941 -------- Saved 
+OPS整机TOP-H81 ---------- 28942 -------- Saved 
+DFI BW551 3.5" SBC based on Intel® Pentium®/Celeron® N3000 Product Family ---------- 28943 -------- Saved 
+BH960-QM87 COM Express based on 5th Generation Intel® Core™ ---------- 28944 -------- Saved 
+PCOM-B634VG - Type VI Basic COM Express 2.0 module ---------- 28945 -------- Saved 
+Mobile Visual Search (Universal Scanner) ---------- 28946 -------- Saved 
+ReliaGATE 20-25 ---------- 28947 -------- Saved 
+HT-P112  6U CPCI Intel® Xeon®主板 ---------- 28950 -------- Saved 
+TEB-M8046自助终端的应用 ---------- 28951 -------- Saved 
+TEA-N2108网络安全产品的应用 ---------- 28953 -------- Saved 
+CC150 - Internet of Things Gateway with Candi® IoT Server ---------- 28955 -------- Saved 
+IoT-ML100G - Industrial Compact Fanless IoT Gateway with 5th Generation Intel® Core™ Processor ---------- 28956 -------- Saved 
+IoT-ML310G - Industrial Intel Fanless IoT Gateway with Intel® Atom® E3815 processor ---------- 28957 -------- Saved 
+ITX4013 ---------- 28958 -------- Saved 
+DS3428 - DxWay融合计算平台 ---------- 28961 -------- Saved 
+EX1024 - ATOM®网络应用平台 ---------- 28962 -------- Saved 
+Giada i58B ---------- 28965 -------- Saved 
+Giada F110D ---------- 28966 -------- Saved 
+Giada F200 ---------- 28967 -------- Saved 
+Giada MG-5200SL Mini-ITX based on Intel® Core™ i5-5200U i5-5200U Processor ---------- 28970 -------- Saved 
+Giada MI-J1900SL-N Mini-ITX based on Intel® Celeron® Processor J1900 ---------- 28971 -------- Saved 
+Giada MI-5200DL Mini-ITX based on Intel® Core™ i5-5200U i5-5200U Processor ---------- 28972 -------- Saved 
+Giada DN-H81SL ---------- 28973 -------- Saved 
+Giada EN-N2807Dl 3.5" based on Intel® Celeron™ N2807 Processor ---------- 28974 -------- Saved 
+Giada GT200 - Micro Server for SME ---------- 28975 -------- Saved 
+Giada GT400 - Micro Server for SME ---------- 28976 -------- Saved 
+Giada N21M-MV ---------- 28977 -------- Saved 
+Giada N30M-VA - Server Motherboard ---------- 28978 -------- Saved 
+Giada N32M-BU - Intel® Xeon® E3 Series Server Motherboard ---------- 28979 -------- Saved 
+Giada N32M-VU - E3 Series Server Motherboard ---------- 28982 -------- Saved 
+Giada N50M-BD - Intel® Xeon® E5 Series  Server Motherboard ---------- 28983 -------- Saved 
+Giada N50M-BU - Intel® Xeon® E5 Series  Server Motherboard ---------- 28984 -------- Saved 
+Giada N50S-O - Intel® Xeon® E5 Series  Server Motherboard ---------- 28985 -------- Saved 
+MIC-6313 - VPX blade ---------- 28986 -------- Saved 
+MIC-3396MIL-6U CompactPCI 4th/5th Generation Intel® Core™ i5/i7 Processor Blade with ECC support ---------- 28987 -------- Saved 
+AIMB-216 - Mini-ITX Motherboard  ---------- 28988 -------- Saved 
+ADLINK cPCI-6940 6U CompactPCI Intel® Xeon® Processor D-1500 Processor Blade ---------- 28989 -------- Saved 
+HFCE-75 ---------- 28990 -------- Saved 
+NANO-ULT3 EPIC Embedded Board with 6th Gen Intel® Core™ platform ---------- 28992 -------- Saved 
+KINO-AQ170 Mini-ITX Industrial Motherboard with Intel® Q170 chipset ---------- 28994 -------- Saved 
+2I385SW - Intel® Celeron® J1900 Quad core CPU/ Chipset Pico-ITX SBC ---------- 28995 -------- Saved 
+Blade System - 18mm / 260 g Ultra Slim Embedded Thin Client/Digital Signage/Networking System ---------- 28996 -------- Saved 
+LAN-B85SFP-6L - 23*23 厘米 6 个局域网 Intel® B85 工业主板/ 支持 Intel® Core™ i7/ Core™ i5/ Core™ i3/ Pentium®/ Celeron® LGA 1150 处理器   ---------- 28997 -------- Saved 
+LAN-B85SFP-6L - 23*23CM 6*LAN Intel® B85 産業用ボード/ Intel® Core™ i7/ Core™ i5/ Core™ i3/ Pentium®/ Celeron® LGA 1150 プロセッサーをサポート ---------- 28998 -------- Saved 
+ITX-2637M-6CD8 - 17*17 厘米 Intel® Core™ i7 2637M 处理器 + Intel® HM65 芯片组超薄迷你 ITX 板   ---------- 29001 -------- Saved 
+ITX-2637M-6CD8 - 17*17CM Intel® Core™ i7 2637M プロセッサー + Intel® HM65 チップセット THIN MINI-ITX ボード ---------- 29002 -------- Saved 
+ITX-N1037T-10CD8 - 17*17 厘米双核 Intel® Celeron® 1037U 迷你 ITX 板   ---------- 29003 -------- Saved 
+ITX-N1037T-10CD8 - 17*17CM デュアルコア Intel® Celeron® 1037U MINI-ITX ボード ---------- 29004 -------- Saved 
+ITX-H81P-10CAT - 17 个 17 厘米 Intel® LGA 1150 处理器迷你 ITX 板   ---------- 29005 -------- Saved 
+ITX-H81P-10CAT - 17*17CM Intel® LGA 1150 プロセッサー MINI-ITX ボード ---------- 29006 -------- Saved 
+ITX-J1900P-6C2L - 17*17 厘米集成 Intel® eleron® J1900 迷你 ITX 板   ---------- 29007 -------- Saved 
+ITX-J1900P-6C2L - 17*17CM 統合 Intel® Celeron® J1900 MINI-ITX ボード ---------- 29008 -------- Saved 
+ITX-4100UT-6CD8 - 17*17 厘米集成 Intel® Core™ i3 4100U 超薄迷你 ITX   ---------- 29009 -------- Saved 
+ITX-4100UT-6CD8 - 17*17CM 統合 Intel® Core™ i3 4100U THIN-MINI ITX ---------- 29010 -------- Saved 
+EC3-J1900T-6CDP2L - 3.5 英寸集成 Intel® Celeron® J1900 嵌入式板   ---------- 29011 -------- Saved 
+EC3-J1900T-6CDP2L - 3.5 インチ統合 Intel® Celeron® J1900 SOC エンベデッド・ボード ---------- 29012 -------- Saved 
+ITX-J1900P-6CD8/ 集成的 Intel® Celeron® J1900 嵌入式主板   ---------- 29013 -------- Saved 
+ITX-J1900P-6CD8/ 統合 Intel® Celeron® J1900 エンベデッド・マザーボード ---------- 29014 -------- Saved 
+EC3-J1900-6CDP2L - 3.5 英寸集成 Intel® Celeron® J1900 SOC 嵌入式板   ---------- 29017 -------- Saved 
+EC3-J1900-6CDP2L - 3.5 インチ統合 Intel® Celeron® J1900 SOC エンベデッド・ボード ---------- 29018 -------- Saved 
+搭载第 6 代 Intel® Core™ 移动 CPU 的 IT9 Mini-ITX 主板  ---------- 29019 -------- Saved 
+第 6 世代 Intel® Core™ モバイル CPU を搭載した IT9 Mini-ITX マザーボード  ---------- 29020 -------- Saved 
+ARCHMI-912（P） - 无风扇 12.1 英寸平挡板液晶屏，采用 Intel® Core™ i3/i5/i7 处理器 HMI   ---------- 29021 -------- Saved 
+ARCHMI-912(P) - Intel® Core™ i3/i5/i7 プロセッサー HMI 搭載のファンレス 12.1 インチのフラット・ベゼル LCD スクリーン ---------- 29022 -------- Saved 
+XCalibur4643 | 基于 Intel® Xeon® D-1500 系列处理器的 6U VPX SBC，配备两个 10 千兆以太网、双 XMC/PMC 站点和板载 FPGA ---------- 29025 -------- Saved 
+XCalibur4643 | Intel® Xeon® D-1500 ファミリー・プロセッサー・ベースの 6U VPX SBC、デュアル 10GbE、デュアル XMC/PMC サイト、オンボード FPGA を装備 ---------- 29026 -------- Saved 
+GOT3217W-881 -- 21.5 英寸全高清 TFT 无风扇多点触控液晶电脑，采用 LGA1150 插座 Intel® Core™ i7/i5/i3 & Celeron®  处理器   ---------- 29027 -------- Saved 
+GOT3217W-881 --  LGA1150 Socket Intel® Core™ i7/i5/i3 & Celeron® プロセッサー搭載の 21.5 インチのフル HD TFT ファンレス・マルチタッチ・パネル・コンピューター ---------- 29028 -------- Saved 
+PA-6722-PPC 15 英寸无风扇超薄液晶电脑   ---------- 29029 -------- Saved 
+PA-6722-PPC 15 インチ ファンレス・スリム・パネル PC ---------- 29030 -------- Saved 
+PA-6722，15 英寸无风扇超薄 POS 终端   ---------- 29031 -------- Saved 
+PA-6722- 15 インチのファンレス・スリム POS 端末 ---------- 29032 -------- Saved 
+SP-7925 无风扇低功率 15 英寸 Intel® Atom® D2550 液晶电脑   ---------- 29033 -------- Saved 
+SP-7925 ファンレス、省エネルギー 15 インチ Intel® Atom® D2550 パネル PC ---------- 29034 -------- Saved 
+SP-7927 无风扇低功率 17 英寸 Intel® Atom® D2550 液晶电脑   ---------- 29035 -------- Saved 
+SP-7927 ファンレス低消費電力 17 インチ Intel® Atom® D2550 パネル PC ---------- 29036 -------- Saved 
+SP-7627 高性能第 3 代   Intel® Core™ i5/i3 和 Pentium® 处理器 17 英寸液晶电脑   ---------- 29037 -------- Saved 
+SP-7627 高性能第 3 世代 Intel® Core™ i5/i3 および Pentium® プロセッサー 17 インチのパネル PC ---------- 29038 -------- Saved 
+SP-6208 无风扇高性能 18.5 英寸液晶电脑  ---------- 29039 -------- Saved 
+SP-6208 ファンレスかつ高性能 18.5 パネル PC ---------- 29040 -------- Saved 
+SP-7929 无风扇低功率 19 英寸 Intel® Atom® D2550 液晶电脑  ---------- 29041 -------- Saved 
+SP-7929 ファンレス、省エネルギー 19 インチ Intel® Atom® D2550 パネル PC ---------- 29042 -------- Saved 
+SP-7629 高性能 Intel® 第 3 代  Core™ i5/i3 和 Pentium® 处理器 19 英寸液晶电脑  ---------- 29043 -------- Saved 
+SP-7629 高性能 Intel 第 3 世代 Core™ i5/i3 および Pentium® プロセッサー 19 インチ・パネル PC ---------- 29044 -------- Saved 
+SP-6140 Intel® Atom® E3845/E3826/Celeron® J1900 处理器无风扇低功率 10.4 英寸液晶电脑  ---------- 29045 -------- Saved 
+SP-6140 Intel® Atom® E3845/E3826/Celeron® J1900 プロセッサー、ファンレスおよび省エネルギー設計の 10.4 インチのパネル PC ---------- 29046 -------- Saved 
+SP-6145 Intel® Atom® E3845/E3826/Celeron® J1900 处理器无风扇低功率 15 英寸液晶电脑  ---------- 29047 -------- Saved 
+SP-6145 Intel® Atom® E3845/E3826/ Celeron® J1900 プロセッサー、ファンレスおよび省エネルギー設計の 15 インチのパネル PC ---------- 29048 -------- Saved 
+BK-0940 Flex ATX MB 支持第 4 代  Intel® Core™ i7/i5/i3/ Pentium® 处理器  ---------- 29051 -------- Saved 
+BK-0940 Flex ATX MB は第 4 世代 Intel® Core™ i7/i5/i3/ Pentium® プロセッサーをサポート ---------- 29052 -------- Saved 
+ATP SATA DOM  ---------- 29053 -------- Saved 
+ATP 2.5 英寸固态硬盘 - Velocity SI Pro   ---------- 29054 -------- Saved 
+ATP 2.5 英寸固态硬盘 - Velocity M IV   ---------- 29055 -------- Saved 
+ATP 2.5 英寸固态硬盘 - Velocity XE   ---------- 29056 -------- Saved 
+ATP 2.5 英寸固态硬盘 - Velocity SI Lite   ---------- 29057 -------- Saved 
+COM-SKHB6 （COM Express CPU 模块）  ---------- 29058 -------- Saved 
+COM-SKHB6 (COM Express CPU モジュール) ---------- 29059 -------- Saved 
+VTC 7220-R 无风扇铁路计算机  ---------- 29060 -------- Saved 
+VTC 7220-R ファンレス鉄道コンピューター  ---------- 29061 -------- Saved 
+VTC 6210-R 无风扇铁路计算机 & 物联网网关  ---------- 29062 -------- Saved 
+VTC 6210-R ファンレス鉄道コンピューター & IoT ゲートウェイ ---------- 29063 -------- Saved 
+COM-SKUC6 （COM Express CPU 模块）  ---------- 29064 -------- Saved 
+COM-SKUC6 (COM Express CPU モジュール) ---------- 29065 -------- Saved 
+XPedite7575 | 基于第 5 代 Intel® Core™ i7 处理器的 3U VPX-REDI单板计算机 ---------- 29070 -------- Saved 
+XPedite7575 | 第 5 世代 Intel® Core™ i7 プロセッサーベースの 3U VPX-REDI シングルボード・コンピューター ---------- 29071 -------- Saved 
+DT592IB - Medical vehicle specific computer ---------- 29074 -------- Saved 
+DT391GS - GNSS Tablet PC  ---------- 29075 -------- Saved 
+Rugged mobile tablet DT313H ---------- 29076 -------- Saved 
+TEA-S1803 for Thin Client Application ---------- 29077 -------- Saved 
+The application of TEB-M9302 in self-service terminal ---------- 29078 -------- Saved 
+TOP-H61 - OPS machine  ---------- 29080 -------- Saved 
+The application of TEB-M9303 Mini-ITX Motherboard in self-service terminal ---------- 29081 -------- Saved 
+ReliaGATE 20-25 ---------- 29082 -------- Saved 
+HC-1021 - Panel PC ---------- 29087 -------- Saved 
+XT-6515 ---------- 29088 -------- Saved 
+BD67Q Image generator for Medical Device Applications ---------- 29089 -------- Saved 
+Burke 1040 Image Generator ---------- 29090 -------- Saved 
+GB-SIOPS-4550U OPS Digital Signage System ---------- 29091 -------- Saved 
+ReliaGATE 20-25  ---------- 29093 -------- Saved 
+HFCE-75 ---------- 29094 -------- Saved 
+Burke 1927 High-Speed Image Capture/Generation System  ---------- 29095 -------- Saved 
+DFI SH960-HM170 - COM Express Basic based on 6th Gen Intel® Core™  ---------- 29096 -------- Saved 
+DFI SH960-QM170 COM Express Basic based on 6th Gen Intel® Core™ Processor ---------- 29097 -------- Saved 
+BH960-QM87 - COM Express® Basic based on 5th Gen Intel® Core™ ---------- 29098 -------- Saved 
+D3417-B - Extended Lifecycle µATX Mainboard ---------- 29099 -------- Saved 
+Unified Visual Analytics and BI for Big Data ---------- 29100 -------- Saved 
+CAPA843 -- Intel® Celeron® J1900 3.5" Embedded SBC with LVDS/VGA/HDMI, Dual LAN, Audio and ZIO ---------- 29105 -------- Saved 
+tBOX810-838-FL -- Fanless Embedded System with Intel® Atom® Processor E3845/E3827 for Vehicle, Railway and Marine PC ---------- 29106 -------- Saved 
+PICO842 -- Intel® Celeron® Processor J1900/N2807 Pico-ITX SBC with LVDS/VGA (HDMI), LAN & Audio ---------- 29107 -------- Saved 
+SCB-1901 2U Rack-Mount Dual Intel® DH8950 PCH Network System, 7 PCIe x16 slot for expansion LAN module, IPMI, 1 USB, 1 SATA HDD, 2 GbE, CF, 1 PCIe x8 slot, Redundant PSU ---------- 29109 -------- Saved 
+SCB-1901 2U Rack-Mount Dual Intel® Xeon® E5-2600 / E5-2600V2 Series Processor and DH8950 PCH Network System, 7 PCIe x16 slot for expansion LAN module, IPMI, 1 USB, 1 SATA HDD, 2 GbE, CF, 1 PCIe x8 slot, Redundant PSU ---------- 29110 -------- Saved 
+SmartEdge Solution Suite ---------- 29111 -------- Saved 
+SCB-7983 1U Rack-Mount Intel® Atom® C2000 Processor Network System, 8 Copper GbE, SATA, CF, LCM, PCI-E ---------- 29112 -------- Saved 
+SCB-7983 1U Rack-Mount Intel® Atom® C2000 Processor Network System, 8 Copper GbE, SATA, CF, LCM, PCI-E ---------- 29113 -------- Saved 
+SCB-7982 1U Rack-Mount Intel® Core i7/i5/i3 Network System, 6 Copper GbE, SATA, CF, LCM, PCI-E, Bypass ---------- 29114 -------- Saved 
+SCB-7982 1U ラックマウント Intel® Core i7/i5/i3 ネットワーク・システム、 6 カッパー GbE、SATA、CF、LCM、PCI-E、バイパス ---------- 29115 -------- Saved 
+SCB-7982 1U Rack-Mount Intel® Core™ i7/i5/i3 Network System, 6 Copper GbE, SATA, CF, LCM, PCI-E, Bypass ---------- 29116 -------- Saved 
+SCB-1703 Rack-mount 22nm Intel® Core™ i3/i5/i7/Pentium® and Celeron® series with LGA1150 processors and Max 10 x GbE ports, SATA, CF, Gen.3 Bypass function ---------- 29117 -------- Saved 
+XPedite7672 | Intel® Xeon® D-1500 Family Processor-Based 3U VPX-REDI SBC with Dual 10 Gigabit Ethernet ---------- 29127 -------- Saved 
+Giada N32M-BU - Intel® Xeon® E3 系列服务器主板   ---------- 29128 -------- Saved 
+Giada N32M-BU - Intel® Xeon® E3 シリーズのサーバー・マザーボード ---------- 29129 -------- Saved 
+Giada N30M-VA - 服务器主板   ---------- 29130 -------- Saved 
+Giada N30M-VA - サーバー・マザーボード ---------- 29131 -------- Saved 
+Giada N21M-MV   ---------- 29132 -------- Saved 
+Giada N21M-MV ---------- 29133 -------- Saved 
+Giada GT400 - 适用于中小型企业的微型服务器   ---------- 29134 -------- Saved 
+Giada GT400 -  SME 向けマイクロサーバー ---------- 29135 -------- Saved 
+Giada GT200 - 适用于中小型企业的微型服务器   ---------- 29136 -------- Saved 
+Giada GT200 -  SME 向けマイクロサーバー ---------- 29137 -------- Saved 
+Giada EN-N2807Dl 3.5 英寸基于 Intel® Celeron™ N2807 处理器   ---------- 29138 -------- Saved 
+Intel® Celeron™ N2807 プロセッサーをベースにした Giada EN-N2807Dl 3.5 インチ ---------- 29139 -------- Saved 
+Giada DN-H81SL   ---------- 29140 -------- Saved 
+Giada DN-H81SL ---------- 29141 -------- Saved 
+Giada MI-5200DL 迷你 ITX 基于 Intel® Core™ i5-5200U i5-5200U 处理器   ---------- 29142 -------- Saved 
+Intel® Core™ i5-5200U i5-5200U プロセッサーをベースにした Giada MI-5200DL Mini-ITX  ---------- 29143 -------- Saved 
+Giada MI-J1900SL-N 迷你 ITX 基于 Intel® Celeron® 处理器 J1900   ---------- 29144 -------- Saved 
+Intel® Celeron® プロセッサー J1900 をベースにした Giada MI-J1900SL-N Mini-ITX ---------- 29145 -------- Saved 
+Giada MG-5200SL 迷你 ITX 基于 Intel® Core™ i5-5200U i5-5200U 处理器   ---------- 29146 -------- Saved 
+Intel® Core™ i5-5200U i5-5200U プロセッサーをベースにした Giada MG-5200SL Mini-ITX  ---------- 29147 -------- Saved 
+Giada F200   ---------- 29152 -------- Saved 
+Giada F200 ---------- 29153 -------- Saved 
+Giada F110D   ---------- 29154 -------- Saved 
+Giada F110D ---------- 29155 -------- Saved 
+Giada i58B   ---------- 29156 -------- Saved 
+Giada i58B ---------- 29157 -------- Saved 
+ IoT-ML310G - 采用 Intel® Atom® E3815 处理器的工业 Intel 无风扇物联网网关    ---------- 29160 -------- Saved 
+ IoT-ML310G - 工業用 Intel ファンレス IoT ゲートウェイ、Intel® Atom® E3815 プロセッサー搭載 ---------- 29161 -------- Saved 
+ IoT-ML100G - 配备第 5 代 Intel® Core™ 处理器的工业紧凑型无风扇物联网网关   ---------- 29162 -------- Saved 
+ IoT-ML100G - 産業用 IoT ゲートウェイ、第 5 世代 Intel® Core™ プロセッサー ---------- 29163 -------- Saved 
+CC150 - 配备 Candi® 物联网服务器的物联网网关    ---------- 29164 -------- Saved 
+CC150 - Candi® IoT サーバー搭載の Internet of Things ゲートウェイ ---------- 29165 -------- Saved 
+PCOM-B634VG - VI 型基础 COM Express 2.0 模块   ---------- 29170 -------- Saved 
+PCOM-B634VG - Type VI Basic COM Express 2.0 モジュール ---------- 29171 -------- Saved 
+BH960-QM87 COM Express 基于第 5 代 Intel® Core™  ---------- 29172 -------- Saved 
+第 5 世代 Intel® Core™ プロセッサーを基盤にした BH960-QM87 COM Express  ---------- 29173 -------- Saved 
+DFI BW551 3.5 英寸 SBC 基于 Intel® Pentium®/Celeron® N3000 产品系列   ---------- 29174 -------- Saved 
+Intel® Pentium®/Celeron® N3000 製品ファミリーをベースにした DFI BW551 3.5 インチ SBC  ---------- 29175 -------- Saved 
+FWA-3260 - 1U 机架式网络应用平台，采用 Intel® Xeon® 处理器 D 系列   ---------- 29176 -------- Saved 
+FWA-3260 - 1U ラックマウント・ネットワーク・アプリケーション・プラットフォーム、Intel® Xeon® プロセッサー D ファミリー搭載 ---------- 29177 -------- Saved 
+PCE-9228 - 双 LGA 2011-R3 Intel Xeon® E5-2600v3 SHB 服务器板，配备 DDR4、DDR4/SATA3.0/USB3.0/双千兆以太网   ---------- 29178 -------- Saved 
+PCE-9228 - デュアル LGA 2011-R3 Intel Xeon® E5-2600v3 SHB サーバー・ボード、DDR4, DDR4/SATA3.0/USB3.0/デュアル GbE 装備 ---------- 29179 -------- Saved 
+MITX-6111 - 迷你 ITX 主板基于   第 5 代 Intel® Core™ i3 / i5 / i7 处理器   ---------- 29180 -------- Saved 
+MITX-6111 - MINI ITX マザボードは 第 5 世代 Intel® Core™ i3 / i5 / i7 プロセッサーをベースに使用 ---------- 29181 -------- Saved 
+EMB-4926 - EPIC 4 英寸嵌入式工业主板支持第 5 代   Intel® Core™ 处理器 ---------- 29182 -------- Saved 
+EMB-4926 - EPIC 4 インチ・エンベデッド産業用マザーボード、第 5 世代 Intel® Core™ プロセッサーをサポート ---------- 29183 -------- Saved 
+BPC-6977 - EPIC 嵌入式主板支持第 5 代 Intel® Core™ i3 / i5 / i7 处理器   ---------- 29184 -------- Saved 
+BPC-6977 - EPIC エンベデッド・マザーボード、第 5 世代 Intel® Core™ i3 / i5 / i7 プロセッサーをサポート  ---------- 29185 -------- Saved 
+MH70S 耐用型 19 英寸模块化存储系统   ---------- 29186 -------- Saved 
+MH70S 堅牢型 19 インチのモジュラー・ストレージ・システム ---------- 29187 -------- Saved 
+BC-0928 COM Express Intel® 第 4 代   Core™ i7/i5/i3 CPU 模块   ---------- 29188 -------- Saved 
+BC-0928 COM Express Intel® 第 4 世代 Core™ i7/i5/i3 CPU モジュール ---------- 29189 -------- Saved 
+Supermicro X10SDV-4C-TLN2F Mini-ITX 主板 ---------- 29190 -------- Saved 
+Supermicro X10SDV-4C-TLN2F Mini-ITX マザーボード ---------- 29191 -------- Saved 
+X11SBA-LN4F 超微嵌入式主板  ---------- 29200 -------- Saved 
+X11SBA-LN4F スーパマイクロ・エンベデッド・マザーボード ---------- 29201 -------- Saved 
+X11SBA-F 超微嵌入式主板   ---------- 29202 -------- Saved 
+X11SBA-F スーパーマイクロ・エンベデッド・マザーボード ---------- 29203 -------- Saved 
+EX1024 - Intel™ Atom® network application platform ---------- 29210 -------- Saved 
+DS3428-DxWay integration computing platform ---------- 29211 -------- Saved 
+The application of TEA-N2108 network security product ---------- 29215 -------- Saved 
+HT-P112 6U CPCI Intel® Xeon® Board ---------- 29218 -------- Saved 
+OPS machine TOP-H81 ---------- 29219 -------- Saved 
+Giada N50S-O ---------- 29220 -------- Saved 
+Giada N50M-BD ---------- 29221 -------- Saved 
+Giada N50M-BU ---------- 29222 -------- Saved 
+Giada N30M-VA ---------- 29223 -------- Saved 
+Giada N21M-MV ---------- 29224 -------- Saved 
+Giada GT400 ---------- 29225 -------- Saved 
+Giada GT200 ---------- 29226 -------- Saved 
+Giada F110D ---------- 29227 -------- Saved 
+Giada i58B ---------- 29228 -------- Saved 
+Giada P268 ---------- 29229 -------- Saved 
+Giada F109 ---------- 29230 -------- Saved 
+Giada F202 ---------- 29231 -------- Saved 
+Giada F202 ---------- 29232 -------- Saved 
+Giada F200 ---------- 29233 -------- Saved 
+Giada DN-H81SL V2 Mini-ITX motherboard ---------- 29234 -------- Saved 
+Giada EN-N2807Dl 3.5-inch motherboard based on the Intel® N2807 processor ---------- 29235 -------- Saved 
+Giada MG-5200SL Mini-ITX motherboard is based on Intel® Core™ i5-5200U i5-5200U processor. ---------- 29236 -------- Saved 
+Giada MI-J1900SL-N Mini-ITX motherboard based on Intel® J1900 processor ---------- 29237 -------- Saved 
+Giada MI-5200DL Mini-ITX motherboard based on Intel® Core™ i5-5200U processor ---------- 29238 -------- Saved 
+Giada MI-N3150SL Mini-ITX Motherboard Powered by Intel® Celeron™ N3150 Processor ---------- 29239 -------- Saved 
+S042 - machine with independent display in OPS-C specification ---------- 29241 -------- Saved 
+SCB-1805 2U Rack-Mount, 4th gen Intel® Core™/ Xeon® processor with Intel® C226 PCH, DDR3, 4x PCIe slots for Expansion Module , 1x PCIe x4 slot, Console, USB, 4x GbE, 4x SATA HDD, CF ---------- 29244 -------- Saved 
+SCB-1805 2U - Rack-Mount, with Intel® C226 PCH, DDR3, 4x PCIe slots for Expansion Module , 1x PCIe x4 slot, Console, USB, 4x GbE, 4x SATA HDD, CF ---------- 29245 -------- Saved 
+SCB-1803 - 2U rack-mounted hardware platform designed for network sevice applications. ---------- 29246 -------- Saved 
+SCB-1802 2U Rack-Mount Intel® Core™ i3/i5/i7 and Intel® Xeon® E3 processor, LGA1155, 4 GbE, 2 x SATA HDD, CF, LCM, PCI, PCI-E x4/x8/x16 ---------- 29247 -------- Saved 
+ADLINK VPX3010 - Rugged 3U VPX Intel® Xeon® Processor D-1500 Processor Blade ---------- 29248 -------- Saved 
+SCB-7905 1U Rack-Mount Intel® Atom® Processor C2000 Network System, 8 Copper GbE, SATA,CF, LCM, PCI-E ---------- 29254 -------- Saved 
+SCB-6987 - Desktop Intel® Atom® Processor C2000 Network System, 8 Copper GbE, SATA, CF, mini PCI-E Support ---------- 29255 -------- Saved 
+SCB-6985 Desktop Intel® Celeron® J1900 Network System, Six Copper GbE, CF, SATA, mini-PCIe, Bypass ---------- 29256 -------- Saved 
+SCB-6981 Fanless Intel® Atom® D2550 Network System, 6 Copper GbE, CF, SATA, PCI-E, Bypass ---------- 29257 -------- Saved 
+SCB-6902 Desktop Intel® Atom® Network System, 4x Copper GbE, CF, SATA and mini-PCIe ---------- 29258 -------- Saved 
+SCB-6010 DIN-rail Intel® Atom® Processor Industrial Network System, 6/2 Serial Ports, 2/6 Copper GbE, SATA, CF, Bypass ---------- 29259 -------- Saved 
+conga-MA4 - COM Express Type 10 module ---------- 29260 -------- Saved 
+Avalue EPI-BDW 5th Gen Intel® Core™ Processor i7 EPIC Module with Intel® QM87 Chipset ---------- 29261 -------- Saved 
+conga-IA4 - Mini-ITX ---------- 29262 -------- Saved 
+BCM RX110H uATX supports 7th Generation (Formerly Kaby Lake) or 6th Generation (Formerly Skylake) Intel® Core™ i7/i5/i3 Processor Family for the high performance value segment ---------- 29263 -------- Saved 
+Avalue EMX-Q170 6th Generation Intel® Core™ Processor Mini ITX Motherboard with Intel® Q170 Express Chipset ---------- 29265 -------- Saved 
+NA580 -- 1U Rackmount Network Appliance Platform with LGA1151 Intel® Xeon® E3/Core™ Processors (Skylake) and 8 LANs ---------- 29267 -------- Saved 
+NH2 - Smallest Windows Compute Stick with Intel® Atom® x5-Z8300 Processor ---------- 29268 -------- Saved 
+COMe-cSL6 ---------- 29270 -------- Saved 
+SD101/SD103-Q170 Mini-ITX Motherboard based on 6th Gen Intel® Core™ Processor ---------- 29281 -------- Saved 
+DFI EC553-DL - Embedded System powered by 4th Gen Intel® Core™ Processor ---------- 29282 -------- Saved 
+SEMSEYE ---------- 29283 -------- Saved 
+ONYX Zeus-228 Intel 6th gen Intel® Core™ i7 22" Multi-Touch Fanless Medical Station ---------- 29286 -------- Saved 
+VT816 - µTCA Chassis, a Scalable Solution for High Energy Physics ---------- 29287 -------- Saved 
+EPIC-BDU7 (EPIC Board) ---------- 29288 -------- Saved 
+BCM MX110H mini-ITX Motherboard supports 6th Gen Intel® Core™ Processor Family ---------- 29291 -------- Saved 
+BCM MX110H mini-ITX Motherboard supports 6th Gen Intel® Core™ Processor Family ---------- 29292 -------- Saved 
+BCM MX170QD mini-ITX Motherboard supports 7th Generation (Formerly Kaby Lake) or 6th Generation (Formerly Skylake) Intel® Core™ Processor Family, Gold Plating Connectors ---------- 29293 -------- Saved 
+BCM RX170Q uATX Motherboard supports 7th/6th Gen Intel® Core™ Processor Family ---------- 29294 -------- Saved 
+ONYX-1222 - 11.6″ Fanless Intel® Celeron® J1900 Quad Core Slim Medical Panel PC ---------- 29295 -------- Saved 
+刀片系统 - 18 毫米 / 260 客超薄嵌入式瘦客户端/数字标牌/网络系统 ---------- 29300 -------- Saved 
+ブレードシステム - 18mm/260g の超スリムな組込み薄型クライアント/デジタルサイネージ/ネットワーキングシステム ---------- 29301 -------- Saved 
+带 Intel® Q170 芯片组的 KINO-AQ170 Mini-ITX 工业主板 ---------- 29302 -------- Saved 
+Intel® Q170 チップセット搭載の KINO-AQ170 Mini-ITX 産業用マザーボード ---------- 29303 -------- Saved 
+NANO-ULT3 EPIC 嵌入式板采用第 6 代 Intel® Core™ 平台 ---------- 29306 -------- Saved 
+NANO-ULT3 EPIC エンベデッド・ボード、第 6 世代 Intel® Core™ プラットフォーム ---------- 29307 -------- Saved 
+AIMB-216 - 迷你 ITX 主板   ---------- 29310 -------- Saved 
+AIMB-216 - Mini-ITX マザーボード  ---------- 29311 -------- Saved 
+MIC-3396MIL-6U CompactPCI 第 4 代/第 5 代 Intel® Core™ i5/i7 处理器刀片带有 ECC 支持 ---------- 29312 -------- Saved 
+MIC-3396MIL-6U CompactPCI 第 4/5 世代 Intel® Core™ i5/i7 プロセッサー・ブレード、ECC をサポート ---------- 29313 -------- Saved 
+MIC-6313 - VPX 刀片 ---------- 29314 -------- Saved 
+MIC-6313 - VPX ブレード ---------- 29315 -------- Saved 
+Giada N50S-O - Intel® Xeon® E5 系列服务器主板  ---------- 29316 -------- Saved 
+Giada N50S-O - Intel® Xeon® E5 シリーズ・サーバー・マザーボード ---------- 29317 -------- Saved 
+Giada N50M-BU - Intel® Xeon® E5 系列服务器主板  ---------- 29318 -------- Saved 
+Giada N50M-BU - Intel® Xeon® E5 シリーズ・サーバー・マザーボード ---------- 29319 -------- Saved 
+Giada N50M-BD - Intel® Xeon® E5 系列服务器主板  ---------- 29320 -------- Saved 
+Giada N50M BD - インテル ® Xeon E5 シリーズ・サーバー・マザーボード ---------- 29321 -------- Saved 
+Giada N32M-VU - E3 系列服务器主板   ---------- 29322 -------- Saved 
+Giada N32M-VU - E3 シリーズ・サーバー・マザーボード ---------- 29323 -------- Saved 
+ONYX-BE182 - 18.5" Healthcare Infotainment Terminal with Quad Core Intel® Celeron® Processor J1900 ---------- 29324 -------- Saved 
+Venus-192 - 19″ Mobile Nursing Workstation w/ Intel® Celeron® Processor J1900 and Hot-Swappable Batteries ---------- 29325 -------- Saved 
+Venus-222 - 22″ Mobile Nursing Workstation with Intel® Celeron® Processor J1900, Hot-Swappable Batteries & Webcam ---------- 29326 -------- Saved 
+MD80 - 8″ Medical Windows Tablet ---------- 29327 -------- Saved 
+MD100B - 10″ Rugged Medical Windows Tablet ---------- 29328 -------- Saved 
+MedPC-5800 - Fanless Medical Grade Box PC with Dual-core Intel® Core™ i7  ---------- 29329 -------- Saved 
+MedPC-2000 - Intel® Celeron® Processor J1900 Medical Box PC for HIT  ---------- 29330 -------- Saved 
+PM-7121 - PC/104+ with Intel® Atom® D2550/N2600 processor, Intel® ICH10R, VGA/LVDS, 2 GLAN, SATA, 2 COM, 4 USB, CF Socket, DC 5V input ---------- 29331 -------- Saved 
+PM-7120 PC/104+ with Intel® Atom® D525/D425 processor, Intel® ICH8M, VGA/LVDS, 2 GLAN, SATA, 2 COM, 4 USB, CFast Socket, DC 5V input ---------- 29332 -------- Saved 
+MB-8303 4th Gen Intel® Core™ LGA 1150 processor w/ Intel® Q87 chipset, DDR3 1600 up to 16GB, 2 x Intel Giga LAN, 4 x SATA, HDMI / VGA / DVI-D / LVDS, 6 x COM, 8 x USB, 1 x PCI-Express X16 / X1 slot, 1 x Mini-PCIe socket ---------- 29333 -------- Saved 
+MB-8301 4th Generation Intel® Core™ i7/i5/i3 mobile Processors with Intel® QM87chipset, 2 x Intel® GLAN, HDMI/DVI/VGA/LVDS, 6 x COM, USB3.0, PCIe X16, Mini-PCIe, DC 8V~32V input ---------- 29334 -------- Saved 
+MB-8300 Mini-ITX support 3rd generation Intel® Core™ Mobile processor, Intel® QM77 chipset, HDMI/DVI/VGA/LVDS, PCIe X16, 2 Mini-PCIe, 4 COM, 4-ch Video/Audio input, DC 8V ~ 32V input ---------- 29335 -------- Saved 
+EM-6336 Intel® Atom® Processor E3800 series support operating within -40°C ~ 85°C , 2 x LAN, 4 x COM, DC 8V ~32V input ---------- 29336 -------- Saved 
+EM-6333 Intel® Atom® Processor D2550/N2600, HDMI/VGA/LVDS , 2 GLAN, 4 x COM, DC 8V ~ 32V ---------- 29337 -------- Saved 
+FS-9500 4th Gen Intel® Core™ i7/i5/i3 mobile Processor with Intel® QM87 PCH, DDR3 up to 32GB, DVI / VGA / DP, 2 GLAN, 4 SATA3, LPT, 6 x COM ---------- 29338 -------- Saved 
+CEMOSoft - IOT Cloud Mobile Platform for Enterprise to Engage Customer/Consumer ---------- 29339 -------- Saved 
+SEM-6336 Fanless System Support Operation Under -10°C~+60°C, Intel® Atom® Processor E3800 SoC ---------- 29340 -------- Saved 
+SEM-6337 Fanless system with 5th generation Intel® Core™ SoC processor, support 2 HDMI, 2 GLAN, 4 COM, USB, DC 8V~32V input ---------- 29341 -------- Saved 
+SE-602-N - Fanless Digital Signage Player Powered by 5th Generation Intel® Core™ Processor ---------- 29344 -------- Saved 
+ROBO-8113VG2AR ---------- 29345 -------- Saved 
+AIOT-DRM - Gateway System ---------- 29346 -------- Saved 
+Burke 2076 Military Simulation Image Generator ---------- 29445 -------- Saved 
+Sabot SFF1 Video Analytics System ---------- 29446 -------- Saved 
+Sabot 2u15 Video Analytics ---------- 29447 -------- Saved 
+Kopis 1117 Wipeable Medical PanelPC ---------- 29448 -------- Saved 
+Kopis 102P PanelPC for Fitness Equipment ---------- 29449 -------- Saved 
+Kopis 2353 Integrated Display for Medical Devices ---------- 29450 -------- Saved 
+Kopis 101R Integrated Display for Fitness Equipment ---------- 29451 -------- Saved 
+Kopis 834 Integrated Display for Fitness Equipment ---------- 29452 -------- Saved 
+Kopis 836 PanelPC for Commercial Fitness Equipment ---------- 29453 -------- Saved 
+Kopis 837 Industrial/Agricultural PanelPC ---------- 29454 -------- Saved 
+Kopis 850 Integrated Display for Webcasting ---------- 29455 -------- Saved 
+Sabot 1316 Industrial Automation Workstation ---------- 29456 -------- Saved 
+Sabot 525 Data Recorder for Simulators ---------- 29457 -------- Saved 
+Sabot 823 High Speed Video Capture System ---------- 29458 -------- Saved 
+Sabot D525 embedded computer ---------- 29459 -------- Saved 
+Kopis PC15 All-in-one TouchPC ---------- 29460 -------- Saved 
+Kopis PC21 All-in-one TouchPC ---------- 29461 -------- Saved 
+Sabot 3025 Medical Audio Encoder ---------- 29462 -------- Saved 
+Sabot 2010 Desktop Hybrid Video Recorder ---------- 29463 -------- Saved 
+Kopis 1020 Integrated Display for Commercial Fitness Equipment ---------- 29464 -------- Saved 
+ITX-K68 VER: 1.1 ---------- 29469 -------- Saved 
+ITX-K68_I5 VER1.1 ---------- 29470 -------- Saved 
+conga-TS170 ---------- 29471 -------- Saved 
+SBC347D Single Board Computer ---------- 29472 -------- Saved 
+SCB-1910 - 2U Rack-Mount Network System with Intel® Xeon® E5-2600V3 Series Processor and Intel® C612 PCH ---------- 29484 -------- Saved 
+SCB-1910 - Intel® Xeon® E5-2600V3 シリーズのプロセッサーおよび Intel® C612 PCH 搭載の 2U ラックマウント・ネットワーク・システム ---------- 29485 -------- Saved 
+SCB-1910 2U Rack-Mount Intel® Haswell-EP Xeon E5-2600V3 Series Processor and Intel® C612 PCH Network System, support DDR4 up to 256GB, 8 PCIe x8 slot for expansion NIC module, 2 x 2.5” SATA HDD swappable, 2 USB, 2 GbE, 1 Console, CF, 1 PCIe x8 slot, Redun ---------- 29486 -------- Saved 
+SCB-1910 2U Rack-Mount Intel® Haswell-EP Xeon E5-2600V3 Series Processor and Intel® C612 PCH Network System, support DDR4 up to 256GB, 8 PCIe x8 slot for expansion NIC module, 2 x 2.5” SATA HDD swappable, 2 USB, 2 GbE, 1 Console, CF, 1 PCIe x8 slot, Redun ---------- 29487 -------- Saved 
+SCB-1910 2U Rack-Mount Intel® Haswell-EP Xeon E5-2600V3 Series Processor and Intel® C612 PCH Network System, support DDR4 up to 256GB, 8 PCIe x8 slot for expansion NIC module, 2 x 2.5” SATA HDD swappable, 2 USB, 2 GbE, 1 Console, CF, 1 PCIe x8 slot, Redun ---------- 29488 -------- Saved 
+Giada F210 - Thin Client Commercial PC ---------- 29490 -------- Saved 
+SCB-1703 机架安装式 22nm Intel® Core™ i3/i5/i7/Pentium® 和 Celeron® 系列配备 LGA1150 处理器和多达 10 个 GbE 端口、SATA、CF、第 3 代旁路功能 ---------- 29494 -------- Saved 
+LGA1150 プロセッサーおよび最大 10 x GbE ポート、SATA、CF、第 3 世代 バイパス機能を備えた SCB-1703 ラックマウント 22nm Intel® Core™ i3/i5/i7/Pentium® およびCeleron® シリーズ ---------- 29495 -------- Saved 
+SCB-7982 1U 机架安装式 Intel® Core i7/i5/i3 网络系统，6 个铜 GbE、SATA、CF、LCM、PCI-E、旁路 ---------- 29496 -------- Saved 
+SCB-7983 1U 机架安装式 Intel® Atom® C2000 处理器网络系统，8 个铜 GbE、SATA、CF、LCM、PCI-E ---------- 29497 -------- Saved 
+SCB-7983 1U ラックマウント Intel® Atom® C2000 プロセッサー・ネットワーク・システム、8 カッパー GbE、SATA、CF、LCM、PCI-E ---------- 29498 -------- Saved 
+SmartEdge Solution Suite ---------- 29499 -------- Saved 
+SmartEdge ソリューション・スイート ---------- 29500 -------- Saved 
+SCB-1901 2U 机架安装式设备配备两个 Intel® DH8950 PCH 网络系统、7 个用于扩展 LAN 模块的 PCIe x16 插槽、IPMI、1 个 USB、1 个 SATA HDD、2 个 GbE、CF、1 个 PCIe x8 插槽、冗余 PSU ---------- 29501 -------- Saved 
+SCB-1901 2U ラックマウントのデュアル Intel® DH8950 PCH  ネットワーク・システム、7 PCIe X16 スロット（拡張 LAN モジュール用）IPMI、1 USB、1 SATA HDD、2 GbE、CF、1 PCIe X8 スロット、冗長 PSU ---------- 29502 -------- Saved 
+PICO842 -- Intel® Celeron® 处理器 J1900/N2807 Pico-ITX SBC 配备 LVDS/VGA (HDMI)、LAN 和音频 ---------- 29503 -------- Saved 
+PICO842 -- Intel® Celeron® プロセッサー J1900/N2807 Pico-ITX SBC、LVDS/VGA (HDMI)、LAN & オーディオ搭載 ---------- 29504 -------- Saved 
+tBOX810-838-FL -- 用于车辆、铁路和海运 PC、采用 Intel® Atom® 处理器 E3845/E3827 的无风扇嵌入式系统 ---------- 29505 -------- Saved 
+tBOX810-838-FL -- Intel® Atom® プロセッサー E3845/E3827 を搭載した車両、鉄道、海洋 PC 用ファンレス・エンベデッド・システム ---------- 29506 -------- Saved 
+CAPA843 -- Intel® Celeron® J1900 3.5" 嵌入式 SBC，具有 LVDS/VGA/HDMI、两个 LAN、音频和 ZIO ---------- 29507 -------- Saved 
+CAPA843 -- LVDS/VGA/HDMI、デュアル LAN、オーディオおよび ZIO 搭載の Intel® Celeron® J1900 3.5 インチのエンベデッド SBC  ---------- 29508 -------- Saved 
+针对大数据的统一可视化分析和业务智能化 (BI) ---------- 29513 -------- Saved 
+ビッグデータ用の統一された視覚分析と BI ---------- 29514 -------- Saved 
+D3417-B - 延长生命周期的 µATX 主板 ---------- 29515 -------- Saved 
+D3417-B - 拡張ライフサイクル µATX メインボード ---------- 29516 -------- Saved 
+DFI SH960 - 基于第 6 代 Intel® Core™ 处理器的 QM170 COM Express 基础型 ---------- 29519 -------- Saved 
+第 6 世代 Intel® Core™ プロセッサーをベースにした DFI SH960-QM170 COM Express Basic ---------- 29520 -------- Saved 
+基于第 6 代 Intel® Core™ 的 DFI SH960-HM170 - COM Express Basic   ---------- 29521 -------- Saved 
+DFI SH960-HM170 - 第 6 世代 Intel® Core™ プロセッサーをベースにした COM Express Basic  ---------- 29522 -------- Saved 
+Burke 1927 高速图像捕捉/生成系统  ---------- 29523 -------- Saved 
+Burke 1927 高速イメージ・キャプチャ/生成システム  ---------- 29524 -------- Saved 
+GB-SIOPS-4550U OPS 数字标牌系统 ---------- 29527 -------- Saved 
+GB-SIOPS-4550U OPS デジタル・サイネージ・システム ---------- 29528 -------- Saved 
+Burke 1040 图像生成器 ---------- 29529 -------- Saved 
+Burke 1040 イメージ・ジェネレーター ---------- 29530 -------- Saved 
+用于医疗设备应用的 BD67Q 图像发生器 ---------- 29531 -------- Saved 
+医療デバイス向け BD67Q イメージ・ジェネレータ ---------- 29532 -------- Saved 
+BCM RX170Q uATX 主板支持第 7 代/第 6 代 Intel® Core™ 处理器系列 ---------- 29539 -------- Saved 
+BCM RX170Q uATX マザーボードは、第 6/7 世代 Intel® Core™ プロセッサー・ファミリーをサポートしています ---------- 29540 -------- Saved 
+BCM MX110H 迷你 ITX 主板支持第 6 代 Intel® Core™ 处理器系列 ---------- 29541 -------- Saved 
+BCM MX110H ミニ ITX マザーボードは第 6 世代 Intel® Core™ プロセッサー・ファミリー ---------- 29542 -------- Saved 
+BCM MX110H 迷你 ITX 主板支持第 6 代 Intel® Core™ 处理器系列 ---------- 29543 -------- Saved 
+BCM MX110H ミニ ITX マザーボードは第 6 世代 Intel® Core™ プロセッサー・ファミリー ---------- 29544 -------- Saved 
+EPIC-BDU7（EPIC 主板） ---------- 29545 -------- Saved 
+EPIC-BDU7 (EPIC ボード) ---------- 29546 -------- Saved 
+VT816 - µTCA 机箱，针对高能物理的可扩展解决方案 ---------- 29547 -------- Saved 
+VT816 - 高エネルギー物理学分野向けスケーラブルなソリューション、µTCA シャーシ ---------- 29548 -------- Saved 
+ONYX Zeus-228 Intel 第 6 代 Intel® Core™ i7 22 英寸多点触摸无风扇医疗站 ---------- 29549 -------- Saved 
+ONYX Zeus-228 Intel 第 6 世代 Intel® Core™ i7 22 インチのマルチタッチ・ファンレス医療ステーション ---------- 29550 -------- Saved 
+SEMSEYE   ---------- 29551 -------- Saved 
+SEMSEYE ---------- 29552 -------- Saved 
+DFI EC553-DL - 嵌入式系统，采用第 4 代 Intel® Core™ 处理器 ---------- 29553 -------- Saved 
+DFI EC553-DL - 第 4 世代の Intel® Core™ プロセッサーを基盤としたエンベデッド・システム ---------- 29554 -------- Saved 
+COMe-cSL6  ---------- 29559 -------- Saved 
+COMe-cSL6 ---------- 29560 -------- Saved 
+NA580 -- 1U 机架安装式网络设备平台，采用 LGA1151 Intel® Xeon® E3/Core™ 处理器 (Skylake) 和 8 个 LAN ---------- 29561 -------- Saved 
+NA580 -- LGA1151 Intel® Xeon® E3/Core™ プロセッサー (Skylake) および 8 LAN を搭載した 1U ラックマウント・ネットワーク・アプライアンス・プラットフォーム  ---------- 29562 -------- Saved 
+Avalue EMX-Q170 第 6 代 Intel® Core™ 处理器迷你 ITX 主板，采用 Intel® Q170 Express 芯片组 ---------- 29563 -------- Saved 
+Intel® Q170 Express チップセット搭載の Avalue EMX-Q170 第 6 世代 Intel® Core™ プロセッサー・ミニ ITX マザーボード ---------- 29564 -------- Saved 
+BCM RX110H uATX 支持适用于高性能价值市场的第 7 代 （原 Kaby Lake） 或第 6 代 （原 Skylake） Intel® Core™ i7/i5/i3 处理器系列 ---------- 29567 -------- Saved 
+BCM RX110H uATX は、高性能バリューセグメント向けの第 7 世代 (旧 Kaby Lake) または第 6 世代 (旧 Skylake) Intel® Core™ i7/i5/i3 プロセッサー・ファミリーをサポートしています ---------- 29568 -------- Saved 
+conga-IA4 - 迷你 -ITX ---------- 29569 -------- Saved 
+conga-IA4 - Mini-ITX ---------- 29570 -------- Saved 
+Avalue EPI-BDW 第 5 代 Intel® Core™ 处理器 i7 EPIC 模块和 Intel® QM87 芯片组 ---------- 29571 -------- Saved 
+Intel® QM87 チップセットを搭載した Avalue EPI-BDW 第 5 世代 Intel® Core™ プロセッサー i7 EPIC モジュール ---------- 29572 -------- Saved 
+conga-MA4 - COM Express 10 型模块 ---------- 29573 -------- Saved 
+conga-MA4 - COM Express Type 10 モジュール ---------- 29574 -------- Saved 
+SCB-6010 DIN 导轨 Intel® Atom® 处理器工业网络系统、6/2 串口、2/6 铜 GbE、SATA、CF、旁路 ---------- 29575 -------- Saved 
+SCB-6010 DIN レイル Intel® Atom® プロセッサー・工業ネットワーク・システム、6/2 シリアル・ポート、2/6 カッパー GbE、SATA、CF、バイパス ---------- 29576 -------- Saved 
+SCB-6902 台式 Intel® Atom® 网络系统，4 个铜 GbE、CF、SATA 和迷你 PCIe ---------- 29577 -------- Saved 
+SCB-6902 デスクトップ Intel® Atom® ネットワーク・システム、4 銅線 GbE、CF、SATA、mini-PCIe ---------- 29578 -------- Saved 
+SCB-6981 无风扇 Intel® Atom® D2550 网络系统，6 个铜 GbE、CF、SATA、PCIe 和旁路 ---------- 29579 -------- Saved 
+SCB-6981 ファンレス Intel® Atom® D2550 ネットワーク・システム、6 カッパー GbE、CF、SATA、PCI-E、バイパス ---------- 29580 -------- Saved 
+SCB-6985 台式 Intel® Celeron® J1900 网络系统，6 个铜 GbE、CF、SATA、迷你 PCIe、旁路 ---------- 29581 -------- Saved 
+SCB-6985 デスクトップ Intel® Celeron® J1900 ネットワーク・システム、6 つのカッパー GbE、CF、SATA、mini-PCIe、バイパス ---------- 29582 -------- Saved 
+SCB-6987 - 台式 Intel® Atom® 处理器 C2000 网络系统，8 个铜 GbE、SATA、CF、迷你 PCI-E 支持 ---------- 29583 -------- Saved 
+SCB-6987 - デスクトップ Intel® Atom® C2000 ネットワーク・システム、8 カッパー GbE、SATA、CF、mini PCI-E をサポート ---------- 29584 -------- Saved 
+SCB-7905 1U 机架安装式 Intel® Atom® 处理器 C2000，8 个铜 GbE、SATA、CF、LCM、PCI-E ---------- 29585 -------- Saved 
+SCB-7905 1U ラックマウント Intel® Atom® C2000 ネットワーク・システム、8 カッパー GbE、SATA、CF、LCM、PCI-E ---------- 29586 -------- Saved 
+ADLINK VPX3010 - 耐用型 3U VPX Intel® Xeon® 处理器 D-1500 处理器刀片 ---------- 29587 -------- Saved 
+ADLINK VPX3010 - 堅牢な 3U VPX Intel® Xeon® プロセッサー D-1500 プロセッサー・ブレード ---------- 29588 -------- Saved 
+SCB-1802 2U 机架安装式 Intel® Core™ i3/i5/i7 和 Intel® Xeon® E3 处理器、LGA1155、4 个 GbE、2 个 SATA HDD、CF、LCM、PCI、PCI-E x4/x8/x16 ---------- 29589 -------- Saved 
+SCB-1802 2U ラックマウント Intel® Core™ i3/i5/i7 および Intel® Xeon® E3 プロセッサー、LGA1155、4 GbE、2 x SATA HDD、CF、LCM、PCI、PCI-E x4/x8/x16 ---------- 29590 -------- Saved 
+SCB-1803 - 专为网络服务应用而设计的 2U 机架安装式硬件平台。 ---------- 29591 -------- Saved 
+SCB-1803 - ネットワーク・サービス・アプリケーション向けに設計された 2U ラックマウント型ハードウェア・プラットフォーム。 ---------- 29592 -------- Saved 
+SCB-1805 2U 机架安装式设备，具有 Intel® C226 PCH、DDR3、4 个用于扩展模块的 PCIe 插槽、1 个 PCIe x4 插槽、控制台、USB、4 个 GbE、4 个 SATA HDD、CF ---------- 29593 -------- Saved 
+SCB-1805 2U - ラックマウント、Intel® C226 PCH、DDR3、拡張モジュール用 4x PCIe スロット、1x PCIe x4 スロット、コンソール、USB、4x GbE、4x SATA HDD、CF 搭載 ---------- 29594 -------- Saved 
+XPedite7672 | 基于 Intel® Xeon® D-1500 系列处理器的 3U VPX-REDI SBC，带有双 10 千兆以太网 ---------- 29595 -------- Saved 
+XPedite7672 | デュアル 10 ギガビット イーサネット搭載の Intel® Xeon® D-1500 ファミリー プロセッサー ベース 3U VPX-REDI SBC ---------- 29596 -------- Saved 
+SCB-7982 1U 机架安装式 Intel® Core™ i7/i5/i3 网络系统、6 个铜 GbE、SATA、CF、LCM、PCI-E、旁路 ---------- 29599 -------- Saved 
+SCB-7982 1U ラックマウント Intel® Core i7/i5/i3 ネットワーク・システム、 6 カッパー GbE、SATA、CF、LCM、PCI-E、バイパス ---------- 29600 -------- Saved 
+SCB-7983 1U 机架安装式 Intel® Atom® C2000 处理器网络系统，8 个铜 GbE、SATA、CF、LCM、PCI-E ---------- 29601 -------- Saved 
+SCB-7983 1U ラックマウント Intel® Atom® C2000 プロセッサー・ネットワーク・システム、8 カッパー GbE、SATA、CF、LCM、PCI-E ---------- 29602 -------- Saved 
+SCB-1901 2U 机架安装式设备配备两个 Intel® Xeon® E5-2600/E5-2600V2 系列处理器以及 DH8950 PCH 网络系统、7 个用于扩展 LAN 模块的 PCIe x16 插槽、IPMI、1 个 USB、1 个 SATA HDD、2 个 GbE、CF、1 个 PCIe x8 插槽和冗余 PSU ---------- 29603 -------- Saved 
+SCB-1901 2U ラックマウントのデュアル Intel® Xeon® E5-2600 / E5-2600V2 シリーズ・プロセッサーおよびDH8950 PCH ネットワーク・システム、7 PCIe X16 スロット（拡張 LAN モジュール用）IPMI、1 USB、1 SATA HDD、2 GbE、CF、1 PCIe X8 スロット、冗長 PSU ---------- 29604 -------- Saved 
+EmQ-i2200 Intel® Pentium®/Celeron® N3000 产品系列 SoC Qseven® R2.0 CPU 模块  ---------- 29605 -------- Saved 
+Shaspa Bridge / Service Delivery Framework ---------- 29607 -------- Saved 
+M5U22xx series - Ruggedized Servers for GPU Computing ---------- 29614 -------- Saved 
+Gm-J1900A26 ---------- 29618 -------- Saved 
+ML600G-51 - Industrial Fanless Server Computer with Intel® Xeon® E3-1240Lv3 ---------- 29624 -------- Saved 
+MC600-51 - Compact Mini Server with Intel® Xeon® E3-12xx v3  ---------- 29625 -------- Saved 
+SOM-6897 - COM Express Compact Module ---------- 29628 -------- Saved 
+ASMB-585 Micro ATX Server Board ---------- 29629 -------- Saved 
+NeusoftIOT  ---------- 29632 -------- Saved 
+Gm-H61A212 ---------- 29636 -------- Saved 
+Gm-H61D11 ---------- 29637 -------- Saved 
+AIMB-785 ATX Motherboard ---------- 29638 -------- Saved 
+PassKit - The O2O Channel Automation Software ---------- 29639 -------- Saved 
+Passkit Subscription ---------- 29640 -------- Saved 
+COMe-bBD6 - COM Express® compact module ---------- 29653 -------- Saved 
+M2M and IoT "Connectivity as a Service" ---------- 29655 -------- Saved 
+macchina.io ---------- 29656 -------- Saved 
+CHAMP-XD1 3U VPX Intel® Xeon® D DSP Processor Card ---------- 29657 -------- Saved 
+CHAMP-XD2 6U VPX  Intel® Xeon® D DSP Processor Card ---------- 29658 -------- Saved 
+VPX3-1259 - 3U VPX SBC with  Intel® Core™ i7 ---------- 29659 -------- Saved 
+PassKit Proof of Concept ---------- 29660 -------- Saved 
+PassKit Biz-E-Card ---------- 29661 -------- Saved 
+PassKit e-Member Solution ---------- 29662 -------- Saved 
+EBB10 mini media player ---------- 29664 -------- Saved 
+my-devices.net ---------- 29665 -------- Saved 
+VPX6-1959 6U VPX Intel® Core™ i7 5th Gen SBC ---------- 29667 -------- Saved 
+VME-1909 VME Intel Core i7 SBC ---------- 29668 -------- Saved 
+ANR-IB75N2/A/B 1U Rackmount Network Appliance ---------- 29672 -------- Saved 
+ANR-IH61N1/A/B - 1U Rackmount Network Appliance ---------- 29673 -------- Saved 
+AR-R6000 - 1U Rackmount Network Appliance ---------- 29674 -------- Saved 
+AIV-QM97V1FL In-Vehicle Computer ---------- 29675 -------- Saved 
+Giada F210 - 瘦客户机商用 PC ---------- 29677 -------- Saved 
+SCB-1910 - 采用 Intel® Xeon® 处理器 E5-2600V3 系列处理器和 Intel® C612 PCH 的 2U 机架安装式网络系统 ---------- 29678 -------- Saved 
+SBC347D 单板计算机 ---------- 29685 -------- Saved 
+conga-TS170 ---------- 29686 -------- Saved 
+Sabot 2u15 视频分析 ---------- 29693 -------- Saved 
+Sabot SFF1 视频分析系统 ---------- 29694 -------- Saved 
+Burke 2076 军事模拟图像生成器 ---------- 29695 -------- Saved 
+AIOT-DRM - 网关系统 ---------- 29696 -------- Saved 
+ROBO-8113VG2AR ---------- 29697 -------- Saved 
+SE-602-N - 无风扇数字标牌播放器由第 5 代 Intel® Core™ 处理器驱动 ---------- 29698 -------- Saved 
+SEM-6337 无风扇系统采用第 5 代 Intel® Core™ SoC 处理器，支持 2 个 HDMI、2 个 GLAN、4 个 COM、USB、直流 8V~32V 输入 ---------- 29699 -------- Saved 
+SEM-6336 无风扇系统支持低于 -10°C~+60°C 的工作温度，Intel® Atom® 处理器 E3800 SoC ---------- 29700 -------- Saved 
+CEMOSoft - 用于企业与客户/消费者互动的物联网云移动平台 ---------- 29701 -------- Saved 
+FS-9500 第 4 代 Intel® Core™ i7/i5/i3 移动处理器，配备 Intel® QM87 PCH、DDR3（高达 32GB）、DVI/VGA/DP、2 个 GLAN、4 个 SATA3、LPT、6 个 COM ---------- 29702 -------- Saved 
+EM-6333 Intel® Atom® 处理器 D2550/N2600、HDMI/VGA/LVDS、2 个 GLAN、4 个 COM、DC 8V ~ 32V ---------- 29703 -------- Saved 
+EM-6336 Intel® Atom® 处理器 E3800 系列支持 -40°C ~ 85°C 的工作温度范围、2 个 LAN、4 个 COM、DC 8V ~32V 输入 ---------- 29704 -------- Saved 
+MB-8300 迷你 ITX 支持第 3 代 Intel® Core™ 移动处理器、Intel® QM77 芯片组、HDMI/DVI/VGA/LVDS、PCIe x16、2 个迷你 PCIe、4 个 COM、4 英寸视频/音频输入、8V ~ 32V 直流输入 ---------- 29705 -------- Saved 
+MB-8301 支持第 4 代 Intel® Core™ i7/i5/i3 移动处理器，配备 Intel® QM87 芯片组、2 个 Intel® GLAN、HDMI/DVI/VGA/LVDS、6 个 COM、USB3.0、PCIe X16、迷你 PCIe、8V~32V 直流输入 ---------- 29706 -------- Saved 
+MB-8303 第 4 代 Intel® Core™ LGA 1150 处理器，采用 Intel® Q87 芯片组、DDR3 1600（高达 16GB）、2 个 Intel 千兆位 LAN、4 个 SATA、HDMI/VGA/DVI-D/LVDS、6 个 COM、8 个 USB、1 个 PCI-Express X16/X1 插槽、1 个迷你 PCIe 插槽 ---------- 29707 -------- Saved 
+PM-7120 PC/104+ 配备 Intel® Atom® D525/D425 处理器、Intel® ICH8M、VGA/LVDS、2 个 GLAN、SATA、2 个 COM、4 个 USB、CFast 插槽、DC 5V 输入 ---------- 29708 -------- Saved 
+PM-7121 - PC/104+ 配备 Intel® Atom® D2550/N2600 处理器、Intel® ICH10R、VGA/LVDS、2 个 GLAN、SATA、2 个 COM、4 个 USB、CF 插槽、DC 5V 输入 ---------- 29709 -------- Saved 
+MedPC-2000 - Intel® Celeron® 处理器 J1900 医疗用箱式 PC，适用于 HIT  ---------- 29710 -------- Saved 
+MedPC-5800 - 无风扇医疗级箱式 PC，采用双核 Intel® Core™ i7  ---------- 29711 -------- Saved 
+MD100B - 10″ 耐用型医疗用 Windows 平板电脑 ---------- 29712 -------- Saved 
+MD80 - 8″ 医疗用 Windows 平板电脑 ---------- 29713 -------- Saved 
+Venus-222 - 22″ 移动护理站，采用 Intel® Celeron® 处理器 J1900、热插拔电池和网络摄像头 ---------- 29714 -------- Saved 
+Venus-192 - 19″ 移动护理站，采用 Intel® Celeron® 处理器 J1900 和热插拔电池 ---------- 29715 -------- Saved 
+ONYX-BE182 - 18.5" 医疗信息终端，采用四核 Intel® Celeron® 处理器 J1900 ---------- 29716 -------- Saved 
+ONYX-1222 - 11.6″ 无风扇 Intel® Celeron® J1900 四核超薄医疗用平板电脑 ---------- 29717 -------- Saved 
+BCM MX170QD 迷你 ITX 主板支持第 7 代 （原 Kaby Lake） 或第 6 代 （原 Skylake） Intel® Core™ 处理器系列，镀金连接器 ---------- 29718 -------- Saved 
+NH2 - 采用 Intel® Atom® x5-Z8300 处理器的最小尺寸 Windows 计算棒 ---------- 29719 -------- Saved 
+SCB-1805 2U 机架安装式设备、第 4 代 Intel® Core™/Xeon® 处理器，具有 Intel® C226 PCH、DDR3、4 个用于扩展模块的 PCIe 插槽、1 个 PCIe x4 插槽、控制台、USB、4 个 GbE、4 个 SATA HDD、CF ---------- 29720 -------- Saved 
+AIV-HM76V1FL In-Vehicle Computer ---------- 29721 -------- Saved 
+AIV-HM76V0FL In-Vehicle Computer ---------- 29722 -------- Saved 
+AR-V6100FL In-Vehicle Computer ---------- 29723 -------- Saved 
+AR-V6005FL In-Vehicle Computer ---------- 29724 -------- Saved 
+ATP SlimSATA ---------- 29726 -------- Saved 
+ATP CFast ---------- 29727 -------- Saved 
+ATP eUSB ---------- 29728 -------- Saved 
+ATP eUSB ---------- 29729 -------- Saved 
+ATP eUSB ---------- 29730 -------- Saved 
+ATP CFast ---------- 29731 -------- Saved 
+ATP SlimSATA ---------- 29732 -------- Saved 
+NSA 5160 Network Security Platform ---------- 29742 -------- Saved 
+POC-W212 - 21.5" Widescreen Medical Computer ---------- 29743 -------- Saved 
+AR-V6002FL In-Vehicle Computer ---------- 29745 -------- Saved 
+ACE-SHM76G1 All-in-one Gaming Box ---------- 29746 -------- Saved 
+XPedite7451 | Intel® Core™ i7 Processor-Based Rugged Basic Enhanced COM Express® Type 6 Module ---------- 29752 -------- Saved 
+Couchbase Mobile ---------- 29753 -------- Saved 
+PCISA-BT (Half-size CPU card) ---------- 29754 -------- Saved 
+2I385PW - Intel® Atom® Pico-ITX SBC: PICO Express® technology with full-features, compact evaluation carrier  boards ---------- 29755 -------- Saved 
+NSA 3170 Network Security Platform ---------- 29756 -------- Saved 
+Supply Chain Visibility & Eyesight Tracking & Cold-chain Monitoring ---------- 29758 -------- Saved 
+UP-CHT01 - credit card size board with Intel® Atom® x5-z8350  ---------- 29759 -------- Saved 
+HPW 410 - High-Performance Computer Platform ---------- 29767 -------- Saved 
+VueForge™ creating value from Machine-Driven Big Data ---------- 29769 -------- Saved 
+Dell Edge Gateway 5000  ---------- 29770 -------- Saved 
+Giada F210 - シンクライアント商業 PC ---------- 29772 -------- Saved 
+SBC347D シングルボード・コンピューター (SBC) ---------- 29779 -------- Saved 
+conga-TS170 ---------- 29780 -------- Saved 
+Sabot 2u15 ビデオ解析 ---------- 29787 -------- Saved 
+Sabot SFF1 Video Analytics System ---------- 29788 -------- Saved 
+Burke 2076 ミリタリー・シミュレーション・イメージ・ジェネレーター ---------- 29789 -------- Saved 
+AIOT-DRM - ゲートウェイ・システム ---------- 29790 -------- Saved 
+ROBO-8113VG2AR ---------- 29791 -------- Saved 
+SE-602-N - 第 5 世代 Intel® Core™ プロセッサーを搭載したファンレス・デジタル・サイネージ・プレイヤー ---------- 29792 -------- Saved 
+第 5 世代 Intel® Core™ SoC プロセッサーを搭載した SEM-6337 ファンレス・システム、2 HDMI、2 GLAN、4 COM、USB、DC 8V～32V 入力をサポート ---------- 29793 -------- Saved 
+SEM-6336 ファンレス・システムは、-10°C~+60°C 以下の動作とIntel® Atom® プロセッサー E3800 SoC をサポート ---------- 29794 -------- Saved 
+CEMOSoft - エンタープライズ向け IOT クラウド・モバイル・プラットフォームで顧客や消費者にアピール ---------- 29795 -------- Saved 
+FS-9500 第 4 世代 Intel® Core™ i7/i5/i3 モバイル・プロセッサー、Intel® QM87 PCH、DDR3 最大 32GB、DVI/VGA/DP、2 GLAN、4 SATA3、LPT、6 x COM を搭載 ---------- 29796 -------- Saved 
+EM-6333 Intel® Atom® プロセッサー D2550/N2600、HDMI/VGA/LVDS、2 x GLAN、4 x COM、DC 8V～32V ---------- 29797 -------- Saved 
+EM-6336 Intel® Atom® プロセッサー E3800 シリーズは、-40°C～85°C の動作温度範囲、2 x LAN、4 x COM、DC 8V ~32V 入力をサポート ---------- 29798 -------- Saved 
+MB-8300 Mini-ITX は第 3 世代 Intel® Core™ Mobile プロセッサー、Intel® QM77 チップセット、HDMI/DVI/VGA/LVDS、PCIe X16、2 x Mini-PCIe、4 x COM、4-ch ビデオ/オーディオ入力、DC 8V～32V 入力をサポート ---------- 29799 -------- Saved 
+Intel QM87 チップセット、2 x Intel® GLAN、HDMI/DVI/VGA/LVDS、6 x COM、USB3.0、PCIe X16、Mini-PCIe、DC 8V～32V 入力を備えた MB-8301 第 4 世代 Intel® Core™ i7/i5/i3 プロセッサー ---------- 29800 -------- Saved 
+Intel® Q87 チップセット搭載、DDR3 1600 最大 16GB、2 x Intel Giga LAN、4 x SATA、HDMI / VGA / DVI-D / LVDS、6 x COM、8 x USB、1 x PCI-Express X16 / X1 スロット、1 x Mini-PCIe ソケットを備えた MB-8303 第 4 世代 Intel® Core™ LGA 1150 プロセッサー ---------- 29801 -------- Saved 
+PM-7120 PC/104+、Intel® Atom® D525/D425 プロセッサー Intel® ICH8M、VGA/LVDS、2 GLAN、SATA、2 COM、4 USB、CFast ソケット、DC 5V 入力搭載 ---------- 29802 -------- Saved 
+PM-7121 - PC/104+、Intel® Atom® D2550/N2600 プロセッサー Intel® ICH10R、VGA/LVDS、2 GLAN、SATA、2 COM、4 USB、CFast ソケット、DC 5V 入力 ---------- 29803 -------- Saved 
+MedPC-2000 - Intel® Celeron® プロセッサー J1900  HIT 向け医療ボックス PC  ---------- 29804 -------- Saved 
+MedPC-5800 - ファンレス医療グレードのボックス PC、デュアルコア Intel® Core™ i7 搭載  ---------- 29805 -------- Saved 
+MD100B - 10 インチの堅牢な医療 Windows タブレット ---------- 29806 -------- Saved 
+MD80 - 8 インチ 医療用 Windows タブレット ---------- 29807 -------- Saved 
+Venus-222 - Intel® Celeron® プロセッサー J1900、ホットスワップ可能なバッテリー & Web カメラを備えた 22 インチのモバイル看護ワークステーション ---------- 29808 -------- Saved 
+Venus-192 - Intel® Celeron® プロセッサー J1900 およびホットスワップ可能なバッテリーを搭載した、19 インチのモバイル看護ステーション ---------- 29809 -------- Saved 
+ONYX-BE182 - 18.5 インチの医療インフォテイメント端末、クアッドコア Intel® Celeron® プロセッサー J1900 搭載 ---------- 29810 -------- Saved 
+ONYX-1222 - 11.6 インチ ファンレス Intel® Celeron® J1900 クアッドコア・スリム型医療パネル PC ---------- 29811 -------- Saved 
+BCM MX170QD mini-ITX マザーボードは、第 7 世代 (旧 Kaby Lake) または第 6 世代 (旧 Skylake) Intel® Core™ プロセッサー・ファミリー、ゴールド・プレーティング・コネクターをサポートしています。 ---------- 29812 -------- Saved 
+NH2 - Intel® Atom® x5-Z8300 プロセッサー搭載の最小の Windows コンピュート・スティック ---------- 29813 -------- Saved 
+SCB-1805 2U ラックマウント、Intel® C226 PCH 搭載の第 4 世代 Intel® Core™/ Xeon® プロセッサー、DDR3, 拡張用 4x PCIe スロット、1x PCIe x4 スロット、コンソール、USB、4x GbE、4x SATA HDD、CF ---------- 29814 -------- Saved 
+2I385SW - Intel® Celeron® J1900 四核 CPU/ 芯片组 Pico-ITX SBC ---------- 29815 -------- Saved 
+2I385SW - Intel® Celeron® J1900 クアッドコア CPU/チップセット Pico-ITX SBC ---------- 29816 -------- Saved 
+VME-1909 VME Intel Core i7 SBC ---------- 29819 -------- Saved 
+VME-1909 VME Intel Core i7 SBC ---------- 29820 -------- Saved 
+VPX6-1959 6U VPX Intel® Core™ i7 第 5 代 SBC ---------- 29821 -------- Saved 
+VPX6-1959 6U VPX Intel® Core™ i7 第 5 世代 SBC ---------- 29822 -------- Saved 
+my-devices.net ---------- 29823 -------- Saved 
+my-devices.net ---------- 29824 -------- Saved 
+EBB10 迷你媒体播放器  ---------- 29825 -------- Saved 
+EBB10 小型メディア・プレーヤー ---------- 29826 -------- Saved 
+PassKit 电子会员解决方案 ---------- 29827 -------- Saved 
+PassKit e-メンバー・ソリューション ---------- 29828 -------- Saved 
+PassKit Biz-E-Card ---------- 29829 -------- Saved 
+PassKit Biz-E-Card ---------- 29830 -------- Saved 
+PassKit Proof of Concept ---------- 29831 -------- Saved 
+PassKit の概念実証  ---------- 29832 -------- Saved 
+VPX3-1259 - 采用 Intel® Core™ i7 的 3U VPX SBC ---------- 29833 -------- Saved 
+VPX3-1259 - Intel® Core™ i7 搭載の 3U VPX SBC ---------- 29834 -------- Saved 
+macchina.io ---------- 29839 -------- Saved 
+macchina.io ---------- 29840 -------- Saved 
+M2M 和物联网连接即服务  ---------- 29841 -------- Saved 
+サービスとしての M2M および IoT ---------- 29842 -------- Saved 
+COMe-bBD6 - COMG Express® 紧凑型模块  ---------- 29845 -------- Saved 
+COMe-bBD6 - COM Express® コンパクト・モジュール ---------- 29846 -------- Saved 
+Passkit 订阅  ---------- 29847 -------- Saved 
+Passkit サブスクリプション ---------- 29848 -------- Saved 
+PassKit - O2O 通道自动化软件 ---------- 29849 -------- Saved 
+PassKit - O2O チャンネルのオートメーション・ソフトウェア ---------- 29850 -------- Saved 
+MC600G-51 - 采用 Intel® Xeon® E3-12xx v3 的紧凑型迷你服务器   ---------- 29861 -------- Saved 
+MC600G-51 - Intel® Xeon® E3-12xx v3 を搭載したコンパクト型ミニサーバー   ---------- 29862 -------- Saved 
+ML600G-51 - 采用 Intel® Xeon® E3-1240Lv3 的工业无风扇服务器计算机  ---------- 29863 -------- Saved 
+ML600G-51 - Intel® Xeon® E3-1240Lv3 搭載の産業用ファンレス・サーバー・コンピューター ---------- 29864 -------- Saved 
+M5U22xx 系列 - 用于 GPU 计算的耐用型服务器 ---------- 29867 -------- Saved 
+M5U22xx シリーズ - GPU コンピューティング用堅牢サービス ---------- 29868 -------- Saved 
+Shaspa Bridge / 服务交付框架 ---------- 29869 -------- Saved 
+Shaspa Bridge /サービス提供フレームワーク ---------- 29870 -------- Saved 
+用于商业健身器材的 Kopis 1020 集成显示 ---------- 29871 -------- Saved 
+商業フィットネス機器向け Kopis 1020 統合ディスプレイ ---------- 29872 -------- Saved 
+用于模拟器的 Sabot 525 数据记录仪 ---------- 29873 -------- Saved 
+Sabot 525 シミュレーター用データ・レコーダー ---------- 29874 -------- Saved 
+Sabot 1316 工业自动化工作站 ---------- 29875 -------- Saved 
+Sabot 1316 産業用オートメーション・ワークステーション ---------- 29876 -------- Saved 
+GemTot Beacon (iOS および Android をサポート)  ---------- 29877 -------- Saved 
+KBox A-103 ---------- 29880 -------- Saved 
+Gm-H61D11 ---------- 29881 -------- Saved 
+Gm-H61A212 ---------- 29882 -------- Saved 
+Gm-H61A26 ---------- 29884 -------- Saved 
+NeusoftIOT  ---------- 29886 -------- Saved 
+Gm-J1900A26 ---------- 29892 -------- Saved 
+SCB-1911 - 1U Rack-Mount Network System with Intel® Xeon® E5-2600V3 Series Processor and Intel® C612 PCH ---------- 29898 -------- Saved 
+SCB-1911 - 1U 机架安装式网络系统采用 Intel® Xeon® E5-2600V3 系列处理器和 Intel® C612 PCH ---------- 29899 -------- Saved 
+SCB-1911 - Intel® Xeon® E5-2600V3 シリーズのプロセッサーおよび Intel® C612 PCH 搭載の 1U ラックマウント・ネットワーク・システム ---------- 29900 -------- Saved 
+ARINC 600 4 MCU Aircraft Network Server ---------- 29902 -------- Saved 
+ICO IoT Gateway System E100-8Q ---------- 29903 -------- Saved 
+Seavo SV1a-18014P-C High-performance Thin Mini-ITX motherboard ---------- 29917 -------- Saved 
+Seavo SV1-18026P-Z High-performance Mini-ITX motherboard ---------- 29918 -------- Saved 
+Seavo SV1-18016 High-performance Mini-ITX motherboard ---------- 29919 -------- Saved 
+IOT System Integration services ---------- 29920 -------- Saved 
+Open Source IOT Application Development Platform ---------- 29921 -------- Saved 
+Seavo SV1-18016P-B High-performance Mini-ITX motherboard ---------- 29922 -------- Saved 
+Seavo SV3-19026 High-performance 3.5’’ motherboard ---------- 29923 -------- Saved 
+Seavo SV1a-19014P-C High-performance Thin Mini-ITX motherboard ---------- 29924 -------- Saved 
+Seavo SV3-19026P-L High-performance 3.5’’ motherboard ---------- 29925 -------- Saved 
+Seavo SV3b-19026 High-performance 3.5’’ motherboard ---------- 29926 -------- Saved 
+Seavo SV1-1372A High-performance Mini-ITX motherboard ---------- 29931 -------- Saved 
+Seavo SV1-1371A-B High-performance Mini-ITX motherboard ---------- 29932 -------- Saved 
+Seavo SV-302A High-performance Thin Mini-ITX motherboard ---------- 29933 -------- Saved 
+Seavo SV-302B High-performance Mini-ITX motherboard ---------- 29941 -------- Saved 
+嵌入式主板 TEM150 ---------- 29942 -------- Saved 
+用于无线环境传感器的物联网网关  ---------- 29943 -------- Saved 
+ワイヤレス環境センサー向けモノのインターネット (IoT) ゲートウェイ ---------- 29944 -------- Saved 
+cPCI-3620 - 3U CompactPCI 四核 Intel® Atom® 处理器刀片 ---------- 29945 -------- Saved 
+cPCI-3620 - 3U CompactPCI クアッドコア Intel® Atom® プロセッサー・ブレード ---------- 29946 -------- Saved 
+SCB-8970 1U 机架安装式网络系统 ---------- 29949 -------- Saved 
+SCB-8970 1U ラックマウント・ネットワーク・システム ---------- 29950 -------- Saved 
+Intel System Studio 软件销售、支持和咨询 ---------- 29951 -------- Saved 
+Intel System Studio ソフトウェアの販売、サポートおよびコンサルティング ---------- 29952 -------- Saved 
+Dell Edge Gateway 5000  ---------- 29953 -------- Saved 
+VueForge™ 从机器驱动的大数据创造价值  ---------- 29954 -------- Saved 
+HPW 410 - 高性能计算机平台 ---------- 29955 -------- Saved 
+UP-CHT01 - 采用 Intel® Atom® x5-z8350 的信用卡大小的板卡  ---------- 29956 -------- Saved 
+供应链可视性&目测跟踪&冷链监控 ---------- 29957 -------- Saved 
+NSA 3170 网络安全平台 ---------- 29958 -------- Saved 
+2I385PW - Intel® Atom® Pico-ITX SBC： 采用 PICO Express® 技术，配备功能齐全的紧凑型评估载板 ---------- 29959 -------- Saved 
+PCISA-BT （半尺寸 CPU 卡） ---------- 29960 -------- Saved 
+Couchbase Mobile ---------- 29961 -------- Saved 
+XPedite7451 | 基于 Intel® Core™ i7 处理器的耐用型基本增强型 COM Express® 6 型模块 ---------- 29962 -------- Saved 
+ACE-SHM76G1 一体式游戏盒 ---------- 29963 -------- Saved 
+AR-V6002FL 车载计算机 ---------- 29964 -------- Saved 
+POC-W212 - 21.5 英寸宽屏医用计算机 ---------- 29965 -------- Saved 
+NSA 5160 网络安全平台 ---------- 29966 -------- Saved 
+ATP eUSB  ---------- 29967 -------- Saved 
+ATP CFast ---------- 29968 -------- Saved 
+ATP SlimSATA ---------- 29969 -------- Saved 
+AR-V6005FL 车载计算机 ---------- 29970 -------- Saved 
+AR-V6100FL 车载计算机 ---------- 29971 -------- Saved 
+AIV-HM76V0FL 车载计算机 ---------- 29972 -------- Saved 
+AIV-HM76V1FL 车载计算机 ---------- 29973 -------- Saved 
+AIV-QM97V1FL 车载计算机 ---------- 29974 -------- Saved 
+AR-R6000 - 1U 机架安装式网络设备  ---------- 29975 -------- Saved 
+ANR-IH61N1/A/B - 1U 机架安装式网络设备 ---------- 29976 -------- Saved 
+ANR-IB75N2/A/B 1U 机架安装式网络设备 ---------- 29977 -------- Saved 
+Kopis 2353 医疗设备集成显示器  ---------- 29978 -------- Saved 
+用于健身器材的 Kopis 102P 液晶电脑   ---------- 29979 -------- Saved 
+Kopis 1117 可擦拭医用液晶电脑 ---------- 29980 -------- Saved 
+ATP eUSB ---------- 29981 -------- Saved 
+ATP IoT Ruggedized Storage Solutions ---------- 29984 -------- Saved 
+ATP Flash Memory for Automotive Solutions ---------- 29985 -------- Saved 
+自動車ソリューション向け ATP フラッシュメモリ ---------- 29986 -------- Saved 
+ATP Legacy DRAM Module Support ---------- 29989 -------- Saved 
+Seavo SV-302C High-performance Mini-ITX motherboard ---------- 29991 -------- Saved 
+Seavo SV-306D High-performance Mini-ITX motherboard ---------- 29992 -------- Saved 
+IVS-200-ULT2 - Vehicle Surveillance System ---------- 30005 -------- Saved 
+I01-Q71-001_4U标准上架式工控机 第三代Intel Core/Pentium/Celeron处理器 ---------- 30008 -------- Saved 
+Seavo SV1a-H8112P-A1 High-performance Mini-ITX motherboard ---------- 30009 -------- Saved 
+Seavo SV1a-H8112P-B High-performance Mini-ITX motherboard ---------- 30010 -------- Saved 
+A10-Q33-005_2U标准上架式工控机 ---------- 30011 -------- Saved 
+C20-P20-003_车载视频服务器 ---------- 30012 -------- Saved 
+R20-P31-005_无风扇嵌入式工控机_Haswell移动平台_多显示/多串口/双千兆网 ---------- 30013 -------- Saved 
+OSS® (Operational Safety System)  ---------- 30014 -------- Saved 
+CP3004-SA ---------- 30015 -------- Saved 
+FWS-7520 (Network Appliance)  ---------- 30017 -------- Saved 
+IKARPC-W10A ---------- 30022 -------- Saved 
+Seavo SV6-B752C High-performance Micro-ATX motherboard ---------- 30023 -------- Saved 
+IMBA-BDE ---------- 30024 -------- Saved 
+NanoServer NN QM67 ---------- 30030 -------- Saved 
+NanoServer N1 QM67 ---------- 30031 -------- Saved 
+NanoServer N1 QM87 ---------- 30032 -------- Saved 
+NanoServer N1 Q87 ---------- 30033 -------- Saved 
+NanoServer N2-QM67 ---------- 30034 -------- Saved 
+NanoServer N2 QM87 ---------- 30035 -------- Saved 
+EN A3 ---------- 30036 -------- Saved 
+B1 Q87 ---------- 30037 -------- Saved 
+H1 A ---------- 30038 -------- Saved 
+Galaxy A1 QM67 ---------- 30039 -------- Saved 
+Galaxy A1 QM67 ---------- 30040 -------- Saved 
+AM105モデル230J ---------- 30046 -------- Saved 
+AM105モデル110J ---------- 30047 -------- Saved 
+AM120モデル215K   ---------- 30048 -------- Saved 
+AM120モデル215J ---------- 30049 -------- Saved 
+ADE-6092 ---------- 30050 -------- Saved 
+IoT Simulator ---------- 30053 -------- Saved 
+Conduce Retail Inventory Module ---------- 30055 -------- Saved 
+AM120モデル210J ---------- 30056 -------- Saved 
+AM120モデル210H ---------- 30057 -------- Saved 
+AR2100モデル120K   ---------- 30058 -------- Saved 
+AR2100モデル100J ---------- 30059 -------- Saved 
+ACS-2702A- IP67 Certified/IP69K Compliant Stainless Steel Fan-less Box PC ---------- 30060 -------- Saved 
+AR2200モデル120K ---------- 30061 -------- Saved 
+ACS 2702A IP67 認定/IP69K 準拠ステンレス製ファンレス・ボックス PC ---------- 30062 -------- Saved 
+AR2000モデル430J ---------- 30063 -------- Saved 
+AR2000モデル430H ---------- 30064 -------- Saved 
+AR4400モデル100H ---------- 30065 -------- Saved 
+AR4400モデル200H ---------- 30066 -------- Saved 
+AR8300モデル300J/310J ---------- 30067 -------- Saved 
+AR8300モデル320H ---------- 30068 -------- Saved 
+AR8300モデル300H/310H ---------- 30069 -------- Saved 
+KONTRON ENDURANCE KT-RT-I5 ---------- 30070 -------- Saved 
+KONTRON ENDURANCE KT-RT-BT ---------- 30071 -------- Saved 
+PL-80930 ---------- 30074 -------- Saved 
+PL-80920 ---------- 30075 -------- Saved 
+Avalue SLP-SKL Fanless Expendable Controller with 6th Gen Intel® Core™ i7/i5/i3  processor and PCI/PCIe expansion slots ---------- 30076 -------- Saved 
+Avalue SLP-SKL Fanless Expendable Controller with 6th Gen Intel® Core™ Processor i7/i5/i3 and PCI/PCIe expansion slots ---------- 30077 -------- Saved 
+Dell エッジ ゲートウェイ 5000  ---------- 30080 -------- Saved 
+マシン駆動型ビッグデータから新しい価値を生み出す VueForge™  ---------- 30081 -------- Saved 
+HPW 410 - 高性能コンピューター・プラットフォーム ---------- 30082 -------- Saved 
+UP-CHT01 - Intel® Atom® x5-z8350 搭載のクレジットカード・サイズのボード  ---------- 30083 -------- Saved 
+サプライチェーンの可視化&視覚トラッキング&コールドチェーンの監視 ---------- 30084 -------- Saved 
+NSA 3170 ネットワーク・セキュリティー・プラットフォーム ---------- 30085 -------- Saved 
+2I385PW - Intel® Atom® Pico-ITX SBC: フル機能の PICO Express® テクノロジー、コンパクトな評価キャリアボード ---------- 30086 -------- Saved 
+PCISA-BT （ハーフサイズ CPU カード） ---------- 30087 -------- Saved 
+Couchbase Mobile ---------- 30088 -------- Saved 
+XPedite7451 | Intel® Core™ i7 ベースの高耐久性基本 拡張 COM Express® Type 6 モジュール ---------- 30089 -------- Saved 
+ACE SHM76G1 オールインワン・ゲームボックス ---------- 30090 -------- Saved 
+AR-V6002FL 車載コンピューター ---------- 30091 -------- Saved 
+POC-W212 - 21.5 インチ・ワイドスクリーン医療コンピューター ---------- 30092 -------- Saved 
+NSA 5160 ネットワーク・セキュリティ・プラットフォーム ---------- 30093 -------- Saved 
+AR-V6005FL 車載コンピューター ---------- 30094 -------- Saved 
+AR-V6100FL 車載コンピューター ---------- 30095 -------- Saved 
+AIV-HM76V0FL 車載コンピューター ---------- 30096 -------- Saved 
+AIV-HM76V1FL 車載コンピューター ---------- 30097 -------- Saved 
+AIV-QM97V1FL 車載コンピューター ---------- 30098 -------- Saved 
+AR-R6000 - 1U ラックマウント型ネットワーク・ アプライアンス ---------- 30099 -------- Saved 
+ANR-IH61N1/A/B - 1U ラックマウント型ネットワーク・アプライアンス ---------- 30100 -------- Saved 
+ANR-IB75N2/A/B 1U ラックマウント型ネットワーク・アプライアンス ---------- 30101 -------- Saved 
+医療機器用の Kopis 2353 統合ディスプレイ ---------- 30102 -------- Saved 
+フィットネス機器用 Kopis 102P PanelPC  ---------- 30103 -------- Saved 
+Kopis 1117 Wipeable Medical PanelPC ---------- 30104 -------- Saved 
+Seavo SV-302A 高性能超薄迷你 ITX 主板 ---------- 30107 -------- Saved 
+Seavo SV-302A 高性能 Thin Mini-ITX マザーボード ---------- 30108 -------- Saved 
+Seavo SV1-1371A-B 高性能迷你 ITX 主板 ---------- 30109 -------- Saved 
+Seavo SV1-1371A-B 高性能 Mini-ITX マザーボード ---------- 30110 -------- Saved 
+Seavo SV1-1372A 高性能迷你 ITX 主板 ---------- 30111 -------- Saved 
+Seavo SV1-1372A 高性能 Mini-ITX マザーボード ---------- 30112 -------- Saved 
+Seavo SV3b-19026 高性能 3.5 英寸主板  ---------- 30113 -------- Saved 
+Seavo SV3b-19026 高性能 3.5 インチ・マザーボード ---------- 30114 -------- Saved 
+Seavo SV3-19026P-L 高性能 3.5 英寸主板 ---------- 30115 -------- Saved 
+Seavo SV3-19026P-L 高性能 3.5 インチ・マザーボード ---------- 30116 -------- Saved 
+Seavo SV1a-19014P-C 高性能超薄迷你 ITX 主板 ---------- 30117 -------- Saved 
+Seavo SV1a-19014P-C 高性能 Thin Mini-ITX マザーボード ---------- 30118 -------- Saved 
+Seavo SV3-19026 高性能 3.5 英寸主板  ---------- 30119 -------- Saved 
+Seavo SV3-19026 高性能 3.5 インチ・マザーボード ---------- 30120 -------- Saved 
+Seavo SV1-18016P-B 高性能迷你 ITX 主板 ---------- 30121 -------- Saved 
+SV1-18016P-B 高性能 Mini-ITX マザーボード ---------- 30122 -------- Saved 
+开放源物联网应用开发平台 ---------- 30123 -------- Saved 
+オープンソース IoT アプリケーション開発プラットフォーム ---------- 30124 -------- Saved 
+物联网系统集成服务 ---------- 30125 -------- Saved 
+IoT システム統合サービス ---------- 30126 -------- Saved 
+Seavo SV1-18016 高性能迷你 ITX 主板 ---------- 30127 -------- Saved 
+Seavo SV1-18016 高性能 Mini-ITX マザーボード ---------- 30128 -------- Saved 
+Seavo SV1-18026P-Z 高性能迷你 ITX 主板 ---------- 30129 -------- Saved 
+Seavo SV1-18026P-Z 高性能 Mini-ITX マザーボード ---------- 30130 -------- Saved 
+Seavo SV1a-18014P-C 高性能超薄迷你 ITX 主板 ---------- 30131 -------- Saved 
+Seavo SV1a-18014P-C 高性能 Thin Mini-ITX マザーボード ---------- 30132 -------- Saved 
+ICO 物联网网关系统 E100-8Q  ---------- 30133 -------- Saved 
+ICO IoT ゲートウェイ・システム E100-8Q ---------- 30134 -------- Saved 
+ARINC 600 4 MCU 飞机网络服务器 ---------- 30135 -------- Saved 
+ARINC 600 4 MCU 航空機ネットワーク・サーバー ---------- 30136 -------- Saved 
+Advantech MIC-8302C Packetarium XLc Node Blade with Intel® Xeon® Processor E5-2600 v3 ---------- 30148 -------- Saved 
+Advantech MIC-8303C Packetarium XLc Node Blade based on dual Intel® Xeon® Processor D-1500  ---------- 30149 -------- Saved 
+Advantech MIC-8304C Packetarium XLc Node Blade with Intel® Xeon® Processor D-1500  ---------- 30150 -------- Saved 
+Advantech Packetarium XLc PAC-6009 Carrier Grade Blade Server ---------- 30151 -------- Saved 
+Edge7000 IoT Gateway ---------- 30154 -------- Saved 
+R20-P31-005_fanless embedded IPC_Haswell mobile platform_multi-display/multi-serial ports/dual gigabit network ---------- 30167 -------- Saved 
+C20-P20-003_In-vehicle video servers ---------- 30168 -------- Saved 
+A10-Q33-005_2U standard rackmount IPC ---------- 30169 -------- Saved 
+I01-Q71-001_4U standard rackmount IPC and the 3rd generation Intel Core/Pentium/Celeron processor ---------- 30170 -------- Saved 
+EonStor DS 4024B - RAID 存储系统 ---------- 30171 -------- Saved 
+EonStor DS 4024B - RAID ストレージ・システム ---------- 30172 -------- Saved 
+ATP eUSB ---------- 30173 -------- Saved 
+MIO-5272 - 3.5" MI/O-Compact SBC ---------- 30177 -------- Saved 
+Galaxy A1 QM67 ---------- 30182 -------- Saved 
+H1 A ---------- 30183 -------- Saved 
+H1 A ---------- 30184 -------- Saved 
+B1 Q87 ---------- 30185 -------- Saved 
+B1 Q87 ---------- 30186 -------- Saved 
+EN A3 ---------- 30187 -------- Saved 
+EN A3 ---------- 30188 -------- Saved 
+NanoServer N2 QM87 ---------- 30189 -------- Saved 
+NanoServer N2 QM87 ---------- 30190 -------- Saved 
+NanoServer N2-QM67 ---------- 30191 -------- Saved 
+NanoServer N2-QM67 ---------- 30192 -------- Saved 
+NanoServer N1 Q87 ---------- 30193 -------- Saved 
+NanoServer N1 Q87 ---------- 30194 -------- Saved 
+NanoServer N1 QM67 ---------- 30195 -------- Saved 
+NanoServer N1 QM67 ---------- 30196 -------- Saved 
+NanoServer N1 QM87 ---------- 30197 -------- Saved 
+NanoServer N1 QM87 ---------- 30198 -------- Saved 
+物联网模拟器 ---------- 30199 -------- Saved 
+IoT シミュレーター ---------- 30200 -------- Saved 
+NanoServer NN QM67 ---------- 30201 -------- Saved 
+NanoServer NN QM67 ---------- 30202 -------- Saved 
+Conduce 零售库存模块 ---------- 30203 -------- Saved 
+Conduce Retail Inventory Module ---------- 30204 -------- Saved 
+ADE-6092 ---------- 30213 -------- Saved 
+ADE-6092 ---------- 30214 -------- Saved 
+ATP 传统 DRAM 模块支持  ---------- 30215 -------- Saved 
+ATP レガシー DRAM モジュール・サポート ---------- 30216 -------- Saved 
+KISS 1U Short KTQM87 ---------- 30217 -------- Saved 
+COVALENCE 健全性分析プラットフォーム ---------- 30220 -------- Saved 
+IMBA-BDE  ---------- 30225 -------- Saved 
+IMBA-BDE ---------- 30226 -------- Saved 
+Seavo SV6-B752C 高性能微型 ATX 主板 ---------- 30227 -------- Saved 
+Seavo SV6-B752C 高性能 Micro-ATX マザーボード ---------- 30228 -------- Saved 
+IKARPC-W10A ---------- 30229 -------- Saved 
+IKARPC-W10A ---------- 30230 -------- Saved 
+FWS-7520 （网络设备）  ---------- 30231 -------- Saved 
+FWS-7520 (ネットワーク・アプライアンス)  ---------- 30232 -------- Saved 
+CP3004-SA ---------- 30233 -------- Saved 
+CP3004-SA ---------- 30234 -------- Saved 
+Seavo SV1a-H8112P-B 高性能迷你 ITX 主板 ---------- 30235 -------- Saved 
+Seavo SV1a-H8112P-B 高性能 Mini-ITX マザーボード ---------- 30236 -------- Saved 
+Seavo SV1a-H8112P-A1 高性能迷你 ITX 主板 ---------- 30237 -------- Saved 
+Seavo SV1a-H8112P-A1 高性能 Mini-ITX マザーボード ---------- 30238 -------- Saved 
+IVS-200-ULT2 - 车辆监控系统 ---------- 30239 -------- Saved 
+IVS-200-ULT2 - 車両監視システム ---------- 30240 -------- Saved 
+Seavo SV-306D 高性能迷你 ITX 主板 ---------- 30245 -------- Saved 
+Seavo SV-306D 高性能 Mini-ITX マザーボード ---------- 30246 -------- Saved 
+Seavo SV-302C 高性能迷你 ITX 主板 ---------- 30247 -------- Saved 
+Seavo SV-302C 高性能 Mini-ITX マザーボード ---------- 30248 -------- Saved 
+ATP 物联网耐用型存储解决方案 ---------- 30249 -------- Saved 
+ATP IoT 堅牢なストレージ・ソリューション ---------- 30250 -------- Saved 
+ATP 汽车解决方案闪存  ---------- 30251 -------- Saved 
+Seavo SV-302B 高性能迷你 ITX 主板 ---------- 30252 -------- Saved 
+Seavo SV-302B 高性能 Mini-ITX マザーボード ---------- 30253 -------- Saved 
+C02-P00-001 多IO接口工控机 ---------- 30254 -------- Saved 
+L01-A00-005  嵌入式工控机 ---------- 30255 -------- Saved 
+C01-A02-001  多串口工控机 ---------- 30256 -------- Saved 
+R12-C07-023  无风扇工控机 ---------- 30257 -------- Saved 
+R02-C07-027  无风扇工控机 ---------- 30258 -------- Saved 
+A20-Q51-001  多网口网络安全设备 ---------- 30259 -------- Saved 
+A01-Q51-341  1U网络安全硬件 ---------- 30260 -------- Saved 
+A01-Q40-045 多光口网络安全整机 ---------- 30261 -------- Saved 
+A0L-Q50-043  上架式网络安全整机 ---------- 30262 -------- Saved 
+A01-A41-006 多电口网络安全整机 ---------- 30263 -------- Saved 
+A00-C41-038  多网口网络安全整机 ---------- 30264 -------- Saved 
+D00-C45-063 网络安全整机支持WIFI/3G ---------- 30265 -------- Saved 
+D00-C43-006 网络安全整机带VGA ---------- 30266 -------- Saved 
+PRA-IPC-100  1U标准上架式工控机 ---------- 30267 -------- Saved 
+PRA-IPC-8806N/W 壁挂式工控机 ---------- 30268 -------- Saved 
+PRA-IPC-100  1U标准上架式工控机 ---------- 30269 -------- Saved 
+Comprehensive Managed Service ---------- 30272 -------- Saved 
+Triage Managed Service ---------- 30273 -------- Saved 
+Analytics Driven Maintenance Contracts ---------- 30274 -------- Saved 
+Data Driven Maintenance ---------- 30275 -------- Saved 
+Defects Liability Period Management ---------- 30276 -------- Saved 
+PRA-IPC-8806N/H 壁挂式工控机 ---------- 30280 -------- Saved 
+PRA-BLC-PS8U 能源监测服务器 ---------- 30281 -------- Saved 
+PRA-WS-5216 多功能一体化工作站 ---------- 30282 -------- Saved 
+PRA-WS-4801 4U一体化工作站 ---------- 30283 -------- Saved 
+PRA-PPC-900FLT005 10.4英寸工业平板电脑 ---------- 30284 -------- Saved 
+PRA-PPC-900FLT001 12.1英寸工业平板电脑 ---------- 30285 -------- Saved 
+PRA-PPC-P15A01 15英寸工业平板电脑 ---------- 30286 -------- Saved 
+PRA-PPC-900FLT004 17英寸工业平板电脑 ---------- 30287 -------- Saved 
+PRA-TP-800DMQ002 14英寸便携式工控机 ---------- 30288 -------- Saved 
+PRA-TP-6100 14英寸便携式工控机 ---------- 30289 -------- Saved 
+PRA-TP-6400 15.1英寸便携式工控机 ---------- 30290 -------- Saved 
+AM120 Model 210H ---------- 30292 -------- Saved 
+AM120 Model 210J ---------- 30293 -------- Saved 
+AM120 Model 215J ---------- 30294 -------- Saved 
+AM120 Model 215K  ---------- 30295 -------- Saved 
+AM105 model 230J ---------- 30296 -------- Saved 
+AR8300 Model 300H/310H ---------- 30297 -------- Saved 
+AR8300 Model 320H ---------- 30298 -------- Saved 
+AR8300 Model 300J/310J ---------- 30299 -------- Saved 
+AR4400 Model 200H ---------- 30300 -------- Saved 
+AR4400 Model 100H ---------- 30301 -------- Saved 
+AR2000 model 430H ---------- 30302 -------- Saved 
+AR2000 Model 430J ---------- 30303 -------- Saved 
+AR2200 Model 120K ---------- 30304 -------- Saved 
+AR2100 Model 100J ---------- 30305 -------- Saved 
+AR2100 Model 120K  ---------- 30306 -------- Saved 
+AM105 Model 110J ---------- 30307 -------- Saved 
+PRA-TP-6400 15.1英寸便携式工控机 ---------- 30308 -------- Saved 
+PRA-GAP-N1100G 2U酷睿安全隔离网闸平台 ---------- 30309 -------- Saved 
+PRA-GAP-700G 2U奔腾安全隔离网闸平台 ---------- 30310 -------- Saved 
+PRA-GAP-500G 2U凌动安全隔离网闸平台 ---------- 30311 -------- Saved 
+Intelligent Sustenance Engineering (ISE) ---------- 30313 -------- Saved 
+Intelligent Technical Support (ITS) ---------- 30314 -------- Saved 
+Smart  Industrial Helmet ---------- 30315 -------- Saved 
+MPC153-834 - 15.6" WXGA TFT Medical Touch Panel Computer with Intel® Celeron® J1900 ---------- 30319 -------- Saved 
+Axiomtek Board Design-in Service for Fast Time-to-Market ---------- 30320 -------- Saved 
+NANO842 - Intel® Celeron® Processor J1900/N2807 Nano-ITX SBC with LVDS/VGA/HDMI, Dual LANs and Audio ---------- 30321 -------- Saved 
+GOT817-834 - 17" SXGA TFT IP66-rated Stainless Steel Fanless PCT (or Resistive Touch) Panel Computer with Flat Bezel Design (-20°C ~ +55°C) ---------- 30322 -------- Saved 
+P1177E-842 - 17" SXGA TFT Intel® Celeron® J1900 Expandable Industrial Touch Panel Computer with 1 PCI Slot ---------- 30323 -------- Saved 
+MANO300 -  Fanless Mini-ITX Motherboard with Rich Graphics ---------- 30324 -------- Saved 
+eBOX626-853-FL - Fanless Embedded System with Intel® Celeron® N3150 1.6GHz, VGA/HDMI, 4 COM, 2 GbE, 4 USB, 2 Mini PCIe and 9 ~36VDC Wide Range Input ---------- 30325 -------- Saved 
+CMB710 COM Express module ---------- 30328 -------- Saved 
+Electronic Device Automation Testing (eDAT) ---------- 30329 -------- Saved 
+Edge7000 物联网网关    ---------- 30334 -------- Saved 
+Edge7000 IoT ゲートウェイ ---------- 30335 -------- Saved 
+基于 Intel® Xeon® 处理器 D-1500 的 Advantech MIC-8303C Packetarium XLc 节点刀片   ---------- 30336 -------- Saved 
+Intel® Xeon® プロセッサー D-1500 搭載の Advantech MIC-8303C Packetarium XLc ノード・ブレード  ---------- 30337 -------- Saved 
+采用 Intel® Xeon® 处理器 D-1500 的 Advantech MIC-8304C Packetarium XLc 节点刀片   ---------- 30338 -------- Saved 
+Intel® Xeon® プロセッサー D-1500 搭載の Advantech MIC-8304C Packetarium XLc ノード・ブレード  ---------- 30339 -------- Saved 
+采用 Intel® Xeon® 处理器 E5-2600 v3 的 Advantech MIC-8302C Packetarium XLc 节点刀片  ---------- 30340 -------- Saved 
+Intel® Xeon® プロセッサー E5-2600 v3 搭載の Advantech MIC-8302C Packetarium XLc ノード・ブレード ---------- 30341 -------- Saved 
+Advantech Packetarium XLc PAC-6009 运营商级刀片服务器 ---------- 30342 -------- Saved 
+Advantech Packetarium XLc PAC-6009 キャリアグレード・ブレード・サーバー ---------- 30343 -------- Saved 
+Avalue SLP-SKL 无风扇可扩展控制器配备第 6 代 Intel® Core™ 处理器 i7/i5/i3 和 PCI/PCIe 扩展插槽 ---------- 30346 -------- Saved 
+第 6 世代 Intel® Core™ Processor i7/i5/i3 および PCI/PCIe 拡張スロット搭載の Avalue SLP SKL ファンレス拡張コントローラー ---------- 30347 -------- Saved 
+Avalue SLP-SKL 无风扇可扩展控制器配备第 6 代 Intel® Core™ i7/i5/i3 处理器和 PCI/PCIe 扩展插槽 ---------- 30348 -------- Saved 
+第 6 世代 Intel® Core™ プロセッサー i7/i5/i3 および PCI/PCIe 拡張スロット搭載の Avalue SLP SKL ファンレス拡張コントローラー ---------- 30349 -------- Saved 
+PL-80920 ---------- 30350 -------- Saved 
+PL-80920 ---------- 30351 -------- Saved 
+PL-80930 ---------- 30352 -------- Saved 
+PL-80930 ---------- 30353 -------- Saved 
+KONTRON ENDURANCE KT-RT-I5 ---------- 30354 -------- Saved 
+KONTRON ENDURANCE KT-RT-I5 ---------- 30355 -------- Saved 
+KONTRON ENDURANCE KT-RT-BT ---------- 30356 -------- Saved 
+KONTRON ENDURANCE KT-RT-BT ---------- 30357 -------- Saved 
+ACS-2702A- 通过 IP67 认证/符合 IP69K 标准不锈钢无风扇箱式电脑 ---------- 30358 -------- Saved 
+eBOX530-840-FL - Fanless Embedded System with Intel® Atom® Processor E3825 1.33 GHz SoC, VGA or HDMI, GbE LAN, 2 COM and 4 USB ---------- 30359 -------- Saved 
+PICO843 - Intel® Celeron® Processor J1900/N2807 Pico-ITX SBC with LVDS/VGA, LAN & Audio ---------- 30360 -------- Saved 
+ET839 - Intel® Atom® Processor E3845 Based ETX 3.0 Module ---------- 30363 -------- Saved 
+ITX-2350M-6CD8 - Thin Mini-ITX Embedded Motherboard with Intel® Core™ i3 2350M and Intel® HM65 chipset ---------- 30365 -------- Saved 
+基于skylake平台的视频编解码服务器 ---------- 30366 -------- Saved 
+Seavo SV1-H812C High-performance Mini-ITX motherboard ---------- 30368 -------- Saved 
+Seavo SV1-B852C-B High-performance Mini-ITX motherboard ---------- 30369 -------- Saved 
+Seavo SV1-H8116 High-performance Mini-ITX motherboard  ---------- 30370 -------- Saved 
+Seavo SV4-H8134 High-performance ATX motherboard ---------- 30371 -------- Saved 
+Seavo OPS-H81 High-performance motherboard ---------- 30372 -------- Saved 
+Seavo NSE SV5-18016P High-performance 5.5’’ motherboard ---------- 30373 -------- Saved 
+ROBO-8113VG2AR ---------- 30377 -------- Saved 
+RUBY-D718 ---------- 30378 -------- Saved 
+WADE-8017 ---------- 30380 -------- Saved 
+RUBY-D718 ---------- 30381 -------- Saved 
+PCOM-B638VG - Type VI Basic COM Express 2.0 module ---------- 30382 -------- Saved 
+PCOM-B638VG - Type VI Basic COM Express 2.0 module ---------- 30383 -------- Saved 
+PCOM-B638VG - Type VI Basic COM Express 2.0 module ---------- 30384 -------- Saved 
+PCOM-B639VG - Type VI Basic COM Express 2.0 module ---------- 30385 -------- Saved 
+MSI MS-98H9 ATX Motherboard Solution with 6th generation Intel® Core™ processor for High Performance Applications ---------- 30387 -------- Saved 
+HCL IoT Gateway Stack ---------- 30389 -------- Saved 
+HCL Smart Building Solution ---------- 30390 -------- Saved 
+HCL Smart Home Solution ---------- 30391 -------- Saved 
+Switch Automation Smart Building Platform ---------- 30396 -------- Saved 
+SherPlayer Fanless Appliance SSI-FL-2930 ---------- 30399 -------- Saved 
+FEXER OX (フェザーオックス) IoT組込みシステム用仮想化ソリューション ---------- 30400 -------- Saved 
+VP F1x/msd - VME board based on 4th gen Intel® Core™ processor ---------- 30404 -------- Saved 
+D3446-S Industrial Series ATX Mainboard  ---------- 30410 -------- Saved 
+Intel Based Kiosks ---------- 30417 -------- Saved 
+MI985 - Mini-ITX supports 5th Generation Intel® Core™ processors (H-processor line) and Mobile Intel® QM87 Express Chipset ---------- 30418 -------- Saved 
+CAR-1020 - ネットワーク・アプライアンス ---------- 30420 -------- Saved 
+保养期管理 ---------- 30423 -------- Saved 
+瑕疵保証期間中の管理 ---------- 30424 -------- Saved 
+根据数据处理的维修 ---------- 30425 -------- Saved 
+データ駆動型のメンテナンス ---------- 30426 -------- Saved 
+分析驱动型保养合同 ---------- 30427 -------- Saved 
+アナリティクス駆動の保守契約 ---------- 30428 -------- Saved 
+分类管理服务 ---------- 30429 -------- Saved 
+Triage Managed Service ---------- 30430 -------- Saved 
+综合性托管服务 ---------- 30431 -------- Saved 
+総合管理サービス ---------- 30432 -------- Saved 
+智能网络接口卡 （iNIC） ---------- 30433 -------- Saved 
+インテリジェント・ネットワーク・インターフェイス・カード (iNICs) ---------- 30434 -------- Saved 
+MIO-5272 - 3.5" MI/O-Compact SBC ---------- 30439 -------- Saved 
+MIO-5272 - 3.5 インチ MI/O-コンパクト SBC ---------- 30440 -------- Saved 
+PRA-TP-6400 15.1-inch portable IPC ---------- 30441 -------- Saved 
+PRA-TP-6100 14-inch portable IPC ---------- 30442 -------- Saved 
+PRA-TP-800DMQ002 14-inch portable IPC ---------- 30443 -------- Saved 
+PRA-PPC-900FLT004 17-inch industrial tablet computer ---------- 30444 -------- Saved 
+PRA-tablet computer-P15A01 15-inch industrial tablet computer ---------- 30445 -------- Saved 
+PRA-PPC-900FLT001 12.1-inch industrial tablet computer ---------- 30446 -------- Saved 
+PRA-PPC-900FLT005 10.4-inch industrial tablet computer ---------- 30447 -------- Saved 
+PRA-WS-4801 4U all-in-one workstation ---------- 30448 -------- Saved 
+PRA-WS-5216 multifunctional all-in-one workstation ---------- 30449 -------- Saved 
+PRA-BLC-PS8U energy monitoring server  ---------- 30450 -------- Saved 
+PRA-IPC-8806N/H wall-mounted IPC ---------- 30451 -------- Saved 
+PRA-IPC-100 1U standard rackmount IPC ---------- 30452 -------- Saved 
+PRA-IPC-8806N/W wall-mounted IPC ---------- 30453 -------- Saved 
+PRA-IPC-100 1U standard rackmount IPC ---------- 30454 -------- Saved 
+电子设备自动化测试 （eDAT）  ---------- 30468 -------- Saved 
+Electronic Device Automation Testing (eDAT) ---------- 30469 -------- Saved 
+CMB710 COM Express 模块 ---------- 30470 -------- Saved 
+CMB710 COM Express モジュール ---------- 30471 -------- Saved 
+eBOX626-853-FL - 配备 Intel® Celeron® N3150 1.6GHz、VGA/HDMI、4 个 COM、2 个千兆以太网、4 个 USB、2 个迷你 PCIe 和 9 ~36V 直流宽范围输入的无风扇嵌入式系统 ---------- 30472 -------- Saved 
+eBOX626-853-FL - Intel® Celeron® N3150 1.6GHz、VGA/HDMI、4 COM、2 GbE、4 USB、2 Mini PCIe 搭載、9～36VDC の幅広い入力範囲のファンレス・エンベデッド・システム ---------- 30473 -------- Saved 
+MANO300 - 拥有丰富显卡的无风扇迷你 ITX 主板 ---------- 30474 -------- Saved 
+MANO300 - 鮮やかなグラフィックスのファンレス Mini-ITX マザーボード ---------- 30475 -------- Saved 
+P1177E-842 - 17 英寸 SXGA TFT Intel® Celeron® J1900 可扩展工业触摸屏液晶电脑拥有 1 个 PCI 插槽 ---------- 30476 -------- Saved 
+P1177E-842 - 17 インチ SXGA TFT Intel® Celeron® J1900 拡張可能な産業用タッチパネル・コンピューター、1 つの PCI スロットを装備 ---------- 30477 -------- Saved 
+GOT817-834 - 采用全平挡板设计的 17 英寸 SXGA TFT IP66 级不锈钢无风扇 PCT （或电阻式触摸） 液晶电脑  （-20°C ~ +55°C） ---------- 30478 -------- Saved 
+GOT817-834 - 17 インチ XGA TFT IP66 規格のステンレススチール製ファンレス PCT (または抵抗膜方式) パネル・コンピューター、フラットベゼル設計 (-20C～+55C) ---------- 30479 -------- Saved 
+NANO842 - Intel® Celeron® 处理器 J1900/N2807 Nano-ITX SBC 配备 LVDS/VGA/HDMI、双局域网和音频 ---------- 30480 -------- Saved 
+NANO842 - Intel® Celeron® プロセッサー J1900/N2807 Nano-ITX SBC、LVDS/VGA/HDMI、デュアル LAN、オーディオ ---------- 30481 -------- Saved 
+Axiomtek 板卡设计服务专门针对快速面市 ---------- 30482 -------- Saved 
+開発時間を短縮する Axiomtek ボードのデザインイン・サービス ---------- 30483 -------- Saved 
+MPC153-834 - 采用 Intel® Celeron® J1900 的 15.6 英寸 WXGA TFT 医用触摸液晶电脑 ---------- 30484 -------- Saved 
+MPC153-834 - Intel® Celeron® J1900 搭載の 15.6 インチ WXGA TFT 医療タッチパネル・コンピューター ---------- 30485 -------- Saved 
+智能技术支持 （ITS） ---------- 30486 -------- Saved 
+インテリジェント・テクニカル・サポート (ITS) ---------- 30487 -------- Saved 
+智能支持工程 （ISE） ---------- 30488 -------- Saved 
+Intelligent Sustenance Engineering (ISE) ---------- 30489 -------- Saved 
+medical cart computer DT590BU/DT592BU/DT594BU ---------- 30495 -------- Saved 
+EmETXe-i89U0 - 6th Generation Intel® Core™ i7-6600U Processor COM Express® Compact Type 6 CPU Module ---------- 30496 -------- Saved 
+Vehicle Computer System IKARPC-07A-BT ---------- 30499 -------- Saved 
+IoT Software R&D services ---------- 30500 -------- Saved 
+DigiView ---------- 30507 -------- Saved 
+Jarvis ---------- 30508 -------- Saved 
+Limerick ---------- 30509 -------- Saved 
+SolveIt ---------- 30510 -------- Saved 
+Bidwiser ---------- 30511 -------- Saved 
+PanelMiner ---------- 30512 -------- Saved 
+NSB-3011 ---------- 30516 -------- Saved 
+PCS-8311P ---------- 30518 -------- Saved 
+TVC-1045B - SBS Vehicle Mount Video Surveillance System ---------- 30521 -------- Saved 
+Telit IoT Connectivity ---------- 30524 -------- Saved 
+Effective Water Resources Management ---------- 30526 -------- Saved 
+MI985 - 迷你 ITX 支持第 5 代 Intel® Core™ 处理器 （H 处理器线） 和移动式 Intel® QM87 高速芯片组 ---------- 30539 -------- Saved 
+MI985 - Mini-ITX は第 5 世代 Intel® Core™ プロセッサー（H プロセッサーライン）およびモバイル Intel® QM87 Express チップセットを搭載 ---------- 30540 -------- Saved 
+基于 Intel 的自助机  ---------- 30541 -------- Saved 
+Intel ベースのキオスク ---------- 30542 -------- Saved 
+SherPlayer 无风扇设备 SSI-FL-2930  ---------- 30545 -------- Saved 
+SherPlayer ファンレス・アプライアンス SSI-FL-2930 ---------- 30546 -------- Saved 
+VP F1x/msd - 基于第 4 代 Intel® Core™ 处理器的 VME 板  ---------- 30547 -------- Saved 
+VP F1x/msd - 第 4 世代 Intel® Core™ プロセッサーベース VME ボード ---------- 30548 -------- Saved 
+Switch Automation 智能建筑平台  ---------- 30551 -------- Saved 
+スイッチ・オートメーション・スマート・ビルディング・プラットフォーム ---------- 30552 -------- Saved 
+MSI MS-98H9 ATX 主板解决方案采用第 6 代 Intel® Core™ 处理器，适用于高性能应用 ---------- 30553 -------- Saved 
+MSI MS-98H9 ATX マザーボード・ソリューション、高性能アプリケーション向けの第 6 世代 Intel® Core™ プロセッサーを搭載 ---------- 30554 -------- Saved 
+PCOM-B639VG - VI 型基础 COM Express 2.0 模块   ---------- 30555 -------- Saved 
+PCOM-B639VG - Type VI Basic COM Express 2.0 モジュール ---------- 30556 -------- Saved 
+PCOM-B638VG - VI 型基础 COM Express 2.0 模块   ---------- 30557 -------- Saved 
+PCOM-B638VG - Type VI Basic COM Express 2.0 モジュール ---------- 30558 -------- Saved 
+PCOM-B638VG - VI 型基础 COM Express 2.0 模块   ---------- 30559 -------- Saved 

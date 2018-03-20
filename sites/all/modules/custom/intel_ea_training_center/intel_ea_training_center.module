@@ -1,0 +1,562 @@
+<?php
+/**
+ * @file
+ * Intel EA code for Alliance Training Center functionality.
+ */
+
+/**
+ * Implements hook_menu().
+ */
+function intel_ea_training_center_menu() {
+  $items = array();
+
+  $items['training-center'] = array(
+    'title' => t('Alliance Training Center'),
+    'page callback' => '_intel_ea_training_center_homepage',
+    'access callback' => '_intel_ea_training_center_access',
+    'type' => MENU_CALLBACK,
+  );
+  $items['training-center/approved-nouns/%ctools_js/%'] = array(
+    'page callback' => 'intel_ea_training_center_approved_nouns_list',
+    'page arguments' => array(2, 3),
+    'access callback' => '_intel_ea_training_center_access',
+    'type' => MENU_CALLBACK,
+  );
+  $items['training-center/modal-content/%ctools_js/%/%'] = array(
+    'page callback' => 'intel_ea_training_center_modal_content',
+    'page arguments' => array(2, 3, 4),
+    'access callback' => '_intel_ea_training_center_access',
+    'type' => MENU_CALLBACK,
+  );
+
+  return $items;
+}
+
+/**
+ * Page callback for Alliance Training Center
+ */
+function _intel_ea_training_center_homepage() {
+
+  // Get all Training Section nodes.
+  $query = new EntityFieldQuery();
+  $result = $query
+    ->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'training_section')
+    ->propertyCondition('language', array('en', 'ja', 'zh-hans'))
+    ->propertyCondition('status', 1)
+    ->fieldOrderBy('field_section_order', 'value', 'ASC')
+    ->propertyOrderBy('language', 'ASC')
+    ->execute();
+
+  $output = '';
+  $section_order = 'a';
+  if (isset($result['node'])) {
+    $nids = array_keys($result['node']);
+    $nodes = node_load_multiple($nids);
+    foreach ($nodes as $nid => $node) {
+      $sections[($node->tnid == '0') ? $node->nid : $node->tnid][$nid] = $node;
+    }
+    foreach ($sections as $tnid => $section) {
+      foreach ($section as $section_lang) {
+        $items[$tnid][] = drupal_render(node_view($section_lang, 'training_center_tile'));
+      }
+    }
+    foreach ($items as $item) {
+      $output .= theme('item_list', array('items' => $item, 'attributes' => array('class' => 'training-section training-section-' . $section_order)));
+      $section_order++;
+    }
+  }
+
+  return $output;
+}
+
+/**
+ * The page callback for Approved Nouns List.
+ *
+ * @param $js
+ *   boolean CTools determination whether the user's browser is javascript enabled.
+ * @param $tid
+ *   string The term ID passed as an argument from hook_menu().
+ *
+ * @return
+ *   string The contents of the taxonomy term that will be placed in the modal.
+ */
+function intel_ea_training_center_approved_nouns_list($js = NULL, $tid = NULL) {
+
+  // Return access denied if a term ID was not provided.
+  if (!$tid) {
+    return MENU_ACCESS_DENIED;
+  }
+
+  // Load the term in a modal via ajax if JavaScript is detected.
+  if ($js) {
+    ctools_include('ajax');
+    ctools_include('modal');
+
+    // Load the term and return the CTools modal.
+    $term = taxonomy_term_load($tid);
+    $contents = render(taxonomy_term_view($term, 'approved_nouns_list'));
+
+    return ctools_modal_render('', $contents);
+  }
+  // Redirect the user to the term page if JavaScript is not detected.
+  else {
+    drupal_goto('taxonomy/term/' . $tid);
+  }
+}
+
+/**
+ * The page callback for Modal Content.
+ *
+ * @param $js
+ *   boolean CTools determination whether the user's browser is javascript enabled.
+ * @param $nid
+ *   string The node ID passed as an argument from hook_menu().
+ * @param $delta
+ *   string The delta of the modal field to load.
+ *
+ * @return
+ *   string The contents of the node that will be placed in the modal.
+ */
+function intel_ea_training_center_modal_content($js = NULL, $nid = NULL, $delta = NULL) {
+  // Return access denied if a node ID was not provided.
+  if (!$nid) {
+    return MENU_ACCESS_DENIED;
+  }
+
+  // Load the node in a modal via ajax if JavaScript is detected.
+  if ($js) {
+    ctools_include('ajax');
+    ctools_include('modal');
+
+    if ($delta) {
+      // Load the node field and return the CTools modal.
+      $node = node_load($nid);
+      $field = field_get_items('node', $node, 'field_modal');
+      $contents = drupal_render(field_view_value('node', $node, 'field_modal', $field[$delta - 1]));
+
+      return ctools_modal_render('', $contents);
+    }
+    // Return a message if no delta was provided.
+    else {
+      return ctools_modal_render('', t('There was a problem loading the content.'));
+    }
+  }
+  // Redirect the user to the node page with a message if JavaScript is not detected.
+  else {
+    drupal_set_message(t('There was a problem loading the content.'));
+    drupal_goto('node/' . $nid);
+  }
+}
+
+/**
+ * Access callback for Alliance Training Center
+ */
+function _intel_ea_training_center_access() {
+  global $user;
+
+  // Allow access to the Training Center if the user is authenticated.
+  if (in_array('authenticated user', array_values($user->roles))) {
+    return TRUE;
+  }
+  else {
+    return FALSE;
+  }
+}
+
+/**
+ * Implements hook_form_alter().
+ */
+function intel_ea_training_center_form_alter(&$form, &$form_state, $form_id) {
+  switch ($form_id) {
+    // Training Section node form.
+    case 'training_section_node_form':
+      // Validate training section order field values.
+     // $form['#validate'][] = '_intel_ea_training_center_training_section_node_form_validate';
+      break;
+    // Training Sub-Section node form.
+    case 'training_sub_section_node_form':
+      // Validate training sub-section order field values.
+      $form['#validate'][] = '_intel_ea_training_center_training_sub_section_node_form_validate';
+      break;
+  }
+}
+
+/**
+ * Validate Training Section node order field values.
+ */
+function _intel_ea_training_center_training_section_node_form_validate($form, &$form_state) {
+  // Grab any Training Section nodes that have the same order field value.
+  $query = new EntityFieldQuery();
+  $result = $query
+    ->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'training_section')
+    ->propertyCondition('language', array('en'))
+    ->propertyCondition('status', 1)
+    ->fieldCondition('field_section_order', 'value', $form_state['values']['field_section_order'][LANGUAGE_NONE][0]['value'])
+    ->execute();
+
+  if (isset($result['node'])) {
+    // If results, ensure not the same node as being edited.
+    if (!array_key_exists($form_state['values']['nid'], $result['node'])) {
+      form_set_error('field_section_order', t('Section Order must contain a unique value.'));
+    }
+  }
+}
+
+/**
+ * Validate Training Sub-Section node order field values.
+ */
+function _intel_ea_training_center_training_sub_section_node_form_validate($form, &$form_state) {
+  // Grab any Training Sub-Section nodes that have the same Training Section
+  // parent and order field value.
+  $query = new EntityFieldQuery();
+  $result = $query
+    ->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'training_sub_section')
+    ->propertyCondition('language', array('en'))
+    ->propertyCondition('status', 1)
+    ->fieldCondition('field_training_section', 'target_id', $form_state['values']['field_training_section'][LANGUAGE_NONE][0]['target_id'])
+    ->fieldCondition('field_sub_section_order', 'value', $form_state['values']['field_sub_section_order'][LANGUAGE_NONE][0]['value'])
+    ->execute();
+
+  if (isset($result['node'])) {
+    // If results, ensure not the same node as being edited.
+    if (!array_key_exists($form_state['values']['nid'], $result['node'])) {
+      form_set_error('field_sub_section_order', t('Sub-Section Order must contain a unique value.'));
+    }
+  }
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function intel_ea_training_center_block_info() {
+  $blocks['training_section_tabs'] = array(
+    'info' => t('Training Section Tabs'),
+  );
+  $blocks['training_sub_section_tabs'] = array(
+    'info' => t('Training Sub-Section Tabs'),
+  );
+  $blocks['training_section_tabs_content'] = array(
+    'info' => t('Training Section Tabs Content'),
+  );
+  $blocks['approved_nouns'] = array(
+    'info' => t('Approved Nouns'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function intel_ea_training_center_block_view($delta = '') {
+  switch ($delta) {
+    case 'training_section_tabs':
+      $block['subject'] = '';
+      $block['content'] = _intel_ea_training_center_training_section_tabs();
+      break;
+    case 'training_sub_section_tabs':
+      $block['subject'] = '';
+      $block['content'] = _intel_ea_training_center_training_sub_section_tabs();
+      break;
+    case 'training_section_tabs_content':
+      $block['subject'] = '';
+      $block['content'] = _intel_ea_training_center_training_section_tabs_content();
+      break;
+    case 'approved_nouns':
+      // Include the necessary ctools APIs for ctools modal.
+      ctools_include('ajax');
+      ctools_include('modal');
+
+      $block['subject'] = '';
+      $block['content'] = _intel_ea_training_center_approved_nouns();
+      break;
+  }
+
+  return $block;
+}
+
+/**
+ * Helper function to output the content of training_section_tabs.
+ */
+function _intel_ea_training_center_training_section_tabs() {
+  global $language;
+  $section = menu_get_object();
+
+  // Get all Training Sub-Section nodes related to this Training Section.
+  $query = new EntityFieldQuery();
+  $result = $query
+    ->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'training_sub_section')
+    ->propertyCondition('language', array($language->language))
+    ->propertyCondition('status', 1)
+    ->fieldCondition('field_training_section', 'target_id', $section->nid)
+    ->fieldOrderBy('field_sub_section_order', 'value', 'ASC')
+    ->execute();
+
+  $output = '';
+  if (isset($result['node'])) {
+    $nids = array_keys($result['node']);
+    $nodes = node_load_multiple($nids);
+    $output = node_view_multiple($nodes, 'training_section_tab');
+  }
+
+  return $output;
+}
+
+/**
+ * Helper function to output the content of training_sub_section_tabs.
+ */
+function _intel_ea_training_center_training_sub_section_tabs() {
+  global $language;
+  $sub_section = menu_get_object();
+
+  // Get all Training Sub-Section nodes related to the Training Section
+  // that this Sub-Section is related to.
+  $query = new EntityFieldQuery();
+  $result = $query
+    ->entityCondition('entity_type', 'node')
+    ->entityCondition('bundle', 'training_sub_section')
+    ->propertyCondition('language', array($language->language))
+    ->propertyCondition('status', 1)
+    ->fieldCondition('field_training_section', 'target_id', $sub_section->field_training_section[LANGUAGE_NONE][0]['target_id'])
+    ->fieldOrderBy('field_sub_section_order', 'value', 'ASC')
+    ->execute();
+
+  $output = '';
+  if (isset($result['node'])) {
+    $nids = array_keys($result['node']);
+    $nodes = node_load_multiple($nids);
+    $output = node_view_multiple($nodes, 'training_section_tab');
+  }
+
+  return $output;
+}
+
+/**
+ * Helper function to output the content of training_section_tabs_content.
+ */
+function _intel_ea_training_center_training_section_tabs_content() {
+  $section = menu_get_object();
+  $content_blocks = field_get_items('node', $section, 'field_content_blocks');
+
+  $output = '<div class="training-section-tabs-content">';
+  if (!empty($content_blocks)) {
+    foreach($content_blocks as $content_block) {
+      $output .= drupal_render(field_view_value('node', $section, 'field_content_blocks', $content_block));
+    }
+  }
+  $output .= '</div>';
+
+  return $output;
+}
+
+/**
+ * Helper function to output the content of approved_nouns.
+ */
+function _intel_ea_training_center_approved_nouns() {
+  // Get all Approved Nouns.
+  $query = new EntityFieldQuery();
+  $result = $query
+    ->entityCondition('entity_type', 'taxonomy_term')
+    ->entityCondition('bundle', 'approved_nouns')
+    ->propertyOrderBy('weight')
+    ->execute();
+
+  $output = '';
+  if (isset($result['taxonomy_term'])) {
+    $tids = array_keys($result['taxonomy_term']);
+    $terms = entity_load('taxonomy_term', $tids);
+
+    static $row = 1;
+    static $count = 1;
+    foreach ($terms as $term) {
+      $grid_row[$row][] = drupal_render(entity_view('taxonomy_term', array($term), 'approved_nouns_grid'));
+      $row = ($count % 2) ? $row : $row + 1;
+      $count++;
+    }
+    foreach ($grid_row as $grid) {
+      $items[] = implode($grid);
+    }
+    $output = theme('item_list', array('items' => $items));
+  }
+
+  return $output;
+}
+
+/**
+ * Implements hook_library().
+ */
+function intel_ea_training_center_library() {
+  // jQuery bigTarget
+  $libraries['jquery-bigTarget'] = array(
+    'title' => 'jQuery bigTarget',
+    'website' => 'http://github.com/leevigraham/jquery-bigTarget.js',
+    'version' => '2.0',
+    'js' => array(
+      'sites/all/libraries/jquery-bigTarget/jquery-bigTarget.js' => array(),
+    ),
+  );
+
+  return $libraries;
+}
+
+/**
+ * Implements hook_entity_info_alter().
+ */
+function intel_ea_training_center_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['training_center_tile'] = array(
+    'label' => t('Training Center Tile'),
+    'custom settings' => FALSE,
+  );
+  $entity_info['node']['view modes']['training_section_tab'] = array(
+    'label' => t('Training Section Tab'),
+    'custom settings' => FALSE,
+  );
+  $entity_info['node']['view modes']['training_section_slide'] = array(
+    'label' => t('Training Section Slide'),
+    'custom settings' => FALSE,
+  );
+  $entity_info['taxonomy_term']['view modes']['approved_nouns_grid'] = array(
+    'label' => t('Approved Nouns Grid'),
+    'custom settings' => FALSE,
+  );
+  $entity_info['taxonomy_term']['view modes']['approved_nouns_list'] = array(
+    'label' => t('Approved Nouns List'),
+    'custom settings' => FALSE,
+  );
+}
+
+/**
+ * Implements template_preprocess_page().
+ */
+function intel_ea_training_center_preprocess_page(&$variables) {
+  $current_path = current_path();
+  if ($current_path == 'training-center') {
+    drupal_add_library('system', 'effects');
+    drupal_add_js('sites/all/libraries/jquery.cycle/jquery.cycle.all.js', 'file');
+    drupal_add_library('intel_ea_training_center', 'jquery-bigTarget', FALSE);
+    drupal_add_js(drupal_get_path('module', 'intel_ea_training_center') . '/js/intel_ea_training_center.js', 'file');
+  }
+  elseif (isset($variables['node']->type)) {
+    if ($variables['node']->type == 'training_section' || $variables['node']->type == 'training_sub_section') {
+      drupal_add_library('system', 'effects');
+      drupal_add_js('sites/all/libraries/jquery.cycle/jquery.cycle.all.js', 'file');
+      drupal_add_library('intel_ea_training_center', 'jquery-bigTarget', FALSE);
+      drupal_add_js(drupal_get_path('module', 'intel_ea_training_center') . '/js/intel_ea_training_center.js', 'file');
+
+      // Include the necessary ctools APIs for ctools modal.
+      ctools_include('ajax');
+      ctools_include('modal');
+
+      // Include the necessary JS and CSS for ctools modal.
+      ctools_modal_add_js();
+
+      // Approved Nouns style
+      $intel_ea_training_center_style = array(
+        'intel-ea-training-center-style' => array(
+          'modalSize' => array(
+            'type' => 'fixed',
+            'width' => 400,
+            'height' => 300,
+            'contentRight' => 0,
+            'contentBottom' => 0,
+          ),
+          'modalOptions' => array(
+            'background-color' => '#fff',
+            'opacity' => 0.1,
+          ),
+          'animation' => 'show',
+          'animationSpeed' => 'fast',
+          'modalTheme' => 'intel_ea_training_center',
+          'throbber' => theme('image', array('path' => ctools_image_path('throbber.gif'), 'alt' => t('Loading...'), 'title' => t('Loading...'))),
+          'closeImage' => theme('image', array('path' => ctools_image_path('modal-close.png', 'intel_ea_training_center', 'images'), 'alt' => t('Close'), 'title' => t('Close'))),
+        ),
+      );
+
+      drupal_add_js($intel_ea_training_center_style, 'setting');
+      ctools_add_js('intel_ea_training_center_approved_nouns', 'intel_ea_training_center');
+      ctools_add_css('intel_ea_training_center_approved_nouns', 'intel_ea_training_center');
+
+      // Modal Content style
+      $intel_ea_training_center_large_style = array(
+        'intel-ea-training-center-large-style' => array(
+          'modalSize' => array(
+            'type' => 'fixed',
+            'width' => 700,
+            'height' => 400,
+            'contentRight' => 0,
+            'contentBottom' => 0,
+          ),
+          'modalOptions' => array(
+            'background-color' => '#fff',
+            'opacity' => 0.1,
+          ),
+          'animation' => 'show',
+          'animationSpeed' => 'fast',
+          'modalTheme' => 'intel_ea_training_center_large',
+          'throbber' => theme('image', array('path' => ctools_image_path('throbber.gif'), 'alt' => t('Loading...'), 'title' => t('Loading...'))),
+          'closeImage' => theme('image', array('path' => ctools_image_path('modal-close.png', 'intel_ea_training_center', 'images'), 'alt' => t('Close'), 'title' => t('Close'))),
+        ),
+      );
+
+      drupal_add_js($intel_ea_training_center_large_style, 'setting');
+      ctools_add_js('intel_ea_training_center_modal_content', 'intel_ea_training_center');
+      ctools_add_css('intel_ea_training_center_modal_content', 'intel_ea_training_center');
+    }
+  }
+}
+
+/**
+ * Implements hook_token_info().
+ */
+function intel_ea_training_center_token_info() {
+  // Types
+  $info['types']['intel_ea_training_center_ga'] = array(
+    'name' => t('Intel EA Training Center GA'),
+    'description' => t('Intel EA Training Center Google Analytics variables'),
+  );
+
+  // Tokens
+  $info['tokens']['intel_ea_training_center_ga']['employee_session'] = array(
+    'name' => t('Employee Session'),
+    'description' => t('Employee ID for an Alliance Training Center session.'),
+  );
+
+  return $info;
+}
+
+/**
+ * Implements hook_tokens().
+ */
+function intel_ea_training_center_tokens($type, $tokens, array $data = array(), array $options = array()) {
+  $replacements = array();
+
+  if ($type == 'intel_ea_training_center_ga') {
+    foreach ($tokens as $name => $original) {
+      switch ($name) {
+        // Employee Session
+        case 'employee_session':
+          global $user;
+          $training_center = FALSE;
+
+          // Set the token replacement only if within the Training Center.
+          if ($user->uid != 0) {
+            if (isset($data['node']->type)) {
+              $training_center = ($data['node']->type == 'training_section' || $data['node']->type == 'training_sub_section') ? TRUE : FALSE;
+            }
+            elseif (isset($data['path'])) {
+              $training_center = ($data['path'] == 'training-center') ? TRUE : FALSE;
+            }
+          }
+          $replacements[$original] = ($training_center) ? $user->uid : '';
+          break;
+      }
+    }
+  }
+
+  return $replacements;
+}

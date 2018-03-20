@@ -1,0 +1,114 @@
+<?php
+
+function promotioncompany_node_view($node, $view_mode, $langcode) {
+  global $base_url;
+  if($node->type == 'promotion')
+  {
+  	$color_change_for_bannertext =$node->field_color_for_banner_text['und']['0']['rgb'];
+  	$banner_image = $node->field_banner_image['und']['0']['uri'];
+  	
+  	if (strpos($banner_image, 'default_images') !== false) {
+  		$url_substitute = end(explode( 'default_images', $banner_image));
+  		$url_property = "url(" . $base_url ."/sites/default/files/shared/default_images".$url_substitute . ") no-repeat";
+  	}
+  	elseif (isset($banner_image) && (strpos($banner_image, 'default_images') == false) ) {
+  	 	$url_substitute = end(explode( 'public://', $banner_image));
+  	 	$url_property = "url(" . $base_url ."/sites/default/files/shared/" . $url_substitute . ") no-repeat";
+  	 } 
+  	drupal_add_js('jQuery(document).ready(function () { jQuery(".PromotionTopBar").css("background", "'.$url_property.'"); });', 'inline');
+	if (isset($color_change_for_bannertext)){
+		drupal_add_js('jQuery(document).ready(function () { jQuery(".PromotionTopBar,.builderjoinbuttonpromo").css("color", "'.$color_change_for_bannertext.'"); });', 'inline');
+		drupal_add_js('jQuery(document).ready(function () { jQuery(".joinbuttonpromo").css("color", "'.$color_change_for_bannertext.'"); });', 'inline');
+		drupal_add_js('jQuery(document).ready(function () { jQuery(".builderjoinbuttonpromo").css("border-color", "'.$color_change_for_bannertext.'"); });', 'inline');
+		drupal_add_js('jQuery(document).ready(function () { jQuery(".joinbuttonpromo").css("border-color", "'.$color_change_for_bannertext.'"); });', 'inline');
+		drupal_add_js('jQuery(document).ready(function () { jQuery("#views_slideshow_cycle_main_promotion_banner-block .prom .joinbuttonpromo").css("border-color", "'.$color_change_for_bannertext.'"); });', 'inline');
+		
+		
+	}
+
+  }
+}
+
+function promotioncompany_form_alter(&$form, &$form_state, $form_id) {
+if ( $form_id == 'promotion_node_form') 
+{
+	$node = $form_state['node'];
+    global $user;
+    $user_fields = user_load($user->uid);
+    $usr_comp_id = $user_fields->field_company['und']['0']['target_id']; //user compid
+    $node_info=node_load($usr_comp_id);	
+	$node_compid = $node->field_company['und']['0']['target_id']; //node compid
+
+if( (((array_key_exists(33, $user_fields->roles)) || (array_key_exists(35, $user_fields->roles)) ) && (array_key_exists(20, $user_fields->roles)) )
+	|| (array_key_exists(12, $user_fields->roles)) || (array_key_exists(11, $user_fields->roles)) ) {
+
+$form['field_company']['und']['#default_value'] = $usr_comp_id;
+$form['field_company']['#disabled'] = TRUE;
+
+
+    if (!isset($node->nid) || isset($node->is_new)) {
+          $form['field_company']['und']['#default_value'] = $usr_comp_id;
+    }
+    else {
+		$node = $form_state['node'];
+		$form['field_company']['und']['#default_value'] = $node_compid;
+
+    }
+}
+else if(array_key_exists(21, $user_fields->roles)|| array_key_exists(36, $user_fields->roles) || array_key_exists(9, $user_fields->roles))
+{
+	if(!isset($node->nid) || isset($node->is_new)) {
+
+        $form['field_company']['#disabled'] = FALSE;
+    }
+	else if (isset($node->nid) || !isset($node->is_new)) {
+
+        $form['field_company']['und']['#default_value'] = $node_compid;
+        $form['field_company']['#disabled'] = TRUE;
+    }
+	
+	
+}
+
+}}
+
+function promotioncompany_views_pre_view(&$view, &$display_id, &$args) {
+	global $user;
+    $user_fields = user_load($user->uid);
+  if ($view->name == 'select_promotion_solutions') {
+	   $view_filters = $view->display_handler->get_option('filters');
+	   if ( ((array_key_exists(33, $user_fields->roles)) || (array_key_exists(35, $user_fields->roles)) ) && (array_key_exists(20, $user_fields->roles))  ) 
+	  {
+		    $view_filters['field_company_target_id']['exposed'] = 0;   
+	   }	
+	   else
+		  $view_filters['field_company_target_id']['exposed'] = 1;  
+
+     $view->display_handler->set_option('filters', $view_filters);  
+     $view->display_handler->override_option('filters', $view_filters);  	 
+
+  }
+}
+
+/*
+function promotioncompany_entityreference_view_widget_views_arguments_alter(&$arguments, $form_state, $view) { 
+
+if ($view->name == 'select_promotion_solutions') {
+	
+	$node = $form_state['values'];
+	
+	//watchdog('promotioncompany', $node ); 
+	watchdog('promotioncompany', 'Field !field_name created.', array('!field_name' => $node));  
+	//watchdog();
+	
+	
+}
+
+} */
+
+
+
+
+
+
+

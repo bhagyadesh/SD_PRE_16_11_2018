@@ -1,0 +1,6 @@
+name = Solution Extract
+description = This module is used to extract solutions with taxononmy data
+core = 7.x
+php = 5.2
+
+; Add a style sheet for all media

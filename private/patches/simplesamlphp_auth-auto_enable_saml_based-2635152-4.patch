@@ -1,0 +1,196 @@
+diff --git a/simplesamlphp_auth.admin.inc b/simplesamlphp_auth.admin.inc
+index e6d83ac..6ee36e3 100644
+--- a/simplesamlphp_auth.admin.inc
++++ b/simplesamlphp_auth.admin.inc
+@@ -180,6 +180,30 @@ function simplesamlphp_auth_settings_sync() {
+     '#type' => 'checkbox',
+     '#title' => t('Automatically enable SAML authentication for existing users upon successful login'),
+     '#default_value' => variable_get('simplesamlphp_auth_autoenablesaml', 0),
++    '#description' => t('Upon federated login, check for a pre-existing Drupal account and enable SAML authentication for the existing user.')
++      . '<br /><br />' . t('WARNING: make sure there is an actual link between the SAML attributes and pre-existing Drupal user; otherwise, the Drupal account can be taken over by someone else authenticating with a SAML authname that happens to be the same. Additionally, pre-existing users may be modified (e.g. updates to the username, email address, and roles) when the user is linked based on SAML attributes.'),
++  );
++
++  $has_authmap_entries = db_select('authmap', 'authmap')
++    ->condition('authmap.module', 'simplesamlphp_auth')
++    ->fields('authmap', array('module'))
++    ->execute()
++    ->fetchField();
++
++  $form['simplesamlphp_auth_grp_user']['simplesamlphp_authname_source'] = array(
++    '#type' => 'radios',
++    '#title' => t('Match Drupal users based on:'),
++    '#options' => array(
++      'uid' => t('Unique ID attribute'),
++      'username' => t('User name attribute'),
++      'mail' => t('Mail attribute'),
++    ),
++    '#default_value' => variable_get('simplesamlphp_authname_source', 'uid'),
++    '#disabled' => $has_authmap_entries,
++    '#description' => t('Associate SAML users with Drupal accounts based on either the user name or email address. WARNING: This option should not be changed and will be disabled after SAML users have logged in or been created, since changing this would break those authentication mappings.'),
++    '#states' => array(
++      'invisible' => array('input#edit-simplesamlphp-auth-autoenablesaml' => array('checked' => FALSE)),
++    ),
+   );
+ 
+   return system_settings_form($form);
+diff --git a/simplesamlphp_auth.inc b/simplesamlphp_auth.inc
+index 9a27796..f2b038d 100644
+--- a/simplesamlphp_auth.inc
++++ b/simplesamlphp_auth.inc
+@@ -39,7 +39,7 @@ function _simplesaml_auth_login_register() {
+       // If we did not find a Drupal user, register a new one.
+       if (!$ext_user) {
+         // Check if a local drupal account exists (to auto-enable SAML).
+-        $local_user = user_load_by_name($authname);
++        $local_user = _simplesamlphp_auth_user_load($authname);
+         if ($local_user && variable_get('simplesamlphp_auth_autoenablesaml', FALSE)) {
+           user_set_authmaps($local_user, array('authname_simplesamlphp_auth' => $authname));
+           $ext_user = $local_user;
+diff --git a/simplesamlphp_auth.module b/simplesamlphp_auth.module
+index 1f1af92..ba020bd 100644
+--- a/simplesamlphp_auth.module
++++ b/simplesamlphp_auth.module
+@@ -295,7 +295,7 @@ function simplesamlphp_auth_form_alter(&$form, $form_state, $form_id) {
+     $form['saml'] = array(
+       '#type' => 'checkbox',
+       '#title' => t('Enable this user to leverage SAML authentication'),
+-      '#default_value' => $form_id == 'user_register_form' ? TRUE : (bool) user_get_authmaps($form['#user']->name),
++      '#default_value' => $form_id == 'user_register_form' ? TRUE : (bool) user_get_authmaps(_simplesamlphp_auth_derive_user_authname($form['#user'])),
+     );
+     $form['#submit'][] = 'simplesaml_auth_user_profile_form_submit';
+   }
+@@ -325,6 +325,9 @@ function simplesaml_auth_user_profile_form_submit(&$form, $form_state) {
+   $values = $form_state['values'];
+ 
+   if (isset($values['saml'])) {
++    // Determine whether to use the username or the email as the authname.
++    $authname = _simplesamlphp_auth_derive_user_authname($form_state['user']);
++
+     // Enter this username into the authmap table.
+     if ($values['saml']) {
+       db_merge('authmap')
+@@ -333,7 +336,7 @@ function simplesaml_auth_user_profile_form_submit(&$form, $form_state) {
+           'module' => 'simplesamlphp_auth',
+         ))
+         ->fields(array(
+-          'authname' => $values['name'],
++          'authname' => $authname,
+         ))
+         ->execute();
+     }
+@@ -427,33 +430,108 @@ function _simplesamlphp_auth_isEnabled($show_inactive_msg = FALSE) {
+ }
+ 
+ /**
+- * Gets the authname attribute from the SAML assertion.
++ * Gets the authname from the SAML attributes.
+  *
+  * @return string
+- *   The authname attribute.
++ *   The authname to use.
+  *
+  * @throws Exception
+- *   Throws an exception if no valid unique id attribute is set in SAML session.
++ *   Throws an exception if no authname is set in SAML session.
+  */
+ function _simplesamlphp_auth_get_authname() {
++  $authname = '';
++
++  switch (variable_get('simplesamlphp_authname_source', 'uid')) {
++    case 'mail':
++      $authname = _simplesamlphp_auth_get_mail();
++      break;
++    case 'username':
++      $authname = _simplesamlphp_auth_get_default_name();
++      break;
++    case 'uid':
++    default:
++      $authname = _simplesamlphp_auth_get_authname();
++  }
++
++  return $authname;
++}
++
++/**
++ * Load a user who doesn't yet have an authmap entry, based on the authname.
++ *
++ * @param string $authname
++ *   Value from _simplesamlphp_auth_get_authname(), which may be the user name
++ *   or the email address depending on our module configuration.
++ *
++ * @return stdclass
++ *   A Drupal user object.
++ */
++function _simplesamlphp_auth_user_load($authname) {
++  switch (variable_get('simplesamlphp_authname_source', 'uid')) {
++    case 'mail':
++      $account = user_load_by_mail($authname);
++      break;
++    case 'username':
++    case 'uid':
++    default:
++      $account = user_load_by_name($authname);
++  }
++
++  return $account;
++}
++
++/**
++ * Figure out the expected authmap value from a Drupal user object.
++ *
++ * Used when generating authmap entries for users via the "Enable this user to
++ * leverage SAML authentication" checkbox on user edit forms.
++ *
++ * @param $account
++ *   A Drupal user object.
++ *
++ * @param string
++ *   The expected authmap value, which will either be the account username or
++ *   email.
++ */
++function _simplesamlphp_auth_derive_user_authname($account) {
++  switch (variable_get('simplesamlphp_authname_source', 'uid')) {
++    case 'mail':
++      return $account->mail;
++    case 'username':
++    case 'uid':
++    default:
++      return $account->name;
++  }
++}
++
++/**
++ * Gets the unique ID attribute from the SAML assertion.
++ *
++ * @return string
++ *   The unique ID attribute.
++ *
++ * @throws Exception
++ *   Throws an exception if no valid unique id attribute is set in SAML session.
++ */
++function _simplesamlphp_auth_get_unique_id() {
+   global $_simplesamlphp_auth_saml_attributes;
+ 
+-  $authname = '';
++  $unique_id = '';
+ 
+   // Check if valid local session exists.
+   if (isset($_simplesamlphp_auth_saml_attributes)) {
+     if (variable_get('simplesamlphp_auth_debug', 0)) {
+-      watchdog('simplesamlphp_auth', '_simplesamlphp_auth_get_authname: Valid local SAML session exists', NULL, WATCHDOG_DEBUG);
++      watchdog('simplesamlphp_auth', '_simplesamlphp_auth_get_unique_id: Valid local SAML session exists', NULL, WATCHDOG_DEBUG);
+     }
+     if (isset($_simplesamlphp_auth_saml_attributes[variable_get('simplesamlphp_auth_unique_id', 'eduPersonPrincipalName')])) {
+-      $authname = $_simplesamlphp_auth_saml_attributes[variable_get('simplesamlphp_auth_unique_id', 'eduPersonPrincipalName')][0];
++      $unique_id = $_simplesamlphp_auth_saml_attributes[variable_get('simplesamlphp_auth_unique_id', 'eduPersonPrincipalName')][0];
+     }
+     else {
+       throw new Exception(t('Error in simplesamlphp_auth.module: no valid unique id attribute set.'));
+     }
+   }
+ 
+-  return $authname;
++  return $unique_id;
+ }
+ 
+ /**

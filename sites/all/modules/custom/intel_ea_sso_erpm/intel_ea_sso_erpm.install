@@ -1,0 +1,71 @@
+<?php
+
+/**
+ * Implements hook_install.
+ *
+ * Purpose: Set Schema so as to force update that converts all alliance members
+ * to using SSO.
+ */
+function intel_ea_sso_erpm_install(){
+  drupal_set_installed_schema_version('intel_ea_sso_erpm', 7000);
+}
+
+/**
+ * Implements hook_update_n()
+ *
+ * Purpose: Initial value of user saml login timeout
+ */
+
+function intel_ea_sso_erpm_update_7001(){
+  // Set auth session expire to 6 hours.
+  variable_set('simplesamlphp_auth_session_expire', (60 * 60) * 6);
+}
+
+///**
+// * Implements hook_update_n().
+// *
+// * Purpose: Add all alliance members to requiring SSO login.
+// */
+//function intel_ea_sso_erpm_update_7001(&$sandbox){
+//
+//  // If not already initialized, initialize base values.
+//  if (!isset($sandbox['uids'])){
+//    $sandbox['uids'] = array_keys(entity_load('user'));
+//    $sandbox['total_count'] = count($sandbox['uids']);
+//    $sandbox['current_count'] = 0;
+//    $sandbox['updated'] = 0;
+//  }
+//
+//  // Loop through 15 users at a time.
+//  for($x = 0; $x != 15 && $sandbox['current_count'] <= $sandbox['total_count']; $x++) {
+//    // Check if the user is alliance member, if so alter to use SSO.
+//    if (intel_ea_module_is_user_alliance_member($sandbox['uids'][$sandbox['current_count']])) {
+//      // Load the user, we need it for username. Drupal should cache result.
+//      $user = user_load($sandbox['uids'][$sandbox['current_count']]);
+//
+//      // Update authmap table with UID and authname.
+//      db_merge('authmap')
+//        ->key(array(
+//          'uid' => $sandbox['uids'][$sandbox['current_count']],
+//          'module' => 'simplesamlphp_auth',
+//        ))
+//        ->fields(array(
+//          'authname' => $user->name,
+//        ))
+//        ->execute();
+//      // Increment updated counter.
+//      $sandbox['updated']++;
+//    }
+//
+//    // Increment counter.
+//    $sandbox['current_count']++;
+//  }
+//
+//  // Calculate finished progress.
+//  $sandbox['#finished'] = $sandbox['current_count'] / $sandbox['total_count'];
+//
+//  // Output text upon completion.
+//  if($sandbox['#finished'] >= 1){
+//    return 'Updated ' . $sandbox['updated'] . ' users from ' . $sandbox['total_count'] . ' potential nodes needing updates.';
+//  }
+//}

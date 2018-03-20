@@ -1,0 +1,1065 @@
+<?php
+header('Access-Control-Allow-Origin: *');
+/**
+ * @FILE Primary module file containing core hooks.
+ */
+
+function intel_isdm_module_form_alter(&$form, &$form_state, $form_id){
+  // Check if this is for adding taxonomy to market segments.
+  if($form_id == 'taxonomy_form_term' && 'market_segments' == $form_state['term']->vocabulary_machine_name){
+    $form['#validate'][] = 'intel_isdm_module_market_segment_form_validate';
+  }
+}
+
+/**
+ * Prevent market segment taxonomy terms from containing /'s going forward.
+ */
+function intel_isdm_module_market_segment_form_validate($form, &$form_state){
+  $error_present = FALSE;
+  // Check if name contains a / and throw form error if so.
+  if (strpos($form_state['values']['name'], '/') > -1) {
+    form_set_error('name','Market Segment terms may not contain / (backslash) anymore due to URL path construction technicalities. Please use another character instead.');
+    $error_present = TRUE;
+  }
+  if (strpos($form_state['values']['name'], '-') > -1) {
+    form_set_error('name','Market Segment terms may not contain - (dash) anymore due to URL path construction technicalities. Please use another character instead.');
+    $error_present = TRUE;
+  }
+
+  if($error_present) {
+    return FALSE;
+  }
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function intel_isdm_module_block_info() {
+  // Init blocks array.
+  $blocks = array();
+
+  //Create isdm custom search block.
+  $blocks['isdm_custom_search'] = array(
+    'info' => t('ISDM Custom Search'),
+    'cache' => DRUPAL_CACHE_GLOBAL,
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function intel_isdm_module_block_view($delta){
+  switch ($delta){
+    // Create ISDM custom search for the site topbar.
+    case 'isdm_custom_search':
+      $block['subject'] = t('Site Search');
+      $block['content'] = drupal_get_form('intel_isdm_module_site_search_form');
+      break;
+  }
+
+  return $block;
+}
+
+
+/**
+ * Implements hook_menu().
+ */
+function intel_isdm_module_menu() {
+
+  $items = array();
+
+  $items['solr-search/autocomplete'] = array( 
+    'page callback' => '_autocomplete_callback',
+    'type' => MENU_CALLBACK,
+    'access callback' => TRUE,
+  );
+  
+  $items['taxonomy-report/categories'] = array(
+    'page callback' => 'taxonomy_reporting_categories',
+	'type' => MENU_CALLBACK,
+    'access callback' => TRUE,
+    //'access arguments' => array('access mymodule reports'),
+    //'type' => MENU_CALLBACK,
+  );
+  
+  $items['taxonomy-report/characteristics'] = array(
+    'page callback' => 'taxonomy_reporting_characteristics',
+	'type' => MENU_CALLBACK,
+    'access callback' => TRUE,
+    //'access arguments' => array('access mymodule reports'),
+    //'type' => MENU_CALLBACK,
+  );
+
+  $items['taxonomy-report/solutions'] = array(
+    'page callback' => 'taxonomy_reporting_solutions',
+	'type' => MENU_CALLBACK,
+    'access callback' => TRUE,
+    //'access arguments' => array('access mymodule reports'),
+    //'type' => MENU_CALLBACK,
+  );
+  
+  return $items;
+}
+
+
+/**
+ * AutoComplete CallBack
+ */
+ 
+function _autocomplete_callback( $string = ''){
+
+	$no_result=array();
+
+	if( is_array($output_array) ) { unset( $output_array ); }
+		
+	if( strlen(trim($string)) >= 3 ){
+	
+		// Check, if user is logged in or not
+		global $user;
+		global $language;		
+		$user_langauage_code = 'en';	// By Default language is English - en
+
+		if( $language->language != ''){
+			$user_langauage_code = $language->language;
+		}
+		
+		ini_set("allow_url_fopen", 1);
+		$term = strtolower ( trim($string) );	
+		$term = str_replace(' ', '+', $term);
+				
+		$user_type = getusertype($user);
+
+		
+		if( $user_type == 'PUBLIC_USER') { // for anonymous user ( non-logged in users ) -- pre_release == false && intel_only == false
+	
+			$termQuery = 'http://50.116.5.118:8983/solr/intel_isv_dev1/select?q=*:*&facet.prefix='.$term.'&facet=true&fq=index_id:(solutions:(bs_field_intel_only:%22false%22+AND+bs_field_pre_release:%22false%22)+OR+companies)&rows=0&facet.field=spellb&facet.field=spellc&facet.limit=10&fq=sm_search_api_language:'.$user_langauage_code.'&facet.mincount=1&facet.sort=index&wt=json&indent=true';
+			
+		} else { // for logged-in users & respective roles
+			
+	
+				$append_result = FALSE;
+
+			
+				if( ($user_type == 'INTEL_ADMIN_USER') || ($user_type == 'INTEL_ONLY_USER') || ($user_type == 'ADMINISTRATOR') ) { 
+				
+					 $termQuery = 'http://50.116.5.118:8983/solr/intel_isv_dev1/select?facet.prefix='.$term.'&facet=true&fq=index_id%3A(solutions+OR+companies)&rows=0&facet.field=spellb&facet.field=spellc&facet.limit=10&fq=sm_search_api_language:'.$user_langauage_code.'&facet.mincount=1&facet.sort=index&wt=json';
+					
+					
+				} elseif ($user_type == 'SOLUTIONS_DIRECTORY_EDITOR') { 
+				
+					$account = entity_metadata_wrapper('user', $user);
+					$user_company_id = $account->field_company->nid->value();
+					if(  $user_company_id != "" ){
+						$user_company_name =  node_load($user_company_id)->title;
+						$user_company_name =  trim($user_company_name);
+						$user_company_name =  str_replace(" ", "%20", $user_company_name);
+					}
+					
+					// anonymous user's results + company solutions which current logged-in user belongs to , pre_release == true && intel_only == false
+					
+					$append_result = TRUE;
+					
+					
+					$termQuery = 'http://50.116.5.118:8983/solr/intel_isv_dev1/select?q=*:*&facet.prefix='.$term.'&facet=true&fq=index_id:(solutions:(bs_field_intel_only:%22false%22+AND+bs_field_pre_release:%22false%22)+OR+companies)&rows=0&facet.field=spellb&facet.field=spellc&facet.limit=10&fq=sm_search_api_language:'.$user_langauage_code.'&facet.mincount=1&facet.sort=index&wt=json&indent=true';
+					
+					$addtional_query = 'http://50.116.5.118:8983/solr/intel_isv_dev1/select?q=*:*&facet.prefix='.$term.'&facet=true&fq=index_id:(solutions:(bs_field_intel_only:%22true%22+OR+bs_field_pre_release:%22true%22)+AND+companies:(tm_field_company=%22'.$user_company_name.'%22))&rows=0&facet.field=spellb&facet.field=spellc&facet.limit=20&fq=sm_search_api_language:'.$user_langauage_code.'&facet.mincount=1&facet.sort=index&wt=json&indent=true';
+	
+					//$addtional_query = 'http://50.116.5.118:8983/solr/intel_isv_dev1/select?q=*:*&facet.prefix='.$term.'&facet=true&fq=index_id:(solutions:(bs_field_intel_only:%22false%22+AND+bs_field_pre_release:%22true%22)+OR+companies:(tm_field_company=%22'.$user_company_name.'%22))&rows=0&facet.field=spellb&facet.field=spellc&facet.limit=20&fq=sm_search_api_language:'.$user_langauage_code.'&facet.mincount=1&facet.sort=index&wt=json&indent=true';
+					
+					
+				} else { 
+					
+					$account = entity_metadata_wrapper('user', $user);
+					$user_company_id = $account->field_company->nid->value();
+					if(  $user_company_id != "" ){
+						$user_company_name =  node_load($user_company_id)->title;
+						$user_company_name =  trim($user_company_name);
+						$user_company_name =  str_replace(" ", "%20", $user_company_name);
+					}
+				
+					//anonymous user's results + company solutions which current logged-in user belongs to , pre_release == false && intel_only == true
+					
+					$append_result = TRUE;
+									
+					$termQuery = 'http://50.116.5.118:8983/solr/intel_isv_dev1/select?q=*:*&facet.prefix='.$term.'&facet=true&fq=index_id:(solutions:(bs_field_intel_only:%22false%22+AND+bs_field_pre_release:%22false%22)+OR+companies)&rows=0&facet.field=spellb&facet.field=spellc&facet.limit=10&fq=sm_search_api_language:'.$user_langauage_code.'&facet.mincount=1&facet.sort=index&wt=json&indent=true';
+					
+					$addtional_query = 'http://50.116.5.118:8983/solr/intel_isv_dev1/select?q=*:*&facet.prefix='.$term.'&facet=true&fq=index_id:(solutions:(bs_field_intel_only:%22true%22+AND+bs_field_pre_release:%22false%22)+AND+companies:(tm_field_company=%22'.$user_company_name.'%22))&rows=0&facet.field=spellb&facet.field=spellc&facet.limit=20&fq=sm_search_api_language:'.$user_langauage_code.'&facet.mincount=1&facet.sort=index&wt=json&indent=true';
+	
+					// $termQuery_two = 'http://50.116.5.118:8983/solr/intel_isv_dev1/select?q=*:*&facet.prefix='.$term.'&facet=true&fq=index_id:(solutions:(bs_field_intel_only:%22true%22+AND+bs_field_pre_release:%22false%22)+OR+companies:(tm_field_company=%22'.$user_company_name.'%22))&rows=0&facet.field=spellb&facet.field=spellc&facet.limit=20&fq=sm_search_api_language:'.$user_langauage_code.'&facet.mincount=1&facet.sort=index&wt=json&indent=true';
+					
+				} 			
+		}
+
+		/*
+		$termQuery = 'http://50.116.5.118:8983/solr/intel_isv_dev1/select?facet.prefix='.$term.'&facet=true&fq=index_id%3A(solutions+OR+companies)&rows=0&facet.field=spellb&facet.field=spellc&facet.limit=10&fq=sm_search_api_language:'.$user_langauage_code.'&facet.mincount=1&facet.sort=index&wt=json';
+		*/	
+		
+		$content = file_get_contents($termQuery);
+		$json = json_decode($content, true);
+		$cnt1=0;
+		$cnt2=0;
+		// $output_array=array();
+		// $output_array[$user_langauage_code] = $user_langauage_code;
+		foreach($json['facet_counts']['facet_fields']['spellb'] as $item) {
+		
+			if (($cnt1 % 2) == 0 && $item!='')
+			{ 
+					//echo $item;
+					$item = str_replace('\n', ',', trim($item) );
+					$output_array[$item] = $item;  
+			}
+			$cnt1++;
+		}
+		
+		foreach($json['facet_counts']['facet_fields']['spellc'] as $item) {
+		
+			if (($cnt2 % 2) == 0 && $item!='')
+			{ 
+					//echo $item;
+					$item = str_replace('\n', ',', trim($item) );
+					$output_array[$item] = $item; 
+			}
+			$cnt2++;
+		}
+		
+		
+		// Processing 2nd query & Appending the result
+		
+		if( $append_result ) {
+			
+				//echo "coming";
+				//echo $addtional_query;
+				//$additional_content = file_get_contents($addtional_query);
+				//$additional_content = stream_get_contents(fopen($addtional_query, "rb"));				
+				//echo $additional_content;				
+				//$result = drupal_http_request($addtional_query); 
+				
+				$additional_content = file_get_contents($addtional_query);
+				$add_json = json_decode($additional_content, true);
+				$cnt2=0;				
+				//echo " Json ";
+				//print_r( $add_json['facet_counts']['facet_fields']['spellc'] );				
+				foreach( $add_json['facet_counts']['facet_fields']['spellc'] as $item ) {
+			
+					if (($cnt2 % 2) == 0 && $item!='')
+					{ 
+							//echo $item;
+							$item = str_replace('\n', ',', trim($item) );
+							$output_array[$item] = $item; 
+					}
+					$cnt2++;
+				}
+
+			// List all solutions of current logged-in users...
+			$auth_result = db_query("select title from node where type='solution' AND  uid='".$user->uid."' AND language='".$user_langauage_code."' AND title LIKE '".trim($string)."%'");
+			foreach ($auth_result as $record) {
+			  $output_array[$record->title] = $record->title;
+			}
+			
+			 $output_array = array_unique($output_array);					
+		} 
+				
+		
+		
+		if( count($output_array) >= 1 ){
+			drupal_json_output($output_array);
+		} else {
+			drupal_json_output($no_result);
+		}
+		
+	} else {
+		drupal_json_output($no_result);
+	}
+	
+}
+
+
+/**
+ * Implements hook_js_alter
+ * @param array $javascript
+ */
+function intel_isdm_module_js_alter(&$javascript) {
+  //if (arg(0) == 'MYPAGE') {
+    $javascript['misc/autocomplete.js']['data'] = drupal_get_path('module', 'intel_isdm_module') . '/js/autocomplete.js';
+  //} 
+}
+
+
+
+/**
+ * Custom form generation callback for sitewide ISDM searchbar.
+ */
+function intel_isdm_module_site_search_form(){
+  $form = array();
+  drupal_add_js(drupal_get_path('module', 'intel_isdm_module') . '/js/custom.js');
+  
+  $search_string = '';
+  $query_parameters = drupal_get_query_parameters();
+  if (!empty($query_parameters['search'])) {
+	$search_string = $query_parameters['search'];
+  } 
+  
+  $form['search'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Search'),
+    '#size' => 60,
+    //'#maxlength' => 128,
+    '#required' => TRUE,
+	'#default_value' => $search_string,
+	'#autocomplete_path' => 'solr-search/autocomplete',
+    '#placeholder' => t('Search Directory'),
+	'#attributes' => array(
+							'class' => array('clearable'),
+							'onblur' => "if (this.value == '') {this.value = '$search_string'}",
+							'onfocus' => "if (this.value == '$search_string') {this.value = ''}", 
+						), 
+	);
+
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Go'),
+  );
+  return $form;
+}
+
+/**
+ * ISDM sitewide searchbar validation function.
+ *
+ * Takes values enter, makes alpha, removes special chars, limits to single
+ * space and converts single spaces to +'s... just how views wants it.
+ */
+function intel_isdm_module_site_search_form_validate($form, &$form_state) {
+  // Strip special chars from search value, limit to single spaces.
+//  $form_state['values']['search'] = preg_replace("/[^A-Za-z ]/", '', $form_state['values']['search']);
+  $form_state['values']['search'] = preg_replace('!\s+!', ' ', $form_state['values']['search']);
+  $form_state['values']['search'] = str_replace(' ', '+', $form_state['values']['search']);
+}
+
+/**
+ * ISDM Sitewide searchbar submit function.
+ *
+ * Takes form submission, builds URL, redirects and sends them on their way!
+ */
+function intel_isdm_module_site_search_form_submit($form, &$form_state) {
+  // Build URL using core URL but add search params manually.
+  $url = url('solutions-directory') . '?search=' . $form_state['values']['search'];
+
+  // Using instead of drupal_goto as goto url_encodes values.
+  header('Location: ' . $url, TRUE);
+  drupal_exit($url);
+}
+
+/**
+ * Implements hook_field_attach_view_alter().
+ *
+ * Display a message if all solution price fields are empty.
+ */
+function intel_isdm_module_field_attach_view_alter(&$output, $context){
+
+  if ($context['entity_type'] != 'node' || $context['view_mode'] != '_custom') {
+    return;
+  }
+
+  $node = $context['entity'];
+  //Get the price field
+  $priceperunit = _field_invoke_get_instances('node', $node->type, array('default' => TRUE, 'deleted' => FALSE, 'field_name' => 'field_price_per_unit'));
+
+  if(empty($node->field_price_per_unit) && empty($node->field_price_per_100_units) && empty($node->field_price_per_1000_units)) {
+    $field = field_info_field($priceperunit[0]['field_name']);
+    $display = field_get_display($priceperunit[0], 'default', $node);
+
+    if($display['type'] == 'hidden'){
+      return;
+    }
+    // Set output for field.
+    $output[$priceperunit[0]['field_name']] = array(
+        '#theme' => 'field',
+        '#title' => $priceperunit[0]['label'],
+        '#label_display' => 'above',
+        '#field_type' => $field['type'],
+        '#field_name' => $priceperunit[0]['field_name'],
+        '#bundle' => $node->type,
+        '#object' => $node,
+        '#items' => array(
+            0 => array('value' => t('Contact Member for Pricing.'))),
+        '#entity_type' => 'node',
+        '#weight' => $display['weight'],
+        0 => array('#markup' => t('Contact Member for Pricing.')),
+    );
+
+  }
+}
+
+
+/**
+ * Implements hook_views_pre_render().
+ * Add a custom view more link to the partners drop-down
+ * Fix the URLs for views on company detail pages
+ * Dynamic page titles for solutions directory views
+ */
+function intel_isdm_module_views_pre_render(&$view) {
+  if($view->name == 'isdm_partners_by_market_segment'){
+    $view->display_handler->set_option('link_display', 'custom_url');
+    $view->display_handler->set_option('link_url', 'member-roster');
+  } else if ($view->name == 'company_solutions'){
+    $view->display_handler->set_option('link_display', 'custom_url');
+    $view->display_handler->set_option('link_url', 'solutions-directory/categories/'.reset($view->filter['field_categories_tid']->value).'/company/'.$view->args[0]);
+  }
+
+  else if ($view->name == 'solutions_directory') {
+    
+    if($view->result == null) {
+      $view->display_handler->set_option('css_class', 'empty-search');
+    }
+
+    if ($searchers = facetapi_get_active_searchers()) {
+      // Check if a search string was passed. Set title if so.
+      if(strlen($view->exposed_raw_input['search']) > 0){
+        $view->build_info['title'] = t('Solutions Directory Search Results');
+        return;
+      }
+      // Load facet api adapter to c heck if any facets were passed.
+      $adapter = facetapi_adapter_load(reset($searchers));
+      if(empty($adapter->getAllActiveItems())){
+        $view->build_info['title'] = t('Solutions Directory Search Results');
+      }
+      else{
+        $view->build_info['title'] = t('Solutions Directory Search Results');
+      }
+    }
+  }
+}
+
+/**
+ * Implements hook_init().
+ *
+ * Purpose: redirect not logged in users from MRC to saml_login page.
+ */
+function intel_isdm_module_init() {
+  global $user;
+  $uid = $user->uid;
+
+  $path = current_path();
+  $mrc = 'member-resource-center';
+
+  $pfs='node/add/solution';
+  $pff='node/add/formula';
+  $pfst='node/add/story';
+  $pfnf='node/add/feed';
+
+  if(($uid == 0) && ($path == $mrc)) {
+    drupal_goto('saml_login');
+    drupal_exit();
+  }
+
+
+
+/* if(in_array("Supply Chain",$user->roles) && in_array("Employee",$user->roles) && ($path == $mrc) && ($role_count<=2)){
+	  drupal_goto('home');
+    drupal_exit();
+  }*/
+  //Ravish
+if(in_array("Buyer",$user->roles) && in_array("Employee",$user->roles) ||
+        (in_array("Supply Chain",$user->roles) && in_array("Employee",$user->roles))
+    && ($path == $mrc) ){
+
+drupal_goto('home');
+    drupal_exit();
+}
+
+
+   if(in_array("authenticated user",$user->roles)  && ($path == $mrc) ){
+        drupal_goto('solutions-directory');
+       drupal_exit();
+     }
+
+      if(in_array("authenticated user",$user->roles)  && ($path == $mrc) ){
+        drupal_goto('solutions-directory');
+        drupal_exit();
+    }
+
+
+      if(in_array("authenticated user",$user->roles)  && ($path ==$pfs||$path ==$pff||$path ==$pfst||$path ==$pfnf) ){
+          drupal_goto('solutions-directory');
+          drupal_exit();
+      }
+
+//Ravish
+
+}
+
+/**
+ * Implements hook_node_access().
+ *
+ * PURPOSE: Restrict user access to website analytics.
+ */
+function intel_isdm_module_node_access($node, $op, $account){
+  // Make sure we're dealing with the site web analytics exact node.
+  if($op != 'create' && $node->nid == 21803){
+    // Deny users who do not have intel admin role.
+    if(!user_has_role(9)){
+      return NODE_ACCESS_DENY;
+    }
+  }
+}
+
+function getusertype($account) {
+	if (in_array('anonymous user', $account->roles)) {
+		$user_type = 'PUBLIC_USER';
+	}		 
+	if (in_array('authenticated user', $account->roles)) {		
+			$user_mail = $account->mail;
+			$domains = array('intel.com');
+			$pattern = "/^[a-z0-9._%+-]+@[a-z0-9.-]*(" . implode('|', $domains) . ")$/i";
+			if (preg_match($pattern, $user_mail) !== 0) { 
+				$user_type = 'INTEL_ONLY_USER';
+			} elseif(in_array('Intel Admin', $account->roles)){
+				$user_type = 'INTEL_ADMIN_USER';
+			} elseif(in_array('Administrator', $account->roles)){
+				$user_type = 'ADMINISTRATOR';
+			} elseif (in_array('Solutions Directory Editor', $account->roles)) {
+				$user_type = 'SOLUTIONS_DIRECTORY_EDITOR';
+			} else {
+				$user_type = 'LOGGED_IN_USER';
+			}		
+	}
+	return $user_type;
+}
+
+function intel_isdm_module_cron() {
+	ini_set('memory_limit', '2G');
+	ini_set('default_socket_timeout', 48000);
+	//$nids = db_query("select nid from node where nid in (287,1120)")->fetchCol();
+	$nids = db_query("select nid from node where type = 'solution' AND nid not in (select entity_id from field_data_field_intel_only) order by nid LIMIT 2000")->fetchCol();
+	foreach (node_load_multiple($nids) as $node) {
+		$node->field_intel_only[LANGUAGE_NONE][0]['value'] = 0;
+		node_save($node);
+		echo "  node_save done for ".$node->nid;
+	}
+}
+	
+function taxonomy_reporting_categories() {
+
+	$columnHeader ='';
+	$columnHeader = "Term Id"."\t"."Categories"."\t"."Client"."\t"."Server"."\t"."IoT"."\t";
+
+	//$setData = '';
+	//$setData = "4"."\t"."sdfdf"."\t"."sffs"."\t"."dfgg"."\t";
+
+	header("Content-type: application/octet-stream");
+	header("Content-Disposition: attachment; filename=Taxonomy-Configuration-Categories.xls");
+	header("Pragma: no-cache");
+	header("Expires: 0");
+	 
+	echo ucwords($columnHeader)."\n";
+	//echo $setData."\n";
+	
+	$vid = 1;
+    $terms =  taxonomy_get_tree( $vid );
+	foreach($terms as $term) {
+		
+		foreach($term->parents as $term_parent) {
+			
+			$parent_list = '';
+			//foreach($term->parents as $term_parent) {
+			//	$parent .= $term_parent;
+			//}
+			
+			if ($term_parent == 0) {
+				$parent_list = $term->name;
+			} else {
+				$parents = taxonomy_get_parents_all($term->tid);
+				$parents = array_reverse($parents);
+				$parent_list = '';				
+				 foreach($parents as $parent) {
+					$term = taxonomy_term_load($parent->tid);
+					$parent_list .= $term->name.' -> ';
+				 }
+			}
+			$parent_list = rtrim($parent_list," -> ");
+			
+			// Get Content type Mappings data
+			$client = '';
+			$server = '';
+			$iot = '';	
+			
+			$get_ctype_query = "SELECT field_term_solution_types_value from field_data_field_term_solution_types WHERE entity_type='taxonomy_term' AND bundle='categories' AND entity_id='".$term->tid."'";
+			$result = db_query($get_ctype_query);
+			$result_array = array();
+			foreach ($result as $record) {
+				$result_array[] = $record->field_term_solution_types_value;
+			}
+			
+			if (in_array("client", $result_array)) {
+				$client = "1";
+			}
+			
+			if (in_array("server", $result_array)) {
+				$server = "1";
+			}
+			
+			if (in_array("embedded iot", $result_array)) {
+				$iot = "1";
+			}
+			$term_id = $term->tid;
+
+			echo "$term_id"."\t"."$parent_list"."\t"."$client"."\t"."$server"."\t"."$iot"."\t\n";
+		
+		}
+		
+	}
+	  
+	exit;
+
+}
+
+function taxonomy_get_nested_trees($terms = array(), $max_depth = NULL, $parent = 0, $parents_index = array(), $depth = 0) {
+  if (is_int($terms)) {
+    $terms = taxonomy_get_tree($terms);
+  }
+
+  foreach($terms as $term) {
+    foreach($term->parents as $term_parent) {
+      if ($term_parent == $parent) {
+        $return[$term->tid] = $term;
+      }
+      else {
+        $parents_index[$term_parent][$term->tid] = $term;
+      }
+    }
+  }
+
+  foreach($return as &$term) {
+    if (isset($parents_index[$term->tid]) && (is_null($max_depth) || $depth < $max_depth)) {
+      $term->children = taxonomy_get_nested_trees($parents_index[$term->tid], $max_depth, $term->tid, $parents_index, $depth + 1);
+    }
+  }
+
+  return $return;
+}
+
+
+function taxonomy_reporting_characteristics() {
+	
+	ini_set('post_max_size', '1024M');
+	ini_set('max_execution_time', 600);
+
+	$columnHeader ='';
+	$columnHeader = "Term Id"."\t"."Characteristics"."\t"."Client"."\t"."Server"."\t"."IoT"."\t";
+	
+	//$setData = '';
+	//$setData = "4"."\t"."sdfdf"."\t"."sffs"."\t"."dfgg"."\t";
+
+	header("Content-type: application/octet-stream");
+	header("Content-Disposition: attachment; filename=Taxonomy-Configuration-Characteristics.xls");
+	header("Pragma: no-cache");
+	header("Expires: 0");
+	 
+	echo ucwords($columnHeader);
+	//echo $setData."\n";
+	
+	// Appending Categories as column header
+	$cat_tree= taxonomy_get_nested_trees(1,1); // 1 is vid for Categories
+	
+	foreach ($cat_tree as $t_key => $t_val) {
+		$parent_list = '';
+		echo $cat_tree[$t_key]->tid."~".$cat_tree[$t_key]->name."\t";		
+		foreach ($cat_tree[$t_key]->children as $st_key => $st_val) {			
+					//$parents = taxonomy_get_parents_all( $cat_tree[$t_key]->children[$st_key]->tid );
+					$parents = taxonomy_get_parents_all( $cat_tree[$t_key]->tid );
+                    $parents = array_reverse($parents);
+                    $parent_list = '';
+                    foreach($parents as $parent) {
+                        $term = taxonomy_term_load($parent->tid);
+                        $parent_list .= $term->name.' -> ';
+                    }
+					
+			echo $cat_tree[$t_key]->children[$st_key]->tid."~".$parent_list.$cat_tree[$t_key]->children[$st_key]->name."\t";
+		}
+		
+	}
+	
+	echo "\n";
+	
+	
+	$vac_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid not in (1,21,23,26,28,29,34,38,33,25,31,18) order by name;");
+	
+	foreach ($vac_result as $rec) {
+		
+		$terms = array();
+		$terms =  taxonomy_get_tree( $rec->vid );
+		
+		foreach($terms as $term) {
+			
+			// Iterations for Categories mappings 
+			
+			$term_solution_result = db_query("SELECT a.name, a.tid FROM taxonomy_term_data a, field_data_field_term_categories b WHERE a.tid=b.field_term_categories_tid AND b.entity_type='taxonomy_term' AND b.entity_id='".$term->tid."' AND b.bundle='".$rec->machine_name."' ");
+			$term_solution_solution_types = array();
+			$term_solution_types = array();
+
+			foreach($term_solution_result as $term_row) {
+				$term_solution_types[] = $term_row->name;
+				$term_solution_solution_types[] = $term_row->tid;
+			}
+			
+			// Iterations for Categories mappings
+			
+			foreach($term->parents as $term_parent) {
+				
+				$parent_list = '';
+				//foreach($term->parents as $term_parent) {
+				//	$parent .= $term_parent;
+				//}
+				
+				if ($term_parent == 0) {
+					$parent_list = $term->name;
+				} else {
+					$parents = taxonomy_get_parents_all($term->tid);
+					$parents = array_reverse($parents);
+					$parent_list = '';			
+					 foreach($parents as $parent) {
+						$term = taxonomy_term_load($parent->tid);
+						$parent_list .= $term->name.' -> ';
+					 }
+				}
+				$parent_list = rtrim($parent_list," -> ");
+				
+				// Get Content type Mappings data
+				$client = '';
+				$server = '';
+				$iot = '';	
+				
+				$get_ctype_query = "SELECT field_char_solution_types_value from field_data_field_char_solution_types WHERE entity_type='taxonomy_term' AND bundle='".$rec->machine_name."' AND entity_id='".$term->tid."'";
+				$result = db_query($get_ctype_query);
+				$result_array = array();
+				foreach ($result as $record) {
+					$result_array[] = $record->field_char_solution_types_value;
+				}
+				
+				if (in_array("client", $result_array)) {
+					$client = "1";
+				}
+				
+				if (in_array("server", $result_array)) {
+					$server = "1";
+				}
+				
+				if (in_array("embedded iot", $result_array)) {
+					$iot = "1";
+				}
+				
+					$term_id = $term->tid;
+					
+					echo "$term_id"."\t"."$rec->name"." -> "."$parent_list"."\t"."$client"."\t"."$server"."\t"."$iot"."\t";
+				
+					foreach ($cat_tree as $t_key => $t_val) {
+						
+						if (in_array( $cat_tree[$t_key]->name , $term_solution_types)) {
+							echo "1"."\t";
+						} else {
+							echo " "."\t";
+						}
+												
+						foreach ($cat_tree[$t_key]->children as $st_key => $st_val) {
+							
+							if (in_array( $cat_tree[$t_key]->children[$st_key]->tid , $term_solution_solution_types)) {
+								echo "1"."\t";
+							} else {
+								echo " "."\t";
+							}
+						}
+						
+					}
+					
+					echo "\n";
+				
+			}
+			
+		}
+	
+	}
+	
+	exit;
+
+}
+
+
+
+
+
+function taxonomy_reporting_solutions() {
+	ini_set('post_max_size', '1024M');
+	ini_set('max_execution_time', 1800);
+
+	$columnHeader ='';
+	$columnHeader = "Solution node Id"."\t"."Solution Tilte"."\t"."Company"."\t"."Client"."\t"."Server"."\t"."IoT"."\t"."Intel Content"."\t"."Logged In Content"."\t"."Public Content"."\t";
+	
+	header("Content-type: application/octet-stream");
+	header("Content-Disposition: attachment; filename=SD-Solutions.xls");
+	header("Pragma: no-cache");
+	header("Expires: 0");
+	echo ucwords($columnHeader);
+	//echo $setData."\n";
+	
+	// Fetch only Categories
+	$categories_array = array();
+	$vac_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (1) order by name;");	
+	foreach ($vac_result as $rec) {	
+		$terms = array();
+		$terms =  taxonomy_get_tree( $rec->vid );		
+		foreach($terms as $term) {
+			$categories_array[] = $term->name;
+			foreach($term->parents as $term_parent) {				
+				$parent_list = '';				
+				if ($term_parent == 0) {
+					$parent_list = $term->name;
+				} else {
+					$parents = taxonomy_get_parents_all($term->tid);
+					$parents = array_reverse($parents);
+					$parent_list = '';			
+					 foreach($parents as $parent) {
+						$term = taxonomy_term_load($parent->tid);
+						$parent_list .= $term->name.' -> ';
+					 }
+				}
+				$parent_list = rtrim($parent_list," -> ");
+				
+				echo $term->tid."~"."$parent_list"."\t";			
+			}			
+		}
+	}
+	
+	// Fetch all Characteristics ( not including Categories)
+	$terms_array = array();
+	$new_vac_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid not in (1,21,23,26,28,29,34,38,33,25,31,18) order by name;");	
+	foreach ($new_vac_result as $new_rec) {	
+		$new_terms = array();
+		$new_terms =  taxonomy_get_tree( $new_rec->vid );		
+		foreach($new_terms as $new_term) {
+			$terms_array[] = $new_term->name;
+			foreach($new_term->parents as $new_term_parent) {				
+				$new_parent_list = '';				
+				if ($new_term_parent == 0) {
+					$new_parent_list = $new_term->name;
+				} else {
+					$new_parents = taxonomy_get_parents_all($new_term->tid);
+					$new_parents = array_reverse($new_parents);
+					$new_parent_list = '';			
+					 foreach($new_parents as $new_parent) {
+						$new_term = taxonomy_term_load($new_parent->tid);
+						$new_parent_list .= $new_term->name.' -> ';
+					 }
+				}
+				$new_parent_list = rtrim($new_parent_list," -> ");
+				
+				echo $term->tid."~"."$new_rec->name"." -> "."$new_parent_list"."\t";			
+			}			
+		}
+	}
+		
+	echo "\n";
+	
+	// Start Processing soltuions
+	
+	$nids = db_query("select nid from node where language='en' and type='solution' and changed > 1503446400 limit 0,2000 ;")->fetchCol();
+	//$nids = db_query("select nid from node where language='en' and type='solution' limit 0,400;")->fetchCol();
+	  
+	foreach($nids as $nid) {
+		$node = node_load($nid);
+		//echo '<pre>';print_r($node);exit;
+		$comp_id = $node->field_company['und'][0]['target_id'];
+		$comp = db_query("select title from node where type='company' and nid=$comp_id")->fetchCol();
+		echo $nid."\t";
+		echo $node->title."\t";
+		echo $comp[0]."\t";		
+		echo " "."\t"." "."\t"." "."\t"; // Client, Server, IoT
+		//View Options
+		$intel_only_content = " ";
+		$logged_in_content = " ";
+		$public_content = " ";
+			$pre_release = db_query("SELECT field_pre_release_value FROM field_data_field_pre_release WHERE entity_id = ". $nid)->fetchField();
+			$intel_only = db_query("SELECT field_intel_only_value FROM field_data_field_intel_only WHERE entity_id = ". $nid)->fetchField();
+			
+			if($pre_release == 1 || $intel_only == 1){
+				$intel_only_content = 1;
+			}
+			if($intel_only_content != 1){
+				$public_content = 1;
+			}
+		echo $intel_only_content."\t".$logged_in_content."\t".$public_content."\t"; // View Options
+		//End Of View Options
+		
+		
+		// Display Categories value ( 1 OR 0 ) mapped with solution
+		
+		$node_categories = array();
+		foreach ($node->field_categories['und'] as $cats) {
+			//$selected_term = taxonomy_term_load($cats['tid']);
+			//$name = $selected_term->name;
+			//$node_categories[] = $name;
+			$node_categories[] = $cats['tid'];
+		}
+		
+		$vac_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (1) order by name;");	
+		foreach ($vac_result as $rec) {	
+			$terms =  taxonomy_get_tree( $rec->vid );
+			foreach($terms as $term) { 				
+				if (in_array( $term->tid , $node_categories)) {
+					echo "1"."\t";
+				} else {
+					echo " "."\t";
+				}				
+			}		
+		}
+		
+		
+		// Processing each characteristics ( AS PER order in the query result )
+		
+		$node_characteristics = array();
+		
+		//| Approved Nouns |  33 |
+		
+		
+		//| Audio Standards |  14 |
+			foreach ($node->field_stds_audio['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+		
+		//| Battery |  11 |
+			foreach ($node->field_power['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+		
+		//| Chipsets |   2 |		
+			foreach ($node->field_chipsets['und'] as $cats) {
+				//$selected_term = taxonomy_term_load($cats['tid']);
+				//$name = $selected_term->name;
+				//$node_characteristics[] = $name;
+				$node_characteristics[] = $cats['tid'];
+			}
+
+		// Devices and Interfaces |   4 |
+			foreach ($node->field_application['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+
+		//| Dimensions |  42 |
+
+		//| Display                            |  35 |
+		
+		//| Display Size                       |   3 |
+		
+			foreach ($node->field_display_size['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+		//| Display Technology                 |  37 |
+			foreach ($node->field_display_technology['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+		
+
+		//| Embedded IA Processor Support      |  27 |
+		
+		//| Ethernet Controllers               |   5 |		
+			foreach ($node->field_ethernet_controllers['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+		//| Ethernet Standards                 |  15 |		
+			foreach ($node->field_stds_eth['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+		//| FPGA                               |  41 |		
+			foreach ($node->field_fpga['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+		
+		//| Geographic Coverage                |  22 |
+		
+		//| Geographic Headquarters            |  24 |
+		
+		//| Geographic Location                |   6 |		
+			foreach ($node->field_geographic_location['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+		//| Intel Sponsoring Business Units    |  25 |
+		
+		//| Intel® IoT Market Ready Solutions  |  40 |	
+			foreach ($node->field_intel_iot_market_ready_sol['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+		
+		//| Intel® Technologies                |   7 |		
+			foreach ($node->field_intel_technologies['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+		
+		//| Interconnect                       |  36 |
+		
+		//| LAN                                |  19 |
+			foreach ($node->field_stds_wlan['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+		
+		//| Market Segments                    |   9 |		
+			foreach ($node->field_market_segments['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+		//| Memory Type                        |  10 |		
+			foreach ($node->field_memory_type['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+		//| Opportunity Group                  |  31 |
+		
+		//| Opportunity Resource Type          |  32 |
+		
+		//| PCIe Revisions                     |  17 |
+			foreach ($node->field_stds_pcie_rev['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+				
+		//| Processors                         |  12 |
+			foreach ($node->field_processors_list['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+			
+		//| Software Solutions                 |  13 |		
+			foreach ($node->field_software_solutions['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+			
+		//| Storage                            |  43 |
+		
+		//| Systems Standards                  |  18 |
+			foreach ($node->field_stds_systems['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+				
+		//| Wireless                           |   8 |		
+			foreach ($node->field_intel_wireless['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+		//| WWAN (Cellular) Standards          |  20 |
+			foreach ($node->field_stds_wwan['und'] as $cats) {
+				$node_characteristics[] = $cats['tid'];
+			}
+
+		$new_vac_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid not in (1,21,23,26,28,29,34,38,33,25,31,18) order by name;");	
+		foreach ($new_vac_result as $new_rec) {	
+			$new_terms =  taxonomy_get_tree( $new_rec->vid );		
+			foreach($new_terms as $new_term) {
+				
+				if (in_array( $new_term->tid , $node_characteristics)) {
+					echo "1"."\t";
+				} else {
+					echo " "."\t";
+				}
+				
+			}
+		}
+
+		echo "\n";
+	}
+	exit;
+}

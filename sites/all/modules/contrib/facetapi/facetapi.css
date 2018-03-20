@@ -1,0 +1,14 @@
+
+.facetapi-checkbox {
+  margin-right: .5em;
+}
+
+/* Remove Blue Overlay when clicked on checkbox
+
+.facetapi-disabled {
+  opacity: 0.4;
+  filter: alpha(opacity = 40);
+}*/
+.facetapi-disabled a:hover {
+  text-decoration: none;
+}

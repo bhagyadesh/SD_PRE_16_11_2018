@@ -1,0 +1,5 @@
+name  = Proposal node notifications
+description  = Notify the users based on the proposal actions
+core = 7.x
+package = RFP
+scripts[] = script.js

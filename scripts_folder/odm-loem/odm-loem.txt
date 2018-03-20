@@ -1,0 +1,726 @@
+53 -------------- ARROW ELECTRONICS, INC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+61 -------------- AVNET ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+123 -------------- Gigabyte ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+151 -------------- J&W IPC Technology Development ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+175 -------------- Micro Star International ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+177 -------------- Microsoft Corporation ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+188 -------------- NETWORK ALLIES ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+189 -------------- Nexcom ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+249 -------------- Thunder Software Technology Co., Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+259 -------------- Tyan ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+8916 -------------- M and A Technology Inc. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+9076 -------------- J&W IPC Technology Development ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+9180 -------------- ASEM SPA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+15330 -------------- NETWORK ALLIES ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+15338 -------------- TabletKiosk ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+15410 -------------- Toshiba Platform Solution Corporation ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+15438 -------------- Thunder Software Technology Co., Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+15444 -------------- Protech Systems ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+15458 -------------- Gigabyte ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+15536 -------------- Portwell ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+15540 -------------- Eltan BV ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+15542 -------------- FLYTECH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+15552 -------------- Micro Star International ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+15566 -------------- AEWIN Technologies Co., Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+15568 -------------- IBASE TECHNOLOGY INC. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+15586 -------------- Microsoft Corporation ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+15592 -------------- SECO ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+15596 -------------- ADLINK ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+15620 -------------- Nexcom ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+15654 -------------- Advantech ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+15666 -------------- ROHM Co., Ltd. / Lapis Semiconductor Co., Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+15692 -------------- IEI Integration Corp. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+15700 -------------- Shenzhen Seavo (China) Technology Co., Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+15724 -------------- DFI Inc. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+15742 -------------- Super Micro Computer Inc. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+15744 -------------- AVNET ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+15746 -------------- PFU Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+15762 -------------- DUX Inc. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+18130 -------------- Shenzhen Hanzsung Technology Co.,Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+19629 -------------- PC Factory ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+19674 -------------- Shenzhen Hanzsung Technology Co.,Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+20075 -------------- ASRock ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+20660 -------------- ASRock ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+20880 -------------- PC Factory ---------- MARKED ODM/LOEM With Status ---0Modified By --- 0
+21649 -------------- Quanta Computer Inc ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+21727 -------------- Mitac ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+21964 -------------- ec-Network.com Corporation ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+21966 -------------- Mitac ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+23131 -------------- FLEXTRONICS INT'L CORP ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+23298 -------------- PERFECTRON ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+24296 -------------- ICO INNOVATIVE COMPUTER GMBH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+24621 -------------- Pegatron Corporation ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+24624 -------------- WTM Technology ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+24671 -------------- AIC Inc. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+25330 -------------- Pegatron Corporation ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+25362 -------------- WTM Technology ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+25394 -------------- Infosys Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+26644 -------------- COMPaL ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+27592 -------------- EmbedWay ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+28197 -------------- Partech, Inc. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+28620 -------------- Embedway ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+28634 -------------- Sophic Automation Sdn Bhd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+28896 -------------- Shenzhen Datang Computer Co., Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+29207 -------------- Shenzhen Datang Computer Co., Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+30710 -------------- Emdoor Information Co.,Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+31107 -------------- Robert Bosch Engineering and Business Solutions Pvt. Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+31369 -------------- TERA TEC CO., LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+31402 -------------- SILICON MECHANICS, INC. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+32338 -------------- Shenzhen RealBom Co., ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+32727 -------------- EXPEMB ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+32984 -------------- Alleantia S.r.l. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+33364 -------------- CVTE ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+34409 -------------- KOI Computers Inc. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+34413 -------------- JC Technology Inc/Ace Computers ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+34425 -------------- WORTMANN AG ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+34429 -------------- XENON Systems Pty Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+34432 -------------- SILICON MECHANICS, INC. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+34441 -------------- Wired Systems Corporation ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+34451 -------------- PERSY LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+34453 -------------- Netweb Technologies India Pvt. Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+34455 -------------- MEG WARE Computer GmbH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+34459 -------------- MYUNGIN INNO CO., LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+34471 -------------- TERA TEC CO., LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+34473 -------------- SISTEMI HARDWARE COMITEC SRL ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+34477 -------------- Tarox AG ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+34481 -------------- Si Computer S.p.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+34483 -------------- SISTEMAS INFORMATICOS EUROPEOS SL ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+34487 -------------- Scan Computers International ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+34501 -------------- MAZDA COMPUTING ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+34515 -------------- HPC Korea Co .LTD . ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+34541 -------------- DARUMA TELEC INFORM SA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+34549 -------------- DALCO AG Switzerland ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+34563 -------------- ARLT Computer Produkte GmbH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+34567 -------------- ACME Micro Systems, Inc. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+34621 -------------- Emdoor Information Co.,Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+34757 -------------- Infosys Ltd ---------- MARKED ODM/LOEM With Status ---0Modified By --- 0
+34759 -------------- ATEC Co.,Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+35057 -------------- Solace Systems ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+35262 -------------- BLUECHIP COMPUTER AG ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+35411 -------------- Solace Systems ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+35473 -------------- VIPER Technology ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+36061 -------------- PK Aquarius OOO ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+36337 -------------- EPSON DIRECT ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+37361 -------------- Pro-Net Associates LLC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+37565 -------------- E4 Computer Engineering SpA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+37618 -------------- Thin Solution Systems Co., Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+37952 -------------- Thin Solution Systems Co., Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+38024 -------------- E4 Computer Engineering SpA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+38070 -------------- RAID MEDIA SYSTEMS GMBH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+38106 -------------- PC Laptops ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+38146 -------------- Colfax International ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+38316 -------------- AMAX Engineering Corporation ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+38324 -------------- Afiintra Technologies Sdn Bhd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+38404 -------------- Pro-Net Associates LLC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+38546 -------------- Arbor Technology Corp ---------- MARKED ODM/LOEM With Status ---0Modified By --- 0
+38598 -------------- Flytech SA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+38988 -------------- Sanat ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+39754 -------------- Sanat ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+39768 -------------- Oberthur Technologies ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+39772 -------------- HIKVISION ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+40298 -------------- FUJIAN CANDID ENTERPRISE CO., LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12279
+40465 -------------- Box Technologies Limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+43892 -------------- Box Technologies Limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+45214 -------------- IP3 ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+45863 -------------- IP3 ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+48559 -------------- MPGIO ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48560 -------------- Newsan SA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48563 -------------- Okaya Electronics ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48564 -------------- PC Smart Technologies Corp ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48567 -------------- POSITIVO INFORMATICA LTDA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48568 -------------- PRESTIGIO PLAZA LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48569 -------------- Protempo Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+48570 -------------- Radio Victoria Fueguina SA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48571 -------------- REDFOX TECHNOLOGIES PHILIPPINES INC. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+48577 -------------- XIOTECH CORPORATION ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48580 -------------- STONE COMPUTERS LIMITED ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48581 -------------- UNIT COM INC. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48583 -------------- Malata Group  Limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48589 -------------- SC. Advanced Technologies SRL ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+48592 -------------- Microtech Computers Inc ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48596 -------------- INTEK ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48598 -------------- Epik eleCtronics ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48604 -------------- Incomteh Proekt ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48605 -------------- Tectoy ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48607 -------------- ALTA LTD. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48613 -------------- Elgin S/A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48617 -------------- altech ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48618 -------------- zinox technologies ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48619 -------------- Konka Group Co., Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48622 -------------- ARDIC ARGE BILGI VE TEKNOLOJI COZUMLERI A.S. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48625 -------------- RICOH COMPANY,LTD. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48626 -------------- A TLC SRL ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48632 -------------- Trigem Computer, Inc. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48640 -------------- SHENZHEN GIEC ELECTRONICS CO., LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48645 -------------- Siemens AG ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48665 -------------- Ghia ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48666 -------------- TEKNOSERVICE S.L. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48675 -------------- SDC Engenharia de Sistemas Ltda ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48676 -------------- NOTION INK DESIGN LABS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48682 -------------- Hampoo ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48690 -------------- IMPORTADORA Y EXPORTADORA HJ LTDA. (MICROLAB) ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48708 -------------- MARKS AND SPENCER GROUP P.L.C. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48710 -------------- INVERSENET INC. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48711 -------------- ZSpace ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48714 -------------- WESTNET DISTRIBUTION S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48716 -------------- Littlebit Technology AG ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48730 -------------- Sungworld Electronics Co., Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48739 -------------- INCO ELECTRONICS CO SA DE CV ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48743 -------------- GUANGZHOU SHANGKE INFORMATION TECHNOLOGY CO LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48761 -------------- MOBILE DEMAND LC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48763 -------------- InnJoo ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48769 -------------- INSIDE VISION ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48772 -------------- D2D Distributors Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48778 -------------- TopJoy ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48782 -------------- Bosch GMBH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48787 -------------- Nigeria Bottling Company ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48791 -------------- SNS Network (M) Sdn Bhd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48801 -------------- THUNDER MATCH TECHNOLOGY SDN. BHD. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48802 -------------- Consumer Electronics ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48814 -------------- EA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48815 -------------- SHENZHEN SCOPE SCIENTIFIC DEVELOPMENT CO.,LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48821 -------------- TESLA MOTORS, INC. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48825 -------------- OLKYA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48840 -------------- Avtech ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48841 -------------- IT Masters ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48843 -------------- Croc INC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48850 -------------- Shenzhen Vastking Electronic Co., Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48853 -------------- Shenzhen Coshic Electronics CO., LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48861 -------------- TehnoligaDevice LLC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48868 -------------- Weibu ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48872 -------------- Infocus Digital Technology (Shenzhen) Limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48879 -------------- SEHNZHEN HASEE Creation & Technology Co., Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+48884 -------------- Shuttle ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48890 -------------- GE Intelligent platforms Gmbh ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48903 -------------- Informatica Fueguina SA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48904 -------------- Unibell Argentina S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48909 -------------- ELMODIS SP.Z.O.O. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48915 -------------- Extreme Low Energy Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48917 -------------- Shenzhen dso microelectronics limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48921 -------------- Asml Us, Inc. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48932 -------------- PowerLeader science & technology co ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48938 -------------- sungwoo mobile ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48940 -------------- weiheng digital company limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48941 -------------- shen zhen Qianhai Gole Technology CO.,Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+48943 -------------- TECHVISION INTELLIGENT TECHNOLOGY CO., LTD. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48944 -------------- teclast ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48945 -------------- TEKWIND CO., LTD. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48948 -------------- TMAX DIGITAL, INC. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48950 -------------- Transtec AG ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48952 -------------- NEC PERSONAL COMPUTERS,LTD. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48955 -------------- CYBERPOWER, INC. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48957 -------------- Molex ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48959 -------------- Focelda SPA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48966 -------------- TOWA CIRCUIT CO.,LTD. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48969 -------------- Lengda ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48970 -------------- Asbis ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48971 -------------- Softcom ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48973 -------------- KM Trading B.V. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+48976 -------------- Diebold ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48978 -------------- CLUSTERVISION BV ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48979 -------------- AZKEN MUGA SL ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48981 -------------- CTT COMPUTERTECHNIK AG ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+48982 -------------- Foxtrot Limited Liability Company ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48983 -------------- Allo ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48984 -------------- Telikin ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48986 -------------- Tecnomega ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48987 -------------- RYOYO ELECTRO CORPORATION ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+48991 -------------- SHENZHEN ALONG ELECTRONIC CO., LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48992 -------------- THD Shenzhen Thread Technology Co Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48994 -------------- Ibuypower.com ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48995 -------------- DAWNING INFORMATION INDUSTRY (BEIJING)CO.,LTD. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+48996 -------------- ASELSAN ELEKTRONIK SANAYI VE TICARET A S ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49003 -------------- Coradir SA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49005 -------------- GLOBALK TECNOLOGIA E INFORMATICA LTDA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49008 -------------- SANDIA SYSTEM CO., LTD. ---------- MARKED ODM/LOEM With Status ---0Modified By --- 1
+49010 -------------- Hutchinson ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49012 -------------- Grupo Nucleo SA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49014 -------------- ASUS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49015 -------------- EXOR INTERNATIONAL SPA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49016 -------------- Wind River Gmbh ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49018 -------------- ALSO Deutschland GmbH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49021 -------------- Shenzhen Jehe Technology Co. LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49025 -------------- telecor sa ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49026 -------------- Eldorado Ukraine ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49029 -------------- PB TECHNOLOGIES ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49032 -------------- QUIPUS S.R.L. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49036 -------------- SHARP ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49042 -------------- Point of View Holding B.V. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49043 -------------- CAPITAL AS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49044 -------------- 3Logic INC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49045 -------------- INFO QUEST PRODUCTION ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49046 -------------- Venom Computers ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49048 -------------- ADVANCE TECHNOLOGY PERU S A C ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49050 -------------- INTERTECH A.S. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49053 -------------- Compumax Computer SAS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49054 -------------- Procesadores y partes ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49058 -------------- BANGHO ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49059 -------------- Huaruian ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49060 -------------- Greatwall ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49062 -------------- SHENZHEN IPRODA TECHNOLOGY CO., LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49065 -------------- Neostra ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49068 -------------- Shanghai Zhiwei Robotics Co., Ltd (DFRobot) ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49069 -------------- Akstron ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49073 -------------- IUSA MEDICION SA DE CV ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49076 -------------- Leotec ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49079 -------------- ECO ENERGY SRL ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49080 -------------- New Tree SA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49081 -------------- ATOL ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49082 -------------- Portwell INC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49083 -------------- DN Electronics ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49085 -------------- Esquire System Technology Pty Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49089 -------------- Hexa (Hallmark Electronics) ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49090 -------------- MOKI ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49092 -------------- ADSC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49093 -------------- ROMBO ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49095 -------------- EXPERTRONICS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49096 -------------- Orion Iletisim Ltd. Sti. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49102 -------------- SHENZHEN JWD ELECTRONIC TECHNOLOGY CO LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49103 -------------- iPro mobile ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49106 -------------- KD Group ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49107 -------------- PGS LAB ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49110 -------------- Rozumniki ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49114 -------------- TongFang ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49118 -------------- AFTERSHOCK PC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49119 -------------- Yuko ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49121 -------------- Logicom Europe ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49122 -------------- Morestar ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49124 -------------- Hena Group Company Limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49125 -------------- Telecom y Novatecno, S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49127 -------------- ChipHD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49128 -------------- OCS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49131 -------------- VeryPC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49135 -------------- Winn Technology Co., Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49136 -------------- SOUTH HOLDINGS INDUSTRIAL LIMITED ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49137 -------------- MICS LLC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49138 -------------- Zowee ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49139 -------------- COMPUTER SCIENCES CORPORATION (CSC - HQ) ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49141 -------------- Business Bureau ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49145 -------------- EMAK for Computer Manufacturing ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49146 -------------- Direct D ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49148 -------------- ECS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49151 -------------- Tiwell Assistant LLC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49152 -------------- SINOPRIMA INVESTMENTS & MANUFACTURING SA (PTY) LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49153 -------------- i.onik Europe B.V. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49154 -------------- Shenzhen Sunty Technology Co.,Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49157 -------------- GEM weltronics corporation ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49158 -------------- LLC "Trade House "Regions" ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49162 -------------- Naked Labs ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49164 -------------- imose technology ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49168 -------------- Shenzhen HommPro Technology Co., Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49173 -------------- Infowork (3Go) ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49175 -------------- Syrrius Benin ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49182 -------------- GO-TOP INNOVATION LIMITED ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49183 -------------- Mele Star ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49185 -------------- Multisoft ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49186 -------------- Coto ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49188 -------------- Nanjing Innovative Data Technologies, Inc. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49189 -------------- PCDIRECT ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49190 -------------- Solid Mation ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49191 -------------- HKC ELECTRONICS CO LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49194 -------------- Hyundai U&I ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49195 -------------- STABILO International GmbH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49196 -------------- Joyplus ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49198 -------------- OOO Digital Tech ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49202 -------------- Instrumentation Laboratory ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49207 -------------- Foxconn ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49208 -------------- QR Technology Company Limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49209 -------------- Weiheng Digital Company Limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49210 -------------- HP India ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49211 -------------- HYRICAN INFORMATIONSSYSTEME AG ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49212 -------------- LOGIN INFORMATICA C REPRESENTACOES LTDA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49213 -------------- COMEL ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49214 -------------- PC Time ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49215 -------------- DakTech Inc ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49217 -------------- Top Computer Srl ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49218 -------------- Plaisio Computers Sa ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49219 -------------- EXERTIS CAP TECH AB ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49226 -------------- LEADER COMPUTERS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49227 -------------- DATAMATIC SPA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49229 -------------- SPIRE TECHNOLOGY LIMITED ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49230 -------------- BECHTLE ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49232 -------------- Brain Trust S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49233 -------------- Novatech Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49234 -------------- Exper Bilgisayar Sistemleri Sanayi ve Ti ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49235 -------------- INFORLANDIA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49236 -------------- Verkkokauppa.com Oy ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49237 -------------- DIGITECHNIC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49240 -------------- Ergo Italia SpA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49241 -------------- Gemm Informatica Srl ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49242 -------------- KOSATEC Computer GmbH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49249 -------------- CYBERTECH COMPUTER ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49250 -------------- S&T AG ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49251 -------------- PT. Zyrexindo Mandiri Buana ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49252 -------------- Maguay Computers ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49253 -------------- Alfatron Electronic Industries S.p.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49256 -------------- Musallam Trading (LLC) ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49257 -------------- LANDIS LLC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49258 -------------- ByteSpeed ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49265 -------------- NTT System S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49269 -------------- Advanced Clustering Technologies, Inc. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49270 -------------- TechData ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49271 -------------- Nor-Tech ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49272 -------------- CMS Computer Company Limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49274 -------------- Al Hasoob Horizon CO LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49279 -------------- Jimm's PC-Store Oy ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49289 -------------- ENTRY ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49291 -------------- M SAN GRUPA D.D. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49292 -------------- OOO "computers and network" ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49295 -------------- OLIDATA S.P.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49298 -------------- DARA FOR COMPUTERS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49300 -------------- STSS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49301 -------------- CSL Computer ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49302 -------------- Matrix ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49304 -------------- XTRATECH COMPUTERS S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49308 -------------- ACQUISITUM MAGNUM d.o.o. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49310 -------------- FAG SISTEMS S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49312 -------------- Ahead-IT ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49313 -------------- TECNO INDUSTRIA E COMERCIO DE COMPUTADOR ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49320 -------------- ARCELIK A S ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49321 -------------- LUFAC COMPUTACION SA DE CV ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49322 -------------- MLS sp. z o.o ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49325 -------------- COMPAX IDEAS Y TECNOLOGÍA SA DE CV ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49326 -------------- Pc Arts ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49327 -------------- Superwave ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49328 -------------- Vogsis Bilgisayar Iletisim ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49329 -------------- Ribeiro - Duplicate ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49330 -------------- Schenker Technologies GmbH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49332 -------------- Azhar anwar Al Aqqad EST ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49333 -------------- EVGA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49334 -------------- SERINGE, S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49335 -------------- AEON COMPUTING ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49336 -------------- BUY IT DIRECT LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49337 -------------- Intel Sales Center ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49338 -------------- VIT Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49340 -------------- SPA CONDOR ELECTRONICS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49341 -------------- Archos S.A ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49345 -------------- DINO PC LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49346 -------------- PRIMELINE SOLUTIONS GmbH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49347 -------------- Project Informatica srl ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49349 -------------- ORIGIN PC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49351 -------------- eviGroup ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49352 -------------- qbex ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49353 -------------- SOURCING ET CREATION ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49354 -------------- Micron ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49355 -------------- HERITAGE GROUP S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49356 -------------- Chips, Bits & Bytes Limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49357 -------------- HITECER S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49362 -------------- ILLEGEAR SDN BHD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49363 -------------- Fahem ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49364 -------------- hypertech systems ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49365 -------------- MPS MAYORISTA DE COLOMBIA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49369 -------------- Substantiel SAS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49373 -------------- ADJ INTERNATIONAL SRL ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49374 -------------- WESTGROUP ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49377 -------------- Computer Upgrade King, LLC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49379 -------------- SANDISK ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49380 -------------- Ingram Micro ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49381 -------------- DAR ALAFAAQ ALAMIAH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49383 -------------- Energy Sistem Soyntec SA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49384 -------------- Channel Lead S.A.L ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49386 -------------- Goclever sp. z o.o. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49389 -------------- Hannspree Europe GmbH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49390 -------------- Globex Ukraine ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49391 -------------- TrekStor GmbH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49392 -------------- Futura Grafica SPA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49393 -------------- eltamimi ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49394 -------------- Janus LTDA. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49395 -------------- Felta Multi Media, Inc. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49397 -------------- PACT INFORMATIQUE ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49399 -------------- Bluebank Communication Technology Co.Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49400 -------------- GROUP SFIT ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49401 -------------- WayteQ Europe Kft. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49402 -------------- MICROTECH S.R.L. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49403 -------------- Mikrovisata UAB, Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49408 -------------- Howard Technology Solutions ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49409 -------------- LARK EUROPE SA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49410 -------------- Celular Milenium SA de CV ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49412 -------------- SKIN MEDIA SRL ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49413 -------------- Lechpol Zbigniew Leszek ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49414 -------------- Blusens Global Corporation ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49416 -------------- Pendo Industries Pty Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49417 -------------- PIPO Technology Co.,Limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49418 -------------- ILIFE TECHNOLOGY CO., LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49422 -------------- Shenzhen E-boda Technology Co., Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49424 -------------- LG Electronics ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49425 -------------- Grupo53 ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49427 -------------- SHENZHEN PLOYER ELECTRONICS CO., LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49429 -------------- Approx Iberia S.L. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49430 -------------- CRYPTO S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49431 -------------- CORSAR ONLINE S.R.L ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49433 -------------- Navigator ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49434 -------------- Pinnacle Africa ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49435 -------------- ASEUROPA S.L. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49436 -------------- OKTABIT S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49437 -------------- Elko ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49438 -------------- DBM ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49439 -------------- NTV LLC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49440 -------------- Digicor Pty Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49443 -------------- PLUTO TECHNOLOGY PTE LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49444 -------------- Grand Advance Computers ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49446 -------------- EYETI SYSTEMS + SOLUTIONS GMBH & CO. KG ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49450 -------------- SENKATEL INTERNATIONAL LIMITED ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49451 -------------- MODECOM S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49452 -------------- MARKET MAKER ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49454 -------------- Fastrax S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49455 -------------- CHUWI TECHNOLOGY (HK)CO.,LIMITED ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49456 -------------- ELECTRONICS INTERCOMMERCE MONOPROSOPI IK ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49458 -------------- La trastienda digital ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49459 -------------- NanoSys Trading And Technology ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49460 -------------- Joseph Digital solutions ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49461 -------------- Eve-Tech Oy ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49464 -------------- Kodisoft ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49465 -------------- JME SA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49466 -------------- IMC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49468 -------------- M&T S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49469 -------------- SOPEG ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49472 -------------- ARQ Design S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49473 -------------- Sell Product ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49474 -------------- Digibit Technology ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49475 -------------- Orpheus, LLC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49476 -------------- Best Buy for Business ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49479 -------------- INFINITY SYSTEM SL ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49480 -------------- SMD Technologies ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49481 -------------- Elect Iberia S.L. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49482 -------------- Wacom Europe GmbH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49483 -------------- Multilaser ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49484 -------------- My Go Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49485 -------------- Breldyng S.A. ---------- MARKED ODM/LOEM With Status ---0Modified By --- 1
+49487 -------------- DFRobot ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49490 -------------- Hublet Oy ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49517 -------------- Haier ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49534 -------------- TAKNET SYSTEMS PTE LTD. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49535 -------------- CompuWare Computer Center ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49536 -------------- KEY WIN ELECTRONICS CO LTD (凱穩電子股份有限公司) ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49537 -------------- GENUINE C&C INC. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49538 -------------- 株式会社マウスコンピューター ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49540 -------------- BYTESCALE TECHNOLOGIES PVT. LTD. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49541 -------------- Pc Gallery Co., Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49544 -------------- Informática Fueguina SA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49546 -------------- E & M Computing Ltd (Emet OEM Solutions) ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49548 -------------- Equus Computer Systems INC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49550 -------------- NEX SP Z O O ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49552 -------------- TGN Co. Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49553 -------------- COMFY TRADE LLC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49554 -------------- Viglen limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49555 -------------- Sugon ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49557 -------------- Smile Security & Surveillance Pvt Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49558 -------------- Hammer PLC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49559 -------------- SOPHIC AUTOMATION ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49561 -------------- HUMANWARE TECH CANADA INC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49562 -------------- WPP Barrows ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49563 -------------- Shtrih-M ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49564 -------------- TAAP LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49565 -------------- SELEKT BİLGİSAYAR İLETİŞİM ÜRÜNLERİ SAN. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49566 -------------- Auchan ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49567 -------------- Clevo ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49568 -------------- Dueton Systems ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49569 -------------- Anabella Esposito SA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49571 -------------- Tarsus Technologies(PTY) LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49572 -------------- VORAGO, S.A. DE C.V. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49573 -------------- LUCKYSTAR (SHENZHEN) DIGITAL TECHNOLOGY CO LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49574 -------------- Bmorn ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49579 -------------- Cell C PTY LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49580 -------------- Stantum ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49584 -------------- Ultra Systems ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49586 -------------- RLG B2B ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49587 -------------- Army Technologies SA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49588 -------------- SUPRA Electronics ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49589 -------------- Cube ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49591 -------------- ACT ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49594 -------------- Bematech/TOTVS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49595 -------------- Pretech International Co.,Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49596 -------------- Shenzhen Sungworld Electronic Co., Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49597 -------------- RSC Technologies ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49598 -------------- Finnsourcing ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49601 -------------- General Mobile ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49603 -------------- FONDACE TECH CO.,LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49604 -------------- Karamba Security ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49607 -------------- Pearl Automation ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49608 -------------- Colorful ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49610 -------------- NCS BILGI.BIL.DAN.SAN.TIC.LTD.STI ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49611 -------------- Times ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49612 -------------- Iball Service Center ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49615 -------------- ECOM ELECTRONIC COMPONENTS TRADING GmbH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+49616 -------------- Eboda ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49617 -------------- HARMAN ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49618 -------------- Softiron Limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49619 -------------- Siemens Healthcare GmbH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49620 -------------- Quadminds ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49630 -------------- Hatteland Display AS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49631 -------------- CMS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49633 -------------- Punch Technology Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49634 -------------- argos ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49635 -------------- FACIME II ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49638 -------------- Robot Care Systems ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49639 -------------- primux trading sl ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49640 -------------- Shenzhen Tomstar Technology co. Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49641 -------------- Alco Electronics Limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49642 -------------- GLOBAL DISTRIBUTION FRANCE ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49643 -------------- AFEX SUNS, S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49644 -------------- Equipment hall ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49645 -------------- FutureTek ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49646 -------------- Hibertek Electronics Co., Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49647 -------------- NVSBL Unusual Technology, S.L. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49648 -------------- BAREL POLAND SP. Z O.O. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49649 -------------- BAROS GmbH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49650 -------------- AXDIA International GmbH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49651 -------------- QUATROTEC ELECTRONICA, S.L. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49652 -------------- Mundo Reader sl ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49653 -------------- SC Visual Fan SRL ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49654 -------------- Il Triangolo S.P.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49655 -------------- VIP Computer Centre Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49656 -------------- YAMADA DENKI Co.,LTD. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49657 -------------- Crambo S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49658 -------------- OLIVETTI Spa ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49659 -------------- MULTICOM NORGE AS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49660 -------------- SIASA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49661 -------------- CASPER BILGISAYAR SISTEMLERI A S ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49662 -------------- Micromax Informatics Limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49663 -------------- DIGITRON DA AMAZONIA INDUSTRIA E COMERCI ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49664 -------------- Carrefour Marchandises Internationales ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49665 -------------- ERC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49666 -------------- Fares Srl ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49667 -------------- Computer Workgroup ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49668 -------------- Kraftway Corporation PLC ZAO ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49669 -------------- Frael S.p.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49671 -------------- Polytech S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49672 -------------- T-PLATFORMS JOINT STOCK COMPANY ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49673 -------------- Tzag ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49674 -------------- Daten Tecnologia LTDA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49675 -------------- BRAVIEW INDUSTRIA DE PRODUTOS ELETRONICOS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49676 -------------- XMA LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49677 -------------- Devicom ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49678 -------------- GRUPO DELTRON S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49679 -------------- DELOVOY OFFICE ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49680 -------------- BDL ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49681 -------------- ALTEX ROMANIA S.R.L. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49682 -------------- ZEON ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49683 -------------- Computer Trade OOO ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49684 -------------- CENTRECOM SUNSHINE PTY LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49685 -------------- INTEGRADORES EXPERTOS S.A.C. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49686 -------------- Triple C ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49688 -------------- Jukebox S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49690 -------------- INFORDATA S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49691 -------------- Microintegradora de Venezuela CA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49692 -------------- CORPORATIVO LANIX, SA DE CV ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49693 -------------- PC SPECIALIST LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49694 -------------- HICOM Computers L.L.C ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49695 -------------- EXPERT ZRT. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49696 -------------- TONES BVBA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49697 -------------- ICL-KME CS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49698 -------------- EXACTA TECHNOLOGIES LIMITED ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49699 -------------- Super Micro Computer, Inc. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49700 -------------- Mustek LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49701 -------------- ECT Service GmbH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49702 -------------- PENGUIN COMPUTING ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49703 -------------- ATACOM, INC. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49704 -------------- RAVE COMPUTER ASSOCIATION, INC. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49705 -------------- nulliah it cc ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49706 -------------- OOO “Ofisnyi Mir KM” ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49708 -------------- INFORTISA S.L. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49709 -------------- Smart Electronics LLC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49710 -------------- KMD Co Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49719 -------------- Atea SIA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49720 -------------- PSSC Labs ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49721 -------------- OOO “Arsenal Partner” ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49724 -------------- C.D.C. Internacional, S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49725 -------------- Daewoo Lucoms Co., Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49726 -------------- DEPO Electronics Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49727 -------------- Tecnologia y  Creatividad SAC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49728 -------------- Third Wave Corporation ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49729 -------------- Mariendal IT A/S ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49730 -------------- Savioke ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49731 -------------- M & G Ent. Co. Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49732 -------------- Shenzhen MADIGI Electronic Technology Co., Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49753 -------------- Vermillion Integrated Systems ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49782 -------------- Exertis (UK) Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49807 -------------- KOCAELI MUNICAPILITY ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49808 -------------- SHENZHEN CHUANGYING XIN TECHNOLOGY CO.LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49811 -------------- ACRELEC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49813 -------------- ACSYS S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49814 -------------- Action Sp. z o. o. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49826 -------------- Bkav Corporation ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49831 -------------- Smart Computer Solution ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49838 -------------- JWIPC TECHNOLOGY DEVELOPMENT CO LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49844 -------------- Lava International Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49853 -------------- MASSMART HOLDINGS SOUTH AFRICA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49860 -------------- "T-Platforms" Joint Stock Company ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49892 -------------- SHENZHEN MELE STAR TECHNOLOGY LTD. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49916 -------------- OMK distribution ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49923 -------------- DL Com. e Ind. de Prod. Eletrônicos Ltda. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49928 -------------- FOKUS BILGISAYAR SAN.TIC.LTD.STI ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49935 -------------- TELENET LTDA ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49936 -------------- FORYOU DIGITAL CO,.LTD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49939 -------------- Venezolana de Industria Tecnológica, C.A ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49942 -------------- ABCDIN - Distribuidora Industrias Nacionales S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49956 -------------- Hypertec Limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49964 -------------- Techpad ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49972 -------------- Etalon Factory LLC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49973 -------------- Adistec Corp ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49976 -------------- Exertis Micro-P ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49983 -------------- BSOFT DE MEXICO SA DE CV ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+49994 -------------- COMERCIALIZADORA DE VALOR AGREGADO, SA D ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+49995 -------------- Cosmic Technologies Inc. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50002 -------------- Digicom Trading Private Limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50007 -------------- SEMP TOSHIBA AMAZONAS S/A ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+50013 -------------- TECHNOLOGY TURNKEY SOLUTIONS, S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50019 -------------- Importadora de Tecnologia Global ---------- MARKED ODM/LOEM With Status ---1Modified By --- 12342
+50026 -------------- supermicro ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50031 -------------- Symtron ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50034 -------------- SHENZHEN HASEE COMPUTER CO., LTD. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+50050 -------------- AIGSG ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50078 -------------- LDLC.COM ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+50088 -------------- VESTEL ELEKTRONIK SANAYI VE TICARET A S ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50098 -------------- New IT Project LLC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50099 -------------- QIAN ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50100 -------------- 3glasses ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50102 -------------- Axiz ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50103 -------------- BangmodEnterprise Co., Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+50105 -------------- BRAVOPHONE KFT. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50159 -------------- TECSYNC TECHNOLOGY (HK) COMPANY LIMITED ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+50164 -------------- JP Sá Couto S.A ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50165 -------------- IBS EXPERTISE ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50187 -------------- DATACOM ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50190 -------------- EXO S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50224 -------------- Bluestem Brands ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50225 -------------- ASI  Corp ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50226 -------------- CENTE Spółka z o.o. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+50231 -------------- Delta RS ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+50240 -------------- Grupo CVA Ghia ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50242 -------------- iNet ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+50245 -------------- mor levi technologoes ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+50246 -------------- Mustek Electronics Pty Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+50253 -------------- SMARTRON INDIA PRIVATE LIMITED ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+50280 -------------- TRISTAR TRADING COMPANY LIMITED ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52751 -------------- CENTERPRISE INTERNATIONAL ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52752 -------------- CTL ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52753 -------------- Datamini Technologies ( India ) Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+52754 -------------- DistOCTPS - INTECH AND COMPANY, INC. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52755 -------------- EET GROUP A/S ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52757 -------------- INFORMATICA MEGASUR, S.L. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52760 -------------- sandia ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52761 -------------- Novatech Solutions S.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+52762 -------------- OKI ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52763 -------------- Rombo-Project ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+52764 -------------- ShenZhen YiFang Digital Technology CO.,LTD. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+52770 -------------- Signpost België bvba ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+52771 -------------- Tactus Limited ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52772 -------------- TECNOMEGA C.A. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52773 -------------- ООО ИНИЦИУМ ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+52774 -------------- 한성컴퓨터 ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52775 -------------- Evotor ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52777 -------------- Hometech ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52778 -------------- Honghe ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52779 -------------- Ingenico, North America ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52780 -------------- INTELBRAS S/A IND TELECOM ELEC ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52782 -------------- LANIT ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52783 -------------- MCJ CO.,LTD. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52784 -------------- MORPHO ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52786 -------------- Shenzhen 3NOD Information Technology Co., Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52787 -------------- Shenzhen Potranda Technology Co., Ltd ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52788 -------------- STORMSHIELD ---------- MARKED ODM/LOEM With Status ---1Modified By --- 1
+52789 -------------- ООО "Дивайс" ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+52790 -------------- INTECH ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+58437 -------------- Daffodil Computers Ltd. ---------- MARKED ODM/LOEM With Status ---1Modified By --- 0
+COUNT: 725

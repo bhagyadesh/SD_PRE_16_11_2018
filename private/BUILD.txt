@@ -1,0 +1,30 @@
+#!/bin/bash
+#
+# Build script.
+#
+
+#
+# Build the project.
+#
+drush make drupal/private/drupal-org.make drupal-new
+
+#
+# Copy custom files/folders not included in the build process.
+#
+mv drupal/.gitignore drupal-new/
+mv drupal/.gitmodules drupal-new/
+mv drupal/robots.txt drupal-new/
+mv drupal/private drupal-new/
+mv drupal/sites/all/modules/custom drupal-new/sites/all/modules/
+mv drupal/sites/all/modules/vendor drupal-new/sites/all/modules/
+mv drupal/sites/all/themes/custom drupal-new/sites/all/themes/
+mv drupal/sites/default/files drupal-new/sites/default/
+mv drupal/sites/default/private drupal-new/sites/default/
+mv drupal/sites/default/settings.php drupal-new/sites/default/
+mv drupal/translations drupal-new/
+
+#
+# Replace the drupal folder.
+#
+rm -fr drupal
+mv drupal-new drupal

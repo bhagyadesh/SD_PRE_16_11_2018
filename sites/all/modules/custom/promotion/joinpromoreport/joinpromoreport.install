@@ -1,0 +1,76 @@
+<?php
+
+function joinpromoreport_schema() {
+  $schema['joinpromoreport'] = array(
+    // Example (partial) specification for table "node".
+    'description' => 'The base table for joined users.',
+    'fields' => array(
+      'joinpromoreport_id' => array(
+        'description' => 'The primary identifier for a email data.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE),
+      'userid' => array(
+        'description' => 'The primary identifier for a node.',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'null' => TRUE,
+      ),
+	  'username' => array(
+        'description' => 'The user name for a node.',
+        'type' => 'varchar',
+        'length' => 32,
+        'null' => TRUE,
+      ),
+      'promotionid' => array(
+        'description' => 'The current node id of promotion',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        //'default' => '',
+      ),
+	  'promotionname' => array(
+        'description' => 'The promotion name for a node.',
+        'type' => 'varchar',
+        'length' => 128,
+        'not null' => TRUE,
+      ),
+      'created' => array(
+        'description' => 'The Unix timestamp when the node was created.',
+        'type' => 'int',
+        'null' => TRUE,
+       // 'default' => '',
+	  ),
+      'status' => array(
+        'description' => 'The status of promotion.',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        'default' => '0',
+      ),
+	  'subject' => array(
+        'description' => 'The subject of promotion.',
+        'type' => 'varchar',
+        'length' => 1024,
+        'not null' => TRUE,
+        
+      ),
+	  'buyercompid' => array(
+        'description' => 'The company id of buyers',
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        //'default' => '',
+      ),
+	  'promotiontype' => array(
+        'description' => 'The Type of promotion Joined or Questioned.',
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        
+      ),
+    ),
+    'primary key' => array('joinpromoreport_id'),
+  );
+  return $schema;
+}

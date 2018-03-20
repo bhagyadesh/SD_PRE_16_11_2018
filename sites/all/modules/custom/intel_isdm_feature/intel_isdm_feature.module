@@ -1,0 +1,54 @@
+<?php
+/**
+ * @file
+ * Code for the intel_isdm_feature feature.
+ */
+
+include_once 'intel_isdm_feature.features.inc';
+
+/**
+ * Implements hook_panels_pre_render().
+ *
+ * PURPOSE: For select panels, remove page title.
+ *
+ * @TODO: While this works, being based on a CSS id is flimsy. See if a patch to panels can provide machine name.
+ */
+function intel_isdm_feature_panels_pre_render($panels_display, $renderer){
+  // Check if current page is segment landing page
+  if($panels_display->css_id == 'segment-landing') {
+    $hide_title = &drupal_static('isdm_hide_page_title');
+    $hide_title = TRUE;
+  }
+}
+
+/**
+ * Implements hook_views_pre_render().
+ *
+ * Purpose: Alter the views footer content on market segment/sub-segment pages to contain a working view all link.
+ */
+function intel_isdm_feature_views_pre_render(&$view){
+  // Only impact the segment page categiry views
+  if('segment_page_category_views' == $view->name){
+    // Get market segment and category TID's.
+    $market_segment_tid = $view->argument['field_market_segments_tid']->value[0];
+    $categories_tid = $view->argument['field_categories_tid']->value[0];
+
+    $link_path = '/solutions-directory/categories/'. $categories_tid . '/market_segments/' . $market_segment_tid;
+
+    // Place above TID's in footer link.
+    //str_replace('!1',$market_segment_tid, $view->footer['area']->options['content']);
+    //str_replace('!2',$categories_tid, $view->footer['area']->options['content']);
+
+    // Updating footer content to contain a themed translatable link.
+	$pieces = explode("/", $_GET[q]);
+	if($pieces[2]=='embedded-iot') {
+		
+		$view->footer['area']->options['content'] = l(t('View All @category', array('@category' => $view->argument['field_categories_tid']->validated_title)), $link_path.'/field_solution_type/embedded iot');
+		
+	} else {
+		
+		$view->footer['area']->options['content'] = l(t('View All @category', array('@category' => $view->argument['field_categories_tid']->validated_title)), $link_path.'/field_solution_type/'.$pieces[2]);
+	}
+	
+  }
+}

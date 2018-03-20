@@ -1,0 +1,7 @@
+name = Intel Web Service
+description = Solution Directory Web Services
+package = Intel Web Services
+version = VERSION
+core = 7.x
+files[] = intel_ea_web_service.module
+files[] = intel_ea_web_service.inc

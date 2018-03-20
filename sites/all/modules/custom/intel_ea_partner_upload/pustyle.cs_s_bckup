@@ -1,0 +1,21 @@
+.highlight{ /*color:#ff0000;*/
+background-color:yellow;
+font-weight: bold;
+}
+
+
+.highlight_char{ /*color:#ff0000;*/
+background-color:yellow;
+font-weight: bold;
+}
+
+.page-node-add-solution .required-solution .fieldset-legend span.summary::after{
+	content: "*";
+	color : red;
+}
+
+
+.page-node-add-solution .fieldset-legend a.fieldset-title{
+
+color: black;
+}

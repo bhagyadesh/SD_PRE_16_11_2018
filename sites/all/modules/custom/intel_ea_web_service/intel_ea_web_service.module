@@ -1,0 +1,30 @@
+<?php
+// intel_ea_web_service.module
+
+/**
+ * Implementation of hook_services_resources().
+ */
+function intel_ea_web_service_services_resources() {
+  return array(
+    'profile_statistics' => array(
+      'retrieve' => array(
+        'help' => 'Retrieves a note',
+        'file' => array('file' => 'inc', 'module' => 'intel_ea_web_service'),
+        'callback' => '_profile_statistics_retrieve',
+		'access callback' => 'intel_ea_web_service_services_access',
+        'access arguments' => array('view'),
+        'access arguments append' => TRUE,
+        'args' => array(
+					array(
+						'name' => 'id',
+						'type' => 'int',
+						'description' => 'The id of the note to get',
+						'source' => array('path' => '0'),
+						'optional' => FALSE,
+						)						
+        ),
+      )
+    ),
+  );
+}
+?>

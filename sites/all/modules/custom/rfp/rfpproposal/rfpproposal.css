@@ -1,0 +1,1108 @@
+/** RFP **/
+
+.page-node-add-rfp .panel-body .expand		
+{		
+    margin-left:20px;		
+    left:-2px;		
+}		
+.page-node-add-rfp .form-required		
+{		
+    color:red;		
+}		
+.page-node-add-rfp .date-no-float .form-required		
+{		
+    margin-left: 45px;		
+}		
+.page-node-add-rfp .date-combo .panel-heading		
+{		
+    background-color: blue;		
+}		
+.page-node-add-rfp a.tabledrag-handle .handle		
+{		
+    height:100px;		
+    width:20px;		
+}		
+.page-node-add-rfp fieldset.date-combo .container-inline-date > .form-item		
+{		
+    margin-top:-50px;		
+}		
+.page-node-add-rfp a.tabledrag-handle		
+{		
+    padding-top:9px;		
+    margin-top:5px;		
+}		
+
+.page-node-add-rfp .panel-collapse .panel-body		
+{		
+    margin-left:20px;		
+    margin-bottom: 0;		
+}		
+.page-node-add-rfp .tabledrag-toggle-weight-wrapper a.tabledrag-toggle-weight		
+{		
+    display:none;		
+}		
+.page-node-add-rfp .region-sidebar-first{		
+    display:none;		
+}		
+.node .node-rfp		
+.table > thead > tr > th,		
+.table > thead > tr > td,		
+.table > tbody > tr > th,		
+.table > tbody > tr > td,		
+.table > tfoot > tr > th,		
+.table > tfoot > tr > td {		
+    padding: 10px;		
+}		
+.node-type-rfp .date-no-float .form-required		
+{		
+    margin-left:43px;		
+}		
+.page-node-add-rfp a.tabledrag-handle .handle, .node-type-proposal.page-node-edit a.tabledrag-handle .handle		
+{		
+    height:100px;		
+    width:20px;		
+}		
+.node-add-rfp a.tabledrag-handle		
+{		
+    padding-top:22px;		
+    margin-top:5px;		
+}		
+.node-rfp-form .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {		
+    margin-left: 5px;		
+    border-radius: 4px;		
+}		
+.field-name-field-categories-hidden  {		
+    display: none;		
+}		
+.page-node-add-rfp label.control-label{		
+    display: block;		
+}		
+.page-node-add-rfp .form-type-checkbox-radio-tree label.control-label, .node-type-rfp.page-node-edit .form-type-checkbox-radio-tree label.control-label{margin-left:-15px;}		
+.page-node-add-rfp .matchbutton, .node-type-rfp.page-node-edit .matchbutton  {		
+    margin: 0px;		
+}		
+
+.node-type-rfp.page-node-edit .date-combo.panel.panel-default.form-wrapper {		
+    padding-top: 0px;		
+}		
+.node-type-rfp.page-node-edit .panel-body .expand {		
+    margin-left: 10px;		
+}
+
+.node-type-rfp.page-node-edit .panel-collapse .panel-body  {		
+    margin-left: 20px;		
+}		
+.node-type-rfp label.control-label{		
+    display:block;		
+
+}		
+.node-type-rfp .tabledrag-toggle-weight-wrapper a.tabledrag-toggle-weight		
+{		
+    display:none;		
+}		
+.page-node-add-rfp .view-manual-builders .form-wrapper		
+{		
+    margin-bottom:18px;		
+}		
+.page-node-add-rfp #edit-field-rfp-attachment-und-0-upload		
+{		
+    padding-left:6px;		
+    padding-top:6px;			
+}		
+
+.page-node-add-rfp #edit-field-proposal-due-date-und-0-value .form-item 		
+{		
+    margin-top:-33px;		
+}		
+
+.node-type-rfp #edit-field-proposal-due-date-und-0-value .form-item 		
+{		
+    margin-top:-55px;		
+}		
+.node-type-rfp .field-name-field-estimated-time-of-delivery .date-padding		
+{		
+    margin-top:-55px;		
+	padding-top:31px !important;		
+}		
+.node-type-rfp .form-required		
+{		
+    color:red;		
+}		
+.node-type-rfp ul.field-collection-view-links li a		
+{		
+    display:none;		
+}
+.anchorbutton
+{
+    background-color: #1eafec;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid transparent;
+    line-height: 1.42857;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 15px;
+}
+
+.proposalinfofields {
+    border:0px solid black;
+}
+.node-type-proposal ul.field-collection-view-links li a
+{
+    display:none;
+}
+
+/* .page-node-add-rfp .btn-danger {
+    margin-left: 35px !important;
+} */ 
+
+.page-node-add-rfp a.tabledrag-handle
+{
+    padding-left:3px;
+}
+
+.page-node-add-rfp table.sticky-header
+{
+    position: relative !important;
+} 
+
+.page-node-add-rfp legend {
+    margin-bottom: 0px;
+}  
+
+.page-node-add-rfp a.tabledrag-handle {
+    margin-top: 0px !important;
+} 
+
+li.expandable {
+    cursor: pointer;
+} 
+
+.node-type-rfp .field-name-field-rfp-attachment .btn-danger, .node-type-proposal.page-node-edit .field-name-field-rfp-attachment .btn-danger, .page-node-add-rfp.page-node-add .field-name-field-rfp-attachment .btn-danger
+{
+    margin-top:2px;
+	margin-left: auto;
+}
+
+.page-node-add-rfp .field-name-field-stds-wwan .form-item, .node-type-rfp.page-node-edit .field-name-field-stds-wwan .form-item
+{
+    margin-left:20px;
+}
+
+.node-type-rfp a.tabledrag-handle .handle{
+    height:100px;
+    width:20px;
+    margin-left:10px;
+}
+
+.page-node-add-rfp .table-responsive {
+    overflow-x: hidden;
+} 
+
+.node-type-rfp #field-manual-builder-values .tabledrag-handle
+{
+    margin-top:21px;
+}
+
+.node-type-rfp legend {
+    margin-bottom: 0px;
+}   
+
+
+.rfp-node-view 
+{
+    width:32%;
+    float:left;
+    padding:5px;
+    /*
+	border:1px solid #ccc;
+    */
+	height:100px;
+    overflow:auto;
+    margin-right:1px;
+    margin-bottom:3px;
+	/*
+    background-color:#ebebe0;
+	*/
+}
+.rfp-product
+{
+    max-width:100%;
+    overflow-y:overlay;
+    max-height:300px;
+    margin-bottom:15px;
+
+}
+/**
+.node-type-rfp .panel-title.fieldset-legend
+{
+    padding: 5px 25px;
+    display:block;
+    background-color: #0072c5;
+}
+**/
+.node-type-rfp table.sticky-header
+{
+    position: relative !important;
+} 
+
+.node-type-proposal .btn-success
+{
+    margin-left:1px;
+}
+.node-type-proposal .tabledrag-toggle-weight-wrapper a.tabledrag-toggle-weight
+{
+    display:none;
+}
+
+.node-type-rfp .table-responsive {
+    overflow-x: hidden;
+} 
+
+/*.rfp-product:nth-child(odd)
+{
+        background-color:#ebebe0;
+}
+*/
+ /* .page-node-add-rfp .table-hover, .node-type-rfp.page-node-edit .table-hover
+{
+    margin-top:-36px;
+} */ 
+
+.page-node-add-rfp a.panel-title.fieldset-legend, .node-type-rfp.page-node-edit a.panel-title.fieldset-legend
+{
+    font-size:15px;
+
+
+}
+
+/*
+.node-type-rfp .field-collection-view .field-label
+{
+    width:81%;
+}
+*/
+
+.node-type-rfp .field-items
+{
+	
+	/* display:inline; */
+    margin-bottom:10px;
+}
+.node-type-rfp .field-collection-view
+{
+    border-bottom:solid 1px;
+}
+.node-type-rfp .field-name-body .field-label{
+    margin-right:10px;
+}
+
+.node-type-proposal .modal-content{
+    overflow:auto;
+	
+}
+.node-type-proposal a.tabledrag-handle
+{
+    padding-top:10px;
+}
+
+/*.page-node-add-rfp .panel-body fieldset span
+{
+        color:white;
+}
+*/
+.node-type-proposal .panel-title{
+    padding-left:10px;
+    color:white;
+}
+.node-type-proposal .views-label{
+    font-weight:bold;
+}
+
+/*
+.node-type-proposal .field-content{
+    padding-bottom:15px;
+    border-bottom:solid 0.2px silver;
+
+}
+
+*/
+
+/*.node-type-proposal .views-field-title
+{
+	padding-top:20px;
+}
+*/
+.page-node-add-rfp .ctools-modal-content
+{
+	width:980px;
+}
+
+/**
+.view-proposal-recommended-product .views-field-title a, .view-manual-builders .views-field-title a
+{
+	margin-left:-35px;
+}
+.view-manual-builders .views-field-title a
+{
+	margin-left:-265px;
+}
+**/
+.page-node-add-rfp .view-manual-builders .views-field-title
+{
+	padding-top:10px;
+}
+
+.page-node-add-rfp .modal-content, .node-type-rfp.page-node-edit .modal-content
+{
+	overflow: auto;
+    height: 75%;
+	
+}
+
+/* 2016-06-28
+
+*/
+
+.form-item-field-proposal-due-date-und-0-value-date>div, .form-item-field-rfp-product-und-0-field-estimated-time-of-delivery-und-0-value-date>div 
+{
+    display: inline;
+}
+
+.form-item-field-proposal-due-date-und-0-value-date>input, .form-item-field-rfp-product-und-0-field-estimated-time-of-delivery-und-0-value-date>input
+ {
+    display: inline;
+}
+
+.form-item-field-proposal-due-date-und-0-value-date>label, .form-item-field-rfp-product-und-0-field-estimated-time-of-delivery-und-0-value-date>label 
+{
+    float: left;
+    width: 100px;
+}
+
+input#edit-field-rfp-product-und-0-field-volume-und-0-value,
+input#edit-field-rfp-product-und-0-field-stds-eth-ports-und-0-value, 
+input#edit-field-rfp-product-und-0-field-stds-storage-cfst-und-0-value,
+input#edit-field-rfp-product-und-0-field-stds-storage-ide-und-0-value,
+input#edit-field-rfp-product-und-0-field-stds-storage-sata-und-0-value,
+input#edit-field-rfp-product-und-0-field-stds-storage-ssd-size-und-0-value
+
+ {
+    width: 200px;
+}
+
+a[target~="node/add/rfp"]
+
+{
+	margin-top:10px;
+}
+
+/** end Checkbox color chnage on solution page **/
+
+
+/* .page-node-add-rfp .views-table .views-field
+
+{
+	text-transform: uppercase;
+    background: #e1e2dc;
+    font-weight: normal;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #bebfb9;
+    padding: 3px 10px;
+} */
+
+
+.node-type-rfp .field-name-field-categories .field-label {
+    width: 100% !important;
+}
+
+/*.view-manual-builders  th.views-field-entityreference-view-widget
+{
+	padding-top:38px;
+	
+}
+*/
+.page-node-add-rfp .view-manual-builders #edit-ervw-submit, 
+.node-type-proposal.page-node-edit .view-proposal-recommended-product #edit-ervw-submit, 
+.node-type-rfp.page-node-edit .view-manual-builders #edit-ervw-submit
+{
+	float:left;
+	margin-bottom:-55px;
+}
+
+.page-node-add-rfp .view-manual-builders ul.pagination, .node-type-proposal.page-node-edit .view-proposal-recommended-product ul.pagination, .node-type-rfp.page-node-edit .view-proposal-recommended-product ul.pagination 
+{
+	margin-top: 0;
+    padding-top: 0;
+	/**margin-top:-31px;**/
+}
+
+
+.page-node-add-rfp .views-exposed-widgets > div{width:23%}
+.page-node-add-rfp .views-exposed-widgets > div.views-submit-button{width:5%}
+
+.node-type-rfp .views-exposed-widgets > div{width:23%}
+.node-type-rfp .views-exposed-widgets > div.views-submit-button{width:5%}
+
+.page-node-add-simplenews .views-exposed-widgets > div{width:20%}
+.page-node-add-simplenews .views-exposed-widgets > div.views-submit-button{width:5%}
+
+.page-checkbox-products .views-exposed-widgets > div{width:20%}
+
+
+
+#views-form-manual-builders-entityreference-view-widget-1 .table-hover{margin-top: 0;}
+
+.view-proposal-recommended-product  .table-hover thead tr  th:first-child, .view-recommended-builders .table-hover thead tr th:first-child, .view-manual-builders .table-hover thead tr  th:first-child{width: 10%; padding-left:28px;}
+
+.view-proposal-recommended-product  .table-hover thead tr  th:second-child, .view-recommended-builders .table-hover thead tr th:second-child, .view-manual-builders .table-hover thead tr th:second-child{width: 90%;}
+
+#views-form-recommended-builders-entityreference-view-widget-1 .table-hover{margin-top: 0;}
+
+#views-form-proposal-recommended-product-entityreference-view-widget-1 .table-hover{margin-top: 0;}
+
+.node-type-proposal .views-exposed-widgets > div{width:23%}
+.node-type-proposal .views-exposed-widgets > div.views-submit-button{width:5%}
+
+.node-type-proposal .view-proposal-recommended-product td.views-field-entityreference-view-widget, 
+.page-node-add-rfp.page-node-add .view-manual-builders td.views-field-entityreference-view-widget, 
+.node-type-rfp.page-node-edit .view-manual-builders td.views-field-entityreference-view-widget, 
+.view-recommended-builders td.views-field-entityreference-view-widget
+{
+	padding-bottom: 0px;
+    padding-top: 0px;
+}
+/*.view-proposal-recommended-product  .table-hover thead tr  th:first-child
+{
+	padding-bottom:7px;
+}
+*/
+
+.page-node-add-rfp .form-item-field-rfp-product-und-0-field-estimated-time-of-delivery-und-0-value-date, 
+.page-node-add-rfp .form-item-field-proposal-due-date-und-0-value-date,
+.node-type-rfp .form-item-field-rfp-product-und-0-field-estimated-time-of-delivery-und-0-value-date,
+.node-type-rfp .form-item-field-proposal-due-date-und-0-value-date   {
+	width: 800px !important;
+}
+
+
+.page-node-add-rfp .panel-body, .node-type-proposal.page-node-edit .panel-body, .node-type-rfp .panel-body
+{
+	margin-bottom:0px  !important;
+}
+
+.node-type-proposal .panel,  .node-type-rfp .panel, .page-node-add-rfp .panel
+{
+	margin-bottom:0px !important;
+}
+
+.views-field-field-recommended-products a{display:block;}
+
+
+.node-type-proposal div#edit-field-approver-und-0-field-approval-status-und > div:first-child {
+	display: none;
+}
+
+
+.node-type-rfp .rfp-node-view {
+	border:0px !important;
+	background-color:#FFFFFF !important;
+}
+
+td .field .field-name-field-product-description 
+ {
+	padding-left:0px;
+}
+
+/* .node-type-rfp .field-label
+{
+	display:inline-block;
+}
+.node-type-rfp .field-items
+{
+	display:inline-block;
+} */
+
+ /*  .node-type-rfp .product-info-table .field .field-label-above
+	{
+		height: 12em;
+		width: 24em;
+	}
+
+	.node-type-rfp .product-info-table .field-collection-view .field-label{
+		width:60%;
+	} */
+
+ 
+
+/* .node-type-rfp .rfp-product-info-row
+{
+	border-bottom:0.1px solid silver;
+	
+} */
+
+.node-type-rfp .rfp-product-info-row td
+{
+	width:25%;
+	vertical-align:top;
+	padding-top: 5px;
+}
+
+
+/* .tabledrag-toggle-weight-wrapper {
+    display: none;
+} */
+
+.node-type-rfp .rfp-product-info-row
+{
+	background-color: #f2f2f2;
+}
+
+.node-type-rfp .field-collection-view .field-label {
+    width: 100%;
+
+}
+/* disabling temporarly to fix ethernet alignement
+.page-node-add-rfp .form-checkboxes, .node-type-rfp.page-node-edit .form-checkboxes {
+	width: 100%;
+    float: left;
+}
+*/
+
+.view-viewproposal .views-field {
+    /*height: 40px !important;*/
+    min-height: 40px !important;
+}
+
+.node-type-rfp .preview h3:nth-of-type(1), .node-type-rfp .preview .node-teaser:nth-of-type(1) {
+    display: none;
+}
+
+.page-node-add-rfp .form-type-checkbox, .node-type-rfp.page-node-edit .form-type-checkbox {
+	width: 50%;
+    display: inline-block;
+}
+
+.node-type-rfp tr.rfp-product-info-row .field-label
+{
+	background-color: white;
+    margin-top: -5px;
+	color:#0072c5;
+}
+.proposalperrfplist{display:none;}
+
+.proposalperrfplist .table {
+	
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+}
+.proposalperrfplist .table th {
+	
+	border-width: 1px !important;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+.proposalperrfplist .table td {
+	
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+.proposalperrfplist .table > thead:first-child > tr:first-child > th{
+	border-width: 1px !important;
+    border-style: solid  !important;
+	border-color: #999999 !important;	
+}
+.proposalperrfplistdisplay{
+	font-size:11px;
+	color:#0072c5;
+	padding-right:15px;
+}
+
+
+
+/* .node-type-rfp .field-items a
+{
+color:black;
+} */
+.node-type-rfp .field-name-field-volume .field-label
+{
+/* 	width:5%; */
+	margin-left:8px;
+}
+
+.view-rfp-buyer .table tr td.views-field-body{width:30%;}
+	
+/* removing space in rfpview page
+
+.node-type-rfp .field-collection-item-field-rfp-product .field-label-above
+{
+	padding-top:25px;
+	
+} */
+.node-type-rfp .field-name-field-volume > .field-label
+ {
+    width: 100px;
+} 
+
+/*select all temporary fix*/
+.page-node-add-rfp #entityreference-view-widget-select-all 
+{
+	/**
+	position: absolute;
+	top: 100px;
+	left:20px;
+	**/
+	display:none;
+	
+}
+
+ .page-node-edit #entityreference-view-widget-select-all {
+	 /**
+	position: absolute;
+	top: 100px;
+	left:20px;
+		**/
+	display:none;
+} 
+
+
+.page-node-edit .views-field.views-field-entityreference-view-widget {
+	/**color: transparent;**/
+}
+
+
+.page-node-add-rfp .views-field.views-field-entityreference-view-widget {
+		/**color: transparent;**/
+}
+
+.page-node-add-rfp .field-name-field-rfp-attachment .panel-default, .node-type-rfp .field-name-field-rfp-attachment .panel-default {
+	padding: 0px;
+}
+.page-node-add-rfp .panel-heading, .node-type-rfp.page-node-edit .panel-heading
+{
+	margin-bottom:5px;
+}
+.node-type-rfp .field-name-field-buyer-company, .page-node-add-rfp.page-node-add .field-name-field-buyer-company
+{
+	margin-left:-0.7em;
+}
+
+.node-type-rfp .field-name-field-rfp-product .field-items, .page-node-add-rfp.page-node-add .field-name-field-rfp-product .field-items
+{
+	width:100%;
+	
+}
+
+.page-node-add-rfp .field-name-field-match-builder select, .node-type-rfp .field-name-field-match-builder select {
+	height:220px;
+}
+
+.page-rfp-buyer .table > tbody>tr>td {
+    padding: 5px 10px !important;
+}
+.node-type-rfp .preview .node, .page-node-add-rfp.page-node-add .preview .node
+{
+	background-color:white;
+}
+
+/* .node-type-proposal .view-content .views-field{
+	width: 100%;
+    float: left;
+} */
+
+.node-type-proposal .view-content .field-content {
+	width: 50%;
+    display: inline;
+}
+
+ .node-type-proposal .view-content .views-field {
+	margin-bottom: 20px;
+} 
+
+ .node-rfp .table .field-items, .page-node-add-rfp.page-node-add .table .field-items{
+	width:50%;
+}
+
+ .node-type-rfp .table .field-label
+{
+	width: 25%;
+} 
+.node-rfp .field-name-field-categories .field-label{
+	width:25% !important;
+}
+.node-rfp .field-name-field-categories .field-items{
+	width:50% !important;
+}
+
+.node-rfp .field-name-field-volume .field-items, .page-node-add-rfp.page-node-add .field-name-field-volume .field-items{
+	width:50%;
+}
+
+.node-rfp .field-name-field-volume .field-label, .page-node-add-rfp.page-node-add .field-name-field-volume .field-label{
+	width: 25%;
+} 
+
+.node-type-rfp .builder-class {
+    padding-left: 10px;
+}
+
+.page-node-buyer .proposalform, .node-type-proposal .proposalform{
+	margin-bottom: 20px;
+}
+
+.page-manageproposal .content .field-name-field-volume {
+	padding: 10px;
+}
+
+.page-viewproposal .views-field-title .field-content{
+	font-weight: bold;
+    color: #1273c2;
+	font-size:large;
+	
+}
+.node-type-rfp .field-name-field-manual-builder .control-label
+{
+	margin-top:-4px;
+}
+.node-type-rfp .field-name-field-proposal-due-date .date-padding
+{
+	margin-top:21px;
+}
+
+.page-viewproposal .views-label {
+	font-weight: bold;
+}
+
+.page-viewproposal .view-content .views-field {
+	width: 100%
+}
+
+.page-viewproposal .view-content .field-content {
+	width: 50%;
+    display: inline;	
+}
+
+.node-type-rfp .content h4 {
+	font-weight: bold;
+	color: #1273c2;
+}
+
+.node-type-proposal .field-collection-view {
+	padding: 0px;
+	margin: 0px;
+}
+  .node-type-rfp .node-rfp{
+	  background-color:white;
+  }
+    
+ .page-manageproposal tr.rfp-product-info-row .field-label
+ {
+	 background-color: white;
+    margin-top: -5px;
+    color: #0072c5;
+ }
+ 
+ .page-manageproposal .rfp-product-info-row td
+{
+	width:25%;
+	vertical-align:top;
+	padding-top: 5px;
+}
+
+.node-type-rfp .table.rfpbasicinfo  .field-label {width:36%;}
+.node-type-rfp .table.rfpbasicinfo  td {width:35%;}
+
+
+#edit-priority-tag{
+	font-size: 13px;
+    float: right;
+	margin-top:17px;
+}
+
+.page-node-add-rfp div.panel-body .expand{left:-2px;}
+#edit-field-approver-und-0-field-approval-status{display:none;}
+.node-type-rfp.page-node-edit .panel-body .expand {
+    margin-left: 10px;
+	left:0;
+}
+.node-type-rfp a.panel-title.fieldset-legend {
+    padding: 5px 25px;
+    display: block;
+    background-color: white;
+    /* margin-bottom: 15px; */
+    color: #000;
+}
+.page-node-add-rfp .panel-title.fieldset-legend, .node-type-rfp .panel-title.fieldset-legend, .node-type-proposal .panel-title.fieldset-legend {
+    padding: 5px 20px;
+    display: block;
+    background-color: #FFF;
+    color: #000;	
+}
+.field-name-field-proposal-due-date .help-block, .field-name-field-estimated-time-of-delivery .help-block, .field-name-field-approver-date .help-block, 
+.page-node-add-rfp .form-type-managed-file .control-label, .node-type-rfp .form-type-managed-file .control-label, .node-type-proposal .form-type-managed-file .control-label, .node-type-rfp .action-links-field-collection-add, .page-viewproposal .field-collection-view-links, .page-viewproposal .action-links-field-collection-add {display:none}
+.field-name-field-match-builder .control-label, .field-name-field-match-builder .control-label{display:none !important;}
+.page-node-add-rfp .matchbutton, .node-type-rfp.page-node-edit .matchbutton{margin-bottom:10px !important;}
+.view-id-rfp_product_field_collection td{padding-left:0;}
+.page-manageproposal .anchorbutton{margin-left:0;}
+#field-rfp-product-values th.field-label{width:auto;}
+
+#field-proposal-due-date-add-more-wrapper .date-form-element-content{
+	border:none;
+	padding-left: 0;
+}
+
+.field-name-field-manual-builder label {
+	display: none;
+}
+
+#views-exposed-form-proposal-recommended-product-entityreference-view-widget-1 .dropdown-menu{
+	max-height:14em;
+	overflow:auto;
+}
+
+.field-name-field-recommended-builder label {
+	display: none;
+}
+
+.node-type-proposal .field-collection-view .field-label {
+	width: auto;
+}
+.page-node-add-rfp .workflow-form-container .form-type-radios, .node-type-rfp  .workflow-form-container .form-type-radios, .node-type-proposal .workflow-form-container .form-type-radios{
+	display: none;
+}
+.proposalstatuschange.btn-info{background-color: #1eafec;}
+button[name="field_rfp_product_add_more"]{float:right}
+button[value^='Remove Product']{float: right; background-color: #1eafec; border-color: #13a2de;}
+button[value^='Remove Product']:hover {background-color: #1191c6; border-color: #0e79a5;}
+button[value^='Remove Product']:focus {background-color: #1191c6; border-color: #094c68;}
+button[value^=' Add Another Product'] {margin-top: -44px; margin-right: 170px;}
+.view-proposal-recommended-product button[value^='Save']{display:none;}
+.view-manual-builders button[value^='Save']{display:none;}
+.view-recommended-builders button[value^='Save']{display:none;}
+table.rfpbasicinfo>tbody>tr>td{border-top:0;}
+.node-rfp{padding-top: 5px;}
+.node-rfp .field-collection-container, .node-type-rfp .page-header{border-bottom:0;}
+.field-collection-item-field-rfp-product .product-info-table{ margin-top: -15px;}
+.node-type-rfp .field-collection-view{margin-left:0}.
+.rfpbasicinfo .field-label{width:auto;}
+.page-manageproposal .rfp-product-info-row {
+    background-color: #f2f2f2;
+}
+.page-manageproposal .product-info-table table{width: 100%; margin-bottom:10px;}
+.container-inline-date span.form-required{ visibility: hidden;}
+.page-node-add-rfp div.panel-body .expand{margin-left: 10px;left:0;} 
+
+
+.page-node-add-rfp .breadcrumb .inline.odd.first,  .node-type-proposal .breadcrumb .inline.odd.first, .node-type-rfp.page-node-edit .breadcrumb .inline.odd.first{
+	display: none;
+}
+
+.page-node-add-rfp .breadcrumb .delimiter, .node-type-proposal .breadcrumb .delimiter,  .node-type-rfp.page-node-edit .breadcrumb .delimiter{
+	display: none;
+}
+
+
+.page-node-add-rfp .field-name-field-rfp-attachment .panel-heading {
+	padding: 0px;
+}
+
+/* bootstrap hack: fix content width inside hidden tabs */
+.page-node-add-rfp .tab-content > .tab-pane:not(.active),
+.pill-content > .pill-pane:not(.active), .node-type-rfp .tab-content > .tab-pane:not(.active),
+.pill-content > .pill-pane:not(.active) {
+    display: block;
+    height: 0;
+    overflow-y: hidden;
+} 
+/* bootstrap hack end */ 
+
+/* .node-type-proposal .view-proposal-recommended-product .dropdown {
+	height:auto;
+	max-height:100px;
+	overflow-y:auto;
+} */
+
+.page-node-add-rfp .btn-danger {
+    background-color: #1eafec;
+    border-color: #13a2de;
+} 
+
+.page-node-add-rfp .btn-danger:hover {
+    background-color: #1191c6;
+    border-color: #0e79a5;
+} 
+
+.node-type-proposal .btn-danger, .node-type-rfp.page-node-edit .btn-danger{
+    background-color: #1eafec;
+    border-color: #13a2de;
+} 
+
+.node-type-proposal .btn-danger:hover, .node-type-rfp.page-node-edit .btn-danger:hover {
+    background-color: #1191c6;
+    border-color: #0e79a5;
+} 
+
+.page-node-edit-buyer .panel-heading {
+	padding: 0px;
+	margin: 0px;
+}
+
+/* .page-node-add-rfp .field-name-field-estimated-time-of-delivery .form-required{
+	display: none;
+} */
+
+.node-type-rfp .product-info-table, .page-manageproposal .product-info-table  {
+	padding: 8px;
+	margin-bottom: 10px;
+}
+
+.node-type-rfp.page-node-edit .field-name-field-rfp-attachment .panel-heading {
+	padding: 0px;
+}
+
+.node-type-proposal .panel-heading {
+	padding: 0px;
+}
+
+/* .page-node-add-rfp .field-name-field-buyer-company {
+	display: none;
+} */
+
+.page-viewproposal .field-name-field-price .field-label {
+	width: 6%;
+    float: left;
+}
+
+.page-viewproposal .field-name-field-price .field-items {
+    width: 50%;
+    display: inline;
+}
+
+.page-viewproposal .field-name-field-po-proposal .field-label {
+	width: 18%;
+    float: left;
+}
+
+.page-viewproposal .field-name-field-po-proposal .field-items {
+    width: 50%;
+    display: inline;
+}
+
+#edit-field-rfp-attachment .panel-title.fieldset-legend, .node-type-proposal .panel-title.fieldset-legend{
+	padding: 5px 0px;
+}
+
+.view-rfp-buyer .views-field-nothing, .view-rfp-builder .views-field-nothing {
+	text-align: center;
+}
+
+.node-type-rfp.page-node-edit .field-multiple-drag {
+	width: 2%;
+}
+
+.view-recommended-builders #edit-ervw-submit {
+	float: left;
+}
+
+.view-viewproposal .views-field {
+	margin-bottom: 15px;
+}
+
+.node-type-proposal .preview h3:nth-of-type(1), .node-type-proposal .preview .node-teaser:nth-of-type(1) {
+    display: none;
+}
+.node-type-proposal .preview .node{
+    background-color: white;
+}
+.page-rfp-inteladmin-view .views-field-nothing {text-align: center;}
+
+.field-name-field-rfp-attachment .ajax-progress-bar {
+	margin-top:5px;
+	width: 57em;
+}
+
+
+/* 
+
+.field-name-field-rfp-attachment .progress {
+	background-color: #f5f5f5;
+	width: 100%;
+}
+
+.field-name-field-rfp-attachment .progress-bar {
+	color:blue;
+background-color: blue;
+}
+
+
+
+.field-name-field-rfp-attachment .progress-bar.active {
+	background-color: blue;
+} */
+
+/* .percentage .pull-right {
+	color: blue;
+} */
+
+
+.view-rfp-buyer .views-field.views-field-title.active {
+		background-color: white;
+}
+
+
+.view-rfp-builder .views-field.views-field-title.active {
+		background-color: white;
+}
+
+.view-rfp-inteladmin-view .views-field.views-field-title.active {
+		background-color: white;
+}
+.field-name-field-manual-builder a.tabledrag-handle, .field-name-field-recommended-builder a.tabledrag-handle{background-image:none}
+
+.node-type-rfp .field-name-field-recommended-builder a.tabledrag-handle
+{
+	margin-top:4px;
+}
+.page-node-add-promotion .view-buyer-companies #entityreference-view-widget-select-all,
+.node-type-promotion.page-node-edit .view-buyer-companies #entityreference-view-widget-select-all
+{
+    display:none;
+}
+.page-node-add-promotion .view-select-promotion-solutions #entityreference-view-widget-select-all,
+.node-type-promotion.page-node-edit .view-select-promotion-solutions #entityreference-view-widget-select-all
+{
+    display:none;
+}
+th.views-field-entityreference-view-widget{
+	/**text-indent:-1000em;**/
+}
+.field-name-field-odm-rfp-id, .field-name-field-odm-product-mapping{display:none}
+.field-name-field-workflow-temporary{
+	display:none;
+}
+.proposalmenu ul{
+	display: inline-block;
+    float: right;
+    position: absolute;
+    top: 81px;
+    right: 0;	
+}
+.proposalmenu ul.proposal_bottom{
+	        top: 175px;
+            right: 148px;			
+}
+.proposalmenu .proposal_bottom > li > a, .proposalmenu .proposal_bottom > li > a:hover{
+	padding:5px;
+}
+.proposalbuildermenu ul.proposal_bottom{
+	        top: 128px;
+
+}

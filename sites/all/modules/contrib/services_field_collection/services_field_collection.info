@@ -1,0 +1,10 @@
+name = Services field collection
+description = Provides API for Field collection entity
+package = Services
+core = 7.x
+files[] = services_field_collection.inc
+dependencies[] = "services"
+; Information added by drush on 2015-10-01
+version = "master-dev"
+project = "services_field_collection"
+datestamp = "1443725022"

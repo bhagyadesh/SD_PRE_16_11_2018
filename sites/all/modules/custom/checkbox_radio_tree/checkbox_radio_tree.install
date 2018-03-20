@@ -1,0 +1,78 @@
+<?php
+
+/**
+ * @file
+ * Install, update, and uninstall functions for the Checkbox/Radio Tree module.
+ */
+
+/**
+ * Implements hook_enable().
+ */
+function checkbox_radio_tree_enable() {
+  field_cache_clear();
+
+  // Retrieve the field info.
+  $field = field_info_field('checkbox_radio_tree_cardinality');
+
+  // If the field is already created.
+  if (!isset($field)) {
+    // Define the Child Cardinality field.
+    $field = array(
+      'field_name' => 'checkbox_radio_tree_cardinality',
+      'type' => 'list_integer',
+      'locked' => TRUE,
+      'settings' => array(
+        'allowed_values' => array(
+          -1 => t('Unlimited'),
+          1 => t('1'),
+        ),
+      ),
+    );
+
+    // Create the child cardinality field.
+    $field = field_create_field($field);
+  }
+
+  // Define the Child Cardinality field instance.
+  $instance = array(
+    'field_name' => $field['field_name'],
+    'entity_type' => 'taxonomy_term',
+    'label' => 'Child cardinality',
+    'description' => t('Specify the number of child terms widgets should allow to be selected. Determines if radios or checkboxes will be used.'),
+    'required' => TRUE,
+    'default_value' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+    ),
+    'display' => array(
+      'default' => array(
+        'type' => 'hidden',
+      ),
+    ),
+  );
+
+  // Create a Child Cardinality field instance for each vocabulary.
+  foreach (field_info_bundles('taxonomy_term') as $name => $bundle) {
+    if (!(isset($field['bundles']['taxonomy_term']) && in_array($name, $field['bundles']['taxonomy_term']))) {
+      $instance['bundle'] = $name;
+      field_create_instance($instance);
+    }
+  }
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function checkbox_radio_tree() {
+  $vocabularies = taxonomy_vocabulary_load_multiple(FALSE);
+
+  foreach ($vocabularies as $vocabulary) {
+    variable_del('checkbox_radio_tree_cardinality_' . $vocabulary->machine_name);
+  }
+
+  field_delete_field('checkbox_radio_tree_cardinality');
+}

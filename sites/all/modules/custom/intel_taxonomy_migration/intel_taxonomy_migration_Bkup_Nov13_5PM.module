@@ -1,0 +1,1458 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function intel_taxonomy_migration_menu() {
+
+  $items = array();
+
+  $items['taxonomy-import/categories'] = array(
+    'page callback' => 'taxonomy_import_categories',
+	'type' => MENU_CALLBACK,
+    'access callback' => TRUE,
+    //'access arguments' => array('access mymodule reports'),
+    //'type' => MENU_CALLBACK,
+  );
+  
+  $items['taxonomy-import/characteristics'] = array(
+    'page callback' => 'taxonomy_import_characteristics',
+	'type' => MENU_CALLBACK,
+    'access callback' => TRUE,
+    //'access arguments' => array('access mymodule reports'),
+    //'type' => MENU_CALLBACK,
+  );
+  
+  $items['mappings-report/categories'] = array(
+    'page callback' => 'mappings_report_for_categories',
+	'type' => MENU_CALLBACK,
+    'access callback' => TRUE,
+    //'access arguments' => array('access mymodule reports'),
+    //'type' => MENU_CALLBACK,
+  );
+  
+  $items['mappings-report/characteristics'] = array(
+    'page callback' => 'mappings_report_for_characteristics',
+	'type' => MENU_CALLBACK,
+    'access callback' => TRUE,
+    //'access arguments' => array('access mymodule reports'),
+    //'type' => MENU_CALLBACK,
+  );
+  
+  $items['solutions/extract'] = array(
+    'page callback' => 'solutions_extract',
+	'type' => MENU_CALLBACK,
+    'access callback' => TRUE,
+    //'access arguments' => array('access mymodule reports'),
+    //'type' => MENU_CALLBACK,
+  );
+
+  
+  return $items;
+   
+}
+
+
+function taxonomy_import_categories() {
+	
+	$path = "/var/www/html/taxonomy-import/Categories_TEST.csv";
+	$file = fopen($path,"r");
+	
+	$unchanged_count = 0;
+	$renamed_count = 0;
+	$newly_added_count = 0;
+	
+	$unchanged_items = array();
+	$renamed_items = array();
+	$newly_added_items = array();
+	
+	while(!feof($file))
+	{	
+		//echo "<pre>";
+		//print_r(fgetcsv($file));
+		//echo "</pre>";
+		
+		$row = fgetcsv($file);
+		
+		echo "<br/>-> Processing....".$row[0]."-".$row[1]."-".$row[2]."-".$row[4];
+		
+		  $name = $row[2];
+		  $tid = $row[1];
+		  $vid = $row[0];
+		  $parent = $row[4];
+		  
+		  // $vocabulary_name = 'chipsets';		  
+		  // && taxonomy_get_term_by_name($name)
+
+		  if ( !taxonomy_term_load($tid) ) {			
+			//$vocabulary = taxonomy_vocabulary_machine_name_load($vocabulary_name);
+			
+			echo " --> NEW TERM ";
+			/*
+			$new_term = entity_create('taxonomy_term', array(
+			  'name' => $name,
+			  'tid' => $tid,
+			  'is_new' => TRUE,
+			  'vid' => $vid,
+			  'parent' => $parent,
+			  'description' => ''
+			));
+			taxonomy_term_save($new_term);
+			*/
+			
+			$newly_added_items[$tid] = $name;
+			$newly_added_count++;
+			
+			echo " --> SAVED";
+			
+		  } else {
+			  
+			// " EXISTING TERM" & Do Rename
+			$term = taxonomy_term_load($tid);
+			
+			//echo "<hr/>";
+			//print_r($term);
+			//echo "<hr/>";
+			
+			if( $name == $term->name ) {
+				
+				echo " --> UNCHANGED";				
+				//$term->parent = $parent;
+				//taxonomy_term_save($term);
+				
+				$unchanged_items[$tid] = $name;
+				$unchanged_count++;
+				echo " --> SO SKIPPING";
+				
+			} else {
+				
+				echo "--> RENAMING";				
+				//$term->name = $name;
+				//$term->parent = $parent;
+				//taxonomy_term_save($term);
+				
+				$renamed_items[$tid] = $name;
+				$renamed_count++;
+				echo " --> DONE";	
+			}
+			
+		  }
+		
+		  echo "</hr>";
+		
+	}
+	
+	echo "<hr> <b> SUMMARY : </b>";
+	
+	echo " <hr> NEWLY ADDED TERMS ".$newly_added_count."</br>";
+	echo "<pre>";
+	print_r($newly_added_items);
+	echo "</pre>";
+	
+	echo " <hr> RENAMED TERMS ".$renamed_count."</br>";
+	echo "<pre>";
+	print_r($renamed_items);
+	echo "</pre>";
+	
+	echo " <hr> UNCHANGED TERMS ".$unchanged_count."</br>";
+	echo "<pre>";
+	print_r($unchanged_items);
+	echo "</pre>";
+	
+	echo "</hr>";
+	 
+	fclose($file);
+	
+}
+
+
+function taxonomy_import_characteristics() {
+	ini_set('post_max_size', '1024M');
+	ini_set('max_execution_time', 1800);
+	
+	$path = "/var/www/html/taxonomy-import/Wireless_TEST.csv";
+	$file = fopen($path,"r");
+	
+	$unchanged_count = 0;
+	$renamed_count = 0;
+	$newly_added_count = 0;
+	
+	$unchanged_items = array();
+	$renamed_items = array();
+	$newly_added_items = array();
+	
+	while(!feof($file))
+	{	
+		//echo "<pre>";
+		//print_r(fgetcsv($file));
+		//echo "</pre>";
+		
+		$row = fgetcsv($file);
+		
+		echo "<br/>-> Processing....".$row[0]."-".$row[1]."-".$row[2]."-".$row[4];
+		
+		  $name = $row[2];
+		  $tid = $row[1];
+		  $vid = $row[0];
+		  $parent = $row[4];
+		  
+		  // $vocabulary_name = 'chipsets';		  
+		  // && taxonomy_get_term_by_name($name)
+
+		  if (!taxonomy_term_load($tid)) {			
+			//$vocabulary = taxonomy_vocabulary_machine_name_load($vocabulary_name);
+			
+			echo " --> NEW TERM ";			
+			/*
+			$new_term = entity_create('taxonomy_term', array(
+			  'name' => $name,
+			  'tid' => $tid,
+			  'is_new' => TRUE,
+			  'vid' => $vid,
+			  'parent' => $parent,
+			  'description' => ''
+			));
+			taxonomy_term_save($new_term);
+			*/
+			
+			$newly_added_items[$tid] = $name;
+			$newly_added_count++;
+			
+			echo " --> SAVED";
+			
+		  } else {
+			  
+			// " EXISTING TERM" & Do Rename
+			$term = taxonomy_term_load($tid);
+			
+			//echo "<hr/>";
+			//print_r($term);
+			//echo "<hr/>";
+			
+			if( $name == $term->name ) {
+				
+				echo " --> UNCHANGED";				
+				//$term->parent = $parent;
+				//taxonomy_term_save($term);
+				
+				$unchanged_items[$tid] = $name;
+				$unchanged_count++;
+				echo " --> SO SKIPPING";
+				
+			} else {
+				
+				echo "--> RENAMING";					
+				//$term->name = $name;
+				//$term->parent = $parent;
+				//taxonomy_term_save($term);
+				
+				$renamed_items[$tid] = $name;
+				$renamed_count++;
+				echo " --> DONE";	
+			}
+			
+		  }
+		
+		  echo "</hr>";
+		
+	}
+	
+	echo "<hr> <b> SUMMARY : </b>";
+	
+	echo " <hr> NEWLY ADDED TERMS ".$newly_added_count."</br>";
+	echo "<pre>";
+	print_r($newly_added_items);
+	echo "</pre>";
+	
+	echo " <hr> RENAMED TERMS ".$renamed_count."</br>";
+	echo "<pre>";
+	print_r($renamed_items);
+	echo "</pre>";
+	
+	echo " <hr> UNCHANGED TERMS ".$unchanged_count."</br>";
+	echo "<pre>";
+	print_r($unchanged_items);
+	echo "</pre>";
+	
+	echo "<hr>";
+	 
+	fclose($file);
+	
+}
+
+
+function mappings_report_for_categories() {
+
+	$columnHeader ='';
+	$columnHeader = "Term Id"."\t"."Categories"."\t"."Client"."\t"."Server"."\t"."IoT"."\t";
+
+	//$setData = '';
+	//$setData = "4"."\t"."sdfdf"."\t"."sffs"."\t"."dfgg"."\t";
+
+	header("Content-type: application/octet-stream");
+	header("Content-Disposition: attachment; filename=ContentType-Mappings-For-Categories.xls");
+	header("Pragma: no-cache");
+	header("Expires: 0");
+	 
+	echo ucwords($columnHeader)."\n";
+	//echo $setData."\n";
+	
+	$vid = 1;
+    $terms =  taxonomy_get_tree( $vid );
+	foreach($terms as $term) {
+		
+		foreach($term->parents as $term_parent) {
+			
+			$parent_list = '';
+			//foreach($term->parents as $term_parent) {
+			//	$parent .= $term_parent;
+			//}
+			
+			if ($term_parent == 0) {
+				$parent_list = $term->name;
+			} else {
+				$parents = taxonomy_get_parents_all($term->tid);
+				$parents = array_reverse($parents);
+				$parent_list = '';				
+				 foreach($parents as $parent) {
+					$term = taxonomy_term_load($parent->tid);
+					$parent_list .= $term->name.' -> ';
+				 }
+			}
+			$parent_list = rtrim($parent_list," -> ");
+			
+			// Get Content type Mappings data
+			$client = '';
+			$server = '';
+			$iot = '';	
+			
+			$get_ctype_query = "SELECT field_term_solution_types_value from field_data_field_term_solution_types WHERE entity_type='taxonomy_term' AND bundle='categories' AND entity_id='".$term->tid."'";
+			$result = db_query($get_ctype_query);
+			$result_array = array();
+			foreach ($result as $record) {
+				$result_array[] = $record->field_term_solution_types_value;
+			}
+			
+			if (in_array("client", $result_array)) {
+				$client = "1";
+			}
+			
+			if (in_array("server", $result_array)) {
+				$server = "1";
+			}
+			
+			if (in_array("embedded iot", $result_array)) {
+				$iot = "1";
+			}
+			$term_id = $term->tid;
+
+			echo "$term_id"."\t"."$parent_list"."\t"."$client"."\t"."$server"."\t"."$iot"."\t\n";
+		
+		}
+		
+	}
+	  
+	exit;
+
+}
+
+function get_taxonomy_nested_trees($terms = array(), $max_depth = NULL, $parent = 0, $parents_index = array(), $depth = 0) {
+  if (is_int($terms)) {
+    $terms = taxonomy_get_tree($terms);
+  }
+
+  foreach($terms as $term) {
+    foreach($term->parents as $term_parent) {
+      if ($term_parent == $parent) {
+        $return[$term->tid] = $term;
+      }
+      else {
+        $parents_index[$term_parent][$term->tid] = $term;
+      }
+    }
+  }
+
+  foreach($return as &$term) {
+    if (isset($parents_index[$term->tid]) && (is_null($max_depth) || $depth < $max_depth)) {
+      $term->children = get_taxonomy_nested_trees($parents_index[$term->tid], $max_depth, $term->tid, $parents_index, $depth + 1);
+    }
+  }
+
+  return $return;
+}
+
+
+function mappings_report_for_characteristics() {
+	
+	ini_set('post_max_size', '1024M');
+	ini_set('max_execution_time', 600);
+
+	$columnHeader ='';
+	$columnHeader = "Term Id"."\t"."Characteristics"."\t"."Client"."\t"."Server"."\t"."IoT"."\t";
+	
+	//$setData = '';
+	//$setData = "4"."\t"."sdfdf"."\t"."sffs"."\t"."dfgg"."\t";
+
+	header("Content-type: application/octet-stream");
+	header("Content-Disposition: attachment; filename=ContentType-Categories-Mappings-For-Characteristics.xls");
+	header("Pragma: no-cache");
+	header("Expires: 0");
+	 
+	echo ucwords($columnHeader);
+	//echo $setData."\n";
+	
+	// Appending Categories as column header
+	$cat_tree= get_taxonomy_nested_trees(1,1); // 1 is vid for Categories
+	
+	foreach ($cat_tree as $t_key => $t_val) {
+		$parent_list = '';
+		echo $cat_tree[$t_key]->tid."~".$cat_tree[$t_key]->name."\t";		
+		foreach ($cat_tree[$t_key]->children as $st_key => $st_val) {			
+					//$parents = taxonomy_get_parents_all( $cat_tree[$t_key]->children[$st_key]->tid );
+					$parents = taxonomy_get_parents_all( $cat_tree[$t_key]->tid );
+                    $parents = array_reverse($parents);
+                    $parent_list = '';
+                    foreach($parents as $parent) {
+                        $term = taxonomy_term_load($parent->tid);
+                        $parent_list .= $term->name.' -> ';
+                    }
+					
+			echo $cat_tree[$t_key]->children[$st_key]->tid."~".$parent_list.$cat_tree[$t_key]->children[$st_key]->name."\t";
+		}
+		
+	}
+	
+	echo "\n";
+	
+	
+	$vac_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid not in (1,21,23,26,28,29,34,38,33,25,31,18) order by name;");
+	
+	foreach ($vac_result as $rec) {
+		
+		$terms = array();
+		$terms =  taxonomy_get_tree( $rec->vid );
+		
+		foreach($terms as $term) {
+			
+			// Iterations for Categories mappings 
+			
+			$term_solution_result = db_query("SELECT a.name, a.tid FROM taxonomy_term_data a, field_data_field_term_categories b WHERE a.tid=b.field_term_categories_tid AND b.entity_type='taxonomy_term' AND b.entity_id='".$term->tid."' AND b.bundle='".$rec->machine_name."' ");
+			$term_solution_solution_types = array();
+			$term_solution_types = array();
+
+			foreach($term_solution_result as $term_row) {
+				$term_solution_types[] = $term_row->name;
+				$term_solution_solution_types[] = $term_row->tid;
+			}
+			
+			// Iterations for Categories mappings
+			
+			foreach($term->parents as $term_parent) {
+				
+				$parent_list = '';
+				//foreach($term->parents as $term_parent) {
+				//	$parent .= $term_parent;
+				//}
+				
+				if ($term_parent == 0) {
+					$parent_list = $term->name;
+				} else {
+					$parents = taxonomy_get_parents_all($term->tid);
+					$parents = array_reverse($parents);
+					$parent_list = '';			
+					 foreach($parents as $parent) {
+						$term = taxonomy_term_load($parent->tid);
+						$parent_list .= $term->name.' -> ';
+					 }
+				}
+				$parent_list = rtrim($parent_list," -> ");
+				
+				// Get Content type Mappings data
+				$client = '';
+				$server = '';
+				$iot = '';	
+				
+				$get_ctype_query = "SELECT field_char_solution_types_value from field_data_field_char_solution_types WHERE entity_type='taxonomy_term' AND bundle='".$rec->machine_name."' AND entity_id='".$term->tid."'";
+				$result = db_query($get_ctype_query);
+				$result_array = array();
+				foreach ($result as $record) {
+					$result_array[] = $record->field_char_solution_types_value;
+				}
+				
+				if (in_array("client", $result_array)) {
+					$client = "1";
+				}
+				
+				if (in_array("server", $result_array)) {
+					$server = "1";
+				}
+				
+				if (in_array("embedded iot", $result_array)) {
+					$iot = "1";
+				}
+				
+					$term_id = $term->tid;
+					
+					echo "$term_id"."\t"."$rec->name"." -> "."$parent_list"."\t"."$client"."\t"."$server"."\t"."$iot"."\t";
+				
+					foreach ($cat_tree as $t_key => $t_val) {
+						
+						if (in_array( $cat_tree[$t_key]->name , $term_solution_types)) {
+							echo "1"."\t";
+						} else {
+							echo " "."\t";
+						}
+												
+						foreach ($cat_tree[$t_key]->children as $st_key => $st_val) {
+							
+							if (in_array( $cat_tree[$t_key]->children[$st_key]->tid , $term_solution_solution_types)) {
+								echo "1"."\t";
+							} else {
+								echo " "."\t";
+							}
+						}
+						
+					}
+					
+					echo "\n";
+				
+			}
+			
+		}
+	
+	}
+	
+	exit;
+
+}
+
+
+/*** SOLUTION EXTRACT *****/
+
+function solutions_extract() {
+	ini_set('post_max_size', '1024M');
+	ini_set('max_execution_time', 1800);
+
+	$columnHeader ='';
+	$columnHeader = "Solution node Id"."\t"."Solution Tilte"."\t"."Company"."\t"."Client"."\t"."Server"."\t"."IoT"."\t"."Intel Content"."\t"."Logged In Content"."\t"."Public Content"."\t";
+
+	header("Content-type: application/octet-stream");
+	header("Content-Disposition: attachment; filename=SD-Delta-Solutions.xls");
+
+	// Ravish
+	// header("Content-type: application/vnd.ms-excel");
+	// header("Content-Disposition: attachment; filename=SD-Solutions.xls");
+
+	header("Pragma: no-cache");
+	header("Expires: 0");
+	echo ucwords($columnHeader);
+	//echo $setData."\n";
+	
+	// Fetch only Categories
+	$categories_array = array();
+	$vac_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (1) order by name;");	
+	foreach ($vac_result as $rec) {	
+		$terms = array();
+		$terms =  taxonomy_get_tree( $rec->vid );		
+		foreach($terms as $term) {
+			$categories_array[] = $term->name;
+			foreach($term->parents as $term_parent) {				
+				$parent_list = '';				
+				if ($term_parent == 0) {
+					$parent_list = $term->name;
+				} else {
+					$parents = taxonomy_get_parents_all($term->tid);
+					$parents = array_reverse($parents);
+					$parent_list = '';			
+					 foreach($parents as $parent) {
+						$term = taxonomy_term_load($parent->tid);
+						$parent_list .= $term->name.' -> ';
+					 }
+				}
+				$parent_list = rtrim($parent_list," -> ");
+				
+				echo $term->tid."~"."$parent_list"."\t";			
+			}			
+		}
+	}
+	
+
+	// Fetch all Characteristics ( not including Categories)
+		$terms_array = array();
+		$new_vac_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid not in (1,21,23,26,28,29,34,38,33,25,31,18) order by name;");	
+		foreach ($new_vac_result as $new_rec) {	
+			$new_terms = array();
+			$new_terms =  taxonomy_get_tree( $new_rec->vid );		
+			foreach($new_terms as $new_term) {
+				$terms_array[] = $new_term->name;
+				foreach($new_term->parents as $new_term_parent) {				
+					$new_parent_list = '';				
+					if ($new_term_parent == 0) {
+						$new_parent_list = $new_term->name;
+					} else {
+						$new_parents = taxonomy_get_parents_all($new_term->tid);
+						$new_parents = array_reverse($new_parents);
+						$new_parent_list = '';			
+						 foreach($new_parents as $new_parent) {
+							$new_term = taxonomy_term_load($new_parent->tid);
+							$new_parent_list .= $new_term->name.' -> ';
+						 }
+					}
+					$new_parent_list = rtrim($new_parent_list," -> ");
+					
+					echo $new_term->tid."~"."$new_rec->name"." -> "."$new_parent_list"."\t";			
+				}			
+			}
+		}
+	
+	// Missing headers...
+	
+	//$addtional_headers  = "Website URL"."\t"; " Description "."\t".
+	
+	// solution details
+	
+	$addtional_headers = "Description". "\t" ." Website URL "."\t"." Datasheet "."\t"." Product Brief"."\t"." Additional Resources URL"."\t";
+	
+	// Price 
+	
+	$addtional_headers  .= " Price per unit "."\t"." Price per 100 Units "."\t"." Price per 1000 Units "."\t"." Order Button URL "."\t";
+	
+	// Processors
+	
+	$addtional_headers  .= " Number of processors/sockets "."\t"." Processor socketed "."\t";
+	
+	// Display
+	
+	$addtional_headers  .= " Number of independent displays "."\t"." Number of Display Ports/EDP Ports "."\t"." Number of HDMI ports "."\t"." Number of LVDS ports "."\t"." Number of Other ports "."\t"." Number of VGA ports "."\t"." Total number of ports "."\t"." Number of DVI ports "."\t"." PCIe x16 Graphics Slot"."\t";
+	
+	// memory 
+	
+	$addtional_headers .= " Memory ECC "."\t"." Maximum Size (per processor) GB "."\t";
+	
+	// ether net 
+	
+	$addtional_headers .= " Camera Interface "."\t"." Ethernet - Number of ports "."\t"." GPS "."\t";
+	
+	// inter connect 
+	
+	$addtional_headers .= " Number of Serial Ports "."\t"." CSIX "."\t"." PC/104 "."\t"." Keyboard and mouse "."\t";
+	
+	// pci express
+	
+	$addtional_headers .= " Mini PCI Express "."\t"." pci express - x1 Quantity "."\t"." pci express - x2 Quantity "."\t"." pci express - x4 Quantity "."\t"." pci express - x8 Quantity "."\t"." pci express - x16 Quantity "."\t"." PCI Express AS "."\t"." SD, SDIO or eMMC "."\t"." SIM socket "."\t"." SPI "."\t";
+	
+	$addtional_headers .= " USB - On the Go "."\t"." USB1 Quantity "."\t"." USB2 Quantity "."\t"." USB3 Quantity "."\t"." USB-C Quantity "."\t";
+	
+
+	$addtional_headers .= " Number of CFST Ports (Compact Flash) "."\t"." Number of IDE Ports "."\t"." Number of SATA Ports "."\t"." SATA RAID support "."\t"." SSD size in GB"."\t";
+	
+	$addtional_headers .= "Promoted to front page"."\t"."Published"."\t"."State"."\t"."Sticky"."\t"."Post date"."\t"."Posted time"."\t"."Updated date"."\t"."Updated time"."\t";
+	
+	
+	
+	echo $addtional_headers;
+	
+	echo "\n";
+	
+	// Start Processing soltuions
+	
+	// $nids = db_query("select nid from node where language='en' and type='solution' and nid not in ( select nid from node where language='en' and type='solution' and nid in ( SELECT distinct( entity_id ) from field_data_field_solution_type) ) limit 0,2000")->fetchCol();
+		
+	// $nids = db_query("select nid from node where language='en' and type='solution' and nid  in ( 47333, 47331 ) ")->fetchCol();
+	
+	// $nids = db_query("select nid from node where language='en' and type='solution' limit 0,400;")->fetchCol();
+	
+	// $nids = db_query("select nid from node WHERE (( (node.type IN  ('solution')) )AND( (node.language IN  ('en')) ))  limit 0,1000")->fetchCol();
+
+	// $nids = db_query("select node.nid from node WHERE node.type='solution' AND node.language='en' AND node.nid IN ( select distinct(entity_id) from field_data_field_solution_type where entity_id BETWEEN 288 AND 46767) LIMIT 7501,1500")->fetchCol();
+	   
+	// $nids = db_query("select node.nid,node.title from node WHERE node.type='solution' AND node.language='en' AND node.nid > 46767;")->fetchCol();
+
+	   // $nids = db_query("select node.nid,node.title,node.changed from node WHERE node.type='solution' AND node.language='en' AND node.changed >= '1503360000';")->fetchCol();
+	   
+	   
+	   $nids = db_query(" select node.nid,node.title from node WHERE node.type='solution' AND node.language='en' AND node.nid IN ( 333,342,456,712,713,715,717,718,720,726,730,990,991,996,997,1000,1001,1002,1003,1006,1007,1009,1010,1013,1438,1496,1498,1499,1500,1508,1574,1633,1840,1930,2076,2313,2724,3037,3671,3672,3737,3808,9530,9641,17180,17229,17234,17240,17501,19377,19379,19380,19381,19385,20717,20718,20719,20720,20721,21411,21412,21413,21414,21415,21416,21724,21729,21908,21909,21910,21911,21924,21925,21929,21930,21932,21945,21946,21948,23100,23379,23393,23394,23422,23423,23424,23572,24404,24405,24423,25291,25292,26008,26159,26309,27071,27472,27488,27841,28127,29263,29291,29293,29294,29885,29887,29888,29889,29890,29891,29892,29893,29894,29895,30150,30768,31073,31411,31415,31529,31538,31550,31553,31558,31563,31578,31585,31590,31594,31626,31676,31711,31791,31832,31873,31880,31886,32091,32092,32112,32113,32118,32121,32127,32132,32133,32134,32135,32136,32137,32180,32619,32950,32987,33444,33445,33446,33447,33453,33456,33457,34792,35389,35541,35570,35853,35854,35855,35856,35862,35863,35865,35867,35868,35869,35870,35871,35872,35873,35874,35875,35876,35877,35878,35879,35880,35881,35882,35883,35884,35885,35886,36036,36048,36250,36264,36268,36401,37053,38728,38729,38741,38770,38860,38862,38864,39954,39962,40159,40164,40175,40176,40196,40221,40234,40522,43790,44040,44048,44049,44064,44075,44076,44077,44081,44085,44095,44096,44097,44120,45129,45199,45200,45201,45202,45230,45322,45348,45532,45563,45569,45575,46053,46066,46248,46263,46279,46282,46291,46310,46442,46454,46474,46498,46504,46505,46515,46517,46518,46519,46744,46745,46746,46747,46748,46749,46750,46751,46752,46753,46754,46755,46756,46757,46758,46759,46760,46762,46763,46764,46765,46766,46767,46768,46769,46770,46771,46772,46773,46774,46775,46776,46777,46778,46779,46780,46781,46782,46783,46784,46785,46786,46787,46788,46789,46790,46791,46792,46793,46794,46796,46797,46798,46799,46800,46801,46802,46803,46804,46805,46806,46807,46810,46811,46812,46813,46819,46820,46825,46826,46827,46828,46829,46835,46841,46844,46877,46878,46880,46882,46937,46972,46985,46989,46992,46997,47001,47008,47009,47016,47017,47018,47044,47045,47053,47076,47077,47078,47079,47080,47081,47082,47083,47088,47089,47091,47294,47295,47296,47297,47298,47299,47301,47303,47305,47307,47308,47309,47310,47311,47312,47313,47314,47315,47316,47317,47318,47319,47320,47321,47322,47323,47324,47325,47326,47327,47328,47330,47331,47332,47333,47334,47335,47336,47337,47338,47339,47340,47341,47342,47343,47344,47345,47346,47347,47348,47349,47350,47351,47352,47353,47354,47355,47356,47357,47358,47377,47404,47405,47406,47407,47408,47409,47410,47411,47412,47413,47414,47415,47416,47417,47418,47419,47420,47421,47422,47423,47429,47430,47431,47432,47437,47438,47439,47440,47442,47443,47444,47448,47449,47451,47452,47453,47454,47455,47456,47457,47458,47459,47460,47461,47464,47470,47473,47532,47542,47551,47557,47565,47642,47645,47646,47660,47661,47662,47665,47669,47681,47709,47878,47893,47899,47943,47995,47996,47997,47998,47999,48000,48001,48002,48006,48007,48008,48018,48020,48021,48023,48024,48025,48026,48027,48028,48029,48030,48031,48032,48033,48034,48035,48036,48037,48038,48039,48040,48041,48042,48043,48048,48050,48060,48061,48062,48063,48064,48065,48068,48069,48070,48075,48079,48080,48081,48082,48189,48190,48191,48192,48194,48195,48200,48201,48215,48216,48218,48219,48220,48221,48222,48223,48232,48233,48234,48236,48237,48238,48239,48240,48241,48242,48243,48244,48245,48248,48249,48250,48251,48253,48254,48255,48256,48257,48258,48269,48308,48329,48330,48333,48334,48338,48340,48341,48342,48343,48344,48345,48346,48347,48425,48426,48427,48430,48431,48432,48433,48434,48435,48436,48437,48438,48439,48440,48441,48442,48443,48444,48445,48446,48447,48448,48449,48450,48451,48452,48453,48454,48455,48456,48457,48458,48459,48460,48461,48462,48463,48464,48465,48466,48467,48468,48477,48478,48479,48480,48490,48497,48507,48514,48517,48524,48525,48526,48527,48528,48529,48538,48549,48550,48551,48552,48553,48554,48555,48556 )")->fetchCol();
+	   
+	   
+	   
+	foreach($nids as $nid) {
+		$node = node_load($nid);
+		//echo '<pre>';print_r($node);exit;
+		$comp_id = $node->field_company['und'][0]['target_id'];
+		$comp = db_query("select title from node where type='company' and nid=$comp_id")->fetchCol();
+
+		//Ravish
+//		$title = strip_tags(preg_replace('/<[^>]*>/','',str_replace(array("&nbsp;","\n","\r"),"",html_entity_decode($node->title,ENT_QUOTES,'UTF-8'))));
+        $title = htmlentities($node->title);
+
+
+		echo $nid."\t";
+		echo $title."\t";
+		echo $comp[0]."\t";		
+		
+		// Client, Server & IoT mappings.
+			
+			$client = " ";
+			$server = " ";
+			$e_iot = " ";			
+			$is_content_type_client = db_query("SELECT field_solution_type_value FROM field_data_field_solution_type WHERE field_solution_type_value='client' AND entity_id = ". $nid)->fetchField();
+			$is_content_type_server = db_query("SELECT field_solution_type_value FROM field_data_field_solution_type WHERE field_solution_type_value='server' AND entity_id = ". $nid)->fetchField();
+			$is_content_type_iot = db_query("SELECT field_solution_type_value FROM field_data_field_solution_type WHERE field_solution_type_value='embedded iot' AND entity_id = ". $nid)->fetchField();
+			if( $is_content_type_client == 'client') { $client = 1;}
+			if( $is_content_type_server == 'server') { $server = 1;}
+			if( $is_content_type_iot == 'embedded iot') { $e_iot = 1;}
+			// echo " "."\t"." "."\t"." "."\t"; // Client, Server, IoT
+			echo $client."\t".$server."\t".$e_iot."\t";
+		
+		//View Options
+			$intel_only_content = " ";
+			$logged_in_content = " ";
+			$public_content = " ";
+			$pre_release = db_query("SELECT field_pre_release_value FROM field_data_field_pre_release WHERE entity_id = ". $nid)->fetchField();
+			$intel_only = db_query("SELECT field_intel_only_value FROM field_data_field_intel_only WHERE entity_id = ". $nid)->fetchField();
+			
+			if($pre_release == 1 || $intel_only == 1){
+				$intel_only_content = 1;
+			}
+			if($intel_only_content != 1){
+				$public_content = 1;
+			}
+			echo $intel_only_content."\t".$logged_in_content."\t".$public_content."\t"; // View Options
+		//End Of View Options
+		
+		
+		// Display Categories value ( 1 OR 0 ) mapped with solution
+		
+		$node_categories = array();
+		foreach ($node->field_categories['und'] as $cats) {
+			//$selected_term = taxonomy_term_load($cats['tid']);
+			//$name = $selected_term->name;
+			//$node_categories[] = $name;
+			$node_categories[] = $cats['tid'];
+		}
+		
+		$vac_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (1) order by name;");	
+		foreach ($vac_result as $rec) {	
+			$terms =  taxonomy_get_tree( $rec->vid );
+			foreach($terms as $term) { 				
+				if (in_array( $term->tid , $node_categories)) {
+					echo "1"."\t";
+				} else {
+					echo " "."\t";
+				}				
+			}		
+		}
+		
+		
+		// Processing each characteristics ( AS PER order in the query result )
+		
+		$node_characteristics = array();
+		
+		//| Approved Nouns |  33 |
+		
+		
+		
+		//| Audio Standards |  14 |
+			$node_audiostds = array();
+			foreach ($node->field_stds_audio['und'] as $cats14) {
+				$node_audiostds[] = $cats14['tid'];
+			}
+			
+			$as_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (14) order by name;");	
+			foreach ($as_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 				
+					if (in_array( $term->tid , $node_audiostds)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}				
+				}		
+			}
+		
+		
+		//| Availability & Pricing |  44 |
+		
+			$node_avps = array();
+			
+			$avps_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (44) order by name;");	
+			foreach ($avps_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					/*
+					if (in_array( $term->tid , $node_audiostds)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+					*/
+					echo " "."\t";					
+				}		
+			}
+		
+		
+		//| Battery |  11 |
+			$node_battery = array();
+			foreach ($node->field_power['und'] as $cats11) {
+				$node_battery[] = $cats11['tid'];
+			}
+			
+			$battery_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (11) order by name;");	
+			foreach ($battery_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					
+					if (in_array( $term->tid , $node_battery)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+					
+									
+				}		
+			}
+			
+		
+		//| Chipsets |   2 |
+			$node_chipsets = array();
+			foreach ($node->field_chipsets['und'] as $cats2) {
+				$node_chipsets[] = $cats2['tid'];
+			}
+			
+			$chipsets_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (2) order by name;");	
+			foreach ($chipsets_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					
+					if (in_array( $term->tid , $node_chipsets)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+					
+									
+				}		
+			}
+			
+
+			
+		// Devices and Interfaces |   4 |
+			$node_device_interface = array();
+			foreach ($node->field_application['und'] as $cats4) {
+				$node_device_interface[] = $cats4['tid'];
+			}
+			
+			$device_interface_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (4) order by name;");	
+			foreach ($device_interface_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					
+					if (in_array( $term->tid , $node_device_interface)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+					
+									
+				}		
+			}
+			
+			
+
+		//| Dimensions |  42 |
+		
+			$node_dimensions = array();
+			
+			$dimensions_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (42) order by name;");	
+			foreach ($dimensions_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					/*
+					if (in_array( $term->tid , $node_dimensions)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+					*/
+					echo " "."\t";					
+				}		
+			}
+
+		//| Display                            |  35 |
+		
+			$node_display = array();
+			
+			$display_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (35) order by name;");	
+			foreach ($display_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					/*
+					if (in_array( $term->tid , $node_display)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+					*/
+					echo " "."\t";					
+				}		
+			}
+		
+		//| Display Size                       |   3 |
+		
+			$node_display_size = array();		
+			foreach ($node->field_display_size['und'] as $cats3) {
+				$node_display_size[] = $cats3['tid'];
+			}
+			
+			$display_size_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (3) order by name;");	
+			foreach ($display_size_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					if (in_array( $term->tid , $node_display_size)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+										
+				}		
+			}
+
+			
+		//| Display Technology                 |  37 |
+			$node_display_tech = array();
+			foreach ($node->field_display_technology['und'] as $cats37) {
+				$node_display_tech[] = $cats37['tid'];
+			}
+			
+			$display_tech_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (37) order by name;");	
+			foreach ($display_tech_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					if (in_array( $term->tid , $node_display_tech)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+										
+				}		
+			}
+			
+
+		//| Embedded IA Processor Support      |  27 |
+			
+			$node_eips = array();
+			
+			$eips_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (27) order by name;");	
+			foreach ($eips_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					/*
+					if (in_array( $term->tid , $node_eips)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+					*/
+					echo " "."\t";					
+				}		
+			}
+		
+		// 45 | end_user_organisation            | End User Organisation              |
+			$node_euo = array();
+			
+			$euo_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (45) order by name;");	
+			foreach ($euo_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					/*
+					if (in_array( $term->tid , $node_euo)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+					*/
+					echo " "."\t";					
+				}		
+			}
+		
+		
+		
+		//| Ethernet Controllers               |   5 |	
+			$node_ethernet_cont = array();
+			foreach ($node->field_ethernet_controllers['und'] as $cats5) {
+				$node_ethernet_cont[] = $cats5['tid'];
+			}
+			
+			$ethernet_cont_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (5) order by name;");	
+			foreach ($ethernet_cont_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					if (in_array( $term->tid , $node_ethernet_cont)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+										
+				}		
+			}
+			
+			
+		//| Ethernet Standards                 |  15 |	
+			$node_ethernet_std = array();
+			foreach ($node->field_stds_eth['und'] as $cats15) {
+				$node_ethernet_std[] = $cats15['tid'];
+			}
+			
+			$ethernet_std_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (15) order by name;");	
+			foreach ($ethernet_std_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					if (in_array( $term->tid , $node_ethernet_std)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+										
+				}		
+			}
+			
+			
+		//| FPGA                               |  41 |	
+			$node_fpga = array();
+			foreach ($node->field_fpga['und'] as $cats41) {
+				$node_fpga[] = $cats41['tid'];
+			}
+			
+			$fpga_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (41) order by name;");	
+			foreach ($fpga_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					if (in_array( $term->tid , $node_fpga)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+										
+				}		
+			}
+		
+		//| Geographic Coverage                |  22 |
+			
+			$node_geo_cov = array();
+			
+			$geo_cov_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (22) order by name;");	
+			foreach ($geo_cov_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					/*
+					if (in_array( $term->tid , $node_geo_cov)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+					*/
+					echo " "."\t";					
+				}		
+			}
+		
+		//| Geographic Headquarters            |  24 |
+		
+			$node_geo_head = array();
+			
+			$geo_head_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (24) order by name;");	
+			foreach ($geo_head_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					/*
+					if (in_array( $term->tid , $node_geo_head)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+					*/
+					echo " "."\t";					
+				}		
+			}
+		
+		//| Geographic Location                |   6 |	
+			$node_geo_location = array();		
+			foreach ($node->field_geographic_location['und'] as $cats6) {
+				$node_geo_location[] = $cats6['tid'];
+			}
+			
+			$geo_location_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (6) order by name;");	
+			foreach ($geo_location_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					if (in_array( $term->tid , $node_geo_location)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+										
+				}		
+			}
+			
+		
+		// market_segments | Industries and Applications  9
+
+			$node_market_segments = array();
+			foreach ($node->field_market_segments['und'] as $cats9) {
+				$node_market_segments[] = $cats9['tid'];
+			}
+			
+			$market_segments_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (9) order by name;");	
+			foreach ($market_segments_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					if (in_array( $term->tid , $node_market_segments)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+										
+				}		
+			}
+			
+			
+			
+		//| Intel Sponsoring Business Units    |  25 |
+		
+		
+		//| IntelÂ® IoT Market Ready Solutions  |  40 |	
+			$node_iot_mrs = array();
+			foreach ($node->field_intel_iot_market_ready_sol['und'] as $cats40) {
+				$node_iot_mrs[] = $cats40['tid'];
+			}
+			
+			$iot_mrs_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (40) order by name;");	
+			foreach ($iot_mrs_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					if (in_array( $term->tid , $node_iot_mrs)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+										
+				}		
+			}
+					
+		
+		//| IntelÂ® Technologies                |   7 |	
+			$node_intel_tech = array();
+			foreach ($node->field_intel_technologies['und'] as $cats7) {
+				$node_intel_tech[] = $cats7['tid'];
+			}
+			
+			$intel_tech_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (7) order by name;");	
+			foreach ($intel_tech_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					if (in_array( $term->tid , $node_intel_tech)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+										
+				}		
+			}
+		
+		//| Interconnect                       |  36 |
+			
+			$node_interconnect = array();
+			
+			$interconnect_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (36) order by name;");	
+			foreach ($interconnect_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					/*
+					if (in_array( $term->tid , $node_interconnect)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+					*/
+					echo " "."\t";					
+				}		
+			}
+		
+		
+		//| LAN                                |  19 |
+			$node_lan = array();
+			foreach ($node->field_stds_wlan['und'] as $cats19) {
+				$node_lan[] = $cats19['tid'];
+			}
+			
+			$lan_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (19) order by name;");	
+			foreach ($lan_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					if (in_array( $term->tid , $node_lan)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+										
+				}		
+			}
+			
+		
+
+		//| Memory Type                        |  10 |	
+			$node_memory = array();		
+			foreach ($node->field_memory_type['und'] as $cats10) {
+				$node_memory[] = $cats10['tid'];
+			}
+			
+			$memory_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (10) order by name;");	
+			foreach ($memory_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					if (in_array( $term->tid , $node_memory)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+										
+				}		
+			}
+			
+			
+		//| Opportunity Group                  |  31 |
+		
+		//| Opportunity Resource Type          |  32 |
+		
+			$node_ort = array();
+			
+			$ort_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (32) order by name;");	
+			foreach ($ort_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					/*
+					if (in_array( $term->tid , $node_ort)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+					*/
+					echo " "."\t";					
+				}		
+			}
+			
+		
+		//| PCIe Revisions                     |  17 |
+			$node_pcie = array();
+			foreach ($node->field_stds_pcie_rev['und'] as $cats17) {
+				$node_pcie[] = $cats17['tid'];
+			}
+			
+			$pcie_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (17) order by name;");	
+			foreach ($pcie_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					if (in_array( $term->tid , $node_pcie)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+										
+				}		
+			}
+			
+			
+		//| Processors                         |  12 |
+			$node_processors = array();
+			foreach ($node->field_processors_list['und'] as $cats12) {
+				$node_processors[] = $cats12['tid'];
+			}
+			
+			$processors_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (12) order by name;");	
+			foreach ($processors_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					
+					if (in_array( $term->tid , $node_processors)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+		
+					//echo "Test"."\t";
+				}		
+			}
+		
+			
+		//| Software Solutions                 |  13 |	
+			$node_software = array();
+			foreach ($node->field_software_solutions['und'] as $cats13) {
+				$node_software[] = $cats13['tid'];
+			}
+			
+			$software_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (13) order by name;");	
+			foreach ($software_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					
+					if (in_array( $term->tid , $node_software)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+					
+					//echo "Sw"."\t";
+										
+				}		
+			}
+			
+			
+		//| Storage                            |  43 |
+			$node_storage = array();
+			
+			$storage_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (43) order by name;");	
+			foreach ($storage_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+					/*
+					if (in_array( $term->tid , $node_storage)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+					*/
+					echo " "."\t";					
+				}		
+			}
+		
+		
+		//| Systems Standards                  |  18 |
+		/*
+			foreach ($node->field_stds_systems['und'] as $cats18) {
+				$node_characteristics[] = $cats18['tid'];
+			}
+		*/
+		
+				
+		//| Wireless                           |   8 |	
+			$node_wireless = array();
+			foreach ($node->field_intel_wireless['und'] as $cats8) {
+				$node_wireless[] = $cats8['tid'];
+			}
+			
+			$wireless_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (8) order by name;");	
+			foreach ($wireless_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 
+					
+					if (in_array( $term->tid , $node_wireless)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+					
+					//echo "wireless"."\t";				
+				}		
+			}
+			
+			
+		
+		//| WWAN (Cellular) Standards          |  20 |
+			$node_wwan = array();
+			foreach ($node->field_stds_wwan['und'] as $cats20) {
+				$node_wwan[] = $cats20['tid'];
+			}
+			
+			$wwan_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid in (20) order by name;");	
+			foreach ($wwan_result as $rec) {	
+				$terms =  taxonomy_get_tree( $rec->vid );
+				foreach($terms as $term) { 	
+				
+					if (in_array( $term->tid , $node_wwan)) {
+						echo "1"."\t";
+					} else {
+						echo " "."\t";
+					}
+					
+					
+					
+										
+				}		
+			}
+		
+		/*
+		$new_vac_result = db_query("select vid,machine_name,name from taxonomy_vocabulary where vid not in (1,21,23,26,28,29,34,38,33,25,31,18) order by name;");			
+		foreach ($new_vac_result as $new_rec) {	
+			$new_terms =  taxonomy_get_tree( $new_rec->vid );		
+			foreach($new_terms as $new_term) {
+				
+				
+				if (in_array( $new_term->tid , $node_characteristics)) {
+					echo "1"."\t";
+				} else {
+					echo " "."\t";
+				}
+				
+				//echo "Test"."\t";
+				
+			}
+		}
+		*/
+		
+		
+		// Values for additional headers 
+		
+				// echo $node->field_website['und'][0]['url']."\t";  $node->body['und'][0]['safe_value']."\t".
+       
+	   //Ravish
+
+				$desc = strip_tags(preg_replace('/<[^>]*>/','',str_replace(array("&nbsp;","\n","\r"),"",html_entity_decode($node->body['und'][0]['value'],ENT_QUOTES,'UTF-8'))));
+
+				//$desc = htmlentities($node->body['und'][0]['value']);
+                //$desc="test Description";
+
+				echo $desc."\t".$node->field_website['und'][0]['url']."\t".$node->field_datasheet['und'][0]['url']."\t". $node->field_brief['und'][0]['url']. "\t".$node->field_additional_resources['und'][0]['url']. "\t";
+				
+				echo $node->field_price_per_unit['und'][0]['value']."\t".$node->field_price_per_100_units['und'][0]['value']."\t".$node->field_price_per_1000_units['und'][0]['value']."\t".$node->field_order_button_url['und'][0]['value']."\t";
+				
+				echo $node->field_processors_count['und'][0]['value']."\t".$node->field_stds_processor_socketed['und'][0]['value']."\t";
+				
+				echo $node->field_display_independent['und'][0]['value']."\t".$node->field_display_port_edp['und'][0]['value']."\t".$node->field_display_hdmi['und'][0]['value']."\t".$node->field_display_lvds['und'][0]['value']."\t".$node->field_display_other['und'][0]['value']."\t".$node->field_display_vga['und'][0]['value']."\t".$node->field_display_total['und'][0]['value']."\t".$node->field_number_of_dvi_ports['und'][0]['value']."\t".$node->field_display_pcie_x16['und'][0]['value']."\t";
+		
+				echo $node->field_memory_ecc['und'][0]['value']."\t".$node->field_memory_max['und'][0]['value']."\t";
+		
+				echo $node->field_stds_camera['und'][0]['value']."\t".$node->field_stds_eth_ports['und'][0]['value']."\t".$node->field_stds_gps['und'][0]['value']."\t";
+				
+				echo $node->field_number_of_serial_ports['und'][0]['value']."\t".$node->field_stds_csix['und'][0]['value']."\t".$node->field_stds_pc_104['und'][0]['value']."\t".$node->field_keyboard_and_mouse['und'][0]['value']."\t";
+		
+				echo $node->field_stds_pcie_mini['und'][0]['value']."\t".$node->field_stds_pcie_x1['und'][0]['value']."\t".$node->field_stds_pcie_x2['und'][0]['value']."\t".$node->field_stds_pcie_x4['und'][0]['value']."\t".$node->field_stds_pcie_x8['und'][0]['value']."\t".$node->field_stds_pcie_x16['und'][0]['value']."\t".$node->field_stds_pcie_as['und'][0]['value']."\t".$node->field_stds_sd_sdio_emmc['und'][0]['value']."\t".$node->field_stds_sim['und'][0]['value']."\t".$node->field_stds_spi['und'][0]['value']."\t";
+		
+				echo $node->field_stds_usb_on_the_go['und'][0]['value']."\t".$node->field_stds_usb_usb1['und'][0]['value']."\t".$node->field_stds_usb_usb2['und'][0]['value']."\t".$node->field_stds_usb_usb3['und'][0]['value']."\t".$node->field_stds_usb_usb_c['und'][0]['value']."\t";
+		
+				echo $node->field_stds_storage_cfst['und'][0]['value']."\t".$node->field_stds_storage_ide['und'][0]['value']."\t".$node->field_stds_storage_sata['und'][0]['value']."\t".$node->field_stds_storage_raid['und'][0]['value']."\t".$node->field_stds_storage_ssd_size['und'][0]['value']."\t";
+		
+	
+		
+				// promote
+				if( $node->promote == 0) { $promote='No';} else { $promote='Yes';}
+						
+				// Published 0: not published 1: published
+				if( $node->status == 1) { $status='Published';} else { $status='Not published';}
+				
+				// Workflow state ###########################
+				 $query_result = db_query("select n.nid,n.uid,wn.sid, n.changed, n.title from {node} n join {workflow_node} wn on wn.nid = n.nid where n.type = :type and n.nid = :nid", array(':type' => 'solution', ':nid' => $nid));
+				 
+				 while ($row = $query_result->fetchAssoc()) {
+					$sid = $row['sid'];    
+				}
+				 
+				$state = workflow_get_state_name($sid);
+				
+				// sticky
+				if( $node->sticky == 0) { $sticky='No';} else { $sticky='Yes';}
+						
+				echo $promote."\t".$status."\t".$state."\t".$sticky."\t".date('d/m/Y',$node->created)."\t".date('H:i',$node->created)."\t".date('d/m/Y',$node->changed )."\t".date('H:i',$node->changed )."\t";	
+		
+		echo "\n";
+	}
+	exit;
+}

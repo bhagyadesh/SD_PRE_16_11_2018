@@ -1,0 +1,237 @@
+<?php
+/**
+ * @file
+ * Retrieve, parse and display Embedded Community assets for a Company.
+ */
+
+/**
+ * Implements hook_block_info().
+ */
+
+
+function intel_ea_community_block_info() {
+  $blocks['company_articles'] = array(
+    'info' => t('Company Articles'),
+  );
+  $blocks['company_whitepapers'] = array(
+    'info' => t('Company Whitepapers'),
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function intel_ea_community_block_view($delta = '') {
+
+  // Set the default output type to table
+  $type = 'table';
+
+  switch ($delta) {
+    case 'company_articles':
+      $node = menu_get_object();
+      $title = t('Articles');
+      if ($node->type == 'solution') {
+        $type = '';
+        $node = node_load($node->field_company['und'][0]['target_id']);
+        $title = '<p>' . t('More about') . ' ' . $node->title . '</p>' . t('Articles');
+      }
+      $block['subject'] = $title;
+      $block['content'] = _intel_ea_community_assets_contents($node, $type, 'articles');
+      break;
+    case 'company_whitepapers':
+      $node = menu_get_object();
+      if ($node->type == 'solution') {
+        $type = '';
+        $node = node_load($node->field_company['und'][0]['target_id']);
+      }
+      $block['subject'] = t('White Papers');
+      $block['content'] = _intel_ea_community_assets_contents($node, $type, 'whitepapers');
+      break;
+  }
+  return $block;
+}
+
+/**
+ * Helper function to output the content of Intel EA Community assets blocks.
+ *
+ * @param string $asset
+ *   A string to signify asset type.
+ *
+ * @return string
+ *   The markup output for the block.
+ */
+function _intel_ea_community_assets_contents($node, $type, $asset) {
+  $output = '';
+
+  // Check for the community tag, which is required to do anything.
+  if (!empty($node->field_community_tag)) {
+
+    // Set up asset-specific query parameters and error messages.
+    switch ($asset) {
+      case 'articles':
+        $community_query = _intel_ea_community_assets_links('articles', 'community', $node->field_community_tag['und'][0]['safe_value'], t('View All'));
+        $feeds_query = _intel_ea_community_assets_links('articles', 'feeds', $node->field_community_tag['und'][0]['safe_value']);
+        $error_msg = t('Articles are currently unavailable.');
+        break;
+      case 'whitepapers':
+        $community_query = _intel_ea_community_assets_links('whitepapers', 'community', $node->field_community_tag['und'][0]['safe_value'], t('View All'));
+        $feeds_query = _intel_ea_community_assets_links('whitepapers', 'feeds', $node->field_community_tag['und'][0]['safe_value']);
+        $error_msg = t('White papers are currently unavailable.');
+        break;
+    }
+
+    // Retrieve row data and create output.
+    $data = _intel_ea_community_assets_data($feeds_query, $type);
+    if ($data) {
+      if ($data != 'error') {
+        if ($type == 'table') {
+          $output  = theme('table', array('header' => array(''), 'rows' => $data));
+        }
+        else {
+          $output = theme('item_list', array('items' => $data));
+        }
+      }
+      else {
+        $output = '<div class="error-message">' . $error_msg . '</div>';
+      }
+      $output .= '<div class="more-link">' . $community_query . '</div>';
+    }
+    else {
+      // We have nothing to output.
+      $output = '';
+    }
+  }
+
+  return $output;
+}
+
+/**
+ * Helper function to set up asset queries and links.
+ *
+ * @param string $asset
+ *   A string to signify asset type.
+ * @param string $query
+ *   A string to signify query type.
+ * @param string $community_tag
+ *   A string containing the community tag required for querying
+ *   Intel Embedded Community.
+ * @param string $text
+ *   A string to display as the text of the link.
+ *
+ * @return string
+ *   A string containing a fully encoded link or URL.
+ */
+function _intel_ea_community_assets_links($asset, $query, $community_tag, $text = NULL) {
+  // Base URLs for Embedded Community assets.
+  $community_base = 'http://embedded.communities.intel.com/search.jspa';
+  $feeds_base = 'http://embedded.communities.intel.com/community/feeds/search';
+
+  // Set up global query parameters.
+  $params = array(
+    'q' => $community_tag,
+  );
+
+  // Set up asset-specific query parameters.
+  switch ($asset) {
+    case 'articles':
+      $type = 'post';
+      break;
+    case 'whitepapers':
+      $type = 'document';
+      break;
+  }
+
+  // Set up the query based on type.
+  switch ($query) {
+    // Community query.
+    case 'community':
+      $params += array(
+        'type' => $type,
+        'sort' => 'updatedDesc',
+      );
+
+      return l($text, $community_base, array('query' => $params));
+
+    // Feeds query.
+    case 'feeds':
+      $params += array(
+        'resultTypes' => $type,
+        'rankBy' => 'date',
+        'numResults' => '5',
+      );
+
+      return url($feeds_base, array('query' => $params));
+  }
+}
+
+/**
+ * Helper function to retrieve XML row data.
+ *
+ * @param string $feeds_query
+ *   An string containing a fully encoded URL.
+ *
+ * @return array or boolean
+ *   An array of row data to be themed or boolean signaling an error.
+ */
+function _intel_ea_community_assets_data($feeds_query, $type = null) {
+
+  // Load and parse the gzipped XML for the asset.
+  $xml = drupal_json_decode(drupal_json_encode((array)simplexml_load_file("compress.zlib://" . $feeds_query)), 1);
+
+  if (isset($xml['channel']['item'])) {
+
+    // If we have more than one item, iterate through.
+    if (isset($xml['channel']['item'][0])) {
+      if ($type == 'table') {
+        foreach ($xml['channel']['item'] as $item) {
+          $rows[] = array(
+            'data' => array(
+              l(truncate_utf8($item['title'], 75, TRUE, TRUE, 3), $item['link']),
+              array('data' => date('d M Y', strtotime($item['pubDate'])), 'class' => 'date'),
+            )
+          );
+        }
+      } else {
+        foreach ($xml['channel']['item'] as $item) {
+          $rows[] =
+            l(truncate_utf8($item['title'], 75, TRUE, TRUE, 3), $item['link']) . '<br /><span class="date">' . date('d M Y', strtotime($item['pubDate'])) . '</span>';
+        }
+      }
+    }
+
+    // We only have one item to send.
+    else {
+      if ($type == 'table') {
+        $rows[] = array(
+          'data' => array(
+            l(truncate_utf8($xml['channel']['item']['title'], 75, TRUE, TRUE, 3), $xml['channel']['item']['link']),
+            array('data' => date('d M Y', strtotime($xml['channel']['item']['pubDate'])), 'class' => 'date'),
+          )
+        );
+      }
+      else {
+        $rows = array(
+          l(truncate_utf8($xml['channel']['item']['title'], 75, TRUE, TRUE, 3), $xml['channel']['item']['link']) . '<br /><span class="date">' . date('d M Y', strtotime($xml['channel']['item']['pubDate'])) . '</span>',
+        );
+      }
+    }
+    return $rows;
+  }
+  else {
+    // Retrieve any errors.
+    $errors = libxml_get_errors();
+    if (!empty($errors)) {
+      foreach ($errors as $error) {
+        watchdog('Intel EA Community', '@level @code: @message', array('@level' => $error->level, '@code' => $error->code, '@message' => $error->message));
+      }
+      libxml_clear_errors();
+      // Return error.
+      return 'error';
+    }
+    else {
+      // We have nothing to return.
+      return FALSE;
+    }
+  }
+}

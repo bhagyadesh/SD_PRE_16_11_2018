@@ -1,0 +1,11 @@
+47237 -------------- SiteWhere |モノのインターネット向けオープン・プラットフォーム ---------- SAVED With Status ---1Modified By --- 0
+47236 -------------- SiteWhere | 物联网开放平台 ---------- SAVED With Status ---1Modified By --- 0
+46178 -------------- SiteWhere | The Open Platform for the Internet of Things ---------- SAVED With Status ---1Modified By --- 0
+35172 -------------- MIx Core プラットフォーム ---------- SAVED With Status ---1Modified By --- 0
+35171 -------------- MIx Core 平台 ---------- SAVED With Status ---1Modified By --- 0
+34539 -------------- MIx Core Platform ---------- SAVED With Status ---1Modified By --- 0
+27552 -------------- XCalibur4640 - Intel® Xeon® D-1500 Family Processor-Based 6U VPX SBC with Six 10GbE and Dual XMC/PMC Sites ---------- SAVED With Status ---1Modified By --- 1
+27551 -------------- XPedite7670 - Intel® Xeon® D-1500 Family Processor-Based 3U VPX-REDI SBC with Dual 10 Gigabit Ethernet and an XMC Site ---------- SAVED With Status ---1Modified By --- 1
+27549 -------------- Infobright Enterprise Edition (IEE) ---------- SAVED With Status ---1Modified By --- 1
+27548 -------------- SE-8124: Ultra Slim and Compact Embedded PC ---------- SAVED With Status ---1Modified By --- 1
+COUNT: 10

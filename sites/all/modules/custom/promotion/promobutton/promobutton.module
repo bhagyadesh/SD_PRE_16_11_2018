@@ -1,0 +1,277 @@
+<?php
+/**
+ * Implements hook_entity_info_alter().
+ */
+function promobutton_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['promo_list'] = array(
+    'label' => t('Promos List'),
+    'custom settings' => TRUE,
+  );
+}
+function promobutton_form_alter(&$form, &$form_state, $form_id) {
+
+
+  if ( $form_id == 'promotion_node_form') {
+		
+	global $user;
+	$user_id = user_load($user->uid);
+	
+    $node = $form_state['node'];
+	$authorid = $node->uid;
+    $companyid = $user_id->field_company['und']['0']['target_id'];
+    $companyObj = node_load($companyid);
+	
+  $builderrole = user_role_load_by_name('Builder');
+  $serole = user_role_load_by_name('Solutions Directory Editor');
+  $fserole = user_role_load_by_name('Intel Field Sales Engineer');
+  $iarole = user_role_load_by_name('Intel Admin');
+  $adminrole = user_role_load_by_name('Administrator');
+  
+  
+  
+  $nid=$node->nid;
+  $query = db_query('SELECT w.sid FROM {workflow_node} w WHERE w.nid = :nid LIMIT 1', array(':nid' => $nid));
+  $result = $query->fetchAll(); 
+  $sidresult = $result[0]->sid;
+	
+if( ((((array_key_exists(33, $user_id->roles)) || (array_key_exists(35, $user_id->roles)) ) && (array_key_exists(20, $user_id->roles))) 
+	 || (array_key_exists(9, $user_id->roles)) || (array_key_exists(21, $user_id->roles)) || (array_key_exists(36, $user_id->roles)) ) && ( (
+ ($authorid == $user->uid) && ($sidresult ==15 || $sidresult ==21 ) ) ||  (!isset($node->nid) || isset($node->is_new)))  ) 
+	{  
+    $form['actions']['submit']['#value'] = t('Save as Draft');
+  } 
+ if ( ((array_key_exists(12, $user_id->roles)) || (array_key_exists(11, $user_id->roles)) || (array_key_exists(9, $user_id->roles)) || (array_key_exists(36, $user_id->roles)) || (array_key_exists(21, $user_id->roles))) 
+	 && (isset($node->nid) || !isset($node->is_new)) ){
+        if ($authorid != $user->uid){
+	   $form['actions']['submit']['#value'] = t('Approve');
+  }
+ } 
+    $form['field_promotion_products']['und']['add_more']['#value'] = t("Add Solutions");
+    $form['field_select_view_buyer']['und']['add_more']['#value'] = t("Select Buyers");
+
+	$user_id = user_load($user->uid);
+	//print_r($user_id);exit;
+	 if (!array_key_exists(21, $user_id->roles))  {
+	$form['additional_settings']['#access'] = FALSE;
+   }
+  }
+}
+
+/**
+Restrict editing and deletion of node.
+**/
+
+
+function promobutton_node_access($node, $op, $account) {
+
+  $type = is_string($node) ? $node : $node->type;
+  
+  $nid=$node->nid;
+  $node=node_load($nid);
+  $query = db_query('SELECT w.sid FROM {workflow_node} w WHERE w.nid = :nid LIMIT 1', array(':nid' => $nid));
+  $result = $query->fetchAll(); 
+  $sidresult = $result[0]->sid;
+ global $user;
+ $user_fields = user_load($user->uid);
+  //$builderrole = user_role_load_by_name('Builder');
+  //$serole = user_role_load_by_name('Solutions Directory Editor');
+  //$fserole = user_role_load_by_name('Intel Field Sales Engineer');
+  //$iarole = user_role_load_by_name('Intel Admin');
+  
+  $authorcompanyid = $node->field_company['und'][0]['target_id'];
+$comp_det = node_load($authorcompanyid);
+$comp_fse = array();
+$comp_fcse = array();
+$comp_fsse = array();
+$comp_fiotse = array();
+$comp_fae = array();
+$comp_fcae = array();
+$comp_fsae = array();
+$comp_fiotae = array();
+/*
+foreach ($comp_det->field_sales_engineers['und'] as $key => $value)
+{
+	$comp_fse[$value['target_id']] =$value['target_id']; 
+}
+foreach ($comp_det->field_client_fse['und'] as $key => $value)
+{
+	$comp_fcse[$value['target_id']] =$value['target_id']; 
+}
+foreach ($comp_det->field_server_fse['und'] as $key => $value)
+{
+	$comp_fsse[$value['target_id']] =$value['target_id']; 
+}
+foreach ($comp_det->field_eiot_fse['und'] as $key => $value)
+{
+	$comp_fiotse[$value['target_id']] =$value['target_id']; 
+}
+//fae
+foreach ($comp_det->field_applications_engineers['und'] as $key => $value)
+{
+	$comp_fae[$value['target_id']] =$value['target_id']; 
+}
+foreach ($comp_det->field_client_fae['und'] as $key => $value)
+{
+	$comp_fcae[$value['target_id']] =$value['target_id']; 
+}
+foreach ($comp_det->field_server_fae['und'] as $key => $value)
+{
+	$comp_fsae[$value['target_id']] =$value['target_id']; 
+}
+foreach ($comp_det->field_eiot_fae['und'] as $key => $value)
+{
+	$comp_fiotae[$value['target_id']] =$value['target_id']; 
+}
+  */
+  
+ if(isset($comp_det->field_sales_engineers['und'])){
+foreach ($comp_det->field_sales_engineers['und'] as $key => $value)
+{
+	$comp_fse[$value['target_id']] =$value['target_id']; 
+}
+}if(isset($comp_det->field_client_fse['und'])){
+foreach ($comp_det->field_client_fse['und'] as $key => $value)
+{
+	$comp_fcse[$value['target_id']] =$value['target_id']; 
+}
+}if(isset($comp_det->field_server_fse['und'])){
+foreach ($comp_det->field_server_fse['und'] as $key => $value)
+{
+	$comp_fsse[$value['target_id']] =$value['target_id']; 
+}
+}if(isset($comp_det->field_eiot_fse['und'])){
+foreach ($comp_det->field_eiot_fse['und'] as $key => $value)
+{
+	$comp_fiotse[$value['target_id']] =$value['target_id']; 
+}
+}
+//fae
+if(isset($comp_det->field_applications_engineers['und'])){
+foreach ($comp_det->field_applications_engineers['und'] as $key => $value)
+{
+	$comp_fae[$value['target_id']] =$value['target_id']; 
+}}if(isset($comp_det->field_client_fae['und'])){
+foreach ($comp_det->field_client_fae['und'] as $key => $value)
+{
+	$comp_fcae[$value['target_id']] =$value['target_id']; 
+}}if(isset($comp_det->field_server_fae['und'])){
+foreach ($comp_det->field_server_fae['und'] as $key => $value)
+{
+	$comp_fsae[$value['target_id']] =$value['target_id']; 
+}}if(isset($comp_det->field_eiot_fae['und'])){
+foreach ($comp_det->field_eiot_fae['und'] as $key => $value)
+{
+	$comp_fiotae[$value['target_id']] =$value['target_id']; 
+}}
+   
+ /* Allow CREATION of promotion to builder and SE  */ 
+ if ($type == 'promotion' && $op == 'create' ) {
+    
+   
+   if ( ( ((array_key_exists(33, $user_fields->roles)) || (array_key_exists(35, $user_fields->roles))) && (array_key_exists(20, $user_fields->roles)) ) || (array_key_exists(36, $user_fields->roles)) || 
+(array_key_exists(9, $user_fields->roles))   ) {
+      return NODE_ACCESS_ALLOW;
+    }
+    else {
+      return NODE_ACCESS_DENY;
+    }
+  }
+  //return NODE_ACCESS_IGNORE;
+  
+/* Allow CREATION of promotion to builder and SE  */ 
+  
+ /* Allow EDITING of promotion by builder and SE in "draft" and "update req" */
+ if( ((array_key_exists(33, $user_fields->roles)) || (array_key_exists(35, $user_fields->roles))) && (array_key_exists(20, $user_fields->roles)) ) {
+				
+	  if ($type == 'promotion' && ($op == 'update' )) {
+	
+		  if($sidresult ==15 || $sidresult == 21){
+			  
+			 return NODE_ACCESS_ALLOW;
+		  } else {
+			  return NODE_ACCESS_DENY;
+		  }
+		  
+		} else if($type == 'promotion' && ($op == 'delete')){
+			if($sidresult ==15){
+			return NODE_ACCESS_ALLOW;}		
+		}
+		//return NODE_ACCESS_IGNORE;
+  } 
+ /* Allow EDITING of promotion by builder and SE in "draft" and "update req"  */ 
+  
+  
+  /* Allow EDITING of promotion by FSE in "fse approval" */
+ if (array_key_exists(12, $user_fields->roles) || array_key_exists(11, $user_fields->roles)){
+				
+	  if ($type == 'promotion' && ($op == 'update' )) {
+	
+		 if(($sidresult ==16) && ((array_key_exists($user->uid, $comp_fse)) || (array_key_exists($user->uid, $comp_fcse)) || (array_key_exists($user->uid, $comp_fsse)) || (array_key_exists($user->uid, $comp_fiotse)) || 
+	(array_key_exists($user->uid, $comp_fae)) || (array_key_exists($user->uid, $comp_fcae)) || (array_key_exists($user->uid, $comp_fsae)) || (array_key_exists($user->uid, $comp_fiotae))
+		)){
+			  
+			 return NODE_ACCESS_ALLOW;
+		  } else {
+			  return NODE_ACCESS_DENY;
+		  }
+		  
+		} else if($type == 'promotion' && ($op == 'delete')){
+			
+			return NODE_ACCESS_DENY;		
+		}
+		//return NODE_ACCESS_IGNORE;
+  } 
+ /* Allow EDITING of promotion by FSE in "fse approval"  */ 
+ /* Allow EDITING of promotion by IntelAdmin in "admin approval" */
+ if (array_key_exists(9, $user_fields->roles) || array_key_exists(36, $user_fields->roles)){
+				
+	  if ($type == 'promotion' && ($op == 'update' )) {
+	
+		  if(($sidresult ==16) || ($sidresult ==18) || (($sidresult ==15)&&($node->uid == $user->uid))){
+			  
+			 return NODE_ACCESS_ALLOW;
+		  } else {
+			  return NODE_ACCESS_DENY;
+		  }
+		  
+		} else if($type == 'promotion' && ($op == 'delete')){
+			
+			if(($sidresult ==15)&&($node->uid == $user->uid)){
+			  
+			 return NODE_ACCESS_ALLOW;
+		  } else {
+			  return NODE_ACCESS_DENY;
+		  }			
+		}
+                
+		//return NODE_ACCESS_IGNORE;
+  } 
+/*  Allow EDITING of promotion by IntelAdmin in "admin approval"  */ 
+  return NODE_ACCESS_IGNORE;
+}
+ 
+ function promobutton_menu_local_tasks_alter(&$data, $router_item, $root_path) {
+	 
+	  global $user;
+ $user_fields = user_load($user->uid);
+ //$roles = array(33,20,12);
+ //print_r($data['tabs'][0]['output']);
+	 if( (array_key_exists(34, $user_fields->roles) || array_key_exists(35, $user_fields->roles) && (array_key_exists(37, $user_fields->roles)))
+		 && ((!array_key_exists(12, $user_fields->roles))  || (!array_key_exists(11, $user_fields->roles)) || (!array_key_exists(33, $user_fields->roles)) || (!array_key_exists(20, $user_fields->roles)) ||
+	 (!array_key_exists(9, $user_fields->roles)) || (!array_key_exists(36, $user_fields->roles)) || (!array_key_exists(21, $user_fields->roles))))
+		 {
+	// For content type, remove the 'edit' & 'view' tab when viewing the node.
+  foreach ($router_item['page_arguments'] as $key => $argument) {
+    if (is_object($argument) && $router_item['page_arguments'][$key]->type == 'promotion') { 
+      foreach ($data['tabs'][0]['output'] as $key => $value) {
+        if ($value['#link']['path'] == 'node/%/edit'||'node/%/workflow' ||'node/%/view' ) {
+          unset($data['tabs'][0]['output'][1]);
+		  unset($data['tabs'][0]['output'][0]);
+		 // $value['#link']['options']['access']= 0;
+        }
+      }
+    }
+  }
+}
+
+ }

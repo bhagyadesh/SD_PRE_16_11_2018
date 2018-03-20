@@ -1,0 +1,1574 @@
+<?php
+
+
+function promotionpublish_cron() {
+
+/***** Noti to FSE approval to admin ****/
+
+$query_result = db_query("select n.nid,w.sid,n.changed from  node n join workflow_node w on n.nid=w.nid where w.sid=:sid and n.type=:type and n.status=:status;",
+array('sid' => 16,'type' => 'promotion','status' => 0));
+
+while ($row = $query_result->fetchAssoc()) {
+		 
+            $node_id = $row['nid']; 
+			$node_updated_time = $row['changed'];
+			
+			$day_diff = time() - $node_updated_time;         
+            $SLA_days = floor($day_diff/86400);  //  number of days 
+            $hours = round(($day_diff)/3600, 1);  ////  number of hours	
+
+			$query = db_query('SELECT w.sid FROM {workflow_node} w WHERE w.nid = :nid LIMIT 1', array(':nid' => $node_id));
+    $result = $query->fetchAll(); 
+    $sidresult = $result[0]->sid;
+			if($sidresult==16){
+	if($hours >=0  and $hours <= 56){		
+//if($SLA_days == 3){ 
+			
+			
+			reminder_to_inteladmin(node_load($node_id), 3);
+			//msg_to_inteladmin(node_load($node_id), 3);
+			
+          }
+        }
+	}
+	
+	
+	/***** Noti to buyer questions ****/
+	
+	$promoreport = db_query("select userid,promotionid,created,buyercompid,subject from joinpromoreport where promotiontype=:promotiontype",array('promotiontype' => 'Question'));
+	
+	        while ($row = $promoreport->fetchAssoc()) {
+		
+		           $pid = $row['promotionid'];
+				   $uid = $row['userid'];
+				   $time = $row['created'];
+				   $bid = $row['buyercompid'];
+				   $qns =$row['subject'];
+				   
+				   $rmsg = db_query("select mid from report_message where nid=:nid and author=:author order by mid desc LIMIT 1",array('nid' => $pid , 'author' => $uid  ));
+				   $rmresult = $rmsg->fetchAll(); 
+                   $rmidresult = $rmresult[0]->mid;
+				   
+				   
+				   
+				 //$pindex   = db_query("select count(*) from pm_index where thread_id=:thread_id and recipient=:recipient",array('thread_id' => $rmidresult,'recipient' =>$uid ));
+				 $pindex = db_query("select count(*) from pm_message pm join pm_index pi on pm.mid=pi.mid where pi.thread_id=:thread_id and author!=:author",
+				 array('thread_id' => $rmidresult,'author' =>$uid));
+				 //$presult = $pindex->fetchAll(); 
+   				 $presult=$pindex->fetchField();
+				 
+				 $diff = time() - $time;         
+            $buyer_SLA_days = floor($diff/86400);  //  number of days 
+            $buyer_hours = round(($diff)/3600, 1); 
+			
+			if($presult == 0){
+	if($buyer_hours >=1)
+	//and $buyer_hours <= 136)
+//if($buyer_SLA_days == 3){
+	{
+	
+	//msg_to_inteladmin(node_load($pid), 3);
+remindermsg_to_fse_on_question(node_load($pid),3,$bid,$qns,$uid);
+remindermsg_to_admin_on_question(node_load($pid),3,$bid,$qns,$uid);	}
+				   
+		        }
+		
+}}
+
+
+function remindermsg_to_fse_on_question($node, $tag_id,$buyer_id,$qn,$buid){
+	
+  global $user;
+    $user_fields = user_load($user->uid);
+   	$nodeauthor = $node->nid;
+    $authordet = node_load($nodeauthor);
+	$authorcompanyid = $authordet->field_company['und'][0]['target_id'];
+	$authorcompname = node_load($authorcompanyid)->title;
+	
+	$buyername = user_load($buid)->field_first_name['und'][0]['value'];
+	$buyercomp = node_load($buyer_id)->title;
+	//$buyercomp = node_load($buyercompid)->title;
+	$promonodeurl = url(drupal_get_path_alias('node/' . $node->nid), array('absolute' => TRUE)); 
+  
+    $selected_fseusers = getUsersRolesFSE($authorcompanyid);
+	
+	$fsemsg_subject = $authorcompname.' company has not responded to a promotion inquiry from '.$buyername.' of '.$buyercomp.' for over 3 days.';
+	//$d['author'] =  user_load(12549); 
+	
+	  $recipients = array();  
+      foreach ($selected_fseusers as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  $recipients[] = $recipient;		  
+
+      }
+    }     foreach($recipients as $key => $value){
+		$sendername = ucfirst($value->field_first_name['und'][0]['value']) . ' '. ucfirst($value->field_last_name['und'][0]['value']);
+		
+		$fsemsg_body= <<<EOF
+Dear {$sendername},
+
+
+<p>{$authorcompname} has not responded to a new promotion inquiry for over 3 days. Please take necessary action to notify {$authorcompname}  for this inquiry.</p>
+
+<p>Question detail:</p>
+
+<p>{$qn}</p>
+
+<p>You can click <a href= {$promonodeurl} > "Here" </a> to access promotion details.</p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team.
+
+EOF;
+		
+		 
+	 $thread = privatemsg_new_thread(array($value), $fsemsg_subject, $fsemsg_body, $options = array() );
+     $thread_id = $thread['message']->thread_id;		 
+
+	 
+		     db_merge('pm_tags_index')
+          ->key(array(
+            'tag_id' => $tag_id,
+            'uid' => $recipient->uid,
+            'thread_id' => $thread_id,
+          ))
+          ->execute();
+		  
+        
+	
+	 $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => variable_get('site_mail', ''),
+          'pm_email_subject' => $fsemsg_subject,
+          'pm_email_message' => $fsemsg_body,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}
+		if(!empty($value->field_company)){
+             insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+        } 
+     }
+	 
+	}
+
+/*Reminders to admin on buyer questions*/
+
+function remindermsg_to_admin_on_question($node, $tag_id,$buyer_id,$qn,$buid){
+	
+  global $user;
+    $user_fields = user_load($user->uid);
+   	$nodeauthor = $node->nid;
+    $authordet = node_load($nodeauthor);
+	$authorcompanyid = $authordet->field_company['und'][0]['target_id'];
+	$authorcompname = node_load($authorcompanyid)->title;
+	
+	$buyername = user_load($buid)->field_first_name['und'][0]['value'];
+	$buyercomp = node_load($buyer_id)->title;
+	//$buyercomp = node_load($buyercompid)->title;
+	$promonodeurl = url(drupal_get_path_alias('node/' . $node->nid), array('absolute' => TRUE)); 
+  
+    //$selected_fseusers = getUsersRolesFSE($authorcompanyid);
+	$selected_adminusers = getUsersAdmins(9,21,36);
+	
+	$fsemsg_subject = $authorcompname.' company has not responded to a promotion inquiry from '.$buyername.' of '.$buyercomp.' for over 3 days.';
+	//$d['author'] =  user_load(12549); 
+	
+	  $recipients = array();  
+      foreach ($selected_adminusers as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  $recipients[] = $recipient;		  
+
+      }
+    }     foreach($recipients as $key => $value){
+		$sendername = ucfirst($value->field_first_name['und'][0]['value']) . ' '. ucfirst($value->field_last_name['und'][0]['value']);
+		
+		$fsemsg_body= <<<EOF
+Dear {$sendername},
+
+
+<p>{$authorcompname} has not responded to a new promotion inquiry for over 3 days. Please take necessary action to notify {$authorcompname}  for this inquiry.</p>
+
+<p>Question detail:</p>
+
+<p>{$qn}</p>
+
+<p>You can click <a href= {$promonodeurl} > "Here" </a> to access promotion details.</p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team.
+
+EOF;
+		
+		 
+	 $thread = privatemsg_new_thread(array($value), $fsemsg_subject, $fsemsg_body, $options = array() );
+     $thread_id = $thread['message']->thread_id;		 
+
+	 
+		     db_merge('pm_tags_index')
+          ->key(array(
+            'tag_id' => $tag_id,
+            'uid' => $recipient->uid,
+            'thread_id' => $thread_id,
+          ))
+          ->execute();
+		  
+        
+	
+	 $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => variable_get('site_mail', ''),
+          'pm_email_subject' => $fsemsg_subject,
+          'pm_email_message' => $fsemsg_body,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}
+		if(!empty($value->field_company)){
+             insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+        } 
+     }
+	 
+	}
+
+
+
+
+/* FSE/FAE reminders */
+function reminder_to_inteladmin($node, $tag_id){
+	
+  global $user;
+    $user_fields = user_load($user->uid);
+    //$nodeauthor = ($node->uid);
+    //$authordet = user_load($nodeauthor);
+	$nodeauthor = $node->nid;
+    $authordet = node_load($nodeauthor);
+	$authorcompanyid = $authordet->field_company['und']['0']['target_id'];
+	$authorcompname = node_load($authorcompanyid);
+	$promonodeurl = url(drupal_get_path_alias('node/' . $node->nid), array('absolute' => TRUE)); 
+  
+    $role = user_role_load_by_name('Intel Admin');
+	//$role = array();
+    //$selected_adminusers = getUsersAdmins($role->rid);
+	//$selected_adminusers = getUsersAdmins(9,36);
+	$selected_adminusers = getUsersAdmins(9,21,36);
+	
+	$intelmsg_subject = 'FSE/FAE review request reminder.';
+	  
+	
+	  $recipients = array();  
+      foreach ($selected_adminusers as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  $recipients[] = $recipient;		  
+
+      }
+    }     
+	foreach($recipients as $key => $value){
+		$sendername = ucfirst($value->field_first_name['und'][0]['value']) . ' '. ucfirst($value->field_last_name['und'][0]['value']);
+		
+		$intelmsg_body= <<<EOF
+Dear {$sendername},
+
+<p>Please note promotion {$authordet->title} is pending for FSE/FAE review and approval for more than 3 days.</p> 
+
+<p>You can click <a href= {$promonodeurl} > "Here" </a> to access promotion details.</p> 
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team.
+EOF;
+		
+	
+	 $thread = privatemsg_new_thread(array($value), $intelmsg_subject, $intelmsg_body, $options = array());
+     $thread_id = $thread['message']->thread_id;	
+//print_r($thread);exit;	 
+
+		     db_merge('pm_tags_index')
+          ->key(array(
+            'tag_id' => $tag_id,
+            'uid' => $recipient->uid,
+            'thread_id' => $thread_id,
+          ))
+          ->execute();  
+	
+	 $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => variable_get('site_mail', ''),
+          'pm_email_subject' => $intelmsg_subject,
+          'pm_email_message' => $intelmsg_body,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}
+		//print_r($value);exit;
+		//$user=user_load($value->uid);
+		if(!empty($value->field_company)){
+			insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+		}
+     }
+	}
+
+
+
+
+
+
+
+
+/* Alter Starts  */
+function promotionpublish_form_alter(&$form, &$form_state, $form_id) {
+
+if ($form_id == 'promotion_node_form') 
+{   global $user;
+	$user_id = user_load($user->uid);
+	
+    $node = $form_state['node'];
+	$authorid = $node->uid;
+			
+	$product = $node->field_promotion_products['und']['0']['target_id'];
+    $buyer = $node->field_select_view_buyer['und']['0']['target_id'];
+	$wid = $node->workflow;
+    $widobj = workflow_get_workflow_states_by_sid($wid, $options = array());
+    $widname = $widobj->state;
+	
+	$builderrole = user_role_load_by_name('Builder');
+    $serole = user_role_load_by_name('Solutions Directory Editor');
+    $fserole = user_role_load_by_name('Intel Field Sales Engineer');
+    $iarole = user_role_load_by_name('Intel Admin');
+    $adminrole = user_role_load_by_name('Administrator');
+	
+	$nid=$node->nid;
+	$query = db_query('SELECT w.sid FROM {workflow_node} w WHERE w.nid = :nid LIMIT 1', array(':nid' => $nid));
+    $result = $query->fetchAll(); 
+    $sidresult = $result[0]->sid;
+	
+		$form['actions']['submit']['#submit'][] = 'promotionpublish_form_submit';
+
+	if ((((array_key_exists(33, $user_id->roles)) || (array_key_exists(35, $user_id->roles)) ) && (array_key_exists(20, $user_id->roles))) && ($authorid == $user->uid ) )
+	{
+	
+        $form['actions']['submit_button_7'] = array(
+        '#type' => 'submit',
+        '#value' => t('Submit For Approval'),
+        '#submit' => array('node_form_submit', 'promotionpublish_form_submit'),
+                          );
+	}
+	if( ((array_key_exists(9, $user_id->roles)) || (array_key_exists(21, $user_id->roles)) || (array_key_exists(36, $user_id->roles)) ) && (($authorid == $user->uid ) || (!isset($node->nid) || isset($node->is_new)) 
+	&& ($sidresult == 14 || $sidresult == 15 )) ){
+	
+        $form['actions']['submit_button_8'] = array(
+        '#type' => 'submit',
+        '#value' => t('Publish Promotion'),
+        '#submit' => array('node_form_submit', 'promotionpublish_form_submit'),
+                          );
+	}
+
+    if ( ((array_key_exists(12, $user_id->roles)) || (array_key_exists(11, $user_id->roles)) || (array_key_exists(9, $user_id->roles))  || (array_key_exists(21, $user_id->roles)) || (array_key_exists(36, $user_id->roles)) ) && (isset($node->nid) || !isset($node->is_new)) ){
+        if ($authorid != $user->uid){	
+		$form['actions']['submit_button_4'] = array(
+        '#type' => 'submit',
+        '#value' => t('Reject'),
+        '#submit' => array('node_form_submit', 'promotionpublish_form_submit'),
+                          );
+        	}
+	}
+	if ( ((array_key_exists(12, $user_id->roles)) || (array_key_exists(11, $user_id->roles)) || (array_key_exists(9, $user_id->roles)) || (array_key_exists(21, $user_id->roles)) || (array_key_exists(36, $user_id->roles))) && (isset($node->nid) || !isset($node->is_new)) ) {
+		if ($authorid != $user->uid){
+        $form['actions']['submit_button_5'] = array(
+        '#type' => 'submit',
+        '#value' => t('Update Required'),
+        '#submit' => array('node_form_submit', 'promotionpublish_form_submit'),
+                          );		
+	        }	
+	}
+ }
+}
+function getUsersRolesFSE($nodeauthorcompid = ' ') {
+	
+$query = db_select('users', 'u');
+	$query->distinct();
+$query->leftjoin('field_data_field_client_fse', 'c_fse', 'u.uid = c_fse.field_client_fse_target_id');
+	$query->leftjoin('field_data_field_server_fse', 's_fse', 'u.uid = s_fse.field_server_fse_target_id');
+	$query->leftjoin('field_data_field_eiot_fse', 'eiot_fse', 'u.uid = eiot_fse.field_eiot_fse_target_id');
+	$query->leftjoin('field_data_field_sales_engineers', 'fse', 'u.uid = fse.field_sales_engineers_target_id');
+	
+	$query->leftjoin('field_data_field_client_fae', 'c_fae', 'u.uid = c_fae.field_client_fae_target_id');
+	$query->leftjoin('field_data_field_server_fae', 's_fae', 'u.uid = s_fae.field_server_fae_target_id');
+	$query->leftjoin('field_data_field_eiot_fae', 'eiot_fae', 'u.uid = eiot_fae.field_eiot_fae_target_id');
+	$query->leftjoin('field_data_field_applications_engineers', 'fae', 'u.uid = fae.field_applications_engineers_target_id');
+	
+	$query->fields('u',array('uid', 'name'));	
+	$query->fields('c_fae',array('field_client_fae_target_id'));
+	$query->fields('s_fae',array('field_server_fae_target_id'));
+	$query->fields('eiot_fae',array('field_eiot_fae_target_id'));
+	$query->fields('fae',array('field_applications_engineers_target_id'));
+	
+	$query->fields('c_fse',array('field_client_fse_target_id'));
+	$query->fields('s_fse',array('field_server_fse_target_id'));
+	$query->fields('eiot_fse',array('field_eiot_fse_target_id'));
+	$query->fields('fse',array('field_sales_engineers_target_id'));
+	
+	$query->condition('u.status', 0, '<>');
+	
+	$query->condition(
+				db_or()
+					->condition('c_fse.entity_id', $nodeauthorcompid, '=') // User who are FAE's under the partner's company  
+					->condition('s_fse.entity_id', $nodeauthorcompid, '=') // User who are FSE's under the partner's company 
+					->condition('eiot_fse.entity_id', $nodeauthorcompid, '=') // User who are FSE's under the partner's company 
+					->condition('fse.entity_id', $nodeauthorcompid, '=')
+					
+					->condition('c_fae.entity_id', $nodeauthorcompid, '=') // User who are FSE's under the partner's company 
+					->condition('s_fae.entity_id', $nodeauthorcompid, '=') // User who are FSE's under the partner's company 
+					->condition('eiot_fae.entity_id', $nodeauthorcompid, '=') // User who are FSE's under the partner's company 
+					->condition('fae.entity_id', $nodeauthorcompid, '=')
+					
+					
+					); 
+		
+	$result = $query->execute();
+	
+$users = array();
+  
+foreach ($result as $user) {
+    $users[] = $user;
+  }
+ 
+  return $users;
+}	 
+function getUsersAdmins($ridodm = 1, $ridintel = 2, $ridadmin = 3) { // rid = Role Id from users_roles table
+  $query = db_select('users', 'u');
+  $query->distinct();
+  $query->fields('u', array('uid', 'name'));
+  $query->innerJoin('users_roles', 'r', 'r.uid = u.uid');
+  $query->condition('r.rid',  array($ridodm, $ridintel, $ridadmin), 'IN');
+  $query->orderBy('u.name');
+
+  $result = $query->execute();
+
+
+  $users = array();
+  foreach ($result as $user) {
+    $users[] = $user;
+  }
+  return $users;
+}  
+
+/*
+function getUsersAdmins($rid = 1) { // rid = Role Id from users_roles table
+  $query = db_select('users', 'u');
+  $query->fields('u', array('uid', 'name'));
+  $query->innerJoin('users_roles', 'r', 'r.uid = u.uid');
+  $query->condition('r.rid', $rid);
+  $query->orderBy('u.name');
+
+  $result = $query->execute();
+
+
+  $users = array();
+  foreach ($result as $user) {
+    $users[] = $user;
+  }
+  return $users;
+}
+
+*/
+
+function newflow($node,$sid)
+       {   
+              workflow_execute_transition($node, $sid, $comment = NULL, $force = FALSE);
+       }
+
+function newdraftflow($node,$sid)
+       {   
+              workflow_execute_transition($node, $sid, $comment = NULL, $force = TRUE);
+       }
+	   
+function promotionpublish_form_submit(&$form, &$form_state) 
+{
+	
+	global $user;
+	$user_id = user_load($user->uid);
+	
+	$builderrole = user_role_load_by_name('Builder');
+    $serole = user_role_load_by_name('Solutions Directory Editor');
+    $fserole = user_role_load_by_name('Intel Field Sales Engineer');
+    $iarole = user_role_load_by_name('Intel Admin');
+	
+    $node = $form_state['node'];
+	$authorid = $node->uid;
+	
+	
+	$product = $node->field_promotion_products['und']['0']['target_id'];
+    $buyer = $node->field_select_view_buyer['und']['0']['target_id'];
+	
+	$nid=$node->nid;
+	$query = db_query('SELECT w.sid FROM {workflow_node} w WHERE w.nid = :nid LIMIT 1', array(':nid' => $nid));
+    $result = $query->fetchAll(); 
+    $sidresult = $result[0]->sid;
+
+    $nodeauthor = ($node->uid);
+    $authordet = user_load($nodeauthor); //author of node
+	
+	$authorcompanyid = $node->field_company['und']['0']['target_id']; //node promotion company
+  
+    $fserole = user_role_load_by_name('Intel Field Sales Engineer');
+    $selected_fseusers = getUsersRolesFSE($authorcompanyid);
+	
+	$role = user_role_load_by_name('Intel Admin');
+   // $selected_adminusers = getUsersAdmins($role->rid);
+	$selected_adminusers = getUsersAdmins(9,21,36);
+	//print_r($selected_adminusers);exit;
+	$tag_id=3;
+	
+	$recipient1 = user_load($user->uid); //logged in user 
+
+	//print_r($form_state);exit;
+           if( ($form_state['values']['op'] == 'Save as Draft') && ((((array_key_exists(33, $user_id->roles)) || (array_key_exists(35, $user_id->roles)) )
+			   && (array_key_exists(20, $user_id->roles))) 
+	 || (array_key_exists(9, $user_id->roles)) || (array_key_exists(21, $user_id->roles))  || (array_key_exists(36, $user_id->roles)))) {
+                 $sid=15;//draft
+                 $new=newflow($node,$sid);
+                 $wid = $node->workflow;
+                 $widobj = workflow_get_workflow_states_by_sid($sidresult, $options = array());
+                 $widname = $widobj->state;
+                    drupal_set_message(t('The Promotion is Saved as ' . $widname)); 	
+					
+					
+					
+             }
+			 if( ($form_state['values']['op'] == 'Save as Draft') && (( ((array_key_exists(33, $user_id->roles)) || (array_key_exists(35, $user_id->roles)))
+				 && (array_key_exists(20, $user_id->roles))) 
+	 || (array_key_exists(21, $user_id->roles)) || (array_key_exists(9, $user_id->roles)) ) && ((!empty($product))&&(!empty($buyer))) && $sidresult == 16  ){
+				 drupal_set_message(t('You Already Submitted the Promotion For Approval.'), 'error');
+			 }
+			 
+			 //own promotions
+			 if( ($form_state['values']['op'] == 'Publish Promotion') && ((array_key_exists(21, $user_id->roles)) || (array_key_exists(9, $user_id->roles)) || (array_key_exists(36, $user_id->roles))) 
+				&& ((!empty($product))&&(!empty($buyer))) && (($authorid == $user->uid ) || (!isset($node->nid) || isset($node->is_new)) ) ){
+                 $sid=19;//published
+                 $new=newflow($node,$sid);
+                 $wid = $node->workflow;
+                 $widobj = workflow_get_workflow_states_by_sid($wid, $options = array());
+                 $widname = $widobj->state;
+                    drupal_set_message(t('The Promotion is  ' . $widname. ' Successfully!!!')); 
+														
+		foreach ($node->field_select_view_buyer['und'] as $key => $value){
+							
+							
+							$query1=db_query("select count(*) from joinpromoreport where promotionid=:promotionid and buyercompid=:buyercompid",
+ array(':promotionid' => $nid,':buyercompid' =>$value));
+$result1=$query1->fetchField();
+							
+							$felds = array(
+                                       'userid' => NULL ,
+										'username' => '' ,
+										'promotionid' => $nid,
+										'promotionname' => node_load($nid)->title,
+										'created' => 0,
+										'status' => 'Not Joined',
+										'subject' => (node_load($nid)->field_subject_english_['und']['0']['safe_value']) ? node_load($nid)->field_subject_english_['und']['0']['safe_value']:'',
+										'buyercompid' => $value,
+										'promotiontype' => 'Join',
+										);
+	if($result1 == 0){		
+	 
+		try {
+						 $return_value = db_insert('joinpromoreport')
+												->fields($felds)
+												->execute();					
+		}
+		catch (Exception $e) {
+        drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+		
+		
+                             }
+			  }	//result end	
+		  }	//foreach										
+			if ($authordet->field_receive_members_email['und'][0]['value'] && $authordet->status == 1 && privatemsg_is_disabled($authordet) === false) { //author of the node
+					msgs_to_buyer(node_load($nid), $tag_id);		//notify buyer that promo is available
+			}
+}
+			 
+			if ( ($form_state['values']['op'] == 'Publish Promotion') && ((array_key_exists(21, $user_id->roles)) || (array_key_exists(9, $user_id->roles)) || (array_key_exists(36, $user_id->roles)))
+				 && ((empty($product)) || (empty($buyer))) ){
+				 
+                 drupal_set_message(t('The fields "Promotion solutions" or "Select Buyer" cannot be empty for publishing a promotion.'), 'error');
+             }
+					 
+			 
+            if(($form_state['values']['op'] == 'Reject') && (array_key_exists(12, $user_id->roles) || array_key_exists(11, $user_id->roles) ) ){
+				
+                 $sid=17; //rej
+                 $new=newflow($node,$sid);
+                 $wid = $node->workflow;
+                 $widobj = workflow_get_workflow_states_by_sid($wid, $options = array());
+                 $widname = $widobj->state;
+                    drupal_set_message(t('The Promotion is  ' . $widname)); 
+					//drupal_set_message($node->workflow);
+					if ($recipient1->field_receive_members_email['und'][0]['value'] && $recipient1->status == 1 && privatemsg_is_disabled($recipient1) === false) { // logged in user
+					rejectmsgs_to_submitter_from_fse(node_load($nid), $tag_id);
+					}
+				
+             }
+			 
+			if(($form_state['values']['op'] == 'Reject') && ((array_key_exists(9, $user_id->roles)) || (array_key_exists(21, $user_id->roles)) || (array_key_exists(36, $user_id->roles))  ) ){
+				if ((!empty($product))&&(!empty($buyer))){
+                 $sid=17; //rej
+                 $new=newflow($node,$sid);
+                 $wid = $node->workflow;
+                 $widobj = workflow_get_workflow_states_by_sid($wid, $options = array());
+                 $widname = $widobj->state;
+                    drupal_set_message(t('The Promotion is  ' . $widname)); 
+					//drupal_set_message($node->workflow);
+			       if ($recipient1->field_receive_members_email['und'][0]['value'] && $recipient1->status == 1 && privatemsg_is_disabled($recipient1) === false) { // logged in user 
+					rejectmsgs_to_submitter_from_admin(node_load($nid), $tag_id);
+				   }
+				}
+			 }
+			 
+             if ( ($form_state['values']['op'] == 'Update Required') && ( (array_key_exists(12, $user_id->roles)) || (array_key_exists(11, $user_id->roles)) || (array_key_exists(9, $user_id->roles)) 
+				 || (array_key_exists(21, $user_id->roles)) || (array_key_exists(36, $user_id->roles)) )&& ((!empty($product))&&(!empty($buyer))) ){
+                 $sid=21; //update req
+                 $new=newflow($node,$sid);
+                 $wid = $node->workflow;
+                 $widobj = workflow_get_workflow_states_by_sid($wid, $options = array());
+                 $widname = $widobj->state;
+                    drupal_set_message(t('The Promotion is in ' . $widname . ' State')); 
+					//drupal_set_message($node->workflow);
+					if ($recipient1->field_receive_members_email['und'][0]['value'] && $recipient1->status == 1 && privatemsg_is_disabled($recipient1) === false) { // logged in user 
+					updatereq_to_submitter_from_fse(node_load($nid), $tag_id);
+					}
+             }
+			 if ( ($form_state['values']['op'] == 'Approve') && (array_key_exists(12, $user_id->roles) || array_key_exists(11, $user_id->roles)) && ((!empty($product))&&(!empty($buyer))) ){
+                 $sid=18; //admin approval
+                 $new=newflow($node,$sid);
+                 $wid = $node->workflow;
+                 $widobj = workflow_get_workflow_states_by_sid($wid, $options = array());
+                 $widname = $widobj->state;
+				 $tag_id=3;
+                    drupal_set_message(t('The Promotion is in ' . $widname . ' State'));
+                    //drupal_set_message($node->workflow);	
+					if ($recipient1->field_receive_members_email['und'][0]['value'] && $recipient1->status == 1 && privatemsg_is_disabled($recipient1) === false) { // logged in user
+                   					msg_to_inteladmin(node_load($nid), $tag_id);
+				//	COMMENTED FOR TESTING
+					}
+					
+}
+			 if ( ($form_state['values']['op'] == 'Approve') && ((array_key_exists(9, $user_id->roles)) || (array_key_exists(21, $user_id->roles)) || (array_key_exists(36, $user_id->roles)) )
+				 && ((!empty($product))&&(!empty($buyer))) ){
+                 $sid=19; //published
+                 $new=newflow($node,$sid);
+                 $wid = $node->workflow;
+                 $widobj = workflow_get_workflow_states_by_sid($wid, $options = array());
+                 $widname = $widobj->state;
+                    drupal_set_message(t('The Promotion is in ' . $widname . ' State')); 
+					
+	foreach ($node->field_select_view_buyer['und'] as $key => $value){
+							
+							
+							$query1=db_query("select count(*) from joinpromoreport where promotionid=:promotionid and buyercompid=:buyercompid",
+ array(':promotionid' => $nid,':buyercompid' =>$value));
+$result1=$query1->fetchField();
+							
+							$felds = array(
+                                       'userid' => NULL ,
+										'username' => '' ,
+										'promotionid' => $nid,
+										'promotionname' => node_load($nid)->title,
+										'created' => 0,
+										'status' => 'Not Joined',
+										'subject' => (node_load($nid)->field_subject_english_['und']['0']['safe_value']) ? node_load($nid)->field_subject_english_['und']['0']['safe_value']:'',
+										'buyercompid' => $value,
+										'promotiontype' => 'Join',
+										);
+	if($result1 == 0){		
+	 
+		try {
+						 $return_value = db_insert('joinpromoreport')
+												->fields($felds)
+												->execute();					
+		}
+		catch (Exception $e) {
+        drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+		
+		
+                             }
+			  }	//result end	
+		  }	//foreach										
+			
+		if ($recipient1->field_receive_members_email['und'][0]['value'] && $recipient1->status == 1 && privatemsg_is_disabled($recipient1) === false) { // logged in user
+					
+					approvemsgs_to_submitter_from_admin(node_load($nid), $tag_id); 
+					}
+					
+					if ($authordet->field_receive_members_email['und'][0]['value'] && $authordet->status == 1 && privatemsg_is_disabled($authordet) === false) { //author of the node
+					msgs_to_buyer(node_load($nid), $tag_id);
+					}
+				
+                                
+				
+ }
+			 if ( ($form_state['values']['op'] == 'Submit For Approval') && (((array_key_exists($builderrole->rid, $user_id->roles)) || (array_key_exists(35, $user_id->roles)) ) 
+				 && (array_key_exists($serole->rid, $user_id->roles)))
+				 && ((empty($product)) || (empty($buyer))) ){
+				 
+                 drupal_set_message(t('The fields "Promotion solutions" or "Select Buyer" cannot be empty for submitting a promotion.'), 'error');
+             }
+	
+			 if ( ($form_state['values']['op'] == 'Submit For Approval') && (((array_key_exists($builderrole->rid, $user_id->roles)) || (array_key_exists(35, $user_id->roles)) ) 
+				 && (array_key_exists($serole->rid, $user_id->roles)))
+				 && ((!empty($product))&&(!empty($buyer))) ){
+				
+                 $sid=16; //fse approval
+                 newdraftflow($node,$sid);
+                 $wid = $node->workflow;
+                 $widobj = workflow_get_workflow_states_by_sid($sidresult, $options = array());
+                 $widname = $widobj->state;
+				 
+                    drupal_set_message(t('The new Promotion is in Pending FSE/FAE approval State'));  
+					
+					//check if sender is enabled with private msg.
+		   if ($recipient1->field_receive_members_email['und'][0]['value'] && $recipient1->status == 1 && privatemsg_is_disabled($recipient1) === false) {
+					msg_to_fse(node_load($nid), $tag_id);
+					msg_to_inteladmin(node_load($nid), $tag_id); 
+   } 
+  }
+			 
+			 
+}
+
+//Notifications to submitter on approval from intel admin
+function approvemsgs_to_submitter_from_admin($node, $tag_id){
+	
+	global $user;
+    $user_fields = user_load($user->uid);
+    //$node = node_load($node);
+    $nodeauthor = $node->nid;
+	$nodedet = node_load($nodeauthor); //node loaded
+    $authordet = user_load($nodedet->uid);// user loaded
+	$authorcompanyid = $nodedet->field_company['und']['0']['target_id'];
+	$promonodeurl = url(drupal_get_path_alias('node/' . $node->nid), array('absolute' => TRUE)); 
+	
+	$date = time();
+	$time = date("Y/m/d H:i:s",$date);
+	$sendername = ucfirst($authordet->field_first_name['und'][0]['value']) . ' '. ucfirst($authordet->field_last_name['und'][0]['value']);
+	$status = 'Approved';
+   	$submittermsg_subject = 'Your promotion status update:'.$status;
+	$submittermsg_body = <<<EOF
+
+Dear {$sendername},
+
+  <p>The Promotion {$node->title} you submitted has been {$status} by {$user_fields->name} on {$time}.</p>
+
+  <p>If you have any questions on the approval result , you may directly contact the approver.</p> 
+
+  <p>Regards,</p>
+
+  Intel Solutions Directory Team
+
+EOF;
+	
+//$recipient = user_load($nodeauthor);
+$recipient = user_load($node->uid);
+	if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {	  
+	 $thread = privatemsg_new_thread(array($recipient), $submittermsg_subject, $submittermsg_body, $options = array());
+     $thread_id = $thread['message']->thread_id;	
+     /*          if(!empty($recipient->field_company)){
+                                                insert_user_company($thread_id, $recipient->field_company['und'][0]['target_id']);
+                } */
+	 
+		     db_merge('pm_tags_index')
+          ->key(array(
+            'tag_id' => $tag_id,
+            'uid' => $recipient->uid,
+            'thread_id' => $thread_id,
+          ))
+          ->execute();
+		  
+	 $felds = array(
+          'pm_email_mid' => $thread_id,
+          //'pm_email_to' => $authordet->mail,
+		  'pm_email_to' => user_load($node->uid)->mail,
+          'pm_email_sender' => $user_fields->mail,
+          'pm_email_subject' => $submittermsg_subject,
+          'pm_email_message' => $submittermsg_body,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }	
+		}
+		if(!empty($recipient->field_company)){
+			insert_user_company($thread_id, $recipient->field_company['und'][0]['target_id']);
+        }
+		
+    }	   
+	
+		
+}
+//Notification to submitter from intel admin on rejection.
+function rejectmsgs_to_submitter_from_admin($node, $tag_id){
+	
+	global $user;
+    $user_fields = user_load($user->uid);
+    
+    //$nodeauthor = ($node->uid);
+    //$authordet = user_load($nodeauthor);
+	$nodeauthor = $node->nid;
+	$nodedet = node_load($nodeauthor); //node loaded
+    $authordet = user_load($nodedet->uid);// user loaded
+	$authorcompanyid = $nodedet->field_company['und']['0']['target_id'];
+	$promonodeurl = url(drupal_get_path_alias('node/' . $node->nid), array('absolute' => TRUE)); 
+	$sendername = ucfirst($authordet->field_first_name['und'][0]['value']) . ' '. ucfirst($authordet->field_last_name['und'][0]['value']);
+	$status = 'Rejected';
+   	$submittermsg_subject = 'Your promotion status update:'.$status;
+	
+	$date = time();
+	$time = date("Y/m/d H:i:s",$date);
+	$query=db_query("select comment from workflow_node_history where nid=:nid and sid=:sid and old_sid=:old_sid ", array(':nid' => $node->nid,':sid'=>17,':old_sid' =>17));
+$result=$query->fetchField();
+	  
+	$submittermsg_body = <<<EOF
+Dear {$sendername},
+
+	<p>The Promotion {$node->title} you submitted has been {$status} by {$user_fields->name} on {$time}.</p>
+		
+    <p>If you have any questions on the approval result , you may directly contact the approver.</p>
+
+    <p>Regards, </p>
+
+    Intel Solutions Directory Team	
+
+EOF;
+$recipient = user_load($node->uid);
+	if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {	  
+	 $thread = privatemsg_new_thread(array($recipient), $submittermsg_subject, $submittermsg_body, $options = array());
+     $thread_id = $thread['message']->thread_id;		 
+	 
+/*	 if(!empty($recipient->field_company)){
+                                                insert_user_company($thread_id, $recipient->field_company['und'][0]['target_id']); 
+                } */
+		     db_merge('pm_tags_index')
+          ->key(array(
+            'tag_id' => $tag_id,
+            'uid' => $recipient->uid,
+            'thread_id' => $thread_id,
+          ))
+          ->execute();
+		  
+	 $felds = array(
+          'pm_email_mid' => $thread_id,
+          //'pm_email_to' => $authordet->mail,
+		  'pm_email_to' => user_load($node->uid)->mail,
+          'pm_email_sender' => $user_fields->mail,
+          'pm_email_subject' => $submittermsg_subject,
+          'pm_email_message' => $submittermsg_body,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }	
+		
+		}		
+		if(!empty($recipient->field_company)){
+			insert_user_company($thread_id, $recipient->field_company['und'][0]['target_id']);
+        }
+		
+    }	   
+	
+		
+}
+
+//Notification to submitter from intel fse on rejection.
+function rejectmsgs_to_submitter_from_fse($node, $tag_id){
+	
+	global $user;
+    $user_fields = user_load($user->uid);
+    
+    //$nodeauthor = ($node->uid);
+    //$authordet = user_load($nodeauthor);
+	$nodeauthor = $node->nid;
+	$nodedet = node_load($nodeauthor); //node loaded
+    $authordet = user_load($nodedet->uid);// user loaded
+	$authorcompanyid = $nodedet->field_company['und']['0']['target_id'];
+	$promonodeurl = url(drupal_get_path_alias('node/' . $node->nid), array('absolute' => TRUE)); 
+	
+	$sendername = ucfirst($authordet->field_first_name['und'][0]['value']) . ' '. ucfirst($authordet->field_last_name['und'][0]['value']);
+	$status = 'Rejected';
+	$date = time();
+	$time = date("Y/m/d H:i:s",$date);
+	
+	$query=db_query("select comment from {workflow_node_history} where nid=:nid and sid=:sid and old_sid=:old_sid ", array(':nid' => $node->nid,':sid'=>17,':old_sid' =>17));
+$result=$query->fetchField();
+   	$submittermsg_subject = 'Your promotion status update:'.$status;
+	  
+	$submittermsg_body = <<<EOF
+	
+Dear {$sendername},
+
+	<p>The Promotion {$node->title} you submitted has been {$status} by {$user_fields->name} on {$time}.</p>
+	
+    <p>If you have any questions on the approval result , you may directly contact the approver.</p> 
+
+    <p>Regards, </p>
+
+    Intel Solutions Directory Team
+EOF;
+$recipient = user_load($node->uid);
+	if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {	  
+	 $thread = privatemsg_new_thread(array($recipient), $submittermsg_subject, $submittermsg_body, $options = array());
+     $thread_id = $thread['message']->thread_id;	
+/*
+if(!empty($recipient->field_company)){
+                                                insert_user_company($thread_id, $recipient->field_company['und'][0]['target_id']); 
+                }	 */
+		     db_merge('pm_tags_index')
+          ->key(array(
+            'tag_id' => $tag_id,
+            'uid' => $recipient->uid,
+            'thread_id' => $thread_id,
+          ))
+          ->execute();
+		  
+	 $felds = array(
+          'pm_email_mid' => $thread_id,
+          //'pm_email_to' => $authordet->mail,
+		  'pm_email_to' => user_load($node->uid)->mail,
+          'pm_email_sender' => $user_fields->mail,
+          'pm_email_subject' => $submittermsg_subject,
+          'pm_email_message' => $submittermsg_body,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }	
+
+		}		
+		if(!empty($recipient->field_company)){
+			insert_user_company($thread_id, $recipient->field_company['und'][0]['target_id']);
+        }
+    }	   
+	
+		
+}
+
+
+/*update req*/
+
+function updatereq_to_submitter_from_fse($node, $tag_id){
+	
+	global $user;
+    $user_fields = user_load($user->uid);
+    
+    //$nodeauthor = ($node->uid);
+    //$authordet = user_load($nodeauthor);
+	$nodeauthor = $node->nid;
+	$nodedet = node_load($nodeauthor); //node loaded
+    $authordet = user_load($nodedet->uid);// user loaded
+	$authorcompanyid = $nodedet->field_company['und']['0']['target_id'];
+	$promonodeurl = url(drupal_get_path_alias('node/' . $node->nid), array('absolute' => TRUE)); 
+	
+	$sendername = ucfirst($authordet->field_first_name['und'][0]['value']) . ' '. ucfirst($authordet->field_last_name['und'][0]['value']);
+	$status = 'Update Required';
+	$status1 = 'required to update';
+	$date = time();
+	$time = date("Y/m/d H:i:s",$date);
+	
+	//$query=db_query("select comment from {workflow_node_history} where nid=:nid and sid=:sid and old_sid=:old_sid ", array(':nid' => $node->nid,':sid'=>17,':old_sid' =>17));
+//$result=$query->fetchField();
+
+$query=db_query("select comment from {workflow_node_history} where nid=:nid and sid=:sid and old_sid=:old_sid ", array(':nid' => $node->nid,':sid'=>16,':old_sid' =>16));
+	
+	while ($row = $query->fetchAssoc()) {
+		$com = $row['comment'];
+	}
+   	$submittermsg_subject = 'Your promotion status update:'.$status;
+	  
+	$submittermsg_body = <<<EOF
+	
+Dear {$sendername},
+
+	<p>The Promotion {$node->title} you submitted has been {$status1} by {$user_fields->name} on {$time}.</p>
+	
+	<p>Comments:<p>
+	
+	<p>{$com}</p>
+	
+	<p>You can click <a href= {$promonodeurl} > "Here" </a> to web site to check overall promotion approval status.</p>
+	
+    <p>If you have any questions on the approval result , you may directly contact the approver.</p> 
+
+    <p>Regards, </p>
+
+    Intel Solutions Directory Team
+EOF;
+$recipient = user_load($node->uid);
+	if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {	  
+	 $thread = privatemsg_new_thread(array($recipient), $submittermsg_subject, $submittermsg_body, $options = array());
+     $thread_id = $thread['message']->thread_id;	
+/*
+if(!empty($recipient->field_company)){
+                                                insert_user_company($thread_id, $recipient->field_company['und'][0]['target_id']); 
+                }	 */
+		     db_merge('pm_tags_index')
+          ->key(array(
+            'tag_id' => $tag_id,
+            'uid' => $recipient->uid,
+            'thread_id' => $thread_id,
+          ))
+          ->execute();
+		  
+	 $felds = array(
+          'pm_email_mid' => $thread_id,
+          //'pm_email_to' => $authordet->mail,
+		  'pm_email_to' => user_load($node->uid)->mail,
+          'pm_email_sender' => $user_fields->mail,
+          'pm_email_subject' => $submittermsg_subject,
+          'pm_email_message' => $submittermsg_body,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }	
+
+		}		
+		if(!empty($recipient->field_company)){
+			insert_user_company($thread_id, $recipient->field_company['und'][0]['target_id']);
+        }
+    }	   
+	
+		
+}
+
+
+
+
+
+/*update req*/
+
+
+
+//Notifications to fse from submitter
+
+function msg_to_fse($node, $tag_id){
+	
+  global $user;
+    $user_fields = user_load($user->uid);
+   // $nodeauthor = ($node->uid);
+    //$authordet = user_load($nodeauthor);
+	$nodeauthor = $node->nid;
+    $authordet = node_load($nodeauthor);
+	$authorcompanyid = $authordet->field_company['und']['0']['target_id'];
+	$authorcompname = node_load($authorcompanyid);
+	$promonodeurl = url(drupal_get_path_alias('node/' . $node->nid), array('absolute' => TRUE)); 
+  
+    $fserole = user_role_load_by_name('Intel Field Sales Engineer');
+    $selected_fseusers = getUsersRolesFSE($authorcompanyid);
+	
+	$fsemsg_subject = 'New Promotion submitted for your approval.';
+	//$d['author'] =  user_load(12549); 
+	
+	  $recipients = array();  
+      foreach ($selected_fseusers as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  $recipients[] = $recipient;		  
+
+      }
+    }     foreach($recipients as $key => $value){
+		$sendername = ucfirst($value->field_first_name['und'][0]['value']) . ' '. ucfirst($value->field_last_name['und'][0]['value']);
+		
+		$fsemsg_body= <<<EOF
+Dear {$sendername},
+
+<p>{$authorcompname->title} has submitted a new promotion.</p>
+
+<p>Please review this promotion details and confirm if OK to approve for admin review.</p>
+
+<p>You can click <a href= {$promonodeurl} > "Here" </a> to web site to check overall promotion approval status.</p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team.
+
+EOF;
+		
+		 
+	 $thread = privatemsg_new_thread(array($value), $fsemsg_subject, $fsemsg_body, $options = array() );
+     $thread_id = $thread['message']->thread_id;		 
+
+	 
+		     db_merge('pm_tags_index')
+          ->key(array(
+            'tag_id' => $tag_id,
+            'uid' => $recipient->uid,
+            'thread_id' => $thread_id,
+          ))
+          ->execute();
+		  
+        
+	
+	 $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => $user_fields->mail,
+          'pm_email_subject' => $fsemsg_subject,
+          'pm_email_message' => $fsemsg_body,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}
+		if(!empty($value->field_company)){
+             insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+        } 
+     }
+	 /*	 if(!empty($value->field_company)){
+                                                insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+                } */
+	}
+
+//Notifications to intel admin from submitter
+
+function msg_to_inteladmin($node, $tag_id){
+	
+  global $user;
+    $user_fields = user_load($user->uid);
+    //$nodeauthor = ($node->uid);
+    //$authordet = user_load($nodeauthor);
+	$nodeauthor = $node->nid;
+    $authordet = node_load($nodeauthor);
+	$authorcompanyid = $authordet->field_company['und']['0']['target_id'];
+	$authorcompname = node_load($authorcompanyid);
+	$promonodeurl = url(drupal_get_path_alias('node/' . $node->nid), array('absolute' => TRUE)); 
+  
+    $role = user_role_load_by_name('Intel Admin');
+	//$role = array();
+    //$selected_adminusers = getUsersAdmins($role->rid);
+	//$selected_adminusers = getUsersAdmins(9,36);
+	$selected_adminusers = getUsersAdmins(9,21,36);
+	
+	$intelmsg_subject = 'New Promotion submitted for your approval.';
+	  
+	
+	  $recipients = array();  
+      foreach ($selected_adminusers as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  $recipients[] = $recipient;		  
+
+      }
+    }     
+	foreach($recipients as $key => $value){
+		$sendername = ucfirst($value->field_first_name['und'][0]['value']) . ' '. ucfirst($value->field_last_name['und'][0]['value']);
+		
+		$intelmsg_body= <<<EOF
+Dear {$sendername},
+
+<p>{$authorcompname->title} has submitted a new promotion.</p>
+
+<p>Please review this promotion details and confirm if OK to release to public.</p> 
+
+<p>You can click <a href= {$promonodeurl} > "Here" </a> to web site to check overall promotion approval status.</p> 
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team.
+EOF;
+		
+	
+	 $thread = privatemsg_new_thread(array($value), $intelmsg_subject, $intelmsg_body, $options = array());
+     $thread_id = $thread['message']->thread_id;	
+//print_r($thread);exit;	 
+
+		     db_merge('pm_tags_index')
+          ->key(array(
+            'tag_id' => $tag_id,
+            'uid' => $recipient->uid,
+            'thread_id' => $thread_id,
+          ))
+          ->execute();  
+	
+	 $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => $user_fields->mail,
+          'pm_email_subject' => $intelmsg_subject,
+          'pm_email_message' => $intelmsg_body,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}
+		//print_r($value);exit;
+		//$user=user_load($value->uid);
+		if(!empty($value->field_company)){
+			insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+		}
+     }
+	}
+	
+	
+	// Notifications to Buyers on approval from intel admin
+
+function msgs_to_buyer($node, $tag_id)
+                {
+                global $user;
+                $user_fields = user_load($user->uid);
+
+                // $node = node_load($node);
+   $recipients = array();
+               // $nodeauthor = ($node->uid);
+               // $authordet = user_load($nodeauthor);
+				$nodeauthor = $node->nid;
+                $authordet = node_load($nodeauthor);
+                $authorcompanyid = $authordet->field_company['und']['0']['target_id'];
+                $promonodeurl = url(drupal_get_path_alias('node/' . $node->nid) , array(
+                                'absolute' => TRUE
+                ));
+				$authorcompname = node_load($authorcompanyid)->title;
+				$period2 = $node->field_promotion_period['und'][0]['value2'];
+                $buyermsg_subject = $node->title;
+				$d['author'] =  user_load($node->uid);
+				
+
+                foreach($node->field_select_view_buyer['und'] as $key => $value)
+                                {
+                                $user_mails = views_embed_view('promotionbuyercompanyuser', 'default', $value['target_id']); // listing mails
+                                $user_mails_data = json_decode(strip_tags($user_mails));
+
+                                // print_r($user_mails_data);exit;
+
+                                foreach($user_mails_data as $key => $value)
+                                                {
+
+                                                // print_r($value);exit;
+
+                                                $recipient = user_load_by_mail($value->mail);
+                                                if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false)
+                                                                {
+                                                                $recipients[] = $recipient;
+                                                                }
+                                                }
+                                }
+
+                foreach($recipients as $key => $value)
+                                {
+
+                                $sendername = ucfirst($value->field_first_name['und'][0]['value']) . ' '. ucfirst($value->field_last_name['und'][0]['value']);          
+                $buyermsg_body = <<<EOF
+Dear {$sendername},
+
+	<p>{$authorcompname} has released {$node->title} promotion, the deadline to participate in this promotion is {$period2}.</p>
+	
+<p>Detail Information:</p>
+
+<p>Should you find the designs you are interested in next level discussion please click on "I Want to join" to initiate your deal discussion with {$authorcompname} now!</p> 
+
+<p>For more questions about {$node->title} Promotion, please reach out to your Intel account managers for details.</p>
+
+<p>Please click <a href= {$promonodeurl} > "Here" </a> to view overall promotion.</p>
+
+<p>Regards, </p>
+ 
+Intel Partner Solution Directory Team
+
+
+EOF;
+                                $thread = privatemsg_new_thread(array(
+                                                user_load_by_mail($value->mail)
+                                ) , $buyermsg_subject, $buyermsg_body, $d);
+                                
+                                $thread_id = $thread['message']->thread_id;
+						/*		if(!empty($value->field_company)){
+                                                insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+                } */
+								
+                                db_merge('pm_tags_index')->key(array(
+                                                'tag_id' => $tag_id,
+                                                'uid' => $value->uid,
+                                                'thread_id' => $thread_id,
+                                ))->execute();
+                                $felds = array(
+                                                'pm_email_mid' => $thread_id,
+                                                'pm_email_to' => $value->mail,
+                                               // 'pm_email_sender' => $authordet->mail,
+												'pm_email_sender' => user_load($node->uid)->mail,
+                                                'pm_email_subject' => $buyermsg_subject,
+                                                'pm_email_message' => $buyermsg_body,
+                                                'pm_email_flag' => 'unsent',
+                                );
+                                $return_value = NULL;
+                                if (db_table_exists('pm_email_custom'))
+                                                {
+                                                try
+                                                                {
+                                                                $return_value = db_insert('pm_email_custom')->fields($felds)->execute();
+                                                                }
+
+                                                catch(Exception $e)
+                                                                {
+                                                                drupal_set_message(t('db_insert failed. Message = %message, query= %query', array(
+                                                                                '%message' => $e->getMessage() ,
+                                                                                '%query' => $e->query_string
+                                                                )) , 'error');
+                                                                }
+                                                }
+												if(!empty($value->field_company)){
+                                                insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);}
+                                }
+                }
+				
+				
+function promotionpublish_flag_flag($flag, $entity_id, $account, $flagging) {
+	$fserejflag = flag_get_flag('reject_flag_for_promotion');
+	$iaapprovflag = flag_get_flag('approval_intel_admin_');
+	$iarejflag = flag_get_flag('rejection_intel_admin_');
+	$fseapprovflag = flag_get_flag('approve_flag');
+	$tag_id =3;
+	
+	$flags = flag_get_user_flags('node');
+	
+	$node =node_load($entity_id);
+	$authorid = user_load($node->uid); //author of node
+	$recipient1 = user_load($account->uid); //logged in user 
+	if ($flag->is_flagged($node->nid))
+	
+	if(array_key_exists(12, $account->roles) || array_key_exists(11, $account->roles)) {
+if ($fseapprovflag->is_flagged($entity_id)){
+
+if ($recipient1->field_receive_members_email['und'][0]['value'] && $recipient1->status == 1 && privatemsg_is_disabled($recipient1) === false) {	 //logged in user
+			 msg_to_inteladmin(node_load($entity_id), $tag_id);
+}
+			 }
+	
+else if ($fserejflag->is_flagged($entity_id))	 {	 
+if ($recipient1->field_receive_members_email['und'][0]['value'] && $recipient1->status == 1 && privatemsg_is_disabled($recipient1) === false) {	//logged in user
+			 rejectmsgs_to_submitter_from_fse(node_load($entity_id), $tag_id);
+}
+			 }
+			 
+	}
+	
+	if(array_key_exists(9, $account->roles) || array_key_exists(36, $account->roles) || array_key_exists(21, $account->roles)) {
+ if ( ($iaapprovflag->is_flagged($entity_id)) || ($fseapprovflag->is_flagged($entity_id))  ){
+         	if ($recipient1->field_receive_members_email['und'][0]['value'] && $recipient1->status == 1 && privatemsg_is_disabled($recipient1) === false) {		 
+			 approvemsgs_to_submitter_from_admin(node_load($entity_id), $tag_id);
+			}
+			if ($authorid->field_receive_members_email['und'][0]['value'] && $authorid->status == 1 && privatemsg_is_disabled($authorid) === false) {	
+			 msgs_to_buyer(node_load($entity_id), $tag_id);
+			}
+			 
+			 foreach ($node->field_select_view_buyer['und'] as $key => $value){
+							        
+		                                  $felds = array(
+                                       'userid' => NULL ,
+										'username' => '' ,
+										'promotionid' => $entity_id,
+										'promotionname' => node_load($entity_id)->title,
+										'created' => 0,
+										'status' => 'Not Joined',
+										'subject' => (node_load($entity_id)->field_subject_english_['und']['0']['safe_value']) ? node_load($entity_id)->field_subject_english_['und']['0']['safe_value']:'',
+										'buyercompid' => $value,
+										'promotiontype' => 'Join',
+										);
+		try {
+											 $return_value = db_insert('joinpromoreport')
+												->fields($felds)
+												->execute();
+		}
+		catch (Exception $e) {
+        drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+  }
+													 
+}
+			 
+ }
+
+ else if ( ($iarejflag->is_flagged($entity_id)) || ($fserejflag->is_flagged($entity_id))){
+	 if ($recipient1->field_receive_members_email['und'][0]['value'] && $recipient1->status == 1 && privatemsg_is_disabled($recipient1) === false) {		
+         		 
+			 rejectmsgs_to_submitter_from_admin(node_load($entity_id), $tag_id);
+	 }
+			 
+			 }	 
+	}
+	
+	
+}
+
+/*
+function promotionpublish_flag_unflag($flag, $entity_id, $account, $flagging) {
+	$fserejflag = flag_get_flag('reject_flag_for_promotion');
+	$iaapprovflag = flag_get_flag('approval_intel_admin_');
+	$iarejflag = flag_get_flag('rejection_intel_admin_');
+	$tag_id =3;
+	$flags = flag_get_user_flags('node');
+	
+$flags = flag_get_user_flags('node');
+	
+	//$node =node_load($entity_id);
+if (isset($flags['approve_flag'])) {	 
+			 msg_to_inteladmin(node_load($entity_id), $tag_id);
+			 
+			 }
+	if (isset($flags['reject_flag_for_promotion'])) {	 
+			 rejectmsgs_to_submitter_from_fse(node_load($entity_id), $tag_id);
+			 
+			 }
+if (isset($flags['approval_intel_admin_'])) {
+          
+			 approvemsgs_to_submitter_from_admin(node_load($entity_id), $tag_id);
+			 
+			 }	 
+if (isset($flags['rejection_intel_admin_'])) {
+         	 
+			 rejectmsgs_to_submitter_from_admin(node_load($entity_id), $tag_id);
+			 
+			 }	 
+	
+}
+*/
+
+function insert_user_company($thread_id, $company_id){
+	//echo $thread_id." ".$company_id; exit();
+	$query = "SELECT title from node WHERE nid = ".$company_id;
+	$company_title = db_query($query)->fetchField();
+	$company = $company_title."(".$company_id.")";
+	//echo $company; exit();
+	$fields = array(
+            'entity_type' => 'privatemsg_message',
+            'bundle' => 'privatemsg_message',
+            'deleted' => 0,
+            'entity_id' => $thread_id,
+            'revision_id' => $thread_id,
+            'language' => 'und',
+			'delta' => 0,
+			'field_pvt_msg_to_company_value' => $company,
+			'field_pvt_msg_to_company_format' => NULL,
+          );
+ 
+
+          $return_value = NULL;
+		  if(db_table_exists('field_data_field_pvt_msg_to_company')){
+          try {
+            $return_value = db_insert('field_data_field_pvt_msg_to_company')
+                ->fields($fields)
+                ->execute();
+          }
+          catch (Exception $e) {
+            drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+          }
+		  }
+}
+
+	
+function promotionpublish_menu_alter(&$items){
+	
+	$items['promotionmanagement']['title callback'] = "promotion_title_callback";	
+}
+
+function promotion_title_callback(){
+	return "Manage My Promotion";
+}
+
+
+
+

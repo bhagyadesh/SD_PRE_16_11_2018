@@ -1,0 +1,235 @@
+// Theme Customizations to Forms/Webforms //
+label {
+	margin-right:20px;
+}
+input[type="radio"] {
+	margin:4px 2px 4px 0;
+}
+
+fieldset.collapsed {
+	height:auto !important;
+}
+
+.btn {
+	margin-left:10px;
+}
+
+.form-required {
+	color:#ee2931;
+}
+.form-actions {
+	text-align: right;
+}
+.form-submit {
+	margin-top:20px;
+}
+
+//Tabs
+.vertical-tabs-list {
+	width:200px;
+	float:left;
+	background:#f3f3f3;
+	margin-bottom:30px;
+	border-right:solid 1px #ebebeb;
+	li.vertical-tab-button {
+		width:200px;
+		border-bottom:solid 2px #fff;
+		a {
+			-webkit-border-radius: 0;
+			-moz-border-radius: 0;
+			border-radius: 0;
+			margin-right:0;
+		}
+	}
+	li.vertical-tab-button.first.active {
+		border-top:none;
+	}
+	li.vertical-tab-button.active {
+		border-top:solid 1px #ebebeb;
+		border-bottom:solid 1px #ebebeb;
+	}
+}
+
+.vertical-tabs {
+	border:solid 1px #ebebeb;
+}
+
+//User login
+#top-header {
+	#block-user-login {
+		color:#fff;
+		h2.block-title {
+			text-indent:-99999px;
+		}
+	}
+}
+
+
+//Admin
+body.page-admin {
+	.row {
+		margin-left:-15px;
+		margin-right:-15px;
+	}
+	.main-container {
+		width:1200px;
+		margin:30px auto auto auto;
+		h1.page-header {
+			margin-top:0;
+			border-bottom:none;
+			display:none; 	
+		}
+		.breadcrumb {
+			font-family: 'intel_clear_probold';
+		    font-size: 50px;
+		    text-transform: uppercase;
+		    color: #1273c2;
+		}
+	}
+}
+
+//Manage Users
+body.page-member-resource-center {
+	h1.page-header {
+		margin-top:0;
+		border-bottom:none;
+		display:none; 	
+	}
+	.breadcrumb {
+		font-family: 'intel_clear_probold';
+    	font-size: 50px;
+    	text-transform: uppercase;
+    	color: #1273c2;
+	}
+	.views-submit-button {
+    	text-align: right;
+   		float: none;
+	}
+	#edit-rid-wrapper {
+		width:25%;
+	}
+}
+
+//Add Solution
+body.page-node-add {
+	h1.page-header {
+		margin-top:0;
+		border-bottom:none;
+		display:none; 	
+	}
+	.breadcrumb {
+		font-family: 'intel_clear_probold';
+    	font-size: 50px;
+    	text-transform: uppercase;
+    	color: #1273c2;
+	}
+	#edit-field-categories-und {
+		.children {
+			margin-bottom:30px;
+		}
+	}
+}
+
+//Users
+body.page-user {
+	h1.page-header {
+		margin-top:0;
+		border-bottom:none;
+		display:none; 	
+	}
+	.breadcrumb {
+		font-family: 'intel_clear_probold';
+    	font-size: 50px;
+    	text-transform: uppercase;
+    	color: #1273c2;
+	}
+	h3 {
+		color:#1273c2;
+	}
+}
+
+//Edit
+body.page-node-edit {
+	h1.page-header {
+		margin-top:0;
+		border-bottom:none;
+		display:none; 	
+	}
+	.breadcrumb {
+		font-family: 'intel_clear_probold';
+    	font-size: 50px;
+    	text-transform: uppercase;
+    	color: #1273c2;
+	}
+}
+
+//Communications Announcements
+body.page-node-3651 {
+	h1.page-header {
+		margin-top:0;
+		border-bottom:none;
+		display:none; 	
+	}
+	.breadcrumb {
+		font-family: 'intel_clear_probold';
+    	font-size: 50px;
+    	text-transform: uppercase;
+    	color: #1273c2;
+	}
+	table {
+		tr {
+			td {
+				font-size:14px;
+				padding-right:20px;
+				img {
+					margin:auto;
+				}
+			}
+		}
+	}
+}
+
+//Login Modal
+#login-pop {
+	h2 {
+		margin-top:0;
+		text-align: center;
+	}
+	.sso-login {
+		text-align: center;
+	}
+	.login-form {
+		h3 {
+			text-align: center;
+			margin-bottom:40px;
+		}
+		.form-item-name {
+			width:42%;
+			float:left;
+			margin-right:20px;
+		}
+		.form-item-pass {
+			width:42%;
+			float:left;
+		}
+	}
+	.form-actions {
+		float:right;
+	}
+	.form-submit {
+		margin-top:26px;
+	}
+	.links {
+		clear:both;
+		a {
+			display:block;
+		}
+	}
+}
+
+//Search
+body.no-search-result {
+	aside.col-3 {
+		display:none;
+	}
+}

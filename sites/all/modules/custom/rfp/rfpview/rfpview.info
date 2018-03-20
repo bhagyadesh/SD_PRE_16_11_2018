@@ -1,0 +1,4 @@
+name  = RFP view Alter
+description  = RFP List page Proposal display
+core = 7.x
+package = RFP

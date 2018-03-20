@@ -1,0 +1,14 @@
+# Ignore configuration files that may contain sensitive information.
+sites/*/settings*.php
+sites/*/local*.php
+
+.DS_Store
+.idea
+# Ignore paths that contain user-generated content.
+sites/*/files
+sites/*/private
+
+# Ignore intel-bootstrap SASS files
+sites/all/themes/custom/intel_bootstrap/bootstrap-sass
+sites/all/themes/custom/intel_bootstrap/bower_components
+sites/all/themes/custom/intel_bootstrap/node_modules

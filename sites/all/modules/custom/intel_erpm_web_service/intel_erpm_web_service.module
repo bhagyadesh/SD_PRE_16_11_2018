@@ -1,0 +1,107 @@
+<?php
+// intel_ea_web_service.module
+
+/**
+ * Implementation of hook_services_resources().
+ */
+function intel_erpm_web_service_services_resources() {
+  return array(
+    'erpm_user_detail' => array(
+      'index' => array(
+        'help' => 'Retrieves a user',
+        'file' => array('file' => 'inc', 'module' => 'intel_erpm_web_service'),
+        'callback' => 'get_erpm_user_details',
+		'access callback' => 'intel_erpm_web_service_services_access',
+        'access arguments' => array('access content'),
+        'access arguments append' => FALSE,
+        'args' => array(
+					array(
+						'name' => 'loginid',
+						'type' => 'string',
+						'description' => 'The loginid of user to fetch details from ERPM',
+						'source' => array('data' => 'loginid'),
+						'optional' => TRUE,
+						)						
+        ),
+      ),
+	  /*'actions' => array(
+        'update' => array(
+          'help' => 'Update user record',
+          'file' => array('file' => 'inc', 'module' => 'intel_erpm_web_service'),
+          'callback' => 'get_erpm_user_details',
+          'access callback' => 'intel_erpm_web_service_services_access',
+          'access arguments' => array('access content'),
+          'access arguments append' => TRUE,
+          'args' => array(
+            array(
+              'name' => 'loginid',
+              'type' => 'string',
+              'description' => 'The loginid of user to fetch details from ERPM',
+              'source' => array('data' => 'loginid'),
+              'optional' => FALSE,
+            ),
+          ),
+        )
+    )*/
+	'actions' => array(
+        'update' => array(
+          'help' => 'Update user record',
+          'file' => array('file' => 'inc', 'module' => 'intel_erpm_web_service'),
+          'callback' => 'get_erpm_user_details',
+          'access callback' => 'intel_erpm_web_service_services_access',
+          'access arguments' => array('access content'),
+          'access arguments append' => TRUE,
+          'args' => array(
+            array(
+              'name' => 'userid',
+              'type' => 'array',
+              'description' => 'The loginid of user to fetch details from ERPM',
+              'source' => 'data',
+              'optional' => FALSE,
+            ),
+          ),
+        )
+    )
+   ),
+   
+   'erpm_company_detail' => array(
+	  'actions' => array(
+        'update_company' => array(
+          'help' => 'Update company record',
+          'file' => array('file' => 'inc', 'module' => 'intel_erpm_web_service'),
+          'callback' => 'update_erpm_company_details',
+          'access callback' => 'intel_erpm_web_service_services_access',
+          'access arguments' => array('access content'),
+          'access arguments append' => TRUE,
+          'args' => array(
+            array(
+              'name' => 'company',
+              'type' => 'array',
+              'description' => 'company obj',
+              'source' => 'data',
+              'optional' => FALSE,
+            ),
+          ),
+        )
+    )
+   )
+  );
+}
+
+/**
+ * Implements hook_permission().
+ */
+function intel_erpm_web_service_permission(){
+	return array(
+    'access_intel_erpm_web_service' => array(
+      'title' => t('Access Intel ERPM Webservice'),
+      'description' => t('Accessing ERPM web service is restricted to users with this permission.')
+		)
+	);
+}
+
+function intel_erpm_web_service_cron() {
+	ini_set('memory_limit', '2G');
+    $result = db_truncate('watchdog')->execute();
+}
+?>

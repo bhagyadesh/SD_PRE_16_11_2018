@@ -1,0 +1,1863 @@
+<?php
+
+
+/**
+ * Implements hook_cron().
+ * function proposalnotification_cron()
+ */
+function proposalnotification_cron() {
+
+//reminder msg to admin/builder if proposal is in draft and is not submitted by builder 
+$query_result = db_query("select n.nid, n.uid, wn.sid, n.created, n.title from {node} n join {workflow_node} wn on wn.nid = n.nid where n.status = :status and n.type = :type and wn.sid = :sid", array(':status' => 1 , ':type' => 'proposal', ':sid' => 12));
+	 
+	 while ($row = $query_result->fetchAssoc()) {
+		 
+            $node_id = $row['nid']; 
+            $proObj = node_load($node_id);	
+            $rfpObj = node_load($proObj->field_requirement['und'][0]['value']);	
+//chek rfp workflow is published
+  	$query = db_query('SELECT w.sid FROM {workflow_node} w WHERE w.nid = :nid LIMIT 1', array(':nid' => $proObj->field_requirement['und'][0]['value']));
+    $result = $query->fetchAll(); 
+    $sidresult = $result[0]->sid;
+if($sidresult == 10)		{
+
+	        $node_created_time = $row['created'];
+            $day_diff = time() - $node_created_time;         
+            $SLA_days = floor($day_diff/86400);  //  number of days 
+            $hours = round(($day_diff)/3600, 1);  ////  number of hours	
+
+	//if($hours >=1  and $hours <= 10){		
+if($SLA_days == 3 or $SLA_days == 6){ // If 3 or 6  days
+
+  mail_to_builderfsefae_noupdateof_proposal_for_3days(node_load($node_id), 4);
+  mail_to_admin_noupdateof_proposal_for_3days(node_load($node_id), 4);  
+
+}
+}	
+			
+     }
+	 
+//proposal reminder mail to admin/fse if proposal has not received any feedback by buyer
+$query_result = db_query("select n.nid, n.uid, wn.sid, n.created, n.title from {node} n join {workflow_node} wn on wn.nid = n.nid where n.status = :status and n.type = :type and wn.sid = :sid", array(':status' => 1 , ':type' => 'proposal', ':sid' => 13));
+	 while ($row = $query_result->fetchAssoc()) {
+		 
+		 	$node_created_time = $row['created'];
+            $day_diff = time() - $node_created_time;         
+            $SLA_days = floor($day_diff/86400);  //  number of days 
+            $hours = round(($day_diff)/3600, 1); ////  number of hours				
+	//if($hours >=1  and $hours <= 10){	
+if($SLA_days == 3 or $SLA_days == 6){
+			 
+		 			  $prop1 = node_load($row['nid']);
+		 				
+				if(empty($prop1->field_approver)){
+					 mail_to_admin_noupdateof_proposalfeedback_for_3days($prop1, 4);
+					 mail_to_buyerfse_noupdateof_proposalfeedback_for_3days($prop1, 4);
+				 }
+}
+		 
+
+	 } 	 
+}
+
+/**
+ * Implements hook_form_alter
+ * Alter proposal node
+ */
+function proposalnotification_form_alter(&$form, &$form_state, $form_id) {
+
+  global $user;
+  $user_fields = user_load($user->uid);
+
+
+  
+  if ($form_id == 'proposal_node_form') {
+
+   $url = $_SERVER['REQUEST_URI'];
+    $url = explode('/', $url);
+    $url = $url[4];  
+    $node = $form_state['node'];
+    $sid_draft = 12;
+	$sid_published = 13;	
+	hide($form['actions']['submit']);
+	
+	//Allow only builder company match with logged user company, except admin, intel admin
+	  if (!isset($node->nid) || isset($node->is_new)){}
+	  else{
+				  $proposalnode = node_load($node->nid);  
+
+
+		  $items_ap = field_get_items('node', $proposalnode, 'field_approver');
+		  		 foreach ($items_ap as $item) {
+				   $fc = field_collection_field_get_entity($item);
+				 }
+		$old_approval_status = $fc->field_approval_status['und'][0]['value'] ? $fc->field_approval_status['und'][0]['value'] : "NA";
+		$form_state['old_approval_status'] = $old_approval_status;
+		/**
+		if($approval_status == "Accept"){
+			    $form['field_approver']['#access'] = 0;
+				hide($form['actions']);
+		drupal_set_message('You are not authorized to edit after Proposal accepted');
+        drupal_goto();
+		}	
+         **/		
+		 $prop1 = node_load(array_keys($result['node'])[0]);
+		 /**
+         if (!isset($url)){
+			 if($user_fields->field_company['und']['0']['target_id'] != $proposalnode->field_builder['und'][0]['value']) {
+				 //allow Administrator, Intel Admin , Intel Field Applications Engineer, ODM Intel Admin
+			  if (!array_key_exists(21, $user_fields->roles) || !array_key_exists(9, $user_fields->roles) || !array_key_exists(11, $user_fields->roles) || !array_key_exists(36, $user_fields->roles)){
+		         drupal_set_message('You are not authorized to edit that Proposal');
+                 drupal_goto('/');
+			  }
+		     }
+         } **/
+
+	  }	
+	$form['field_approver']['#access'] = 0; 
+    $form['field_requirement']['#access'] = 0;
+    $form['field_sub_requirement']['#access'] = 0;
+    $form['field_builder']['#access'] = 0;
+    $form['field_builder_source']['#access'] = 0;
+    $form['actions']['submit']['#value'] = t('Publish Proposal');
+	$mailfield = field_get_items('node', node_load($node->nid), 'field_builder_mail');
+
+    if ($mailfield) {}
+    else {
+	 $form['field_builder_mail']['und']['0']['email']['#default_value'] = $user_fields->mail;
+    }
+    $form['field_builder_mail']['#access'] = 0;
+    hide($form['actions']['submit']);
+    hide($form['actions']['delete']);
+    //hide($form['actions']['preview']);
+    hide($form['actions']['preview_changes']);
+	$form['field_po_proposal']['#attributes']['style'][] = 'display:none;';	  
+    if ((isset($url) && $url == 'buyer')) {
+      $form['proposal'] = array('#markup' => views_embed_view('proposalnode', 'default', arg(1)));
+      $form['field_approver']['#access'] = 1;
+      $form['title']['#access'] = 0;
+      $form['field_price']['#access'] = 0;
+      $form['field_recommended_products']['#access'] = 0;
+	  $form['field_proposal_information']['#access'] = 0;
+      $form['field_proposal_product']['#access'] = 0;
+      $form['metatags']['#access'] = 0;
+      $form['path']['#access'] = 0;
+      $form['xmlsitemap']['#access'] = 0;
+      $form['redirect']['#access'] = 0;
+	  $form['field_po_proposal']['#attributes']['style'][] = 'display:none;';
+	  hide($form['field_website']);
+
+      hide($form['revision_information']);
+      hide($form['author']);
+	  
+	  		  $proposalnode = node_load($node->nid);
+		  $items_ap = field_get_items('node', $proposalnode, 'field_approver');
+		  		 foreach ($items_ap as $item) {
+				   $fc = field_collection_field_get_entity($item);
+				 }
+		$approval_status = $fc->field_approval_status['und'][0]['value'] ? $fc->field_approval_status['und'][0]['value'] : "NA";
+		if($approval_status == "Accept"){
+			    $form['field_approver']['#access'] = 0;
+				hide($form['actions']);
+		//drupal_set_message('You are not authorized to edit after Proposal accepted');
+       // drupal_goto();
+		}	
+	  
+	  $form['actions']['responsestatus'][] = array(
+        '#type' => 'submit',
+        '#value' => t('Accept Proposal'),
+ 		'#attributes' => array('class' => array('proposalstatuschange')),
+        '#validate' => array('node_form_validate'),
+        // Use default and an additional submit handler.
+        '#submit' => array('node_form_submit', 'proposalnotification_form_submit'),
+      );
+
+	  $form['actions']['responsestatus'][] = array(
+        '#type' => 'submit',
+        '#value' => t('Reject'),
+ 	    '#attributes' => array('class' => array('proposalstatuschange')),		
+        '#validate' => array('node_form_validate'),
+        // Use default and an additional submit handler.
+        '#submit' => array('node_form_submit', 'proposalnotification_form_submit'),
+      );
+	   $form['actions']['responsestatus'][] = array(
+        '#type' => 'submit',
+        '#value' => t('Update Required'),
+		'#attributes' => array('class' => array('proposalstatuschange')),
+        '#validate' => array('node_form_validate'),
+        // Use default and an additional submit handler.
+        '#submit' => array('node_form_submit', 'proposalnotification_form_submit'),
+      );	  
+	  	       //print_r($form['actions']);
+   foreach ($form['field_approver']['und'] as $delta => $field) {
+     if (is_numeric($delta)) {
+   $form['field_approver']['und'][$delta]['field_proposal_approver']['und'][$delta]['value']['#default_value'] = $user_fields->name;
+   //print_r($form['field_approver']['und'][$delta]['field_approver_date']['und']);
+   $form['field_approver']['und'][$delta]['field_approver_date']['und'][$delta]['#default_value']['value'] = format_date(strtotime('now'), 'custom', 'Y-m-d H:i:s', 'UTC');
+      }
+    }
+	
+    }
+
+    if (!isset($url) || empty($url)) {
+		
+ 
+      $form['field_approver']['#access'] = 0;
+	  $form['field_po_proposal']['#access'] = 0;
+
+     // if (!array_key_exists(9, $user_fields->roles) && !array_key_exists(11, $user_fields->roles) && !array_key_exists(36, $user_fields->roles)) {
+      //  $form['field_builder_mail']['und']['0']['value']['#default_value'] = $user_fields->mail;
+      //}
+
+     
+	// custom workflow button
+  	$query = db_query('SELECT w.sid FROM {workflow_node} w WHERE w.nid = :nid LIMIT 1', array(':nid' => $proposalnode->nid));
+    $result = $query->fetchAll(); 
+    $sidresult = $result[0]->sid;	
+
+	if($sidresult != 13){
+		  $form['actions']['wfdraft'][] = array(
+        '#type' => 'submit',
+        '#value' => t('Save as Draft'),
+        '#weight' => -10,
+		'#attributes' => array('class' => array('proposalwfstatuschange')),
+        '#validate' => array('node_form_validate'),
+        // Use default and an additional submit handler.
+        '#submit' => array('node_form_submit', 'proposalnotification_form_submit'),
+      );
+		
+	}
+
+	  $form['actions']['wfpublish'][] = array(
+        '#type' => 'submit',
+        '#value' => t('Publish Proposal'),
+        '#weight' => -10,
+ 		'#attributes' => array('class' => array('proposalwfstatuschange')),		
+        '#validate' => array('node_form_validate'),
+        // Use default and an additional submit handler.
+        '#submit' => array('node_form_submit', 'proposalnotification_form_submit'),
+      );		  
+    }
+
+    $form['actions']['submit']['#submit'][] = 'proposalnotification_form_submit';
+  }
+}
+
+function getUsersByRoles($rid = 1) { // rid = Role Id from users_roles table
+  $query = db_select('users', 'u');
+  $query->fields('u', array('uid', 'name'));
+  $query->innerJoin('users_roles', 'r', 'r.uid = u.uid');
+  $query->condition('r.rid', $rid);
+  $query->orderBy('u.name');
+
+  $result = $query->execute();
+
+
+  $users = array();
+  foreach ($result as $user) {
+    $users[] = $user;
+  }
+
+  return $users;
+}
+
+function getUsersByMultiRoles($rid) { // rid = Role Id from users_roles table
+  $query = db_select('users', 'u');
+  $query->fields('u', array('uid', 'name'));
+  $query->innerJoin('users_roles', 'r', 'r.uid = u.uid');
+  $query->condition('r.rid', $rid, 'IN');
+  $query->orderBy('u.name');
+  $query->distinct();
+  $result = $query->execute();
+
+
+  $users = array();
+  foreach ($result as $user) {
+    $users[] = $user;
+  }
+
+  return $users;
+}
+
+function getUsersByRolesperCompany($rid, $company) { // rid = Role Id from users_roles table
+  
+  $users = array();
+  $query = db_select('users', 'u');
+  $query->fields('u', array('uid', 'name'));
+  $query->innerJoin('users_roles', 'r', 'r.uid = u.uid');
+  $query->leftJoin('field_data_field_company','company','u.uid = company.entity_id');
+  $query->condition('company.entity_type','user');
+  $query->condition('company.field_company_target_id',$company,'=');
+  $query->condition('r.rid', $rid);
+  $query->orderBy('u.name');
+
+  $results = $query->execute();
+
+  foreach ($results as $user) {
+    $users[] = $user;
+  }
+
+  return $users;
+
+}
+function getUsersByCompany($company) { // rid = Role Id from users_roles table
+  
+  $users = array();
+  $query = db_select('users', 'u');
+  $query->fields('u', array('uid', 'name'));
+  $query->leftJoin('field_data_field_company','company','u.uid = company.entity_id');
+  $query->condition('company.entity_type','user');
+  $query->condition('company.field_company_target_id',$company,'=');
+  $query->orderBy('u.name');
+
+  $results = $query->execute();
+
+  foreach ($results as $user) {
+    $users[] = $user;
+  }
+
+  return $users;
+
+}
+
+
+function proposalnotification_node_validate($node, $form, &$form_state) {
+	if($node->type == 'proposal'){
+	if(empty($form_state['values']['field_proposal_information']['und'][0]['field_rfp_attachment']['und'][0]['fid'])){
+	form_set_error('field_proposal_information',t('Proposal Information attachement field is required'));
+	//drupal_set_message(t('Proposal Information attachement field is required'));
+	}
+	}
+	
+	if ($node->type == 'rfp') {
+		if(strlen($form_state['values']['field_rfp_product']['und'][0]['field_estimated_time_of_delivery']['und'][0]['value']) == 0){
+			form_set_error('field_estimated_time_of_delivery',t('Estimated time of delivery of the product is required.'));
+		}
+	}
+}
+
+
+/**
+ * Implements hook_form_submit
+ * Implements submit handler to send message notification while submitting proposal node
+ */
+function proposalnotification_form_submit(&$form, &$form_state) {
+
+  global $user;
+  $user_fields = user_load($user->uid);
+  $node = $form_state['node'];
+  $nid = $form_state['values']['nid'];
+  $rfpnode = node_load($node->field_requirement['und']['0']['value']);
+
+  $url = $_SERVER['REQUEST_URI'];
+  $url = explode('/', $url);
+  $url = $url[4];
+  $tag_id = 4;
+  
+
+  $sid_draft = 12;
+  $sid_published = 13;
+  // check custom workflow
+  //if($form_state['values']['op'] == 'Draft')
+ // workflow_execute_transition($node, $sid_draft, $comment = NULL, $force = FALSE);
+  //if($form_state['values']['op'] == 'Published')
+  //workflow_execute_transition($node, $sid_published, $comment = NULL, $force = FALSE);
+  $workflow_state = node_load($nid)->workflow_state_name;
+  	$query = db_query('SELECT w.sid FROM {workflow_node} w WHERE w.nid = :nid LIMIT 1', array(':nid' => $nid));
+    $result = $query->fetchAll(); 
+    $sidresult = $result[0]->sid;
+
+  //Notifications of approval form 
+  if ($sidresult == 13 && (isset($url) && $url == 'buyer')) {
+	  
+   if ($user_fields->field_receive_members_email['und'][0]['value'] && $user_fields->status == 1 && privatemsg_is_disabled($user_fields) === false) {
+ //buyer review proposal, mail to buyer odm admin
+  mail_to_admin_from_buyer_reviewproposal(node_load($nid), $tag_id, $form_state, $old_status = $form_state['old_approval_status']);
+  //buyer review proposal, mail to buyer fse admin
+ // mail_to_fseadmin_from_buyer_reviewproposal(node_load($nid), $tag_id, $form_state, $old_status = $form_state['old_approval_status']);
+ //buyer review proposal, mail to buyer fae admin
+ // mail_to_faeadmin_from_buyer_reviewproposal(node_load($nid), $tag_id, $form_state, $old_status = $form_state['old_approval_status']);
+  
+   //buyer review proposal, mail to buyer fae admin
+  mail_to_faefseadmin_from_buyer_reviewproposal(node_load($nid), $tag_id, $form_state, $old_status = $form_state['old_approval_status']);
+  
+  //buyer review proposal, mail to buyer fse admin
+  mail_to_builder_from_buyer_reviewproposal(node_load($nid), $tag_id, $form_state, $old_status = $form_state['old_approval_status']);
+   }
+
+  $form_state['redirect'] = $_SERVER['HTTP_REFERER'];
+  }
+  else if ($sidresult == 13) {
+   if ($user_fields->field_receive_members_email['und'][0]['value'] && $user_fields->status == 1 && privatemsg_is_disabled($user_fields) === false) {
+	//notification to inteladmins when the proposal is published
+	mail_to_builderadmin_submitproposal(node_load($nid),$tag_id);
+	//notification to fse admins when the proposal is published
+   // mail_to_builder_fseadmin_submitproposal(node_load($nid), $tag_id);
+	//notification to fae admins when the proposal is published
+   // mail_to_builder_faeadmin_submitproposal	(node_load($nid), $tag_id);
+		//notification to fae fse admins when the proposal is published
+    mail_to_builder_fseafaedmin_submitproposal	(node_load($nid), $tag_id);
+	
+    mailto_buyer_submit_proposal(node_load($nid), $tag_id);
+   }
+
+
+  }
+}
+
+//builder to odm 
+function mail_to_builderadmin_submitproposal($node, $tag_id){
+    
+	global $user;
+    $user_fields = user_load($user->uid);
+	$role = user_role_load_by_name('ODM Intel Admin');
+	//$selected_users  = getUsersByRolesperCompany($role->rid, $node->field_builder['und'][0]['value']);
+	//$selected_users  = getUsersByRoles($role->rid);	
+	$selected_users  = getUsersByMultiRoles(array(9, 36));	// intel admin. odm admin 	
+    $intelnodeurl = url(drupal_get_path_alias('manageproposal/' . $node->field_requirement['und'][0]['value'].'/'.$node->field_builder['und'][0]['value']), array('absolute' => TRUE));
+    $companyObj = node_load($node->field_builder['und'][0]['value']);
+    $rfpObj = node_load($node->field_requirement['und'][0]['value']);
+    $msg_subject = $companyObj->tilte.' submitted proposal for '.$rfpObj->title;
+	
+      $recipients = array();
+    //notification to inteladmins when the proposal is published
+    foreach ($selected_users as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  $recipients[] = $recipient;		  
+      }
+    }
+     
+
+	foreach($recipients as $key => $value){
+		
+
+        $sendername = $value->field_first_name['und'][0]['value'] . ' '. $value->field_last_name['und'][0]['value'];
+
+$intelmsg_body= <<<EOF
+Dear {$sendername},
+
+<p>{$companyObj->tilte} submitted proposal for {$rfpObj->title}.</p>
+
+<p>Please visit <a href= {$intelnodeurl} >"Here"</a> to review the proposal.</p>
+
+<p>If you have any questions, please contact us via IntelConnectSupport@intel.com</p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team
+EOF;
+	$thread = privatemsg_new_thread(array($value), $msg_subject, $intelmsg_body, $options = array());
+    $thread_id = $thread['message']->thread_id;	
+       if(!empty($value->field_company)){
+            insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+       }	
+        db_merge('pm_tags_index')
+            ->key(array(
+              'tag_id' => $tag_id,
+              'uid' => $value->uid,
+              'thread_id' => $thread_id,
+            ))
+            ->execute();
+				
+        $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => $user_fields->mail,
+          'pm_email_subject' => $msg_subject,
+          'pm_email_message' => $intelmsg_body,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}				
+	}
+
+
+}
+
+//builder review proposal, mail to buyer fae admin
+function mail_to_faeadmin_from_buyer_reviewproposal($node, $tag_id, $form_state, $old_status){
+	
+  	global $user;
+    $user_fields = user_load($user->uid);
+    $rfpObj = node_load($node->field_requirement['und'][0]['value']);
+	$role = user_role_load_by_name('Intel Field Applications Engineer');
+	//$selected_users  = getUsersByRolesperCompany($role->rid, $rfpObj->field_buyer_company['und'][0]['value']);
+	$selected_users  = getUsersByFAECompany($role->rid, $rfpObj->field_buyer_company['und'][0]['value']);	
+    $companyObj = node_load($node->field_builder['und'][0]['value']);
+    $nodeurlbuyer = url(drupal_get_path_alias('node/' . $node->nid. '/edit/buyer'), array('absolute' => TRUE));  
+    $buyerCompany = node_load($rfpObj->field_buyer_company['und'][0]['value'])->title;
+	$msg_subject = $buyerCompany->title .' '. $rfpObj->title . ' status modification';
+	$items_ap = field_get_items('node', $node, 'field_approver');
+	foreach ($items_ap as $item) {
+				   $fc = field_collection_field_get_entity($item);
+	}	
+    $status = '';
+    if($form_state['values']['op'] == 'Accept Proposal'){
+	   $status = 'Accepted';
+	   $po = "PO quantity (". $form_state['values']['field_po_proposal']['und'][0]['value'] .")";	   
+    }
+    if($form_state['values']['op'] == 'Update Required'){
+      $status = 'Update Required';
+    }
+    if($form_state['values']['op'] == 'Reject'){
+      $status = 'Rejected';
+    }
+
+    $recipients = array();
+
+    foreach ($selected_users as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  		  $recipients[] = $recipient;
+
+ 	
+
+      }
+    }
+
+       foreach($recipients as $key => $value){
+		   
+
+			 $sendername = $value->field_first_name['und'][0]['value'] . ' '. $value->field_last_name['und'][0]['value'];
+
+$msg_body_intel= <<<EOF
+Dear {$sendername},
+
+<p>Please note {$buyerCompany->title}  has updated proposal status from {$old_status} to {$status} for {$rfpObj->title}. </p>
+Comment detail:</p>
+{$fc->field_description['und'][0]['value']}
+
+<p>{$po}</p>
+
+<p>To view the proposal submitted, please check the update <a href= {$nodeurlbuyer} >"Here"</a>.</p>
+
+<p>If you have any questions, please contact your support team via IntelConnectSupport@intel.com</p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team
+EOF;
+        $thread = privatemsg_new_thread(array($value), $msg_subject, $msg_body_intel, $options = array());
+        $thread_id = $thread['message']->thread_id;		
+       if(!empty($value->field_company)){
+            insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+       }		
+       db_merge('pm_tags_index')
+            ->key(array(
+              'tag_id' => $tag_id,
+              'uid' => $value->uid,
+              'thread_id' => $thread_id,
+            ))
+            ->execute();
+			
+        $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => $user_fields->mail,
+          'pm_email_subject' => $msg_subject,
+          'pm_email_message' => $msg_body_intel,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}			
+	}
+
+}
+
+  
+	  
+	  
+//builder review proposal, mail to buyer fae admin
+function mail_to_faefseadmin_from_buyer_reviewproposal($node, $tag_id, $form_state, $old_status){
+	
+  	global $user;
+    $user_fields = user_load($user->uid);
+    $rfpObj = node_load($node->field_requirement['und'][0]['value']);
+	$role = user_role_load_by_name('Intel Field Applications Engineer');
+	//$selected_users  = getUsersByRolesperCompany($role->rid, $rfpObj->field_buyer_company['und'][0]['value']);
+	$selected_users  = getUsersByFAEFSECompany($role->rid, $rfpObj->field_buyer_company['und'][0]['value']);	
+    $companyObj = node_load($node->field_builder['und'][0]['value']);
+    $nodeurlbuyer = url(drupal_get_path_alias('node/' . $node->nid. '/edit/buyer'), array('absolute' => TRUE));  
+    $buyerCompany = node_load($rfpObj->field_buyer_company['und'][0]['value'])->title;
+	$msg_subject = $buyerCompany->title .' '. $rfpObj->title . ' status modification';
+	$items_ap = field_get_items('node', $node, 'field_approver');
+	foreach ($items_ap as $item) {
+				   $fc = field_collection_field_get_entity($item);
+	}	
+    $status = '';
+    if($form_state['values']['op'] == 'Accept Proposal'){
+	   $status = 'Accepted';
+	   $po = "PO quantity (". $form_state['values']['field_po_proposal']['und'][0]['value'] .")";
+	   $msg_subject = 'Your proposal to RFP '. $rfpObj->title . ' has been accepted.' ;	 
+	   $intro = $buyerCompany . ' has accepted your proposal to RFP '.$rfpObj->title . '.';  	   
+    }
+    if($form_state['values']['op'] == 'Update Required'){
+      $status = 'Update Required';
+	   	  $msg_subject = 'Your proposal to RFP '. $rfpObj->title . ' has been requested to update.' ;
+	  $intro = $buyerCompany . ' has requested an update your proposal to RFP '.$rfpObj->title . '.';	  
+    }
+    if($form_state['values']['op'] == 'Reject'){
+      $status = 'Rejected';
+	  $msg_subject = 'Your proposal to RFP '. $rfpObj->title . ' has been rejected.' ;	 
+	  $intro = $buyerCompany . ' has rejected your proposal to RFP '.$rfpObj->title . '.';		  
+    }
+
+    $recipients = array();
+
+    foreach ($selected_users as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  		  $recipients[] = $recipient;
+
+ 	
+
+      }
+    }
+
+       foreach($recipients as $key => $value){
+		   
+
+			 $sendername = $value->field_first_name['und'][0]['value'] . ' '. $value->field_last_name['und'][0]['value'];
+
+$msg_body_intel= <<<EOF
+Dear {$sendername},
+
+<p>{$intro}. </p>
+<p>Comment detail:</p>
+{$fc->field_description['und'][0]['value']}
+
+<p>{$po}</p>
+
+<p>To view the proposal submitted, please check the update <a href= {$nodeurlbuyer} >"Here"</a>.</p>
+
+<p>If you have any questions, please contact your support team via IntelConnectSupport@intel.com</p>
+
+<p>Regards, </p>
+
+IntelConnectSupport@intel.com
+EOF;
+        $thread = privatemsg_new_thread(array($value), $msg_subject, $msg_body_intel, $options = array());
+        $thread_id = $thread['message']->thread_id;		
+       if(!empty($value->field_company)){
+            insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+       }		
+       db_merge('pm_tags_index')
+            ->key(array(
+              'tag_id' => $tag_id,
+              'uid' => $value->uid,
+              'thread_id' => $thread_id,
+            ))
+            ->execute();
+			
+        $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => $user_fields->mail,
+          'pm_email_subject' => $msg_subject,
+          'pm_email_message' => $msg_body_intel,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}			
+	}
+
+}
+
+//builder to fse odm 
+function mail_to_builder_fseadmin_submitproposal($node, $tag_id){
+    
+	global $user;
+    $user_fields = user_load($user->uid);
+	$role = user_role_load_by_name('Intel Field Sales Engineer');
+	//$selected_users  = getUsersByRoles($role->rid);
+	//$selected_users  = getUsersByRolesperCompany($role->rid, $node->field_builder['und'][0]['value']);	
+	$selected_users  = getUsersByFSECompany($role->rid, $node->field_builder['und'][0]['value']);		
+	$intelnodeurl = url(drupal_get_path_alias('manageproposal/' . $node->field_requirement['und'][0]['value'].'/'.$node->field_builder['und'][0]['value']), array('absolute' => TRUE));
+    $companyObj = node_load($node->field_builder['und'][0]['value']);
+    $rfpObj = node_load($node->field_requirement['und'][0]['value']);
+    $msg_subject = $companyObj->tilte.' submitted proposal for '.$rfpObj->title;
+   
+	
+      $recipients = array();
+    //notification to inteladmins when the proposal is published
+    foreach ($selected_users as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  $recipients[] = $recipient;		  
+      }
+    }
+     
+	
+	foreach($recipients as $key => $value){
+		
+
+        $sendername = $value->field_first_name['und'][0]['value'] . ' '. $value->field_last_name['und'][0]['value'];
+
+$intelmsg_body= <<<EOF
+Dear {$sendername},
+
+<p>{$companyObj->tilte} submitted proposal for {$rfpObj->title}.</p>
+
+<p>Please visit <a href= {$intelnodeurl} >"Here"</a> to review the proposal.</p>
+
+<p>If you have any questions, please contact us via IntelConnectSupport@intel.com</p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team
+EOF;
+
+	$thread = privatemsg_new_thread(array($value), $msg_subject, $intelmsg_body, $options = array());
+    $thread_id = $thread['message']->thread_id;
+       if(!empty($value->field_company)){
+            insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+       }	
+        db_merge('pm_tags_index')
+            ->key(array(
+              'tag_id' => $tag_id,
+              'uid' => $value->uid,
+              'thread_id' => $thread_id,
+            ))
+            ->execute();				
+        $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => $user_fields->mail,
+          'pm_email_subject' => $msg_subject,
+          'pm_email_message' => $intelmsg_body,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}				
+	}
+
+}
+
+
+//builder to fse odm 
+function mail_to_builder_fseafaedmin_submitproposal($node, $tag_id){
+    
+	global $user;
+    $user_fields = user_load($user->uid);
+	$role = user_role_load_by_name('Intel Field Sales Engineer');
+	//$selected_users  = getUsersByRoles($role->rid);
+	//$selected_users  = getUsersByRolesperCompany($role->rid, $node->field_builder['und'][0]['value']);	
+	$selected_users  = getUsersByFAEFSECompany($role->rid, $node->field_builder['und'][0]['value']);		
+	$intelnodeurl = url(drupal_get_path_alias('manageproposal/' . $node->field_requirement['und'][0]['value'].'/'.$node->field_builder['und'][0]['value']), array('absolute' => TRUE));
+    $companyObj = node_load($node->field_builder['und'][0]['value']);
+    $rfpObj = node_load($node->field_requirement['und'][0]['value']);
+    $msg_subject = $companyObj->tilte.' submitted proposal for '.$rfpObj->title;
+   
+
+
+	
+      $recipients = array();
+    //notification to inteladmins when the proposal is published
+    foreach ($selected_users as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  $recipients[] = $recipient;		  
+      }
+    }
+     
+	
+	foreach($recipients as $key => $value){
+		
+
+        $sendername = $value->field_first_name['und'][0]['value'] . ' '. $value->field_last_name['und'][0]['value'];
+
+$intelmsg_body= <<<EOF
+Dear {$sendername},
+
+<p>{$companyObj->tilte} submitted proposal for {$rfpObj->title}.</p>
+
+<p>Please visit <a href= {$intelnodeurl} >"Here"</a> to review the proposal.</p>
+
+<p>If you have any questions, please contact us via IntelConnectSupport@intel.com</p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team
+EOF;
+
+	$thread = privatemsg_new_thread(array($value), $msg_subject, $intelmsg_body, $options = array());
+    $thread_id = $thread['message']->thread_id;
+       if(!empty($value->field_company)){
+            insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+       }	
+        db_merge('pm_tags_index')
+            ->key(array(
+              'tag_id' => $tag_id,
+              'uid' => $value->uid,
+              'thread_id' => $thread_id,
+            ))
+            ->execute();				
+        $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => $user_fields->mail,
+          'pm_email_subject' => $msg_subject,
+          'pm_email_message' => $intelmsg_body,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}				
+	}
+
+}
+
+//builder to fse odm 
+function mail_to_builder_faeadmin_submitproposal($node, $tag_id){
+    
+	global $user;
+    $user_fields = user_load($user->uid);
+	$role = user_role_load_by_name('Intel Field Applications Engineer');
+	//$selected_users  = getUsersByRoles($role->rid);
+	//$selected_users  = getUsersByRolesperCompany($role->rid, $node->field_builder['und'][0]['value']);	
+	$selected_users  = getUsersByFAECompany($role->rid, $node->field_builder['und'][0]['value']);		
+	$intelnodeurl = url(drupal_get_path_alias('manageproposal/' . $node->field_requirement['und'][0]['value'].'/'.$node->field_builder['und'][0]['value']), array('absolute' => TRUE));
+    $companyObj = node_load($node->field_builder['und'][0]['value']);
+    $rfpObj = node_load($node->field_requirement['und'][0]['value']);
+    $msg_subject = $companyObj->tilte.' submitted proposal for '.$rfpObj->title;
+   
+	
+      $recipients = array();
+    //notification to inteladmins when the proposal is published
+    foreach ($selected_users as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  $recipients[] = $recipient;		  
+      }
+    }
+     
+	
+	foreach($recipients as $key => $value){
+		
+
+        $sendername = $value->field_first_name['und'][0]['value'] . ' '. $value->field_last_name['und'][0]['value'];
+
+$intelmsg_body= <<<EOF
+Dear {$sendername},
+
+<p>{$companyObj->tilte} submitted proposal for {$rfpObj->title}.</p>
+
+<p>Please visit <a href= {$intelnodeurl} >"Here"</a> to review the proposal.</p>
+
+<p>If you have any questions, please contact us via IntelConnectSupport@intel.com</p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team
+EOF;
+
+	$thread = privatemsg_new_thread(array($value), $msg_subject, $intelmsg_body, $options = array());
+    $thread_id = $thread['message']->thread_id;
+       if(!empty($value->field_company)){
+            insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+       }	
+        db_merge('pm_tags_index')
+            ->key(array(
+              'tag_id' => $tag_id,
+              'uid' => $value->uid,
+              'thread_id' => $thread_id,
+            ))
+            ->execute();				
+        $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => $user_fields->mail,
+          'pm_email_subject' => $msg_subject,
+          'pm_email_message' => $intelmsg_body,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}				
+	}
+
+}
+
+
+function mailto_buyer_submit_proposal($node, $tag_id){
+	
+	global $user;
+    $user_fields = user_load($user->uid);
+    $rfpObj = node_load($node->field_requirement['und'][0]['value']);
+	$selected_users  = getUsersByCompany($rfpObj->field_buyer_company['und'][0]['value']);
+    $companyObj = node_load($node->field_builder['und'][0]['value']);
+
+    $nodeurlbuyer = url(drupal_get_path_alias('node/' . $node->nid. '/edit/buyer'), array('absolute' => TRUE));  
+    $msg_subject = $companyObj->title.' has submitted a proposal to your RFP '.$rfpObj->title;
+	
+    $recipients = array();
+    //notification to inteladmins when the proposal is published
+    foreach ($selected_users as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  $recipients[] = $recipient;		  
+      }
+    }
+     
+	
+
+     foreach($recipients as $key => $value){
+		 
+
+        $sendername = $value->field_first_name['und'][0]['value'] . ' '. $value->field_last_name['und'][0]['value'];
+$msg_body= <<<EOF
+Dear {$sendername},
+
+<p>{$companyObj->title} has submitted a proposal to your RFP {$rfpObj->title}.</p>
+
+<p>To review the proposal and respond, Please visit <a href= {$nodeurlbuyer} >"Here"</a>.</p>
+
+<p>If you have any questions, please contact your support team via IntelConnectSupport@intel.com.</p>
+
+<p>Regards,</p>
+ 
+Intel Solution Directory Team
+EOF;
+			 $thread = privatemsg_new_thread(array($value), $msg_subject, $msg_body, $options = array());
+           $thread_id = $thread['message']->thread_id;		
+       if(!empty($value->field_company)){
+            insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+       }		   
+		     db_merge('pm_tags_index')
+          ->key(array(
+            'tag_id' => $tag_id,
+            'uid' => $recipient->uid,
+            'thread_id' => $thread_id,
+          ))
+          ->execute();
+		  
+		 
+		   $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => $user_fields->mail,
+          'pm_email_subject' => $msg_subject,
+          'pm_email_message' => $msg_body,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}	   
+     }
+}
+
+//builder review proposal, mail to buyer odm admin
+function mail_to_admin_from_buyer_reviewproposal($node, $tag_id, $form_state, $old_status){
+	
+  	global $user;
+    $user_fields = user_load($user->uid);
+    $rfpObj = node_load($node->field_requirement['und'][0]['value']);
+	$role = user_role_load_by_name('ODM Intel Admin');
+	//$selected_users  = getUsersByRolesperCompany($role->rid, $rfpObj->field_buyer_company['und'][0]['value']);
+	//$selected_users  = getUsersByRoles($role->rid);	
+	$selected_users  = getUsersByMultiRoles(array(9, 36));	// intel admin. odm admin 	
+    $companyObj = node_load($node->field_builder['und'][0]['value']);
+    $nodeurlbuyer = url(drupal_get_path_alias('node/' . $node->nid. '/edit/buyer'), array('absolute' => TRUE));  
+    $buyerCompany = node_load($rfpObj->field_buyer_company['und'][0]['value'])->title;
+	$msg_subject = $buyerCompany->title .' '. $rfpObj->title . ' status modification';
+    $status = '';
+	$items_ap = field_get_items('node', $node, 'field_approver');
+	foreach ($items_ap as $item) {
+		 $fc = field_collection_field_get_entity($item);
+	}
+    if($form_state['values']['op'] == 'Accept Proposal'){
+	   $status = 'Accepted';
+	   $po = "PO quantity (". $form_state['values']['field_po_proposal']['und'][0]['value'] .")";	
+	   $msg_subject = 'Your proposal to RFP '. $rfpObj->title . ' has been accepted.' ;	 
+	   $intro = $buyerCompany . ' has accepted your proposal to RFP '.$rfpObj->title . '.';   
+    }
+    if($form_state['values']['op'] == 'Update Required'){
+      $status = 'Update Required';
+	  $msg_subject = 'Your proposal to RFP '. $rfpObj->title . ' has been requested to update.' ;
+	  $intro = $buyerCompany . ' has requested an update your proposal to RFP '.$rfpObj->title . '.';	
+    }
+    if($form_state['values']['op'] == 'Reject'){
+      $status = 'Rejected';
+	  $msg_subject = 'Your proposal to RFP '. $rfpObj->title . ' has been rejected.' ;	 
+	  $intro = $buyerCompany . ' has rejected your proposal to RFP '.$rfpObj->title . '.';	  
+    }
+
+    $recipients = array();
+	
+    foreach ($selected_users as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  		  $recipients[] = $recipient;
+
+ 	
+
+      }
+    }
+
+       foreach($recipients as $key => $value){
+
+			 $sendername = $value->field_first_name['und'][0]['value'] . ' '. $value->field_last_name['und'][0]['value'];
+
+$msg_body_intel= <<<EOF
+Dear {$sendername},
+
+<p>{$intro}. </p>
+<p>Comment detail:</p>
+{$fc->field_description['und'][0]['value']}
+
+<p>{$po}</p>
+
+<p>To follow up, please visit <a href= {$nodeurlbuyer} >"Here"</a>.</p>
+
+<p>If you have any questions, please contact your support team via IntelConnectSupport@intel.com</p>
+
+<p>Regards, </p>
+
+Intel Solution Directory Team
+EOF;
+
+        $thread = privatemsg_new_thread(array($value), $msg_subject, $msg_body_intel, $options = array());
+        $thread_id = $thread['message']->thread_id;	
+       if(!empty($value->field_company)){
+            insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+       }		
+       db_merge('pm_tags_index')
+            ->key(array(
+              'tag_id' => $tag_id,
+              'uid' => $value->uid,
+              'thread_id' => $thread_id,
+            ))
+            ->execute();
+        $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => $user_fields->mail,
+          'pm_email_subject' => $msg_subject,
+          'pm_email_message' => $msg_body_intel,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}			
+	}
+	
+
+}
+
+
+//builder review proposal, mail to buyer fse admin
+function mail_to_fseadmin_from_buyer_reviewproposal($node, $tag_id, $form_state, $old_status){
+	
+  	global $user;
+    $user_fields = user_load($user->uid);
+    $rfpObj = node_load($node->field_requirement['und'][0]['value']);
+	$role = user_role_load_by_name('Intel Field Sales Engineer');
+	//$selected_users  = getUsersByRolesperCompany($role->rid, $rfpObj->field_buyer_company['und'][0]['value']);
+	$selected_users  = getUsersByFSECompany($role->rid, $rfpObj->field_buyer_company['und'][0]['value']);	
+    $companyObj = node_load($node->field_builder['und'][0]['value']);
+    $nodeurlbuyer = url(drupal_get_path_alias('node/' . $node->nid. '/edit/buyer'), array('absolute' => TRUE));  
+    $buyerCompany = node_load($rfpObj->field_buyer_company['und'][0]['value'])->title;
+	$msg_subject = $buyerCompany->title .' '. $rfpObj->title . ' status modification';
+	$items_ap = field_get_items('node', $node, 'field_approver');
+	foreach ($items_ap as $item) {
+				   $fc = field_collection_field_get_entity($item);
+	}	
+    $status = '';
+    if($form_state['values']['op'] == 'Accept Proposal'){
+	   $status = 'Accepted';
+	   $po = "PO quantity (". $form_state['values']['field_po_proposal']['und'][0]['value'] .")";	   
+    }
+    if($form_state['values']['op'] == 'Update Required'){
+      $status = 'Update Required';
+    }
+    if($form_state['values']['op'] == 'Reject'){
+      $status = 'Rejected';
+    }
+
+    $recipients = array();
+
+    foreach ($selected_users as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  		  $recipients[] = $recipient;
+
+ 	
+
+      }
+    }
+
+       foreach($recipients as $key => $value){
+		   
+
+			 $sendername = $value->field_first_name['und'][0]['value'] . ' '. $value->field_last_name['und'][0]['value'];
+
+$msg_body_intel= <<<EOF
+Dear {$sendername},
+
+<p>Please note {$buyerCompany}  has updated proposal status from {$old_status} to {$status} for {$rfpObj->title}. </p>
+<p>Comment detail:</p>
+{$fc->field_description['und'][0]['value']}
+
+<p>{$po}</p>
+
+<p>To view the proposal submitted, please check the update <a href= {$nodeurlbuyer} >"Here"</a>.</p>
+
+<p>If you have any questions, please contact your support team via IntelConnectSupport@intel.com</p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team
+EOF;
+        $thread = privatemsg_new_thread(array($value), $msg_subject, $msg_body_intel, $options = array());
+        $thread_id = $thread['message']->thread_id;		
+       if(!empty($value->field_company)){
+            insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+       }		
+       db_merge('pm_tags_index')
+            ->key(array(
+              'tag_id' => $tag_id,
+              'uid' => $value->uid,
+              'thread_id' => $thread_id,
+            ))
+            ->execute();
+			
+        $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => $user_fields->mail,
+          'pm_email_subject' => $msg_subject,
+          'pm_email_message' => $msg_body_intel,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}			
+	}
+
+}
+
+function mail_to_builder_from_buyer_reviewproposal($node, $tag_id, $form_state, $old_status){
+	
+	global $user;
+    $user_fields = user_load($user->uid);
+    $rfpObj = node_load($node->field_requirement['und'][0]['value']);
+	$selected_users  = getUsersByCompany($node->field_builder['und'][0]['value']);
+    $companyObj = node_load($node->field_builder['und'][0]['value']);
+    $nodeurl = url(drupal_get_path_alias('node/' . $node->nid), array('absolute' => TRUE));  
+    $buyerCompany = node_load($rfpObj->field_buyer_company['und'][0]['value'])->title;
+	$msg_subject = $buyerCompany .' '. $rfpObj->title . ' status modification';
+	$items_ap = field_get_items('node', $node, 'field_approver');
+	foreach ($items_ap as $item) {
+		$fc = field_collection_field_get_entity($item);
+	}	
+    $status = '';
+    if($form_state['values']['op'] == 'Accept Proposal'){
+	   $status = 'Accepted';
+	   $po = "PO quantity (". $form_state['values']['field_po_proposal']['und'][0]['value'] .")";
+	   $msg_subject = 'Your proposal to RFP '. $rfpObj->title . ' has been accepted.' ;	 
+	   $intro = $buyerCompany . ' has accepted your proposal to RFP '.$rfpObj->title . '.';  
+	   	   
+    }
+    if($form_state['values']['op'] == 'Update Required'){
+      $status = 'Update Required';
+	   	  $msg_subject = 'Your proposal to RFP '. $rfpObj->title . ' has been requested to update.' ;
+	  $intro = $buyerCompany . ' has requested an update your proposal to RFP '.$rfpObj->title . '.';	  
+    }
+    if($form_state['values']['op'] == 'Reject'){
+      $status = 'Rejected';
+	  $msg_subject = 'Your proposal to RFP '. $rfpObj->title . ' has been rejected.' ;	 
+	  $intro = $buyerCompany . ' has rejected your proposal to RFP '.$rfpObj->title . '.';		  
+    }
+
+    $recipients = array();
+	    foreach ($selected_users as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  		  $recipients[] = $recipient;
+
+      }
+    }
+
+
+   foreach($recipients as $key => $value) {
+	
+ $sendername = $value->field_first_name['und'][0]['value'] . ' '. $value->field_last_name['und'][0]['value'];
+
+ $msg_body= <<<EOF
+Dear {$sendername},
+
+<p>{$intro}. </p>
+<p>Comment detail:</p>
+{$fc->field_description['und'][0]['value']}
+
+<p>{$po}</p>
+
+<p>To submit response accordingly, please check the update <a href= {$nodeurl} >"Here"</a>.</p>
+
+<p>If you have any questions, please contact your support team via IntelConnectSupport@intel.com</p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team
+EOF;
+
+    $thread = privatemsg_new_thread(array($value), $msg_subject, $msg_body, $options = array());
+    $thread_id = $thread['message']->thread_id;	
+       if(!empty($value->field_company)){
+            insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+       }	
+      db_merge('pm_tags_index')
+          ->key(array(
+            'tag_id' => $tag_id,
+            'uid' => $value->uid,
+            'thread_id' => $thread_id,
+          ))
+          ->execute();
+      $felds = array(
+        'pm_email_mid' => $thread_id,
+        'pm_email_to' => $value->mail,
+        'pm_email_sender' => $user_fields->mail,
+        'pm_email_subject' => $msg_subject,
+        'pm_email_message' => $msg_body,
+        'pm_email_flag' => 'unsent',
+      );
+
+
+    $return_value = NULL;
+	if(db_table_exists('pm_email_custom')){
+      try {
+        $return_value = db_insert('pm_email_custom')
+            ->fields($felds)
+            ->execute();
+      }
+      catch (Exception $e) {
+        drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+      }		
+	}	  
+
+    }
+	
+}
+
+
+//builder without proposal, mail to builder odm admin
+function mail_to_builder_noupdateof2days_proposal($node, $tag_id){
+	
+  	global $user;
+    $user_fields = user_load($user->uid);
+    $rfpObj = node_load($node->field_requirement['und'][0]['value']);
+	$selected_users  = getUsersByCompany($node->field_builder['und'][0]['value']);
+    $companyObj = node_load($node->field_builder['und'][0]['value']);
+    $nodeurlbuyer = url(drupal_get_path_alias('node/' . $node->nid), array('absolute' => TRUE));  
+    $buyerCompany = node_load($rfpObj->field_buyer_company['und'][0]['value'])->title;
+	$msg_subject = "Reply for ".$buyerCompany .' RFP reminder: '. $rfpObj->title;
+    $recipients = array();
+    $time = date("Y/m/d h:i:sa");
+	$proposal_due_date = date('Y/m/d h:i:sa', strtotime($rfpObj->field_proposal_due_date['und'][0]['value']));
+
+
+    foreach ($selected_users as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  		  $recipients[] = $recipient;
+      }
+    }
+
+       foreach($recipients as $key => $value){
+		   
+    	$sendername = $value->field_first_name['und'][0]['value'] . ' '. $value->field_last_name['und'][0]['value'];
+
+$msg_body_intel= <<<EOF
+Dear {$sendername},
+
+<p>The Request by  {$buyerCompany} on {$time} has not been replied for more than 2 days. Details as below </p>
+
+<p>Description : </p>
+
+{$rfpObj->field_description['und'][0]['value']}
+
+<p>Deadline: {$proposal_due_date}</p>
+
+<p>If you have any questions, please contact your support team via IntelConnectSupport@intel.com</p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team
+EOF;
+	
+        $thread = privatemsg_new_thread(array($value), $msg_subject, $msg_body_intel, $options = array());
+        $thread_id = $thread['message']->thread_id;	
+       if(!empty($value->field_company)){
+            insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+       }		
+       db_merge('pm_tags_index')
+            ->key(array(
+              'tag_id' => $tag_id,
+              'uid' => $value->uid,
+              'thread_id' => $thread_id,
+            ))
+            ->execute();	
+        $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => variable_get('site_mail', ''),
+          'pm_email_subject' => $msg_subject,
+          'pm_email_message' => $msg_body_intel,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}			
+	}
+	
+
+}
+
+
+//proposal reminder mail to fse if proposal has not received any feedback by buyer
+function mail_to_buyerfse_noupdateof_proposalfeedback_for_3days($node, $tag_id){
+	
+    $rfpObj = node_load($node->field_requirement['und'][0]['value']);
+    $selected_users = getUsersByFAEFSECompany(1, $rfpObj->field_buyer_company['und'][0]['value']);		
+    $companyObj = node_load($node->field_builder['und'][0]['value']);
+    $nodeurlbuyer = url(drupal_get_path_alias('node/' . $node->nid. '/edit/buyer'), array('absolute' => TRUE)); 
+    $buyerCompany = node_load($rfpObj->field_buyer_company['und'][0]['value'])->title;
+	$msg_subject = "Proposal Reply reminder for ".$buyerCompany .' RFP '. $rfpObj->title;
+	$rfptitle = $rfpObj->title;
+    $builderCompany = node_load($node->field_builder['und'][0]['value'])->title;
+    $recipients = array();
+    $created = date('Y/m/d h:i:sa', ($rfpObj->created));	
+
+    $buyerFSEFAEObj = getUsersByFAEFSECompany(1, $rfpObj->field_buyer_company['und'][0]['value']);
+	$buyerfsefaeuser = '<ul>';
+	foreach ($buyerFSEFAEObj as $recipient) {
+      $recipient = user_load($recipient->uid);
+      $buyerfsefaeuser .= '<li>'. $recipient->field_first_name['und'][0]['value'] . ' '. $recipient->field_last_name['und'][0]['value'] . '['.$recipient->mail.']'. '</li>';
+     
+    }
+	$buyerfsefaeuser .= '</ul>';
+	
+    $builderFSEFAEObj = getUsersByFAEFSECompany(1, $node->field_builder['und'][0]['value']);	
+	$builderfsefaeuser = '<ul>';
+	foreach ($builderFSEFAEObj as $recipient) {
+      $recipient = user_load($recipient->uid);
+      $builderfsefaeuser .= '<li>'. $recipient->field_first_name['und'][0]['value'] . ' '. $recipient->field_last_name['und'][0]['value'] . '['.$recipient->mail.']'. '</li>';
+     
+    }
+	$builderfsefaeuser .= '</ul>';
+		
+	
+    foreach ($selected_users as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  		  $recipients[] = $recipient;
+      }
+    }
+
+       foreach($recipients as $key => $value){
+		   
+    	$sendername = $value->field_first_name['und'][0]['value'] . ' '. $value->field_last_name['und'][0]['value'];
+
+$msg_body_intel= <<<EOF
+Dear {$sendername},
+
+<p>{$builderCompany} has submitted a proposal to the RFP {$rfptitle} by {$buyerCompany} issued on {$created}. {$buyerCompany} has not been replied for more than 3 days. </p>
+
+<p>Details as below </p>
+
+<p>From:  {$builderCompany}</p>
+{$builderCompany} FSE:
+{$builderfsefaeuser}
+
+<p>To: {$buyerCompany} </p>
+{$buyerCompany}  FSE:
+{$buyerfsefaeuser}
+ 
+<p>Please click  <a href= {$nodeurlbuyer} >"Here"</a> for detail info about the proposal</p>
+
+<p>If you have any questions, please contact your support team via IntelConnectSupport@intel.com</p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team
+EOF;
+
+        $thread = privatemsg_new_thread(array($value), $msg_subject, $msg_body_intel, $options = array());
+        $thread_id = $thread['message']->thread_id;	
+       if(!empty($value->field_company)){
+            insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+       }		
+       db_merge('pm_tags_index')
+            ->key(array(
+              'tag_id' => $tag_id,
+              'uid' => $value->uid,
+              'thread_id' => $thread_id,
+            ))
+            ->execute();	
+        $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => variable_get('site_mail', ''),
+          'pm_email_subject' => $msg_subject,
+          'pm_email_message' => $msg_body_intel,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}		
+
+	
+	}
+	
+
+}
+
+//proposal reminder mail to admin if proposal has not received any feedback by buyer
+function mail_to_admin_noupdateof_proposalfeedback_for_3days($node, $tag_id){
+	
+    $rfpObj = node_load($node->field_requirement['und'][0]['value']);
+	$selected_users  = getUsersByMultiRoles(array(9, 36));	// intel admin. odm admin 	
+    $companyObj = node_load($node->field_builder['und'][0]['value']);
+    $nodeurlbuyer = url(drupal_get_path_alias('node/' . $node->nid. '/edit/buyer'), array('absolute' => TRUE)); 
+    $buyerCompany = node_load($rfpObj->field_buyer_company['und'][0]['value'])->title;
+	$msg_subject = "Proposal Reply reminder for ".$buyerCompany .' RFP '. $rfpObj->title;
+	$rfptitle = $rfpObj->title;
+    $builderCompany = node_load($node->field_builder['und'][0]['value'])->title;
+    $recipients = array();
+    $created = date('Y/m/d h:i:sa', ($rfpObj->created));	
+
+    $buyerFSEFAEObj = getUsersByFAEFSECompany(1, $rfpObj->field_buyer_company['und'][0]['value']);
+	$buyerfsefaeuser = '<ul>';
+	foreach ($buyerFSEFAEObj as $recipient) {
+      $recipient = user_load($recipient->uid);
+      $buyerfsefaeuser .= '<li>'. $recipient->field_first_name['und'][0]['value'] . ' '. $recipient->field_last_name['und'][0]['value'] . '['.$recipient->mail.']'. '</li>';
+     
+    }
+	$buyerfsefaeuser .= '</ul>';
+	
+    $builderFSEFAEObj = getUsersByFAEFSECompany(1, $node->field_builder['und'][0]['value']);	
+	$builderfsefaeuser = '<ul>';
+	foreach ($builderFSEFAEObj as $recipient) {
+      $recipient = user_load($recipient->uid);
+      $builderfsefaeuser .= '<li>'. $recipient->field_first_name['und'][0]['value'] . ' '. $recipient->field_last_name['und'][0]['value'] . '['.$recipient->mail.']'. '</li>';
+     
+    }
+	$builderfsefaeuser .= '</ul>';
+		
+	
+    foreach ($selected_users as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  		  $recipients[] = $recipient;
+      }
+    }
+
+       foreach($recipients as $key => $value){
+		   
+    	$sendername = $value->field_first_name['und'][0]['value'] . ' '. $value->field_last_name['und'][0]['value'];
+
+$msg_body_intel= <<<EOF
+Dear {$sendername},
+
+<p>{$builderCompany} has submitted a proposal to the RFP {$rfptitle} by {$buyerCompany} issued on {$created}. {$buyerCompany} has not been replied for more than 3 days. </p>
+
+<p>Details as below </p>
+
+<p>From:  {$builderCompany}</p>
+{$builderCompany} FSE:
+{$builderfsefaeuser}
+
+<p>To: {$buyerCompany} </p>
+{$buyerCompany}  FSE:
+{$buyerfsefaeuser}
+ 
+<p>Please click  <a href= {$nodeurlbuyer} >"Here"</a> for detail info about the proposal</p>
+
+<p>If you have any questions, please contact your support team via IntelConnectSupport@intel.com</p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team
+EOF;
+
+        $thread = privatemsg_new_thread(array($value), $msg_subject, $msg_body_intel, $options = array());
+        $thread_id = $thread['message']->thread_id;	
+       if(!empty($value->field_company)){
+            insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+       }		
+       db_merge('pm_tags_index')
+            ->key(array(
+              'tag_id' => $tag_id,
+              'uid' => $value->uid,
+              'thread_id' => $thread_id,
+            ))
+            ->execute();	
+        $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => variable_get('site_mail', ''),
+          'pm_email_subject' => $msg_subject,
+          'pm_email_message' => $msg_body_intel,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}		
+
+	
+	}
+	
+
+}
+
+//proposal reminder mail to fse if proposal not submitted by builder
+function mail_to_builderfsefae_noupdateof_proposal_for_3days($node, $tag_id){
+	
+    $rfpObj = node_load($node->field_requirement['und'][0]['value']);
+    $selected_users = getUsersByFAEFSECompany(1, $node->field_builder['und'][0]['value']);	
+    $companyObj = node_load($node->field_builder['und'][0]['value']);
+    $nodeurlbuyer = url(drupal_get_path_alias('node/' . $node->nid), array('absolute' => TRUE));  
+    $buyerCompany = node_load($rfpObj->field_buyer_company['und'][0]['value'])->title;
+	$msg_subject = "Reply reminder for ".$buyerCompany .' RFP '. $rfpObj->title;
+    $builderCompany = node_load($node->field_builder['und'][0]['value'])->title;
+    $recipients = array();
+    $created = date('Y/m/d h:i:sa', ($rfpObj->created));	
+	$proposal_due_date = date('Y/m/d h:i:sa', strtotime($rfpObj->field_proposal_due_date['und'][0]['value']));
+    $desc = $rfpObj->field_description['und'][0]['value'];
+    $rfpproposallist = url(drupal_get_path_alias('manageproposal/' . $node->field_requirement['und'][0]['value'].'/'.$node->field_builder['und'][0]['value']), array('absolute' => TRUE));	
+    $buyerFSEFAEObj = getUsersByFAEFSECompany(1, $rfpObj->field_buyer_company['und'][0]['value']);
+	$buyerfsefaeuser = '<ul>';
+	foreach ($buyerFSEFAEObj as $recipient) {
+      $recipient = user_load($recipient->uid);
+      $buyerfsefaeuser .= '<li>'. $recipient->field_first_name['und'][0]['value'] . ' '. $recipient->field_last_name['und'][0]['value'] . '['.$recipient->mail.']'. '</li>';
+     
+    }
+	$buyerfsefaeuser .= '</ul>';
+
+	
+    $builderFSEFAEObj = getUsersByFAEFSECompany(1, $node->field_builder['und'][0]['value']);	
+	$builderfsefaeuser = '<ul>';
+	foreach ($builderFSEFAEObj as $recipient) {
+      $recipient = user_load($recipient->uid);
+      $builderfsefaeuser .= '<li>'. $recipient->field_first_name['und'][0]['value'] . ' '. $recipient->field_last_name['und'][0]['value'] . '['.$recipient->mail.']'. '</li>';
+     
+    }
+	$builderfsefaeuser .= '</ul>';
+		
+	
+    foreach ($selected_users as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  		  $recipients[] = $recipient;
+      }
+    }
+
+       foreach($recipients as $key => $value){
+		   
+    	$sendername = $value->field_first_name['und'][0]['value'] . ' '. $value->field_last_name['und'][0]['value'];
+
+$msg_body_intel= <<<EOF
+Dear {$sendername},
+
+<p>The RFP by {$buyerCompany} issued on {$created} has not been replied for more than 3 days. </p>
+
+<p>Details as below </p>
+
+<p>From: {$buyerCompany} </p>
+{$buyerCompany}  FSE:
+{$buyerfsefaeuser}
+ 
+<p>To:  {$builderCompany}</p>
+{$builderCompany} FSE:
+{$builderfsefaeuser}
+
+<p>Please click <a href= {$rfpproposallist} >"Here"</a> for detail info about the RFP</p>
+
+<p>Proposal Deadline: {$proposal_due_date}</p>
+
+<p>If you have any questions, please contact your support team via IntelConnectSupport@intel.com</p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team
+EOF;
+
+	
+        $thread = privatemsg_new_thread(array($value), $msg_subject, $msg_body_intel, $options = array());
+        $thread_id = $thread['message']->thread_id;	
+       if(!empty($value->field_company)){
+            insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+       }		
+       db_merge('pm_tags_index')
+            ->key(array(
+              'tag_id' => $tag_id,
+              'uid' => $value->uid,
+              'thread_id' => $thread_id,
+            ))
+            ->execute();	
+        $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => variable_get('site_mail', ''),
+          'pm_email_subject' => $msg_subject,
+          'pm_email_message' => $msg_body_intel,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}		
+
+	
+	}
+	
+
+}
+
+
+// proposal reminder to admin if proposal not submitted by builder
+function mail_to_admin_noupdateof_proposal_for_3days($node, $tag_id){
+	
+    $rfpObj = node_load($node->field_requirement['und'][0]['value']);
+	$selected_users  = getUsersByMultiRoles(array(9, 36));	// intel admin. odm admin 	
+    $companyObj = node_load($node->field_builder['und'][0]['value']);
+    $nodeurlbuyer = url(drupal_get_path_alias('node/' . $node->nid), array('absolute' => TRUE));  
+    $buyerCompany = node_load($rfpObj->field_buyer_company['und'][0]['value'])->title;
+	$msg_subject = "Reply reminder for ".$buyerCompany .' RFP '. $rfpObj->title;
+    $builderCompany = node_load($node->field_builder['und'][0]['value'])->title;
+    $recipients = array();
+    $created = date('Y/m/d h:i:sa', ($rfpObj->created));	
+	$proposal_due_date = date('Y/m/d h:i:sa', strtotime($rfpObj->field_proposal_due_date['und'][0]['value']));
+    $desc = $rfpObj->field_description['und'][0]['value'];
+	$rfpproposallist = url(drupal_get_path_alias('node/' . $node->field_requirement['und'][0]['value']), array('absolute' => TRUE));
+    $buyerFSEFAEObj = getUsersByFAEFSECompany(1, $rfpObj->field_buyer_company['und'][0]['value']);
+	$buyerfsefaeuser = '<ul>';
+	foreach ($buyerFSEFAEObj as $recipient) {
+      $recipient = user_load($recipient->uid);
+      $buyerfsefaeuser .= '<li>'. $recipient->field_first_name['und'][0]['value'] . ' '. $recipient->field_last_name['und'][0]['value'] . '['.$recipient->mail.']'. '</li>';
+     
+    }
+	$buyerfsefaeuser .= '</ul>';
+
+	
+    $builderFSEFAEObj = getUsersByFAEFSECompany(1, $node->field_builder['und'][0]['value']);	
+	$builderfsefaeuser = '<ul>';
+	foreach ($builderFSEFAEObj as $recipient) {
+      $recipient = user_load($recipient->uid);
+      $builderfsefaeuser .= '<li>'. $recipient->field_first_name['und'][0]['value'] . ' '. $recipient->field_last_name['und'][0]['value'] . '['.$recipient->mail.']'. '</li>';
+     
+    }
+	$builderfsefaeuser .= '</ul>';
+		
+	
+    foreach ($selected_users as $recipient) {
+      $recipient = user_load($recipient->uid);
+      if ($recipient->field_receive_members_email['und'][0]['value'] && $recipient->status == 1 && privatemsg_is_disabled($recipient) === false) {
+		  		  $recipients[] = $recipient;
+      }
+    }
+
+       foreach($recipients as $key => $value){
+		   
+    	$sendername = $value->field_first_name['und'][0]['value'] . ' '. $value->field_last_name['und'][0]['value'];
+
+$msg_body_intel= <<<EOF
+Dear {$sendername},
+
+<p>The RFP by {$buyerCompany} issued on {$created} has not been replied for more than 3 days. </p>
+
+<p>Details as below  </p>
+
+<p>From: {$buyerCompany} </p>
+{$buyerCompany}  FSE:
+{$buyerfsefaeuser}
+ 
+<p>To:  {$builderCompany} </p>
+{$builderCompany} FSE:
+{$builderfsefaeuser}
+
+<p>Please click <a href= {$rfpproposallist} >"Here"</a> for detail info about the RFP </p>
+
+<p>Proposal Deadline: {$proposal_due_date} </p>
+
+<p>If you have any questions, please contact your support team via IntelConnectSupport@intel.com </p>
+
+<p>Regards, </p>
+
+Intel Solutions Directory Team
+EOF;
+
+	
+        $thread = privatemsg_new_thread(array($value), $msg_subject, $msg_body_intel, $options = array());
+        $thread_id = $thread['message']->thread_id;	
+       if(!empty($value->field_company)){
+            insert_user_company($thread_id, $value->field_company['und'][0]['target_id']);
+       }		
+       db_merge('pm_tags_index')
+            ->key(array(
+              'tag_id' => $tag_id,
+              'uid' => $value->uid,
+              'thread_id' => $thread_id,
+            ))
+            ->execute();	
+        $felds = array(
+          'pm_email_mid' => $thread_id,
+          'pm_email_to' => $value->mail,
+          'pm_email_sender' => variable_get('site_mail', ''),
+          'pm_email_subject' => $msg_subject,
+          'pm_email_message' => $msg_body_intel,
+          'pm_email_flag' => 'unsent',
+        );
+
+
+        $return_value = NULL;
+		if(db_table_exists('pm_email_custom')){
+        try {
+          $return_value = db_insert('pm_email_custom')
+              ->fields($felds)
+              ->execute();
+        }
+        catch (Exception $e) {
+          drupal_set_message(t('db_insert failed. Message = %message, query= %query', array('%message' => $e->getMessage(), '%query' => $e->query_string)), 'error');
+        }			
+		}		
+
+	
+	}
+	
+
+}

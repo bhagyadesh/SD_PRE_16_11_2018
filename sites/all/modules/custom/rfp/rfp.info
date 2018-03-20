@@ -1,0 +1,4 @@
+name = RFP Management
+description = RFP Management Modules.
+core = 7.x
+package = RFP

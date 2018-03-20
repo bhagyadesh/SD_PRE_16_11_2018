@@ -1,0 +1,861 @@
+第 6/7 世代 Intel® プロセッサーを搭載したミニ・デジタル・サイネージ・プレーヤー (旧 Skylake / Kaby Lake U-Series) ---------- 46547 -------- Saved 
+PE2ISCO Silicom 的硬件加速器加密压缩 PCI Express 服务器适配器 / SKU11 / SKU1 / SKU2 / SKU3 基于 Intel® ---------- 46548 -------- Saved 
+PE2ISCO Silicom のハードウェア・アクセラレータ暗号化圧縮 PCI Express サーバー・アダプター/SKU11/SKU1/SKU2/SKU3 Intel® ベース ---------- 46549 -------- Saved 
+[Cincoze DS-1101] 第 6 代 Intel® Core™ i3 / i5 / i7 （Skylake-S） 高性能模块化可扩展耐用型嵌入式计算机，配备一个 PCI/PCIe 扩展插槽 ---------- 46550 -------- Saved 
+[Cincoze DS-1101] 第 6 世代 Intel® Core™ i3/i5/i7 (Skylake-S) 高性能、モジュラーおよび拡張可能な高耐用性エンベデッド・コンピューター、1 つの PCI/PCIe 拡張スロットを装備 ---------- 46551 -------- Saved 
+[Cincoze DE-1002] Intel® Atom® E3845 四核节能型无风扇计算机和 2 个 PCI/PCIex1 扩展 ---------- 46552 -------- Saved 
+[Cincoze DE-1002] Intel® Atom® E3845 クアッドコア搭載の電力効率に優れたフファンレス・コンピューターと 2x PCI/PCIex1 拡張 ---------- 46553 -------- Saved 
+[Cincoze DE-1001] Intel® Atom® E3845 四核节能型无风扇计算机和 1 个 PCI/PCIe 扩展 ---------- 46554 -------- Saved 
+[Cincoze DE-1001] Intel® Atom® E3845 クアッドコア搭載の電力効率に優れたファンレス・コンピューターと 2x PCI/PCIex1 拡張 ---------- 46555 -------- Saved 
+[Cincoze DS-1102] 第 6 代 Intel® Core™ i3 / i5 / i7 （原 Skylake-S） 高性能模块化可扩展耐用型嵌入式计算机，配备两个 PCI/PCIe 扩展插槽 ---------- 46556 -------- Saved 
+[Cincoze DS-1102] 第 6 世代 Intel® Core™ i3/i5/i7 (旧称 Skylake-S) 高性能、モジュラーおよび拡張可能な高耐用性エンベデッド・コンピューター、2 つの PCI/PCIe 拡張スロットを装備 ---------- 46557 -------- Saved 
+PE3IS4CO3 Silicom 的四核硬件加速器 sku3 加密压缩 PCI E G3 服务器适配器基于 Intel® ---------- 46558 -------- Saved 
+PE3IS4CO3 Silicom のクアッド・ハードウェア・アクセラレーター sku3 暗号化圧縮 PCI E G3 サーバー・アダプター Intel® ベース ---------- 46559 -------- Saved 
+PE3IS2CO3 Silicom 的双硬件加速器 sku3 加密压缩 PCI E G3 服务器适配器基于 Intel®  ---------- 46560 -------- Saved 
+PE3IS2CO3 Silicom のデュアル・ハードウェア・アクセラレーター sku3 暗号化圧縮 PCI E G3 サーバー・アダプター Intel® ベース ---------- 46561 -------- Saved 
+PE316ISLBEL PCIe 3.0 加密 / 压缩 LBG 服务器适配器 ---------- 46562 -------- Saved 
+PE316ISLBEL PCIe 3.0 暗号化 / 圧縮 LBG サーバー・アダプター ---------- 46563 -------- Saved 
+PE3ISLBTL PCIe 3.0，x8 加密 / 压缩 LBG 服务器适配器 ---------- 46564 -------- Saved 
+PE3ISLBTL PCIe 3.0、x8 暗号化 / 圧縮 LBG サーバー・アダプター ---------- 46565 -------- Saved 
+[Cincoze DC-1000] Intel® Atom® E3845 四核紧凑型无风扇计算机和 2 个迷你 PCIe 扩展 ---------- 46566 -------- Saved 
+[Cincoze DC-1000] Intel® Atom® E3845 クアッドコア・コンパクトサイズ・ファンレス・コンピューターと 2x Mini-PCIe 拡張 ---------- 46567 -------- Saved 
+[Cincoze DE-1000] Intel® Atom® E3845 四核节能型无风扇计算机 ---------- 46568 -------- Saved 
+[Cincoze DE-1000] Intel® Atom® E3845 クアッドコア搭載の電力効率に優れたファンレス・コンピューター ---------- 46569 -------- Saved 
+COM Express Carrier C10-MB-EV ---------- 46570 -------- Saved 
+COM Express Carrier C10-MB-EV ---------- 46571 -------- Saved 
+COM Express C10M-AL ---------- 46572 -------- Saved 
+COM Express C10M-AL ---------- 46573 -------- Saved 
+COM Express Carrier C6-MB-EV ---------- 46578 -------- Saved 
+COM Express Carrier C6-MB-EV ---------- 46579 -------- Saved 
+TBS-453A ---------- 46580 -------- Saved 
+TBS-453A ---------- 46581 -------- Saved 
+MCS1000 ---------- 46582 -------- Saved 
+MCS1000 ---------- 46583 -------- Saved 
+NCA-6210 网络安全和虚拟化高性能网络设备 ---------- 46584 -------- Saved 
+NCA-6210 - ネットワーク・セキュリティおよび仮想化向けの高パフォーマンス・ネットワーク・アプライアンス ---------- 46585 -------- Saved 
+NCA-1611 ﻿ NEBS 兼容的台式 SD-WAN 和 SD 安全 vCPE 设备  ---------- 46586 -------- Saved 
+NCA-1611 -﻿ SD-WAN と SD-Security 向けの NEBS 準拠デスクトップ vCPE アプライアンス ---------- 46587 -------- Saved 
+FX-3810 ﻿ 3U 机架安装式网络设备采用 Intel® Xeon® E5-2600 v3/v4 处理器 ---------- 46588 -------- Saved 
+Intel® Xeon® E5-2600 v3/v4 プロセッサー搭載の FX-3810 ﻿ 3U ラックマウント・ネットワーク・アプライアンス ---------- 46589 -------- Saved 
+A10PL4 Arria 10 GX 半高 PCIe 板 ---------- 46590 -------- Saved 
+A10PL4 Arria 10 GX ロープロファイル PCIe ボード ---------- 46591 -------- Saved 
+TS-453Bmini ---------- 46592 -------- Saved 
+TS-453Bmini ---------- 46593 -------- Saved 
+ TS-253B ---------- 46594 -------- Saved 
+ TS-253B ---------- 46595 -------- Saved 
+TS-453B ---------- 46596 -------- Saved 
+TS-453B ---------- 46597 -------- Saved 
+TVS-1282T3 ---------- 46598 -------- Saved 
+TVS-1282T3 ---------- 46599 -------- Saved 
+TS-653B ---------- 46600 -------- Saved 
+TS-653B ---------- 46601 -------- Saved 
+TVS-882BR ---------- 46602 -------- Saved 
+TVS-882BR ---------- 46603 -------- Saved 
+TVS-1582TU ---------- 46604 -------- Saved 
+TVS-1582TU ---------- 46605 -------- Saved 
+TVS-882BRT3 ---------- 46606 -------- Saved 
+TVS-882BRT3 ---------- 46607 -------- Saved 
+TS-1685 ---------- 46608 -------- Saved 
+TS-1685 ---------- 46609 -------- Saved 
+TVS-882ST2 ---------- 46610 -------- Saved 
+TVS-882ST2 ---------- 46611 -------- Saved 
+TVS-882ST3 ---------- 46612 -------- Saved 
+TVS-882ST3 ---------- 46613 -------- Saved 
+带有双侧连接器的 MitySOM-5CSx ---------- 46614 -------- Saved 
+MitySOM-5CSx、デュアルサイド・コネクタ付き ---------- 46615 -------- Saved 
+时尚零售商通过数据驱动的深度见解优化服务并与顾客联系 ---------- 46618 -------- Saved 
+ファッション小売業者はデータ駆動型の洞察を用いてサービスを最適化し、顧客にコネクト ---------- 46619 -------- Saved 
+基于 XCalibur1412 | Intel® Xeon® E5-2600 v4 系列处理器的 AdvancedTCA （ATCA） 刀片配备安全 FPGA 和双 40/56GbE/InfiniBand ---------- 46622 -------- Saved 
+XCalibur1412 | Intel® Xeon® E5-2600 v4 ファミリー・プロセッサーをベースにした AdvancedTCA (ATCA) ブレード、セキュリテ FPGA & Dual 40/56GbE/InfiniBand ---------- 46623 -------- Saved 
+基于 XAct1012 | Intel® Xeon® E5-2600 v4 系列处理器的 ATX 类服务器主板配备安全 FPGA、双 40GbE 和六个 PCIe 扩展站点 ---------- 46624 -------- Saved 
+XAct1012 | Intel® Xeon® E5-2600 v4 ファミリー・プロセッサーをベースにした ATX クラス・サーバー・マザーボードとセキュリティ FPGA、デュアル・40GbE、および 6 つの PCIe 拡張サイト ---------- 46625 -------- Saved 
+基于 XPand9011 | Intel® Xeon® E5-2600 v4 系列处理器的 安全 2U 机架安装式服务器采用双 40GbE 和六个 PCI Express 扩展站点 ---------- 46626 -------- Saved 
+XPand9011 | Intel® Xeon® E5-2600 v4 ファミリー・プロセッサーをベースにしたセキュア 2U ラックマウント・サーバー、デュアル 40GbE と 6 つの PCI Express 拡張サイトを搭載 ---------- 46627 -------- Saved 
+Tago.io 已连接产品的端到端云平台 ---------- 46628 -------- Saved 
+Tago.io 接続された製品のエンドツーエンド・クラウド・プラットフォーム ---------- 46629 -------- Saved 
+SKY-8101L - 紧凑型 1U 高容量存储服务器基于 Intel® Xeon® 处理器可扩展产品系列 ---------- 46630 -------- Saved 
+SKY-8101L - Intel® Xeon® プロセッサー・スケーラブル・ファミリーをベースにしたコンパクト 1U 高容量ストレージ・サーバー ---------- 46631 -------- Saved 
+OPS300-310 -- 开放可插拔规范 （OPS） 4K 数字标牌播放器，采用 Intel® Celeron® 处理器 N3350 和 TPM 2.0 ---------- 46632 -------- Saved 
+OPS300-310 -- Intel® Celeron® プロセッサー N3350 と TPM 2.0を搭載したオープン・プラガブル・スペシフィケーション（OPS）4K デジタル・サイネージ・プレーヤー ---------- 46633 -------- Saved 
+CAPA312 -- 3.5 英寸嵌入式 SBC 配备 Intel® Pentium® 处理器 N4200 和 Celeron® 处理器 N3350、HDMI/LVDS、双 LAN 和音频 ---------- 46634 -------- Saved 
+CAPA312 -- Intel® Pentium® プロセッサー N4200 & Celeron® プロセッサー N3350、HDMI/LVDS、デュアル LAN およびオーディオを搭載した 3.5 インチのエンベデッド SBC ---------- 46635 -------- Saved 
+NA345R -- 1U 机架式网络设备平台，配备 Intel® Celeron® N3350 或 Atom® x5-E3940 处理器以及 6 个局域网 ---------- 46636 -------- Saved 
+NA345R -- Intel® Celeron® N3350または Atom® x5-E3940 プロセッサーおよび 6 LAN 搭載の 1U ラックマウント・ネットワーク・アプライアンス・プラットフォーム ---------- 46637 -------- Saved 
+PICO313 -- Pico-ITX 主板配备 Intel® Pentium® 处理器 N4200 & Celeron® 处理器 N3350、LVDS 以及局域网 ---------- 46638 -------- Saved 
+PICO313 -- Intel® Pentium® プロセッサー N4200 & Celeron® プロセッサー N3350、LVDS、LAN 搭載の Pico-ITX マザーボード ---------- 46639 -------- Saved 
+Canopy 物联网平台 ---------- 46640 -------- Saved 
+Canopy IoT プラットフォーム ---------- 46641 -------- Saved 
+Supermicro SuperSErver 5029A-2TN4 ---------- 46646 -------- Saved 
+Supermicro SuperSErver 5029A-2TN4 ---------- 46647 -------- Saved 
+Supermicro A2SDi-2C-HLN4F Intel® Atom® 处理器 C3338 迷你 ITX MBD ---------- 46650 -------- Saved 
+Supermicro A2SDi-2C-HLN4F Intel® Atom® プロセッサー C3338 Mini-ITX MBD ---------- 46651 -------- Saved 
+无线恒温控制器  ---------- 46652 -------- Saved 
+ワイヤレス・サーモスタット・コントローラ ---------- 46653 -------- Saved 
+无线恒温控制器  ---------- 46654 -------- Saved 
+ワイヤレス・サーモスタット・コントローラ ---------- 46655 -------- Saved 
+温度传感器  ---------- 46656 -------- Saved 
+温度センサー ---------- 46657 -------- Saved 
+照明/负载控制器  ---------- 46658 -------- Saved 
+照明/負荷コントローラ ---------- 46659 -------- Saved 
+无线门传感器  ---------- 46660 -------- Saved 
+ワイヤレス・ドアセンサー ---------- 46661 -------- Saved 
+电路能量表 ---------- 46662 -------- Saved 
+回路エネルギーメーター ---------- 46663 -------- Saved 
+conga-B7AC ---------- 46664 -------- Saved 
+conga-B7AC ---------- 46665 -------- Saved 
+AIMB-217 ---------- 46668 -------- Saved 
+AIMB-217 ---------- 46669 -------- Saved 
+UTX-3117 ---------- 46670 -------- Saved 
+UTX-3117 ---------- 46671 -------- Saved 
+PCM-9563 ---------- 46672 -------- Saved 
+PCM-9563 ---------- 46673 -------- Saved 
+PCM-9366 ---------- 46674 -------- Saved 
+PCM-9366 ---------- 46675 -------- Saved 
+MIO-5350 ---------- 46676 -------- Saved 
+MIO-5350 ---------- 46677 -------- Saved 
+MIO-2360 ---------- 46678 -------- Saved 
+MIO-2360 ---------- 46679 -------- Saved 
+GV 热插拔记录服务器系统 V5 （Rev. C） - 4U、20 托架 ---------- 46682 -------- Saved 
+GV-ホットスワップ記録サーバー・システム V5 (Rev. C)-4U、20 ベイ ---------- 46683 -------- Saved 
+GV 热插拔 VMS 系统 V5 （Rev. C） - 4U、20 托架 ---------- 46684 -------- Saved 
+GV ホットスワップ VMS システム V5 (Rev. C)-4U、20 ベイ ---------- 46685 -------- Saved 
+GV 塔式 VMS 系统 V2 ---------- 46686 -------- Saved 
+GV タワー VMS システム V2 ---------- 46687 -------- Saved 
+Crystal Group IS100 工业 1U 服务器  ---------- 46694 -------- Saved 
+Crystal Group IS100 産業用 1U サーバー  ---------- 46695 -------- Saved 
+[Cincoze P2002E] 第 6 代 Intel® Core™ U 系列 （原 Skylake） 可扩展无风扇计算机，配备 CFM 和 CDS 接口 ---------- 46696 -------- Saved 
+[Cincoze P2002E] 第 6 世代 Intel® Core™ U シリーズ (旧 Skylake) を搭載し、CFM と CDS のインターフェイスを備えた拡張ファンレス・コンピューター ---------- 46697 -------- Saved 
+[Cincoze P2002] 第 6 代 Intel® Core™ U 系列 （原 Skylake） 无风扇计算机配备 CFM 和 CDS 接口 ---------- 46698 -------- Saved 
+[Cincoze P2002] 第6世代 Intel® Core™ U シリーズ (旧 Skylake) 搭載で CFM と CDS のインターフェイスを備えたファンレス・コンピュータ ---------- 46699 -------- Saved 
+[Cincoze P1001E] Intel® Atom® E3845 四核计算机模块，4 个 USB、2 个 COM、1 个 VGA、1 个 DisplayPort 以及 2 个通用 I/O 支架 ---------- 46700 -------- Saved 
+[Cincoze P1001E] Intel® Atom® E3845 クアッドコア PC モジュール、4x USB、2x COM、1x VGA、1x DisplayPort および 2x ユニバーサル I/O ブラケット ---------- 46701 -------- Saved 
+[Cincoze P1001] Intel® Atom® E3845 四核计算机模块，4 个 USB、2 个 COM、1 个 VGA 和 1 个 DisplayPort ---------- 46702 -------- Saved 
+[Cincoze P1001] Intel® Atom® E3845 クアッドコア PC モジュール、4x USB、2x COM、1x VGA、1x DisplayPort ---------- 46703 -------- Saved 
+Nallatech 510T 计算加速卡 ---------- 46706 -------- Saved 
+Nallatech 510T コンピューティング・アクセラレータカード ---------- 46707 -------- Saved 
+Nallatech 385A FPGA 加速器卡 ---------- 46708 -------- Saved 
+Nallatech 385A FPGA アクセラレータ・カード ---------- 46709 -------- Saved 
+Nallatech 385A-SoC FPGA 加速器卡 ---------- 46710 -------- Saved 
+Nallatech 385A-SoC FPGA アクセラレータ・カード ---------- 46711 -------- Saved 
+Nallatech 520 FPGA 加速卡 ---------- 46712 -------- Saved 
+Nallatech 520 FPGA アクセラレータカード ---------- 46713 -------- Saved 
+[Cincoze DS-1002] 第 4 代 Intel® Core™ i3 / i5 / i7 卓越性能无风扇计算机集成 Q87 芯片组 （配备两个 PCI/PCIe 扩展插槽） ---------- 46716 -------- Saved 
+[Cincoze DS-1002] 第4世代 Intel® Core™ i3 / i5 / i7 の高パフォーマンス・ファンレス・コンピュータに Q87 チップセットを統合(2 つの PCI/PCIe拡張スロット付き) ---------- 46717 -------- Saved 
+[Cincoze DS-1001] 第 4 代 Intel® Core™ i3 / i5 / i7 卓越性能无风扇计算机集成 Q87 芯片组 （配备一个 PCI/PCIe 扩展插槽） ---------- 46718 -------- Saved 
+[Cincoze DS-1001] 第 4 世代 Intel® Core™ i3 / i5 / i7 の高パフォーマンス・ファンレス・コンピューターに Q87 チップセットを統合(1 つの PCI/PCIe拡張スロット付き) ---------- 46719 -------- Saved 
+[Cincoze DS-1000] 第 4 代 Intel® Core™ i3 / i5 / i7 卓越性能无风扇计算机集成 Q87 芯片组 ---------- 46720 -------- Saved 
+[Cincoze DS-1000] 第4世代 Intel® Core™ i3 / i5 / i7 の高パフォーマンス・ファンレス・コンピュータに Q87 チップセットを統合 ---------- 46721 -------- Saved 
+CEM511 -- COM Express 6 型模块采用第 7 代 Intel® Core™ i7/i5/i3 处理器 ---------- 46724 -------- Saved 
+CEM511 - 第 7 世代 Intel® Core™ i7/i5/i3 プロセッサー搭載の COM Express Type 6 モジュール ---------- 46725 -------- Saved 
+GOT5152T-845 -- 配备 Intel® Celeron® 处理器 N3060 的 15 英寸 XGA TFT 无风扇触摸屏液晶电脑 ---------- 46726 -------- Saved 
+GOT5152T-845 - Intel® Celeron® プロセッサー N3060 を搭載の 15 インチ XGA TFT ファンレス・タッチパネル・コンピューター ---------- 46727 -------- Saved 
+Q7M311 -- Qseven 模块采用 Intel® Pentium® 处理器 N4200 和 Celeron® 处理器 N3350 ---------- 46728 -------- Saved 
+Q7M311 -- Intel® Pentium® プロセッサー N4200 & Celeron® プロセッサー N3350 搭載の Qseven モジュール ---------- 46729 -------- Saved 
+tBOX100-838-FL ── 用于车辆、铁路和海运计算机、采用 Intel® Atom® 处理器 E3845 的无风扇嵌入式系统 ---------- 46730 -------- Saved 
+tBOX100-838-FL -- Intel® Atom® プロセッサー E3845 搭載の車載、鉄道、海洋 PC 用ファンレス・エンベデッド・システム ---------- 46731 -------- Saved 
+Aegex10 真正安全的平板电脑 ---------- 46732 -------- Saved 
+Aegex10 本質的に安全なタブレット ---------- 46733 -------- Saved 
+MX31-CE0 ---------- 46734 -------- Saved 
+MX31-CE0 ---------- 46735 -------- Saved 
+MD71-HB0 ---------- 46736 -------- Saved 
+MD71-HB0 ---------- 46737 -------- Saved 
+MFH27AI ---------- 46738 -------- Saved 
+MFH27AI ---------- 46739 -------- Saved 
+MDQ17AI ---------- 46740 -------- Saved 
+MDQ17AI ---------- 46741 -------- Saved 
+UBT (基于普遍情况的测试) ---------- 46742 -------- Saved 
+UBT (ユビキタス・ベース・テスト) ---------- 46743 -------- Saved 
+CCZ02 Intel Atom® x5-Z8350 processor-based POS machine solution ---------- 46744 -------- Saved 
+DSS212J-S3 ---------- 46745 -------- Saved 
+EC3-IC831026 3.5-inch SBC motherboard ---------- 46747 -------- Saved 
+CDT-MTX1 ---------- 46748 -------- Saved 
+EmETXe-i87M0 COM Express basic type 6 CPU module ---------- 46749 -------- Saved 
+EmQ-i2506 Intel®Atom®N2600 Qseven™ CPU module ---------- 46750 -------- Saved 
+ M1922 19" fanless medical station ---------- 46751 -------- Saved 
+SP-803 ---------- 46752 -------- Saved 
+XPedite7472 VPX-REDI with 3rd generation Intel® Core™ i7 ---------- 46753 -------- Saved 
+M&A Companion Touch8 ---------- 46754 -------- Saved 
+Interactive teaching platform Genius station ---------- 46755 -------- Saved 
+Industrial-grade DRAM module ---------- 46756 -------- Saved 
+WMS-2000 connection and application controller ---------- 46757 -------- Saved 
+AE Linux ---------- 46759 -------- Saved 
+Mentor Embedded Linux ---------- 46760 -------- Saved 
+ELIT-1650 Digital Signage  ---------- 46762 -------- Saved 
+Linux and Android Services ---------- 46763 -------- Saved 
+M 1920 Expert Medical Station  ---------- 46764 -------- Saved 
+ARES-6663 Energy Controller ---------- 46765 -------- Saved 
+Automotive Technology Platform (ATP)  ---------- 46766 -------- Saved 
+Gladius G1220 Rugged Tablet PC ---------- 46767 -------- Saved 
+iVME7210 VMEbus processor motherboard ---------- 46768 -------- Saved 
+XP A40/x03 Intel® Atom™ processor XMC/PMS motherboard ---------- 46769 -------- Saved 
+Centellis 4620-AdvancedTCA 10GbE communication server ---------- 46770 -------- Saved 
+TP A41/30x Intel® Atom™ 3U CompactPCI® SBC ---------- 46771 -------- Saved 
+MCASE series ---------- 46772 -------- Saved 
+MITX-CORE-800 series ---------- 46773 -------- Saved 
+KR8-315 embedded platform ---------- 46774 -------- Saved 
+COMX-430/440 COM Express module ---------- 46775 -------- Saved 
+RapiDex circuit board custom service ---------- 46776 -------- Saved 
+MITX-440 Mini-ITX motherboard ---------- 46777 -------- Saved 
+COMX-420: COM Express module ---------- 46778 -------- Saved 
+Centellis CO 31KX AdvancedTCA Platform ---------- 46779 -------- Saved 
+COM-U15 (COM Express CPU module) ---------- 46780 -------- Saved 
+MITX-CORE-820 ---------- 46781 -------- Saved 
+Centellis 3406, R3.2 AdvancedTCA communication server ---------- 46782 -------- Saved 
+PrAMC-7210 ---------- 46783 -------- Saved 
+SOM-5780 ---------- 46784 -------- Saved 
+PEM-E200VLA ---------- 46785 -------- Saved 
+XTX-CV (XTX CPU module) ---------- 46786 -------- Saved 
+ITX-M62 VER:1.1 ---------- 46787 -------- Saved 
+ITX-M62 VER:1.1 ---------- 46788 -------- Saved 
+ITX-M62 VER:1.1 ---------- 46789 -------- Saved 
+Self-service equipment-dedicated motherboard ---------- 46791 -------- Saved 
+PRA-EC-T01 motherboard ---------- 46792 -------- Saved 
+PRA-NB-T52 motherboard ---------- 46793 -------- Saved 
+PRA-CB-T32 motherboard ---------- 46794 -------- Saved 
+DSS212S-D4 ---------- 46796 -------- Saved 
+DSS224J-S3 ---------- 46797 -------- Saved 
+OSS1A4-D4 ---------- 46798 -------- Saved 
+OSS212-D4 ---------- 46799 -------- Saved 
+Supermicro SuperServer E100-9AP ---------- 46800 -------- Saved 
+Supermicro SuperServer E100-9APP ---------- 46801 -------- Saved 
+OSS224-D4 ---------- 46802 -------- Saved 
+Supermicro SuperServer E100-9AP-IA ---------- 46803 -------- Saved 
+Supermicro SuperServer E100-9S ---------- 46804 -------- Saved 
+eDrawer4048J-S3 ---------- 46805 -------- Saved 
+eDrawer4048S-D4 ---------- 46806 -------- Saved 
+XSLATE B10 ---------- 46807 -------- Saved 
+eDrawer4060J-S3 ---------- 46810 -------- Saved 
+XSLATE D10 ---------- 46811 -------- Saved 
+Bobcat ---------- 46812 -------- Saved 
+XC6 ---------- 46813 -------- Saved 
+TQMxE39C1 - COM Express Compact module with Intel Atom® x5/x7 E3900 series and soldered memory ---------- 46819 -------- Saved 
+TQMxE39C2 - COM Express Compact module with Intel Atom® x5/x7 E3900 series, 2 SO-DIMMs ---------- 46820 -------- Saved 
+PI-CF150 ---------- 46825 -------- Saved 
+PI-CF156 ---------- 46826 -------- Saved 
+TQMxE38M - COM Express Mini module with Intel Atom® E3800 series ---------- 46827 -------- Saved 
+TQMx50UC - COM Express Compact module with 5th Gen. Intel® Core™ ULV i7/i5/i3 ---------- 46828 -------- Saved 
+Ultra compact BoxPC platform ---------- 46829 -------- Saved 
+Commercial 6th/7th Generation Intel® GPU Capable Computer (Formerly Skylake/Kaby Lake) ---------- 46835 -------- Saved 
+M.2 NVMe SSD ---------- 46841 -------- Saved 
+PI-CF185 ---------- 46844 -------- Saved 
+IoTWorX ---------- 46877 -------- Saved 
+VIO-212x-MX100 (Rugged Front IP65 12.1″ 4:3 XGA Touch Monitor  with Resistive / Capacitive Touch) ---------- 46878 -------- Saved 
+VIO-212x-PC300 (Rugged Front IP65 12.1″ XGA Resistive/Capacitive Touch Panel PC with Intel® Core™ i5/i3 or Celeron® Processor, Formerly Broadwell-U) ---------- 46880 -------- Saved 
+VIO-217x-MX100 (Rugged Front IP65 17″ SXGA Touch Monitor with Resistive/Capacitive Touch) ---------- 46882 -------- Saved 
+Q170M2 ---------- 46937 -------- Saved 
+金融自助解决方案Skylake-U  3855U ---------- 46970 -------- Saved 
+Fanless Nano - Digital Signage System ---------- 46985 -------- Saved 
+Fanless Nano NUC - Entertainment IPTV ---------- 46989 -------- Saved 
+Low Voltage Small Form Factor ---------- 46992 -------- Saved 
+Fanless Nano PC - Network Security or Firewall Appliance ---------- 46997 -------- Saved 
+DA67-N1-B40H0G-GIA ---------- 47008 -------- Saved 
+DA67-N2-B40H0G-GIA ---------- 47016 -------- Saved 
+Giada VM23-F1-N335031E5G-GIA ---------- 47017 -------- Saved 
+Giada VM23-F1-N345032E5G-GIA ---------- 47018 -------- Saved 
+Fanless Multi-Lan SFF PC - Edge Security and Firewall Appliance ---------- 47044 -------- Saved 
+Low Voltage Small Form Factor PC - Digital Signage 4K ---------- 47045 -------- Saved 
+Fanless Thin Client - Network Security Appliance ---------- 47053 -------- Saved 
+FlacheSAN1N6C-D4 ---------- 47076 -------- Saved 
+FlacheSAN1N8M-D4 ---------- 47077 -------- Saved 
+FlacheSAN1N8U-D4 ---------- 47078 -------- Saved 
+FlacheSAN2-D4 ---------- 47079 -------- Saved 
+FlacheSAN2V-D4 ---------- 47080 -------- Saved 
+gridComm Street Light Solution ---------- 47081 -------- Saved 
+PRIME J3355I-C ---------- 47082 -------- Saved 
+DSS224S-D4 ---------- 47091 -------- Saved 
+P1157E-500 -- 15 英寸 XGA TFT 可扩展工业触摸屏液晶电脑采用第 7 代 Intel® Core™ i7/i5/i3、Celeron® & Pentium® 处理器，配备 1 个 PCI/PCIe 插槽 ---------- 47094 -------- Saved 
+P1157E-500 -- 15 インチ XGA TFT 拡張可能な産業タッチパネル・コンピューター、第 7 世代 Intel® Core™ i7/i5/i3、Celeron® & Pentium® プロセッサーおよび 1 PCI/PCIe スロット搭載 ---------- 47095 -------- Saved 
+Seavo SV-IPC-H1124U 高性能工业计算机 ---------- 47096 -------- Saved 
+Seavo SV-IPC-H1124U 高性能産業用コンピューター ---------- 47097 -------- Saved 
+Seavo SV-IPC-6200 工业计算机 ---------- 47098 -------- Saved 
+Seavo SV-IPC-6200 産業用コンピューター ---------- 47099 -------- Saved 
+Seavo SV-OPS-H110 数字标牌计算机 ---------- 47100 -------- Saved 
+Seavo SV-OPS-H110 デジタル・サイネージ・コンピューター ---------- 47101 -------- Saved 
+Seavo SV-TPC-34510 工业触屏液晶电脑 ---------- 47102 -------- Saved 
+Seavo SV-TPC-34510 産業用タッチパネル PC ---------- 47103 -------- Saved 
+Seavo SV-IPC-3450 工业计算机 ---------- 47104 -------- Saved 
+Seavo SV-IPC-3450 産業用コンピューター ---------- 47105 -------- Saved 
+Seavo SV-IPC-H1134U 高性能工业计算机 ---------- 47106 -------- Saved 
+Seavo SV-IPC-H1134U 高性能産業用コンピューター ---------- 47107 -------- Saved 
+MVP-6010/6020 超值系列基于第 6 代 Intel® Core™ i7/i5/i3 处理器，是一款可扩展无风扇嵌入式计算机 ---------- 47108 -------- Saved 
+MVP-6010/6020 シリーズのバリュー・ファミリー、第 6 世代 Intel® Core™ i7/i5/i3 プロセッサーをベースにした拡張可能なファンレス・エンベデッド・コンピューター ---------- 47109 -------- Saved 
+TIBCO BusinessWorks ---------- 47114 -------- Saved 
+TIBCO BusinessWorks ---------- 47115 -------- Saved 
+TIBCO Live Datamart ---------- 47116 -------- Saved 
+TIBCO ライブ・データマート ---------- 47117 -------- Saved 
+TIBCO BusinessEvents ---------- 47118 -------- Saved 
+TIBCO BusinessEvents ---------- 47119 -------- Saved 
+TIBCO Cloud™ Integration ---------- 47120 -------- Saved 
+TIBCO Cloud™ Integration ---------- 47121 -------- Saved 
+[Cincoze CV-108 / P1001] 8.4 英寸 TFT SVGA 4:3 液晶电脑配备电阻式 5 线触屏、Intel® Atom® E3845 四核、4 个 USB、2 个 COM、1 个 VGA 和 1 个 DisplayPort ---------- 47132 -------- Saved 
+[Cincoze CV-108 / P1001] 8.4 インチ TFT SVGA 4:3 抵抗膜式 5 ワイヤー・タッチパネル PC、Intel® Atom® E3845 クアッドコア、4x USB、2x COM、1x VGA および 1x DisplayPort を搭載。 ---------- 47133 -------- Saved 
+[Cincoze CV-110 / P1001] 10.4 英寸 TFT SVGA 4:3 液晶电脑配备电阻式 5 线 / 投射电容式触屏、Intel® Atom® E3845 四核、4 个 USB、2 个 COM、1 个 VGA 和 1 个 DisplayPort ---------- 47134 -------- Saved 
+[Cincoze CV-110 / P1001] 10.4 インチ TFT SVGA 4:3 抵抗膜式 5 ワイヤー・パネル PC/投影容量性タッチ、Intel® Atom® E3845 クアッドコア、4x USB、2x COM、1x VGA および 1x DisplayPort を搭載。 ---------- 47135 -------- Saved 
+[Cincoze CV-112 / P1001] 12.1 英寸 TFT SVGA 4:3 液晶电脑配备电阻式 5 线 / 投射电容式触屏、Intel® Atom® E3845 四核、4 个 USB、2 个 COM、1 个 VGA 和 1 个 DisplayPort ---------- 47136 -------- Saved 
+[Cincoze CV-112 / P1001] 12.1 インチ TFT SVGA 4:3 抵抗膜式 5 ワイヤー・パネル PC/投影容量性タッチ、Intel® Atom® E3845 クアッドコア、4x USB、2x COM、1x VGA および 1x DisplayPort を搭載。 ---------- 47137 -------- Saved 
+[Cincoze CV-115 / P1001] 15 英寸 TFT XGA 4:3 液晶电脑配备电阻式 5 线 / 投射电容式触屏、Intel® Atom® E3845 四核、4 个 USB、2 个 COM、1 个 VGA 和 1 个 DisplayPortt ---------- 47138 -------- Saved 
+[Cincoze CV-115 / P1001] 15 インチ TFT XGA 4:3 抵抗膜式 5 ワイヤー・パネル PC/投影容量性タッチ、Intel® Atom® E3845 クアッドコア、4x USB、2x COM、1x VGA および 1x DisplayPort を搭載。 ---------- 47139 -------- Saved 
+[Cincoze CV-W115 / P1001] 15.6 英寸 TFT WXGA 16:9 液晶电脑配备电阻式 5 线 / 投射电容式触屏、Intel® Atom® E3845 四核、4 个 USB、2 个 COM、1 个 VGA 和 1 个 DisplayPort ---------- 47140 -------- Saved 
+[Cincoze CV-115 / P1001] 15.6 インチ TFT WXGA 16:9 抵抗膜式 5 ワイヤー・パネル PC/投影容量性タッチ、Intel® Atom® E3845 クアッドコア、4x USB、2x COM、1x VGA および 1x DisplayPort を搭載。 ---------- 47141 -------- Saved 
+[Cincoze CV-117 / P1001] 17 英寸 TFT SXGA 5:4 液晶电脑配备电阻式 5 线 / 投射电容式触屏、Intel® Atom® E3845 四核、4 个 USB、2 个 COM、1 个 VGA 和 1 个 DisplayPort ---------- 47142 -------- Saved 
+[Cincoze CV-117 / P1001] 17 インチ TFT SXGA 5:4 抵抗膜式 5 ワイヤー・パネル PC/投影容量性タッチ、Intel® Atom® E3845 クアッドコア、4x USB、2x COM、1x VGA および 1x DisplayPort を搭載。 ---------- 47143 -------- Saved 
+[Cincoze CV-119 / P1001] 19 英寸 TFT SXGA 5:4 液晶电脑配备电阻式 5 线 / 投射电容式触屏、Intel® Atom® E3845 四核、4 个 USB、2 个 COM、1 个 VGA 和 1 个 DisplayPort ---------- 47144 -------- Saved 
+[Cincoze CV-119 / P1001] 19 インチ TFT SXGA 5:4 抵抗膜式 5 ワイヤー・パネル PC/投影容量性タッチ、Intel® Atom® E3845 クアッドコア、4x USB、2x COM、1x VGA および 1x DisplayPort を搭載。 ---------- 47145 -------- Saved 
+[Cincoze CV-W121 / P1001] 21.5 英寸 Intel® Atom® E3845 四核处理器无风扇触屏液晶电脑采用 CDS 技术 ---------- 47146 -------- Saved 
+[Cincoze CV-W121 / P1001] 21.5 インチ Intel® Atom® E3845 クアッドコア・プロセッサー・ファンレス・タッチパネル PC、CDS テクノロジー搭載 ---------- 47147 -------- Saved 
+Seavo SV-LM-3455 彩票机 ---------- 47148 -------- Saved 
+Seavo SV-LM-3455 宝くじキオスク ---------- 47149 -------- Saved 
+Seavo SV-SVT-3805 智能车载终端 ---------- 47150 -------- Saved 
+Seavo SV-SVT-3805 インテリジェント車両用端末 ---------- 47151 -------- Saved 
+Seavo SV-TPC-61015 工业触屏液晶电脑 ---------- 47152 -------- Saved 
+Seavo SV-TPC-61015 産業用タッチパネル PC ---------- 47153 -------- Saved 
+Seavo SV-NVR-11A6 网络视频录像机 ---------- 47154 -------- Saved 
+Seavo SV-NVR-11A6 ネットワーク・ビデオレコーダー ---------- 47155 -------- Saved 
+MIIMETIQ® IoT COMPOSER - 创建任意类型的物联网解决方案 ---------- 47156 -------- Saved 
+MIIMETIQ® IoT COMPOSER - あらゆるタイプの IoT ソリューション構築に ---------- 47157 -------- Saved 
+MVP-5000 超值系列采用第 6 代 Intel® Core™ i7/i5/i3 处理器，是一款无风扇嵌入式计算机 ---------- 47158 -------- Saved 
+MVP-5000 シリーズのバリュー・ファミリー、第 6 世代 Intel® Core™ i7/i5/i3 プロセッサーをベースにしたファンレス・エンベデッド・コンピューター ---------- 47159 -------- Saved 
+MXE-5500 系列是性能强大的无风扇嵌入式计算机，采用第 6 代 Intel® Core™ 处理器 ---------- 47160 -------- Saved 
+MXE-5500 シリーズは、強力な第 6 世代 Intel® Core™ プロセッサーを搭載したファンレス・エンベデッド・コンピューターです。 ---------- 47161 -------- Saved 
+[Cincoze CV-W121 / P2002] 21.5 英寸第 6 代 Intel® Core™ 处理器 U 系列无风扇触屏液晶电脑配备 CFM 和 CDS 技术 ---------- 47168 -------- Saved 
+[Cincoze CV-W121 / P2002] 21.5 インチの第 6 世代 Intel® Core™ プロセッサー U シリーズ・ファンレス・タッチパネル PC、CFM & CDS テクノロジー搭載 ---------- 47169 -------- Saved 
+[Cincoze CV-119 / P2002] 19 英寸第 6 代 Intel® Core™ 处理器 U 系列无风扇触屏液晶电脑配备 CFM 和 CDS 技术 ---------- 47170 -------- Saved 
+[Cincoze CV-119 / P2002] 19 インチの第 6 世代 Intel® Core™ プロセッサー U シリーズ・ファンレス・タッチパネル PC、CFM & CDS テクノロジー搭載 ---------- 47171 -------- Saved 
+[Cincoze CV-117 / P2002] 17 英寸第 6 代 Intel® Core™ 处理器 U 系列无风扇触屏液晶电脑配备 CFM 和 CDS 技术 ---------- 47172 -------- Saved 
+[Cincoze CV-117 / P2002] 17 インチの第 6 世代 Intel® Core™ プロセッサー U シリーズ・ファンレス・タッチパネル PC、CFM & CDS テクノロジー搭載 ---------- 47173 -------- Saved 
+[Cincoze CV-W115 / P2002] 15.6 英寸第 6 代 Intel® Core™ 处理器 U 系列无风扇触屏液晶电脑配备 CFM 和 CDS 技术 ---------- 47174 -------- Saved 
+[Cincoze CV-W115 / P2002] 15.6 インチの第 6 世代 Intel® Core™ プロセッサー U シリーズ・ファンレス・タッチパネル PC、CFM & CDS テクノロジー搭載 ---------- 47175 -------- Saved 
+[Cincoze CV-115 / P2002] 15 英寸第 6 代 Intel® Core™ 处理器 U 系列无风扇触屏液晶电脑配备 CFM 和 CDS 技术 ---------- 47176 -------- Saved 
+[Cincoze CV-115 / P2002] 15 インチの第 6 世代 Intel® Core™ プロセッサー U シリーズ・ファンレス・タッチパネル PC、CFM & CDS テクノロジー搭載 ---------- 47177 -------- Saved 
+[Cincoze CV-112 / P2002] 12.1 英寸第 6 代 Intel® Core™ 处理器 U 系列无风扇触屏液晶电脑配备 CFM 和 CDS 技术 ---------- 47178 -------- Saved 
+[Cincoze CV-112 / P2002] 12.1 インチの第 6 世代 Intel® Core™ プロセッサー U シリーズ・ファンレス・タッチパネル PC、CFM & CDS テクノロジー搭載 ---------- 47179 -------- Saved 
+IoT-380 网关 ---------- 47188 -------- Saved 
+IoT-380 Gateway ---------- 47189 -------- Saved 
+ADi-SA2X-KB ---------- 47190 -------- Saved 
+ADi-SA2X-KB ---------- 47191 -------- Saved 
+TIBCO® 奖励 ---------- 47192 -------- Saved 
+TIBCO® Reward ---------- 47193 -------- Saved 
+Mashery ---------- 47194 -------- Saved 
+Mashery ---------- 47195 -------- Saved 
+TIBCO Cloud™ Integration ---------- 47196 -------- Saved 
+TIBCO Cloud™ Integration ---------- 47197 -------- Saved 
+Statistica ---------- 47198 -------- Saved 
+Statistica ---------- 47199 -------- Saved 
+TIBCO StreamBase ---------- 47200 -------- Saved 
+TIBCO StreamBase ---------- 47201 -------- Saved 
+TIBCO Jaspersoft ---------- 47202 -------- Saved 
+TIBCO Jaspersoft ---------- 47203 -------- Saved 
+TIBCO Spotfire ---------- 47204 -------- Saved 
+TIBCO Spotfire ---------- 47205 -------- Saved 
+ADi-SA2X-KB ---------- 47208 -------- Saved 
+ADi-SA2X-KB ---------- 47209 -------- Saved 
+高性能单板计算机 （SBC） 采用第 7 七代 Intel® Core™ 处理器 （原 Kaby Lake），配备旧款 C/104-Plus 扩展接口 ---------- 47212 -------- Saved 
+第 7 世代 Intel® Core™ プロセッサー（旧Kaby Lake）と従来の PC/104-Plus 拡張インターフェースを組み合わせた高性能シングルボード・コンピューター（SBC） ---------- 47213 -------- Saved 
+Supermicro X11DPL-i 双处理器 ATX 主板 ---------- 47224 -------- Saved 
+Supermicro X11DPL-i デュアル・プロセッサー ATX マザーボード ---------- 47225 -------- Saved 
+Supermicro X11DPi-NT 双处理器 E-ATX 主板 ---------- 47226 -------- Saved 
+Supermicro X11DPi-NT デュアル・プロセッサー E-ATX マザーボード ---------- 47227 -------- Saved 
+Supermicro X11DPi-NT 双处理器 E-ATX 主板 ---------- 47228 -------- Saved 
+Supermicro X11DPi-NT デュアル・プロセッサー E-ATX マザーボード ---------- 47229 -------- Saved 
+Supermicro X11DPi-NT 双处理器 E-ATX 主板 ---------- 47230 -------- Saved 
+Supermicro X11DPi-NT デュアル・プロセッサー E-ATX マザーボード ---------- 47231 -------- Saved 
+Supermicro X11DPi-NT 双处理器 E-ATX 主板 ---------- 47232 -------- Saved 
+Supermicro X11DPi-NT デュアル・プロセッサー E-ATX マザーボード ---------- 47233 -------- Saved 
+Supermicro X11DPi-NT 双处理器 E-ATX 主板 ---------- 47234 -------- Saved 
+Supermicro X11DPi-NT デュアル・プロセッサー E-ATX マザーボード ---------- 47235 -------- Saved 
+SiteWhere | 物联网开放平台 ---------- 47236 -------- Saved 
+SiteWhere |モノのインターネット向けオープン・プラットフォーム ---------- 47237 -------- Saved 
+Supermicro X11DAi-N 双处理器 E-ATX 主板 ---------- 47238 -------- Saved 
+Supermicro X11DAi-N デュアル・プロセッサー E-ATX マザーボード ---------- 47239 -------- Saved 
+Supermicro X11DPH-T 双处理器 E-ATX 主板 ---------- 47240 -------- Saved 
+Supermicro X11DPH-T デュアル・プロセッサー E-ATX マザーボード ---------- 47241 -------- Saved 
+无风扇云数字标牌媒体播放器 （原 Apollo Lake） ---------- 47242 -------- Saved 
+ファンレス・クラウド・デジタル・サイネージ・メディア・プレーヤー (旧 Apollo Lake) ---------- 47243 -------- Saved 
+MLC-101/121/156-BT ---------- 47244 -------- Saved 
+MLC-101/121/156-BT ---------- 47245 -------- Saved 
+配备互动数字标牌的电信公共支付自助机 ---------- 47248 -------- Saved 
+Telco Public Payment Kiosk、Interative Digital Signage 搭載 ---------- 47249 -------- Saved 
+NEON-1021-M ---------- 47250 -------- Saved 
+NEON-1021-M ---------- 47251 -------- Saved 
+KBox A-202 ---------- 47252 -------- Saved 
+KISS 2U Short KTQ87 ---------- 47253 -------- Saved 
+视频智能 | VTrack ---------- 47254 -------- Saved 
+Video Intelligence | VTrack ---------- 47255 -------- Saved 
+RCK-308MA： 适用于解决方案应用的 3U 机架安装式 ATX 主板机箱 ---------- 47256 -------- Saved 
+RCK-308MA: システム・アプリケーション用 3U ラックマウント ATX マザーボード・シャーシ ---------- 47257 -------- Saved 
+Scanalytics 智能建筑平台 ---------- 47258 -------- Saved 
+Scanalytics スマート・ビルディング・プラットフォーム ---------- 47259 -------- Saved 
+ITX-M62 VER：1.1 ---------- 47260 -------- Saved 
+ITX-M62 VER:1.1 ---------- 47261 -------- Saved 
+已连接运输 ---------- 47266 -------- Saved 
+接続された交通機関 ---------- 47267 -------- Saved 
+Qseven Q7-BW ---------- 47268 -------- Saved 
+Qseven Q7-BW ---------- 47269 -------- Saved 
+SMARC SM2S-AL ---------- 47270 -------- Saved 
+SMARC SM2S-AL ---------- 47271 -------- Saved 
+SMARC SM2F-AL ---------- 47272 -------- Saved 
+SMARC SM2F-AL ---------- 47273 -------- Saved 
+SKY-8100 ---------- 47274 -------- Saved 
+SKY-8100 ---------- 47275 -------- Saved 
+ASMB-913 ---------- 47276 -------- Saved 
+ASMB-913 ---------- 47277 -------- Saved 
+Qseven Q7-AL ---------- 47278 -------- Saved 
+Qseven Q7-AL ---------- 47279 -------- Saved 
+FPC-7900 耐用型箱式电脑 ---------- 47282 -------- Saved 
+FPC-7900 堅牢ボックスPC ---------- 47283 -------- Saved 
+Intel® & Giada Shutuo 智能 DS 解决方案 ---------- 47284 -------- Saved 
+Intel® & Giada Shutuo Smart DS ソリューション ---------- 47285 -------- Saved 
+SOM-6869 ---------- 47288 -------- Saved 
+SOM-6869 ---------- 47289 -------- Saved 
+工业平板电脑 SPC-0020  ---------- 47290 -------- Saved 
+産業用タブレット PC SPC-0020 ---------- 47291 -------- Saved 
+MIIMETIQ® LITE - 构建您自己物联网平台的最简便方式 ---------- 47292 -------- Saved 
+MIIMETIQ® LITE - IoT プラットフォームを構築するもっともシンプルな方法 ---------- 47293 -------- Saved 
+DSS316J-S3 ---------- 47294 -------- Saved 
+DSS424J-S3 ---------- 47295 -------- Saved 
+DSS424S-D4 ---------- 47296 -------- Saved 
+OSS316-D4 ---------- 47297 -------- Saved 
+OSS424-D4 ---------- 47298 -------- Saved 
+eDrawer4060S-D4 ---------- 47299 -------- Saved 
+T1800D14 / T1900D14 ---------- 47302 -------- Saved 
+D67-N1-7100U40H0G-GIA ---------- 47311 -------- Saved 
+PC67-N1-7500U40H0G-GIA ---------- 47314 -------- Saved 
+Giada DT-B150DL-H ---------- 47320 -------- Saved 
+Giada AP23-N3350 ---------- 47324 -------- Saved 
+Gm-1037A26-G ---------- 47331 -------- Saved 
+Gm-1037D16 ---------- 47334 -------- Saved 
+GM-1037D16-UC ---------- 47336 -------- Saved 
+G-MD525SD-26 ---------- 47349 -------- Saved 
+Gm-J1900D12-U ---------- 47364 -------- Saved 
+Fanless Thin Client Mini PC - Wireless IoT Gateway ---------- 47404 -------- Saved 
+Fanless 8 Core Mini PC - Wireless IoT Gateway  ---------- 47405 -------- Saved 
+Low Voltage SFF PC - Powerful 8 Core Network Appliance ---------- 47406 -------- Saved 
+Fanless Small Form Factor PC - Industrial or Network Security ---------- 47407 -------- Saved 
+eDrawer4072S-D4 ---------- 47408 -------- Saved 
+Low Voltage 1U Server - Industrial or Network Security ---------- 47409 -------- Saved 
+1U Server Eyefinity - Video Wall or Surveillance ---------- 47410 -------- Saved 
+G300 - Intel® Core™ i5 (Formerly Haswell) Multi Display ---------- 47411 -------- Saved 
+Intel® SOC Multi Display (Formerly Haswell) ---------- 47412 -------- Saved 
+Fanless Nano PC - Digital Signage Player ---------- 47413 -------- Saved 
+Commercial Nano PC - IPTV or Digital Signage Media Player ---------- 47414 -------- Saved 
+Fanless Thin Client - Digital Signage or IoT Gateway ---------- 47415 -------- Saved 
+Slim Intel® Core™ i5 Small Form Factor Mini PC ---------- 47416 -------- Saved 
+Open Pluggable System - Digital Signage ---------- 47417 -------- Saved 
+Fanless Intel® Braswell Platform ---------- 47418 -------- Saved 
+Fanless Nano - Wireless Gateway Appliance ---------- 47419 -------- Saved 
+Fanless Mini PC - Wireless Gateway Appliance  ---------- 47420 -------- Saved 
+Fanless Nano IPTV - Commercial Set Top Box  ---------- 47421 -------- Saved 
+A25 - Embedded Single Board Computer with Intel® Xeon® D ---------- 47422 -------- Saved 
+F26L - Embedded Single Board Computer with Intel Atom® (Formerly Apollo Lake-I) ---------- 47423 -------- Saved 
+ 4K Intel® NUC Media Player ---------- 47429 -------- Saved 
+Hyper Historian  ---------- 47430 -------- Saved 
+MobileHMI ---------- 47431 -------- Saved 
+AnalytiX Suite ---------- 47432 -------- Saved 
+Fanless Intel® Core™ i3/i5 NUC HD Media Player ---------- 47437 -------- Saved 
+Intel 6th Generation Video Wall Appliance ---------- 47438 -------- Saved 
+ Low-Profile Fanless IoT Gateway ---------- 47439 -------- Saved 
+Commercial Intel Celeron Mini-ITX Computer ---------- 47440 -------- Saved 
+ High Performance Edge Computing IoT Gateway ---------- 47442 -------- Saved 
+FlexGate IoT Outdoor LoRa Gateway ---------- 47443 -------- Saved 
+FlexGate IoT Industrial LoRa Gateway ---------- 47444 -------- Saved 
+D3433-S2 Industrial Series Mini-ITX Mainboard ---------- 47448 -------- Saved 
+D3434-S2 Industrial Series Mini-ITX Mainboard ---------- 47449 -------- Saved 
+NVR 5400-4U Series ---------- 47451 -------- Saved 
+Video Intelligence | VTrack ---------- 47452 -------- Saved 
+GA-FAILOVER (GLOBAL ADMINISTRATOR FO) ---------- 47453 -------- Saved 
+VIDEO MANAGEMENT SOLUTION (VMS)/Command Center (CC) ---------- 47454 -------- Saved 
+NVR Software - Power DOM ---------- 47455 -------- Saved 
+Streaming Manager (SM) ---------- 47456 -------- Saved 
+Global Administrator (GA) ---------- 47457 -------- Saved 
+ARCHIVE SERVER ---------- 47458 -------- Saved 
+NCCTV HD / TV-Wall Solutions ---------- 47459 -------- Saved 
+NVR 5400-3U Series ---------- 47460 -------- Saved 
+COMMAND CENTER ---------- 47461 -------- Saved 
+D3598-B Extended Lifecycle ATX Mainboard  ---------- 47464 -------- Saved 
+NCA-1510 ﻿ Fanless SFF Desktop Network Security Appliance for SME Edge Security ---------- 47473 -------- Saved 
+OSIsoft PI System ---------- 47532 -------- Saved 
+XPedite7677 | Intel® Xeon® D-1500 Family Processor-Based 3U VPX-REDI Module with Dual 10GbE and Kintex® UltraScale™ FPGA ---------- 47542 -------- Saved 
+BCM MX3350N Intel® Celeron® N3350 Dual Core Thin mini-ITX Motherboard supports Three Independent Displays ---------- 47551 -------- Saved 
+SysCentreModuleTM Series—ITX8013A ---------- 47557 -------- Saved 
+Quark-2210 ---------- 47642 -------- Saved 
+Metamako C-Series (Intel® Arria® 10) ---------- 47645 -------- Saved 
+10G Mac/Phy Low Latency Core ---------- 47646 -------- Saved 
+HD CUBE ---------- 47660 -------- Saved 
+NVR-FAILOVER (NVR-FO) ---------- 47661 -------- Saved 
+NR5400-1U SERIES ---------- 47662 -------- Saved 
+CC MOBILE ---------- 47665 -------- Saved 
+conga-IOT Gateway 2 ---------- 47669 -------- Saved 
+NORCO EMB-4940-4 Inch Embedded Industrial Motherboard Based on Intel® Celeron® J1900 Processor ---------- 47681 -------- Saved 
+インダストリアルコンピュータ AP-10A ---------- 47690 -------- Saved 
+Plug and Play Digital Signage  ---------- 47709 -------- Saved 
+Intel® SSD Pro 5400s 系列 120GB ---------- 47732 -------- Saved 
+Intel® SSD Pro 5400s シリーズ 120GB ---------- 47733 -------- Saved 
+INTEL® SSD PRO 5400S 系列 240GB ---------- 47734 -------- Saved 
+INTEL® SSD PRO 5400S シリーズ 240GB ---------- 47735 -------- Saved 
+INTEL® SSD PRO 5400S 系列 180GB ---------- 47736 -------- Saved 
+INTEL® SSD PRO 5400S シリーズ 180GB ---------- 47737 -------- Saved 
+INTEL® SSD PRO 5400S 系列 360GB ---------- 47738 -------- Saved 
+INTEL® SSD PRO 5400S シリーズ 360GB ---------- 47739 -------- Saved 
+SkySpark  ---------- 47742 -------- Saved 
+SkySpark  ---------- 47743 -------- Saved 
+物联网医疗保健监控解决方案 ---------- 47744 -------- Saved 
+IoT 医療モニタリング・ソリューション ---------- 47745 -------- Saved 
+CodeSonar ---------- 47746 -------- Saved 
+ASMB-825 ---------- 47751 -------- Saved 
+ASMB-825 ---------- 47752 -------- Saved 
+HPC-8224 ---------- 47753 -------- Saved 
+HPC-8224 ---------- 47754 -------- Saved 
+ASMB-975 ---------- 47755 -------- Saved 
+ASMB-975 ---------- 47756 -------- Saved 
+基于 NORCO MATX-6933 Intel® H61 芯片组的 MicroATX 主板 ---------- 47757 -------- Saved 
+NORCO MATX-6933 Intel® H61 チップセットをベースにした MicroATX マザーボード ---------- 47758 -------- Saved 
+3I610AW/CW - 通过第 6 代 Intel® SoC 处理器将 3.5 英寸单板计算机的性能最大化 ---------- 47759 -------- Saved 
+3I610AW/CW- 最大限のパフォーマンスを実現する、第 6 世代 Intel® SoC プロセッサー搭載 3.5 インチ シングルボード・コンピューター ---------- 47760 -------- Saved 
+微型气候监控系统  ---------- 47761 -------- Saved 
+Micro Climate Monitoring System  ---------- 47762 -------- Saved 
+PL-81080 高性能存储服务器   ---------- 47769 -------- Saved 
+PL-81080 高性能ストレージ・サーバー  ---------- 47770 -------- Saved 
+NANO-7100D 无风扇 SFF PC DP + HDMI、2 个 COM （原 Kaby Lake） ---------- 47773 -------- Saved 
+Nano-7100D ファンレス SFF PC DP+HDMI、2COM (旧 Kaby Lake) ---------- 47774 -------- Saved 
+FlacheSAN2V-D4 ---------- 47775 -------- Saved 
+FlacheSAN2V-D4 ---------- 47776 -------- Saved 
+FlacheSAN2-D4 ---------- 47777 -------- Saved 
+FlacheSAN2-D4 ---------- 47778 -------- Saved 
+FlacheSAN1N8M-D4 ---------- 47779 -------- Saved 
+FlacheSAN1N8M-D4 ---------- 47780 -------- Saved 
+采用 H110 芯片组的低电压、节能型计算机 ---------- 47781 -------- Saved 
+H110 チップセット搭載の低電圧エネルギー効率の良い PC ---------- 47782 -------- Saved 
+袖珍型纳米计算机或 NUC - Intel® Celeron® 处理器 （原 Apollo Lake） ---------- 47783 -------- Saved 
+ポケットサイズの Nano PC または NUC - Intel® Celeron® プロセッサー (旧 Apollo Lake)  ---------- 47784 -------- Saved 
+无风扇 SFF 计算机 - Kaby Lake-u SoC、Pentium、4K 显卡 ---------- 47785 -------- Saved 
+ファンレス SFF PC - Kaby Lake-u SoC、Pentium、4K グラフィックス ---------- 47786 -------- Saved 
+FlacheSAN1N6C-D4 ---------- 47787 -------- Saved 
+FlacheSAN1N6C-D4 ---------- 47788 -------- Saved 
+SFF 无风扇 J1900 PC 配备 6 个 LAN 端口  ---------- 47789 -------- Saved 
+6 つの LAN ポート搭載の SFF ファンレス J1900 PC  ---------- 47790 -------- Saved 
+DA67-N1-B40H0G-GIA ---------- 47791 -------- Saved 
+DA67-N1-B40H0G-GIA ---------- 47792 -------- Saved 
+SFF 低压网络设备计算机 ---------- 47793 -------- Saved 
+SFF 低電圧ネットワーク・アプライアンス PC ---------- 47794 -------- Saved 
+Giada VM23-F1-N335031E5G-GIA ---------- 47795 -------- Saved 
+Giada VM23-F1-N335031E5G-GIA ---------- 47796 -------- Saved 
+Giada VM23-F1-N345032E5G-GIA ---------- 47797 -------- Saved 
+Giada VM23-F1-N345032E5G-GIA ---------- 47798 -------- Saved 
+DA67-N2-B40H0G-GIA ---------- 47799 -------- Saved 
+DA67-N2-B40H0G-GIA ---------- 47800 -------- Saved 
+Q170M2 ---------- 47803 -------- Saved 
+Q170M2 ---------- 47804 -------- Saved 
+无风扇纳米 Intel® Celeron® J1900 配备 4 个 Intel® 82538v LAN 端口 ---------- 47805 -------- Saved 
+ファンレス Nano Intel® Celeron® J1900、4 つの Intel® 82538v LAN ポート搭載 ---------- 47806 -------- Saved 
+VIO-217x-MX100 （（耐用型前置 IP65 17 英寸 SXGA 电阻式/电容式触屏） ---------- 47809 -------- Saved 
+VIO-217x-MX100（抵抗膜式/静電容量式タッチを備えた堅牢なフロント IP65 17 インチ SXGA タッチ・モニター） ---------- 47810 -------- Saved 
+VIO-212x-PC300 （耐用型前置 IP65 12.1 英寸 XGA 电阻式/电容式触屏液晶电脑配备 Intel® Core™ i5/i3 或 Celeron® 处理器，原 Broadwell-U） ---------- 47811 -------- Saved 
+VIO-212x-PC300（堅牢なフロント IP65 12.1 インチ XGA 抵抗膜式/投影容量式タッチパネル PC、Intel® Core™ i5/i3 また Celeron® プロセッサー、旧 Broadwell-U 搭載） ---------- 47812 -------- Saved 
+VIO-212x-MX100 （耐用型前端 IP65 12.1 英寸 4:3 XGA 电阻式 / 电容式触屏） ---------- 47813 -------- Saved 
+VIO-212x-MX100（抵抗膜式/投影容量式タッチを備えた高耐久性フロント IP65 12.1 インチ 4：3 XGA タッチ・モニター） ---------- 47814 -------- Saved 
+IoTWorX ---------- 47815 -------- Saved 
+IoTWorX ---------- 47816 -------- Saved 
+M.2 NVMe SSD ---------- 47817 -------- Saved 
+M.2 NVMe SSD ---------- 47818 -------- Saved 
+PI-CF185 ---------- 47819 -------- Saved 
+PI-CF185 ---------- 47820 -------- Saved 
+超紧凑型箱式电脑平台 ---------- 47825 -------- Saved 
+超小型 BoxPC プラットフォーム ---------- 47826 -------- Saved 
+TQMx50UC - COM Express 紧凑型模块配备第 5 代 Intel® Core™ ULV i7/i5/i3 ---------- 47827 -------- Saved 
+TQMx50UC - COM Express コンパクト・モジュール、第 5 世代 Intel® Core™ ULV i7/i5/i3 搭載 ---------- 47828 -------- Saved 
+TQMxE38M - COM Express 迷你模块采用 Intel Atom® E3800 系列 ---------- 47829 -------- Saved 
+TQMxE38M - COM Express Mini モジュール、Intel Atom® E3800 シリーズ搭載 ---------- 47830 -------- Saved 
+商用第 6 代/第 7 代 Intel® GPU 计算机 （原 Skylake/Kaby Lake） ---------- 47831 -------- Saved 
+商業用第 6・7 世代 Intel® GPU 対応コンピューター (旧 Skylake/Kaby Lake) ---------- 47832 -------- Saved 
+TQMxE39C2 - COM Express 紧凑型模块配备 Intel Atom® x5/x7 E3900 系列、2 个 SO-DIMM ---------- 47833 -------- Saved 
+TQMxE39C2 - COM Express Compact モジュール、Intel Atom® x5/x7 E3900 シリーズ、2 つの SO-DIMM およびはんだ付けメモリ搭載 ---------- 47834 -------- Saved 
+TQMxE39C1 - COM Express 紧凑型模块配备 Intel Atom® x5/x7 E3900 系列和焊接内存 ---------- 47835 -------- Saved 
+TQMxE39C1 - COM Express Compact モジュール、Intel Atom® x5/x7 E3900 シリーズおよびはんだ付けメモリ搭載 ---------- 47836 -------- Saved 
+PI-CF150 ---------- 47837 -------- Saved 
+PI-CF150 ---------- 47838 -------- Saved 
+PI-CF156 ---------- 47839 -------- Saved 
+PI-CF156 ---------- 47840 -------- Saved 
+KMC Commander 物联网平台 ---------- 47842 -------- Saved 
+KMC Commander IoT プラットフォーム ---------- 47843 -------- Saved 
+XC6 ---------- 47844 -------- Saved 
+XC6 ---------- 47845 -------- Saved 
+XSLATE B10 ---------- 47846 -------- Saved 
+XSLATE B10 ---------- 47847 -------- Saved 
+Bobcat ---------- 47848 -------- Saved 
+Bobcat ---------- 47849 -------- Saved 
+XSLATE D10 ---------- 47850 -------- Saved 
+XSLATE D10 ---------- 47851 -------- Saved 
+eDrawer4060J-S3 ---------- 47852 -------- Saved 
+eDrawer4060J-S3 ---------- 47853 -------- Saved 
+eDrawer4048S-D4 ---------- 47854 -------- Saved 
+eDrawer4048S-D4 ---------- 47855 -------- Saved 
+eDrawer4048J-S3 ---------- 47856 -------- Saved 
+eDrawer4048J-S3 ---------- 47857 -------- Saved 
+Supermicro SuperServer E100-9S ---------- 47858 -------- Saved 
+Supermicro SuperServer E100-9S ---------- 47859 -------- Saved 
+Supermicro SuperServer E100-9AP-IA ---------- 47860 -------- Saved 
+Supermicro SuperServer E100-9AP-IA ---------- 47861 -------- Saved 
+Supermicro SuperServer E100-9APP ---------- 47862 -------- Saved 
+Supermicro SuperServer E100-9APP ---------- 47863 -------- Saved 
+Supermicro SuperServer E100-9AP ---------- 47864 -------- Saved 
+Supermicro SuperServer E100-9AP ---------- 47865 -------- Saved 
+DSS224J-S3 ---------- 47866 -------- Saved 
+DSS224J-S3 ---------- 47867 -------- Saved 
+DSS212J-S3 ---------- 47868 -------- Saved 
+DSS212J-S3 ---------- 47869 -------- Saved 
+FlacheSAN1N4C-D4 ---------- 47870 -------- Saved 
+FlacheSAN1N4C-D4 ---------- 47871 -------- Saved 
+FlacheSAN1L-U4 ---------- 47872 -------- Saved 
+FlacheSAN1L-U4 ---------- 47873 -------- Saved 
+FlacheSAN1L-D4 ---------- 47874 -------- Saved 
+FlacheSAN1L-D4 ---------- 47875 -------- Saved 
+ACO – 3000 耐用型车载应用无风扇系统 ---------- 47876 -------- Saved 
+ACO – 3000 車載アプリケーション用高耐久性ファンレス・システム ---------- 47877 -------- Saved 
+Financial self-help solution Intel® Celeron® 3855U ---------- 47878 -------- Saved 
+NORCO-BIS-6220 Intel® NM10 chipset, Intel Atom® D2550 (Formerly Cedarview) processor processor based embedded system ---------- 47893 -------- Saved 
+Mobiliya Asset Tracking Solution ---------- 47899 -------- Saved 
+Q170T ---------- 47943 -------- Saved 
+C++11-502 - Real-Time Modern C++ ---------- 47995 -------- Saved 
+C++11-501 - Modern C++ for Embedded Systems ---------- 47996 -------- Saved 
+MC-102 - Guidelines for Writing High Integrity Software in C (The MISRA-C:2012 Guidelines) ---------- 47997 -------- Saved 
+C++-501 - C++ for Embedded Developers ---------- 47998 -------- Saved 
+AC++-501 - Advanced C++ for Embedded Systems ---------- 47999 -------- Saved 
+AC++11-401 - Transitioning to C++11/C++14 ---------- 48000 -------- Saved 
+C++-502 - Real-Time C++ ---------- 48001 -------- Saved 
+PY-404 - Python for Test Engineers ---------- 48002 -------- Saved 
+IoT Connect for Field Force enablement ---------- 48018 -------- Saved 
+Agent ---------- 48019 -------- Saved 
+eDrawer4072S-D4 ---------- 48020 -------- Saved 
+eDrawer4096J-S2 ---------- 48021 -------- Saved 
+3I385AW/CW-Maximizing performance 3.5” Single Board Computers with Intel® SoC Processor (Formerly Bay Trail) ---------- 48023 -------- Saved 
+2I380D-Industrial Ethernet Appliance with Intel Atom® Bay-Trail Dual / Quad Core CPU ---------- 48024 -------- Saved 
+3I610DW-Industrial Ethernet Appliance 3.5” Single Board Computer with Intel® SoC Processor (Formerly Skylake-U / Kaby Lake-U) ---------- 48025 -------- Saved 
+3I393NX- Integrated PoE IP and Networking Applications with Intel® SoC Processor (Formerly Apollo Lake) ---------- 48026 -------- Saved 
+2I386EW-LEX Compact SBC 2I386EW with Flexible Expansions via eIO extension cards ---------- 48027 -------- Saved 
+AAEON FWS-2271 Network Appliance ---------- 48028 -------- Saved 
+AAEON FWS-2271 Network Appliance ---------- 48029 -------- Saved 
+AAEON FWS-2272 (Network Appliance) ---------- 48030 -------- Saved 
+AAEON FWS-2250 (Network Appliance) ---------- 48031 -------- Saved 
+AAEON FWS-2251 (Network Appliance) ---------- 48032 -------- Saved 
+AAEON FWS-8500 (Network Appliance) ---------- 48033 -------- Saved 
+AAEON FWS-7820 (Network Appliance) ---------- 48034 -------- Saved 
+AAEON FWS-7821 (Network Appliance) ---------- 48035 -------- Saved 
+AAEON VPC-5600S (In-Vehicle Network Video Recorder) ---------- 48036 -------- Saved 
+AAEON VPC-3300S (In-Vehicle NVR) ---------- 48037 -------- Saved 
+AAEON VPC-5500S (In-Vehicle NVR) ---------- 48038 -------- Saved 
+Wind River® Helix™ Chassis ---------- 48039 -------- Saved 
+Wind River® Helix™ Drive  ---------- 48040 -------- Saved 
+Wind River® Helix™ Cockpit ---------- 48041 -------- Saved 
+Wind River® Helix™ CarSync ---------- 48042 -------- Saved 
+Compliance as a Solution (CaaS) ---------- 48043 -------- Saved 
+SenseAgent IoT Building Management Solution ---------- 48048 -------- Saved 
+ProLine+ ---------- 48050 -------- Saved 
+Embedded Mini-ITX Motherboard: JNF791-3955 (Intel® Celeron® 3955U Processor) ---------- 48060 -------- Saved 
+Embedded Mini-ITX Motherboard: JNF697-Q170 (6th generation Intel® Core™ i3, i5, i7 Processors) ---------- 48061 -------- Saved 
+Embedded Mini-ITX Motherboard: JNF693-H110 (6th generation Intel® Core™ i3, i5, i7 Processors) ---------- 48062 -------- Saved 
+Embedded Mini-ITX Motherboard: JNF792I-3160 (Intel® Celeron® N3160 Processor) ---------- 48063 -------- Saved 
+Embedded Mini-ITX Motherboard: JNF792-3160 (Intel® Celeron® N3160 Processor) ---------- 48064 -------- Saved 
+Embedded Thin Mini-ITX Motherboard: JIMB-1900 (Intel® Celeron® J1900 Processor) ---------- 48065 -------- Saved 
+EonStor GSe Pro 200 ---------- 48068 -------- Saved 
+EonServ 7016 ---------- 48069 -------- Saved 
+MOBILE NVR ---------- 48070 -------- Saved 
+FALCON active 1xx ---------- 48075 -------- Saved 
+Embedded 3.5" SBC Motherboard: JNF3AE-2930 (Intel® Celeron® N2930 Processor) ---------- 48079 -------- Saved 
+Embedded 3.5" SBC Motherboard: JNF531D4-3160 (Intel® Celeron® N3160 Processor) ---------- 48080 -------- Saved 
+Embedded 3.5" SBC Motherboard: JNF632E-6300U (Intel® Core™ i5-6300U Processor) ---------- 48081 -------- Saved 
+Industrial Micro ATX Motherboard: JNMF691-H110 (6th generation Intel® Core™ i3, i5, i7 Processors) ---------- 48082 -------- Saved 
+conga-IOT 网关 2 ---------- 48087 -------- Saved 
+conga-IOT Gateway 2 ---------- 48088 -------- Saved 
+NVR 软件 - 电源 DOM ---------- 48099 -------- Saved 
+NVR Software - パワー DOM ---------- 48100 -------- Saved 
+NVR 5400-4U 系列 ---------- 48101 -------- Saved 
+NVR 5400-4U シリーズ ---------- 48102 -------- Saved 
+eDrawer4072S-D4 ---------- 48103 -------- Saved 
+eDrawer4072S-D4 ---------- 48104 -------- Saved 
+A25 - 配备 Intel® Xeon® D 的嵌入式单板计算机 ---------- 48105 -------- Saved 
+A25 - Intel® Xeon® D 搭載のエンベデッド・シングルボード・コンピューター ---------- 48106 -------- Saved 
+D3433-S2 工业系列迷你 ITX 主板 ---------- 48107 -------- Saved 
+D3433-S2 産業用シリーズ Mini-ITX メインボード ---------- 48108 -------- Saved 
+D3434-S2 工业系列迷你 ITX 主板 ---------- 48109 -------- Saved 
+D3434-S2 産業用シリーズ Mini-ITX メインボード ---------- 48110 -------- Saved 
+AnalytiX 套件 ---------- 48111 -------- Saved 
+AnalytiX スイート ---------- 48112 -------- Saved 
+OSIsoft PI 系统 ---------- 48113 -------- Saved 
+OSIsoft PI System ---------- 48114 -------- Saved 
+XPedite7677 | 基于 Intel® Xeon® D-1500 系列处理器的 3U VPX-REDI 模块，配备双 10GbE 和 Kintex® UltraScale™ FPGA ---------- 48115 -------- Saved 
+XPedite7677 | Intel® Xeon® D-1500 ファミリー・プロセッサーをベースにした 3U VPX-REDI モジュール、デュアル 10GbE および Kintex® UltraScale™ FPGA を搭載 ---------- 48116 -------- Saved 
+HD CUBE ---------- 48117 -------- Saved 
+HD CUBE ---------- 48118 -------- Saved 
+NR5400-1U 系列 ---------- 48119 -------- Saved 
+NR5400-1U シリーズ ---------- 48120 -------- Saved 
+基于 Intel® Celeron® J1900 处理器的 NORCO EMB-4940-4 英寸嵌入式工业主板 ---------- 48121 -------- Saved 
+Intel® Celeron® J1900 プロセッサーをベースにした、NORCO EMB-4940-4 インチのエンベデッド産業用マザーボード ---------- 48122 -------- Saved 
+FlexGate IoT 工业 LoRa 网关 ---------- 48143 -------- Saved 
+FlexGate IoT Industrial LoRa Gateway ---------- 48144 -------- Saved 
+Hyper Historian  ---------- 48145 -------- Saved 
+Hyper Historian  ---------- 48146 -------- Saved 
+MobileHMI ---------- 48147 -------- Saved 
+MobileHMI ---------- 48148 -------- Saved 
+CC MOBILE ---------- 48149 -------- Saved 
+CC MOBILE ---------- 48150 -------- Saved 
+无风扇 Intel® 平台 （原 Bay Trail） ---------- 48151 -------- Saved 
+ファンレス Intel® プラットフォーム (旧 Bay Trail) ---------- 48152 -------- Saved 
+无风扇第 7 代 Intel® （原 KABYLAKE-S） 处理器迷你 PC ---------- 48153 -------- Saved 
+ファンレス第 7 世代 Intel® (旧 Kabylake-S) プロセッサー Mini PC ---------- 48154 -------- Saved 
+Quark-2210 ---------- 48155 -------- Saved 
+Quark-2210 ---------- 48156 -------- Saved 
+Metamako C 系列 （Intel® Arria® 10）  ---------- 48157 -------- Saved 
+Metamako C シリーズ (Intel® Arria® 10) ---------- 48158 -------- Saved 
+10G Mac/Phy 低延迟内核 ---------- 48159 -------- Saved 
+10G Mac/Phy 低遅延コア ---------- 48160 -------- Saved 
+FlexGate 物联网户外 LoRa 网关 ---------- 48161 -------- Saved 
+FlexGate IoT 屋外 LoRa ゲートウェイ ---------- 48162 -------- Saved 
+F26L-嵌入式单板计算机采用 Intel Atom® （原 Apollo Lake-I） ---------- 48163 -------- Saved 
+F26L - Intel Atom® (旧 Apollo Lake-I) 搭載のエンベデッド・シングルボード・コンピューター ---------- 48164 -------- Saved 
+Intel® 平台 （原 Rangeley）- 无风扇高性能防火墙设备 ---------- 48165 -------- Saved 
+Intel® Platform (旧 Rangeley) - ファンレス高性能ファイアウォール・アプライアンス ---------- 48166 -------- Saved 
+eDrawer4060S-D4 ---------- 48167 -------- Saved 
+eDrawer4060S-D4 ---------- 48168 -------- Saved 
+OSS316-D4 ---------- 48169 -------- Saved 
+OSS316-D4 ---------- 48170 -------- Saved 
+OSS424-D4 ---------- 48171 -------- Saved 
+OSS424-D4 ---------- 48172 -------- Saved 
+DSS424S-D4 ---------- 48173 -------- Saved 
+DSS424S-D4 ---------- 48174 -------- Saved 
+DSS424J-S3 ---------- 48175 -------- Saved 
+DSS424J-S3 ---------- 48176 -------- Saved 
+SysCentreModuleTM 系列 — ITX8013A ---------- 48183 -------- Saved 
+SysCentreModuleTM シリーズ—ITX8013A ---------- 48184 -------- Saved 
+无风扇 Intel® Core™ i3/i5 NUC 高清媒体播放器  ---------- 48187 -------- Saved 
+ファンレス Intel® Core™ i3/i5 NUC HD メディア・プレーヤー ---------- 48188 -------- Saved 
+Embedded Mini-ITX Motherboard: JNFS6Z-IH81 (4th generation Intel® Core™ i3, i5, i7 Processors)  ---------- 48189 -------- Saved 
+Embedded Motherboard: JNF541-1900 (Intel® Celeron® J1900 Processor) ---------- 48190 -------- Saved 
+Embedded Motherboard: JNF542-4300U (Intel® Core™ i5-4300U Processor) ---------- 48191 -------- Saved 
+Embedded Motherboard: JNF551-6300U (Intel® Core™ i5-6300U Processor) ---------- 48192 -------- Saved 
+Fanless Embedded System: JBC501F697 (6th/7th generation Intel® Core™ i3, i5, i7 Processors) ---------- 48194 -------- Saved 
+Fanless Embedded System: JBC501F9QU (4th generation Intel® Core™ i3, i5, i7 Processors) ---------- 48195 -------- Saved 
+NORCO BIS-6220 Intel® NM10 chipset, Intel Atom® D2550 processor (formerly Cedarview) based embedded system ---------- 48200 -------- Saved 
+SRC-2800A Series 2U Rack-Mount Chassis ---------- 48201 -------- Saved 
+Fanless Embedded System: JBC385F551 (6th generation Intel® Core™ i5-6300U Processor) ---------- 48215 -------- Saved 
+Prescriptive Data NANTUM® ---------- 48218 -------- Saved 
+Fanless Embedded Network Appliance: JBC38AF542XA (4th generation Intel® Core™ i5-4300U Processor) ---------- 48219 -------- Saved 
+Fanless Embedded Network Appliance: JBC38AF542AA (4th generation Intel® Core™ i5-4300U Processor) ---------- 48220 -------- Saved 
+Fanless Embedded Network/Industrial Appliance: JBC38AF542CX (4th generation Intel® Core™ i5-4300U Processor) ---------- 48221 -------- Saved 
+Fanless Embedded Industrial System: JBC38AF542CC (4th generation Intel® Core™ i5-4300U Processor) ---------- 48222 -------- Saved 
+Fanless Embedded Network/Industrial Appliance: JBC38AF542CA (4th generation Intel® Core™ i5-4300U Processor) ---------- 48223 -------- Saved 
+CASwell Industrial Cyber Security Appliance ---------- 48232 -------- Saved 
+Q170M-C ---------- 48233 -------- Saved 
+Q170M-CM-B ---------- 48234 -------- Saved 
+CAF-0250 ---------- 48236 -------- Saved 
+CAD-0255 ---------- 48238 -------- Saved 
+CAF-1022 ---------- 48239 -------- Saved 
+CAF-0265 ---------- 48240 -------- Saved 
+Fanless Embedded Network Appliance: JBC390F541XA (Intel® Celeron® J1900 Processor) ---------- 48241 -------- Saved 
+Fanless Embedded Network Appliance: JBC390F541AA (Intel® Celeron® J1900 Processor) ---------- 48242 -------- Saved 
+Fanless Embedded Network/Industrial Appliance: JBC390F541CX (Intel® Celeron® J1900 Processor) ---------- 48243 -------- Saved 
+Fanless Embedded Network/Industrial Appliance: JBC390F541CC (Intel® Celeron® J1900 Processor) ---------- 48244 -------- Saved 
+Fanless Embedded Network/Industrial Appliance: JBC390F541CA (Intel® Celeron® J1900 Processor) ---------- 48245 -------- Saved 
+Fanless Embedded System: JBC382F632 (6th generation Intel® Core™ i5-6300U Processor) ---------- 48248 -------- Saved 
+Fanless Embedded System: JBC377F531 (Intel® Celeron® N3160 Processor) ---------- 48249 -------- Saved 
+Fanless Embedded Network Appliance: JBC375F533 (Intel® Celeron® J1900 Processor)  ---------- 48250 -------- Saved 
+Fanless Embedded System: JBC375F532 (Intel® Celeron® N2930 Processor)  ---------- 48251 -------- Saved 
+Fanless Embedded System: JBC382F3E (4th generation Intel® Core™ i5-4300U Processor)  ---------- 48253 -------- Saved 
+SUPER-Fanless, Bezel-free, Resistor/Capacitor Touch Panel PC ---------- 48254 -------- Saved 
+TERA2I386EW-LEX eIO Embedded system provides flexible stackable options with fanless chassis ---------- 48255 -------- Saved 
+NET 2I380D-Industrial Ethernet Appliance with Intel Atom® Dual / Quad Core CPU (Formerly Bay-Trail) ---------- 48256 -------- Saved 
+Task3I610DW-Fanless Embedded Intel® system with eIO extension solution (Formerly Skylake-U/Kaby Lake-U) ---------- 48257 -------- Saved 
+Task3I393NX-Completed PoE IP & Networking Solution with processor (Formerly Apollo Lake) ---------- 48258 -------- Saved 
+Nantum Building Operating System ---------- 48269 -------- Saved 
+Shuttle X50V6 All in One  ---------- 48308 -------- Saved 
+Vendron Box 4 ---------- 48334 -------- Saved 
+[Cincoze DX-1000] 7/6th Generation Intel® Xeon® and Core™ Processors, Extreme Performance, Compact and Modular Rugged Workstation ---------- 48347 -------- Saved 
+BCM MX3350N Intel® Celeron® N3350 双核超薄迷你 ITX 主板支持三个独立显示器 ---------- 48351 -------- Saved 
+BCM MX3350N Intel® Celeron® N3350 デュアルコア Thin mini-ITX マザーボードは、3 つの独立したディスプレイをサポートしています。 ---------- 48352 -------- Saved 
+Intel® NM10 高速芯片组 - 无风扇瘦客户端迷你计算机  ---------- 48353 -------- Saved 
+Intel® NM10 Express チップセット - ファンレス Thin Client Mini PC  ---------- 48354 -------- Saved 
+Giada DT-B150DL-H ---------- 48355 -------- Saved 
+Giada DT-B150DL-H ---------- 48356 -------- Saved 
+D67-N1-7100U40H0G-GIA ---------- 48379 -------- Saved 
+D67-N1-7100U40H0G-GIA ---------- 48380 -------- Saved 
+PC67-N1-7500U40H0G-GIA ---------- 48387 -------- Saved 
+PC67-N1-7500U40H0G-GIA ---------- 48388 -------- Saved 
+DSS316J-S3 ---------- 48391 -------- Saved 
+DSS316J-S3 ---------- 48392 -------- Saved 
+DSS224S-D4 ---------- 48393 -------- Saved 
+DSS224S-D4 ---------- 48394 -------- Saved 
+PRIME J3355I-C ---------- 48395 -------- Saved 
+PRIME J3355I-C ---------- 48396 -------- Saved 
+ 4K Intel® NUC 媒体播放器 ---------- 48397 -------- Saved 
+ 4K Intel® NUC メディア・プレーヤー ---------- 48398 -------- Saved 
+D3598-B - 长寿命 ATX 主板  ---------- 48399 -------- Saved 
+D3598-B 拡張ライフサイクル ATX メインボード  ---------- 48400 -------- Saved 
+NCA-1510 SME 边缘安全无风扇 SFF 台式网络安全设备 ---------- 48403 -------- Saved 
+NCA-1510 ﻿ ファンレス SFF デスクトップ・ネットワーク・セキュリティ・アプライアンス、SME エッジ・セキュリティ用 ---------- 48404 -------- Saved 
+gridComm 街道照明解决方案 ---------- 48405 -------- Saved 
+gridComm Street Light Solution ---------- 48406 -------- Saved 
+NCCTV 高清/电视幕墙解决方案 ---------- 48407 -------- Saved 
+NCCTV HD / TV ウォール・ソリューション ---------- 48408 -------- Saved 
+存档服务器 ---------- 48409 -------- Saved 
+アーカイブサーバー ---------- 48410 -------- Saved 
+全球管理员 （GA） ---------- 48411 -------- Saved 
+グローバル管理者 (GA) ---------- 48412 -------- Saved 
+流管理器 （SM） ---------- 48413 -------- Saved 
+ストリーミング・マネージャ (SM) ---------- 48414 -------- Saved 
+视频管理解决方案 （VMS）/指挥中心 （CC） ---------- 48415 -------- Saved 
+ビデオ管理ソリューション（VMS）/Command Center (CC) ---------- 48416 -------- Saved 
+GA - 故障切换 （全球管理员 FO） ---------- 48417 -------- Saved 
+GA-FAILOVER (GLOBAL ADMINISTRATOR FO) ---------- 48418 -------- Saved 
+视频智能 | VTrack ---------- 48419 -------- Saved 
+Video Intelligence | VTrack ---------- 48420 -------- Saved 
+Wind River® Helix ™ Drive ---------- 48425 -------- Saved 
+Wind River® Helix™ Cockpit ---------- 48426 -------- Saved 
+Wind River® Helix™ Lab Cloud ---------- 48427 -------- Saved 
+Gm-J1900D12-U ---------- 48457 -------- Saved 
+T1800D14 / T1900D14 ---------- 48465 -------- Saved 
+Video intelligence | VTrack ---------- 48467 -------- Saved 
+Industrial computer AP-10A ---------- 48468 -------- Saved 
+CEM311 -- COM Express Type 10 Mini Module with Intel® Pentium® Processor N4200 & Celeron® Processor N3350 ---------- 48477 -------- Saved 
+eBOX700-891-FL -- Fanless Embedded System with LGA1151 Socket 7th/6th Gen Intel® Core™ i7/i5/i3 & Celeron® Processor, Intel® H110, 2 HDMI/DisplayPort, 4 GbE LANs, 6 USB, 1 PCIe x4 Expansion and 9 ~ 36 VDC ---------- 48478 -------- Saved 
+ICO300-83B -- Robust DIN-rail Fanless Embedded System with Intel® Celeron® Processor N3350, Isolated COM, LAN and DIO ---------- 48479 -------- Saved 
+ICO210-83D -- Robust DIN-rail Fanless Embedded System with Intel® Celeron® N3350 Processor, 1 COM or CAN, 2 LAN, 2 USB, and 1 DIO ---------- 48480 -------- Saved 
+ADLQ170HDS 3.5-INCH SBC Based on 6th Generation Intel® Core™ I3/I7 Quad/DC Processors  ---------- 48490 -------- Saved 
+交互式智能平板触控一体机 ---------- 48492 -------- Saved 
+Industry 4.0 Production Explorer Kit ---------- 48497 -------- Saved 
+LEX Pico-ITX SBC 2I392CW with Flexible Expansions utilizing Intel® SoC Processor (Formerly Apollo Lake) ---------- 48507 -------- Saved 
+T80，基于Cherry Trail Z8350工业平板 ---------- 48513 -------- Saved 
+IMS Evolve IoT Solution ---------- 48514 -------- Saved 
+Agent ---------- 48516 -------- Saved 
+ACO – 3011X (Rugged Fanless System with Intel® Broadwell-U Processor and 1x PCI or PCIe x4 for In-vehicle Applications) ---------- 48517 -------- Saved 
+SUM2100高性能 1U服务器 ---------- 48518 -------- Saved 
+SUM2100高性能 1U服务器 ---------- 48519 -------- Saved 
+SUM-3210高性能录播工作站 ---------- 48520 -------- Saved 
+UM-M2171高性能工业母板 ---------- 48521 -------- Saved 
+UM-M3275 ---------- 48522 -------- Saved 
+UM-M3277高性能母板 ---------- 48523 -------- Saved 
+Avalue OFT-07W01, 7" open frame tablet ---------- 48524 -------- Saved 
+Avalue OFT-15W01, 15.6" Open Frame Tablet ---------- 48525 -------- Saved 
+Avalue OFT-10W01, 10.1" Open Frame Tablet ---------- 48526 -------- Saved 
+Avalue OFT-21W01, 21.5" Open Frame Tablet ---------- 48527 -------- Saved 
+Smart Shelf Solution for Targeted Advertising ---------- 48528 -------- Saved 
+Avalue EMS-SKLU,  ---------- 48529 -------- Saved 
+US-E1321分布式录播工作站 ---------- 48530 -------- Saved 
+US-E1324壁挂式录播工作站 ---------- 48531 -------- Saved 
+US-E1325高性能计算机 ---------- 48532 -------- Saved 
+US-E1326 OPS录播模块 ---------- 48533 -------- Saved 
+US-E2332高性能录播工作站 ---------- 48534 -------- Saved 
+US-E2351超融合工作站 ---------- 48535 -------- Saved 
+US-E4331高性能工作站 ---------- 48536 -------- Saved 
+US-E4332存储服务器 ---------- 48537 -------- Saved 
+DNA 1160- Desktop Network Appliance ---------- 48538 -------- Saved 
+US-S1331高密度服务器 ---------- 48539 -------- Saved 
+US-S1332高密度服务器 ---------- 48540 -------- Saved 
+US-S1332超融合服务器 ---------- 48541 -------- Saved 
+US-S2334超融合服务器 ---------- 48542 -------- Saved 
+MZAPLAI ---------- 48549 -------- Saved 
+MDH11BM ---------- 48550 -------- Saved 
+MDH11KI ---------- 48551 -------- Saved 
+R281-NO0 ---------- 48552 -------- Saved 
+ST385W-Discover more flexibility & shorter development time with LEX SMART - Computer on Modules ---------- 48553 -------- Saved 
+Carriots Analytics ---------- 48554 -------- Saved 
+Carriots IoT Platform ---------- 48555 -------- Saved 
+Carriots Analytics for Candi Controls  ---------- 48556 -------- Saved 

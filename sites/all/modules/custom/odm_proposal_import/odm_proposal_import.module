@@ -1,0 +1,819 @@
+<?php
+
+/** Implement hook_menu * */
+function odm_proposal_import_menu() {
+
+  // Validate the magrabi user login
+  $items['odm_proposal_import'] = array(
+    'title' => 'Import',
+    'page callback' => 'odm_proposal_import',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+    $items['odm_proposal_status_import'] = array(
+    'title' => 'Import',
+    'page callback' => 'odm_proposal_status_import',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  
+      $items['odm_proposal_response_import'] = array(
+    'title' => 'Import',
+    'page callback' => 'odm_proposal_response_import',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+        $items['odm_proposal_product_import'] = array(
+    'title' => 'Import',
+    'page callback' => 'odm_proposal_product_import',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+          $items['odm_proposal_rfpauthorimport'] = array(
+    'title' => 'Import',
+    'page callback' => 'odm_proposal_rfpauthorimport',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  
+  // Validate the magrabi user login
+  $items['deleterfppro'] = array(
+    'title' => 'Import',
+    'page callback' => 'deleterfppro',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  
+    $items['odm_proposal_builder_update'] = array(
+    'title' => 'Import',
+    'page callback' => 'odm_proposal_builder_update',
+    'access arguments' => array('access content'),
+    'type' => MENU_CALLBACK,
+  );
+  return $items;
+}
+function devel_generate_content_kill($values) {
+	
+  $results = db_select('node', 'n')
+              ->fields('n', array('nid'))
+              ->condition('type', $values['node_types'], 'IN')
+              ->execute();
+  foreach ($results as $result) {
+    $nids[] = $result->nid;
+  }
+
+  if (!empty($nids)) {
+    node_delete_multiple($nids);
+    drupal_set_message(t('Deleted %count nodes.', array('%count' => count($nids))));
+  }
+
+}
+
+function deleterfppro(){
+	devel_generate_content_kill(array('node_types' => array('rfp')));
+	devel_generate_content_kill(array('node_types' => array('proposal')));
+	die('success');
+}
+
+function odm_proposal_import(){
+
+   $nodes = array();
+
+   
+    $static =  "https://45.33.48.181/sites/default/files/shared/proposal_2.csv";
+    $fp = fopen($static, 'r');
+    module_load_include('inc', 'entity', 'includes/entity.controller');
+
+    while (($row = fgetcsv($fp, 0, ",")) !== FALSE) {
+
+       if($row[0] != 'RFP ID'){
+
+       $query = new EntityFieldQuery();                     
+       $query->entityCondition('entity_type', 'node')
+       ->entityCondition('bundle', 'rfp')
+       ->fieldCondition('field_odm_rfp_id', 'value', $row[0], '=');
+       $result = $query->execute();              
+
+   $rfpid = (key($result['node']));          
+   $fcid = getfcid($row[1]);
+
+   $builderid = getidbyerpmsingle($row[2]);
+  
+   $proquery = new EntityFieldQuery();                     
+   $proquery->entityCondition('entity_type', 'node')
+       ->entityCondition('bundle', 'proposal')
+       ->fieldCondition('field_requirement', 'value', $rfpid, '=')
+       ->fieldCondition('field_sub_requirement', 'value', $fcid, '=')
+	   ->fieldCondition('field_builder', 'value', $builderid, '=');
+   $resultproposal = $proquery->execute();  
+	   
+      $propid = (key($resultproposal['node'])); 	
+	  $proposalnode = node_load($propid);
+
+	 
+if($propid){
+	
+  $node = node_load($rfpid);
+  global $user;
+  global $language;
+  $user_fields = user_load($user->uid);
+
+  $ewrapper = entity_metadata_wrapper('node', $proposalnode);
+
+
+  if($row[4]){
+  $prodid = prodidbytext($builderid, $row[4]);
+ if($prodid)
+  $ewrapper->field_recommended_products->set($prodid); 
+                
+  }  
+
+    //add solutions field_website
+  $ewrapper->field_website->set(array('title' => '', 'url' => $row[5]));   
+
+  //Price Selection
+  $ewrapper->field_price->set(intval($row[6]));
+
+  //add solutions field_po_proposal		
+  if($row[7])
+  $ewrapper->field_po_proposal->set($row[7]);
+  
+  //user erpm mapping
+	if($row[17]){
+				$UserErpm = db_query("SELECT users.mail AS users_mail
+FROM 
+{users} users
+LEFT JOIN {field_data_field_erpm_login_id} field_data_field_erpm_login_id ON users.uid = field_data_field_erpm_login_id.entity_id AND field_data_field_erpm_login_id.entity_type = 'user'
+WHERE ((  (field_data_field_erpm_login_id.field_erpm_login_id_value = :erpm ) ))", array(':erpm' =>($row[17]) ))->fetchField();	 
+
+   if($UserErpm){
+    //add solutions field_builder_mail	
+    $ewrapper->field_builder_mail->set($UserErpm); 
+	}
+
+    }
+
+ 
+  //$ewrapper->author->mail->set($node->name);
+
+  $ewrapper->language->set($language->language);
+ 
+  $ewrapper->save();
+
+ // $proposalnode = node_load($ewrapper->getIdentifier());
+
+  if($row[16] == 'Published'){
+	 $sid = 13;
+     workflow_execute_transition($proposalnode, $sid, $comment = NULL, $force = FALSE);			
+  }
+  
+  $proposal_information = array();
+  $proposal_information['field_name'] = 'field_proposal_information'; // field collection name
+  $proposal_information['field_description'][LANGUAGE_NONE][0]['value'] = $row[8];  
+  
+  try {
+	    $file_list = explode(',', $row[9]);
+	$i = 0;
+	foreach($file_list as $value){
+		if($value){
+			if(file_uri_to_object($value, true)){
+		  $fobj =  file_uri_to_object($value, true);
+		$fobj->display = 1;		  
+	   }else{
+		$file = new stdClass();
+$file->filename = basename($value);
+$file->uri = $value;
+$file->filemime = file_get_mimetype($value);
+$file->filesize = filesize($value);
+$file->uid = 1; 
+$file->status = FILE_STATUS_PERMANENT;
+
+$fobj = file_save($file);
+$fobj->display = 1;
+	}
+
+if($fobj){
+$proposal_information['field_rfp_attachment'][LANGUAGE_NONE][$i] =  (array) $fobj;		
+}
+	
+$i++;	
+		}
+
+
+	}
+
+} catch (Exception $e) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+}
+  
+
+
+  
+  //field_rfp_attachment
+  $proposal_product = array();
+  $proposal_product['field_name'] = 'field_proposal_product'; // field collection name
+  $proposal_product['field_description'][LANGUAGE_NONE][0]['value'] = $row[10];    
+  
+  try {
+  
+    $file_list = explode(',', $row[11]);
+	$i = 0;
+	foreach($file_list as $value){
+		if($value){
+		if(file_uri_to_object($value, true)){
+		  $fobj =  file_uri_to_object($value, true);
+		  $fobj->display = 1;		  
+	   }else{
+		$file = new stdClass();
+$file->filename = basename($value);
+$file->uri = $value;
+$file->filemime = file_get_mimetype($value);
+$file->filesize = filesize($value);
+$file->uid = 1; 
+$file->status = FILE_STATUS_PERMANENT;
+
+$fobj = file_save($file);
+$fobj->display = 1;
+	}
+
+if($fobj){
+$proposal_product['field_rfp_attachment'][LANGUAGE_NONE][$i] =  (array) $fobj;		
+}
+	
+$i++;		
+		}
+
+
+	}
+} catch (Exception $e) {
+    echo 'Caught exception: ',  $e->getMessage(), "\n";
+}
+
+  
+ if($row[12] && $row[14] && $row[15] != 'Submitted' )
+ {
+	 $staus = '';
+
+			 if($row[15] == 'Accepted')
+				 	 $staus = 'Accept';
+				 			 if($row[15] == 'Need Update')
+				 	 $staus = 'Need Update';
+				 			 if($row[15] == 'Rejcted')
+				 	 $staus = 'Reject';
+			 	
+			 
+  $proposal_approver = array();
+  $proposal_approver['field_name'] = 'field_approver'; // field collection name
+    $proposal_approver['field_proposal_approver'][LANGUAGE_NONE][0]['value'] = $row[12];  
+  $proposal_approver['field_description'][LANGUAGE_NONE][0]['value'] = $row[13];
+  
+  $proposal_approver['field_approver_date'][LANGUAGE_NONE][0]['value'] =  gmdate('Y-m-d H:i:s', strtotime($row[14]));
+  
+  $proposal_approver['field_approval_status'][LANGUAGE_NONE][0]['value'] = $staus;
+  
+  $entity = entity_create('field_collection_item',$proposal_approver);
+
+  $entity->setHostEntity('node', $proposalnode);
+
+  $entity->save();  		
+
+ }
+  if($row[12] && $row[14] && $row[15] == 'Submitted' )
+ {
+	 $staus = '';
+					
+  $proposal_approver = array();
+  $proposal_approver['field_name'] = 'field_approver'; // field collection name
+    $proposal_approver['field_proposal_approver'][LANGUAGE_NONE][0]['value'] = $row[12];  
+  $proposal_approver['field_description'][LANGUAGE_NONE][0]['value'] = $row[13];
+  
+  $proposal_approver['field_approver_date'][LANGUAGE_NONE][0]['value'] =  gmdate('Y-m-d H:i:s', strtotime($row[14]));
+  
+  $proposal_approver['field_approval_status'][LANGUAGE_NONE][0]['value'] = 'Need Update';
+ 
+ $entity = entity_create('field_collection_item',$proposal_approver);
+
+  $entity->setHostEntity('node', $proposalnode);
+
+  $entity->save();  	
+
+ }
+  
+  $entity = entity_create('field_collection_item',$proposal_information);
+
+  $entity->setHostEntity('node', $proposalnode);
+
+  $entity->save();  
+  
+  $entity = entity_create('field_collection_item',$proposal_product);
+
+  $entity->setHostEntity('node', $proposalnode);
+
+  $entity->save();  
+  
+  
+
+}   
+                
+                   
+                }
+    }
+         print_r('success');         
+}
+
+function getfcid($colum){
+
+		$Obj = db_query("SELECT field_collection_item.item_id AS item_id
+FROM 
+{field_collection_item} field_collection_item
+LEFT JOIN {field_data_field_odm_product_mapping} field_data_field_odm_product_mapping ON field_collection_item.item_id = field_data_field_odm_product_mapping.entity_id AND field_data_field_odm_product_mapping.entity_type = 'field_collection_item'
+WHERE (( (field_data_field_odm_product_mapping.field_odm_product_mapping_value = :odm) )AND(( (field_collection_item.field_name IN  ('field_rfp_product')) )))
+LIMIT 10 OFFSET 0", array( ':odm' => $colum ))->fetchField();
+
+	if($Obj)
+	return $Obj;		
+
+	
+}
+
+function getidbyerpmsingle($colum){
+
+
+		$Obj = db_query("SELECT node.nid AS nid
+FROM 
+{node} node
+LEFT JOIN {field_data_field_erpm_company_number} field_data_field_erpm_company_number ON node.nid = field_data_field_erpm_company_number.entity_id AND field_data_field_erpm_company_number.entity_type = 'node'
+WHERE (( (field_data_field_erpm_company_number.field_erpm_company_number_value = :erpm) )AND((  (node.type IN  ('company')) AND (node.language IN  (:lan)) )))
+LIMIT 1 OFFSET 0", array(':erpm' => $colum , ':lan' => 'en'))->fetchField();
+ 
+	if($Obj)
+	return $Obj;		
+	
+}
+
+function prodidbytext($company, $colum){
+
+    $termid = array();
+    $terms = explode('^', $colum);
+    foreach($terms as $title){
+
+		$Obj = db_query("	
+SELECT  node.nid AS nid
+FROM 
+{node} node
+LEFT JOIN {field_data_field_company} field_data_field_company ON node.nid = field_data_field_company.entity_id AND field_data_field_company.entity_type = 'node'
+WHERE (( (field_data_field_company.field_company_target_id = :company ) AND (node.title = :title) )AND(( (node.type IN  ('solution')) )))
+LIMIT 1 OFFSET 0", array(':company' => $company , ':title' =>  str_replace('"', '', $title)))->fetchField();
+
+
+		if($Obj)
+		$termid[] = $Obj;
+		
+	}
+
+	return $termid;	 
+		
+}
+
+
+
+function odm_proposal_status_import(){
+exit;
+   $nodes = array();
+
+   
+    $static =  "https://66.175.220.200/sites/default/files/shared/proposal_0.csv";
+    $fp = fopen($static, 'r');
+    module_load_include('inc', 'entity', 'includes/entity.controller');
+
+    while (($row = fgetcsv($fp, 0, ",")) !== FALSE) {
+
+       if($row[0] != 'RFP ID'){
+
+       $query = new EntityFieldQuery();                     
+       $query->entityCondition('entity_type', 'node')
+       ->entityCondition('bundle', 'rfp')
+       ->fieldCondition('field_odm_rfp_id', 'value', $row[0], '=');
+       $result = $query->execute();              
+
+   $rfpid = (key($result['node']));          
+   $fcid = getfcid($row[1]);
+
+   $builderid = getidbyerpmsingle($row[2]);
+  
+   $proquery = new EntityFieldQuery();                     
+   $proquery->entityCondition('entity_type', 'node')
+       ->entityCondition('bundle', 'proposal')
+       ->fieldCondition('field_requirement', 'value', $rfpid, '=')
+       ->fieldCondition('field_sub_requirement', 'value', $fcid, '=')
+	   ->fieldCondition('field_builder', 'value', $builderid, '=');
+   $resultproposal = $proquery->execute();  
+	   
+      $propid = (key($resultproposal['node'])); 	
+	  $proposalnode = node_load($propid);
+
+	 
+if($propid){
+
+    $ewrapper = entity_metadata_wrapper('node', $proposalnode);
+  //user erpm mapping
+	if($row[17]){
+				$UserErpm = db_query("SELECT users.mail AS users_mail
+FROM 
+{users} users
+LEFT JOIN {field_data_field_erpm_login_id} field_data_field_erpm_login_id ON users.uid = field_data_field_erpm_login_id.entity_id AND field_data_field_erpm_login_id.entity_type = 'user'
+WHERE ((  (field_data_field_erpm_login_id.field_erpm_login_id_value = :erpm ) ))", array(':erpm' =>($row[17]) ))->fetchField();	 
+
+   if($UserErpm){
+  //add solutions field_builder_mail	
+    $ewrapper->field_builder_mail->set($UserErpm); 
+	}
+	else {
+		print 'missing - '. $row[17]. '<br>';
+	}
+
+    }
+
+/**
+  if($row[16] == 'Published'){
+	 $sid = 13;
+     workflow_execute_transition($proposalnode, $sid, $comment = NULL, $force = FALSE);		
+		print 'updated - <br>';	 
+  }
+  else print 'updated draft - <br>';	 
+  **/
+
+  $ewrapper->save();
+ 
+  
+
+
+
+ 
+  /**
+  $proposal_approver = array();
+  $proposal_approver['field_name'] = 'field_approver'; // field collection name
+  $proposal_approver['field_approval_status'][LANGUAGE_NONE][0]['value'] = $row[15];
+  
+  $entity = entity_create('field_collection_item',$proposal_approver);
+  $entity->setHostEntity('node', $proposalnode);
+  $entity->save();    
+  **/
+
+}   
+                
+                   
+                }
+    }
+         print_r('success');         
+}
+
+
+function odm_proposal_response_import(){
+exit;
+   $nodes = array();
+
+   
+    $static =  "https://66.175.220.200/sites/default/files/shared/proposal_0.csv";
+    $fp = fopen($static, 'r');
+    module_load_include('inc', 'entity', 'includes/entity.controller');
+
+    while (($row = fgetcsv($fp, 0, ",")) !== FALSE) {
+
+       if($row[0] != 'RFP ID'){
+
+       $query = new EntityFieldQuery();                     
+       $query->entityCondition('entity_type', 'node')
+       ->entityCondition('bundle', 'rfp')
+       ->fieldCondition('field_odm_rfp_id', 'value', $row[0], '=');
+       $result = $query->execute();              
+
+   $rfpid = (key($result['node']));          
+   $fcid = getfcid($row[1]);
+
+   $builderid = getidbyerpmsingle($row[2]);
+  
+   $proquery = new EntityFieldQuery();                     
+   $proquery->entityCondition('entity_type', 'node')
+       ->entityCondition('bundle', 'proposal')
+       ->fieldCondition('field_requirement', 'value', $rfpid, '=')
+       ->fieldCondition('field_sub_requirement', 'value', $fcid, '=')
+	   ->fieldCondition('field_builder', 'value', $builderid, '=');
+   $resultproposal = $proquery->execute();  
+	   
+      $propid = (key($resultproposal['node'])); 	
+	  $proposalnode = node_load($propid);
+
+	 
+if($propid){
+
+   //$ewrapper = entity_metadata_wrapper('node', $proposalnode);
+   //$ewrapper->save(); 455  55754
+ 
+  
+ if($row[12] && $row[14] && $row[15] != 'Submitted' )
+ {
+	 $staus = '';
+	 echo $propid. '<br>';
+	 	 //echo $row[12]. '<br>';
+		 //	 echo $row[14]. '<br>';
+			 if($row[15] == 'Accepted')
+				 	 $staus = 'Accept';
+				 			 if($row[15] == 'Need Update')
+				 	 $staus = 'Need Update';
+				 			 if($row[15] == 'Rejcted')
+				 	 $staus = 'Reject';
+			 	// echo $staus. '<br>';
+			 
+  $proposal_approver = array();
+  $proposal_approver['field_name'] = 'field_approver'; // field collection name
+    $proposal_approver['field_proposal_approver'][LANGUAGE_NONE][0]['value'] = $row[12];  
+  $proposal_approver['field_description'][LANGUAGE_NONE][0]['value'] = $row[13];
+  
+  $proposal_approver['field_approver_date'][LANGUAGE_NONE][0]['value'] =  gmdate('Y-m-d H:i:s', strtotime($row[14]));
+  
+  $proposal_approver['field_approval_status'][LANGUAGE_NONE][0]['value'] = $staus;
+  
+  $entity = entity_create('field_collection_item',$proposal_approver);
+  $entity->setHostEntity('node', $proposalnode);
+  $entity->save(); 			
+
+				 	 echo '---------<br>';
+ }
+  if($row[12] && $row[14] && $row[15] == 'Submitted' )
+ {
+	 $staus = '';
+	 echo 'Submit '.$propid. '<br>';
+	 	 echo $row[12]. '<br>';
+		 	 echo $row[14]. '<br>';
+			 	 echo $row[15]. '<br>';
+				 	 echo '---------<br>';
+					
+  $proposal_approver = array();
+  $proposal_approver['field_name'] = 'field_approver'; // field collection name
+    $proposal_approver['field_proposal_approver'][LANGUAGE_NONE][0]['value'] = $row[12];  
+  $proposal_approver['field_description'][LANGUAGE_NONE][0]['value'] = $row[13];
+  
+  $proposal_approver['field_approver_date'][LANGUAGE_NONE][0]['value'] =  gmdate('Y-m-d H:i:s', strtotime($row[14]));
+  
+  $proposal_approver['field_approval_status'][LANGUAGE_NONE][0]['value'] = 'Need Update';
+  
+  $entity = entity_create('field_collection_item',$proposal_approver);
+  $entity->setHostEntity('node', $proposalnode);
+  $entity->save(); 		
+
+ }
+
+
+}   
+                
+                   
+                }
+    }
+         print_r('success');         
+}
+
+function odm_proposal_product_import(){
+exit;
+   $nodes = array();
+
+   
+    $static =  "https://66.175.220.200/sites/default/files/shared/proposal_0.csv";
+    $fp = fopen($static, 'r');
+    module_load_include('inc', 'entity', 'includes/entity.controller');
+
+    while (($row = fgetcsv($fp, 0, ",")) !== FALSE) {
+
+       if($row[0] != 'RFP ID'){
+
+       $query = new EntityFieldQuery();                     
+       $query->entityCondition('entity_type', 'node')
+       ->entityCondition('bundle', 'rfp')
+       ->fieldCondition('field_odm_rfp_id', 'value', $row[0], '=');
+       $result = $query->execute();              
+
+   $rfpid = (key($result['node']));          
+   $fcid = getfcid($row[1]);
+
+   $builderid = getidbyerpmsingle($row[2]);
+  
+   $proquery = new EntityFieldQuery();                     
+   $proquery->entityCondition('entity_type', 'node')
+       ->entityCondition('bundle', 'proposal')
+       ->fieldCondition('field_requirement', 'value', $rfpid, '=')
+       ->fieldCondition('field_sub_requirement', 'value', $fcid, '=')
+	   ->fieldCondition('field_builder', 'value', $builderid, '=');
+   $resultproposal = $proquery->execute();  
+	   
+      $propid = (key($resultproposal['node'])); 	
+	  $proposalnode = node_load($propid);
+
+	 
+if($propid){
+
+
+  $ewrapper = entity_metadata_wrapper('node', $proposalnode);
+  if($row[4]){
+  $prodid = prodidbytext($builderid, $row[4]);
+  if($prodid)
+  $ewrapper->field_recommended_products->set($prodid); 
+                
+  }  
+
+  $ewrapper->save();
+
+}   
+               
+                   
+                }
+    }
+         print_r('success');         
+}
+
+
+function odm_proposal_rfpauthorimport(){
+
+   $nodes = array();
+
+   
+    $static =  "https://66.175.220.200/sites/default/files/shared/proposal_0.csv";
+    $fp = fopen($static, 'r');
+    module_load_include('inc', 'entity', 'includes/entity.controller');
+
+    while (($row = fgetcsv($fp, 0, ",")) !== FALSE) {
+
+       if($row[0] != 'RFP ID'){
+
+       $query = new EntityFieldQuery();                     
+       $query->entityCondition('entity_type', 'node')
+       ->entityCondition('bundle', 'rfp')
+       ->fieldCondition('field_odm_rfp_id', 'value', $row[0], '=');
+       $result = $query->execute();              
+
+   $rfpid = (key($result['node']));          
+   $fcid = getfcid($row[1]);
+
+   $builderid = getidbyerpmsingle($row[2]);
+  
+   $proquery = new EntityFieldQuery();                     
+   $proquery->entityCondition('entity_type', 'node')
+       ->entityCondition('bundle', 'proposal')
+       ->fieldCondition('field_requirement', 'value', $rfpid, '=')
+       ->fieldCondition('field_sub_requirement', 'value', $fcid, '=')
+	   ->fieldCondition('field_builder', 'value', $builderid, '=');
+   $resultproposal = $proquery->execute();  
+	   
+      $propid = (key($resultproposal['node'])); 	
+
+
+	 
+if($propid){
+	
+  $rfpnode = node_load($rfpid);
+  $proposalnode = node_load($propid);
+  //$ewrapper = entity_metadata_wrapper('node', $proposalnode);
+   //$ewrapper->save();
+  if($rfpnode->uid){
+	print_r($rfpnode->uid);
+	print '<br>';
+   if($rfpnode->uid){
+     $proposalnode->uid = $rfpnode->uid;
+     node_save($proposalnode);
+	}  
+  }
+
+}   
+                
+                   
+                }
+    }
+         print_r('success');         
+}
+
+
+function odm_proposal_builder_update(){
+
+   $nodes = array();
+
+   
+    $static =  "https://66.175.220.200/sites/default/files/shared/proposal_0.csv";
+    $fp = fopen($static, 'r');
+    module_load_include('inc', 'entity', 'includes/entity.controller');
+
+    while (($row = fgetcsv($fp, 0, ",")) !== FALSE) {
+
+       if($row[0] != 'RFP ID'){
+
+       $query = new EntityFieldQuery();                     
+       $query->entityCondition('entity_type', 'node')
+       ->entityCondition('bundle', 'rfp')
+       ->fieldCondition('field_odm_rfp_id', 'value', $row[0], '=');
+       $result = $query->execute();              
+
+   $rfpid = (key($result['node']));          
+   $fcid = getfcid($row[1]);
+   $new_erpm = '';
+   $builderid = '';
+ switch ($row[2]) {
+    case 1000318597:
+        $new_erpm = 30710;
+		$builderid = 48638;
+        break;
+		
+    case 1000318848:
+        $new_erpm = 45214;
+	    $builderid = 49169;		
+		
+        break;
+		
+    case 1000318655:
+        $new_erpm = 24621;
+        break;		
+			
+    case 1000318661:
+        $new_erpm = 21649;
+        break;		
+			
+    case 10388405:
+        $new_erpm = 31;
+		 $builderid = 49687;	
+        break;		
+
+					
+    case 1000318863:
+        $new_erpm = 123;
+        break;	
+		
+		    case 1000318690:
+        $new_erpm = 151;
+        break;	
+		
+		    case 1000318834:
+        $new_erpm = 24624;
+        break;		
+				
+		    case 1000318549:
+        $new_erpm = 175;
+        break;	
+		
+		 case 301130486:
+        $new_erpm = 60;
+        break;	
+		
+	    case 1000318802:
+        $new_erpm = 18130;
+        break;	
+		
+	    case 10441143:
+        $new_erpm = 20075;
+        break;		
+		
+	    case 301054882:
+        $new_erpm = 189;
+        break;		
+		
+		case 301282099:
+        $new_erpm = 36;
+        break;	
+	
+}
+   
+   if($new_erpm){
+
+   $proquery = new EntityFieldQuery();                     
+   $proquery->entityCondition('entity_type', 'node')
+       ->entityCondition('bundle', 'proposal')
+       ->fieldCondition('field_requirement', 'value', $rfpid, '=')
+       ->fieldCondition('field_sub_requirement', 'value', $fcid, '=')
+	   ->fieldCondition('field_builder', 'value', $builderid, '=');
+   $resultproposal = $proquery->execute();  
+	   
+      $propid = (key($resultproposal['node'])); 	
+	  $proposalnode = node_load($propid);
+
+	 
+if($propid){
+	  print '<br>';
+// print $new_erpm;
+  //print '<br>';
+ print $propid;
+ print '<br>';
+  print '----------';  
+  print '<br>';
+   //$ewrapper = entity_metadata_wrapper('node', $proposalnode);
+  //$ewrapper->field_builder->set($new_erpm); 
+  //$ewrapper->save();
+
+}    
+	
+   }
+   
+  
+  
+                
+                   
+                }
+    }
+         print_r('success');         
+}
+

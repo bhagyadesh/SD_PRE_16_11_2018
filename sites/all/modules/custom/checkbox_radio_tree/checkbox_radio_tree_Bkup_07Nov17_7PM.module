@@ -1,0 +1,519 @@
+<?php
+/***
+Module Init function
+*/
+function checkbox_radio_tree_init() {
+  if (arg(0) == 'admin') {
+    $path = drupal_get_path('module', 'checkbox_radio_tree');
+    drupal_add_js($path . '/custom.js');
+    //drupal_add_css($path . '/mymodule.css');
+  }
+}
+
+/**
+ * @file
+ * Defines a Checkbox/Radio Tree element and widget.
+ */
+
+
+/**
+ * Implements hook_element_info().
+ */
+function checkbox_radio_tree_element_info() {
+  return array(
+    'checkbox_radio_tree' => array(
+      '#child_cardinality' => 1,
+      '#element_validate' => array('checkbox_radio_tree_field_validate'),
+      '#input' => TRUE,
+      '#options' => array(),
+      '#pre_render' => array('form_pre_render_conditional_form_element'),
+      '#process' => array('checkbox_radio_tree_process_checkbox_radio_tree_field'),
+      '#theme_wrappers' => array('checkbox_radio_tree'),
+      '#value_callback' => 'checkbox_radio_tree_type_checkbox_radio_tree_value',
+    ),
+    'checkbox_radio_tree_item' => array(
+      '#child_cardinality' => 1,
+      '#input' => TRUE,
+      '#process' => array('checkbox_radio_tree_process_checkbox_radio_tree_item_field', 'ajax_process_form'),
+      '#theme_wrappers' => array('checkbox_radio_tree_item'),
+    ),
+  );
+}
+
+/**
+ * Determines the value for a checkbox_radio_tree_item form element.
+ *
+ * @param $element
+ *   The form element whose value is being populated.
+ * @param $input
+ *   The incoming input to populate the form element. If this is FALSE,
+ *   the element's default value should be returned.
+ *
+ * @return
+ *   The data that will appear in the $element_state['values'] collection
+ *   for this element. Return nothing to use the default.
+ */
+function checkbox_radio_tree_type_checkbox_radio_tree_value($element, $input = FALSE, &$form_state = array()) {
+  // If values have been submitted for the element.
+  if ($input) {
+    // @todo Test programmatic submissions.
+    // Programmatic form submissions use NULL to indicate that a checkbox
+    // should be unchecked; see drupal_form_submit(). We therefore remove all
+    // NULL elements from the array before constructing the return value, to
+    // simulate the behavior of web browsers (which do not send unchecked
+    // checkboxes to the server at all). This will not affect non-programmatic
+    // form submissions, since all values in $_POST are strings.
+
+    // Ensure input is an array for proper processing (Checkbox/Radio Tree
+    // elements consisting of only a single set of radios returns the selected
+    // radio option as a string).
+    if (!is_array($input)) {
+      $input = array($input => $input);
+    }
+
+    // Flatten the nested array input values.
+    $stack = array(&$input);
+    $pkey = key($stack);
+    $value = &$stack[$pkey];
+    $values = array();
+    while (isset($value)) {
+      if ($ckey = key($value)) {
+        if (is_array($value[$ckey])) {
+          $stack[$ckey] = &$value[$ckey];
+          next($value);
+
+          $value = &$value[$ckey];
+          $pkey = $ckey;
+        }
+        else {
+          next($value);
+        }
+
+        $values[] = $ckey;
+        if ($ckey != $pkey && !in_array($value[$ckey], $values)) {
+          $values[] = $value[$ckey];
+        }
+      }
+      else {
+        array_pop($stack);
+        end($stack);
+
+        if (!empty($stack)) {
+          $ckey = $pkey;
+          $pkey = key($stack);
+          $value = &$stack[$pkey];
+        }
+        else {
+          unset($value);
+        }
+      }
+    }
+
+    return $values;
+  }
+  // If no values have been submitted for the element.
+  elseif (is_null($input)) {
+    return array();
+  }
+}
+
+/**
+ * Processes a checkbox_radio_tree element.
+ */
+function checkbox_radio_tree_process_checkbox_radio_tree_field($element, $form_state) {
+  $path = drupal_get_path('module', 'checkbox_radio_tree');
+  drupal_add_css($path . '/checkbox_radio_tree.css');
+  drupal_add_js($path . '/checkbox_radio_tree.js');
+
+  $element['#tree'] = TRUE;
+  if (!isset($element['#default_value']) || $element['#default_value'] == 0) {
+    $element['#default_value'] = array();
+  }
+
+  // Expand options into Checkbox Radio Tree Item elements.
+  $values = is_array($element['#value']) ? $element['#value'] : array();
+  $options = array();
+  $stack = array(&$element); // Options stack.
+  $pkey = key($stack);
+  $option = &$stack[$pkey];
+  $weight = 0;
+
+  while (isset($option)) {
+    // If the option has children to process.
+    if ($ckey = key($option['#options'])) {
+      $child = &$option['#options'][$ckey];
+
+      // Integer 0 is not a valid #return_value, so use '0' instead.
+      // @see form_type_checkbox_value().
+      if ($ckey === 0) {
+        $ckey = '0';
+      }
+
+      // Maintain order of options as defined in #options, in case the element
+      // defines custom option sub-elements, but does not define all option
+      // sub-elements.
+      $weight += 0.001;
+
+      $option += array($ckey => $child);
+
+      $array_parents = array_merge($option['#array_parents'], array($ckey));
+      // Set the parents based on cardinality. If only one value is allowed,
+      // the current options key should not be added. If more than one value is
+      // allowed, the current options key should be added.
+      $parents = ($option['#child_cardinality'] == 1 ? $option['#array_parents'] : $array_parents);
+      // Generate the parents as the autogenerator does, so we will have a
+      // unique id for each radio button.
+      $id = drupal_html_id('edit-' . implode('-', $array_parents));
+      $value = in_array($ckey, $values) ? $ckey : 0;
+      $option[$ckey] += array(
+        '#type' => 'checkbox_radio_tree_item',
+        '#return_value' => $ckey,
+        '#default_value' => $value,
+        '#value' => $value,
+        '#attributes' => $option['#attributes'],
+        '#parents' => $parents,
+        '#array_parents' => $array_parents,
+        '#id' => $id,
+        '#ajax' => isset($option['#ajax']) ? $option['#ajax'] : NULL,
+        '#weight' => $weight,
+        '#cardinality' => $option['#child_cardinality'],
+      );
+
+      // Remove option from parent.
+      unset($option['#options'][$ckey]);
+      $options[$ckey] = $ckey;
+
+      // If the child has children.
+      if (isset($child['#options'])) {
+        // Add the child onto the stack for later processing.
+        $stack[$ckey] = &$option[$ckey];
+
+        // Make the child the current option.
+        $option = &$option[$ckey];
+        $pkey = $ckey;
+      }
+    }
+    else {
+      // Remove the options empty #options property.
+      unset($option['#options']);
+
+      // Remove the current option from the stack.
+      array_pop($stack);
+      end($stack);
+
+      // If there are still options on the stack.
+      if (!empty($stack)) {
+        // Move processing to the next option on the stack.
+        $ckey = $pkey;
+        $pkey = key($stack);
+        $option = &$stack[$pkey];
+      }
+      else {
+        unset($option);
+      }
+    }
+  }
+
+  // Add all options to the Checkbox/Radio Tree for validation.
+  $element['#options'] = $options;
+
+  return $element;
+}
+
+/**
+ * Processes a checkbox_radio_tree_item element.
+ */
+function checkbox_radio_tree_process_checkbox_radio_tree_item_field($element) {
+  if ($element['#cardinality'] != 1) {
+    return form_process_checkbox($element, array());
+  }
+
+  return $element;
+}
+
+/**
+ * Implements hook_theme().
+ */
+function checkbox_radio_tree_theme($existing, $type, $theme, $path) {
+  return array(
+    'checkbox_radio_tree' => array(
+      'render element' => 'element',
+      'file' => 'checkbox_radio_tree.theme.inc',
+    ),
+    'checkbox_radio_tree_item' => array(
+      'render element' => 'element',
+      'file' => 'checkbox_radio_tree.theme.inc',
+    ),
+    'checkbox_radio_tree_none' => array(
+      'file' => 'checkbox_radio_tree.theme.inc',
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_widget_info().
+ */
+function checkbox_radio_tree_field_widget_info() {
+  return array(
+    'checkbox_radio_tree' => array(
+      'label' => 'Checkbox/Radio tree',
+      'description' => 'Displays tree structured fields in a mixed checkbox/radio tree',
+      'field types' => array('taxonomy_term_reference'),
+      'settings' => array(), // @todo Add field settings.
+      'behaviors' => array(
+        'multiple values' => FIELD_BEHAVIOR_CUSTOM,
+      ),
+    ),
+  );
+}
+
+/**
+ * Implements hook_field_widget_settings_form().
+ *
+ * @todo Add field settings.
+ */
+function checkbox_radio_tree_field_widget_settings_form($field, $instance) {
+  $form = array();
+
+  return $form;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Sets the field cardinality setting to unlimited and disables it, allowing
+ * the checkbox_radio_tree_cardinality field of taxonomy terms to control it.
+ */
+function checkbox_radio_tree_form_field_ui_field_edit_form_alter(&$form, &$form_state, $form_id) {
+  if ($form['#instance']['widget']['type'] == 'checkbox_radio_tree') {
+    $form['field']['cardinality']['#default_value'] = -1;
+    $form['field']['cardinality']['#disabled'] = TRUE;
+    $form['field']['cardinality']['#description'] .= ' ' . t('The checkbox radio tree widget adds a child cardinality field to taxonomy vocabularies and terms, allowing cardinality to be controlled on a per vocabulary/term basis.');
+  }
+}
+
+/**
+ * Implements hook_field_widget_form().
+ */
+function checkbox_radio_tree_field_widget_form(&$form, &$form_state, $field, $instance, $langcode, $items, $delta, $element) {
+  // Make sure we are working with a term reference field.
+  if($field['type'] == 'taxonomy_term_reference'){
+
+    // Abstract over the actual field columns, to allow different field types to
+    // reuse those widgets.
+    $value_key = key($field['columns']);
+
+    $multiple = $field['cardinality'] > 1 || $field['cardinality'] == FIELD_CARDINALITY_UNLIMITED;
+    $required = $element['#required'];
+    $has_value = isset($items[0][$value_key]);
+    $entity_type = $element['#entity_type'];
+    $entity = $element['#entity'];
+
+    // Prepare the list of options.
+    $options = (array) module_invoke($field['module'], 'options_list', $field, $instance, $entity_type, $entity);
+
+    // Put current field values in shape.
+    $items_transposed = options_array_transpose($items);
+    $values = (isset($items_transposed[$value_key]) && is_array($items_transposed[$value_key])) ? $items_transposed[$value_key] : array();
+    $default_value = array_values(array_intersect($values, array_keys($options)));
+
+    // @todo Provide hook allowing modules to implement hierarchy. Provide
+    // implementation for core modules such as taxonomy.
+    $vocabulary = taxonomy_vocabulary_machine_name_load($field['settings']['allowed_values'][0]['vocabulary']);
+    $terms = taxonomy_get_tree($vocabulary->vid, $field['settings']['allowed_values'][0]['parent'], NULL, TRUE);
+
+    $ancestors = array();
+    $options = array(); // @todo Remove once hierarchy hook is implemented.
+    foreach ($terms as $term) {
+      // Build the option.
+      $option = array(
+        '#title' => entity_label('taxonomy_term', $term),
+        '#child_cardinality' => isset($term->checkbox_radio_tree_cardinality['und'][0]['value']) ? $term->checkbox_radio_tree_cardinality['und'][0]['value'] : 1,
+      );
+
+      // The terms depth determins the number of ancestors. array_slice() loses
+      // references, so we use this loop instead.
+      while (count($ancestors) > $term->depth) {
+        array_pop($ancestors);
+      }
+
+      // Retrieve the parent and add the option.
+      if (isset($ancestors[$term->parents[0]])) {
+        $parent = &$ancestors[$term->parents[0]];
+        $parent['#options'][$term->tid] = $option;
+        $ancestors[$term->tid] = &$parent['#options'][$term->tid];
+      }
+      else {
+        $options[$term->tid] = $option;
+        $ancestors[$term->tid] = &$options[$term->tid];
+      }
+    }
+
+    // Add an empty option to the top level if the vocabularies child_cardinality
+    // field is set to 1.
+    if (!$required && $vocabulary->checkbox_radio_tree_cardinality == 1) {
+      $label = theme('checkbox_radio_tree_none');
+      $options = array('_none' => array('#title' => $label, '#child_cardinality' => 1)) + $options;
+    }
+
+    // If required and there is one single option, preselect it.
+    if ($required && count($options) == 1) {
+      reset($options);
+      $default_value = array(key($options));
+    }
+
+    $element += array(
+      '#type' => $instance['widget']['type'],
+      '#child_cardinality' => $vocabulary->checkbox_radio_tree_cardinality,
+      '#default_value' => $default_value,
+      '#options' => $options,
+      '#value_key' => $value_key,
+    );
+
+    return $element;
+  }
+  else{
+    // @TODO: Add error handling if desired.
+  }
+}
+
+/**
+ * Validates checkbox radio tree widgets.
+ *
+ * This function processes values of checkbox radio tree widgets into the form
+ * used by Drupal for storing in the database.
+ *
+ * @param $element
+ *   The element to be validated.
+ * @param $form_state
+ *   The state of the form.
+ *
+ * @return
+ *   The validated element.
+ */
+function checkbox_radio_tree_field_validate($element, &$form_state) {
+  // Filter out the 'none' option. Use a strict comparison, because
+  // 0 == 'any string'.
+  $index = array_search('_none', $element['#value'], TRUE);
+  if ($index !== FALSE) {
+    unset($element['#value'][$index]);
+  }
+
+  $items = options_array_transpose(array($element['#value_key'] => $element['#value']));
+  form_set_value($element, $items, $form_state);
+
+  return $element;
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ *
+ * Adds a child cardinality field to vocabulary forms.
+ */
+function checkbox_radio_tree_form_taxonomy_form_vocabulary_alter(&$form, &$form_state, $form_id) {
+  if (!isset($form_state['confirm_delete'])) {
+    $options = array(
+      -1 => t('Unlimited'),
+      1 => 1,
+    );
+
+    $form['checkbox_radio_tree_cardinality'] = array(
+      '#type' => 'select',
+      '#title' => t('Child Cardinality'),
+      '#description' => t('Specify the number of child terms widgets should allow to be selected. Determines if radios or checkboxes will be used.'),
+      '#options' => $options,
+      '#default_value' => isset($form['#vocabulary']->checkbox_radio_tree_cardinality) ? $form['#vocabulary']->checkbox_radio_tree_cardinality : 1,
+      '#required' => TRUE,
+    );
+  }
+}
+
+/**
+ * Implements hook_taxonomy_vocabulary_presave().
+ *
+ * Saves the child cardinality value to a variable on insert. Also creates a
+ * checkbox_radio_tree_cardinality field instance for the vocabulary.
+ */
+function checkbox_radio_tree_taxonomy_vocabulary_insert($vocabulary) {
+  variable_set('checkbox_radio_tree_cardinality_' . $vocabulary->machine_name, $vocabulary->checkbox_radio_tree_cardinality);
+
+  // Define the Child Cardinality field instance.
+  $instance = array(
+    'field_name' => 'checkbox_radio_tree_cardinality',
+    'entity_type' => 'taxonomy_term',
+    'bundle' => $vocabulary->machine_name,
+    'label' => 'Child cardinality',
+    'description' => t('Specify the number of child terms widgets should allow to be selected. Determines if radios or checkboxes will be used.'),
+    'required' => TRUE,
+    'default_value' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+    ),
+    'display' => array(
+      'default' => array(
+        'type' => 'hidden',
+      ),
+    ),
+  );
+
+  field_create_instance($instance);
+}
+
+/**
+ * Implements hook_taxonomy_vocabulary_update().
+ *
+ * Saves the child cardinality value to a variable on update.
+ */
+function checkbox_radio_tree_taxonomy_vocabulary_update($vocabulary) {
+  variable_set('checkbox_radio_tree_cardinality_' . $vocabulary->machine_name, $vocabulary->checkbox_radio_tree_cardinality);
+}
+
+/**
+ * Implements hook_taxonomy_vocabulary_load().
+ *
+ * Adds the child cardinality value to vocabularies on load.
+ */
+function checkbox_radio_tree_taxonomy_vocabulary_load($vocabularies) {
+  foreach ($vocabularies as $vocabulary) {
+    $vocabulary->checkbox_radio_tree_cardinality = variable_get('checkbox_radio_tree_cardinality_' . $vocabulary->machine_name, 1);
+  }
+}
+
+/**
+ * Implements hook_taxonomy_vocabulary_delete().
+ *
+ * Deletes the child cardinality variable on delete. Also deletes the
+ * checkbox_radio_tree_cardinality field instance for the vocabulary.
+ */
+function checkbox_radio_tree_taxonomy_vocabulary_delete($vocabulary) {
+  variable_del('checkbox_radio_tree_cardinality_' . $vocabulary->machine_name);
+
+  // Define the Child Cardinality field instance.
+  $instance = array(
+    'field_name' => 'checkbox_radio_tree_cardinality',
+    'entity_type' => 'taxonomy_term',
+    'bundle' => $vocabulary->machine_name,
+    'label' => 'Child cardinality',
+    'description' => t('Specify the number of child terms widgets should allow to be selected. Determines if radios or checkboxes will be used.'),
+    'required' => TRUE,
+    'default_value' => array(
+      0 => array(
+        'value' => 1,
+      ),
+    ),
+    'widget' => array(
+      'active' => 1,
+    ),
+    'display' => array(
+      'default' => array(
+        'type' => 'hidden',
+      ),
+    ),
+  );
+
+  field_delete_instance($instance, FALSE);
+}

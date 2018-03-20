@@ -1,0 +1,86 @@
+<?php
+
+/**
+ * @file
+ * Contains install, update, and uninstall functions for Intel EA module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function intel_ea_module_install() {
+  db_query("UPDATE {system} SET weight = 11 WHERE name = 'intel_ea_module'");
+}
+
+/**
+ * Update module weight in the system table.
+ */
+function intel_ea_module_update_7001(&$sandbox) {
+  db_query("UPDATE {system} SET weight = 10 WHERE name = 'intel_ea_module'");
+}
+
+/**
+ * Implements hook_update_N().
+ */
+function intel_ea_module_update_7002(&$sandbox) {
+  // Need to run after the Page Manager Node Revisions module which has a weight
+  // of 10.
+  db_query("UPDATE {system} SET weight = 11 WHERE name = 'intel_ea_module'");
+}
+
+/**
+ * Implements hook_update_N().
+ *
+ * PURPOSE: Intel ISV deployment relating to member center and
+ * affiliate/non-affiliate users.
+ */
+function intel_ea_module_update_7003(&$sandbox) {
+  //Primary Marketing Contact > Solutions Directory Editor
+  db_query("INSERT IGNORE INTO users_roles SELECT u.uid, 20 as rid FROM users u JOIN users_roles ur ON u.uid = ur.uid GROUP BY u.uid HAVING FIND_IN_SET('18', GROUP_CONCAT(ur.rid)) AND NOT FIND_IN_SET('20', GROUP_CONCAT(ur.rid))");
+  // Primary Admin Contact > Member Admin
+  db_query("INSERT IGNORE INTO users_roles SELECT u.uid, 30 as rid FROM users u JOIN users_roles ur ON u.uid = ur.uid GROUP BY u.uid HAVING FIND_IN_SET('14', GROUP_CONCAT(ur.rid)) AND NOT FIND_IN_SET('30', GROUP_CONCAT(ur.rid))");
+  // Primary Contact > Primary Admin Contact, Solutions Directory Editor, Member Admin
+  db_query("INSERT IGNORE INTO users_roles SELECT u.uid, 14 as rid FROM users u JOIN users_roles ur ON u.uid = ur.uid GROUP BY u.uid HAVING FIND_IN_SET('17', GROUP_CONCAT(ur.rid)) AND NOT FIND_IN_SET('14', GROUP_CONCAT(ur.rid))");
+  db_query("INSERT IGNORE INTO users_roles SELECT u.uid, 20 as rid FROM users u JOIN users_roles ur ON u.uid = ur.uid GROUP BY u.uid HAVING FIND_IN_SET('17', GROUP_CONCAT(ur.rid)) AND NOT FIND_IN_SET('20', GROUP_CONCAT(ur.rid))");
+  db_query("INSERT IGNORE INTO users_roles SELECT u.uid, 30 as rid FROM users u JOIN users_roles ur ON u.uid = ur.uid GROUP BY u.uid HAVING FIND_IN_SET('17', GROUP_CONCAT(ur.rid)) AND NOT FIND_IN_SET('30', GROUP_CONCAT(ur.rid))");
+}
+
+/**
+ * Implements hook_update_N().
+ *
+ * PURPOSE: Creates a new user role called Intel Solutions Admin
+ */
+function intel_ea_module_update_7004(&$sandbox){
+  $role = new stdClass();
+  $role->name = 'Intel Solutions Admin';
+  user_role_save($role);
+}
+
+/**
+ * Implements hook_update_N().
+ *
+ * PURPOSE: Assign CRUD permissions for solutions to Intel Solutions admin role
+ */
+function intel_ea_module_update_7005(&$sandbox) {
+  //Get the new role
+  $solutions_admin = user_role_load_by_name('Intel Solutions Admin');
+  $solutions_rid = $solutions_admin->rid;
+
+  //Define the role's permissions
+  $solutions_permissions = array(
+      'access content' => TRUE,
+      'access content overview' => TRUE,
+      'access administration pages' => TRUE,
+      'create solution content' => TRUE,
+      'edit own solution content' => TRUE,
+      'delete own solution content' => TRUE,
+      'view own unpublished content' => TRUE,
+      'view files' => TRUE,
+      'create files' => TRUE,
+      'use text format wysiwyg_basic' => TRUE,
+      'access media browser' => TRUE,
+  );
+
+  //Grant permissions to role
+  user_role_change_permissions($solutions_rid, $solutions_permissions);
+}

@@ -1,0 +1,4 @@
+name=promotion publish
+description= A module to change workflow on submission.
+core=7.x
+package=Promotion

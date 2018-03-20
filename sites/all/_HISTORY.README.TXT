@@ -1,0 +1,10 @@
+
+INTEL_EA, as far as I (jesse Nicola) am aware is for code prior to January 2016.
+
+A new project (ISDM) began at that time. A front end overhaul is in place and will
+require new features, custom functionality, and a new them. ALl relevant modules
+will have their name proceeded with intel_isdm_
+
+The theme INTEL was for prior to 2016.
+
+The theme intel_isdm_bootstrap is for January 2016 and beyond (until noted otherwise here)

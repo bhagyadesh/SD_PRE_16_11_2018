@@ -1,0 +1,19 @@
+diff --git a/link.module b/link.module
+index b0c53c3..5acd488 100644
+--- a/link.module
++++ b/link.module
+@@ -422,14 +422,6 @@ function _link_validate(&$item, $delta, $field, $entity, $instance, $langcode, &
+       );
+     }
+   }
+-  // Require a link if we have a title.
+-  if ($instance['settings']['url'] !== 'optional' && strlen(isset($item['title']) ? $item['title'] : NULL) > 0 && strlen(trim($item['url'])) == 0) {
+-    $errors[$field['field_name']][$langcode][$delta][] = array(
+-      'error' => 'link_required',
+-      'message' => t('You cannot enter a title without a link url.'),
+-      'error_element' => array('url' => TRUE, 'title' => FALSE),
+-    );
+-  }
+   // In a totally bizzaro case, where URLs and titles are optional but the field is required, ensure there is at least one link.
+   if ($instance['settings']['url'] === 'optional' && $instance['settings']['title'] === 'optional'
+       && (strlen(trim($item['url'])) !== 0 || strlen(trim($item['title'])) !== 0)) {

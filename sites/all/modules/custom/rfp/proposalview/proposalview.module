@@ -1,0 +1,146 @@
+<?php
+
+function proposalview_menu() {
+  $items['manageproposal'] = array(
+    'title' => 'RFP Information',
+    'page callback' => '_proposalbuilderlist',
+    'access callback' => TRUE,
+  );
+/**
+  $items['manageproposal/%/%'] = array(
+    'title' => 'RFP Information',
+    'page callback' => '_proposalbuilderlist',
+    'page arguments' => array(1,2),
+    'access callback' => TRUE,
+  );
+
+  **/
+  
+  return $items;
+}
+
+function proposalview_menu_local_tasks_alter(&$data) {
+
+  $url = $_SERVER['REQUEST_URI']; //echo $url;
+  $url = explode('/', $url);
+  $url = $url[4];
+
+  if ((isset($url) && $url == 'buyer')) {
+    if (isset($data['tabs'][0]) && is_array($data['tabs'][0])) {
+       unset($data['tabs'][0]['output']);
+     // foreach ($data['tabs'][0]['output'] as $key => $value) {
+        //if ($value['#link']['path'] == "node/%/edit" || $value['#link']['path'] == "node/%/track" || $value['#link']['path'] == "node/%/view"){
+      //  unset($data['tabs'][0]['output'][$key]);
+        // }
+     // }
+    }
+  }
+  else {
+    if (arg(0) == 'node' && is_numeric(arg(1))) {
+      $node = menu_get_object();
+      if (!empty($node)) {
+        if ($node->type == 'rfp') {
+         //unset($data['tabs'][0]['output'][2]);
+        }
+		if ($node->type == 'proposal') {
+	  		  $proposalnode = node_load($node->nid);
+		  $items_ap = field_get_items('node', $proposalnode, 'field_approver');
+		  		 foreach ($items_ap as $item) {
+				   $fc = field_collection_field_get_entity($item);
+				 }
+		$approval_status = $fc->field_approval_status['und'][0]['value'] ? $fc->field_approval_status['und'][0]['value'] : "NA";
+		if($approval_status == "Accept" || $approval_status == "Reject" ){
+          unset($data['tabs'][0]['output'][1]);
+		}				
+          //unset($data['tabs'][0]['output'][2]);
+        }
+      }
+    }
+  }
+
+}
+
+function _proposalbuilderlist($requirment_id, $companyid) {
+
+  module_load_include('inc', 'node', 'node.pages');
+  $content = '';
+  global $user;
+  global $language;  
+  $user_fields = user_load($user->uid);
+  $company_view = array();
+  
+  if($companyid){
+	  	$query = "SELECT node.nid AS nid
+FROM 
+{node} node
+LEFT JOIN {field_data_field_applications_engineers} field_data_field_applications_engineers ON node.nid = field_data_field_applications_engineers.entity_id AND field_data_field_applications_engineers.entity_type = 'node'
+LEFT JOIN {field_data_field_server_fse} field_data_field_server_fse ON node.nid = field_data_field_server_fse.entity_id AND field_data_field_server_fse.entity_type = 'node'
+LEFT JOIN {field_data_field_client_fse} field_data_field_client_fse ON node.nid = field_data_field_client_fse.entity_id AND field_data_field_client_fse.entity_type = 'node'
+LEFT JOIN {field_data_field_eiot_fse} field_data_field_eiot_fse ON node.nid = field_data_field_eiot_fse.entity_id AND field_data_field_eiot_fse.entity_type = 'node'
+LEFT JOIN {field_data_field_server_fae} field_data_field_server_fae ON node.nid = field_data_field_server_fae.entity_id AND field_data_field_server_fae.entity_type = 'node'
+LEFT JOIN {field_data_field_sales_engineers} field_data_field_sales_engineers ON node.nid = field_data_field_sales_engineers.entity_id AND field_data_field_sales_engineers.entity_type = 'node'
+LEFT JOIN {field_data_field_client_fae} field_data_field_client_fae ON node.nid = field_data_field_client_fae.entity_id AND field_data_field_client_fae.entity_type = 'node'
+LEFT JOIN {field_data_field_eiot_fae} field_data_field_eiot_fae ON node.nid = field_data_field_eiot_fae.entity_id AND field_data_field_eiot_fae.entity_type = 'node'
+WHERE (( (node.status = '1') AND (node.type IN  ('company')) AND (node.language IN  ('".$language->language."')) AND (node.nid = ".$companyid.")  ) AND( (field_data_field_server_fse.field_server_fse_target_id IN  (".$user->uid.")) OR (field_data_field_client_fse.field_client_fse_target_id IN  (".$user->uid.")) OR (field_data_field_eiot_fse.field_eiot_fse_target_id IN  (".$user->uid.")) OR (field_data_field_server_fae.field_server_fae_target_id IN  (".$user->uid.")) OR (field_data_field_sales_engineers.field_sales_engineers_target_id IN  (".$user->uid.")) OR (field_data_field_client_fae.field_client_fae_target_id IN  (".$user->uid.")) OR (field_data_field_eiot_fae.field_eiot_fae_target_id IN  (".$user->uid.")) OR 
+(field_data_field_applications_engineers.field_applications_engineers_target_id IN (".$user->uid.")) ))";
+  
+  $rowObj = db_query($query);
+
+  foreach ($rowObj as $row) {
+   $company_view[$row->nid] = $row->nid;
+  }	  
+  
+   if(!$company_view){
+	 drupal_set_message(t("You are not authorized to view this page"));	 
+	 drupal_goto();
+ }
+ 
+}
+ 
+
+
+  $companyid = ($companyid)? $companyid : $user_fields->field_company['und']['0']['target_id'];
+
+	if ((array_key_exists(11, $user_fields->roles) || array_key_exists(12, $user_fields->roles)) && (!array_key_exists(9, $user_fields->roles) || !array_key_exists(36, $user_fields->roles)) ){ 
+ 
+$content .= '<div class="proposalmenu proposalbuildermenu"><ul class="menu nav proposal_bottom"><li class="first last leaf"><a href="/proposal_builderfaefse_view" title="">View All Proposals</a></li></ul></div>';
+
+ } 
+  
+  $content .= views_embed_view('rfp_basic', 'default', $requirment_id);
+  $collection = views_embed_view('a_rfp_collections', 'default', $companyid, $requirment_id);
+  $old_data_json = json_decode(strip_tags($collection));
+  $data = array();
+  foreach ($old_data_json as $key => $value) {
+    //$content .= $value->nid;  
+	$prop1 = node_load($value->nid);
+	
+	 $items_ap = field_get_items('node', $prop1, 'field_approver');
+	 foreach ($items_ap as $item) {
+	   $fc = field_collection_field_get_entity($item);
+	 }
+	 $approval_status = $fc->field_approval_status['und'][0]['value'] ? $fc->field_approval_status['und'][0]['value'] : "NA";
+	 
+	if($approval_status != "Accept" && $approval_status != "Reject") {
+		$content .= l('Create/Manage Proposal', 'node/' . $value->nid . '/edit', array('attributes' => array('class' => 'anchorbutton')));
+	}
+	else {
+		$content .= l('View Proposal', 'viewproposal/' . $value->nid, array('attributes' => array('class' => 'anchorbutton')));
+	}
+		$content .= views_embed_view('rfp_product_field_collection', 'default', $value->field_sub_requirement);
+	
+  }
+  return $content;
+}
+
+/* function proposalview_form_alter(&$form, &$form_state, $form_id){
+	if($form_id == "views-exposed-form-manual-builders-entityreference-view-widget-1"){ 
+	echo "hi"; exit;
+		 $form['select_all'] = array(
+            '#title' => t('Select All'),
+            '#type' => 'checkboxes',
+            '#description' => t(''),
+            '#options' => array("all" => "Select All"),
+        ); 
+	}	
+} */

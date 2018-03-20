@@ -1,0 +1,6 @@
+PDOException: SQLSTATE[HY000]: General error: 1205 Lock wait timeout exceeded; try restarting transaction: DELETE FROM {cache_entity_node} 
+WHERE  (cid IN  (:db_condition_placeholder_0)) ; Array
+(
+    [:db_condition_placeholder_0] => 364
+)
+ in cache_clear_all() (line 167 of /var/www/html/includes/cache.inc).

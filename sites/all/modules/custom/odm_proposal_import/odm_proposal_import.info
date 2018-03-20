@@ -1,0 +1,4 @@
+name = Proposal Import
+description = Create Field Collection .
+core = 7.x
+package = RFP

@@ -1,0 +1,261 @@
+/*** Collapse the tree to be collapsed by default ***/
+.checkbox-radio-tree .children {
+  padding-left: 1em;
+  display: none;
+}
+/****This class will collapse the tree on page load ***/
+.checkbox_collapse{
+    display: none;
+}
+/*** Sub sections will be collapsed by default **/
+.children .checkbox_collapse{
+    display: none;
+}
+/***Expand the tree on toggle ***/
+.expandtree + .checkbox_collapse, .expandtree + .checkbox_collapse .checkbox_collapse  {
+    display: block;
+}
+/***This class is used to replace the minus image ***/
+.minus {
+  background-image: url('images/bullet_toggle_minus.png') !important;
+
+}
+/**** Class to add + icon for the expand tree in SD theme****/
+div.panel-body .expand{
+ 	
+	background-image: url('images/bullet_toggle_plus.png');
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+    margin-right: 5px;
+	left: 222px;
+    position: absolute;
+	cursor:pointer;
+	width:17px;
+}
+
+.group-characteristics div.panel-body .expand{
+ 	
+	left: 12px !important; 
+    
+}
+/**** Class to add + icon for the expand tree ****/
+.admin-menu div.fieldset-wrapper  .expand{
+ 	
+	background-image: url('images/bullet_toggle_plus.png');
+	background-repeat: no-repeat;
+	background-position: 0 2px;
+    margin-right: 5px;
+	left: 6px;
+    position: absolute;
+	cursor:pointer;
+	width:17px;
+}
+
+
+/*** Class specific to Manage Solutions page **/
+/**** Class to add + icon for the expand tree ****/
+.panel-body  #edit-field-categories .expand{
+
+    background-image: url('images/bullet_toggle_plus.png');
+    background-repeat: no-repeat;
+    background-position: 0 3px;
+    margin-right: 5px;
+    left: 221px;
+    position: absolute;   
+    cursor:pointer;
+    width:17px;
+   
+
+}
+
+/*** Class specific to Manage Solutions page **/
+/**** Class to add + icon for the expand tree in charecteristics tab  ****/
+.group-characteristics .panel-body .expand{
+
+    background-image: url('images/bullet_toggle_plus.png');
+    background-repeat: no-repeat;
+    background-position: 0 3px;
+    margin-right: 5px;
+
+    left: 6px;
+    position: absolute;
+   
+    cursor:pointer;
+
+    width:17px;
+    
+
+}
+
+
+/** Move the input boxes to margin left **/
+
+.checkbox-radio-tree input.form-checkbox, input.form-radio{
+
+    margin-left: 10px;
+}
+
+/*** Remove the padding for categories **/
+.field-name-field-categories .form-type-checkbox-radio-tree label:last-child {
+    padding-top: 0px;
+}
+
+/*** Move the input boxes for children **/
+.panel-body .checkbox-radio-tree .children{
+    margin-bottom: 0px !important;
+}
+
+
+/** Set the height for the tab in manage resource page **/
+.node-solution-form .vertical-tabs-list {    
+    height: 100%;
+}
+
+/**Align the categories tree wrt the tree icons **/
+.panel-body #edit-field-categories .form-group{
+    margin-left: 10px;
+	margin-top:15px;
+}
+/**** Add Collapsed icon for the fieldsets in the manage solution page ***/
+.panel-body fieldset.collapsed  a {
+    background-image: url(images/bootstrap_collapsed.png); 
+    background-repeat: no-repeat;
+    background-position: 5px 50%; 
+	color:black;
+	display: inline-block;
+    padding-left: 25px;
+}
+
+/**** Add Expanded icon for the fieldsets in the manage solution page ***/
+.panel-body fieldset a {
+   background-image: url(images/bootstrap_expanded.png); 
+    background-repeat: no-repeat;
+    background-position: 5px 50%; 
+	color:black;
+	display: inline-block;
+    padding: 5px 25px;
+}
+/*** color for the fieldset labels on hover **/
+.panel-body fieldset a:hover{
+ color: black;
+}
+
+/*** color for the fieldset labels which is Open  **/
+.panel-body fieldset span{
+ color: black;
+}
+
+
+
+#edit-field-categories{
+	margin-bottom:10px;
+}
+
+/*** Gird alignemnt for geographic location **/
+.panel-body #edit-field-geographic-location-und {
+display:inline-grid;
+width:100%;
+}
+
+
+
+/*** Class specific to Manage Solutions page for formula details tab **/
+.group-formula-details .panel-body .expand{
+
+    background-image: url('images/bullet_toggle_plus.png');
+    background-repeat: no-repeat;
+    background-position: 0 3px;
+    margin-right: 5px;
+    left: 6px;
+    position: absolute;
+    cursor:pointer;
+    width:17px;
+	margin-bottom:-19px;
+
+}
+/****Css for fieldsets ***/
+fieldset{
+    border: 1px solid #ccc;
+    padding: 2.5em 0 0 0;
+   
+    margin: 1em 0;
+	}
+
+/* for create solution page */
+#edit-field-end-user-display {
+	display: none;
+}
+
+#edit-field-intel-qualified-iot-soluti label[for=edit-field-intel-qualified-iot-soluti-und]{
+	display: none;
+}
+#edit-field-intel-iot-market-ready-sol label[for=edit-field-intel-iot-market-ready-sol-und] {
+	display: none;
+}
+#edit-field-intel-only .description {
+	position: relative;
+    top: -22px;
+    left: 60px;
+    color: darkgrey;
+    font-style: italic;
+}
+#edit-field-intel-qualified-iot-soluti .description {
+    position: relative;
+    top: -28px;
+    left: 184px;
+    color: darkgrey;
+    font-style: italic;
+}
+#edit-field-intel-iot-market-ready-sol .description {
+    position: relative;
+    top: -27px;
+    left: 220px;
+    color: darkgrey;
+    font-style: italic;
+}
+
+/* Hide The Intel - Only and pre-release checkboxes
+*
+* Replace with View Options Field
+*
+*/
+#solution-node-form .form-item-field-pre-release-und, .form-item-field-intel-only-und{
+		display:none;
+}
+
+#formula-node-form .form-item-field-pre-release-und{
+		display:none;
+}
+
+#edit-field-pre-release-value-wrapper{
+	display:none;
+}
+
+.field-name-field-workflow-temporary{
+	display:none;
+}
+#solution-node-form .form-item-field-website-und-0-url:after {
+	content: 'This field is mandatory if either "Intel - Only Content" (Or) "Public Content" is selected in "View Options" field in the previous tab.';
+}
+
+#solution-node-form .field-name-field-display-technology{
+	display: none;
+}
+#solution-node-form .field-name-field-display-size{
+	display:none !important;
+}
+#solution-node-form .field-name-field-power{
+	display:none;
+}
+#solution-node-form .group-stds{
+	display:none
+}
+#solution-node-form .field-name-field-memory-max{
+	display:none !important;
+}
+.node-type-solution .preview h3 {
+	display: none;
+}
+.preview .node-solution.node-teaser {
+	display: none;
+}

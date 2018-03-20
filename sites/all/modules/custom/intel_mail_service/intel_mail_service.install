@@ -1,0 +1,54 @@
+<?php
+
+/**
+ * Implements hook_schema().
+ */
+ 
+function intel_mail_service_schema() {
+  $schema['pm_email_custom'] = array(
+     // specification for pm_enable_custom
+    'description' => 'Table to store data related to email to be sent.',
+    'fields' => array(
+      'pm_email_eid' => array(
+        'description' => 'The primary identifier for a email data.',
+        'type' => 'serial',
+        'unsigned' => TRUE,
+        'not null' => TRUE),
+      'pm_email_mid' => array(
+        'description' => 'The message id for which mail is sent.',
+        'type' => 'int',
+		'size' => 'big',
+        'not null' => TRUE,
+        'default' => 0),
+      'pm_email_to' => array(
+        'description' => 'Recipient of email.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => ''),
+      'pm_email_sender' => array(
+        'description' => 'The sender of email.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => ''),
+	  'pm_email_subject' => array(
+        'description' => 'The subject of email.',
+        'type' => 'text',
+        ),
+	  'pm_email_message' => array(
+        'description' => 'The body of email.',
+        'type' => 'text',
+        ),	
+	  'pm_email_flag' => array(
+        'description' => 'email sent/unsent.',
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => ''),	
+      ),
+    'primary key' => array('pm_email_eid'),
+  );
+  return $schema;
+}
+

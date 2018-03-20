@@ -1,0 +1,5 @@
+name = Checkbox Radio Tree
+description = Provides a mixed Checkbox Radio Tree Form API element and widget to be used with tree structured fields.
+core = 7.x
+dependencies[] = list
+dependencies[] = options

@@ -1,0 +1,65 @@
+name = Intel ISDM | Bootstrap with SASS
+description = Custom bootstrap with SASS theme, built starting Jan 2016
+core = 7.x
+base theme = bootstrap
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;;
+
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[header-one]         = 'Header One'
+regions[header-two]         = 'Header Two'
+regions[header-three]         = 'Header Three'
+regions[header-four]         = 'Header Four'
+regions[header-five]         = 'Header Five'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[footer1]         = 'Footer1'
+regions[footer2]         = 'Footer2'
+regions[footer3]         = 'Footer3'
+regions[footer4]         = 'Footer4'
+regions[eiot-header-msegments]	= 'EIoT Header Market Segments'
+regions[eiot-header-categories]	= 'EIoT Header Browse By Type'
+regions[client-header-msegments]	= 'Client Header Market Segments'
+regions[client-header-categories]	= 'Client Header Browse By Type'
+regions[server-header-msegments]	= 'Server Header Market Segments'
+regions[server-header-categories]	= 'Server Header Browse By Type'
+
+regions[page_top]       = 'Page top'
+regions[page_bottom]    = 'Page bottom'
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Stylesheets
+;;;;;;;;;;;;;;;;;;;;;
+
+stylesheets[all][] = css/yamm.css
+stylesheets[all][] = css/style.css
+stylesheets[all][] = css/jquery-ui.css
+stylesheets[all][] = css/custom.css
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;;
+
+scripts[] = 'node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js'
+scripts[] = 'js/scripts.js'
+scripts[] = 'js/config.js'
+scripts[] = 'js/solutions-facet-sidebar.js'
+scripts[] = 'js/prodcompare.js'
+
+; Disable BootstrapCDN so the compiled SASS source files can be used.
+settings[bootstrap_cdn] = ''
+
+;;;;;;;;;;;;;;;;;;;;;
+;; Additional settings
+;;;;;;;;;;;;;;;;;;;;;
+
+plugins[panels][layouts] = panels_layouts

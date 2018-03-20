@@ -1,0 +1,282 @@
+AU131 - Extended Temperature Intel® Atom™ Computer ---------- 348 -------- Saved 
+COM Express CXC-PV525 ---------- 1081 -------- Saved 
+ETX ETE-PV510 ---------- 1084 -------- Saved 
+HD1.3 High Performance Media Player ---------- 2619 -------- Saved 
+HD2.2 High Performance Media Player ---------- 2620 -------- Saved 
+XVAULT SPECIALTY MOBILE NVR ---------- 2625 -------- Saved 
+xVault XNVR100 network Video Recorder ---------- 2627 -------- Saved 
+XVAULT XNVR300 Series of Network Video Recorders ---------- 2639 -------- Saved 
+XVAULT XVIEW200 DESKTOP CHASSIS ---------- 2646 -------- Saved 
+XVAULT XVIEW300 Series of Viewing Stations ---------- 2647 -------- Saved 
+XVAULT XNVR300 系列网络视频录像机 ---------- 4370 -------- Saved 
+XVAULT XNVR300 シリーズのネットワーク・ビデオ・レコーダー ---------- 4371 -------- Saved 
+xVault XNVR100 网络视频录像机 ---------- 4980 -------- Saved 
+xVault XNVR100 ネットワーク・ビデオレコーダー ---------- 4981 -------- Saved 
+XVAULT XVIEW300 系列查看站 ---------- 5006 -------- Saved 
+XVAULT XVIEW300 シリーズの表示ステーション ---------- 5007 -------- Saved 
+HD1.3 高性能媒体播放器 ---------- 5078 -------- Saved 
+HD1.3 高パフォーマンス・メディア・プレーヤー ---------- 5079 -------- Saved 
+HD2.2 高性能媒体播放器 ---------- 5080 -------- Saved 
+HD2.2 高パフォーマンス・メディア・プレーヤー ---------- 5081 -------- Saved 
+HDN Media Player Ultra Small Form Factor ---------- 17249 -------- Saved 
+Intel® NUC Ultra Small Form Factor Media Player ---------- 17254 -------- Saved 
+XVAULT XNVR200 Network Video Recorder ---------- 17262 -------- Saved 
+XVAULT XNVR400 Network Video Recorder ---------- 17268 -------- Saved 
+XVAULT XVIEW400 Viewing Station ---------- 17270 -------- Saved 
+XVAULT XNVR400 网络视频录像机 ---------- 17569 -------- Saved 
+XVAULT XNVR400 ネットワーク・ビデオレコーダー ---------- 17571 -------- Saved 
+XVAULT XNVR200 网络视频录像机 ---------- 17593 -------- Saved 
+XVAULT XNVR200 ネットワーク・ビデオ・レコーダー ---------- 17595 -------- Saved 
+Intel® NUC 超小型媒体播放器 ---------- 17621 -------- Saved 
+Intel® NUC 超スモール・フォームファクター・メディアプレーヤー ---------- 17623 -------- Saved 
+HDN 超小型媒体播放器 ---------- 17641 -------- Saved 
+超スモール・フォームファクターの HDN メディア・プレーヤー ---------- 17643 -------- Saved 
+HDN with Intel RCM ---------- 21254 -------- Saved 
+H81超薄主板 ---------- 24538 -------- Saved 
+BD19M2D1-6  Bay Trail系类Mini-ITX多串单板 ---------- 24544 -------- Saved 
+BD19M2D1-6 Bay Trail Series Mini-ITX multi-serial single board ---------- 25291 -------- Saved 
+H81 ultra-thin motherboard ---------- 25292 -------- Saved 
+H81M2A0-12 金融自助单板 ---------- 27732 -------- Saved 
+COM Express C6C-SLU  ---------- 27780 -------- Saved 
+H81M2A0-12 financial self-service single board ---------- 28127 -------- Saved 
+COM Express C6C-SLU  ---------- 28810 -------- Saved 
+COM Express C6C-SLU  ---------- 28811 -------- Saved 
+Gm-J1900D11 ---------- 29610 -------- Saved 
+Sofia-3G ---------- 29611 -------- Saved 
+Gm-J1800D16 ---------- 29617 -------- Saved 
+Gi-J1900D26 ---------- 29619 -------- Saved 
+Gm-H81A210 ---------- 29620 -------- Saved 
+G-MATMH81 ---------- 29621 -------- Saved 
+G-MATMH61 ---------- 29622 -------- Saved 
+Gm-1037A16-G ---------- 29631 -------- Saved 
+Gm-1037D12-U ---------- 29633 -------- Saved 
+Gm-1037D12-U ---------- 29885 -------- Saved 
+Gm-1037A16-G ---------- 29887 -------- Saved 
+G-MATMH61 ---------- 29888 -------- Saved 
+G-MATMH81 ---------- 29889 -------- Saved 
+Gm-H81A210 ---------- 29890 -------- Saved 
+Gi-J1900D26 ---------- 29891 -------- Saved 
+Gm-J1800D16 ---------- 29893 -------- Saved 
+Sofia-3G ---------- 29894 -------- Saved 
+Gm-J1900D11 ---------- 29895 -------- Saved 
+Seneca HDS Media Stick  ---------- 32655 -------- Saved 
+Seneca Fanless HDN Media Player ---------- 32657 -------- Saved 
+Gigabyte ---------- 32814 -------- Saved 
+Seneca 无风扇 HDN 媒体播放器 ---------- 32936 -------- Saved 
+Seneca Fanless HDN メディア・プレーヤー ---------- 32937 -------- Saved 
+Seneca HDS 媒体棒  ---------- 32938 -------- Saved 
+Seneca HDS メディア・スティック  ---------- 32939 -------- Saved 
+COM Express C6C-SLU ---------- 32958 -------- Saved 
+s044 ---------- 35582 -------- Saved 
+S046 ---------- 35584 -------- Saved 
+S036 ---------- 35585 -------- Saved 
+BD19M2AC-6   ---------- 35586 -------- Saved 
+BD19M1D5-6 ---------- 35587 -------- Saved 
+Z055  ---------- 35589 -------- Saved 
+Z035 ---------- 35590 -------- Saved 
+Z045 ---------- 35591 -------- Saved 
+Z055 ---------- 35592 -------- Saved 
+SA01-N712H5 ---------- 35593 -------- Saved 
+SA02-CR32SC ---------- 35594 -------- Saved 
+JCS02-H8V4H5 ---------- 35597 -------- Saved 
+JCS03-BDA4H5 ---------- 35598 -------- Saved 
+BD18M1A1-6 ---------- 35599 -------- Saved 
+BD19M1D8-6-LV ---------- 35600 -------- Saved 
+BD19M2D1-6 ---------- 35601 -------- Saved 
+N1037M2D2-6 ---------- 35602 -------- Saved 
+N1037M1A1-6 ---------- 35603 -------- Saved 
+H81M2A0-12 ---------- 35604 -------- Saved 
+H61M2A0-10 ---------- 35605 -------- Saved 
+BD19M2D2-2 ---------- 35607 -------- Saved 
+BD19M1D0-1 ---------- 35609 -------- Saved 
+H81M1D0-1 ---------- 35610 -------- Saved 
+ITX-IC2M1026S ---------- 35616 -------- Saved 
+ITX-IBXM6112 ---------- 35617 -------- Saved 
+ITX-IP5MI828 ---------- 35618 -------- Saved 
+ITX-IP5MI828 ---------- 35854 -------- Saved 
+ITX-IBXM6112 ---------- 35855 -------- Saved 
+ITX-IC2M1026S ---------- 35856 -------- Saved 
+H81M1D0-1 ---------- 35862 -------- Saved 
+BD19M1D0-1 ---------- 35863 -------- Saved 
+BD19M2D2-2 ---------- 35865 -------- Saved 
+H61M2A0-10 ---------- 35867 -------- Saved 
+H81M2A0-12 ---------- 35868 -------- Saved 
+N1037M1A1-6 ---------- 35869 -------- Saved 
+N1037M2D2-6 ---------- 35870 -------- Saved 
+BD19M2D1-6 ---------- 35871 -------- Saved 
+BD19M1D8-6-LV ---------- 35872 -------- Saved 
+BD18M1A1-6 ---------- 35873 -------- Saved 
+JCS03-BDA4H5 ---------- 35874 -------- Saved 
+JCS02-H8V4H5 ---------- 35875 -------- Saved 
+SA02-CR32SC ---------- 35876 -------- Saved 
+SA01-N712H5 ---------- 35877 -------- Saved 
+Z055  ---------- 35878 -------- Saved 
+Z045 ---------- 35879 -------- Saved 
+Z035 ---------- 35880 -------- Saved 
+Z055 ---------- 35881 -------- Saved 
+BD19M1D5-6 ---------- 35882 -------- Saved 
+BD19M2AC-6  ---------- 35883 -------- Saved 
+S036 ---------- 35884 -------- Saved 
+S046 ---------- 35885 -------- Saved 
+s044 ---------- 35886 -------- Saved 
+S042B ---------- 37832 -------- Saved 
+R8-042 录播 ---------- 37833 -------- Saved 
+S044 ---------- 37835 -------- Saved 
+Z055 ---------- 37836 -------- Saved 
+Z055 ---------- 38860 -------- Saved 
+S044 ---------- 38862 -------- Saved 
+R8-042 recording and playing ---------- 38864 -------- Saved 
+SmartAIO, The Embedded Box PC for Factory Automation ---------- 43783 -------- Saved 
+SmartAIO, the Embedded Box PC for Factory Automation ---------- 44046 -------- Saved 
+SmartAIO, the Embedded Box PC for Factory Automation ---------- 44047 -------- Saved 
+SmartAIO 是用于工厂自动化的嵌入式箱式电脑 ---------- 44930 -------- Saved 
+Z055 ---------- 45103 -------- Saved 
+SV-APL-2  Apollolake  Mini-ITX Motherboard ---------- 45131 -------- Saved 
+SV-APL-3  Apollolake  Mini-ITX Motherboard ---------- 45132 -------- Saved 
+SmartAIO 是用于工厂自动化的嵌入式箱式电脑 ---------- 45182 -------- Saved 
+SmartAIO 是用于工厂自动化的嵌入式箱式电脑 ---------- 45184 -------- Saved 
+Gm-3855D16-U ---------- 45341 -------- Saved 
+Gm-3855D14 ---------- 45342 -------- Saved 
+Gm-H110D11 ---------- 45343 -------- Saved 
+Gm-3855D16-U ---------- 45461 -------- Saved 
+SV-KBL-U2 Industrial-tablet ---------- 45488 -------- Saved 
+SV-APL-2 Apollolake 迷你 ITX 主板 ---------- 45824 -------- Saved 
+SV-APL-2 Apollolake Mini-ITX マザーボード ---------- 45825 -------- Saved 
+SV-APL-3 Apollolake 迷你 ITX 主板 ---------- 45826 -------- Saved 
+SV-APL-3 Apollolake Mini-ITX マザーボード ---------- 45827 -------- Saved 
+采用 Intel® Xeon® 处理器 MCN-2610 的 OCCERA 计算节点 ---------- 46084 -------- Saved 
+Intel® Xeon® Processor MCN-2610 を搭載した OCCERA コンピューティング・ノード ---------- 46085 -------- Saved 
+FWA-6170 2U 机架网络设备采用 Intel® Xeon® 可扩展处理器系列，拥有多达 8 个 NMC 插槽  ---------- 46090 -------- Saved 
+Intel® Xeon® スケーラブル・プロセッサー・シリーズを搭載した FWA-6170 2U ラックマウント・ネットワーク・アプライアンス、最大 8 NMC スロット  ---------- 46091 -------- Saved 
+SV-KBL-U2 工业平板电脑 ---------- 46096 -------- Saved 
+SV-KBL-U2 産業用タブレット ---------- 46097 -------- Saved 
+SKY-8101 紧凑型 1U 高性能服务器基于 Intel® Xeon® 处理器可扩展产品系列 ---------- 46136 -------- Saved 
+Intel® Xeon® スケーラブル・ファミリーをベースにした SKY-8101 Compact 1U 高性能サーバー  ---------- 46137 -------- Saved 
+DEX-100 ---------- 46173 -------- Saved 
+[Cincoze CV-W121 / P1001] 21.5" Intel® Atom® E3845 Quad Core Processor Fanless Touch Panel PC with CDS Technology ---------- 46247 -------- Saved 
+[Cincoze CV-W121 / P1001] 21.5" Intel® Atom® E3845 Quad Core Processor Fanless Touch Panel PC with CDS Technology ---------- 46248 -------- Saved 
+ASMB-825  ---------- 46281 -------- Saved 
+MITX-DNV0： 迷你 ITX 工业主板采用 Intel® Denverton 处理器、Atom® C3000 系列 ---------- 46373 -------- Saved 
+MITX-DNV0: Intel® Denverton プロセッサー、Atom® C3000  シリーズを搭載した Mini-ITX 産業用マザーボード ---------- 46374 -------- Saved 
+Gm-H110D11 ---------- 46385 -------- Saved 
+Gm-H110D11 ---------- 46386 -------- Saved 
+Gm-3855D14 ---------- 46399 -------- Saved 
+Gm-3855D14 ---------- 46400 -------- Saved 
+Z055 ---------- 46746 -------- Saved 
+Denverton Mother Board Solution ---------- 46972 -------- Saved 
+Kabylake-U solution ---------- 47088 -------- Saved 
+[Cincoze CV-W121 / P1001] 21.5 英寸 Intel® Atom® E3845 四核处理器无风扇触屏液晶电脑采用 CDS 技术 ---------- 47110 -------- Saved 
+[Cincoze CV-W121 / P1001] 21.5 インチ Intel® Atom® E3845 クアッドコア・プロセッサー・ファンレス・タッチパネル PC、CDS テクノロジー搭載 ---------- 47111 -------- Saved 
+DEX-100 ---------- 47246 -------- Saved 
+DEX-100 ---------- 47247 -------- Saved 
+ASMB-825  ---------- 47286 -------- Saved 
+ASMB-825  ---------- 47287 -------- Saved 
+A828 ---------- 47300 -------- Saved 
+CHTX501  ---------- 47303 -------- Saved 
+G-10X7Q ---------- 47305 -------- Saved 
+Gm-H81D11 ---------- 47306 -------- Saved 
+Gi-J1900D26 ---------- 47307 -------- Saved 
+G-J1900T ---------- 47308 -------- Saved 
+Gm-1037A12-L ---------- 47309 -------- Saved 
+Gm-1037A16 ---------- 47329 -------- Saved 
+Gm-1037A26 ---------- 47330 -------- Saved 
+Gm-1037D12 ---------- 47332 -------- Saved 
+GM-1037D12-L ---------- 47333 -------- Saved 
+Gm-1037D16-H ---------- 47335 -------- Saved 
+Gm-1037D16-U ---------- 47337 -------- Saved 
+Gm-1037D16-V ---------- 47338 -------- Saved 
+GM-1037D26-H ---------- 47339 -------- Saved 
+GM-3217D16-UC ---------- 47340 -------- Saved 
+Gm-3855D11-L ---------- 47341 -------- Saved 
+Gm-6100D16-U ---------- 47342 -------- Saved 
+Gm-6100D16-UC ---------- 47343 -------- Saved 
+G-MD3IC8G ---------- 47344 -------- Saved 
+G-MD425E-6 ---------- 47345 -------- Saved 
+G-MD525E-2 ---------- 47346 -------- Saved 
+G-MD525E-6 ---------- 47347 -------- Saved 
+G-MD525SA-26 ---------- 47348 -------- Saved 
+G-MD525SD-26L ---------- 47350 -------- Saved 
+G-MD2550-6 ---------- 47351 -------- Saved 
+Gm-H61A212-L ---------- 47352 -------- Saved 
+Gm-H81D11-OPS ---------- 47353 -------- Saved 
+G-OPS-K ---------- 47354 -------- Saved 
+Gm-J1800A16 ---------- 47355 -------- Saved 
+Gm-J1900D12-EL ---------- 47356 -------- Saved 
+Gm-J1800D12-L ---------- 47357 -------- Saved 
+Gm-J1800D12-LG ---------- 47358 -------- Saved 
+Gm-J1800D12-UC ---------- 47359 -------- Saved 
+Gm-J1800D16-EL ---------- 47360 -------- Saved 
+Gm-J1900A16 ---------- 47361 -------- Saved 
+Gm-J1900D12-L ---------- 47362 -------- Saved 
+Gm-J1900D12-LG ---------- 47363 -------- Saved 
+Gm-J1900D12-UC ---------- 47365 -------- Saved 
+ GM-J1900D14 ---------- 47366 -------- Saved 
+Gm-J1900D15 ---------- 47367 -------- Saved 
+Gm-J1900D16 ---------- 47368 -------- Saved 
+Gm-J1900D16-EL ---------- 47369 -------- Saved 
+Gm-J1900D16-U ---------- 47370 -------- Saved 
+Gm-J1900D16-UC ---------- 47371 -------- Saved 
+Gm-J3160D11 ---------- 47372 -------- Saved 
+Gm-N3150D11 ---------- 47373 -------- Saved 
+G-SKY-6100U ---------- 47374 -------- Saved 
+G-TD525G-26 ---------- 47375 -------- Saved 
+G-TN2600Q ---------- 47376 -------- Saved 
+Gv-1037D26A ---------- 47377 -------- Saved 
+ITX-JYXBT ---------- 47378 -------- Saved 
+KRO-1037U ---------- 47379 -------- Saved 
+M-C2LA ---------- 47380 -------- Saved 
+M-C2LB ---------- 47381 -------- Saved 
+M-C6LA ---------- 47382 -------- Saved 
+M-C6LB ---------- 47383 -------- Saved 
+M-D525D12-C ---------- 47384 -------- Saved 
+M-D525D16 ---------- 47385 -------- Saved 
+M-D525D16 ---------- 47386 -------- Saved 
+M-D525D16 ---------- 47387 -------- Saved 
+M-D525D16 ---------- 47388 -------- Saved 
+PT-J1900 ---------- 47389 -------- Saved 
+PT-J1900 ---------- 47390 -------- Saved 
+SK-631 ---------- 47391 -------- Saved 
+TM-J1900 ---------- 47392 -------- Saved 
+Denverton 主板解决方案 ---------- 47807 -------- Saved 
+Denverton Mother Board Solution ---------- 47808 -------- Saved 
+CAF-0260 ---------- 48237 -------- Saved 
+Embedded MB ---------- 48333 -------- Saved 
+RIS5250, Networking Solution ---------- 48335 -------- Saved 
+RIS-095, Apollo Lake Networking Solution ---------- 48336 -------- Saved 
+Kabylake-U 解决方案 ---------- 48421 -------- Saved 
+Kabylake-U ソリューション ---------- 48422 -------- Saved 
+TM-J1900 ---------- 48430 -------- Saved 
+SK-631 ---------- 48431 -------- Saved 
+PT-J1900 ---------- 48432 -------- Saved 
+PT-J1900 ---------- 48433 -------- Saved 
+M-D525D16 ---------- 48434 -------- Saved 
+M-D525D16 ---------- 48435 -------- Saved 
+M-D525D16 ---------- 48436 -------- Saved 
+M-D525D16 ---------- 48437 -------- Saved 
+M-D525D12-C ---------- 48438 -------- Saved 
+M-C6LB ---------- 48439 -------- Saved 
+M-C6LA ---------- 48440 -------- Saved 
+M-C2LB ---------- 48441 -------- Saved 
+M-C2LA ---------- 48442 -------- Saved 
+KRO-1037U ---------- 48443 -------- Saved 
+ITX-JYXBT ---------- 48444 -------- Saved 
+G-TN2600Q ---------- 48445 -------- Saved 
+G-TD525G-26 ---------- 48446 -------- Saved 
+G-SKY-6100U ---------- 48447 -------- Saved 
+Gm-N3150D11 ---------- 48448 -------- Saved 
+Gm-J3160D11 ---------- 48449 -------- Saved 
+Gm-J1900D16-UC ---------- 48450 -------- Saved 
+Gm-J1900D16-U ---------- 48451 -------- Saved 
+Gm-J1900D16-EL ---------- 48452 -------- Saved 
+Gm-J1900D16 ---------- 48453 -------- Saved 
+Gm-J1900D15 ---------- 48454 -------- Saved 
+ GM-J1900D14 ---------- 48455 -------- Saved 
+Gm-J1900D12-UC ---------- 48456 -------- Saved 
+Gm-J1900D12-LG ---------- 48458 -------- Saved 
+Gm-J1900D12-L ---------- 48459 -------- Saved 
+Gm-J1900A16 ---------- 48460 -------- Saved 
+Gm-J1800D16-EL ---------- 48461 -------- Saved 
+Gm-J1800D12-UC ---------- 48462 -------- Saved 
+Gm-1037A16 ---------- 48463 -------- Saved 
+Gm-H81D11 ---------- 48464 -------- Saved 
+A828 ---------- 48466 -------- Saved 

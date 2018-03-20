@@ -1,0 +1,7 @@
+name = Intel Mail Web Service
+description = Solution Directory Web Services
+package = Intel Web Services
+version = VERSION
+core = 7.x
+files[] = intel_mail_service.module
+files[] = intel_mail_service.inc

@@ -1,0 +1,42 @@
+<?php
+
+function intel_ea_pagination_custom_form_alter(&$form, &$form_state, $form_id) {
+                                                                $module_path = drupal_get_path('module', 'intel_ea_pagination_custom');
+                                                                //$form_id_pagination_content_type_array = array('page_node_form', 'rfp-node-form');
+																$form_id_pagination_content_type_array = array('rfp_node_form', 'promotion_node_form', 'proposal_node_form');
+                                                                //$form_id_pagination_array = array('views_form_clone_of_entiy_reference_view_widget_sample_view_entityreference_view_widget_2', 'views_form_clone_of_entiy_reference_view_widget_sample_view_entityreference_view_widget_1');
+																$form_id_pagination_array = array('views_form_manual_builders_entityreference_view_widget_1', 'views_form_buyer_companies_entityreference_view_widget_1', 'views_form_recommended_builders_entityreference_view_widget_1', 'views_form_proposal_recommended_product_entityreference_view_widget_1', 'views_form_select_promotion_solutions_entityreference_view_widget_1');
+									
+                                                                if(in_array($form_id, $form_id_pagination_content_type_array)){
+																				//echo "check"; exit();-
+                                                                                drupal_add_js($module_path . '/js/entityreference_view_widget_common_custom.js'); 
+                                                                 }
+                if(in_array($form_id, $form_id_pagination_array)){
+                               
+                                //$form['#attached']['js'][] = $module_path . '/js/entityreference_view_widget_custom.js';
+                                drupal_add_js($module_path . '/js/entityreference_view_widget_custom.js');
+                                $settings = array('id' => 'mymodule-element-1');
+                                $form['selected_new_entity_ids']['#type'] = 'hidden';
+                                $form['selected_all_old_unchecked_entity_ids']['#type'] = 'hidden';
+                                $form['#validate'][] = 'entityreference_view_widget_ajax_custom_validate';
+                                $form['#attached']['js'][] = array(
+                                  'data' => array('custom' => $settings),
+                                  'type' => 'setting',
+                                );
+                                
+                }
+                
+}
+
+function entityreference_view_widget_ajax_custom_validate($form, &$form_state) {
+                
+                $selected_new_entity_ids = !empty($form_state['values']['selected_new_entity_ids']) ? explode(';', $form_state['values']['selected_new_entity_ids']) : array();
+                $selected_entity_ids = !empty($form_state['values']['selected_entity_ids']) ? explode(';', $form_state['values']['selected_entity_ids']) : array();
+                $selected_all_old_unchecked_entity_ids = !empty($form_state['values']['selected_all_old_unchecked_entity_ids']) ? explode(';', $form_state['values']['selected_all_old_unchecked_entity_ids']) : array();
+                $form_state['values']['entityreference_view_widget'] = $selected_new_entity_ids;
+                if(empty($selected_new_entity_ids)){
+                                $form_state['values']['entityreference_view_widget'] = $selected_entity_ids;
+                }
+                $form_state['values']['selected_all_old_unchecked_entity_ids'] = '';
+                //dpm($form_state);
+}

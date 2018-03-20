@@ -1,0 +1,17 @@
+name = RFP Menu Access
+description = This module is to alter the menu for RFP.
+package = RFP
+core = 7.x
+php = 5.2
+
+stylesheets[all][] = mrmenu.css
+scripts[] = script.js
+; Add a style sheet for all media
+;stylesheets[all][] = pustyle.css
+;scripts[] = intel_ea_partner_upload.js
+
+; Information added by drupal.org packaging script on 2012-05-08
+version = "7.x-2.0-alpha3"
+core = "7.x"
+project = "rfpmenuaccess"
+datestamp = "1336466457"

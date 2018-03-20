@@ -1,0 +1,6 @@
+name = Intel EA Training Center
+description = Intel EA code for Alliance Training Center functionality.
+package = Intel EA
+core = 7.x
+dependencies[] = ctools
+dependencies[] = entity

@@ -1,0 +1,3 @@
+core = "7.x"
+description = "Intel Pagination Custom module to extend module development."
+name = "Intel Pagination Custom extended Module"

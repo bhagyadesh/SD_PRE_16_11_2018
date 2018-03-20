@@ -1,0 +1,331 @@
+<?php
+
+/**
+ * Implements hook_block_info().
+ */
+function intel_theme_block_info() {
+  $blocks = array();
+
+  $blocks['page_title_block'] = array(
+    'info' => t('Page Title Block'),
+  );
+
+  $blocks['sidebar_title_block'] = array(
+    'info' => t('Sidebar Title Block'),
+  );
+
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function intel_theme_block_view($delta='') {
+  $block = array();
+
+  switch($delta) {
+    case 'page_title_block' :
+      $block['content'] = page_title_block_view();
+      break;
+
+    case 'sidebar_title_block':
+      $block['subject'] = '';
+      $block['content'] = sidebar_title_block_view();
+      break;
+  }
+
+  return $block;
+}
+
+/**
+ * Helper function to output the contents of page_title_block.
+ */
+function page_title_block_view() {
+  $block = array();
+  $output = '';
+
+  $section_path = _intel_theme_section_path();
+
+
+
+  if (!empty($section_path)) {
+    $section_titles = _intel_theme_section_titles($section_path);
+
+    if (!empty($section_titles['header-title'])) {
+      $output .= '<div class="header-title"><h3>' . $section_titles['header-title'] . '</h3></div>';
+    }
+
+    if (!empty($section_titles['header-subtitle'])) {
+      $output .=
+        '<div class="header-subtitle"><h3>' . $section_titles['header-subtitle'] . '</h3>' .
+        l(t('Subscribe to the Solutions Directory newsletter') .
+        ' >', 'https://ilms.intel.com/microsite/isa_solutions_news/reg/0.ashx') . '</div>';
+    }
+  }
+
+  $block = array(
+    'message' => array(
+      '#type' => 'markup',
+      '#markup' => $output,
+    ),
+  );
+
+  return $block;
+}
+
+/**
+ * Helper function to output the contents of sidebar_title_block.
+ */
+function sidebar_title_block_view() {
+  $output = '';
+
+  $section_path = _intel_theme_section_path();
+
+  if (!empty($section_path)) {
+    $section_titles = _intel_theme_section_titles($section_path);
+
+    if (!empty($section_titles['sidebar-title'])) {
+      $output = '<h4 class="sidebar-title">' . $section_titles['sidebar-title'] . '</h4>';
+    }
+  }
+
+  return $output;
+}
+
+/**
+ * Helper function to determine section path.
+ *
+ * @return $section_path
+ *   An string containing the path for the current section.
+ */
+function _intel_theme_section_path() {
+  $section_path = '';
+
+  // Grab the current path (does not include base url).
+  $current_path = current_path();
+
+  // Break the path into parts.
+  $current_path_parts = explode('/', $current_path);
+  if ($current_path_parts[0] == 'node') {
+    // Node add/edit pages are admin pages.
+    if (in_array('add', $current_path_parts) || in_array('edit', $current_path_parts)) {
+      $section_path = 'member-resource-center';
+    }
+    else {
+      $node = node_load($current_path_parts[1]);
+
+      // Ignore page nodes as they can fall under any section.
+      if ($node->type != 'page') {
+        // The Opportunity node type falls under a section not the type.
+        $section_path = ($node->type == 'opportunity') ? 'co-marketing-tool' : $node->type;
+      }
+    }
+  }
+
+  if (empty($section_path)) {
+    // Otherwise we're dealing with sections.
+    $current_path_alias = drupal_get_path_alias($current_path);
+    $current_path_alias_parts = explode('/', $current_path_alias);
+    $section_path = $current_path_alias_parts[0];
+  }
+
+  return $section_path;
+}
+
+/**
+ * Helper function to determine section titles.
+ *
+ * @param $section_path
+ *   The path of the current section.
+ * @return $section_titles
+ *   An array containing the title and subtitle for the current page.
+ */
+function _intel_theme_section_titles($section_path) {
+  $section_titles = array();
+  switch ($section_path) {
+    // Solution & Formula nodes
+    case 'solution':
+    case 'formula':
+      $section_titles['header-title'] = t('Intel Internet of Things') . '<br />';
+      $section_titles['header-subtitle'] = t('Solutions Directory – For Developers');
+      $section_titles['sidebar-title'] = t('Product Details');
+      break;
+    // Member Roster
+    case 'member-roster':
+      $section_titles['header-title'] = t('Intel Internet of Things') . '<br />';
+      $section_titles['header-subtitle'] = t('Solutions Directory – For Developers');
+      $section_titles['sidebar-title'] = '';
+      break;
+    // Company nodes
+    case 'company':
+      $section_titles['header-title'] = t('Intel Internet of Things') . '<br />';
+      $section_titles['header-subtitle'] = t('Solutions Directory – For Developers');
+      $section_titles['sidebar-title'] = t('Member Details');
+      break;
+    // Co-Marketing Tool (Center), Opportunity Group, and Opportunity nodes
+    case 'co-marketing-tool':
+      $section_titles['header-title'] = t('Intel Internet of Things') . '<br /><span>' . t('Co-Marketing Center') . '</span>';
+      $section_titles['header-subtitle'] = '';
+      $section_titles['sidebar-title'] = t('Co-Marketing Center');
+      break;
+    // Member Resource Center
+    case 'member-resource-center':
+    case 'user':
+      global $user;
+      $this_user = user_load($user->uid);
+      // Make sure the user is a logged in user.
+      if($user->uid > 0 && isset($this_user->field_company) && isset($company->field_membership_type) && !empty($this_user->field_company)){
+        $company = node_load($this_user->field_company[LANGUAGE_NONE]['0']['target_id']);
+        $type = $company->field_membership_type['und']['0']['tid'];
+      }
+    if(!intel_ea_module_is_user_alliance_member()){
+      $section_titles['header-title'] = t('Intel Internet of Things') . '<br /><span>' . t('Partners Resource Center') . '</span>';
+      $section_titles['header-subtitle'] = '';
+    }
+    else {
+      $section_titles['header-title'] = t('Intel Internet of Things') . '<br /><span>' . t('Members Resource Center') . '</span>';
+      $section_titles['header-subtitle'] = '';
+    }
+
+    if ($user->uid > 0) {
+      $section_titles['sidebar-title'] = t('Manage Your Listings');
+    }
+      
+    break;
+    default:
+      $section_titles['header-title'] = t('Intel Internet of Things') . '<br />';
+      $section_titles['header-subtitle'] = t('Solutions Directory – For Developers');
+      $section_titles['sidebar-title'] = '';
+  }
+
+  return $section_titles;
+}
+
+/**
+ * Implements hook_entity_info_alter().
+ * Function to add an additional view mode to the Company content type for display on the Solutions page.
+ */
+function intel_theme_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['individual_solution'] = array(
+      'label' => t('Individual Solution'),
+      'custom settings' => TRUE
+  );
+}
+
+/**
+ * Implements hook_field_formatter_info().
+ * Adds a new field formatter for taxonomy terms
+ */
+function intel_theme_field_formatter_info() {
+  return array(
+      'solutions_directory_formatter' => array( //Machine name of the formatter
+          'label' => t('Solutions Directory Link'),
+          'field types' => array('taxonomy_term_reference'), //This will only be available to term reference fields
+      ),
+  );
+}
+
+/**
+ * Implements hook_field_formatter_settings_summary().
+ * Adds a new field formatter for taxonomy terms
+ */
+function intel_theme_field_formatter_settings_summary($field, $instance, $view_mode) {
+  $display = $instance['display'][$view_mode];
+  $summary = t('Display this taxonomy term as a link to the solutions directory');
+  return $summary;
+}
+
+
+/**
+ * Implements hook_field_formatter_view().
+ * adds a new field formatter for taxonomy terms
+ */
+function intel_theme_field_formatter_view($entity_type, $entity, $field, $instance, $langcode, $items, $display) {
+  $element = array(); // Initialize the var
+  $terms = array();
+
+  foreach ($items as $delta => $item) {
+    array_push($terms, $item); // Getting the actual value
+  }
+
+  $term_array = taxonomy_term_load_multiple($terms);
+
+  $options = array(
+      'html'        => TRUE, // This tells Drupal that we're sending HTML, not plain text, otherwise it would encode it
+      'attributes'  => array(
+          'class' => array('solutions-directory-link')
+      ),
+  );
+
+  $i = 0;
+  foreach($term_array as $term) {
+    $path = '/solutions-directory/'.$term->vocabulary_machine_name.'/'.$term->tid;
+
+
+    if(isset($term)) {
+      $link = l($term->name, $path, $options); // Create the Link
+      $element[$i]['#markup'] = $link; // Assign it to the #markup of the element
+    }
+    $i++;
+  }
+
+  return $element;
+
+}
+
+
+/**
+ * Implements hook_image_default_styles().
+ * Adds a new default image style for company logos on individual solutions
+ */
+function intel_theme_image_default_styles() {
+  $styles = array();
+
+  $styles['company_logo_for_solution'] = array(
+      'effects' => array(
+          array(
+              'name' => 'image_scale',
+              'data' => array(
+                  'width' => 300,
+                  'upscale' => 0,
+              ),
+              'weight' => 0,
+          ),
+      ),
+  );
+
+  $styles['company_logo_for_solution_no_upscaling'] = array(
+    'effects' => array(
+      array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 300,
+          'upscale' => 0,
+        ),
+        'weight' => 0,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
+ * Implements hook_init()
+ *
+ * Purpose: Ensure a language_base_url global for usage.
+ */
+function intel_theme_init(){
+  // Create a base url that contains language code for usage in the theme.
+  global $base_url;
+  global $language_url;
+  global $language_base_url;
+
+  // Simply use BASE_URL if not english, otherwise append two char lang code.
+  if($language_url->language != 'en'){
+    $language_base_url = $base_url . '/' . $language_url->language;
+  }
+  else{
+    $language_base_url = $base_url;
+  }
+}

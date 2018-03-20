@@ -1,0 +1,14 @@
+name = Taxonomy Migration
+description = This module is used for Taxonomy Migration.
+
+core = 7.x
+php = 5.2
+
+; Add a style sheet for all media
+
+
+; Information added by drupal.org packaging script on 2012-05-08
+version = "7.x-2.0-alpha3"
+core = "7.x"
+project = "intel_taxonomy_migration"
+datestamp = "1336466457"

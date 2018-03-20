@@ -1,0 +1,7 @@
+name = Intel ERPM Web Service
+description = Solution Directory ERPM Web Services
+package = Intel ERPM Web Services
+version = VERSION
+core = 7.x
+files[] = intel_erpm_web_service.module
+files[] = intel_erpm_web_service.inc

@@ -1,0 +1,174 @@
+UBT (Ubiquitous-based test) ---------- 45516 -------- Saved 
+PCM-6406 Intel® 82801HBM (ICH8-M) チップセット ---------- 45704 -------- Saved 
+BM3400 S2 ---------- 45832 -------- Saved 
+BM3400 S2 ---------- 45833 -------- Saved 
+BM3400 S0 ---------- 45834 -------- Saved 
+BM3400 S0 ---------- 45835 -------- Saved 
+RCK-204MA： 2U ATX 主板机架安装式机箱，(2） 个 5.25 英寸、(2） 个 3.5 英寸驱动器托架、3 个 经转接卡的 PCI 插槽、2U ATX 电源 ---------- 45868 -------- Saved 
+RCK-204MA: ATX マザーボード用 2U ラックマウント・シャーシ (2) 5.25 インチ、(2) 3.5 インチのドライブベイ、ライザーカード、2U ATX 電源を介した 3 PCI スロット　 ---------- 45869 -------- Saved 
+PRA-CB-T31 マザーボード ---------- 45876 -------- Saved 
+スマート・エネルギー・ゲートウェイ用 SEG-550 ベースの Intel® Quark™ ソリューション ---------- 45883 -------- Saved 
+産業セキュリティ・ゲートウェイ・プラットフォーム用 Intel® N2600 ソリューションをベースにした LEC-6020  ---------- 45884 -------- Saved 
+网络安全专用主板 ---------- 45904 -------- Saved 
+PCX-9223 工业无风扇嵌入式 IPC KING KONG 产品系列 ---------- 46075 -------- Saved 
+ANR-C625N1，2U 机架物联网网关/网络服务器 ---------- 46080 -------- Saved 
+ANR-C625N1、2U ラックマウント IoT ゲートウェイ/ネットワーク・サーバー ---------- 46081 -------- Saved 
+SEP8253 HDEC 主机板 ---------- 46086 -------- Saved 
+SEP8253 HDEC ホストボード ---------- 46087 -------- Saved 
+基于 Intel® Xeon® 处理器可扩展产品系列 C62X 的机架服务器 ---------- 46088 -------- Saved 
+Intel® Xeon® プロセッサー・スケーラブル・ファミリー C62X ベースのラックマウント・サーバー ---------- 46089 -------- Saved 
+AAEON FWS-8600 （网络设备） ---------- 46094 -------- Saved 
+AAEON FWS-8600 (ネットワーク・アプライアンス) ---------- 46095 -------- Saved 
+安全机架服务器  ---------- 46138 -------- Saved 
+セキュア・ラック・サーバー ---------- 46139 -------- Saved 
+NSB-1021 ---------- 46140 -------- Saved 
+NSB-1021 ---------- 46141 -------- Saved 
+PCX-9223 産業ファンレス・エンベデッド IPC King Kong 製品シリーズ ---------- 46276 -------- Saved 
+AIMB-290 ---------- 46284 -------- Saved 
+IB990 - PICMG 1.3 全尺寸 CPU 卡，配备第 7 代/第 6 代  Intel® Xeon® E3 / Core™ i7/i5/i3/Pentium® / Celeron® 处理器 ---------- 46359 -------- Saved 
+IB990 - 第 7/6 世代に PICMG 1.3 のフルサイズの CPU カードです。 Intel® Xeon® E3 / Core™ i7/i5/i3/Pentium® / Celeron® プロセッサー ---------- 46360 -------- Saved 
+MSL8256 模块化刀片卡 ---------- 46371 -------- Saved 
+MSL8256 モジュラー・ブレード・カード ---------- 46372 -------- Saved 
+QBOX-300S: 无风扇迷你箱式电脑采用 Intel® Apollo Lake 处理器 ---------- 46379 -------- Saved 
+QBOX-300S: Intel® Apollo Lake プロセッサー搭載のファンレス・ミニボックス PC ---------- 46380 -------- Saved 
+DFI DV970 COM Express Type 7 Basic 基于 Intel® Atom® C3000 处理器 ---------- 46389 -------- Saved 
+Intel® Atom® C3000 プロセッサー搭載の DFI DV970 COM Express Type 7 Basic ---------- 46390 -------- Saved 
+环境传感器  ---------- 46391 -------- Saved 
+環境センサー ---------- 46392 -------- Saved 
+工业计算机 （AB5）  ---------- 46393 -------- Saved 
+産業用コンピューター (AB5) ---------- 46394 -------- Saved 
+NSA 7145 网络安全设备 ---------- 46423 -------- Saved 
+NSA 7145 ネットワーク・セキュリティ・アプライアンス ---------- 46424 -------- Saved 
+NCA-2510 Virtualization-optimized Network Appliance for vCPE, uCPE, SD-WAN and SD-Security ---------- 46450 -------- Saved 
+GVC2000 ---------- 46504 -------- Saved 
+视频管理解决方案 （VMS） / Command Center （CC） ---------- 46520 -------- Saved 
+ビデオ管理ソリューション (VMS)/Command Center (CC) ---------- 46521 -------- Saved 
+NCCTV HD / 电视墙解决方案 ---------- 46522 -------- Saved 
+NCCTV HD / TV-Wall ソリューション ---------- 46523 -------- Saved 
+NVR 5400-4U 系列 ---------- 46524 -------- Saved 
+NVR 5400-4U シリーズ ---------- 46525 -------- Saved 
+DV970 COM Express Basic Type 7 基于 Intel® Atom® C3000 处理器 ---------- 46644 -------- Saved 
+Intel® Atom® C3000 プロセッサー搭載の DV970 COM Express Basic Type 7 ---------- 46645 -------- Saved 
+Supermicro A2SDi-2C-HLN4F Intel® Atom® 处理器 C3338 迷你 ITX MBD ---------- 46648 -------- Saved 
+Supermicro A2SDi-2C-HLN4F Intel® Atom® プロセッサー C3338 Mini-ITX MBD ---------- 46649 -------- Saved 
+流管理器 （SM）  ---------- 46680 -------- Saved 
+ストリーミング・マネージャ (SM) ---------- 46681 -------- Saved 
+NVR 软件 - 电源 DOM ---------- 46688 -------- Saved 
+NVR ソフトウェア - パワー DOM ---------- 46689 -------- Saved 
+全球管理员 （GA） ---------- 46690 -------- Saved 
+グローバル管理者 (GA) ---------- 46691 -------- Saved 
+存档服务器  ---------- 46692 -------- Saved 
+アーカイブサーバー ---------- 46693 -------- Saved 
+Express-IB ---------- 46758 -------- Saved 
+Network security-dedicated motherboard ---------- 46790 -------- Saved 
+J1900I-C ---------- 47001 -------- Saved 
+DA67-N1-B40H0G-GIA ---------- 47009 -------- Saved 
+D67-N1-7500U40H0G-GIA ---------- 47083 -------- Saved 
+G330 ---------- 47089 -------- Saved 
+NA362 -- 紧凑型网络设备平台采用 Intel® Atom® 处理器 C3538/C3758，配备多达 10 个 LAN ---------- 47092 -------- Saved 
+NA362 -- Intel® Atom® プロセッサー C3538/C3758 および最大 10 の LAN を搭載したデスクトップ・ネットワーク・アプライアンス・プラットフォーム ---------- 47093 -------- Saved 
+NSB-3014 ---------- 47166 -------- Saved 
+NSB-3014 ---------- 47167 -------- Saved 
+Supermicro SYS-E300-9A Intel® Atom® C3000 紧凑型迷你 ITX 服务器 ---------- 47180 -------- Saved 
+Supermicro SYS-E300-9A Intel® Atom® C3000 コンパクト Mini-ITX サーバー ---------- 47181 -------- Saved 
+Supermicro SYS-E200-9A Intel® Atom® C3000 紧凑型迷你 ITX 服务器 ---------- 47182 -------- Saved 
+Supermicro SYS-E200-9A Intel® Atom® C3000 コンパクト Mini-ITX サーバー ---------- 47183 -------- Saved 
+Supermicro SYS-5029A-2TN4 Intel® Atom® C3000 迷你塔  ---------- 47184 -------- Saved 
+Supermicro SYS-5029A-2TN4 Intel® Atom® C3000 ミニタワー  ---------- 47185 -------- Saved 
+Supermicro SYS-5019A-12TN4 Intel® Atom® C3000 紧凑型服务器 ---------- 47186 -------- Saved 
+Supermicro SYS-5019A-12TN4 Intel® Atom® C3000  ---------- 47187 -------- Saved 
+Supermicro SYS-5019A-FTN4 Intel® Atom® C3000 紧凑型服务器 ---------- 47210 -------- Saved 
+Supermicro SYS-5019A-FTN4 Intel® Atom® C3000 コンパクト・サーバー ---------- 47211 -------- Saved 
+Supermicro A2SDi Intel® Atom® C3000 （2-16 Core） 迷你 ITX 主板系列 ---------- 47214 -------- Saved 
+Supermicro A2SDi Intel® Atom® C3000 (2-16 Core) Mini-ITX マザーボード・ファミリー ---------- 47215 -------- Saved 
+Supermicro A2SDi-H-TP4F/TF Atom C3000 主板系列 ---------- 47216 -------- Saved 
+Supermicro A2SDi-H-TP4F/TF Atom C3000 マザーボード・ファミリー ---------- 47217 -------- Saved 
+Supermicro A2SDi-H-TP4F/TF Intel® Atom® C3000 主板系列 ---------- 47218 -------- Saved 
+Supermicro A2SDi-H-TP4F/TF Intel® Atom® C3000 マザーボード・ファミリー ---------- 47219 -------- Saved 
+Supermicro A2SDi-TP8F/LN4F Intel® Atom® C3000 迷你 ITX 主板系列 ---------- 47220 -------- Saved 
+Supermicro A2SDi-TP8F/LN4F Intel® Atom® C3000 Mini-ITX マザーボード・ファミリー ---------- 47221 -------- Saved 
+Supermicro A2SDV-8C/12C+/16C-TLN5F Atom C3000 Flex ATX 主板系列 ---------- 47222 -------- Saved 
+Supermicro A2SDV-8C/12C+/16C-TLN5F Atom C3000 Flex ATX マザーボード・ファミリー ---------- 47223 -------- Saved 
+COMe-bDV7 - COM Express® 基础 7 型配备 Intel Atom® 处理器 C3000 处理器系列 ---------- 47264 -------- Saved 
+COMe-bDV7 - COM Express® ベーシック Type 7、Intel Atom® プロセッサー C3000 プロセッサー・シリーズ搭載 ---------- 47265 -------- Saved 
+AIMB-290 ---------- 47280 -------- Saved 
+AIMB-290 ---------- 47281 -------- Saved 
+BAT-IS 1900 ---------- 47301 -------- Saved 
+D67-N1-7200U40H0G-GIA ---------- 47310 -------- Saved 
+D360H-B0000 with Intel® H110 chipsets ---------- 47312 -------- Saved 
+D360H-B0000 WITH INTEL® H110 CHIPSET ---------- 47313 -------- Saved 
+PC67-N1-7200U40H0G-GIA ---------- 47315 -------- Saved 
+PC67-N1-7100U40H0G-GIA ---------- 47316 -------- Saved 
+Giada AE67-7500U ---------- 47317 -------- Saved 
+Giada AE67-7200U ---------- 47318 -------- Saved 
+Giada AE67-7100U ---------- 47319 -------- Saved 
+Giada H110-GT730 ---------- 47321 -------- Saved 
+Giada  AS32-F1-E3815 ---------- 47322 -------- Saved 
+AS32-F1-E3845 ---------- 47323 -------- Saved 
+Giada AP23-E3930 ---------- 47325 -------- Saved 
+Giada  AP23-E3940 ---------- 47326 -------- Saved 
+Giada P67-N1 ---------- 47327 -------- Saved 
+Giada P67-G1 ---------- 47328 -------- Saved 
+PowerConnect GenSecure ---------- 47470 -------- Saved 
+NF699 Intel Denverton platform ---------- 47565 -------- Saved 
+GVC2000 ---------- 47740 -------- Saved 
+GVC2000 ---------- 47741 -------- Saved 
+NCA-2510 虚拟化优化 vCPE、uCPE、SD-WAN 和 SD 安全的网络设备 ---------- 47771 -------- Saved 
+vCPE、uCPE、SD-WAN、SD-Security 用 NCA-2510 仮想化向けに最適化されたネットワーク・アプライアンス ---------- 47772 -------- Saved 
+DA67-N1-B40H0G-GIA ---------- 47801 -------- Saved 
+DA67-N1-B40H0G-GIA ---------- 47802 -------- Saved 
+V5 Portable Edge Computing Unit (V5 PECU-Dell) ---------- 48006 -------- Saved 
+V5 Camera Adaptive Platform (V5 CAP) ---------- 48007 -------- Saved 
+V5 Portable PTZ Security Unit (V5 PSU-PTZ) ---------- 48008 -------- Saved 
+D67-N1-7500U40H0G-GIA ---------- 48177 -------- Saved 
+D67-N1-7500U40H0G-GIA ---------- 48178 -------- Saved 
+Giada P67-N1 ---------- 48179 -------- Saved 
+Giada P67-N1 ---------- 48180 -------- Saved 
+Giada P67-G1 ---------- 48181 -------- Saved 
+Giada P67-G1 ---------- 48182 -------- Saved 
+NF699 Intel Denverton 平台 ---------- 48185 -------- Saved 
+NF699 Intel Denverton プラットフォーム ---------- 48186 -------- Saved 
+Citybeacon Kiosk: Smart City Solution ---------- 48216 -------- Saved 
+Embedded MB RB-F220U ---------- 48329 -------- Saved 
+Embedded MB RB-F210RS ---------- 48330 -------- Saved 
+M908 LoRa ---------- 48338 -------- Saved 
+Embedded MB RB-J3455N ---------- 48340 -------- Saved 
+Embedded MB RB-J3455T ---------- 48341 -------- Saved 
+Embedded MB RB-F320U ---------- 48342 -------- Saved 
+Embedded MB RB-F310RS ---------- 48343 -------- Saved 
+Expansion Card RC-X550AT ---------- 48344 -------- Saved 
+RB-N309CF ---------- 48345 -------- Saved 
+RB-N311-8D ---------- 48346 -------- Saved 
+AS32-F1-E3845 ---------- 48357 -------- Saved 
+AS32-F1-E3845 ---------- 48358 -------- Saved 
+Giada AS32-F1-E3815 ---------- 48359 -------- Saved 
+Giada AS32-F1-E3815 ---------- 48360 -------- Saved 
+Giada AE67-7100U ---------- 48361 -------- Saved 
+Giada AE67-7100U ---------- 48362 -------- Saved 
+Giada H110-GT730 ---------- 48363 -------- Saved 
+Giada H110-GT730 ---------- 48364 -------- Saved 
+Giada AE67-7200U ---------- 48365 -------- Saved 
+Giada AE67-7200U ---------- 48366 -------- Saved 
+Giada AE67-7500U ---------- 48367 -------- Saved 
+Giada AE67-7500U ---------- 48368 -------- Saved 
+PC67-N1-7100U40H0G-GIA ---------- 48369 -------- Saved 
+PC67-N1-7100U40H0G-GIA ---------- 48370 -------- Saved 
+Giada AP23-E3930 ---------- 48371 -------- Saved 
+Giada AP23-E3930 ---------- 48372 -------- Saved 
+Giada AP23-E3940 ---------- 48373 -------- Saved 
+Giada AP23-E3940 ---------- 48374 -------- Saved 
+D67-N1-7200U40H0G-GIA ---------- 48377 -------- Saved 
+D67-N1-7200U40H0G-GIA ---------- 48378 -------- Saved 
+G330 ---------- 48381 -------- Saved 
+G330 ---------- 48382 -------- Saved 
+D360H-B0000 配备 Intel® H110 芯片组 ---------- 48383 -------- Saved 
+D360H-B0000、Intel® H110 チップセット搭載 ---------- 48384 -------- Saved 
+D360H-B0000 配备 INTEL® H110 芯片组 ---------- 48385 -------- Saved 
+D360H-B0000、INTEL® H110 チップセット搭載 ---------- 48386 -------- Saved 
+PC67-N1-7200U40H0G-GIA ---------- 48389 -------- Saved 
+PC67-N1-7200U40H0G-GIA ---------- 48390 -------- Saved 
+PowerConnect GenSecure ---------- 48401 -------- Saved 
+PowerConnect GenSecure ---------- 48402 -------- Saved 
+J1900I-C ---------- 48423 -------- Saved 
+J1900I-C ---------- 48424 -------- Saved 
+智慧型LED路燈系統 ---------- 48493 -------- Saved 

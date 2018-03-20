@@ -1,0 +1,88 @@
+From 04df200e1092a0a7fba3892d6fdf8c23387ac37f Mon Sep 17 00:00:00 2001
+From: Mark Carver <mark.carver@me.com>
+Date: Fri, 9 Nov 2012 16:31:20 -0600
+Subject: [PATCH] [#1665164] - Override Facet Label
+
+---
+ plugins/facetapi/widget.inc       |  6 +++---
+ plugins/facetapi/widget_links.inc | 25 +++++++++++++++++++++++++
+ 2 files changed, 28 insertions(+), 3 deletions(-)
+
+diff --git a/plugins/facetapi/widget.inc b/plugins/facetapi/widget.inc
+index c84b2fa..42b8a5c 100644
+--- a/plugins/facetapi/widget.inc
++++ b/plugins/facetapi/widget.inc
+@@ -102,8 +102,8 @@ abstract class FacetapiWidget {
+     $this->id = $id;
+     $this->realm = $realm;
+     $this->settings = $settings;
+-    $this->settings->settings += $this->getDefaultSettings();
+     $this->facet = $facet;
++    $this->settings->settings += $this->getDefaultSettings();
+ 
+     // Set the default key as the facet's alias.
+     $this->key = $facet['field alias'];
+@@ -112,7 +112,7 @@ abstract class FacetapiWidget {
+   /**
+    * Initializes the build, must be invoked prior to executing this widget.
+    *
+-   * This method is called automatically by FacetapiFacet::build() and shoud
++   * This method is called automatically by FacetapiFacet::build() and should
+    * rarely be invoked outside of that context. It is responsible for getting
+    * the base render array stored in the FacetapiFacet object and appending it
+    * to the container that will be returned, sorting the facets, and adding some
+@@ -128,7 +128,7 @@ abstract class FacetapiWidget {
+ 
+     // Initialize the render array.
+     $this->build = array(
+-      '#title' => $this->facet['label'],
++      '#title' => isset($this->settings->settings['label_override']) && !empty($this->settings->settings['label_override']) ? $this->settings->settings['label'] : $this->facet['label'],
+       '#description' => $this->facet['description'],
+       '#weight' => $this->facet['weight'],
+       '#adapter' => $this->facet->getAdapter(),
+diff --git a/plugins/facetapi/widget_links.inc b/plugins/facetapi/widget_links.inc
+index 81075b2..2759de9 100644
+--- a/plugins/facetapi/widget_links.inc
++++ b/plugins/facetapi/widget_links.inc
+@@ -162,6 +162,29 @@ class FacetapiWidgetLinks extends FacetapiWidget {
+    * Overrides FacetapiWidget::settingsForm().
+    */
+   function settingsForm(&$form, &$form_state) {
++    $form['widget']['widget_settings']['links'][$this->id]['label_override'] = array(
++      '#type' => 'checkbox',
++      '#title' => t('Override Facet Label %default_label', array('%default_label' => '(' . t('Default') . ': ' . $this->facet['label'] . ')')),
++      '#default_value' => $this->settings->settings['label_override'],
++      '#prefix' => '<div id="facetapi-label-override-' . $this->id . '">',
++      '#suffix' => '</div>',
++      '#states' => array(
++        'visible' => array(
++          'select[name="widget"]' => array('value' => $this->id),
++        ),
++      ),
++    );
++    $form['widget']['widget_settings']['links'][$this->id]['label'] = array(
++      '#type' => 'textfield',
++      '#title' => t('Facet Label'),
++      '#default_value' => $this->settings->settings['label'],
++      '#states' => array(
++        'visible' => array(
++          '#facetapi-label-override-' . $this->id . ' input[name="label_override"]' => array('checked' => TRUE),
++        ),
++      ),
++    );
++
+     // @see http://drupal.org/node/735528 for supporting multiple values in the
+     // FAPI #states. The following hack adds multiple form elements and uses CSS
+     // and JavaScript to ensure only one is displayed at a time. Only the last
+@@ -223,6 +246,8 @@ class FacetapiWidgetLinks extends FacetapiWidget {
+    */
+   function getDefaultSettings() {
+     return array(
++      'label_override' => 0,
++      'label' => $this->facet['label'],
+       'soft_limit' => 20,
+       'nofollow' => 1,
+       'show_expanded' => 0,
+-- 
+1.7.11.5
+

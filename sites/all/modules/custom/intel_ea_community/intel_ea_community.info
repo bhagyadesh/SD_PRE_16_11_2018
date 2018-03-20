@@ -1,0 +1,4 @@
+name = Intel EA Community
+description = Retrieve, parse and display Embedded Community assets for a Company.
+package = Intel EA
+core = 7.x

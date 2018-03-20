@@ -1,0 +1,164 @@
+<?php
+
+
+
+function rfpview_views_pre_view(&$view, &$display_id, &$args) {
+  global $user;
+   global $language;
+  if ($view->name == 'rfp_builder' && $display_id == 'page') {
+
+    $old_data = views_embed_view('rfpbuilder', 'default');
+    $data = json_decode(str_replace('Edit view', '', strip_tags($old_data)));
+    $old_data_json = array();
+    foreach ($data as $key => $value) {
+      //$old_data_json[$value->field_builder][$value->field_requirement] = $value->field_requirement;
+      $old_data_json[$value->field_requirement] = $value->field_requirement;
+    }
+
+    $args = array(implode(',', $old_data_json));
+  }
+    if($view->name == 'proposal_admin_view' && $display_id == 'page_3'){
+	    
+
+		$user_fields = user_load($user->uid);
+	    $companyid = $user_fields->field_company['und']['0']['target_id'];
+		
+	  $query = "SELECT node.nid AS nid
+FROM 
+{node} node
+LEFT JOIN {workflow_node} workflow_node ON node.nid = workflow_node.nid
+LEFT JOIN {field_data_field_buyer_company} field_data_field_buyer_company ON node.nid = field_data_field_buyer_company.entity_id AND field_data_field_buyer_company.entity_type = 'node'
+WHERE (( (field_data_field_buyer_company.field_buyer_company_value = ".$companyid.") )AND(( (node.status = '1') AND (node.type IN  ('rfp')) AND (workflow_node.sid =  '10') AND (node.language IN  ('".$language->language."')) )))";
+
+  $rowObj = db_query($query);
+
+  $data = '';
+  foreach ($rowObj as $row) {
+    $data  .= $row->nid. ',';
+  }	  
+ 
+     $args = array(substr($data, 0, -1));
+	
+  }
+     if($view->name == 'proposal_admin_view' &&  $display_id == 'page_1' ){
+	$query = "SELECT node.nid AS nid
+FROM 
+{node} node
+LEFT JOIN {field_data_field_applications_engineers} field_data_field_applications_engineers ON node.nid = field_data_field_applications_engineers.entity_id AND field_data_field_applications_engineers.entity_type = 'node'
+LEFT JOIN {field_data_field_server_fse} field_data_field_server_fse ON node.nid = field_data_field_server_fse.entity_id AND field_data_field_server_fse.entity_type = 'node'
+LEFT JOIN {field_data_field_client_fse} field_data_field_client_fse ON node.nid = field_data_field_client_fse.entity_id AND field_data_field_client_fse.entity_type = 'node'
+LEFT JOIN {field_data_field_eiot_fse} field_data_field_eiot_fse ON node.nid = field_data_field_eiot_fse.entity_id AND field_data_field_eiot_fse.entity_type = 'node'
+LEFT JOIN {field_data_field_server_fae} field_data_field_server_fae ON node.nid = field_data_field_server_fae.entity_id AND field_data_field_server_fae.entity_type = 'node'
+LEFT JOIN {field_data_field_sales_engineers} field_data_field_sales_engineers ON node.nid = field_data_field_sales_engineers.entity_id AND field_data_field_sales_engineers.entity_type = 'node'
+LEFT JOIN {field_data_field_client_fae} field_data_field_client_fae ON node.nid = field_data_field_client_fae.entity_id AND field_data_field_client_fae.entity_type = 'node'
+LEFT JOIN {field_data_field_eiot_fae} field_data_field_eiot_fae ON node.nid = field_data_field_eiot_fae.entity_id AND field_data_field_eiot_fae.entity_type = 'node'
+WHERE (( (node.status = '1') AND (node.type IN  ('company')) AND (node.language IN  ('".$language->language."')) ) AND( (field_data_field_server_fse.field_server_fse_target_id IN  (".$user->uid.")) OR (field_data_field_client_fse.field_client_fse_target_id IN  (".$user->uid.")) OR (field_data_field_eiot_fse.field_eiot_fse_target_id IN  (".$user->uid.")) OR (field_data_field_server_fae.field_server_fae_target_id IN  (".$user->uid.")) OR (field_data_field_sales_engineers.field_sales_engineers_target_id IN  (".$user->uid.")) OR (field_data_field_client_fae.field_client_fae_target_id IN  (".$user->uid.")) OR (field_data_field_eiot_fae.field_eiot_fae_target_id IN  (".$user->uid.")) OR 
+(field_data_field_applications_engineers.field_applications_engineers_target_id IN (".$user->uid.")) ))";
+
+  $rowObj = db_query($query);
+
+  $data = '';
+  foreach ($rowObj as $row) {
+    $data  .= $row->nid. ',';
+  }	  
+ 
+     $buyer_companies = (substr($data, 0, -1));    
+		
+	  $query = "SELECT node.nid AS nid
+FROM 
+{node} node
+LEFT JOIN {workflow_node} workflow_node ON node.nid = workflow_node.nid
+LEFT JOIN {field_data_field_buyer_company} field_data_field_buyer_company ON node.nid = field_data_field_buyer_company.entity_id AND field_data_field_buyer_company.entity_type = 'node'
+WHERE (( (field_data_field_buyer_company.field_buyer_company_value IN (".$buyer_companies.") ) )AND(( (node.status = '1') AND (node.type IN  ('rfp')) AND (workflow_node.sid =  '10') AND (node.language IN  ('".$language->language."')) )))";
+
+  $rowObj = db_query($query);
+
+  $data = '';
+  foreach ($rowObj as $row) {
+    $data  .= $row->nid. ',';
+  }	  
+ 
+     $args = array(substr($data, 0, -1));
+	
+  }
+  
+     if($view->name == 'proposal_admin_view' &&  $display_id == 'page_4' ){
+	    
+
+
+$query = "SELECT node.nid AS nid
+FROM 
+{node} node
+LEFT JOIN {field_data_field_applications_engineers} field_data_field_applications_engineers ON node.nid = field_data_field_applications_engineers.entity_id AND field_data_field_applications_engineers.entity_type = 'node'
+LEFT JOIN {field_data_field_server_fse} field_data_field_server_fse ON node.nid = field_data_field_server_fse.entity_id AND field_data_field_server_fse.entity_type = 'node'
+LEFT JOIN {field_data_field_client_fse} field_data_field_client_fse ON node.nid = field_data_field_client_fse.entity_id AND field_data_field_client_fse.entity_type = 'node'
+LEFT JOIN {field_data_field_eiot_fse} field_data_field_eiot_fse ON node.nid = field_data_field_eiot_fse.entity_id AND field_data_field_eiot_fse.entity_type = 'node'
+LEFT JOIN {field_data_field_server_fae} field_data_field_server_fae ON node.nid = field_data_field_server_fae.entity_id AND field_data_field_server_fae.entity_type = 'node'
+LEFT JOIN {field_data_field_sales_engineers} field_data_field_sales_engineers ON node.nid = field_data_field_sales_engineers.entity_id AND field_data_field_sales_engineers.entity_type = 'node'
+LEFT JOIN {field_data_field_client_fae} field_data_field_client_fae ON node.nid = field_data_field_client_fae.entity_id AND field_data_field_client_fae.entity_type = 'node'
+LEFT JOIN {field_data_field_eiot_fae} field_data_field_eiot_fae ON node.nid = field_data_field_eiot_fae.entity_id AND field_data_field_eiot_fae.entity_type = 'node'
+WHERE (( (node.status = '1') AND (node.type IN  ('company')) AND (node.language IN  ('".$language->language."')) )AND( (field_data_field_server_fse.field_server_fse_target_id IN  (".$user->uid.")) OR (field_data_field_client_fse.field_client_fse_target_id IN  (".$user->uid.")) OR (field_data_field_eiot_fse.field_eiot_fse_target_id IN  (".$user->uid.")) OR (field_data_field_server_fae.field_server_fae_target_id IN  (".$user->uid.")) OR (field_data_field_sales_engineers.field_sales_engineers_target_id IN  (".$user->uid.")) OR (field_data_field_client_fae.field_client_fae_target_id IN  (".$user->uid.")) OR (field_data_field_eiot_fae.field_eiot_fae_target_id IN  (".$user->uid.")) OR 
+(field_data_field_applications_engineers.field_applications_engineers_target_id IN (".$user->uid.")) ))";
+
+  $rowObj = db_query($query);
+
+  $data = '';
+  foreach ($rowObj as $row) {
+    $data  .= $row->nid. ',';
+  }	  
+ 
+     $args = array(substr($data, 0, -1));
+	
+  }  
+  
+}
+
+function rfpview_custom_theme() {
+
+  $path = request_path();
+  if ($path == 'rfp-buyer') {
+    return variable_get('custom_theme', 'intel_isdm_bootstrap');
+  }
+    if ((arg(0) . '/' . arg(2) == 'node/edit')){
+    $node = node_load(arg(1));
+    if($node->type == 'rfp' || $node->type == 'proposal')
+    return variable_get('custom_theme', 'intel_isdm_bootstrap');
+  }
+  if ((arg(0) . '/' . arg(1) . '/' . arg(2) == 'node/add/rfp'))
+    return variable_get('custom_theme', 'intel_isdm_bootstrap');
+}
+
+function rfpview_entityreference_view_widget_views_arguments_alter(&$arguments, $form_state, $view) {
+if ($view->name == 'manual_builders'){
+
+    $int = filter_var($form_state['triggering_element']['#name'], FILTER_SANITIZE_NUMBER_INT);	
+	$int = str_replace('-', '', $int);
+	//edit-field-rfp-product-und-1-field-categories-hidden
+	if($form_state['values']['field_rfp_product']['und'][$int]['field_categories_hidden']['und'][0]['value']){
+	$matched = substr($form_state['values']['field_rfp_product']['und'][$int]['field_categories_hidden']['und'][0]['value'], 0, -1);
+	$match_array = explode("#", $matched);
+	$list_match = '';
+	foreach($match_array as $value) {
+		$value = explode("=>", $value);
+		$list_match .= $value[0] . ',';
+	}
+	if($list_match)
+    $arguments[] = substr($list_match, 0, -1);	
+	}
+ $arguments[] = 00;
+
+}
+
+
+}
+
+/**
+ * Implementation of hook_views_api().
+ */
+function rfpview_views_api() { 
+  return array(
+    'api' => 3,
+    'path' => drupal_get_path('module', 'rfpview'),
+  );
+}
+

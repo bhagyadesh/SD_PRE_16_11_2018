@@ -1,0 +1,546 @@
+<?php
+
+/**
+ * @FILE
+ * Install module that primarily contains content updates relating to ISDM.
+ *
+ * For testing:
+ * module_load_include('install','intel_isdm_module');
+ */
+
+/**
+ * Implements hook_install.
+ *
+ * Purpose: Update category terms.
+ */
+function intel_isdm_module_install(){
+  drupal_set_installed_schema_version('intel_isdm_module', 7000);
+}
+
+/**
+ *  Updates category taxonomy terms to diverge Hardware and Software.
+// */
+//function intel_isdm_module_update_7003(){
+//  // Establish terms needing to be moved.
+//  $terms_to_adjust = array(
+//    'parent_terms' => array(
+//      // Switch products & components to two new terms, HARDWARE / SOFTWARE
+//      '125' => 'Products & Components',
+//    ),
+//    'children_terms' => array(
+//      // Terms being moved out to software
+//      '1' => 'Application Software',
+//      '65' => 'Firmware & Operating Systems',
+//      '96' => 'Software Tools',
+//    ),
+//  );
+//
+//  // Loop through all assumed terms and check validity of term names.
+//  foreach($terms_to_adjust as $term_groups){
+//    foreach ($term_groups as $assumed_tid => $assumed_name){
+//      $term_to_check = taxonomy_term_load(intval($assumed_tid));
+//      // Check for failing to load term or name mismatch on terms.
+//      if (!$term_to_check || $assumed_name != $term_to_check->name){
+//        throw new DrupalUpdateException('There was an issue in intel_isdm_module_update_7001 with assumed ' . $assumed_tid . '|' . $assumed_name . ' !== ' . $term_to_check->name);
+//      }
+//    }
+//  }
+//
+//  // Get Categories vocabulary
+//  $categories_vocab = taxonomy_vocabulary_machine_name_load('categories');
+//
+//  // Create new software term.
+//  $software_term = new stdClass();
+//  $software_term->name = 'Software';
+//  $software_term->description = 'All software related solutions.';
+//  $software_term->vid = $categories_vocab->vid;
+//  $software_term->weight = -10;
+//  taxonomy_term_save($software_term);
+//
+//  // Adjust software terms so as the new software term is their parent.
+//  foreach ($terms_to_adjust['children_terms'] as $tid => $assumed_name) {
+//    $term = taxonomy_term_load($tid);
+//    $term->parent = $software_term->tid;
+//    taxonomy_term_save($term);
+//  }
+//  // Rename Products & Components to HARDWARE.
+//  $hardware_term = taxonomy_term_load(125);
+//  $hardware_term->name = 'Hardware';
+//  $hardware_term->weight = -20;
+//  taxonomy_term_save($hardware_term);
+//
+//  variable_set('intel_isdm_value_updated_categories', TRUE);
+//  return 'ISDM Categories Taxonomy Update Completed Successfully!';
+//}
+
+/**
+ *  Updates category taxonomy terms to remove backslashes as views doesn't take these in arguments, even urlencoded.
+ */
+function intel_isdm_module_update_7004(){
+  // Get Market Segments vocabulary.
+  $categories_vocab = taxonomy_vocabulary_machine_name_load('market_segments');
+
+  // Loop through all terms
+  foreach(taxonomy_get_tree($categories_vocab->vid) as $term){
+    $term_changed = FALSE;
+
+    // Check if term name contains a slash.
+    if (strpos($term->name, '/') > -1) {
+      // Check if a slash.
+      // Replace slash with an ampersand.
+      $term->name = str_replace('/' ,  ' & ', $term->name);
+      $term_changed = TRUE;
+    }
+
+    if (strpos($term->name, '-') > -1) {
+      // Check if a dash.
+      // Replace dash with a space.
+      $term->name = str_replace('-' ,  ' ', $term->name);
+      $term_changed = TRUE;
+    }
+
+    // If the ter has been changed, save the term.
+    if ($term_changed) {
+      taxonomy_term_save($term);
+    }
+
+  }
+}
+
+/**
+ * Update nodes with software terms to also select parent software term.
+// */
+//function intel_isdm_module_update_7005(&$sandbox){
+//  // Check if a total count has been determined, if not, get all relevant nodes.
+//  if (!isset($sandbox['total_count'])){
+//    // Set current counter to zero.
+//    $sandbox['current_count'] = 0;
+//    // Set updated nodes count to zero.
+//    $sandbox['updated'] = 0;
+//    // Get the software term id.
+//    $sandbox['software_term_id'] = key(taxonomy_get_term_by_name('software', 'categories'));
+//    $sandbox['hardware_term_id'] = key(taxonomy_get_term_by_name('hardware', 'categories'));
+//
+//    // Determine all terms to load nodes from.
+//    $terms_to_hit = array();
+//    $parent_terms_of_software = taxonomy_get_children($sandbox['software_term_id']);
+//    $terms_to_hit = array_merge($terms_to_hit, array_keys($parent_terms_of_software));
+//
+//    // Loop through all terms, getting all children terms.
+//    foreach($parent_terms_of_software as $tid => $term){
+//      $terms_to_hit = array_merge($terms_to_hit, array_keys(taxonomy_get_children($tid)));
+//    }
+//
+//    // Create entity field query to get all nodes with software taxonomy terms, but not the parent term.
+//    $query = new EntityFieldQuery();
+//    $query->entityCondition('entity_type', 'node')
+//      ->entityCondition('bundle', array('solution','formula','component'))
+//      ->fieldCondition('field_categories','tid', $terms_to_hit)
+//      ->fieldCondition('field_categories','tid', $sandbox['software_term_id'], '!=');
+//
+//    // Populate nodes to update and total count in sandbox.
+//    $sandbox['nodes_to_update'] = $query->execute();
+//    $sandbox['total_count'] = count($sandbox['nodes_to_update']['node']);
+//    $sandbox['array_keys'] =  array_keys($sandbox['nodes_to_update']['node']);
+//  }
+//
+//  // Loop through 20 nodes, not going over total amount, updating them if conditions apply.
+//  for($count=1; ($count < 20 && $sandbox['current_count'] < $sandbox['total_count']); $count++) {
+//    // Set boolean flag for whether the node was updated or not to FALSE.
+//    $node_updated = FALSE;
+//    // Load the wrapped node needing to be updated.
+//    $node_result = $sandbox['nodes_to_update']['node'][$sandbox['array_keys'][$sandbox['current_count']]];
+//    $wrapped_node = entity_metadata_wrapper('node', node_load($node_result->nid));
+//
+//    // Get current terms from the node.
+//    $node_current_terms = array_map('intel_isdm_module_map_wrapped_terms', $wrapped_node->field_categories->value());
+//
+//    // Check that the node doesn't already have software. (can't be done in entity query)
+//    if(!in_array($sandbox['software_term_id'], $node_current_terms)){
+//      // Increment update count.
+//      $sandbox['updated']++;
+//      // Add the new software taxonomy term to the node and save.
+//      $wrapped_node->field_categories[] = $sandbox['software_term_id'];
+//      $node_updated = TRUE;
+//    }
+//
+//    // Check if the node still has the parent category of hardware, unset.
+//    if(in_array($sandbox['hardware_term_id'], $node_current_terms)){
+//      unset($wrapped_node->field_categories[array_search($sandbox['hardware_term_id'],$node_current_terms)]);
+//      $node_updated = TRUE;
+//    }
+//
+//    // If the node has been update, create a new revision and save the node.
+//    if ($node_updated) {
+//      $wrapped_node->revision->set(TRUE);
+//      $wrapped_node->save();
+//    }
+//
+//    // Advance current counter.
+//    $sandbox['current_count']++;
+//
+//    // Unset node to update and wrapped node, just to be certain it doesn't persist.
+//    unset($node_result);
+//    unset($wrapped_node);
+//  }
+//
+//  // Calculates finished. Will continue to loop while it's less than 1.
+//  $sandbox['#finished'] = $sandbox['current_count'] / $sandbox['total_count'];
+//  // Output text upon completion.
+//  if($sandbox['#finished'] >= 1){
+//    return 'Updated ' . $sandbox['updated'] . ' nodes from ' . $sandbox['total_count'] . ' potential nodes needing updates.';
+//  }
+//}
+
+/**
+ * Basic helper function to convert wrapped terms in 7004 update.
+ */
+function intel_isdm_module_map_wrapped_terms($array){
+  return $array->tid;
+}
+
+/**
+ * Implements hook_update_n() with the purpose of bringing in an entityqueue for displaying home page market segments.
+ */
+function intel_isdm_module_update_7006(&$sandbox){
+  // Make sure the module is enabled, and the subqueue can be loaded.
+  if (module_exists('entityqueue')
+    && $frontpage_subqueue = entityqueue_subqueue_load('home_page_market_segments')
+  ){
+
+
+//    // Create new HPC term in market segments
+//    $market_segment_vocab = taxonomy_vocabulary_machine_name_load('market_segments');
+//    $hpc_term = new stdClass();
+//    $hpc_term->name = 'HPC';
+//    $hpc_term->description = 'High Performance Computing';
+//    $hpc_term->vid = $market_segment_vocab->vid;
+//    $hpc_term->weight = 0;
+//    taxonomy_term_save($hpc_term);
+
+    // Remove any terms just incase queue was accidentally populated in advance.
+    unset($frontpage_subqueue->eq_taxonomy_term[LANGUAGE_NONE]);
+
+    // Establish home page market segments to add.
+    $market_segment_terms_to_add = array(247,258,248,262,250,263,1223,257,265,268,253,251);
+    // Add each market segment term into the subqueue.
+
+    foreach($market_segment_terms_to_add as $term_id){
+      $frontpage_subqueue->eq_taxonomy_term[LANGUAGE_NONE][] = array(
+        'target_id' => $term_id,
+      );
+    }
+
+    // Save the subqueue with the new items in place.
+    entityqueue_subqueue_save($frontpage_subqueue);
+  }
+  else{
+    // Throw an error.
+    throw new DrupalUpdateException('There was an issue in intel_isdm_module_update_7006. Either the entityqueue module was not enabled and/or the correct entityqueue did not exist. Be sure to revert the ISDM feature to get this functionality.');
+  }
+}
+/**
+ * Helper to replace default field base image.
+ *
+ * @param $field_name
+ * @param $filename
+ * @param $source
+ */
+function _intel_isdm_module_replace_default_image($field_name, $filename, $source) {
+  // Load field info.
+  $field = field_info_field($field_name);
+
+  // Create new file object and get new fid.
+  if (file_exists($source)) {
+    $file = new stdClass;
+    $file->filename = $filename;
+    $file->timestamp = REQUEST_TIME;
+    $file->uri = $source;
+    $file->filemime = file_get_mimetype($source);
+    $file->uid = 1;
+    $file->status = 1;
+    $file = file_copy($file, 'public://default_images', FILE_EXISTS_REPLACE);
+    $fid = $file->fid;
+
+    // Replace old fid with new fid.
+    $field['settings']['default_image'] = (string) $fid;
+
+    // Update field.
+    field_update_field($field);
+  }
+}
+
+/**
+ * Update default image on field base.
+ */
+function intel_isdm_module_update_7007() {
+  $field_name = 'field_logo';
+  $filename = 'company-icon.png';
+  $source = drupal_get_path('module', 'intel_isdm_module') . '/default_images'. '/' . $filename;
+
+  // Replace default image for $field_name field base.
+  _intel_isdm_module_replace_default_image($field_name, $filename, $source);
+}
+
+/**
+ * Helper function to keep common code together for tier updates.
+ *
+ * @param array $sandbox
+ *   $sandbox value from hook_update_n, passed by reference so we can alter values.
+ * @param string $tier_term
+ *   Plain text name for membership tier term.
+ * @param $type_term
+ *   Plain text name for membership type term.
+ *
+ * @return string
+ *   Text message relating to update script success.
+ */
+function intel_isdm_module_tier_updates(&$sandbox, $tier_term, $type_term) {
+  // Initialize values on first loop.
+  if (!isset($sandbox['total_count'])){
+    // Set current counter to zero. and update node count to zero.
+    $sandbox['current_count'] = 0;
+    $sandbox['updated'] = 0;
+
+    // Get TID of membership tier term (NEW) to move companies to..
+    $sandbox['new_tier_tid'] = key(taxonomy_get_term_by_name($tier_term, 'membership_tier'));
+
+    // Get parent term of new tier TID.
+    $sandbox['parent_term_tid'] = key(taxonomy_get_parents($sandbox['new_tier_tid']));
+
+    // Get TID of membership type (OLD) to determine what to move companies to.
+    $memb_type_tid = key(taxonomy_get_term_by_name($type_term));
+
+    // Get nodes tagged with Membership type in english. Stash to loop over.
+    $membership_type_node_query = new EntityFieldQuery();
+    $membership_type_node_query->entityCondition('entity_type', 'node')
+      ->entityCondition('bundle', 'company')
+      ->fieldCondition('field_membership_type', 'tid', $memb_type_tid, '=')
+      ->propertyCondition('language', 'en', '=');
+    $membership_type_node_query_result = $membership_type_node_query->execute();
+
+    // Get nodes to loop over.
+    $sandbox['nodes'] = $membership_type_node_query_result['node'];
+    $sandbox['node_keys'] = array_keys($membership_type_node_query_result['node']);
+
+    // Set sandbox total count of nodes that will be looped over.
+    $sandbox['total_count'] = count($sandbox['nodes']);
+  }
+
+  // Loop through a set number of nodes to update them.
+  for($count=1; ($count < 4 && $sandbox['current_count'] < $sandbox['total_count']); $count++) {
+    // Get row info, and then load corresponding node.
+    $row = $sandbox['nodes'][$sandbox['node_keys'][$sandbox['current_count']]];
+
+    // Load node, wrap it.
+    $node = node_load($row->nid);
+    $wrapped_node = entity_metadata_wrapper('node', $node);
+    // Update node for new value.
+    $wrapped_node->field_membership_tier->set(array($sandbox['new_tier_tid'], $sandbox['parent_term_tid']));
+    // Save node.
+    $wrapped_node->save();
+    $sandbox['updated']++;
+    $sandbox['current_count']++;
+  }
+
+  // Calculates finished. Will continue to loop while it's less than 1.
+  $sandbox['#finished'] = $sandbox['current_count'] / $sandbox['total_count'];
+  // Output text upon completion.
+  if($sandbox['#finished'] >= 1) {
+    return 'Updated ' . ($sandbox['updated']) . ' nodes of ' . $sandbox['total_count'] . ' to have membership tier ' . $tier_term;
+  }
+}
+
+/**
+ * Implements hook_update_n().
+ *
+ * PURPOSE: Move Premier members to new membership tier ISA -> Premier
+ */
+function intel_isdm_module_update_7008(&$sandbox) {
+  return intel_isdm_module_tier_updates($sandbox, 'Premier', 'Premier Member');
+}
+
+/**
+ * Implements hook_update_n().
+ *
+ * PURPOSE: Move Premier members to new membership tier ISA ->  Associate
+ */
+function intel_isdm_module_update_7009(&$sandbox) {
+  return intel_isdm_module_tier_updates($sandbox, 'Associate', 'Associate Member');
+}
+
+/**
+ * Implements hook_update_n().
+ *
+ * PURPOSE: Move Premier members to new membership tier ISA ->  Affiliate Member
+ */
+function intel_isdm_module_update_7010(&$sandbox) {
+  return intel_isdm_module_tier_updates($sandbox, 'Affiliate', 'Affiliate Member');
+}
+
+
+/**
+ * Implements hook_update_n().
+ *
+ * PURPOSE: Move Premier members to new membership tier ISA ->  General Member
+ */
+function intel_isdm_module_update_7011(&$sandbox) {
+  return intel_isdm_module_tier_updates($sandbox, 'General', 'General Member');
+}
+
+/**
+ * Implements hook_update_n().
+ *
+ * @TODO: Update all ITP companies to being published
+ */
+function intel_isdm_module_update_7012(&$sandbox) {
+  // Initialize values on first time through.
+  if (!isset($sandbox['total_count'])) {
+    $sandbox['current_count'] = 0;
+    $sandbox['updated'] = 0;
+
+    // GET ALL COMPANIES with field_new_itp_company tagged
+    $membership_type_node_query = new EntityFieldQuery();
+    $membership_type_node_query->entityCondition('entity_type', 'node')
+      ->entityCondition('bundle', 'company')
+      ->fieldCondition('field_new_itp_company', 'value', 1, '=');
+    $membership_type_node_query_result = $membership_type_node_query->execute();
+
+    // Stash all NIDS by stashing array keys of node results.
+    $sandbox['nodes'] = $membership_type_node_query_result['node'];
+    $sandbox['node_keys'] = array_keys($membership_type_node_query_result['node']);
+
+    // Calculate total count.
+    $sandbox['total_count'] = count($sandbox['nodes']);
+  }
+
+  // Loop through X nodes at a time. $count < X is where you adjust.
+  for($count=1; ($count < 4 && $sandbox['current_count'] < $sandbox['total_count']); $count++) {
+    // @TODO: Publish company. Check if success. SEE IF REVISIONING MATTERS!
+    // @TODO: We need to load the node then publish the node here
+    $row = $sandbox['nodes'][$sandbox['node_keys'][$sandbox['current_count']]];
+
+    // Load node and wrap it
+    $node = node_load($row->nid);
+    $node->status = 1;
+    node_save($node);
+
+    $sandbox['updated']++;
+
+    // Increment current counter so you can keep going through nodes.
+    $sandbox['current_count']++;
+  }
+
+  // Calculates finished state. Will continue to loop while it's less than 1.
+  $sandbox['#finished'] = $sandbox['current_count'] / $sandbox['total_count'];
+
+  // If finished equals or is greater than 1 for some reason, return success code.
+  if ($sandbox['#finished'] >= 1) {
+    return 'Updated ' . ($sandbox['updated']) . ' nodes of ' . $sandbox['total_count'] . ' to PUBLISHED';
+  }
+}
+
+
+/**
+ * Implements hook_update_n().
+ *
+ *  Update all ITP solutions to being published
+ */
+function intel_isdm_module_update_7013(&$sandbox) {
+  // Initialize values on first time through.
+  if (!isset($sandbox['total_count'])){
+    $sandbox['current_count'] = 0;
+    $sandbox['updated'] = 0;
+
+    //  Find all solutions whose company ID is in the array keys of above results.
+    $uid = 10657;
+    $solution_query = new EntityFieldQuery();
+    $solution_query->entityCondition('entity_type', 'node')
+      ->entityCondition('bundle', 'solution')
+      ->propertyCondition('uid', $uid);
+    $solution_query_result = $solution_query->execute();
+
+    // @TODO: Stash all NIDS by stashing array keys of node results.
+    $sandbox['nodes'] = $solution_query_result['node'];
+    $sandbox['node_keys'] = array_keys($solution_query_result['node']);
+
+    // Calculate total count.
+    $sandbox['total_count'] = count($sandbox['nodes']);
+  }
+
+  // Loop through X nodes at a time. $count < X is where you adjust.
+  for($count=1; ($count < 4 && $sandbox['current_count'] < $sandbox['total_count']); $count++) {
+    // @TODO: Publish solution. Check if success. SEE IF REVISIONING MATTERS!
+    $row = $sandbox['nodes'][$sandbox['node_keys'][$sandbox['current_count']]];
+
+    // Load node and wrap it
+    $node = node_load($row->nid);
+    $node->status = 1;
+    node_save($node);
+
+    $sandbox['updated']++;
+
+    // Increment current counter so you can keep going through nodes.
+    $sandbox['current_count']++;
+  }
+
+  // Calculates finished state. Will continue to loop while it's less than 1.
+  $sandbox['#finished'] = $sandbox['current_count'] / $sandbox['total_count'];
+
+  // If finished equals or is greater than 1 for some reason, return success code.
+  if($sandbox['#finished'] >= 1) {
+    return 'Updated ' . ($sandbox['updated']) . ' nodes of ' . $sandbox['total_count'] . ' to [INSERT ACTION YOU TOOK HERE]';
+  }
+}
+
+/**
+ * Implements hook_update_n().
+ *
+ * PURPOSE: Remove old modules no longer necessary to the site and were causing issues.
+ */
+function intel_isdm_module_update_7014(&$sandbox) {
+  // Array of modules no longer needed / cause issues.
+  $modules_to_disable = array('intel_ea_sd_modal', 'search_api_autocomplete');
+
+  // Disable those modules!
+  module_disable($modules_to_disable);
+}
+
+/**
+ * Implements hook_update_n().
+ *
+ * PURPOSE: Disable MRC Menu items that need to go away.
+ */
+function intel_isdm_module_update_7015(&$sandbox) {
+  // Define all link MLIDS to alter.
+  $link_mlids_to_alter = array(
+    3849, //Edit Member Profile
+    2519, //Communication Recipients Table
+    5678, //Direction for Products in Business Site
+  );
+
+  // Count how many links are updated.
+  $links_updated = 0;
+
+  // Load the MRC menu links.
+  $mrc_menu_links = menu_load_links('menu-administration');
+
+  // Loop through all MRC links.
+  foreach ($mrc_menu_links as $menu_link) {
+    // Check if link is one that needs to be altered.
+    if (in_array($menu_link['mlid'], $link_mlids_to_alter)){
+      // Update menu link to disabled.
+      $menu_link['hidden'] = TRUE;
+
+      // Save the menu link and advance the counter
+      menu_link_save($menu_link);
+      $links_updated++;
+    }
+  }
+
+  // Check that the amount of links updated matches array passed in.
+  if($links_updated != count($link_mlids_to_alter)){
+    throw new DrupalUpdateException('While updating link items, some MLIDs did not match up. Review code in intel_isdm_module_update_7015');
+  }
+}
+

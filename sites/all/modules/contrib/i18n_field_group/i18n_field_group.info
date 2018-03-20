@@ -1,0 +1,11 @@
+name = Field group translation
+description = Translation field groups.
+dependencies[] = field_group
+dependencies[] = i18n_string
+package = Multilingual - Internationalization
+core = 7.x
+
+; Information added by drush on 2015-10-01
+version = "7.x-1.x-dev"
+project = "i18n_field_group"
+datestamp = "1443725017"

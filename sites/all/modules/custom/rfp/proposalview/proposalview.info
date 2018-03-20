@@ -1,0 +1,4 @@
+name  = RFP Proposal View
+description  = Proposal display on Builders End.
+core = 7.x
+package = RFP

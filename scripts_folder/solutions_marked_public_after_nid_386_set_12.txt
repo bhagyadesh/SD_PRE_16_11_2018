@@ -1,0 +1,78 @@
+GMB-N270 Intel® Atom® Mini-ITX Motherboard ---------- 14397 -------- Saved 
+Placa-mãe GMB-N270 Intel® Atom® Mini-ITX ---------- 14398 -------- Saved 
+PSB-893LF ---------- 14399 -------- Saved 
+PSB-893LF ---------- 14400 -------- Saved 
+PCE-5120 LGA775 Intel® Core™2 Duo 卡 ---------- 14401 -------- Saved 
+Cartão PCE-5120 LGA775 Intel® Core™ 2 Duo ---------- 14402 -------- Saved 
+PICO820-Intel® Atom ™ Pico ITX SBC ---------- 14403 -------- Saved 
+SBC PICO820 - Intel® Atom™ Pico-ITX ---------- 14404 -------- Saved 
+PCI-6881 PCI 匯流排插槽 CPU 卡 ---------- 14405 -------- Saved 
+Cartões de CPU de Slot de barramento PCI PCI-6881 ---------- 14406 -------- Saved 
+QNX Momentics 開發套件 ---------- 14407 -------- Saved 
+Conjunto de desenvolvimento QNX Momentics ---------- 14408 -------- Saved 
+ROBO-8921VG2R ---------- 14409 -------- Saved 
+ROBO-8921VG2R ---------- 14410 -------- Saved 
+RUBY-9715VG2AR ---------- 14411 -------- Saved 
+RUBY-9715VG2AR ---------- 14412 -------- Saved 
+Trillium VoIP / IMS / NGN 軟體 ---------- 14415 -------- Saved 
+Software Trillium VoIP / IMS / NGN ---------- 14416 -------- Saved 
+系統整合服務 BSP& 驅動程式開發 ---------- 14417 -------- Saved 
+Serviços de integração de sistemas BSP & desenvolvimento do Driver ---------- 14418 -------- Saved 
+AFL-07A-N270（配有 Intel® Atom® N270 Processor 的 7" 無風扇寬屏觸控式面板 PC） ---------- 14419 -------- Saved 
+AFL-07A-N270 (PC de 7" Painel de Toque tela ampla Sem Ventoinha com processador Intel® Atom® N270) ---------- 14420 -------- Saved 
+PEB-2736 ---------- 14421 -------- Saved 
+PEB-2736 ---------- 14422 -------- Saved 
+TR A40/30x - Intel® Atom™ Z530，3U CompactPCI SBC ---------- 14423 -------- Saved 
+TR A40/30x - Intel® Atom™ Z530, 3U CompactPCI SBC ---------- 14424 -------- Saved 
+Model 214 小外形平台 ---------- 14425 -------- Saved 
+Plataforma de fator de forma pequeno modelo 214 ---------- 14426 -------- Saved 
+ISA-825LF、Intel® Atom® N455/D525 半尺寸 ISA 卡 ---------- 14427 -------- Saved 
+ISA-825LF, Placa ISA pequena Intel® Atom® N455/D525 ---------- 14428 -------- Saved 
+NP101-D16C 新式 12VDC 供電且基於 Intel&reg; Atom ™ 的 945GSE/ICH7M Mini-ITX 主機板 ---------- 14429 -------- Saved 
+Placa-mãe Mini-ITX 945GSE/ICH7M baseada em NP101-D16C novo 12VDC Powered Intel&reg; Atom™ ---------- 14430 -------- Saved 
+eBOX620-831-FL - 採用 Intel® Atom™ N270 1.6GHz Processor 的無風扇嵌入式系統 ---------- 14431 -------- Saved 
+eBOX620-831-FL - Sistema embarcado sem ventoinha com processador Intel® Atom™ N270 1.6 GHz ---------- 14432 -------- Saved 
+LB-731LF、Intel® Core™ 2 Duo Processor 5.25" 嵌入式主機板 ---------- 14433 -------- Saved 
+Placa embarcada LB-731LF, Intel® Core™ 2 Duo 5,25" ---------- 14434 -------- Saved 
+X7DCT (16.4"x 6.5") ---------- 14435 -------- Saved 
+X7DCT (16,4 "x 6.5") ---------- 14436 -------- Saved 
+QNX Neutrino RTOS ---------- 14439 -------- Saved 
+QNX Neutrino RTOS ---------- 14440 -------- Saved 
+aTCA-6300 ---------- 14441 -------- Saved 
+aTCA-6300 ---------- 14442 -------- Saved 
+GOT615-801 - 15.6" WXGA TFT 寬螢幕無風扇觸控式面板電腦，其採用 Intel® Atom™ D525 ---------- 14443 -------- Saved 
+GOT615-801 - Computador de Painel de Toque Sem ventoinha Tela plana de 15,6" WXGA TFT com Intel® Atom™ D525 ---------- 14444 -------- Saved 
+X7DCL-3 ATX ---------- 14445 -------- Saved 
+ATX X7DCL-3 ---------- 14446 -------- Saved 
+TRACE32-PowerView JTAG 調試器 ---------- 14447 -------- Saved 
+Depurador TRACE32-PowerView JTAG ---------- 14448 -------- Saved 
+NDiS 120 - 低成本和低功耗的數位電子看板媒體播放機 ---------- 14449 -------- Saved 
+NDiS 120 - Player de mídia de sinalização digital de baixo custo e baixo consumo de energia ---------- 14450 -------- Saved 
+DT122-HR - Intel® QM67 Desktop Box PC ---------- 14451 -------- Saved 
+DT122-HR - PC Intel® QM67 Desktop ---------- 14452 -------- Saved 
+SOM-6760 Intel® Atom™ Processor Z500 系列 ---------- 14453 -------- Saved 
+Série Z500 de Processador Intel® Atom™ SOM-6760 ---------- 14454 -------- Saved 
+M-302 ---------- 14455 -------- Saved 
+M-302 ---------- 14456 -------- Saved 
+X7DCT-10 G (16.4"x 6.5") ---------- 14457 -------- Saved 
+X7DCT-10G (16,4 "x 6.5") ---------- 14458 -------- Saved 
+工業級 ATX 主機板 JNAF93-Q77（第 3 代 Intel® Core™ i3、i5、i7 Processor） ---------- 14459 -------- Saved 
+Placa-mãe Industrial ATX: JNAF93-Q77 (processadores de 3ª geração Intel® Core™ i3, i5, i7) ---------- 14460 -------- Saved 
+PDOException: SQLSTATE[HY000]: General error: 2006 MySQL server has gone away: INSERT INTO {watchdog} (uid, type, message, variables, severity, link, location, referer, hostname, timestamp) VALUES (:db_insert_placeholder_0, :db_insert_placeholder_1, :db_insert_placeholder_2, :db_insert_placeholder_3, :db_insert_placeholder_4, :db_insert_placeholder_5, :db_insert_placeholder_6, :db_insert_placeholder_7, :db_insert_placeholder_8, :db_insert_placeholder_9); Array
+(
+    [:db_insert_placeholder_0] => 0
+    [:db_insert_placeholder_1] => node
+    [:db_insert_placeholder_2] => %type: !message in %function (line %line of %file).
+    [:db_insert_placeholder_3] => a:6:{s:5:"%type";s:12:"PDOException";s:8:"!message";s:186:"SQLSTATE[70100]: &lt;&lt;Unknown error&gt;&gt;: 1317 Query execution was interrupted: SELECT nid, sid, uid, stamp FROM {workflow_node} WHERE nid = :nid; Array
+(
+    [:nid] =&gt; 14461
+)
+";s:9:"%function";s:35:"workflow_get_workflow_node_by_nid()";s:5:"%file";s:64:"/var/www/html/sites/all/modules/contrib/workflow/workflow.module";s:5:"%line";i:1727;s:14:"severity_level";i:3;}
+    [:db_insert_placeholder_4] => 3
+    [:db_insert_placeholder_5] => 
+    [:db_insert_placeholder_6] => http://default/index.php
+    [:db_insert_placeholder_7] => 
+    [:db_insert_placeholder_8] => 127.0.0.1
+    [:db_insert_placeholder_9] => 1510140662
+)
+ in dblog_watchdog() (line 160 of /var/www/html/modules/dblog/dblog.module).

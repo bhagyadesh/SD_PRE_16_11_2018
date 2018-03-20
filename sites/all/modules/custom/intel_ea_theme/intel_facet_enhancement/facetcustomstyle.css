@@ -1,0 +1,200 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jun 12, 2017, 9:40:48 PM
+    Author     : sseenuvx
+*/
+
+ 
+/** Member roster & Solution Directory UX**/
+body.page-solutions-directory .region-sidebar-first.well ul.facetapi-facetapi-checkbox-links{
+    padding-left: 30px !important;
+    background: #f0f0f0;  
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+body.page-solutions-directory .facetapi-facetapi-checkbox-links ul{    font-size: 13px !important; }
+body.page-solutions-directory a.facetapi-inactive{color:#666666;}
+body.page-solutions-directory li.expanded .toggleFacet{
+    top: -5px;
+    color: #0072c5;
+    font-size: 11px;
+    left: -25px;
+    display: block;
+    position: absolute;
+}
+body.page-solutions-directory li.expanded .facetapi-inactive + .toggleFacet{
+    left: -25px;
+    top: -5px;
+    color: #0072c5;
+    font-size: 11px;  
+    float: none;
+    position: absolute;
+}
+body.page-solutions-directory .facetapi-facetapi-checkbox-links > li.expanded {
+    color: #000000;
+    font-size: 13px;
+    font-weight: bold;    
+    position: relative;
+}
+body.page-solutions-directory .region-sidebar-first.well ul.facetapi-facetapi-checkbox-links li{    position: relative;}
+body.page-solutions-directory .facetapi-facetapi-checkbox-links > li.expanded, body.page-solutions-directory .facetapi-facetapi-checkbox-links > li.expanded > .facetapi-inactive a, body.page-solutions-directory .facetapi-facetapi-checkbox-links > li.leaf .facetapi-inactive a{font-size: 16px !important;}
+body.page-solutions-directory .facetapi-facetapi-checkbox-links > li.expanded .facetapi-inactive a{    font-weight: normal;    }
+body.page-solutions-directory #block-panels-mini-sd-filters-group .pane-facetapi-tipmjn8ap6mm3i2tl5pfqro7emdma8gd,
+body.page-solutions-directory #block-panels-mini-sd-filters-group .pane-facetapi-wfyk37smvtilegfxu0xebcyvj942g4t1 {
+    background: #0072c5 url(/sites/all/themes/custom/intel_isdm_bootstrap/images/icons/sidebar-parent-minus.png) no-repeat 95% 17px;
+}
+body.page-solutions-directory #block-panels-mini-sd-filters-group .pane-sd-characteristics-filters{
+    background: #0072c5 url(/sites/all/themes/custom/intel_isdm_bootstrap/images/icons/sidebar-parent-plus.png) no-repeat 95% 17px;
+}
+body.page-solutions-directory #block-panels-mini-sd-filters-group .pane-sd-companies-filters{
+    background: #0072c5 url(/sites/all/themes/custom/intel_isdm_bootstrap/images/icons/sidebar-parent-plus.png) no-repeat 95% 17px;
+}
+body.page-solutions-directory #block-panels-mini-sd-filters-group #mini-panel-sd_characteristics_filters .panel-pane, body.page-solutions-directory #block-panels-mini-sd-filters-group #mini-panel-sd_companies_filters .panel-pane{
+    background: #f0f0f0 url(/sites/all/themes/custom/intel_isdm_bootstrap/images/icons/sidebar-children-plus.png) no-repeat 3% 11px;
+}
+body.page-solutions-directory .region-sidebar-first.well #mini-panel-sd_characteristics_filters h2, body.page-solutions-directory .region-sidebar-first.well #mini-panel-sd_companies_filters h2{padding-left: 30px;}
+
+body.page-solutions-directory #block-panels-mini-sd-filters-group #mini-panel-sd_characteristics_filters .panel-pane .panel-pane{
+    background-position-x: 5%;
+}
+
+body.page-solutions-directory #block-panels-mini-sd-filters-group #mini-panel-sd_characteristics_filters .panel-pane .panel-pane h2
+{
+    padding-left: 32px;
+}
+
+/** Content type filter at member roster page **/
+body.page-member-roster #mini-panel-mr_filters_group{
+    background: #0072c5 url(/sites/all/themes/custom/intel_isdm_bootstrap/images/icons/sidebar-parent-plus.png) no-repeat 95% 17px;
+}
+
+#facetapi-facet-search-apisolutions-block-field-company li.expanded ul{padding-left: 0;}
+
+.toggleFacet.plus
+{
+	width:20px;
+	height:30px;
+	float:none;
+	background: #f0f0f0 url(/sites/all/themes/custom/intel_isdm_bootstrap/images/icons/sidebar-children-plus.png) no-repeat 3% 11px;
+}
+
+.toggleFacet.minus
+{
+	width:20px;
+	height:30px;
+	float:none;
+	background: url(/sites/all/themes/custom/intel_isdm_bootstrap/images/icons/sidebar-children-minus.png) 3% 11px no-repeat rgb(240, 240, 240);
+}
+
+#mini-panel-sd_characteristics_filters{/**padding: 16px 0;**/}
+#mini-panel-sd_processor_filters .panel-pane h2{padding: 15px 15px;}
+#facetapi-facet-search-apisolutions-block-field-company
+{
+    padding-top:5px;
+    padding-bottom: 5px;    
+    padding-left: 35px !important;
+}
+.page-solutions-directory input[type="checkbox"], .page-member-roster input[type="checkbox"]
+ 
+{
+
+     box-shadow: inset 0 0 5px #0071C6; 
+}
+.page-solutions-directory input[type="checkbox"]:active, .page-solutions-directory input[type="checkbox"]:checked:active,
+.page-member-roster input[type="checkbox"]:active, .page-member-roster input[type="checkbox"]:checked:active  
+
+{
+     box-shadow: inset 0 0 5px #0071C6; 
+}
+
+.page-solutions-directory input[type="checkbox"]:checked, page-member-roster  input[type="checkbox"]:checked
+
+{
+     box-shadow: inset 0 0 5px #0071C6; 
+}
+
+
+#block-panels-mini-mr-filters-group .pane-facetapi-s7yyglryauf55lz5mwkbdtkx9kgnqz5i,  #block-panels-mini-mr-filters-group .pane-mr-characteristics-filters, #block-panels-mini-mr-filters-group .pane-facetapi-zgmiubzjd0pg3bib0vhcphpctcxlkdie{
+	background: #0072c5 url(/sites/all/themes/custom/intel_isdm_bootstrap/images/icons/sidebar-parent-minus.png) no-repeat 95% 17px;
+}
+body.page-member-roster .region-sidebar-first.well ul.facetapi-facetapi-checkbox-links{
+    padding-left: 30px !important;
+    background: #f0f0f0;  
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+body.page-member-roster .facetapi-facetapi-checkbox-links ul{    font-size: 13px !important; }
+body.page-member-roster a.facetapi-inactive{color:#666666;}
+body.page-member-roster li.expanded .toggleFacet{
+    top: -5px;
+    color: #0072c5;
+    font-size: 11px;
+    left: -25px;
+    display: block;
+    position: absolute;
+}
+body.page-member-roster li.expanded .facetapi-inactive + .toggleFacet{
+    left: -25px;
+    top: -5px;
+    color: #0072c5;
+    font-size: 11px;  
+    float: none;
+    position: absolute;
+}
+body.page-member-roster .facetapi-facetapi-checkbox-links > li.expanded {
+    color: #000000;
+    font-size: 13px;
+    font-weight: bold;    
+    position: relative;
+}
+body.page-member-roster .region-sidebar-first.well ul.facetapi-facetapi-checkbox-links li{    position: relative;}
+body.page-member-roster .facetapi-facetapi-checkbox-links > li.expanded, body.page-member-roster .facetapi-facetapi-checkbox-links > li.expanded > .facetapi-inactive a, body.page-member-roster .facetapi-facetapi-checkbox-links > li.leaf .facetapi-inactive a{font-size: 16px !important;}
+body.page-member-roster .facetapi-facetapi-checkbox-links > li.expanded .facetapi-inactive a{    font-weight: normal;    }
+#block-panels-mini-mr-filters-group #mini-panel-mr_characteristics_filters .panel-pane{    background: #f0f0f0 url(/sites/all/themes/custom/intel_isdm_bootstrap/images/icons/sidebar-children-plus.png) no-repeat 3% 11px;
+}
+
+.page-member-roster input[type="checkbox"]
+{
+	box-shadow: inset 0 0 5px #0071C6;
+}
+body.page-member-roster .region-sidebar-first.well #mini-panel-mr_characteristics_filters h2 
+{
+	padding-left:30px;
+}
+
+	
+body.page-member-roster .region-sidebar-first.well ul.facetapi-facetapi-checkbox-links li{    position: relative;}
+body.page-member-roster .facetapi-facetapi-checkbox-links > li.expanded, body.page-member-roster .facetapi-facetapi-checkbox-links > li.expanded > .facetapi-inactive a, body.page-member-roster .facetapi-facetapi-checkbox-links > li.leaf .facetapi-inactive a{font-size: 16px !important;}
+body.page-member-roster .facetapi-facetapi-checkbox-links > li.expanded .facetapi-inactive a{    font-weight: normal;    }
+body.page-member-roster #block-panels-mini-mr-filters-group .pane-facetapi-s7yyglryauf55lz5mwkbdtkx9kgnqz5i{
+    background: #0072c5 url(/sites/all/themes/custom/intel_isdm_bootstrap/images/icons/sidebar-parent-minus.png) no-repeat 95% 17px;
+}
+body.page-member-roster #block-panels-mini-mr-filters-group .pane-mr-characteristics-filters{
+    background: #0072c5 url(/sites/all/themes/custom/intel_isdm_bootstrap/images/icons/sidebar-parent-plus.png) no-repeat 95% 17px;
+}
+body.page-member-roster #block-panels-mini-mr-filters-group .pane-facetapi-zgmiubzjd0pg3bib0vhcphpctcxlkdie{
+    background: #0072c5 url(/sites/all/themes/custom/intel_isdm_bootstrap/images/icons/sidebar-parent-plus.png) no-repeat 95% 17px;
+}
+body.page-member-roster #block-panels-mini-mr-filters-group #mini-panel-mr_characteristics_filters .panel-pane, 
+body.page-member-roster #block-panels-mini-mr-filters-group #mini-panel-mr_companies_filters .panel-pane{
+    background: #f0f0f0 url(/sites/all/themes/custom/intel_isdm_bootstrap/images/icons/sidebar-children-plus.png) no-repeat 3% 11px;
+}
+body.page-member-roster .region-sidebar-first.well #mini-panel-mr_characteristics_filters h2, body.page-member-roster .region-sidebar-first.well #mini-panel-mr_companies_filters h2{padding-left: 30px;}
+
+body.page-member-roster input[type="checkbox"] {
+  margin: 7px 4px 0 0; }
+body.page-member-roster .region-sidebar-first ul {
+  font-size: 14px;
+  padding: 0 0 0 15px; }
+body.page-solutions-directory #facetapi-facet-search-apisolutions-block-field-company > li.expanded{color:#555;    font-weight: normal;}
+.page-solutions-directory #mini-panel-sd_characteristics_filters input[type="checkbox"] {
+    margin: 6px 4px 0 0;
+}  
+#mini-panel-sd_processor_filters .pane-panels-mini > .pane-content .panel-pane h2 {
+    padding: 15px 15px;
+}
+/**  END of Member roster & Solution Directory UX CSS**/

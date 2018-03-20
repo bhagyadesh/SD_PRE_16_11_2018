@@ -1,0 +1,143 @@
+/** Class for searched text in solution category tab ***/
+.highlight{ 
+background-color:yellow;
+font-weight: bold;
+}
+
+/** Class for searched text in solution charecteristics  tab ***/
+.highlight_char{ 
+background-color:yellow;
+font-weight: bold;
+}
+
+/** Add a mandatory astrisk for fieldset labels for admin menu in Add solution charecteristics tab **/
+.page-node-add-solution .required-solution .fieldset-legend span.summary::after{
+	content: "*";
+	color : red;
+}
+/** Add a mandatory astrisk for fieldset labels for admin menu in edit solution charecteristics tab **/
+.node-type-solution .required-solution .fieldset-legend span.summary::after{
+	content: "*";
+	color : red;
+}
+
+
+/***Manage Solutions Page **/
+
+/** Add a mandatory astrisk for fieldset labels for Manage Solutions Page in Add solution charecteristics tab **/
+.page-node-add-solution .panel-body .required-solution a.fieldset-legend::after{
+	content: "*";
+	color : red;
+}
+
+/** Add a mandatory astrisk for fieldset labels for Manage Solutions Page in Edit solution charecteristics tab **/
+.node-type-solution .panel-body .required-solution a.fieldset-legend::after{
+	content: "*";
+	color : red;
+}
+
+/*** End -- Manage Solutions Page **/
+
+/** Class to change the text color for labels in fieldset in Add Solutions Page for Charecteristcis Tab**/
+.page-node-add-solution .fieldset-legend a.fieldset-title, .page-node-add-formula .fieldset-legend a.fieldset-title, .page-node-add-component .fieldset-legend a.fieldset-title {
+
+color: black;
+}
+
+/** Class to change the text color for labels in fieldset in Edit Solutions Page for Charecteristcis Tab**/
+.node-type-solution .fieldset-legend a.fieldset-title, .node-type-formula .fieldset-legend a.fieldset-title, .node-type-component .fieldset-legend a.fieldset-title{
+
+color: black;
+}
+
+/******** CSS for enable / disable tabs ***************/
+.page-node-add-solution li.vertical-tab-button a{
+    color: grey; 
+}
+
+.page-node-add-solution li.selected a{
+  color: #0074BD;
+      text-decoration: none;
+}
+
+.page-node-add-solution .btn[disabled]{
+background-color : #1eafec;
+}
+
+.page-node-add-solution .panel-body{
+	padding:25px !important; 
+}
+
+/**********Remove MEMBERS RESOURCE CENTER › ******/
+
+.page-node-add-solution div.breadcrumb .inline.odd.first, .node-type-solution div.breadcrumb .inline.odd.first, 
+.page-node-add-formula div.breadcrumb .inline.odd.first,  .node-type-formula div.breadcrumb .inline.odd.first, 
+.page-node-add-component div.breadcrumb .inline.odd.first, .node-type-component div.breadcrumb .inline.odd.first{
+ display:none;
+}
+
+.page-node-add-solution div.breadcrumb .delimiter,  .node-type-solution div.breadcrumb  .delimiter,
+.page-node-add-formula div.breadcrumb .delimiter, .node-type-formula div.breadcrumb  .delimiter,
+.page-node-add-component div.breadcrumb .delimiter, .node-type-component div.breadcrumb  .delimiter
+ {
+ display:none;
+}
+/**********change the new label to grey shade for SD theme ******/
+.page-admin-content-moderate .marker.label.label-primary{
+
+background: transparent;
+color: #999999;
+font-weight: bolder;
+}
+/********************* Biz-006 ******************/
+.node-type-solution div.pane-node-field-website h3{
+	position: relative;
+	margin-top:50px;
+	margin-bottom:8px;
+  /*  bottom: -119px !important; */
+}
+/********************* Biz-036 ******************/
+.page-node-add-solution .form-item input.error,.page-node-add-solution .form-item textarea.error,.page-node-add-solution .form-item select.error {
+    border: 2px solid red;
+}
+
+.page-node-add-solution .form-item input[type="checkbox"].error, .form-item input[type="radio"].error {
+    outline: 2px solid red;
+    border: none;
+}
+
+.page-node-add-solution div.error {
+    background-image: url(../../misc/message-24-error.png);
+    border-color: #ed541d;
+}
+/****for Multi - image for solutions ******/
+.node-type-solution .views-slideshow-controls-bottom .views-slideshow-pager-field-item 
+{ float: left; margin: 5px 19px 0 0; }
+/********Hide the multi images in the search results page *******/
+.page-solutions-directory .field-item + .field-item {
+  display: none;
+}
+/***Align the  tree in SD theme **/
+.node-type-solution div.checkbox-radio-tree{
+	margin-left: 10px;
+}
+/************Preview solution to hide the black BG for TITLE**********/ 
+.node-type-solution div.content #page-title{
+	     background: #fff !important; 
+}
+/*********** Display text when promotion is mapped to Solution in Admin theme****************/
+.node-solution-form .fieldset-wrapper #edit-workflow-alert,.fieldset-wrapper #edit-workflow-alert1{
+color:red;
+font-weight:bold;
+}
+/************* Display text when promotion is mapped to Solution in SD theme **************/
+.node-solution-form .panel-body .form-type-item{
+color:red;
+font-weight:bold;
+}
+/************* Display Archive button in GREY color when disabled **************/
+.node-solution-form .btn-default[disabled],.node-solution-form .btn-success[disabled]{
+    background-color: #9E9E9E;
+    border-color: #969696;
+	}
+	

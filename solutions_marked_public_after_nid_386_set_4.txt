@@ -1,0 +1,608 @@
+MB630-CRM - Intel® Q77 ATX マザーボード ---------- 4502 -------- Saved 
+DFI EC200 T シリーズ・ファンレス・エンベデッド・システムは幅広い温度/電圧範囲に対応 ---------- 4503 -------- Saved 
+DT122-SB - Intel® Q67 デスクトップ・ボックス PC ---------- 4504 -------- Saved 
+TPC150 - Intel® H61 15 インチのタッチパネル PC ---------- 4505 -------- Saved 
+TPC121 - Intel® H61 12.1 インチタッチパネル PC ---------- 4506 -------- Saved 
+SB336-Ni - microATX のエンベデッド・ボードは、ATM/POSソリューションに 10 シリアル COM をサポートします。 ---------- 4507 -------- Saved 
+DT122-HR - Intel® QM67 デスクトップ・ボックス PC ---------- 4508 -------- Saved 
+NISE 2300 ファンレス・コンピューター ---------- 4509 -------- Saved 
+BPC 8076、高パフォーマンスのデスクトップ Intel® Corei3/i5/i7 プロセッサー・ブック PC ---------- 4510 -------- Saved 
+CoreFWA8208 - 第 3 世代のIntel® Core&trade; i7/i5/i3、およびXeon ネットワークセキュリティ・アプライアンス（8 つのGbEポートを装備） ---------- 4511 -------- Saved 
+MB967 - 第 3 世代のIntel® /Core™ i7/i5/i3およびXeon ネットワー キング・マザーボード ---------- 4512 -------- Saved 
+VPX3000 - 頑丈な 3U VPX Intel® 第 3 世代 Intel® Core™ i7 プロセッサー・ブレード ---------- 4513 -------- Saved 
+NSA 3130 ネットワークセキュリティ・ハードウェア ---------- 4514 -------- Saved 
+ICES 668 - COM エクスプレス・タイプ 6 の基本的なモジュール ---------- 4515 -------- Saved 
+POS-6630、高パフォーマンスのオールインワン POS 端末 ---------- 4516 -------- Saved 
+PMB-897LF - ミニ-ITX MB ---------- 4517 -------- Saved 
+SA-5592、スリム、コンパクト、高パフォーマンス、本サイズ PC ---------- 4518 -------- Saved 
+POS-6511、Intel® Core™ i3 シリーズ・モバイル・プロセッサー ---------- 4519 -------- Saved 
+PMB 872LF、ミニ ITX MB が LGA1155 Intel® Core™i3、i5、i7、Pentium®/Celeron® CPUをサポート ---------- 4520 -------- Saved 
+Intel® Core™ i7/i5/i3 および Pentium® CPU を搭載した PMB-891LF、ATX MB ---------- 4521 -------- Saved 
+ITX M25E21A ---------- 4522 -------- Saved 
+Portwell PCOM B219 ---------- 4523 -------- Saved 
+Portwell* WADE-8067 ---------- 4524 -------- Saved 
+NANO831 - Intel® Atom® N2600/N2800 Nano-ITX SBC、LVDS/VGA、 デュアル LAN 搭載 ---------- 4525 -------- Saved 
+NANO830 - Intel® Atom® D2550 Nano-ITX SBC、LVDS/DisplayPort/VGA、デュアル LAN 搭載 ---------- 4526 -------- Saved 
+SB102-D - 第 2 世代および第 3 世代 Intel® Core™ プロセッサーファミリー搭載の低コスト Mini-ITX ボード ---------- 4527 -------- Saved 
+ITX M61X11E ---------- 4528 -------- Saved 
+ITX M52X21E ---------- 4529 -------- Saved 
+GOT3846T-832 - 8.4 インチ SVGA TFT ファンレス・タッチパネル・コンピューター（Intel® Atom™ プロセッサーを搭載、広い動作温度-20°C ~ +55°C） ---------- 4530 -------- Saved 
+NA-560 -  1U ラックマウント型ネットワーク・アプライアンス・プラットフォーム、LGA1155 Intel® H61/B65/Q67 搭載、最大 8 LAN ---------- 4531 -------- Saved 
+FWA6304-D25 - ネットワークセキュリティ・アプライアンス（Intel® Atom®プロセッサーD2550を搭載） ---------- 4532 -------- Saved 
+NA-340FL - ファンレス・デスクトップ・ネットワーク・アプライアンス・プラットフォーム、Intel® Atom® プロセッサー D525 および 6 LAN 搭載 ---------- 4533 -------- Saved 
+OPS830 - OPS サイネージ・プレーヤー、Intel® Atom® D2550 を搭載 ---------- 4534 -------- Saved 
+NA-550 - 1U ラックマウント型ネットワーク・アプライアンス・プラットフォーム（LGA1155 Intel® C206/C216を搭載 、最大 26 LAN） ---------- 4535 -------- Saved 
+rBOX111-4COM - 堅牢な Din レール・ファンレス・エンベデッド・システム（Intel® Atom® プロセッサー Z510PT/ Z520PT、4 つの絶縁型 COM、SATA SSD を搭載） ---------- 4536 -------- Saved 
+GOT615-801 - 15.6 インチ WXGA TFT ワイドスクリーン・ファンレス・タッチパネル・コンピューター（Intel® Atom™ D525 を搭載） ---------- 4537 -------- Saved 
+NA-360 - 1U のラックマウント型ネットワーク・アプライアンス（Intel® 通信チップセット 89xx シリーズに基づく） ---------- 4538 -------- Saved 
+POS-6920-PPC、ファンレス 15 インチ、真のフラット・タッチパネル PC ---------- 4539 -------- Saved 
+POS-6510、ファンレス、高集積&パフォーマンス 15 インチPOS ---------- 4540 -------- Saved 
+BPC 8960、スリムなデュアル Core Intel ® Atom® D525 ブックサイズ PC ---------- 4541 -------- Saved 
+SA-5082、Intel® Atom® D25 ブックサイズ PC ---------- 4542 -------- Saved 
+POS-6510-MIT、インタラクティブなキオスク ---------- 4543 -------- Saved 
+PMB 822LF、Intel® Atom&trade; N455/D525 ---------- 4544 -------- Saved 
+POS-6620、高集積 10.4 インチ POS ターミナル ---------- 4545 -------- Saved 
+PICO830 -- Intel® Atom® N2600/N2800 Pico-ITX SBC、LAN、LVDS/ディスプレイまたは VGA 搭載 ---------- 4546 -------- Saved 
+高性能 NI スマート・カメラ ---------- 4547 -------- Saved 
+FLX-2000: 抗衝撃、防振力に優れた新世代の可変寸法設計ハードウェア・プラットフォーム ---------- 4548 -------- Saved 
+ITX M61X62A ---------- 4549 -------- Saved 
+Intel® 通信チップセット 89xx シリーズ用CPIC PCI エクスプレス参照プラットフォーム ---------- 4550 -------- Saved 
+NVR SV4 H61A6 ATX マザーボードは、第 2/3 世代Intel® Core&trade; i7/i5/i3 CPUをサポートします。 ---------- 4551 -------- Saved 
+AMS100-807 ファンレス・エンベデッド・システム、Intel®  Atom® プロセッサー D2550を搭載 ---------- 4552 -------- Saved 
+IMB208 - 第 3 世代 Intel® Core™ プロセッサー用の新しいハイパフォーマンス ATX 産業用マザーボード ---------- 4553 -------- Saved 
+産業用マイクロ ATX マザーボード: JNMF93 Q77（第 3 世代Intel® Core™ i3、i5、i7 プロセッサー） ---------- 4554 -------- Saved 
+Mini-ITX エンベデッド・マザーボード: JNF96U-525-LF (Intel® Atom® D525 プロセッサー) ---------- 4555 -------- Saved 
+産業用ATXマザーボード: JNAF93 Q77（第 3 世代Intel® Core&trade; i3、i5、i7 プロセッサー） ---------- 4556 -------- Saved 
+3.5 インチ SBC エンベデッド・マザーボード: JNF36-2550 (Intel® Atom™ D2550 プロセッサー） ---------- 4557 -------- Saved 
+ITX M25D61E ---------- 4558 -------- Saved 
+ITX M61X11B ---------- 4559 -------- Saved 
+ITX M25D62B ---------- 4560 -------- Saved 
+RUBY D714VG2AR ---------- 4561 -------- Saved 
+NSA 2120 ネットワークセキュリティ・プラットフォーム ---------- 4562 -------- Saved 
+ZNYX ZX9210 ATCA コンピューティング・ブレード ---------- 4563 -------- Saved 
+aTCA 6300 ---------- 4564 -------- Saved 
+BFC-1507 ---------- 4565 -------- Saved 
+Intel® Atom® D2550 搭載の Avalue BFC-10W7 10 インチ TFT タッチパネル PC ---------- 4566 -------- Saved 
+IOPS H61（Intel® Core i5/i3/Celeron® 対応の Intel® OPS 準拠デジタル・サイネージ・プラグ可能モジュール PC） ---------- 4567 -------- Saved 
+Q67 IOPS（Intel® OPS 準拠デジタル・サイネージ・プラグ可能モジュール PC とIntel® Core&trade; i5/i3/Celeron® をサポート） ---------- 4568 -------- Saved 
+X9SPV-LN4F-3LE スーパーマイクロ・エンベデッド・マザーボード ---------- 4569 -------- Saved 
+X9SAE スーパーマイクロの ATX マザーボード ---------- 4570 -------- Saved 
+X9DR7-TF + - デュアル・プロセッサー・スーパーマイクロ・ マザーボード ---------- 4571 -------- Saved 
+X9SPV-LN4F-3QE スーパーマイクロ・エンベデッド・マザーボード ---------- 4572 -------- Saved 
+X9SAE V スーパーマイクロATX マザーボード ---------- 4573 -------- Saved 
+X9DRD-7LN4F - デュアル・プロセッサー・スーパーマイクロ・ マザーボード ---------- 4574 -------- Saved 
+X9SRH 7F スーパーマイクロ・エンベデッド・マザーボード ---------- 4575 -------- Saved 
+X9SPU F スーパーマイクロ UIO マザーボード ---------- 4576 -------- Saved 
+X9DRD-7LN4F-JBOD - デュアル・プロセッサー・スーパーマイクロ・ マザーボード ---------- 4577 -------- Saved 
+X9SRH 7TF スーパーマイクロ・エンベデッド・マザーボード ---------- 4578 -------- Saved 
+X9SPV F 3217UE スーパーマイクロ・エンベデッド・マザーボード ---------- 4579 -------- Saved 
+X9DRD-EF - デュアル・プロセッサー・スーパーマイクロ・マザーボード ---------- 4580 -------- Saved 
+X9SPV F 3610ME スーパーマイクロ・エンベデッド・マザーボード ---------- 4581 -------- Saved 
+X9DRL-3階 - Supermicro のデュアル プロセッサ マザーボード ---------- 4582 -------- Saved 
+C-501、リアルタイム開発者向け ---------- 4583 -------- Saved 
+SV1 H6126 ハイパフォーマンス Mini-ITX マザーボード ---------- 4584 -------- Saved 
+GOT-5100T-830 - 10.4 インチ・ファンレス・タッチパネル・コンピューター Intel® Atom™ プロセッサー N270 ---------- 4585 -------- Saved 
+CA230-BF Intel&reg; GM45/ICH9M マザーボード ---------- 4586 -------- Saved 
+NDiS 120 - ---------- 4587 -------- Saved 
+ECM-XDP3 ---------- 4588 -------- Saved 
+DPX E105 ---------- 4589 -------- Saved 
+AIMB-270 Intel® Core™ i7/Intel® Core™ i5/Intel® Celeron® Mini-ITX ---------- 4590 -------- Saved 
+エンベデッド・コントローラー（EC）ファームウェア ---------- 4591 -------- Saved 
+PCOM B214VG ---------- 4592 -------- Saved 
+NANO-8050 ---------- 4593 -------- Saved 
+NA-820、Intel® Core™2 デュオ ネットワーク・アプライアンス ---------- 4594 -------- Saved 
+WADE-8067 ---------- 4595 -------- Saved 
+AIMB-280 Intel® Core&trade; i7/Intel® Core&trade; i5/ Intel® Core&trade; i3 Mini-ITX ---------- 4596 -------- Saved 
+INTEGRITY Secure Virtualization ---------- 4597 -------- Saved 
+U800 Intel® Atom&trade; N270 シン・クライアント ---------- 4598 -------- Saved 
+INTEGRITY RTOS ---------- 4599 -------- Saved 
+InsydeH2O® - UEFI BIOS/ファームウェア ---------- 4600 -------- Saved 
+X7DCL-i ATX ---------- 4601 -------- Saved 
+MICA-101 Intel® Atom® モバイル・クリニカル・アシスタント ---------- 4602 -------- Saved 
+X7DCT（16.4 インチ x 6.5 インチ） ---------- 4603 -------- Saved 
+X7DCT-10G（16.4 インチ x 6.5  インチ） ---------- 4604 -------- Saved 
+X7DCA-i 拡張 ATX ---------- 4605 -------- Saved 
+X7DCA-L マイクロ ATX ---------- 4606 -------- Saved 
+X7DCL-3 ATX ---------- 4607 -------- Saved 
+X7DCU（13 インチ x 8.1 インチ） ---------- 4608 -------- Saved 
+TRACE32-PowerView JTAG デバッガ ---------- 4609 -------- Saved 
+無料の Unified Windows CE 6.0 BSPとIntel® Atom®のサポートを含むマニュアル ---------- 4610 -------- Saved 
+BPC-8090 ---------- 4611 -------- Saved 
+AIMB-253 L Intel® Core™2 デュオ Mini  ITX マザーボード ---------- 4612 -------- Saved 
+Windows用のINtime Real-Time OS ---------- 4613 -------- Saved 
+QNX Neutrino RTOS ---------- 4614 -------- Saved 
+E830 Intel® Atom® N270 シン・クライアント PC ---------- 4615 -------- Saved 
+Aptio® UEFI BIOS ファームウェア ---------- 4616 -------- Saved 
+ネットワーク機器向け Wind River プラットフォーム ---------- 4617 -------- Saved 
+MIC-5322 AdvancedTCA® デュアル Intel® Xeon® 5500 / 5600 シリーズプロセッサーブレード 10GbE CPU ---------- 4618 -------- Saved 
+エンベデッド SBC: pITX SP ---------- 4619 -------- Saved 
+Intel® Atom&trade; Z5xxP ベースの Cinnamon Bay SBC ---------- 4620 -------- Saved 
+UEFI用AMIDiag ---------- 4621 -------- Saved 
+LEC-7000 - VGA、DVI-D、デュアル COM ポート、デュアル LAN、USB、デュアル COM、CF および SATA ドライブをサポートする Intel® Atom® 1.6GHz エンベデッド・コンピューター  ---------- 4622 -------- Saved 
+M-302 ---------- 4623 -------- Saved 
+SOM-6760 Intel® Atom™ プロセッサー Z500 シリーズ ---------- 4624 -------- Saved 
+GENE-9455（3.5 インチ・サブコンパクト・ボード） ---------- 4625 -------- Saved 
+FireFly ---------- 4626 -------- Saved 
+PSG-GB-1URAQDP02 ---------- 4627 -------- Saved 
+PSG NB 1UFAQDP01 ---------- 4628 -------- Saved 
+Intel® Xeon® 5500 プロセッサー向けの VxWorks 6.7  ---------- 4629 -------- Saved 
+SOM-7562 Intel® Atom® N450 COM-Ultra モジュール ---------- 4630 -------- Saved 
+COM Express Z500COM 急行 Z500 ---------- 4631 -------- Saved 
+EMX-945GSE - Intel® Atom&trade; N270 Mini ITX 主板 ---------- 4632 -------- Saved 
+EMX-945GSE - Intel® Atom&trade; N270 Mini-ITX マザーボード ---------- 4633 -------- Saved 
+DC1 - 耐用型显示器计算机 ---------- 4634 -------- Saved 
+DC1 - 頑丈なディスプレイ・コンピューター ---------- 4635 -------- Saved 
+LT600-DR LGA775 Intel&reg; 945G 6 PCI 插槽 ATX 主板 ---------- 4636 -------- Saved 
+LT600 DR LGA775 Intel&reg;945 G 6 PCI スロットの ATX マザーボード ---------- 4637 -------- Saved 
+AMIBIOS8 ---------- 4638 -------- Saved 
+AMIBIOS8 ---------- 4639 -------- Saved 
+AFL-07A-N270 （使用Intel® Atom® N270 处理器的 7" 无风扇宽屏触摸面板 PC） ---------- 4640 -------- Saved 
+AFL-07A-N270 （Intel® Atom® N270 プロセッサーを搭載した、7 インチのファンレス・ワイドスクリーン・タッチパネル PC） ---------- 4641 -------- Saved 
+平板电脑： Micro Client IIA 70 ---------- 4642 -------- Saved 
+パネル PC: Micro Client IIA 70 ---------- 4643 -------- Saved 
+FOX-81（多功能防水平板电脑） ---------- 4644 -------- Saved 
+FOX-81（多目的防水パネルPC） ---------- 4645 -------- Saved 
+M1255 （耐用型医疗平板电脑） ---------- 4646 -------- Saved 
+M1255（堅牢な医療用タブレット PC） ---------- 4647 -------- Saved 
+基于 Intel® Atom® 的 Gladius 0710 强固型平板电脑 ---------- 4648 -------- Saved 
+Gladius 0710 堅牢なタブレットPC、Intel® Atom® ベース ---------- 4649 -------- Saved 
+MIC-5320 AdvancedTCA® 10GbE CPU 刀片与Intel® Xeon® 5500/5600 系列处理器 ---------- 4650 -------- Saved 
+Intel® Xeon® 5500 / 5600 シリーズプロセッサーを搭載した MIC-5320 AdvancedTCA® 10GbE CPU ブレード ---------- 4651 -------- Saved 
+8" 坚固耐用的移动式平板电脑，由Intel® Atom® N450 提供支持并与触摸屏、WiFi、蓝牙无线模块和条码扫描器集成 ---------- 4652 -------- Saved 
+Intel ® Atom® N450 を搭載し、タッチスクリーン、WiFi、Bluetooth ワイヤレス・モジュール、バーコード・スキャナーを統合した頑丈な 8 インチのモバイル・タブレット PC ---------- 4653 -------- Saved 
+HSB-945 P（半尺寸 SBC） ---------- 4654 -------- Saved 
+HSB-945P（ハーフサイズ SBC） ---------- 4655 -------- Saved 
+ETX-945GSE（嵌入式计算机模块、ETX） ---------- 4656 -------- Saved 
+ETX-945GSE（コンピューター・オン・モジュール、ETX） ---------- 4657 -------- Saved 
+PFM-945 C（PC/104 CPU 模块） ---------- 4658 -------- Saved 
+PFM-945C（PC/104 CPU モジュール） ---------- 4659 -------- Saved 
+EPIC-9457（EPIC 主机板） ---------- 4660 -------- Saved 
+EPIC-9457（EPIC ボード） ---------- 4661 -------- Saved 
+RuffSystem 735： Extreme Rugged™ Intel® Atom® 计算机系统 ---------- 4662 -------- Saved 
+RuffSystem 735: Extreme Rugged™ Intel® Atom® コンピューター・システム ---------- 4663 -------- Saved 
+通过生产服务进行设计 ---------- 4664 -------- Saved 
+プロダクション・サービスによる設計 ---------- 4665 -------- Saved 
+LynxOS 实时操作系统 ---------- 4666 -------- Saved 
+LynxOS* リアルタイム・オペレーティング・システム ---------- 4667 -------- Saved 
+Tyan S5375 ---------- 4668 -------- Saved 
+タイアン S5375 ---------- 4669 -------- Saved 
+QNX Momentics Development Suite ---------- 4670 -------- Saved 
+QNX Momentics開発スイート ---------- 4671 -------- Saved 
+模型 214 较小外形的平台 ---------- 4672 -------- Saved 
+Model 214 小型フォーム･ファクター･プラットフォーム ---------- 4673 -------- Saved 
+MULTI* 集成开发环境 ---------- 4674 -------- Saved 
+MULTI 統合開発環境 ---------- 4675 -------- Saved 
+优化编译器 ---------- 4676 -------- Saved 
+最適化コンパイラー ---------- 4677 -------- Saved 
+Phoenix SecureCore Technology ---------- 4678 -------- Saved 
+Phoenix SecureCore Technology ---------- 4679 -------- Saved 
+PCI-6881 PCI 总线插槽 CPU 卡 ---------- 4680 -------- Saved 
+PCI-6881 PCI バス スロット CPU カードア ---------- 4681 -------- Saved 
+应用程序编程 ---------- 4682 -------- Saved 
+アプリケーション・プログラミング ---------- 4683 -------- Saved 
+G7L331-L Intel® 945GC/ICH7 &micro;ATX 主板 ---------- 4684 -------- Saved 
+G7L331 L Intel® 945GC/ICH7 &micro;ATX マザーボード ---------- 4685 -------- Saved 
+EL-505 Embedded Linux for Intel® Atom&trade; ---------- 4686 -------- Saved 
+Intel® Atom&trade;用EL-505 エンベデッド Linux ---------- 4687 -------- Saved 
+HPT600 - 手持电子护照终端 ---------- 4688 -------- Saved 
+HPT600 - ハンドヘルド ePassport 端末 ---------- 4689 -------- Saved 
+Stratix&reg; ---------- 4690 -------- Saved 
+Stratix&reg; ---------- 4691 -------- Saved 
+TR 501/36 x-Intel® Core™2 双核处理器、3U VPX 和 VPX-REDI SBC ---------- 4696 -------- Saved 
+TR 501/36x - Intel® Core™2 デュオ, 3U VPX と VPX-REDI SBC ---------- 4697 -------- Saved 
+SBC84831、Intel® Atom 嵌入式 SBC ---------- 4698 -------- Saved 
+SBC84831、Intel® Atom™ エンベデッド SBC ---------- 4699 -------- Saved 
+GMB-N270 Intel® Atom® MINI-ITX 主板 ---------- 4700 -------- Saved 
+GMB-N270 Intel® Atom&trade; Mini-ITX マザーボード ---------- 4701 -------- Saved 
+SBC86836，Intel® Atom™ 迷你 ITX SBC ---------- 4702 -------- Saved 
+SBC86836、Intel® Atom Mini ITX SBC ---------- 4703 -------- Saved 
+单板计算机： 3.5 英寸 JRexplus-DC ---------- 4704 -------- Saved 
+シングル・ボード・コンピューター: 3.5インチ JRexplus DC ---------- 4705 -------- Saved 
+EL330-DR Intel&reg; Q45/ICH10DO Micro-ATX 主板 ---------- 4706 -------- Saved 
+BL330-B Intel&reg; Q45/ICH10DO microATX マザーボード ---------- 4707 -------- Saved 
+Cinemo 媒体引擎 ---------- 4708 -------- Saved 
+Cinemo メディア・エンジン ---------- 4709 -------- Saved 
+PCI-531LF ---------- 4710 -------- Saved 
+PCI-531LF ---------- 4711 -------- Saved 
+ROBO-8921VG2R ---------- 4714 -------- Saved 
+ROBO-8921VG2R ---------- 4715 -------- Saved 
+conga-CA945 - Compact，COM Express Type 2 兼容模块，Intel® Atom™ 处理器 N270 系列和Intel® 945GSE 芯片组 ---------- 4716 -------- Saved 
+conga-CA945 - コンパクトな COM Express タイプ 2 互換モジュール、Intel® Atom™ プロセッサー N270 シリーズおよびIntel® 945GSE チップセット ---------- 4717 -------- Saved 
+ISA-825LF，Intel® Atom&trade; N455/D525 半尺寸 ISA 卡 ---------- 4718 -------- Saved 
+ISA-825LF、Intel® Atom&trade; N455/D525 ハーフサイズ ISA カード ---------- 4719 -------- Saved 
+COE-592LF，核心高速模块，Intel® Atom&trade; CPU ---------- 4720 -------- Saved 
+COE-592LF、コアエクスプレスモジュール、Intel® Atom&trade; CPU ---------- 4721 -------- Saved 
+EB-581LF，Intel® Atom® Z510/Z530 3.5 英寸嵌入式板卡 ---------- 4722 -------- Saved 
+EB 581LF、Intel® Atom® Z510/Z530 3.5 インチエンベデッドボード ---------- 4723 -------- Saved 
+PCI-827LF，Intel® Atom&trade; N455/D525 半尺寸 PCI 板 ---------- 4724 -------- Saved 
+PCI-827LF、Intel® Atom® N455/D525 ハーフサイズ PCI ボード ---------- 4725 -------- Saved 
+EB-591LF，Intel® Atom® 3.5 英寸嵌入式板卡 ---------- 4726 -------- Saved 
+EB-591LF、Intel® Atom® 3.5 インチエンベデッドボード ---------- 4727 -------- Saved 
+EB-821LF，Intel® Atom® N455 3.5 英寸嵌入式板卡 ---------- 4728 -------- Saved 
+EB-821LF、Intel® Atom® N455 3.5 インチエンベデッドボード ---------- 4729 -------- Saved 
+ISA-588LF，Intel® Atom&trade; N270 半尺寸 CPU 卡 ---------- 4730 -------- Saved 
+ISA-588LF、Intel® Atom® N270 ハーフサイズ CPU カード ---------- 4731 -------- Saved 
+LB-731LF、Intel® Core&trade;2 双核处理器 5.25"嵌入式主板 ---------- 4732 -------- Saved 
+LB-731LF、Intel® Core™ 2 デュオ 5.25インチ 組み込みボード ---------- 4733 -------- Saved 
+LB-586LF，Intel® Atom&trade; N270 CPU 5.25 英寸嵌入式板卡 ---------- 4734 -------- Saved 
+LB-586LF、Intel® Atom® N270 CPU 5.25 インチエンベデッドボード ---------- 4735 -------- Saved 
+嵌入式软件开发服务 ---------- 4736 -------- Saved 
+エンベデッド・ソフトウェア開発サービス ---------- 4737 -------- Saved 
+PICO820-Intel® Atom Pico ITX SBC ---------- 4738 -------- Saved 
+PICO820 - Intel® Atom Pico-ITX SBC ---------- 4739 -------- Saved 
+NSA 3110： 基于 Intel® G41 芯片组的 1U 19" 机架安装式网络设备 ---------- 4740 -------- Saved 
+NSA 3110: Intel® G41チップセットに基づく1U 19インチのラックマウント型ネットワークのアプライアンス ---------- 4741 -------- Saved 
+MIC-3393 6U cPCI Intel® Xeon® 四核/双核处理器刀片 ---------- 4742 -------- Saved 
+MIC-3393 6U cPCI Intel® Xeon® クワッド / デュアルコア・プロセッサーブレード ---------- 4743 -------- Saved 
+嵌入式 Mini-ITX 主板： JNF93R-LF（Intel® Core™2 双核/四核移动式处理器） ---------- 4744 -------- Saved 
+Mini-ITX エンベデッド・マザーボード: JNF93R-LF（Intel® Core&trade;2 デュオ/クワッド モバイル・プロセッサー） ---------- 4745 -------- Saved 
+系统集成服务 BSP 和驱动程序开发 ---------- 4746 -------- Saved 
+システム・インテグレーション・サービスBSP&ドライバー開発 ---------- 4747 -------- Saved 
+Rapier 1340 ---------- 4748 -------- Saved 
+Rapier 1340 ---------- 4749 -------- Saved 
+CPC-8204 ---------- 4750 -------- Saved 
+CPC-8204 ---------- 4751 -------- Saved 
+PSB-589LF ---------- 4752 -------- Saved 
+PSB-589LF ---------- 4753 -------- Saved 
+PSB-828LF ---------- 4754 -------- Saved 
+PSB-828LF ---------- 4755 -------- Saved 
+PSB-831LF ---------- 4756 -------- Saved 
+PSB-831LF ---------- 4757 -------- Saved 
+PSB-861LF ---------- 4758 -------- Saved 
+PSB-861LF ---------- 4759 -------- Saved 
+PSB-893LF ---------- 4760 -------- Saved 
+PSB-893LF ---------- 4761 -------- Saved 
+TIGH2U - 电信级服务器 ---------- 4762 -------- Saved 
+TIGH2U - キャリア・グレード・サーバー: ---------- 4763 -------- Saved 
+计算机模块：microETXexpress-DC ---------- 4764 -------- Saved 
+コンピューター・オン・モジュール： microETXexpress-DC ---------- 4765 -------- Saved 
+AdvancedTCA 刀片式处理器： AT8050 ---------- 4766 -------- Saved 
+AdvancedTCA ブレード： AT8050 ---------- 4767 -------- Saved 
+COM Express CXC-GS45 ---------- 4768 -------- Saved 
+COM Express CXC-GS45 ---------- 4769 -------- Saved 
+MI810 - 基于 Intel® Atom&trade; 的 MI810 Mini-ITX 主板 ---------- 4770 -------- Saved 
+MI810 - Intel® Atom™ベースの-MI810 Mini-ITX マザーボード ---------- 4771 -------- Saved 
+IB883 - 基于 Intel® Atom™ 的 3.5 英寸磁盘尺寸 SBC ---------- 4772 -------- Saved 
+IB883 - Intel® Atom&trade;ベースの3.5インチ ディスクサイズ SBC ---------- 4773 -------- Saved 
+PCM-9562 Intel® Atom® N450/D510 EBX SBC ---------- 4774 -------- Saved 
+PCM-9562 Intel® Atom® N450/D510 EBX SBC ---------- 4775 -------- Saved 
+PEB-2736 ---------- 4776 -------- Saved 
+PEB-2736 ---------- 4777 -------- Saved 
+NP101-D16C 全新的 12VDC 供电、基于 Intel&reg; Atom™ 处理器的 945GSE/ICH7M Mini-ITX 主板 ---------- 4778 -------- Saved 
+NP101-D16Cの新しい12VDC電源Intel&reg;アトム™ベースの945GSE/ICH7MMini-ITXマザーボード ---------- 4779 -------- Saved 
+BCM MX945GSE - Intel® 945GSE Mini ITX 搭载板载 Intel® Atom&trade; N270 1.6 GHz 低功耗处理器，无风扇操作，DVI/LVDS/VGA ---------- 4780 -------- Saved 
+BCM MX945GSE3 - Intel® 945GSE Mini ITX、オンボード・Intel® Atom&trade; N270 1.6 GHz 低消費電力プロセッサー、ファンレス動作、DVI/LVDS/VGA 搭載 ---------- 4781 -------- Saved 
+BCM MX945GSE - Intel® 945GSE Mini ITX 搭载板载 Intel® Atom&trade; N270 1.6 GHz CPU、无风扇、低功耗、6 个 COM 端口 ---------- 4782 -------- Saved 
+BCM MX945GSE - Intel® 945GSE Mini ITX、オンボード・Intel® Atom&trade; N270 1.6 GHz CPU 搭載、ファンレス、低消費電力、6 COM ポート ---------- 4783 -------- Saved 
+Avalue 3.5 英寸Intel® Atom® N270 945GSE 微模块 ---------- 4784 -------- Saved 
+Avalue 3.5 インチ Intel® Atom® N270 945GSE マイクロモジュール ---------- 4785 -------- Saved 
+ITA-1000 Intel® Atom® N270 无风扇紧凑型系统 ---------- 4786 -------- Saved 
+ITA-1000 Intel® Atom® N270 ファンレス・コンパクト・システム ---------- 4787 -------- Saved 
+ITA-2000 Intel® Atom® N270 无风扇机架式系统 ---------- 4788 -------- Saved 
+ITA-2000 Intel® Atom® N270 ファンレス・ラックマウント・システム ---------- 4789 -------- Saved 
+eBOX620-831-FL — 采用 Intel® Atom™ N270 1.6GHz 处理器的无风扇嵌入式系统 ---------- 4790 -------- Saved 
+eBOX620-831-FL - Intel® Atom™ N270 1.6GHz プロセッサーを搭載したファンレス・エンベデッド・システム ---------- 4791 -------- Saved 
+Trillium SS7 / SIGTRAN 软件 ---------- 4792 -------- Saved 
+Trillium SS7/SIGTRANソフトウェア ---------- 4793 -------- Saved 
+PEB-3715VLA ---------- 4794 -------- Saved 
+PEB-3715VLA ---------- 4795 -------- Saved 
+DVS-510 数字视频平台 ---------- 4796 -------- Saved 
+DVS-510 デジタル・ビデオ・プラットフォーム ---------- 4797 -------- Saved 
+DVS-355M 嵌入式/移动数字视频平台 ---------- 4798 -------- Saved 
+DVS-355M エンベデッド/モバイル・デジタル・ビデオ・プラットフォーム ---------- 4799 -------- Saved 
+NISE 3144 无风扇计算机，具有 PoE/移动式 DVR 功能 ---------- 4800 -------- Saved 
+NISE 3144ファンレス コンピューター（PoE /モバイルDVR容量を装備） ---------- 4801 -------- Saved 
+AIMB-766 Intel® Core™2 四核/ Core™2 双核 ATX 主板 ---------- 4802 -------- Saved 
+AIMB-766 Intel® Core™2 クワッド/ Core™2 デュオ ATX マザーボード ---------- 4803 -------- Saved 
+BL630-DR Intel&reg; Q35/ICH9R ATX 主板 ---------- 4804 -------- Saved 
+BL600-DR Intel&reg; Q35/ICH9R microATX マザーボード ---------- 4805 -------- Saved 
+DVMB-554E Core™2 双核处理器数字视频主板 ---------- 4806 -------- Saved 
+DVMB-554E Core&trade;2 デュオ デジタルビデオ・メインボード ---------- 4807 -------- Saved 
+TR A40/30x - Intel® Atom&trade; Z530，3U CompactPCI SBC ---------- 4808 -------- Saved 
+TR A40/30x - Intel® Atom™ Z530、3U CompactPCI SBC ---------- 4809 -------- Saved 
+Trillium VoIP / IMS / NGN 软件 ---------- 4810 -------- Saved 
+Trillium VoIP / IMS / NGNソフトウェア ---------- 4811 -------- Saved 
+RUBY-9715VG2AR ---------- 4814 -------- Saved 
+RUBY-9715VG2AR ---------- 4815 -------- Saved 
+基于 Intel® Atom® D510 的车载 PC 增强车辆监控 ---------- 4816 -------- Saved 
+Intel ® Atom® D510 ベースの Car PC が車両監視を強化 ---------- 4817 -------- Saved 
+PCE-5120 LGA775 Intel® Core™2 双核处理器卡 ---------- 4818 -------- Saved 
+PCE-5120 LGA775 Intel® Core™2 デュオカード ---------- 4819 -------- Saved 
+COMX-CORE 系列 COM Express 模块 ---------- 4820 -------- Saved 
+COMXコアシリーズCOMエクスプレスモジュール ---------- 4821 -------- Saved 
+NANO-9452 EPIC 嵌入式 SBC Core™2 双核处理器 ---------- 4822 -------- Saved 
+NANO-9452 EPIC エンベデッド SBC Core&trade;2 デュオ ---------- 4823 -------- Saved 
+aTCA-6900 ---------- 4824 -------- Saved 
+aTCA-6900 ---------- 4825 -------- Saved 
+Avalue ESM-GM45 Intel® Core&trade;2 双核处理器/Intel® Celeron® M COM Express 模块，Intel® GM45 + ICH9 M 芯片组 ---------- 4826 -------- Saved 
+Avalue ESM-GM45 Intel® Core™2 デュオ/ Intel® Celeron® M COM Express モジュール、 Intel® GM45 + ICH9-Mチップセットをサポート ---------- 4827 -------- Saved 
+ATCA-4500 ---------- 4828 -------- Saved 
+ATCA-4500 ---------- 4829 -------- Saved 
+PRA-200 ATCA Node Blade ---------- 4830 -------- Saved 
+PRA-200 ATCA ノード・ブレード ---------- 4831 -------- Saved 
+Avalue ACP-GM45 Intel® GM45 核心™2 双核迷你 ITX 游戏板 ---------- 4832 -------- Saved 
+Avalue ACP-GM45 Intel® GM45 Core™2 デュオ Mini ITX ゲーム ボード ---------- 4833 -------- Saved 
+EM-5300 Intel® Atom&trade; N450、D510、D410 处理器，嵌入式板卡，带 VGA、LVDS、双 GbE、SATA、CF 和 Mini PCI ---------- 4834 -------- Saved 
+EM-5300 Intel® Atom&trade; N450、D510、D410 プロセッサー・エンベデッド・ボード、VGA、LVDS、デュアル GbE、SATA、CF & Mini PCI ---------- 4835 -------- Saved 
+IP 网络服务器： NSC2U ---------- 4836 -------- Saved 
+IP ネットワーク サーバー: NSC2U ---------- 4837 -------- Saved 
+BCM RX965QV - Q965 Intel® Core™2 四核/Core™2 双核 LGA775 mATX，无板载 LVDS、3 个 PCI、6 个 SATAII RAID、TPM、iAMT、2 个 LAN ---------- 4838 -------- Saved 
+BCM RX965QV - Q965 Intel® Core&trade;2 クワッド/ Core&trade;2 デュオ LGA775 mATX、オンボードLVDS、3 PCI、6 SATAII（RAID対応）、TPM、iAMT、2 LAN を装備 ---------- 4839 -------- Saved 
+BCM BC45Q - 功能完整的 ATX 工业主板，展示了 Intel® Q45 芯片组的优势，包括 45nm 多核 CPU 支持、GEN 2 PCIe、DDR3 支持和带双显示（通过 DVI 和 VGA）的企业级板载图形 ---------- 4840 -------- Saved 
+BCM BC45Q - Intel® Q45 チップセットの利点を集めたフル装備のATX産業用マザーボード。45nm マルチコア CPU 対応、GEN 2 PCIe、DDR3 をサポート、DVI と VGA によるデュアル・ディスプレイ対応のエンタープライズクラスのオンボードグラフィックス機能搭載。  　　　　 ---------- 4841 -------- Saved 
+usbDemon™ ---------- 4844 -------- Saved 
+usbDemon&trade; ---------- 4845 -------- Saved 
+PEB-2738 ---------- 4846 -------- Saved 
+PEB-2738 ---------- 4847 -------- Saved 
+NANO-8044 ---------- 4848 -------- Saved 
+NANO-8044 ---------- 4849 -------- Saved 
+ISIS： 采用 Intel® Atom™ 的 PC/104 + 单板计算机 ---------- 4850 -------- Saved 
+ISIS: Intel® Atom ™ベースのPC/104+シングルボード・コンピューター ---------- 4851 -------- Saved 
+iRMX for Windows ---------- 4852 -------- Saved 
+Windows用iRMX ---------- 4853 -------- Saved 
+VR12 ---------- 4854 -------- Saved 
+VR12 ---------- 4855 -------- Saved 
+嵌入式主板： KTUS15/mITX（Intel® Atom™ 处理器） ---------- 4856 -------- Saved 
+エンベデッド・マザーボード: KTUS15/mITX（Intel® Atom&trade; プロセッサー） ---------- 4857 -------- Saved 
+Kontron 数字标牌评估工具包 DSEK-12 ---------- 4858 -------- Saved 
+Kontron デジタル・サイネージ評価キット DSEK-12 ---------- 4859 -------- Saved 
+BIS-6650LC ---------- 4860 -------- Saved 
+BIS-6650LC ---------- 4861 -------- Saved 
+Peartree2-ML Intel® Atom® E6xx CPU 模块和开发。 平台 ---------- 4862 -------- Saved 
+Peartree2-ML Intel® Atom&trade;E6xx CPU モジュールと開発。 プラットフォーム ---------- 4863 -------- Saved 
+MB-COME-1: COM Express 模块（类型 2）载板 ---------- 4864 -------- Saved 
+MB-COME-1: COM Express モジュール用キャリーボード（Type 2） ---------- 4865 -------- Saved 
+可信任平台模块 (TPM) ---------- 4866 -------- Saved 
+トラステッド・プラットフォーム・モジュール（TPM）1.2 ---------- 4867 -------- Saved 
+适合Intel® Atom® E6xx 系列处理器的真正的单芯片、半定制主板 ---------- 4868 -------- Saved 
+Intel® Atom&trade; E6xx シリーズの真のシングル・チップ・セミカスタム・ボード ---------- 4869 -------- Saved 
+X7DBP-8 (16.24" x 11.23") ---------- 4870 -------- Saved 
+X7DBP-8（16.24 インチ x 11.23 インチ） ---------- 4871 -------- Saved 
+TQ9 系统主机板 (SHB/SBC) ---------- 4872 -------- Saved 
+します。TQ9 システム ホストボード（SHB/SBC） ---------- 4873 -------- Saved 
+ICES 102 - Intel® Pentium® M /Intel® Celeron® M CPU ETX 模块（带 LVDS 接口） ---------- 4874 -------- Saved 
+ICES 102- Intel® Pentium® M/ Celeron® M CPU ETX モジュール LVDS インターフェイス付き ---------- 4875 -------- Saved 
+BL630-D Intel&reg; Q35/ICH9 ATX 主板 ---------- 4878 -------- Saved 
+BL630-D Intel&reg; Q35/ICH9 microATX マザーボード ---------- 4879 -------- Saved 
+Avalue EMX-GM45 Intel® Core&trade;2 双核迷你 ITX 主板，Intel® GM45 + ICH9-M 芯片组 ---------- 4880 -------- Saved 
+Avalue EMX-GM45 Intel® Core&trade;2 デュオ Mini ITX マザーボード、Intel® GM45 + ICH9-M チップセットをサポート ---------- 4881 -------- Saved 
+G7V600-B Intel&reg; 915GV/ICH6 ATX 主板 ---------- 4882 -------- Saved 
+BL600-D Intel&reg; Q35/ICH9 microATX マザーボード ---------- 4883 -------- Saved 
+I3-945GSE ---------- 4884 -------- Saved 
+I3-945GSE ---------- 4885 -------- Saved 
+IM-945GSE-D ---------- 4886 -------- Saved 
+IM-945GSE-D ---------- 4887 -------- Saved 
+MS-9A19 ---------- 4888 -------- Saved 
+MS-9A19 ---------- 4889 -------- Saved 
+WindBOX II ---------- 4890 -------- Saved 
+WindBOX II ---------- 4891 -------- Saved 
+9A08 ---------- 4892 -------- Saved 
+9A08 ---------- 4893 -------- Saved 
+嵌入式主板： KT965/ATX ---------- 4894 -------- Saved 
+エンベデッド・マザーボード: KT965/ATX ---------- 4895 -------- Saved 
+SiSoft 的咨询服务 ---------- 4896 -------- Saved 
+SiSoft のコンサルティング・サービス ---------- 4897 -------- Saved 
+BCM MX45GM - 移动式Intel® GM45 迷你 ITX 支持Intel® 45 nm 处理器、HDML/LVDS/DVI/VGA、GMA 4500MHD，直流电源 ---------- 4898 -------- Saved 
+BCM MX45GM - Mobile Intel® GM45 Mini ITXはIntel® 45nm プロセッサー、HDML/LVDS/DVI/VGA、GMA 4500MHD、DC 電源をサポート ---------- 4899 -------- Saved 
+deviceWISE 嵌入式版本 ---------- 4900 -------- Saved 
+deviceWISE Embedded Edition ---------- 4901 -------- Saved 
+BL100-NE Intel&reg;Q35/ICH9 Mini-ITX 主板 ---------- 4902 -------- Saved 
+BL100-NE Intel&reg; Q35/ICH9 Mini-ITX マザーボード ---------- 4903 -------- Saved 
+BL600-D Intel&reg; Q35/ICH9 micro-ATX 主板 ---------- 4904 -------- Saved 
+BL600-D Intel&reg; Q35/ICH9 microATX マザーボード ---------- 4905 -------- Saved 
+LynxSecure ---------- 4906 -------- Saved 
+LynxSecure ---------- 4907 -------- Saved 
+TREK-550 车载嵌入式计算机 ---------- 4908 -------- Saved 
+TREK-550 車載コンピューティング・ボックス ---------- 4909 -------- Saved 
+DVS-640 Core™2 双核 DVR 平台 ---------- 4910 -------- Saved 
+DVS-640 Core&trade;2 デュオ DVR プラットフォーム ---------- 4911 -------- Saved 
+PICOe-GM45A ---------- 4912 -------- Saved 
+PICOe-GM45A ---------- 4913 -------- Saved 
+KINO-GM45A (Mini-ITX SBC、Socket P、45nm 移动式Intel® Core&trade;2 四核/双核 CPU） ---------- 4914 -------- Saved 
+KINO-GM45A（45nm Mobile Intel® Core&trade;2 クワッド/ デュオ CPU 向けにソケット P が搭載された Mini-ITX SBC） ---------- 4915 -------- Saved 
+G7B330-B 修订版 AE ---------- 4916 -------- Saved 
+G7B330 B rev。 AES ---------- 4917 -------- Saved 
+PPC-S154T 超薄型平板电脑 ---------- 4918 -------- Saved 
+PPC-S154T UltraSlim パネル・コンピューター ---------- 4919 -------- Saved 
+培训： Windows 嵌入式产品 ---------- 4920 -------- Saved 
+トレーニング Windows エンベデッド製品 ---------- 4921 -------- Saved 
+VoIP、IMS 和统一通信组件 ---------- 4922 -------- Saved 
+VoIP、IMS&ユニファイドコミュニケーションコンポーネント ---------- 4923 -------- Saved 
+嵌入式箱式 PC： CB 752 ---------- 4924 -------- Saved 
+エンベデッド・ボックスPC: CB 752 ---------- 4925 -------- Saved 
+AW-BS710 SOM­ ETX 模块采用 P-M /C-M 处理器 ---------- 4926 -------- Saved 
+P-M / C-M プロセッサーを搭載した、AW-BS710 SOM-ETX モジュール ---------- 4927 -------- Saved 
+IP 网络服务器： NSW1U ---------- 4928 -------- Saved 
+IP ネットワーク サーバー: NSW1U ---------- 4929 -------- Saved 
+服务器级主板： KTC5520-EATX ---------- 4930 -------- Saved 
+サーバー クラスのボード: KTC5520 EATX ---------- 4931 -------- Saved 
+SOM-6763 Intel® Atom® 处理器 N450/D510 COM-Express 紧凑型模块 ---------- 4932 -------- Saved 
+SOM-6763 Intel® Atom® Processor N450/ D510 COM-Express Compact モジュール ---------- 4933 -------- Saved 
+SB5000P 工业服务器主板 ---------- 4934 -------- Saved 
+SB5000P 産業用サーバー・マザーボード ---------- 4935 -------- Saved 
+C2SBC-Q ATX ---------- 4936 -------- Saved 
+C2SBC-Q ATX ---------- 4937 -------- Saved 
+ARK-3390 Intel® Core&trade;2 双核自动化控制系统 ---------- 4938 -------- Saved 
+ARK-3390 Intel® Core™2 デュオ オートメーション・コントロール・システム ---------- 4939 -------- Saved 
+X7DBR-i+ 扩展 ATX 主板 ---------- 4940 -------- Saved 
+X7DBR-i+ 拡張 ATX ---------- 4941 -------- Saved 
+PCA-6010 LGA775 Intel® Core&trade;2 双核 SBC w/ 双千兆位以太网和 DVI ---------- 4942 -------- Saved 
+PCA-6010 LGA775 Intel® Core™2 デュオ SBC、デュアル GbE および DVI 付 ---------- 4943 -------- Saved 
+MI-960： 配备 Intel® Q965 芯片组的迷你 ITX 嵌入式主板 ---------- 4944 -------- Saved 
+MI-960: Intel® Q965 チップセット搭載の MINI-ITX エンベデッド・マザーボード ---------- 4945 -------- Saved 
+POSReady 是 Windows Embedded for Point of Service (WEPOS) 开发设备的下一代系统， ---------- 4946 -------- Saved 
+ポイント オブ サービスのための POSReady、次世代 Windows Embedded ---------- 4947 -------- Saved 
+NOVO-3945 ---------- 4948 -------- Saved 
+NOVO-3945 ---------- 4949 -------- Saved 
+CoreExpress-ECO ---------- 4950 -------- Saved 
+CoreExpress-ECO ---------- 4951 -------- Saved 
+AIMB-212 Intel® Atom® N450/D510 Mini-ITX ---------- 4952 -------- Saved 
+AIMB-212 Intel® Atom® N450/D510 Mini-ITX ---------- 4953 -------- Saved 
+COM Express CXB-6SI ---------- 4954 -------- Saved 
+COM Express CXB-6SI ---------- 4955 -------- Saved 
+MSC CXB 6S ---------- 4956 -------- Saved 
+MSC CXB-6S ---------- 4957 -------- Saved 
+嵌入式主板： KTQ45/ATXE ---------- 4958 -------- Saved 
+エンベデッド・マザーボード: KTQ45/ATXE ---------- 4959 -------- Saved 
+用于 Intel® Pentium® 处理器的 Microware OS-9 ---------- 4960 -------- Saved 
+Microware OS-9 for Intel® Pentium® プロセッサー ---------- 4961 -------- Saved 
+MATXM-CORE-411-B MicroATX 主板 ---------- 4962 -------- Saved 
+MATXM-コア-411-BMicroATXマザーボード ---------- 4963 -------- Saved 
+PCE-7214 四核Intel® Xeon® / Xeon® LV SHB ---------- 4964 -------- Saved 
+PCE-7214 クワッドコア Intel® Xeon® / Xeon® LV SHB ---------- 4965 -------- Saved 
+AIMB-580 Intel® Core&trade; i7 i5 i3/Pentium® 处理器 ATX 板型 ---------- 4966 -------- Saved 
+AIMB-580 Intel® Core™ i7/i5/i3/Pentium® プロセッサー ATX ---------- 4967 -------- Saved 
+ROBO-8910VG2A ---------- 4968 -------- Saved 
+ROBO-8910VG2A ---------- 4969 -------- Saved 
+PCOM-B213VG ---------- 4970 -------- Saved 
+PCOM-B213VG ---------- 4971 -------- Saved 
+CompactPCI 3U： CP308 ---------- 4972 -------- Saved 
+CompactPCI 3U: CP308 ---------- 4973 -------- Saved 
+嵌入式主板： KTGM45 ---------- 4974 -------- Saved 
+エンベデッド・マザーボード: KTGM45 ---------- 4975 -------- Saved 
+BIS-6556 是一款由 Intel® Atom® 驱动的无风扇嵌入式箱式 PC ---------- 4976 -------- Saved 
+BIS-6556 Intel® Atom® を搭載したファンレス設計のエンベデッド・ボックス PC ---------- 4977 -------- Saved 
+XVAULT XNVR100 超小型 (USFF) ---------- 4978 -------- Saved 
+XVAULT XNVR100 ULTRA SMALL FORM FACTOR（USFF） ---------- 4979 -------- Saved 
+TS-269L ---------- 4982 -------- Saved 
+TS-269L ---------- 4983 -------- Saved 
+COM-830E（恶劣环境） ---------- 4984 -------- Saved 
+COM-830E（過酷な環境） ---------- 4985 -------- Saved 
+Trillium LTE / 4G 无线软件 ---------- 4986 -------- Saved 
+Trillium LTE/4 G ワイヤレス・ソフトウェア ---------- 4987 -------- Saved 
+EmETXe-i9455（计算机模块） ---------- 4988 -------- Saved 
+EmETXe-i9455（コンピューター・オン・モジュール（COM）） ---------- 4989 -------- Saved 
+DFI 发布了基于全新Intel® Atom™处理器 Z530P 的 Micro COM Express 模块 — ML905 系列 ---------- 4990 -------- Saved 
+DFI が新しいIntel® Atom&trade; プロセッサー Z530Pベースの Micro COM エクスプレスモジュール ML905 シリーズをリリース ---------- 4991 -------- Saved 
+EL630-NR Intel&reg; Q45/ICH10DO ATX 主板 ---------- 4992 -------- Saved 
+G7B630-N Intel&reg; Q965/ICH8 ATX マザーボード ---------- 4993 -------- Saved 
+AEC-6920（嵌入式控制器、BOXER 2） ---------- 4994 -------- Saved 
+AEC-6920（内蔵コントローラ、BOXER 2） ---------- 4995 -------- Saved 
+MIC-5301 ATCA 双核低压Intel® Xeon® 处理器 ---------- 4996 -------- Saved 
+MIC-5301 ATCA デュアルコア LV Intel® Xeon® プロセッサー ---------- 4997 -------- Saved 
+嵌入式硬件/软件设计服务 ---------- 4998 -------- Saved 
+エンベデッドハードウェア/ソフトウェア設計サービス ---------- 4999 -------- Saved 
+IB882 - 基于 Intel® Atom™ 的 3.5 英寸磁盘尺寸 SBC ---------- 5000 -------- Saved 
+IB882 - Intel® Atom™ベースの3.5インチ ディスクサイズ SBC ---------- 5001 -------- Saved 
+conga-CA - Compact，COM Express 2 型兼容模块，Intel® Atom™ 处理器 Z5xx 系列和 Intel® USW15 ---------- 5002 -------- Saved 
+conga-CA - コンパクトな COM Express タイプ 2 互換モジュール、Intel® Atom™ プロセッサー Z5xx シリーズおよび Intel® USWc15 ---------- 5003 -------- Saved 
+XVAULT XVIEW200 2U 4 托架机架安装 ---------- 5004 -------- Saved 
+XVAULT XVIEW200 2U 4 ベイ・ラックマウント ---------- 5005 -------- Saved 
+XVAULT 专业模块化 NVR ---------- 5008 -------- Saved 
+XVAULT SPECIALTY MODULAR NVR ---------- 5009 -------- Saved 
+XVAULT XVIEW300 基座式机箱 ---------- 5010 -------- Saved 
+XVAULT XVIEW300 PEDESTAL シャーシ ---------- 5011 -------- Saved 
+媒体处理器 Xtreme ---------- 5012 -------- Saved 
+メディア プロセッサ エクストリーム ---------- 5013 -------- Saved 
+IMBA-9454（ATX 主板） ---------- 5014 -------- Saved 
+IMBA-9454（ATX マザーボード） ---------- 5015 -------- Saved 
+BCM BC35Q - 完全加载的工业 ATX 主板 - Intel® Q35 Core&trade;2 四核支持 2 个 PCIe x16 插槽*、2 个 PCIe x 1、双显示、板载 DVI/VGA、12 个 USB、5 个 SATAII、双千兆位 LAN ---------- 5016 -------- Saved 
+BCM BC35Q - 機能満載の産業用 ATX マザーボード - Intel® Q35 Core&trade;2 クワッドが、2つの PCIe x16 スロット*、2 PCIe x 1、デュアル・ディスプレイ、オンボード DVI/VGA、12 USB、5 SATAII、デュアル・ギガビットLAN をサポート。 ---------- 5017 -------- Saved 
+ZX2000 Ultra5 ---------- 5018 -------- Saved 
+ZX2000 Ultra5 ---------- 5019 -------- Saved 
+ZX1900 复制 ---------- 5020 -------- Saved 
+ZX1900 複製 ---------- 5021 -------- Saved 
+带有 3 个 ISA  插槽的 ATX 工业主板 Q67 ---------- 5022 -------- Saved 
+ATX 産業用マザーボード Q67 3 x ISA スロット ---------- 5023 -------- Saved 
+XVAULT XVIEW200 台式机机箱 ---------- 5024 -------- Saved 
+XVAULT XVIEW200 デスクトップ・シャーシ ---------- 5025 -------- Saved 
+XVAULT 专业移动 NVR ---------- 5026 -------- Saved 
+XVAULT SPECIALTY MOBILE NVR ---------- 5027 -------- Saved 
+SECOMEXP-945/N270 ---------- 5028 -------- Saved 
+SECOMEXP-945/N270 ---------- 5029 -------- Saved 
+SECOME-945/N270 ---------- 5032 -------- Saved 
+SECOME-945/N270 ---------- 5033 -------- Saved 
+SECOMX-945/N270 ---------- 5034 -------- Saved 
+SECOMX-945/N270 ---------- 5035 -------- Saved 
+DVS-355Z Core&trade;2 双核车载式/嵌入式平台 ---------- 5036 -------- Saved 
+DVS-355Z Core&trade;2 デュオ 車載/エンベデッド・プラットフォーム ---------- 5037 -------- Saved 
+嵌入式 Mini-ITX 主板： JNC96FL-525-LF（Intel® Atom™ D525 处理器） ---------- 5038 -------- Saved 
+Mini-ITX エンベデッド・マザーボード: JNC96FL-525-LF（Intel® Atom™ D525 プロセッサー） ---------- 5039 -------- Saved 
+VP 717/08x — 基于 32 纳米 Intel® Core™ i7 处理器的 VME64 双 PMC/XMC SBC ---------- 5040 -------- Saved 
+VP 717/08x - 32nm Intel® Core™ i7 プロセッサー・ベースの VME64 デュアル PMC/XMC SBC ---------- 5041 -------- Saved 
+conga-BM45 — 高端 COM Express 基础模块，Intel® GM45/ICH9-M 芯片组、Intel® Core™2 双核处理器，8 Gb 双通道 DDR3 内存 ---------- 5042 -------- Saved 
+conga-BM45 - ハイエンド COM Express 基本モジュール、Intel® GM45/ICH9-M チップセット、Intel® Core™2 デュオ プロセッサー、8 GByte のデュアルチャネル DDR3 メモリー ---------- 5043 -------- Saved 
+PMB-811LF/ Micro-ATX 主板 ---------- 5044 -------- Saved 
+PMB-811LF/マイクロ ATX ボード ---------- 5045 -------- Saved 
+PSB-903LF ---------- 5046 -------- Saved 
+PSB-903LF ---------- 5047 -------- Saved 
+PMB-881LF/工业 ATX 主板 ---------- 5048 -------- Saved 
+PMB-881LF/産業用ATX マザーボード ---------- 5049 -------- Saved 
+ROCKY-4786 PICMG 1.0 全尺寸 CPU 卡/Intel&reg;Pentium&reg;4 ---------- 5050 -------- Saved 
+ROCKY-4786 PICMG 1.0 フルサイズ CPU カード / Intel&reg; Pentium&reg; 4 ---------- 5051 -------- Saved 
+T3110 塔式服务器 ---------- 5054 -------- Saved 
+T3110 タワー・サーバー ---------- 5055 -------- Saved 
+R2220 机架式服务器 ---------- 5056 -------- Saved 
+R2220 ラック・サーバー ---------- 5057 -------- Saved 
+T3120 塔式服务器 ---------- 5058 -------- Saved 
+T3120 タワー・サーバー ---------- 5059 -------- Saved 
+R3100 机架式服务器 ---------- 5060 -------- Saved 
+R3100 ラック・サーバー ---------- 5061 -------- Saved 
+T3200 塔式服务器 ---------- 5062 -------- Saved 
+T3200 タワー・サーバー ---------- 5063 -------- Saved 
+S2220 服务器 ---------- 5064 -------- Saved 
+S2220 サーバー ---------- 5065 -------- Saved 
+S2225 PCIe Flash 优化服务器 ---------- 5066 -------- Saved 
+S2225 PCIe フラッシュ最適化済みサーバー ---------- 5067 -------- Saved 
+S2405 PCIe Flash 优化服务器 ---------- 5068 -------- Saved 
+S2405 PCIe フラッシュ最適化済みサーバー ---------- 5069 -------- Saved 
+Five9NS N1200 电信级服务器 ---------- 5070 -------- Saved 
+Five9NS N1200 キャリアグレードのサーバー ---------- 5071 -------- Saved 
+MP67 高性能媒体播放器 ---------- 5072 -------- Saved 
+MP67 高パフォーマンス・メディア・プレーヤー ---------- 5073 -------- Saved 
+DE7000 高性能媒体播放器 ---------- 5074 -------- Saved 
+DE7000 高パフォーマンス・メディア・プレーヤー ---------- 5075 -------- Saved 
+X4-525 超小型媒体播放器 ---------- 5076 -------- Saved 
+X4-525 超小型フォームファクタ・メディア・プレーヤー ---------- 5077 -------- Saved 
+HD2.8 高性能媒体播放器 ---------- 5082 -------- Saved 
+HD2.8 高パフォーマンス・メディア・プレーヤー ---------- 5083 -------- Saved 
+I2-525 超小型媒体播放器 ---------- 5084 -------- Saved 
+I2-525超小型フォームファクタ・メディア・プレーヤー ---------- 5085 -------- Saved 
+DE67 高性能媒体播放器 ---------- 5086 -------- Saved 
+DE67 高パフォーマンス・メディア・プレーヤー ---------- 5087 -------- Saved 
+NANO-8045 ---------- 5088 -------- Saved 
+NANO-8045 ---------- 5089 -------- Saved 
+TSS5203 - 5U 机架式数据存储服务器 ---------- 5090 -------- Saved 
+TSS5203 - 5U ラックマウント・データ・ストレージ・サーバー ---------- 5091 -------- Saved 
+TVC4400 立式显示墙控制器 ---------- 5092 -------- Saved 
+TVC4400 シェルフマウント ビデオ ウォール コントローラー ---------- 5093 -------- Saved 
+Trenton PCI Express 2.0 背板 - BPC7041 ---------- 5094 -------- Saved 
+Trenton PCI Express 2.0 バック プレーン - BPC7041 ---------- 5095 -------- Saved 
+系统集成服务 ---------- 5096 -------- Saved 
+システム統合およびサービス ---------- 5097 -------- Saved 
+BPC7041 PCI Express 背板 ---------- 5098 -------- Saved 
+BPC7041 PCI Express バックプレーン ---------- 5099 -------- Saved 
+TVC4403 显示墙控制器 ---------- 5100 -------- Saved 
+TVC4403 ビデオ・ウォール・コントローラー ---------- 5101 -------- Saved 
+TTX3100 PCI Express I/O 扩展系统 ---------- 5102 -------- Saved 
+TTX3100 PCI Express I/O 拡張システム ---------- 5103 -------- Saved 
+TSB7053 单板计算机 ---------- 5104 -------- Saved 
+TSB7053シングル・ボード・コンピューター ---------- 5105 -------- Saved 
+TRC4008 机架式机箱 ---------- 5106 -------- Saved 
+TRC4008ラックマウントコンピューターシャーシ ---------- 5107 -------- Saved 
+JXM7031 DP MicroATX 主板 ---------- 5108 -------- Saved 
+JXM7031 DP MicroATX マザーボード ---------- 5109 -------- Saved 
+BPG7087 ---------- 5110 -------- Saved 
+BPG7087 ---------- 5111 -------- Saved 
+TVC4502 硬件&软件捆绑显示墙控制器 ---------- 5112 -------- Saved 
+TVC4502 ハードウェア&ソフトウェア同梱のビデオ ウォール コントローラー ---------- 5113 -------- Saved 
+TRC2004 2U 机架式计算机 ---------- 5114 -------- Saved 
+TRC2004 2U ラックマウント・コンピューター ---------- 5115 -------- Saved 
+MCX シリーズ システム ホスト ボード（SHB） ---------- 5117 -------- Saved 
+JXT6966 单板计算机 ---------- 5118 -------- Saved 
+JXT6966シングル・ボード・コンピューター ---------- 5119 -------- Saved 
+BPG8032 PCI Express 背板 ---------- 5120 -------- Saved 
+BPG8032PCIエクスプレスバックプレーン ---------- 5121 -------- Saved 
+BPG6615 14-slot PCI-Express Backplane (Graphics-Class) ---------- 5122 -------- Saved 
+BPG6615 14-slot PCI-Express Backplane (Graphics-Class) ---------- 5123 -------- Saved 
+Trenton PCI Express 2.0 底板 - BPC7009 ---------- 5124 -------- Saved 
+Trenton PCI Express 2.0 バックプレーン - BPC7009 ---------- 5125 -------- Saved 
+TRC5003 机架式计算机系统 ---------- 5126 -------- Saved 
+PDOException: SQLSTATE[40001]: Serialization failure: 1213 Deadlock found when trying to get lock; try restarting transaction: UPDATE {transperfect_core} SET last_modified=:db_update_placeholder_0, changed=:db_update_placeholder_1
+WHERE  (nid = :db_condition_placeholder_0) ; Array
+(
+    [:db_update_placeholder_0] => 1510125061
+    [:db_update_placeholder_1] => 1
+    [:db_condition_placeholder_0] => 5127
+)
+ in update_change_detection() (line 719 of /var/www/html/sites/all/modules/vendor/transperfect/transperfect.module).

@@ -1,0 +1,298 @@
+
+<?php
+/**
+* Implements hook_menu().
+*/
+/* function promotedodmmessages_menu() {
+	$items['promoted-odm-messages'] = array(
+		'title' => 'ODM Messages',
+		'page callback' => 'get_odm_messages',
+		'access arguments' => array('access content'),
+	);
+	return $items;
+} */
+
+function promotedodmmessages_menu() {
+	$items['node/%node/promoted-odm-messages'] = array(
+		'title' => 'ODM Messages',
+		'type' => MENU_LOCAL_TASK,
+		//'access callback' => 'custom_workflow_tab_node_access',
+		'access callback' => 'custom_odm_tab_node_access',
+		'access arguments' => array(1),
+		'page callback' => 'get_odm_messages',
+		'weight' => 5,
+		'page arguments' => array(1),
+	);
+	
+	$items['messages/odm-rfq-recieved-messages'] = array(
+		'title' => 'ODM RFQ Recieved Messages',
+		'type' => MENU_LOCAL_TASK,
+		//'access callback' => 'custom_workflow_tab_node_access',
+		'access callback' => 'privatemsg_user_access',
+		'page callback' => 'get_odm_rfq_messages',
+		'page arguments' => array(1),
+		'weight'           => 11,
+		'menu_name'        => 'user-menu',
+	);
+	$items['messages/odm-rfq-sent-messages'] = array(
+		'title' => 'ODM RFQ Sent Messages',
+		'type' => MENU_LOCAL_TASK,
+		//'access callback' => 'custom_workflow_tab_node_access',
+		'access callback' => 'privatemsg_user_access',
+		'page callback' => 'get_odm_rfq_sent_messages',
+		'page arguments' => array(1),
+		'weight'           => 11,
+		'menu_name'        => 'user-menu',
+	);
+	
+	$items['messages/odm-private-sent-messages'] = array(
+		'title' => 'ODM Sent Messages',
+		'type' => MENU_LOCAL_TASK,
+		//'access callback' => 'custom_workflow_tab_node_access',
+		'access callback' => 'privatemsg_user_access',
+		'page callback' => 'get_odm_private_sent_messages',
+		'page arguments' => array(1),
+		'weight'           => 15,
+		'menu_name'        => 'user-menu',
+	);
+	
+	$items['messages/odm-private-recieved-messages'] = array(
+		'title' => 'ODM Recieved Messages',
+		'type' => MENU_LOCAL_TASK,
+		//'access callback' => 'custom_workflow_tab_node_access',
+		'access callback' => 'privatemsg_user_access',
+		'page callback' => 'get_odm_private_recieved_messages',
+		'page arguments' => array(1),
+		'weight'           => 16,
+		'menu_name'        => 'user-menu',
+	);
+	
+	return $items;
+}
+
+function get_odm_messages($node){
+	//return "check";
+	$variable1 = "chec3";
+	$variable2 = "check2";
+	//$odm_message = "ODM";
+	//return theme('get_odm_messages', array('variable1' => $odm_message, 'variable2' => $variable2));
+	
+	//$messages = db_query("SELECT DISTINCT(MessageId), PromotionId, BasicParent, SendCompanyName, SendDate, Subject, Content FROM import_table WHERE PromotionId = '".$node->field_odm_legacy_id['und'][0]['value']."' GROUP BY MessageId")->fetchAll();
+	$odm_message = array();
+	if($node->field_odm_legacy_id['und'][0]['value'] != ""){
+	$messages = db_query("SELECT DISTINCT(MessageId), SourceId, BasicParent, SendERPMCompanyID, SendDate, Subject, Content FROM odm_messages WHERE SourceId = '".$node->field_odm_legacy_id['und'][0]['value']."' GROUP BY MessageId")->fetchAll();
+	
+	//echo "<pre>Check"; print_r($messages); exit();
+	foreach($messages as $message){
+		$odm_message[$message->MessageId]['subject'] = $message->Subject;
+		$odm_message[$message->MessageId]['content'] = $message->Content;
+		//$odm_message[$message->MessageId]['send_company_name'] = $message->SendCompanyName;
+		$company_name  = db_query("select title from field_data_field_erpm_company_number as erpm INNER JOIN node as n ON n.nid = erpm.entity_id where field_erpm_company_number_value = '". $message->SendERPMCompanyID."'")->fetchField();
+		$odm_message[$message->MessageId]['send_company_name'] = $company_name;
+		$odm_message[$message->MessageId]['promotion_id'] = $message->PromotionId;
+		$odm_message[$message->MessageId]['send_date'] = $message->SendDate;
+		$senders = db_query("SELECT DISTINCT(SenderName) FROM odm_messages WHERE MessageId = '".$message->MessageId."'")->fetchAll();
+		$recipeints = db_query("SELECT DISTINCT(RecipientName) FROM odm_messages WHERE MessageId = '".$message->MessageId."'")->fetchAll();
+		$participants_string = "";
+		foreach($senders as $sender){
+			$participants_string .= $sender->SenderName;
+		}
+		foreach($recipeints as $recipient){
+			$participants_string .= " ,".$recipient->RecipientName;
+		}
+		$odm_message[$message->MessageId]['participants'] = $participants_string;
+	}
+	}
+	return theme('get_odm_messages', array('variable1' => $odm_message, 'variable2' => $variable2));
+}
+
+function get_odm_rfq_messages(){
+	//return "check";
+	$variable1 = "chec3";
+	$variable2 = "check2";
+	
+	global $user;
+	$erpm_id = db_query("SELECT field_erpm_login_id_value FROM field_data_field_erpm_login_id WHERE entity_id = ". $user->uid)->fetchField();
+	//$odm_message = "ODM";
+	//return theme('get_odm_messages', array('variable1' => $odm_message, 'variable2' => $variable2));
+	
+	//$messages = db_query("SELECT DISTINCT(MessageId), PromotionId, BasicParent, SendCompanyName, SendDate, Subject, Content FROM import_table WHERE PromotionId = '".$node->field_odm_legacy_id['und'][0]['value']."' GROUP BY MessageId")->fetchAll();
+	$odm_message = array();
+	if($erpm_id !== ""){
+	$messages = db_query("SELECT DISTINCT(MessageId), SourceId, BasicParent, SendERPMCompanyID, SendDate, Subject, Content FROM odm_messages WHERE type = 5 AND RecipientERPMID = '".$erpm_id."' GROUP BY MessageId")->fetchAll();
+	
+	//echo "<pre>Check"; print_r($messages); exit();
+	foreach($messages as $message){
+		$odm_message[$message->MessageId]['subject'] = $message->Subject;
+		$odm_message[$message->MessageId]['content'] = $message->Content;
+		//$odm_message[$message->MessageId]['send_company_name'] = $message->SendCompanyName;
+		$company_name  = db_query("select title from field_data_field_erpm_company_number as erpm INNER JOIN node as n ON n.nid = erpm.entity_id where field_erpm_company_number_value = '". $message->SendERPMCompanyID."'")->fetchField();
+		$odm_message[$message->MessageId]['send_company_name'] = $company_name;
+		$odm_message[$message->MessageId]['promotion_id'] = $message->PromotionId;
+		$odm_message[$message->MessageId]['send_date'] = $message->SendDate;
+		$senders = db_query("SELECT DISTINCT(SenderName) FROM odm_messages WHERE MessageId = '".$message->MessageId."'")->fetchAll();
+		$recipeints = db_query("SELECT DISTINCT(RecipientName) FROM odm_messages WHERE MessageId = '".$message->MessageId."'")->fetchAll();
+		$participants_string = "";
+		foreach($senders as $sender){
+			$participants_string .= $sender->SenderName;
+		}
+		foreach($recipeints as $recipient){
+			$participants_string .= " ,".$recipient->RecipientName;
+		}
+		$odm_message[$message->MessageId]['participants'] = $participants_string;
+	}
+	}
+	return theme('get_odm_messages', array('variable1' => $odm_message, 'variable2' => $variable2));
+}
+
+
+function get_odm_rfq_sent_messages(){
+	//return "check";
+	$variable1 = "chec3";
+	$variable2 = "check2";
+	
+	global $user;
+	$erpm_id = db_query("SELECT field_erpm_login_id_value FROM field_data_field_erpm_login_id WHERE entity_id = ". $user->uid)->fetchField();
+	//$odm_message = "ODM";
+	//return theme('get_odm_messages', array('variable1' => $odm_message, 'variable2' => $variable2));
+	
+	//$messages = db_query("SELECT DISTINCT(MessageId), PromotionId, BasicParent, SendCompanyName, SendDate, Subject, Content FROM import_table WHERE PromotionId = '".$node->field_odm_legacy_id['und'][0]['value']."' GROUP BY MessageId")->fetchAll();
+	$odm_message = array();
+	if($erpm_id !== ""){
+	$messages = db_query("SELECT DISTINCT(MessageId), SourceId, BasicParent, SendERPMCompanyID, SendDate, Subject, Content FROM odm_messages WHERE type = 5 AND SenderERPMID = '".$erpm_id."' GROUP BY MessageId")->fetchAll();
+	
+	//echo "<pre>Check"; print_r($messages); exit();
+	foreach($messages as $message){
+		$odm_message[$message->MessageId]['subject'] = $message->Subject;
+		$odm_message[$message->MessageId]['content'] = $message->Content;
+		//$odm_message[$message->MessageId]['send_company_name'] = $message->SendCompanyName;
+		$company_name  = db_query("select title from field_data_field_erpm_company_number as erpm INNER JOIN node as n ON n.nid = erpm.entity_id where field_erpm_company_number_value = '". $message->SendERPMCompanyID."'")->fetchField();
+		$odm_message[$message->MessageId]['send_company_name'] = $company_name;
+		$odm_message[$message->MessageId]['promotion_id'] = $message->PromotionId;
+		$odm_message[$message->MessageId]['send_date'] = $message->SendDate;
+		$senders = db_query("SELECT DISTINCT(SenderName) FROM odm_messages WHERE MessageId = '".$message->MessageId."'")->fetchAll();
+		$recipeints = db_query("SELECT DISTINCT(RecipientName) FROM odm_messages WHERE MessageId = '".$message->MessageId."'")->fetchAll();
+		$participants_string = "";
+		foreach($senders as $sender){
+			$participants_string .= $sender->SenderName;
+		}
+		foreach($recipeints as $recipient){
+			$participants_string .= " ,".$recipient->RecipientName;
+		}
+		$odm_message[$message->MessageId]['participants'] = $participants_string;
+	}
+	}
+	return theme('get_odm_messages', array('variable1' => $odm_message, 'variable2' => $variable2));
+}
+
+function get_odm_private_sent_messages(){
+	//return "check";
+	$variable1 = "chec3";
+	$variable2 = "check2";
+	
+	global $user;
+	$erpm_id = db_query("SELECT field_erpm_login_id_value FROM field_data_field_erpm_login_id WHERE entity_id = ". $user->uid)->fetchField();
+	//$odm_message = "ODM";
+	//return theme('get_odm_messages', array('variable1' => $odm_message, 'variable2' => $variable2));
+	
+	//$messages = db_query("SELECT DISTINCT(MessageId), PromotionId, BasicParent, SendCompanyName, SendDate, Subject, Content FROM import_table WHERE PromotionId = '".$node->field_odm_legacy_id['und'][0]['value']."' GROUP BY MessageId")->fetchAll();
+	$odm_message = array();
+	if($erpm_id !== ""){
+	$messages = db_query("SELECT DISTINCT(MessageId), SourceId, BasicParent, SendERPMCompanyID, SendDate, Subject, Content FROM odm_messages WHERE type = 1 AND SenderERPMID = '".$erpm_id."' GROUP BY MessageId")->fetchAll();
+	
+	//echo "<pre>Check"; print_r($messages); exit();
+	foreach($messages as $message){
+		$odm_message[$message->MessageId]['subject'] = $message->Subject;
+		$odm_message[$message->MessageId]['content'] = $message->Content;
+		//$odm_message[$message->MessageId]['send_company_name'] = $message->SendCompanyName;
+		$company_name  = db_query("select title from field_data_field_erpm_company_number as erpm INNER JOIN node as n ON n.nid = erpm.entity_id where field_erpm_company_number_value = '". $message->SendERPMCompanyID."'")->fetchField();
+		$odm_message[$message->MessageId]['send_company_name'] = $company_name;
+		$odm_message[$message->MessageId]['promotion_id'] = $message->PromotionId;
+		$odm_message[$message->MessageId]['send_date'] = $message->SendDate;
+		$senders = db_query("SELECT DISTINCT(SenderName) FROM odm_messages WHERE MessageId = '".$message->MessageId."'")->fetchAll();
+		$recipeints = db_query("SELECT DISTINCT(RecipientName) FROM odm_messages WHERE MessageId = '".$message->MessageId."'")->fetchAll();
+		$participants_string = "";
+		foreach($senders as $sender){
+			$participants_string .= $sender->SenderName;
+		}
+		foreach($recipeints as $recipient){
+			$participants_string .= " ,".$recipient->RecipientName;
+		}
+		$odm_message[$message->MessageId]['participants'] = $participants_string;
+	}
+	}
+	return theme('get_odm_messages', array('variable1' => $odm_message, 'variable2' => $variable2));
+}
+
+function get_odm_private_recieved_messages(){
+	//return "check";
+	$variable1 = "chec3";
+	$variable2 = "check2";
+	
+	global $user;
+	$erpm_id = db_query("SELECT field_erpm_login_id_value FROM field_data_field_erpm_login_id WHERE entity_id = ". $user->uid)->fetchField();
+	//$odm_message = "ODM";
+	//return theme('get_odm_messages', array('variable1' => $odm_message, 'variable2' => $variable2));
+	
+	//$messages = db_query("SELECT DISTINCT(MessageId), PromotionId, BasicParent, SendCompanyName, SendDate, Subject, Content FROM import_table WHERE PromotionId = '".$node->field_odm_legacy_id['und'][0]['value']."' GROUP BY MessageId")->fetchAll();
+	$odm_message = array();
+	if($erpm_id !== ""){
+	$messages = db_query("SELECT DISTINCT(MessageId), SourceId, BasicParent, SendERPMCompanyID, SendDate, Subject, Content FROM odm_messages WHERE type = 1 AND RecipientERPMID = '".$erpm_id."' GROUP BY MessageId")->fetchAll();
+	
+	//echo "<pre>Check"; print_r($messages); exit();
+	foreach($messages as $message){
+		$odm_message[$message->MessageId]['subject'] = $message->Subject;
+		$odm_message[$message->MessageId]['content'] = $message->Content;
+		//$odm_message[$message->MessageId]['send_company_name'] = $message->SendCompanyName;
+		$company_name  = db_query("select title from field_data_field_erpm_company_number as erpm INNER JOIN node as n ON n.nid = erpm.entity_id where field_erpm_company_number_value = '". $message->SendERPMCompanyID."'")->fetchField();
+		$odm_message[$message->MessageId]['send_company_name'] = $company_name;
+		$odm_message[$message->MessageId]['promotion_id'] = $message->PromotionId;
+		$odm_message[$message->MessageId]['send_date'] = $message->SendDate;
+		$senders = db_query("SELECT DISTINCT(SenderName) FROM odm_messages WHERE MessageId = '".$message->MessageId."'")->fetchAll();
+		$recipeints = db_query("SELECT DISTINCT(RecipientName) FROM odm_messages WHERE MessageId = '".$message->MessageId."'")->fetchAll();
+		$participants_string = "";
+		foreach($senders as $sender){
+			$participants_string .= $sender->SenderName;
+		}
+		foreach($recipeints as $recipient){
+			$participants_string .= " ,".$recipient->RecipientName;
+		}
+		$odm_message[$message->MessageId]['participants'] = $participants_string;
+	}
+	}
+	return theme('get_odm_messages', array('variable1' => $odm_message, 'variable2' => $variable2));
+}
+
+function promotedodmmessages_theme(){
+	return array(
+     'get_odm_messages' => array(
+       'variables' => array('variable1' => NULL, 'variable2' => NULL),
+       'template' => 'get-odm-messages',
+	   'path' => drupal_get_path('module', 'promotedodmmessages'),
+     ),
+   );
+}
+
+function custom_odm_tab_node_access($node = NULL){
+	global $user;
+	if($user->uid > 0){
+		switch($node->type){
+			case 'promotion':
+				if (!in_array('Buyer', $user->roles)){
+					return TRUE;
+				}
+				return FALSE;
+				
+			case 'rfp':
+				if (!in_array('Builder', $user->roles)){
+					return TRUE;
+				}
+				return FALSE;
+			 
+			 default:
+				return FALSE;
+		}
+	}
+	return FALSE;
+}
+

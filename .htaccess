@@ -1,0 +1,247 @@
+#
+# Apache/PHP/Drupal settings:
+#
+BrowserMatchNoCase LinkTiger bad_bot
+BrowserMatchNoCase Yeti bad_bot
+BrowserMatchNoCase 360Spider bad_bot
+BrowserMatchNoCase facebot bad_bot
+BrowserMatchNoCase YisouSpider bad_bot
+BrowserMatchNoCase Xenu bad_bot
+BrowserMatchNoCase HttpAsyncClient bad_bot
+
+Order Deny,Allow
+Deny from env=bad_bot
+
+# Protect files and directories from prying eyes.
+<FilesMatch "\.(engine|inc|info|install|make|module|profile|test|po|sh|.*sql|theme|tpl(\.php)?|xtmpl)(~|\.sw[op]|\.bak|\.orig|\.save)?$|^(\..*|Entries.*|Repository|Root|Tag|Template)$|^#.*#$|\.php(~|\.sw[op]|\.bak|\.orig\.save)$">
+  Order allow,deny
+</FilesMatch>
+
+# Allow robots.txt to be interpreted PHP.
+<FilesMatch "^robots\.txt$">
+  SetHandler application/x-httpd-php
+</FilesMatch>
+
+# Don't show directory listings for URLs which map to a directory.
+Options -Indexes
+
+# Follow symbolic links in this directory.
+Options +FollowSymLinks
+
+# Make Drupal handle any 404 errors.
+ErrorDocument 404 /index.php
+
+# Set the default handler.
+DirectoryIndex index.php index.html index.htm
+
+# Override PHP settings that cannot be changed at runtime. See
+# sites/default/default.settings.php and drupal_environment_initialize() in
+# includes/bootstrap.inc for settings that can be changed at runtime.
+
+# PHP 5, Apache 1 and 2.
+<IfModule mod_php5.c>
+  php_flag magic_quotes_gpc                 off
+  php_flag magic_quotes_sybase              off
+  php_flag register_globals                 off
+  php_flag session.auto_start               off
+  php_value mbstring.http_input             pass
+  php_value mbstring.http_output            pass
+  php_value max_input_vars                  5000
+  php_flag mbstring.encoding_translation    off
+  php_value max_execution_time 		    48000
+</IfModule>
+
+# Requires mod_expires to be enabled.
+<IfModule mod_expires.c>
+  # Enable expirations.
+  ExpiresActive On
+
+  # Cache all files for 2 weeks after access (A).
+  ExpiresDefault A1209600
+
+  <FilesMatch \.php$>
+    # Do not allow PHP scripts to be cached unless they explicitly send cache
+    # headers themselves. Otherwise all scripts would have to overwrite the
+    # headers set by mod_expires if they want another caching behavior. This may
+    # fail if an error occurs early in the bootstrap process, and it may cause
+    # problems if a non-Drupal PHP file is installed in a subdirectory.
+    ExpiresActive Off
+  </FilesMatch>
+</IfModule>
+
+# Various rewrite rules.
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteRule ^(.*)/processors_list/(.*)$ /$1/processors/$2 [R=301,L,QSA]
+  # Name change
+  RewriteCond %{HTTP_HOST} ^www.intelintelligentsystemsalliance\.com [NC]
+  RewriteRule ^(.*)$ http://iotsolutionsalliance.intel.com/$1 [R=301,L]
+
+  RewriteCond %{HTTP_HOST} ^intelintelligentsystemsalliance\.com [NC]
+  RewriteRule ^(.*)$ http://iotsolutionsalliance.intel.com/$1 [R=301,L]
+
+  # Set "protossl" to "s" if we were accessed via https://.  This is used later
+  # if you enable "www." stripping or enforcement, in order to ensure that
+  # you don't bounce between http and https.
+  RewriteRule ^ - [E=protossl]
+  RewriteCond %{HTTPS} on
+  RewriteRule ^ - [E=protossl:s]
+
+  # Make sure Authorization HTTP header is available to PHP
+  # even when running as CGI or FastCGI.
+  RewriteRule ^ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+  # Block access to "hidden" directories whose names begin with a period. This
+  # includes directories used by version control systems such as Subversion or
+  # Git to store control files. Files whose names begin with a period, as well
+  # as the control files used by CVS, are protected by the FilesMatch directive
+  # above.
+  #
+  # NOTE: This only works when mod_rewrite is loaded. Without mod_rewrite, it is
+  # not possible to block access to entire directories from .htaccess, because
+  # <DirectoryMatch> is not allowed here.
+  #
+  # If you do not have mod_rewrite installed, you should remove these
+  # directories from your webroot or otherwise protect them from being
+  # downloaded.
+  RewriteRule "(^|/)\." - [F]
+
+  # If your site can be accessed both with and without the 'www.' prefix, you
+  # can use one of the following settings to redirect users to your preferred
+  # URL, either WITH or WITHOUT the 'www.' prefix. Choose ONLY one option:
+  #
+  # To redirect all users to access the site WITH the 'www.' prefix,
+  # (http://example.com/... will be redirected to http://www.example.com/...)
+  # uncomment the following:
+  # RewriteCond %{HTTP_HOST} .
+  # RewriteCond %{HTTP_HOST} !^www\. [NC]
+  # RewriteRule ^ http%{ENV:protossl}://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+  #
+  # To redirect all users to access the site WITHOUT the 'www.' prefix,
+  # (http://www.example.com/... will be redirected to http://example.com/...)
+  # uncomment the following:
+  # RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+  # RewriteRule ^ http%{ENV:protossl}://%1%{REQUEST_URI} [L,R=301]
+
+  # Modify the RewriteBase if you are using Drupal in a subdirectory or in a
+  # VirtualDocumentRoot and the rewrite rules are not working properly.
+  # For example if your site is at http://example.com/drupal uncomment and
+  # modify the following line:
+  # RewriteBase /drupal
+  #
+  # If your site is running in a VirtualDocumentRoot at http://example.com/,
+  # uncomment the following line:
+  # RewriteBase /
+
+  # New ISDM redirects
+
+  Redirect 301 /co-marketing-tool https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/co-marketing/overview.html 
+  Redirect 301 /member-resource-center/launch-kits https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/alliance-support/overview.html
+  Redirect 301 /co-marketing/trademarks https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/alliance-support/overview.html 
+  Redirect 301 /member-resource-center/membermark https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/alliance-support/overview.html
+  Redirect 301 /member-resource-center/intel-brand-advantage-program https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/alliance-support/overview.html
+  Redirect 301 /user/9640/edit https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/alliance-support/overview.html
+  Redirect 301 /member-resource-center/video/4 https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/alliance-support/overview.html
+  Redirect 301 /member-resource-center/supports-intel-atom-locked-logo https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/alliance-support/overview.html
+  Redirect 301 /member-resource-center/events/webinars https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/training-and-events/overview.html
+  Redirect 301 /member-resource-center/business-connections https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/training-and-events/overview.html
+  Redirect 301 /member-resource-center/events https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/marketing-opportunities.html
+  Redirect 301 /member-resource-center/embedded-innovator-article-opportunities https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/marketing-opportunities.html
+  Redirect 301 /member-resource-center/video/5 https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/marketing-opportunities.html
+  Redirect 301 /solutions-directory/newsletter-archive https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/solutions-directory.html
+  Redirect 301 /member-resource-center/video/2 https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/solutions-directory.html
+  Redirect 301 /member-resource-center/video/1 https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/overview.html
+  Redirect 301 /member-resource-center/alliance-marketing-por https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/overview.html
+  Redirect 301 /member-resource-center/login https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/overview.html
+  Redirect 301 /member-resource-center/register https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/overview.html
+  Redirect 301 /member-resource-center/password https://www-ssl.intel.com/content/www/us/en/my-intel/solutions-alliance-login.html?redirect=/content/www/us/en/secure/partner/solutions-alliance/overview.html
+  Redirect 301 /general-membership-application https://www-ssl.intel.com/content/www/us/en/secure/partner/forms/register-for-solutions-alliance.html
+  Redirect 301 /member-resource-center/user https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/overview.html
+
+#Ravish Start
+Redirect 301 /solutions-directory/solution-engine® /solutions-directory/
+Redirect 301 /ja/solutions-directory/solution-engine®  /ja/solutions-directory/
+Redirect 301 /de/solutions-directory/solution-engine®  /de/solutions-directory/
+Redirect 301 /es/solutions-directory/solution-engine®  /es/solutions-directory/
+Redirect 301 /fr/solutions-directory/solution-engine®  /fr/solutions-directory/
+Redirect 301 /it/solutions-directory/solution-engine®  /it/solutions-directory/
+Redirect 301 /ko/solutions-directory/solution-engine®  /ko/solutions-directory/
+Redirect 301 /mx/solutions-directory/solution-engine®  /mx/solutions-directory/
+Redirect 301 /pl/solutions-directory/solution-engine®  /pl/solutions-directory/
+Redirect 301 /pt-br/solutions-directory/solution-engine®  /pt-br/solutions-directory/
+Redirect 301 /ru/solutions-directory/solution-engine®  /ru/solutions-directory/
+Redirect 301 /th/solutions-directory/solution-engine®  /th/solutions-directory/
+Redirect 301 /zh-hans/solutions-directory/solution-engine®  /zh-hans/solutions-directory/
+Redirect 301 /zh-hant/solutions-directory/solution-engine®  /zh-hant/solutions-directory/
+Redirect 301 /tr/solutions-directory/solution-engine®  /tr/solutions-directory/
+
+
+#Ravish End
+
+
+
+
+  # New ISDM DOCUMENT redirects
+  Redirect 301 /sites/default/files/IOTG%20TPV%20Press%20Release%20Review%20Criteria.pdf https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/alliance-support/overview.html
+  Redirect 301 /sites/default/files/engagement_principles.pdf https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/alliance-support/overview.html
+  Redirect 301 /sites/default/files/EI_Media_Kit_2016_Finalv2.pdf https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/marketing-opportunities.html
+  Redirect 301 /sites/default/files/intel_embedded_community_training.pdf https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/marketing-opportunities.html
+  Redirect 301 /sites/default/files/2015%20Alliance%20Training_Members%20DB%20Directory%20and%20Roster_100515.pptx https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/solutions-directory.html
+  Redirect 301 /sites/default/files/Speaker%20Notes%20for%202013%20Alliance%20Solutions%20Directory%20%20Member%20Database.pdf https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/solutions-directory.html
+  Redirect 301 /sites/default/files/Solutions%20Directory%20Training%20Manual.pdf https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/solutions-directory.html
+  Redirect 301 /sites/default/files/Members%20Database%20and%20Dynamic%20Member%20Roster%20Training%20Manual.pdf https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/solutions-directory.html
+  Redirect 301 /sites/default/files/2015%20Alliance%20Marketing%20Overview_100515.pptx https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/overview.html
+  Redirect 301 /sites/default/files/2014Alliance%20Marketing%20POR%20Prezo%20Speaker%20Notes.pdf https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/overview.html
+  Redirect 301 /sites/default/files/2015%20Alliance%20Training_Directory%20Business_Developer_View_100515.pptx https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/solutions-directory.html
+  Redirect 301 /sites/default/files/SDBusinessITProfessional_Training_SpeakerNotes_0.pdf https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/solutions-directory.html
+  Redirect 301 /sites/default/files/SupportsIntelAtomLockedLogoOverview_webinar_060611_0.pdf https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/alliance-support/overview.html
+  Redirect 301 /sites/default/files/engagement_principles_no_com.pdf https://www-ssl.intel.com/content/www/us/en/secure/partner/solutions-alliance/alliance-support/overview.html
+
+  #redirect the home page to a subpage. This breaks search.
+  # RewriteRule ^$ /solutions-directory [R=301,L]
+  # RewriteRule ^zh-hans$ /zh-hans/solutions-directory [R=301,L]
+  # RewriteRule ^/zh-hant$ /zh-hant/solutions-directory [R=301,L]
+  # RewriteRule ^/ja$ /ja/solutions-directory [R=301,L]
+  # RewriteRule ^ko$ /ko/solutions-directory [R=301,L]
+  # RewriteRule ^pt-br$ /pt-br/solutions-directory [R=301,L]
+  # RewriteRule ^ru$ /ru/solutions-directory [R=301,L]
+  # RewriteRule ^es$ /es/solutions-directory [R=301,L]
+
+  # Pass all requests not referring directly to files in the filesystem to
+  # index.php. Clean URLs are handled in drupal_environment_initialize().
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_URI} !=/favicon.ico
+  RewriteRule ^ index.php [L]
+
+  # Rules to correctly serve gzip compressed CSS and JS files.
+  # Requires both mod_rewrite and mod_headers to be enabled.
+  <IfModule mod_headers.c>
+    # Serve gzip compressed CSS files if they exist and the client accepts gzip.
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.css $1\.css\.gz [QSA]
+
+    # Serve gzip compressed JS files if they exist and the client accepts gzip.
+    RewriteCond %{HTTP:Accept-encoding} gzip
+    RewriteCond %{REQUEST_FILENAME}\.gz -s
+    RewriteRule ^(.*)\.js $1\.js\.gz [QSA]
+
+    # Serve correct content types, and prevent mod_deflate double gzip.
+    RewriteRule \.css\.gz$ - [T=text/css,E=no-gzip:1]
+    RewriteRule \.js\.gz$ - [T=text/javascript,E=no-gzip:1]
+
+    <FilesMatch "(\.js\.gz|\.css\.gz)$">
+      # Serve correct encoding type.
+      Header set Content-Encoding gzip
+      # Force proxies to cache gzipped & non-gzipped css/js files separately.
+      Header append Vary Accept-Encoding
+    </FilesMatch>
+  </IfModule>
+</IfModule>
+
+# Add headers to all responses.
+<IfModule mod_headers.c>
+  # Disable content sniffing, since it's an attack vector.
+  Header always set X-Content-Type-Options nosniff
+</IfModule>

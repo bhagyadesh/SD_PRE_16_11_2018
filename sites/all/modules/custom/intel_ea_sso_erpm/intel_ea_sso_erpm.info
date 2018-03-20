@@ -1,0 +1,25 @@
+name = Intel EA SSO / ERPM Customizations
+description = All customizations to SSO/SAML/ERPM integration will exist here.
+core = 7.x
+package = Intel EA
+
+dependencies[] = simplesamlphp_auth
+dependencies[] = strongarm
+
+features[ctools][] = strongarm:strongarm:1
+features[features_api][] = api:1
+features[variable][] = simplesamlphp_auth_allowdefaultlogin
+features[variable][] = simplesamlphp_auth_allowdefaultloginroles
+features[variable][] = simplesamlphp_auth_allowdefaultloginusers
+features[variable][] = simplesamlphp_auth_allowsetdrupalpwd
+features[variable][] = simplesamlphp_auth_autoenablesaml
+features[variable][] = simplesamlphp_auth_login_link_display_name
+features[variable][] = simplesamlphp_auth_login_path
+features[variable][] = simplesamlphp_auth_logoutgotourl
+features[variable][] = simplesamlphp_auth_mailattr
+features[variable][] = simplesamlphp_auth_registerusers
+features[variable][] = simplesamlphp_auth_roleevaleverytime
+features[variable][] = simplesamlphp_auth_rolepopulation
+features[variable][] = simplesamlphp_auth_unique_id
+features[variable][] = simplesamlphp_auth_user_name
+features[variable][] = simplesamlphp_auth_user_register_original

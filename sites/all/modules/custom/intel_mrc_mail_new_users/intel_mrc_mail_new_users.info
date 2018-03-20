@@ -1,0 +1,4 @@
+name = Intel MRC notify new users.
+description = Custom functionality to notify select new users of their new user accounts AND send them an email of terms and conditions to accept.
+package = Intel EA
+core = 7.x

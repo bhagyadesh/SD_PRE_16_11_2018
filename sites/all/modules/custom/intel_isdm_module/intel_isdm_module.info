@@ -1,0 +1,6 @@
+name = Intel ISDM module
+description = Custom code needed for intel ISDM portion of project (Jan 1 2016)
+package = Intel ISDM
+core = 7.x
+
+dependencies[] = placeholder

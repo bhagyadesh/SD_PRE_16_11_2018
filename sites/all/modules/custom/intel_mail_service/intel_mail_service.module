@@ -1,0 +1,80 @@
+<?php
+
+
+// intel_ea_web_service.module
+
+/**
+ * Implementation of hook_perm().
+ */
+function intel_mail_service_perm() {
+  return array(
+    'mail record view any note'
+  );
+}
+
+/**
+ * Implementation of hook_services_resources().
+ */
+function intel_mail_service_services_resources() {
+  return array(
+    'mail' => array(
+      'index' => array(
+        'help' => 'Retrieves a list of mail records',
+        'file' => array('file' => 'inc', 'module' => 'intel_mail_service'),
+        'callback' => 'intel_mail_service_push',
+        'access callback' => 'intel_mail_service_services_access',
+        'access arguments' => array('access content'),
+        'access arguments append' => FALSE,
+        'args' => array(
+          array(
+            'name' => 'username',
+            'type' => 'string',
+            'description' => 'The id of the note to get',
+            'source' => array('data' => 'username'),
+            'optional' => TRUE,
+          ),
+          array(
+            'name' => 'password',
+            'type' => 'string',
+            'description' => 'The id of the note to get',
+            'source' => array('data' => 'password'),
+            'optional' => TRUE,
+          )
+        ),
+      ),
+      'actions' => array(
+        'update' => array(
+          'help' => 'Update mail status record',
+          'file' => array('file' => 'inc', 'module' => 'intel_mail_service'),
+          'callback' => 'intel_mail_service_pull',
+          'access callback' => 'intel_mail_service_services_access',
+          'access arguments' => array('access content'),
+          'access arguments append' => FALSE,
+          'args' => array(
+            array(
+              'name' => 'pm_email_eid',
+              'type' => 'int',
+              'description' => 'The id of the note to get',
+              'source' => array('data' => 'pm_email_eid'),
+              'optional' => TRUE,
+            ),
+            array(
+              'name' => 'uid',
+              'type' => 'string',
+              'description' => 'The id of the note to get',
+              'source' => array('data' => 'uid'),
+              'optional' => TRUE,
+            ),
+            array(
+              'name' => 'pwd',
+              'type' => 'string',
+              'description' => 'The id of the note to get',
+              'source' => array('data' => 'pwd'),
+              'optional' => TRUE,
+            )
+          ),
+        )
+      )
+    )
+  );
+}

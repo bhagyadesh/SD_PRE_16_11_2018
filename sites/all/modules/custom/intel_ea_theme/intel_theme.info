@@ -1,0 +1,4 @@
+name = Intel Theme
+description = Theme related functionality
+core = 7.x
+package = Intel EA

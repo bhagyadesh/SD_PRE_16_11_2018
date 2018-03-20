@@ -1,0 +1,7 @@
+name = UX Improvement on Facet Search
+description = Add plus and minis to facet block.
+core = 7.x
+package = custom
+
+stylesheets[all][] = facetcustomstyle.css
+

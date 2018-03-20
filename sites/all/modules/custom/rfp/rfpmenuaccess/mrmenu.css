@@ -1,0 +1,43 @@
+.block-superfish .menuparent.nolink{
+	padding: 0 0 10px 0;
+	font-size: 14px;
+    position: relative;
+    display: block;
+    color: #0072c5;	
+	cursor:pointer;
+}
+.block-superfish .menuparent{
+	/*float:none;*/
+    position: relative;
+    display: block;
+
+}
+.block-superfish .nav>li.menuparent>span:hover, .nav>li.menuparent>span:focus {
+    text-decoration: none;
+    background-color: #eee;
+}
+.sf-vertical li.sfHover > ul {margin-top:0 !important;}
+.page-member-resource-center .region-sidebar-first section span.toggleFacet{
+    display: inline-block;
+
+    /**
+	    left: -2px;
+    top: 0;**/
+    
+	}
+.page-member-resource-center .toggleFacet.minus {
+    width: 19px;
+    height: 30px;
+    float: none;
+    background: #f5f5f5  url(/sites/all/modules/custom/rfp/rfpmenuaccess/icon/mrc-sidebar-children-minus.png) 40% 17px no-repeat;
+}
+.page-member-resource-center .toggleFacet.plus {
+    width: 19px;
+    height: 30px;
+    float: none;
+    background: #f5f5f5 url(/sites/all/modules/custom/rfp/rfpmenuaccess/icon/mrc-sidebar-children-plus.png) no-repeat 3% 16px;
+}
+.page-member-resource-center .region-sidebar-first section h2.block-title{
+	text-indent: -17px;
+}
+body.page-member-resource-center .region-sidebar-first.well section.block{    margin-left: 2px;}

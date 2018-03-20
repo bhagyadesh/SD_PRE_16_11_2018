@@ -1,0 +1,2000 @@
+ADLINK MXE-1300 Series--Intel® Atom® D2550/ N2600 Fanless Embedded Computer with Rich I/O  ---------- 9458 -------- Saved 
+MIX-220: Embedded Computer System with Intel® Core™ i7/i5 MI-220 Mini-ITX Motherboard ---------- 9460 -------- Saved 
+EMB-B75A (Embedded Motherboard) ---------- 9461 -------- Saved 
+EMB-B75B (Embedded Motherboard) ---------- 9462 -------- Saved 
+EMB-H61B ---------- 9465 -------- Saved 
+EMB-9459T Rev.B ---------- 9466 -------- Saved 
+IMBA-H61A (Industrial ATX Motherboard) ---------- 9467 -------- Saved 
+IMBM-Q67A ---------- 9468 -------- Saved 
+IMBM-H61A ---------- 9469 -------- Saved 
+IMBM-H61B ---------- 9472 -------- Saved 
+FSB-B75G ---------- 9473 -------- Saved 
+HSB-525I ---------- 9474 -------- Saved 
+CMB-A9DP2 ---------- 9475 -------- Saved 
+CMB-A9SC2 ---------- 9476 -------- Saved 
+CMB-A9SP2 ---------- 9477 -------- Saved 
+D3231-S Industrial Series µATX Mainboard ---------- 9478 -------- Saved 
+PRM-130 AMC Processor Card ---------- 9480 -------- Saved 
+PWS-770 ---------- 9489 -------- Saved 
+Thecus N2560 ---------- 9490 -------- Saved 
+Thecus N4560 ---------- 9491 -------- Saved 
+Customization Packages for SageBIOS™ BSPs ---------- 9492 -------- Saved 
+POS-6920 ---------- 9493 -------- Saved 
+PA-3252 ---------- 9494 -------- Saved 
+POS-3520 ---------- 9495 -------- Saved 
+POS-3152 ---------- 9496 -------- Saved 
+OPS871 -- OPS Compliant Signage Player Module with Intel® QM77 and TPM 1.2 ---------- 9498 -------- Saved 
+OPS871-HM -- OPS Compliant Signage Player Module with Intel® HM76 and TPM 1.2 ---------- 9499 -------- Saved 
+GOT3187W-832-PCT -- 18.5" WXGA TFT Fanless Multi Touch Panel Computer with Intel® Atom® Processor (-10C ~ +50C) ---------- 9500 -------- Saved 
+P1177S-871 -- 17" SXGA TFT Intel® Core™ i7/ i5/ i3 Slim Industrial Touch Panel Computer ---------- 9501 -------- Saved 
+P1157S-871 -- 15" XGA TFT Intel® Core™ i7/ i5/ i3 Slim Industrial Touch Panel Computer ---------- 9502 -------- Saved 
+eBOX730-860-FL -- Fanless Embedded System with Intel® Core™ i7/ i3/ Celeron® Processor, Isolated COM and Digital I/O ---------- 9503 -------- Saved 
+MANO873 - LGA1155 Socket Intel® Core™ i7/ i5/ i3/Celeron® Mini ITX SBC with Intel® Q77 PCH, VGA/DVI-D, Dual LANs and USB 3.0 ---------- 9504 -------- Saved 
+GOT5152T-832 - 15" XGA TFT Fanless Touch Panel Computer with Intel® Atom® Processor D2550 ---------- 9505 -------- Saved 
+TS-469L ---------- 9506 -------- Saved 
+TS-569L ---------- 9507 -------- Saved 
+TS-669L ---------- 9508 -------- Saved 
+TS-869L ---------- 9509 -------- Saved 
+TS-269 Pro ---------- 9510 -------- Saved 
+S2312 V3 2U Storage Server ---------- 9511 -------- Saved 
+S3316 3U Storage Server ---------- 9512 -------- Saved 
+MBX X-60 Storage Server ---------- 9513 -------- Saved 
+Embedded System with 3rd Gen. ULV Intel® Core™ i7 3517UE Processor ---------- 9514 -------- Saved 
+TEA-E1702在云终端中的应用 ---------- 9515 -------- Saved 
+Express-HL: COM Express Type 6 Module with 4th Generation Intel® Core™ i7/i5/i3 Processor ---------- 9518 -------- Saved 
+cPCI-3510(BL) Series - 3U CompactPCI 4th/5th Generation Intel® Core™ i7 Processor Blade with ECC ---------- 9520 -------- Saved 
+ICES 268 COM Express Type 2 Basic Module ---------- 9521 -------- Saved 
+Dell Precision R7610 ---------- 9522 -------- Saved 
+Dell PowerEdge R230 Rack Servers ---------- 9523 -------- Saved 
+BA-0951 ---------- 9526 -------- Saved 
+Supermicro X10SLQ Embedded Motherboard ---------- 9528 -------- Saved 
+TEA-E1702 application in cloud terminal ---------- 9530 -------- Saved 
+TS-469 Pro ---------- 9531 -------- Saved 
+TS-569 Pro ---------- 9532 -------- Saved 
+TS-669 Pro ---------- 9534 -------- Saved 
+TS-869 Pro ---------- 9535 -------- Saved 
+FW-8771 - Rackmount x86 Network Security Platform with Intel® Xeon® processor E3-1200 v3 ---------- 9536 -------- Saved 
+NPC-8223 ---------- 9538 -------- Saved 
+SHB130 -- PICMG 1.3 Single Board Computer Designed for 4th Generation Intel® Core™ Processors ---------- 9539 -------- Saved 
+OPS880 -- 4th Gen Intel® Core™ i5 Open Pluggable Specification (OPS) Digital Signage Player ---------- 9540 -------- Saved 
+NDiS B533 - Fanless Digital Signage Player ---------- 9541 -------- Saved 
+LEC-2260-Multi-Purpose Intel® Celeron® 807UE Industrial PC ---------- 9542 -------- Saved 
+LEC-2280-Fanless Embedded Computer with 3rd Gen Intel® Core™ i7/i5/i3 ---------- 9543 -------- Saved 
+LEC-7950-Fanless Industrial computer with 2nd Gen Intel® Core™ i3-2310 or Intel® Celeron® 847E CPU ---------- 9544 -------- Saved 
+BIS-6595 Intel Intel® Atom® Powered “ICEFIN” Fanless Embedded System  ---------- 9545 -------- Saved 
+HB131 Low Power Intel® Atom® Mini ITX Motherboard with Dual NIC and Six COM Ports ---------- 9546 -------- Saved 
+NSA 5150 - 1U Network Security Appliance ---------- 9547 -------- Saved 
+HB132 Intel® Core™ Powered Mini ITX Motherboard with Ten USB and Ten COM Ports ---------- 9548 -------- Saved 
+WADE-8015 ---------- 9549 -------- Saved 
+ROBO-8112VG2AR ---------- 9550 -------- Saved 
+RUBY-D716VG2AR ---------- 9551 -------- Saved 
+PCOM-B630VG ---------- 9552 -------- Saved 
+NORCO BIS-6330A  Intel® Core™ i3/i5 Capable OPS Module  ---------- 9553 -------- Saved 
+NORCO EMB-4922 - Intel® HM76 Based EPIC Motherboard with Multiple Display ---------- 9554 -------- Saved 
+X10SLH-F Supermicro Embedded Motherboard ---------- 9555 -------- Saved 
+Supermicro Superserver 5018D-MTRF ---------- 9556 -------- Saved 
+VG-QM87 Embedded Motherboard ---------- 9562 -------- Saved 
+eIPC380 Embedded Industrial PC ---------- 9563 -------- Saved 
+Verification and Test OS (VTOS™) ---------- 9565 -------- Saved 
+Supermicro Superserver 1018D-73MTF ---------- 9566 -------- Saved 
+Supermicro Superserver 5018D-MTLN4F ---------- 9567 -------- Saved 
+Supermicro Superserver 5038ML-H8TRF MicroCloud ---------- 9568 -------- Saved 
+Supermicro Superserver 5038ML-H12TRF MicroCloud ---------- 9569 -------- Saved 
+Verification and Test OS (VTOS™) for 4th Generation Intel® Core™ processor family ---------- 9570 -------- Saved 
+X10SAE Supermicro ATX Motherboard ---------- 9571 -------- Saved 
+X10SL7-F Supermicro uATX Motherboard ---------- 9572 -------- Saved 
+X10SLM+-LN4F Supermicro uATX Motherboard ---------- 9573 -------- Saved 
+SBC326 3U OpenVPX Single Board Computer ---------- 9574 -------- Saved 
+COM Express™ Type 6 Module-COMe8400 ---------- 9575 -------- Saved 
+NDiS M533 - OPS Digital Signage Player ---------- 9576 -------- Saved 
+ICES 670 - COM Express Type 6 Basic Module ---------- 9577 -------- Saved 
+XPedite7472 Intel® Core™ i7 Processor-Based 3U Conduction- or Air-Cooled VPX-REDI Single Board Computer ---------- 9578 -------- Saved 
+Wind River® Linux Board Support Package (BSP) for Intel® Processors ---------- 9580 -------- Saved 
+PA-3570 ---------- 9582 -------- Saved 
+PA-6970 ---------- 9583 -------- Saved 
+MB980VF ---------- 9584 -------- Saved 
+MI980VF ---------- 9585 -------- Saved 
+CDT-HTPC ---------- 9587 -------- Saved 
+IMB210 -- LGA1150 ATX Motherboard Supporting the Intel® Xeon® E3-1200 processor v3 Series with the Intel® C226 chipset ---------- 9588 -------- Saved 
+TR B12/msd 4th generation Intel® Core™ processor 3U VPX SBC ---------- 9589 -------- Saved 
+XCalibur4530 4th Generation Intel® Core™ i7 Processor-Based Conduction- or Air-Cooled 6U VME Module ---------- 9595 -------- Saved 
+XPedite7501 5th Generation Intel® Core™ i7 Processor-Based Conduction- or Air-Cooled XMC Module ---------- 9597 -------- Saved 
+CDT-MIB1 ---------- 9598 -------- Saved 
+Embedded System with CDT-MIB3 ---------- 9599 -------- Saved 
+Vess A2000 Series  ---------- 9600 -------- Saved 
+SmartStor NS6700/4700 ---------- 9601 -------- Saved 
+CDT-HTPC1212 ---------- 9602 -------- Saved 
+VessRAID 1000 ---------- 9603 -------- Saved 
+FEG D2700 MINI-Box v0.0 ---------- 9604 -------- Saved 
+NuPRO-E42 - PICMG® 1.3 Full-Size LGA1150 4th Generation Intel® Core™ i7/i5/i3 SHB  ---------- 9608 -------- Saved 
+VME-1908 6U VME Intel Core i7 4th Gen Single Board Computer ---------- 9610 -------- Saved 
+CHAMP-AV9 6U OpenVPX quad-core 4th generation Intel® Core™ i7 DSP Card ---------- 9611 -------- Saved 
+ICE-QM871-R10 ---------- 9612 -------- Saved 
+KINO-AQ870-R10 ---------- 9613 -------- Saved 
+KINO-DQM871-R10 ---------- 9614 -------- Saved 
+NANO-QM871-R10 ---------- 9615 -------- Saved 
+ITX-M25E61B 2013 ---------- 9616 -------- Saved 
+conga-TS87 4th Generation Intel® Core™ i7 processor based COM Express Type 6 module ---------- 9617 -------- Saved 
+ITX-M25G21A ---------- 9618 -------- Saved 
+ ITX-M25I62A ---------- 9619 -------- Saved 
+ITX-M25J61B ---------- 9620 -------- Saved 
+ESPRIMO C910-L ---------- 9622 -------- Saved 
+ESPRIMO Q920 ---------- 9623 -------- Saved 
+ESPRIMO P910-L ---------- 9624 -------- Saved 
+ESPRIMO Q510 ---------- 9625 -------- Saved 
+COMe-bHL6 - COM Express® basic up to Quad Core based on 4th generation Intel® Core™ i-CPUs ---------- 9628 -------- Saved 
+CP6005(X)-SA - CPCI/PICMG 2.16 4th Generation Intel® Core™ Processor based System/Peripheral CPU ---------- 9629 -------- Saved 
+KTQ87/mITX - Embedded Mini-ITX Motherboard with Intel®Q87 Chipset and 4th Generation Intel® i7/i5/i3 Dual and Quad Core CPUs ---------- 9630 -------- Saved 
+Symkloud MS2900 Media - Media cloud platform to address latency and poor scalability of cloud transcoding infrastructure ---------- 9631 -------- Saved 
+Embedded Board EPIC (Intel® Celeron® 847 NM70) 1212 ---------- 9632 -------- Saved 
+rBOX310-4COM -- Robust Din-rail Fanless Embedded System with Intel® Atom® Processor N2800 1.86GHz, Intel® NM10 Chipset, 4 COM, SATA SSD, Audio and RTC ---------- 9634 -------- Saved 
+Prism ---------- 9636 -------- Saved 
+Dell OptiPlex XE2 ---------- 9637 -------- Saved 
+Embedded Mini-ITX Network Appliance Motherboard: JNF9HQL-525 (Intel® Atom™ D525 Processor) ---------- 9640 -------- Saved 
+Embedded 3.5" SBC Network Appliance Motherboard: JNF38QLB-525 (Intel® Atom® D525 Processor) ---------- 9641 -------- Saved 
+FES2213 ---------- 9642 -------- Saved 
+Industrial ATX Motherboard: JNAF95-Q87 (4th generation Intel® Core™ i3, i5, i7 Processors) ---------- 9643 -------- Saved 
+Industrial Micro ATX Motherboard: JNMF95-Q87 (4th generation Intel® Core™ i3, i5, i7 Processors) ---------- 9644 -------- Saved 
+PC8177 ---------- 9645 -------- Saved 
+适用于云终端应用程序的 TEB-S7011 ---------- 9646 -------- Saved 
+用于网络安全应用的 TEA-N1704 ---------- 9647 -------- Saved 
+FPC5152 ---------- 9649 -------- Saved 
+Mini-ITX AIMB-274 ---------- 9651 -------- Saved 
+MicroATX AIMB-584 ---------- 9652 -------- Saved 
+PC9080 ---------- 9654 -------- Saved 
+PA-3170 ---------- 9655 -------- Saved 
+PA-3320 ---------- 9656 -------- Saved 
+PA-6223 ---------- 9657 -------- Saved 
+POS-6511-PPC ---------- 9658 -------- Saved 
+POS-6511-MIT ---------- 9659 -------- Saved 
+PA-6970-PPC ---------- 9660 -------- Saved 
+PA-6223-PPC ---------- 9661 -------- Saved 
+SE-8122 ---------- 9662 -------- Saved 
+SE-8210 ---------- 9663 -------- Saved 
+SP-6128 ---------- 9664 -------- Saved 
+SP-6120 ---------- 9665 -------- Saved 
+SP-6122 ---------- 9666 -------- Saved 
+SP-6205/6207/6209 ---------- 9667 -------- Saved 
+MM-7017 ---------- 9668 -------- Saved 
+SA-5897 ---------- 9669 -------- Saved 
+PMB-871LF ---------- 9670 -------- Saved 
+PMB-901LF ---------- 9671 -------- Saved 
+Express-HR: COM Express® Type 6 Module with Second Generation Intel® Core™ i7/i5/i3 processor and Mobile Intel® QM67 Chipset  ---------- 9672 -------- Saved 
+PSB-873LF ---------- 9673 -------- Saved 
+BH-0927 ---------- 9674 -------- Saved 
+Express-HRR: Extreme Rugged™ COM Express® Type 6 Computer-on-Module with Intel® Core™ i7 processor and Intel® QM67 Chipset ---------- 9675 -------- Saved 
+Express-IB: COM Express® Type 6 Module with 3rd Generation Intel® Core™ i7/i5/i3 Processor and Intel® QM77 Express Chipset ---------- 9676 -------- Saved 
+Express-CVC: Compact COM Express® Module with Dual Core Intel® Atom® Processor and Intel® NM10 Express Chipset ---------- 9677 -------- Saved 
+Serviços de Desenvolvimento de Software Embarcados ---------- 9678 -------- Saved 
+Thecus N10850 ---------- 9679 -------- Saved 
+Thecus N8850  ---------- 9680 -------- Saved 
+Thecus N6850 ---------- 9681 -------- Saved 
+Thecus N16000PRO ---------- 9682 -------- Saved 
+Thecus N12000PRO ---------- 9683 -------- Saved 
+Thecus N8900 ---------- 9684 -------- Saved 
+Thecus N4510U ---------- 9685 -------- Saved 
+Thecus N7510  ---------- 9686 -------- Saved 
+Thecus N5550  ---------- 9687 -------- Saved 
+Thecus N4800Eco ---------- 9688 -------- Saved 
+Thecus N2800  ---------- 9689 -------- Saved 
+Thecus N2520  ---------- 9690 -------- Saved 
+Thecus N4520  ---------- 9691 -------- Saved 
+BT100-D Mini-ITX com processador Intel® Atom® ---------- 9694 -------- Saved 
+HD310-Q87 - placa embarcada microATX com processador de 4ª geração Intel® Core™ ---------- 9695 -------- Saved 
+DL310-C226 - placa embarcada microATX com processador de 4ª geração Intel® Xeon® ---------- 9696 -------- Saved 
+RL830-C602/C604 - Placa-mãe Intel ® C602J/C604 EATX ---------- 9698 -------- Saved 
+HM960-QM87 - Módulo básico COM Express com processador de 4ª geração Intel® Core™ ---------- 9699 -------- Saved 
+AEC-6841 (Solução de Controlador Embarcado sem Ventoinha) ---------- 9701 -------- Saved 
+AEC-6620 (Solução de Controlador Embarcado sem Ventoinha) ---------- 9702 -------- Saved 
+FSB-H61G (PICMG 1.0 de tamanho total) ---------- 9703 -------- Saved 
+EMB-9459T Rev (placa-mãe embarcada, Mini-ITX) ---------- 9704 -------- Saved 
+COM-U15 (módulo CPU COM Express) ---------- 9705 -------- Saved 
+AEC-6924 (Solução de Controlador Embarcado sem Ventoinha) ---------- 9706 -------- Saved 
+Aplicação de Qualidade de Roaming QRoam ---------- 9707 -------- Saved 
+QiSolve ---------- 9708 -------- Saved 
+Solução de Cuidado do Cliente QiCare ---------- 9709 -------- Saved 
+Aplicação de Qualidade de Roaming QRoam ---------- 9710 -------- Saved 
+Solução de Garantia de Serviço Omni-Q ---------- 9711 -------- Saved 
+QVIP garantindo SLA ---------- 9712 -------- Saved 
+Solução de Problemas de Chamadas On-line QTrace ---------- 9713 -------- Saved 
+RANalysis: Otimização de rádio: Analisador de Rádio UMTS ---------- 9714 -------- Saved 
+COM-QM77 Rev.A (COM Express) ---------- 9715 -------- Saved 
+EMB-945T (placa-mãe embarcada, Mini ITX) ---------- 9716 -------- Saved 
+Seacliff Trail SDN - habilitado 640G topo da plataforma de referência de Switch Rack ---------- 9717 -------- Saved 
+Placa-mãe VG-QM77 embarcada ---------- 9718 -------- Saved 
+Plataforma de referência Quadrant AMC baseada no processador Intel® Xeon® série E3-1100 e chipset Intel® Communications série 89xx ---------- 9719 -------- Saved 
+PC Industrial eIPC300 embarcado ---------- 9720 -------- Saved 
+POS-3120 ---------- 9721 -------- Saved 
+SP-6112 ---------- 9722 -------- Saved 
+SP-6110 ---------- 9723 -------- Saved 
+SP-6118 ---------- 9724 -------- Saved 
+EPC-8120 ---------- 9725 -------- Saved 
+QuadMo747-x 2000 ---------- 9726 -------- Saved 
+CoreModule 920 ---------- 9727 -------- Saved 
+ETX-CV  ---------- 9728 -------- Saved 
+EDK para CodeMeter ---------- 9729 -------- Saved 
+CoreModule 920 - computador de placa única Extreme Rugged™ PCI/104-Express com a 3ª geração do processador Intel® Core™ ---------- 9730 -------- Saved 
+Placa principal D3236-S Série Industrial ATX ---------- 9731 -------- Saved 
+Módulo XMS XPedite7301 XMC com Intel® Core™ i7 ---------- 9732 -------- Saved 
+Q57AX ---------- 9733 -------- Saved 
+ENC-4211S ---------- 9734 -------- Saved 
+CPCI3010: Módulo Pentium ® M 3U CPCI ---------- 9735 -------- Saved 
+CPC-1814CLD5NA ---------- 9736 -------- Saved 
+Montagem em rack de 2U SCB-9550 Intel ® TBG-36 D, Dual Xeon ® LGA1366 sistema em rede, DDR3, GbE, 10GbE, CF, 4 SATA HDD, LCM, PS redundante ---------- 9737 -------- Saved 
+Montagem em rack de 1U SCB-7968 Intel ® 915GME/910GMLE sistema em rede, 8 x GbE, 1 x 10/100 LAN, CF, SATA, LCM ---------- 9738 -------- Saved 
+Q57AXE ---------- 9739 -------- Saved 
+SBC XCalibur4331 VME Intel® Core™ i7 ---------- 9740 -------- Saved 
+Gabinete de computador robusto sem ventilação SEM-7705 com processador Intel ® Core ™ 2 Duo ---------- 9741 -------- Saved 
+Módulo XPedite7101 PMC/XMC Intel ® Core ™ 2 Duo ---------- 9742 -------- Saved 
+POS-852 ---------- 9743 -------- Saved 
+MEC-9002 ---------- 9744 -------- Saved 
+TabletPOS TP11 ---------- 9745 -------- Saved 
+EC0-1811V2NA ---------- 9746 -------- Saved 
+Tablet POS - TP11 ---------- 9747 -------- Saved 
+JNB-1405 ---------- 9748 -------- Saved 
+CE9-1814V2NA ---------- 9749 -------- Saved 
+O VT005 Shelf Manager é compatível com o Intel® MPCMM0001 ---------- 9750 -------- Saved 
+Computador XV1 Quad-Core VME ---------- 9751 -------- Saved 
+Módulo de potência para &#956;chassi TCA UTC010 ---------- 9752 -------- Saved 
+ERC-2101 ---------- 9753 -------- Saved 
+Módulo XPedite7172 3U VPX Intel ® Core ™ 2 Duo ---------- 9754 -------- Saved 
+SCB-8961 2U montado em rack Intel ® LGA1156 3450 sistema de rede, 32 x GbE, SATA, CF, LCM, PCI, PCI-E x8, PS redundante ---------- 9755 -------- Saved 
+MEC-1003-01 ---------- 9756 -------- Saved 
+iKarPC-W08A (computador veicular com processador Intel ® Atom® Z510 de 1.1 GHz) ---------- 9757 -------- Saved 
+SAILOR-12A (PC Painel Industrial Pesado) ---------- 9758 -------- Saved 
+Placa CPU de tamanho completo SHB-940 Intel® Q45 PICMG1.3 ---------- 9759 -------- Saved 
+AFL-17D-N270 (PC Painel Industrial Leve) ---------- 9760 -------- Saved 
+Tablet médico WebDT 390 ---------- 9761 -------- Saved 
+PSG-SB-3URGEDP01 ---------- 9762 -------- Saved 
+IMBA-XQ354 (Placa-mãe ATX) ---------- 9763 -------- Saved 
+ACT-408A (Terminal de controle de acesso EM/Mifare de 8 polegadas com processador Intel ® Atom® N270 1.6 GHz CPU) ---------- 9764 -------- Saved 
+Placa CPU de tamanho completo WSB-9454 PICMG 1.0 / Intel® Core™2 Duo ---------- 9765 -------- Saved 
+PRA-WB-G41W ---------- 9766 -------- Saved 
+PSG-CB-1URAQDP01 ---------- 9767 -------- Saved 
+PPC-115 ---------- 9768 -------- Saved 
+Servidor GPU ---------- 9769 -------- Saved 
+AFL-F08A (PC Painel de 8 polegadas com moldura plana com solução multi-touch Intel ® Atom® N270 CPU) ---------- 9770 -------- Saved 
+WSB-G41A (PICMG 1.0 com Intel® G41 suporta LGA775 Intel® Core™ 2 Quad CPU) ---------- 9771 -------- Saved 
+SV-H8125 - Placa-mãe DVR ---------- 9772 -------- Saved 
+SHB102, placa de CPU LGA775 Intel® Core ™ 2 Quad PICMG 1,3 de tamanho completo ---------- 9773 -------- Saved 
+AFL-10A-N270（輕型工業平板 PC） ---------- 9774 -------- Saved 
+AFL-10A-N270 (Painel PC Industrial Leve) ---------- 9775 -------- Saved 
+CPC306 - 3U cPCI Intel® Core™2 Duo 和 Intel® Core™ 2 Solo 處理器 ---------- 9776 -------- Saved 
+CPC306 - 3U cPCI e processadores Intel® Core™ 2 Duo  Intel® Core™ 2 Solo ---------- 9777 -------- Saved 
+SGA-5200 高端賭場背板遊戲系統；支援 Intel® Core™2 Duo 處理器，配有 10 x COM、2 x LAN 和 第 2 個 RTC ---------- 9778 -------- Saved 
+Sistema de jogo de cassino com barramento de dados de alta tecnologia SGA-5200; Suporte a processadores Intel® Core™ 2 Duo, com 10 x COM, 2 x LAN e 2ª RTC ---------- 9779 -------- Saved 
+XPedite7130 3U cPCI Intel® Core™2 Duo Module ---------- 9780 -------- Saved 
+Módulo XPedite7130 3U cPCI Intel® Core™ 2 Duo ---------- 9781 -------- Saved 
+PSG-GB-1URARUP02 ---------- 9782 -------- Saved 
+PSG-GB-1URARUP02 ---------- 9783 -------- Saved 
+PPC-1221-0101 ---------- 9784 -------- Saved 
+PPC-1221-0101 ---------- 9785 -------- Saved 
+eBOX630-850-FL- Intel ® Core™ 2 Duo Processor，可達 2.66 GHz，配備 Mobile Intel® GM45 Express Chipset ---------- 9786 -------- Saved 
+eBOX630-850-FL - processador Intel® Core™ 2 Duo de até 2,66 GHz com chipset Mobile Intel® GM45 Express ---------- 9787 -------- Saved 
+SCB-7974 1U Rack-Mount Intel® Core™2 Family Network System、6 x RJ45 GbE、SATA、CF、PCI-E x 8、mini-PCI & PCI ---------- 9788 -------- Saved 
+Sistema de rede  SCB-7974 da família Intel® Core™ 2 montado em rack de 1U, com 6 RJ45 GbE, SATA, CF, PCI-E x8, mini-PCI & PCI ---------- 9789 -------- Saved 
+SV-V4125 - DVR Motherboard ---------- 9790 -------- Saved 
+SV-V4125 - Placa-mãe para DVR ---------- 9791 -------- Saved 
+PSG-CB-4UBAQDP01 ---------- 9792 -------- Saved 
+PSG-CB-4UBAQDP01 ---------- 9793 -------- Saved 
+UPC-12A（重工業平板電腦） ---------- 9796 -------- Saved 
+UPC-12A (computador PC de painel industrial pesado) ---------- 9797 -------- Saved 
+AFL2D-12A-N270（輕工業平板 PC） ---------- 9798 -------- Saved 
+AFL2D-12A-N270 (PC de Painel Industrial Leve) ---------- 9799 -------- Saved 
+Q57MXE ---------- 9800 -------- Saved 
+Q57MXE ---------- 9801 -------- Saved 
+PPC-5150（Intel® Core™2 Duo/ Intel® Celeron® D Panel PC，配有 15" TFT LCD 和觸控式螢幕） ---------- 9802 -------- Saved 
+PPC-5150 (PC de painel Intel® Core™ 2 Duo / Intel® Celeron® D com LCD TFT de 15" e tela de toque) ---------- 9803 -------- Saved 
+AFL-12A-N270（輕工業平板 PC） ---------- 9804 -------- Saved 
+AFL-12A-N270 (PC de Painel Industrial Leve) ---------- 9805 -------- Saved 
+CPC504 - Intel® Core™2 Duo 3U CompactPCI SBC ---------- 9806 -------- Saved 
+CPC504 - Intel® Core™ 2 Duo 3U CompactPCI SBC ---------- 9807 -------- Saved 
+IMB203 - Intel Core™2 Quad ATX 工業級主機板 ---------- 9808 -------- Saved 
+Placa-mãe industrial IMB203 - Intel Core™ 2 Quad ATX ---------- 9809 -------- Saved 
+PSG-GB-2URAQDP01 ---------- 9810 -------- Saved 
+PSG-GB-2URAQDP01 ---------- 9811 -------- Saved 
+PPC-1251-0101 ---------- 9812 -------- Saved 
+PPC-1251-0101 ---------- 9813 -------- Saved 
+AFL-W15A-N270（輕工業平板 PC） ---------- 9814 -------- Saved 
+AFL-W15A-N270 (PC de Painel Industrial Leve) ---------- 9815 -------- Saved 
+eBOX639-836-FL - 採用 Intel® Atom™ N270 1.6GHz Processor 的無風扇嵌入式系統 ---------- 9816 -------- Saved 
+eBOX639-836-FL - Sistema integrado sem ventoinha com processador Intel® Atom™ N270 1.6 GHz ---------- 9817 -------- Saved 
+SV-V6225 - DVR Motherboard ---------- 9818 -------- Saved 
+Placa-mãe SV-V6225 - DVR ---------- 9819 -------- Saved 
+PSG-GB-1URAQDP01 ---------- 9820 -------- Saved 
+PSG-GB-1URAQDP01 ---------- 9821 -------- Saved 
+WebDT362 移動平板電腦 ---------- 9822 -------- Saved 
+WebDT362 mobile tablet ---------- 9823 -------- Saved 
+PPC-5170（Intel® Core™2 Duo/ Intel® Celeron® D Panel PC，使用 17" TFT LCD 和觸控式螢幕） ---------- 9824 -------- Saved 
+PPC-5170 (Intel® Core™2 Duo/ Intel® Celeron® D Panel PC com tela de toque 17" TFT LCD) ---------- 9825 -------- Saved 
+基於 POS-7893 Intel® G41+ICH7、專用於自助終端機的主機板 ---------- 9826 -------- Saved 
+Placa-mãe POS-7893 baseada no Intel® G41+ICH7 dedicada para terminais de autoatendimento ---------- 9827 -------- Saved 
+AFL-15A-N270 (輕型工業平板 PC） ---------- 9828 -------- Saved 
+AFL-15A-N270 (PC com painel industrial leve) ---------- 9829 -------- Saved 
+WebDT 312 醫療平板電腦 ---------- 9830 -------- Saved 
+WebDT 312 medical tablet ---------- 9831 -------- Saved 
+PSG-SB-2URARUP01 ---------- 9832 -------- Saved 
+PSG-SB-2URARUP01 ---------- 9833 -------- Saved 
+SHB108 - 專為 Intel® Xeon® E3 Processor 設計的 PICMG 1.3 SHB ---------- 9834 -------- Saved 
+SHB108 - SHB PICMG 1.3 projetada para processadores Intel® Xeon® E3 ---------- 9835 -------- Saved 
+BIS-6553：基於第 1 代 Intel Core I7 I5 的無風扇嵌入式箱式 PC ---------- 9836 -------- Saved 
+PC em caixa embarcado sem ventoinha BIS-6553 com base na 1ª geração do Intel Core I7/I5 ---------- 9837 -------- Saved 
+AFL-W19A-N270（輕型工業平板 PC） ---------- 9838 -------- Saved 
+AFL-W19A-N270 (PC com painel industrial leve) ---------- 9839 -------- Saved 
+iGO-300H - 嵌入式系統 ---------- 9840 -------- Saved 
+iGO-300H - sistema embarcado ---------- 9841 -------- Saved 
+AIS-Q572（進階系統控制器） ---------- 9842 -------- Saved 
+AIS-Q572 (controlador de sistema avançado) ---------- 9843 -------- Saved 
+AEC-6940（無風扇嵌入式控制器解決方案） ---------- 9844 -------- Saved 
+AEC-6940 (solução de controlador embarcado sem ventoinha) ---------- 9845 -------- Saved 
+PPC-3112HS ---------- 9846 -------- Saved 
+PPC-3112HS ---------- 9847 -------- Saved 
+TEA-N1501 網際網路安全系統 ---------- 9848 -------- Saved 
+Sistema de segurança de Internet TEA-N1501 ---------- 9849 -------- Saved 
+FSB-G41H（全尺寸 SBC） ---------- 9852 -------- Saved 
+FSB-G41H (SBC tamanho normal ) ---------- 9853 -------- Saved 
+FWS-7800（網路裝置） ---------- 9854 -------- Saved 
+FWS-7800 (Equipamento de Network) ---------- 9855 -------- Saved 
+AFL-W410A-N270（寬螢幕 10.2" SVGA  無風扇入牆式平板 PC，裝備Intel® Atom® 處理器 N270 1.6GHz CPU） ---------- 9856 -------- Saved 
+AFL-W410A-N270 (PC com painel de parede sem ventoinha ampla 10.2" SVGA com processador Intel® Atom® N270 CPU 1.6GHz) ---------- 9857 -------- Saved 
+PSG-GB-1URAQDP03 ---------- 9858 -------- Saved 
+PSG-GB-1URAQDP03 ---------- 9859 -------- Saved 
+IMB-Q670（Micro ATX 主機板支援所有使用 Intel® Q67 的 32nm LGA1155 Intel® Core™ i7/i5/i3 CPU，並且支援 DDR3） ---------- 9860 -------- Saved 
+IMB-Q670 (placa-mãe Micro ATX compatível com 32nm LGA1155 Intel® Core™ i7/i5/i3 CPU por Intel® Q67 com compatibilidade DDR3) ---------- 9861 -------- Saved 
+FWS-2300（網路裝置） ---------- 9862 -------- Saved 
+FWS-2300 (Equipamento de Network) ---------- 9863 -------- Saved 
+基於 Intel Intel® Atom® Platform 的 TEA-S1600，用於彩票行業 ---------- 9864 -------- Saved 
+TEA-S1600 baseado na plataforma Intel® Atom® da Intel para o segmento de loteria ---------- 9865 -------- Saved 
+AFL-408（輕型工業平板電腦） ---------- 9866 -------- Saved 
+AFL-408 (PC com painel industrial leve) ---------- 9867 -------- Saved 
+AIS-Q574（進階系統控制器） ---------- 9872 -------- Saved 
+AIS-Q574 (controlador de sistema avançado) ---------- 9873 -------- Saved 
+TANK-GM45A（配備 Intel® Core™2 Duo 處理器的擴展溫度無風扇嵌入式系統） ---------- 9874 -------- Saved 
+TANK-GM45A (Sistema embarcado sem ventoinha de temperatura estendida com processador Intel® Core™2 Duo) ---------- 9875 -------- Saved 
+PSG-TB-2URAQDP01 ---------- 9876 -------- Saved 
+PSG-TB-2URAQDP01 ---------- 9877 -------- Saved 
+用于网络安全应用的 TEA-N1806 ---------- 9878 -------- Saved 
+AFL-08B-N270（裝備 Intel® Atom® N270 處理器的 8" 無風扇平板 PC） ---------- 9881 -------- Saved 
+AFL-08B-N270 (PC com painel 8" sem ventoinha com processador Intel® Atom® N270) ---------- 9882 -------- Saved 
+BIS-6592DV：無風扇嵌入式 PC，配備多個乙太網連接埠和 DVD 磁碟機 ---------- 9883 -------- Saved 
+PC embarcado sem ventoinha BIS-6592DV com múltiplas portas Ethernet e unidade de DVD ---------- 9884 -------- Saved 
+IMBA-G410（ATX 主機板支援配備 FSB 800/1066/1333MHz 處理器的 LGA775 Intel® Core™2 Duo/Quad） ---------- 9885 -------- Saved 
+IMBA-G410 (placa-mãe ATX compatível com processador LGA775 Intel® Core™2 Duo/Quad com FSB 800/1066/1333MHz) ---------- 9886 -------- Saved 
+FW-7874 - 4 Gigabit 1U 網路安全准系統 ---------- 9887 -------- Saved 
+FW-7874 - 4 Gigabit 1U Network Security Barebone ---------- 9888 -------- Saved 
+PSG-CB-1URAQDP02 ---------- 9891 -------- Saved 
+PSG-CB-1URAQDP02 ---------- 9892 -------- Saved 
+PCIE-G41A2（全尺寸 PICMG 1.3 CPU 卡，帶 LGA775 Intel® Core™2 Quad 處理器) ---------- 9893 -------- Saved 
+PCIE-G41A2 (placa de tamanho normal PICMG 1.3 CPU com processador LGA775 Intel® Core™2 Quad) ---------- 9894 -------- Saved 
+AIS-Q450（進階系統控制器） ---------- 9895 -------- Saved 
+AIS-Q450 (controlador de sistema avançado) ---------- 9896 -------- Saved 
+PPC-3315HX ---------- 9897 -------- Saved 
+PPC-3315HX ---------- 9898 -------- Saved 
+BIS-6622IV ---------- 9901 -------- Saved 
+BIS-6622IV ---------- 9902 -------- Saved 
+IMBA-G412ISA（ATX 主機板支援 LGA775 Intel® Core™2 Duo/Core™2 Quad CPU） ---------- 9903 -------- Saved 
+IMBA-G412ISA (placa-mãe ATX suporta CPU LGA775 Intel® Core™ 2 Duo/Core™ 2 Quad) ---------- 9904 -------- Saved 
+LV1 VME 板級電腦 ---------- 9905 -------- Saved 
+Computador nível de placa LV1 VME ---------- 9906 -------- Saved 
+AFL-W10A-N270（配備 Intel® Atom® N270 1.6G 處理器的寬為 10.2" 的 WSVGA AFOLUX PPC） ---------- 9907 -------- Saved 
+AFL-W10A-N270 (WSVGA AFOLUX PPC ampla de 10,2" com processador Intel® Atom® N270 de 1,6 G ) ---------- 9908 -------- Saved 
+AEC-6420（無風扇嵌入式控制器解決方案） ---------- 9909 -------- Saved 
+AEC-6420 (solução de controlador embarcado sem ventoinha) ---------- 9910 -------- Saved 
+配備 16 個序列埠的基於 AFC-6572 Intel® Atom® N270 的無風扇 PC  ---------- 9911 -------- Saved 
+Computador sem ventoinha AFC-6572 com 16 portas seriais e baseado no Intel® Atom N270  ---------- 9912 -------- Saved 
+Emerson NITX-300 系列開發板上的醫療平板電腦解決方案 ---------- 9913 -------- Saved 
+Solução Tablet médico no Conselho de Desenvolvimento do Emerson NITX-300 Series ---------- 9914 -------- Saved 
+配備 Intel® B65/Q67 Chipset 的 TEB M8300 MacroATX 主機板 ---------- 9915 -------- Saved 
+Placa-mãe TEB-M8300 MacroATX com chipset Intel® B65/Q67 ---------- 9916 -------- Saved 
+ACT-08A-N270（配備 Intel® Atom® 處理器的 8.4" 超低功耗智慧型存取控制終端） ---------- 9917 -------- Saved 
+ACT-08A-N270 (Terminal de controle de acesso inteligente de 8,4" de consumo ultra baixo de energia com processador Intel® Atom®) ---------- 9918 -------- Saved 
+IMB C2060（Micro ATX 主機板可支援 32nm LGA1155 Intel® Xeon® 和 Intel® Core™ i3 CPU per Intel® C206、DDR3） ---------- 9919 -------- Saved 
+IMB-C2060 (placa-mãe Micro ATX suporta LGA1155 Intel® Xeon® de 32 nm e CPU Intel® Core™ i3 por Intel® C206 com suporte DDR3) ---------- 9920 -------- Saved 
+FW-1103F ---------- 9921 -------- Saved 
+FW-1103F ---------- 9922 -------- Saved 
+GCS-1100i（綠色通訊伺服器） ---------- 9923 -------- Saved 
+GCS-1100i (servidor de comunicação verde) ---------- 9924 -------- Saved 
+HSB-965P（半長 SBC） ---------- 9927 -------- Saved 
+HSB - 965P (SBC de meio tamanho) ---------- 9928 -------- Saved 
+PSG-GB-2URARUP01 ---------- 9929 -------- Saved 
+PSG-GB-2URARUP01 ---------- 9930 -------- Saved 
+eBOX310-830-FL 緊湊型車載箱型電腦 ---------- 9931 -------- Saved 
+Computador em caixa compacta para veículos eBOX310-830-FL  ---------- 9932 -------- Saved 
+AEC-6611（無風扇嵌入式控制器解決方案） ---------- 9933 -------- Saved 
+AEC-6611 (solução de controlador embarcado sem ventoinha) ---------- 9934 -------- Saved 
+eBOX620-823-FL - 基於 Intel® Atom® Processor 的高效能無風扇嵌入式系統 ---------- 9935 -------- Saved 
+eBOX620-823-FL - sistema embarcado sem ventoinha de alto desempenho baseado em processador Intel® Atom® ---------- 9936 -------- Saved 
+PICOe-PV-D510（配備 Intel® Atom® D510 1.66GHz 的半長 PCIe CPU 卡） ---------- 9937 -------- Saved 
+PICOe-PV-D510 (placa de CPU com metade do tamanho PCIe com Intel® Atom® D510 de 1,66 GHz) ---------- 9938 -------- Saved 
+X7DBR-8 擴充型 ATX ---------- 9939 -------- Saved 
+X7DBR-8 Extended ATX ---------- 9940 -------- Saved 
+X7DBX-i (16.24" x 11.24") ---------- 9941 -------- Saved 
+X7DBX-i (16,24" x 11,24") ---------- 9942 -------- Saved 
+X7SB4 ATX ---------- 9943 -------- Saved 
+X7SB4 ATX ---------- 9944 -------- Saved 
+AEC-6635（嵌入式控制器） ---------- 9945 -------- Saved 
+AEC-6635 (controlador embarcado) ---------- 9946 -------- Saved 
+X7SLM+ mATX ---------- 9947 -------- Saved 
+X7SLM+ mATX ---------- 9948 -------- Saved 
+X7DBE + 擴充型 ATX ---------- 9949 -------- Saved 
+X7DBE+ Extended ATX ---------- 9950 -------- Saved 
+AEC-6612（無風扇嵌入式控制器解決方案） ---------- 9951 -------- Saved 
+AEC-6612 (solução de controlador embarcado sem ventoinha) ---------- 9952 -------- Saved 
+E-1800 R3 ---------- 9953 -------- Saved 
+R3 E-1800 ---------- 9954 -------- Saved 
+AEC-6911（無風扇嵌入式控制器解決方案） ---------- 9955 -------- Saved 
+AEC-6911 (solução de controlador embarcado sem ventoinha) ---------- 9956 -------- Saved 
+PDSMU (8"× 13") ---------- 9957 -------- Saved 
+PDSMU (8" x 13") ---------- 9958 -------- Saved 
+X7DBT (16.4"x 6.5") ---------- 9959 -------- Saved 
+X7DBT (16,4" x 6,5") ---------- 9960 -------- Saved 
+X7SBA ATX ---------- 9961 -------- Saved 
+X7SBA ATX ---------- 9962 -------- Saved 
+X7DBE-X Extended ATX ---------- 9963 -------- Saved 
+X7DBE-X Extended ATX ---------- 9964 -------- Saved 
+15" 多功能一體 Intel® Atom® D525 POS Terminal - PT6000 ---------- 9965 -------- Saved 
+Terminal 15 "All-in-One Intel® Atom® D525 Terminal POS - PT6000 ---------- 9966 -------- Saved 
+FWS-7160（網路裝置） ---------- 9967 -------- Saved 
+FWS-7160 (dispositivo de rede) ---------- 9968 -------- Saved 
+C7Q67 超微嵌入式主機板 ---------- 9969 -------- Saved 
+Placa-mãe embarcada para C7Q67 Supermicro ---------- 9970 -------- Saved 
+X7DB8 Extended ATX ---------- 9971 -------- Saved 
+X7DB8 Extended ATX ---------- 9972 -------- Saved 
+WT22M-RH 多功能一體解決方案 ---------- 9973 -------- Saved 
+Solução All-in-One WT22M-RH ---------- 9974 -------- Saved 
+X7DBR-E + 擴充型 ATX ---------- 9975 -------- Saved 
+E-2900 R3 ---------- 9976 -------- Saved 
+uIBX-200-R10/Z510P（使用 Intel® Atom® Z510P 解決方案的無風扇超緊湊型嵌入式系統） ---------- 9977 -------- Saved 
+SuperServer 2015TA-HTRF ---------- 9978 -------- Saved 
+X7DBT-INF (16.4" x 6.5 ") ---------- 9979 -------- Saved 
+X7SBE ATX ---------- 9980 -------- Saved 
+C2SBM-Q mATX ---------- 9981 -------- Saved 
+X7DBi+ 擴充型 ATX ---------- 9982 -------- Saved 
+FSB-868G（全尺寸 SBC） ---------- 9983 -------- Saved 
+X7DB8+ 擴充型 ATX ---------- 9984 -------- Saved 
+X7DBR-i 擴充型 ATX ---------- 9985 -------- Saved 
+SuperServer 5015A-EHF ---------- 9986 -------- Saved 
+X7DBN 擴充型 ATX ---------- 9987 -------- Saved 
+AIS-Q452（進階系統控制器） ---------- 9988 -------- Saved 
+X7DBU (12" x 13") ---------- 9989 -------- Saved 
+X7SBi ATX ---------- 9990 -------- Saved 
+FSB-945G（全尺寸 SBC） ---------- 9991 -------- Saved 
+FWS-7300（網路設備） ---------- 9992 -------- Saved 
+BIS-6552：基於 X86 的嵌入式多網路傳輸系統 ---------- 9993 -------- Saved 
+SuperServer 5015A-EHF-D525 ---------- 9994 -------- Saved 
+X7DBR-3 擴充型 ATX ---------- 9995 -------- Saved 
+AIS-Q454（進階系統控制器） ---------- 9996 -------- Saved 
+X7DBX-8 (16.24" x 11.24") ---------- 9997 -------- Saved 
+AEC-6872（嵌入式控制器） ---------- 9998 -------- Saved 
+X7DBP-i (16.24" x 11.23") ---------- 9999 -------- Saved 
+X7SB3-F ATX ---------- 10000 -------- Saved 
+FWS-7600（網路設備） ---------- 10001 -------- Saved 
+X7SLM mATX ---------- 10002 -------- Saved 
+AHP-2122 （耐用型 HMI 觸摸面板解決方案） ---------- 10003 -------- Saved 
+SuperServer 5015A-PHF ---------- 10004 -------- Saved 
+PL-80090 ---------- 10005 -------- Saved 
+HT-P112 6U CPCI Intel® 5100 主機板 ---------- 10006 -------- Saved 
+PS3100 ---------- 10007 -------- Saved 
+PL-10560 ---------- 10008 -------- Saved 
+ARK-3202V ---------- 10009 -------- Saved 
+採用 Intel® 945GME 晶片組的 vxWorks 平臺雙顯示 ---------- 10010 -------- Saved 
+POC-S177 ---------- 10011 -------- Saved 
+MB-80100 ---------- 10012 -------- Saved 
+UNO-2174A ---------- 10013 -------- Saved 
+用於直連存儲設備的 ExpressSAS R680 - 6Gb RAID 配接器 ---------- 10014 -------- Saved 
+PL-80310 ---------- 10015 -------- Saved 
+PL-80120 ---------- 10016 -------- Saved 
+PL-10600 ---------- 10017 -------- Saved 
+PCE-5124 LGA775 Intel® Core™2 Quad CPU 卡 ---------- 10018 -------- Saved 
+PCE-5126/PCE-5126QG2/PCE-5126QVG/PCE-5126WG2 ---------- 10019 -------- Saved 
+HT-C105B Intel® Core™ Duo / Core™2 Duo 耐用型主機板 ---------- 10020 -------- Saved 
+PL-60590 ---------- 10021 -------- Saved 
+HIT-W151 ---------- 10022 -------- Saved 
+FSC-1817 ---------- 10024 -------- Saved 
+PL-80140 ---------- 10026 -------- Saved 
+未來一代雙核 Intel® Xeon® ATCA 參考平台 ---------- 10027 -------- Saved 
+PMW19B-GM45 資訊站/一體機 ---------- 10028 -------- Saved 
+15" 一體式 Intel® Atom® N270/D510/D525 POS 終端 - PT5000 系列 ---------- 10029 -------- Saved 
+PL-80350 ---------- 10030 -------- Saved 
+HT-C111 3U CPCI Intel® Atom® Board ---------- 10031 -------- Saved 
+UTC-520 ---------- 10032 -------- Saved 
+GPGPU 裝置 ---------- 10033 -------- Saved 
+ACP-5152（資訊娛樂多點觸控面板解決方案） ---------- 10034 -------- Saved 
+SCB-6975 Desktop Intel® Atom® 網路系統，六個 GbE，CF，SATA，迷你卡，Bypass，Cavium 505 ---------- 10035 -------- Saved 
+PPC-791XF ---------- 10036 -------- Saved 
+PL-60780 ---------- 10037 -------- Saved 
+BIS-6623II ---------- 10038 -------- Saved 
+PCISA-945GSE（半尺寸 CPU 卡） ---------- 10039 -------- Saved 
+PPC-157T ---------- 10040 -------- Saved 
+PL-80360 ---------- 10041 -------- Saved 
+Sandy Creek ---------- 10043 -------- Saved 
+PL-80230 ---------- 10044 -------- Saved 
+COMSys 嵌入式 PC 平台 ---------- 10045 -------- Saved 
+P174B-A320P 醫療患者監測 ---------- 10046 -------- Saved 
+ACP-5182（多點觸控多功能一體平板電腦） ---------- 10047 -------- Saved 
+POC-196 ---------- 10048 -------- Saved 
+HT-P104 6U CPCI 第 2 代 Intel® Core™2 Duo 處理器主機板 ---------- 10050 -------- Saved 
+AFL-057A（5.7" 乙太網供電，POE，配備 Intel® Atom® Z510/Z530 處理器的多功能一體 PC） ---------- 10051 -------- Saved 
+POS PC- AU3810 / AU3820 ---------- 10052 -------- Saved 
+PL-10450 ---------- 10053 -------- Saved 
+PL-80260 ---------- 10054 -------- Saved 
+POC-227 ---------- 10055 -------- Saved 
+S10A ---------- 10056 -------- Saved 
+FWA-3210 ---------- 10057 -------- Saved 
+BIS-6625 ---------- 10058 -------- Saved 
+XCalibur4301 ---------- 10059 -------- Saved 
+PPC-179T ---------- 10060 -------- Saved 
+PIN-M106 ---------- 10061 -------- Saved 
+AIMB-781 ---------- 10062 -------- Saved 
+XPedite7470 VPX-REDI，採用第 2/3 代 Intel® Core™ i7 ---------- 10063 -------- Saved 
+HIT-W121 ---------- 10064 -------- Saved 
+ARK-1120 ---------- 10065 -------- Saved 
+FSC-1814V2NA ---------- 10066 -------- Saved 
+PIT-1502W ---------- 10067 -------- Saved 
+POC-S197 ---------- 10068 -------- Saved 
+ASMB-781 ---------- 10069 -------- Saved 
+工業級 ATX 主機板： JNAF91R-G41 (Intel® Core™ 2 Duo 處理器) ---------- 10070 -------- Saved 
+ARK-1360 ---------- 10071 -------- Saved 
+XPedite7332 ---------- 10072 -------- Saved 
+tpc-1251H ---------- 10073 -------- Saved 
+AIMB-763 Intel® Core™2 Duo ATX 主機板 ---------- 10074 -------- Saved 
+POC-155 ---------- 10075 -------- Saved 
+PPC-125T ---------- 10076 -------- Saved 
+嵌入式 Mini-ITX 主機板： JNF9F-H61（第 2 代 Intel® Core™ i3、i5、i7 處理器） ---------- 10078 -------- Saved 
+31.5" 高清互動數位電子看板系統- DSA-132 ---------- 10079 -------- Saved 
+AIMB-556 Intel® Core™2 Duo ATX 主機板 ---------- 10080 -------- Saved 
+AIMB-764 Intel® Core™2 Quad/ Core™2 Duo ATX ---------- 10081 -------- Saved 
+XCalibur4401 ---------- 10082 -------- Saved 
+PPC-L158T ---------- 10083 -------- Saved 
+MIC-5332 ATCA 10GbE 雙插槽 CPU 刀片式伺服器，採用 Intel® Xeon® Processor E5-2600 ---------- 10084 -------- Saved 
+POC-176 ---------- 10085 -------- Saved 
+AFC-6571 ---------- 10086 -------- Saved 
+ASMB-920IR ---------- 10087 -------- Saved 
+ARK-1503 ---------- 10088 -------- Saved 
+MIC-3395 ---------- 10089 -------- Saved 
+POC-S157 ---------- 10090 -------- Saved 
+XPedite7371 ---------- 10091 -------- Saved 
+42" 全 HD 工業級數位電子看板系統- DSH-142 ---------- 10092 -------- Saved 
+FWA-1305 ---------- 10094 -------- Saved 
+PICA®200 Lite 3D Graphics IP ---------- 10095 -------- Saved 
+PPC-177T ---------- 10096 -------- Saved 
+TS-659 Pro+ ---------- 10097 -------- Saved 
+POC-S176 ---------- 10098 -------- Saved 
+AIMB-581 ---------- 10099 -------- Saved 
+FWA-6510 2U 網路應用平台基於 Intel® Xeon® 處理器 E5-2600 系列 ---------- 10101 -------- Saved 
+OFP240-825 24" 全 HD 數位電子看板系統 ---------- 10103 -------- Saved 
+嵌入式 Mini-ITX 主機板： JNF9A-Q67（第 2 代 Intel® Core™ i3、i5、i7 處理器） ---------- 10104 -------- Saved 
+Intel® Atom® E6xx Reference Platform ---------- 10105 -------- Saved 
+Windows 嵌入式伺服器 ---------- 10107 -------- Saved 
+COMe9010 耐用型嵌入式核心模組 ---------- 10108 -------- Saved 
+嵌入式 Mini-ITX 主機板： JNC9E-525 (Intel® Atom™ D525 處理器) ---------- 10109 -------- Saved 
+COM Express CEZ5XL ---------- 10110 -------- Saved 
+連接的服務閘道 ---------- 10111 -------- Saved 
+Self-service Terminals Motherboard SV1-D5226-M ---------- 10112 -------- Saved 
+嵌入式 3.5"SBC 主機板： JNF36-2600 (Intel® Atom® N2600 處理器) ---------- 10113 -------- Saved 
+Wind River VxWorks ---------- 10114 -------- Saved 
+AEV-6312（車載嵌入式控制器解決方案） ---------- 10115 -------- Saved 
+Wind River Platform for Industrial Device ---------- 10116 -------- Saved 
+TS-EC879U-RP ---------- 10117 -------- Saved 
+eKINO-945GSE（Mini ITX 主機板） ---------- 10118 -------- Saved 
+GENE-9310（3.5" 超緊湊型單板電腦） ---------- 10119 -------- Saved 
+電信級 Linux 平台 ---------- 10120 -------- Saved 
+TS-859U-RP + ---------- 10121 -------- Saved 
+DA6011 ---------- 10122 -------- Saved 
+AIMB-252 Intel® Pentium® M Mini ITX 主機板 ---------- 10123 -------- Saved 
+EPIC-9457W1（寬溫度板） ---------- 10124 -------- Saved 
+嵌入式 3.5"SBC 主機板： JNF36-2800 (Intel® Atom® N2800 處理器) ---------- 10125 -------- Saved 
+MITX-6910 - 基於 Intel® QM57 的 Mini-ITX 主機板 ---------- 10126 -------- Saved 
+Wind River Workbench ---------- 10127 -------- Saved 
+Tuxera NTFS for Embedded Systems ---------- 10128 -------- Saved 
+N8900 ---------- 10129 -------- Saved 
+SOM-6670 Qseven 規範。 模組級系統採用 Intel® Atom® E6XX Processor ---------- 10130 -------- Saved 
+RDM Embedded Plus Edition（RDM 嵌入增強版） ---------- 10131 -------- Saved 
+PICA®200 3D Graphics IP ---------- 10132 -------- Saved 
+面向 Intel 的 SeaWind OpenGL 圖形驅動程式 ---------- 10133 -------- Saved 
+CL345-1 - 無風扇 IPC ---------- 10134 -------- Saved 
+OneStor Embedded Storage Platforms（OneStor 嵌入式存儲平台） ---------- 10135 -------- Saved 
+PDSLM Mini ITX ---------- 10136 -------- Saved 
+TS-559 Pro II ---------- 10137 -------- Saved 
+CM-7301 Intel® Core™2 Duo COM Express 模組配有 CRT/18-bit LVDS、LAN & Audio ---------- 10138 -------- Saved 
+SiGa CX-100 ---------- 10139 -------- Saved 
+嵌入式 Mini-ITX 主機板： JNF98-QM57-LF (Intel® Core™ i3, i5, i7 Processor) ---------- 10140 -------- Saved 
+ECN-381B (Intel® Core™ 2 Duo 45nm 行動無風扇多媒體箱) ---------- 10141 -------- Saved 
+EC7-1816L2NA ---------- 10142 -------- Saved 
+嵌入式 Mini-ITX 主機板： JNC98-525E-LF (Intel® Atom™ D525 處理器) ---------- 10143 -------- Saved 
+NanoCOM-U15 A2.0（COM Express CPU 模組） ---------- 10144 -------- Saved 
+FW-7911 NORCO 2U 12LAN XEON 網路安全準系統 ---------- 10145 -------- Saved 
+QM57IX ---------- 10146 -------- Saved 
+「Golden-Eye III」S902R 堅固耐用、小巧輕便、具有雙核/四核 i7® 系統/可行動驅動器 ---------- 10147 -------- Saved 
+SysCentreModule™ Series-COMe9440 ---------- 10148 -------- Saved 
+EMB-4670 EPIC 主機板採用 Intel® Atom® E620T Processor ---------- 10149 -------- Saved 
+NS830 ---------- 10150 -------- Saved 
+Wind River 測試管理 ---------- 10151 -------- Saved 
+Beagle USB 480 協定分析儀 ---------- 10152 -------- Saved 
+UNO-2182 Core™2 雙核嵌入式自動化電腦 ---------- 10153 -------- Saved 
+ACP-5185 ---------- 10154 -------- Saved 
+IT-MPC200 ---------- 10155 -------- Saved 
+EMB-9459T Rev. A2.0 (嵌入式主機板) ---------- 10156 -------- Saved 
+BL345-1 - 無風扇 IPC ---------- 10157 -------- Saved 
+IFC-9400 低功率 Qseven 計算平台 ---------- 10158 -------- Saved 
+TS-859 Pro+ ---------- 10159 -------- Saved 
+TEB I6110 數位電子看板 ---------- 10160 -------- Saved 
+Intel® 處理器的嵌入式圖形驅動程式 ---------- 10161 -------- Saved 
+COM Express 模組 EUROCOM 500 ---------- 10162 -------- Saved 
+PI-8040U-RP Enterprise NVR 安全解決方案 ---------- 10163 -------- Saved 
+ACP-5212 ---------- 10164 -------- Saved 
+MANO800 LGA1156 Intel® Core™ i7/i5/i3/Pentium Mini ITX SBC，配有 Intel® Q57 晶片組 ---------- 10165 -------- Saved 
+SBC86860 - Core™2 Duo/Core™2 Quad Mini ITX SBC ---------- 10166 -------- Saved 
+N7700PRO ---------- 10167 -------- Saved 
+Intel® Atom® 的 Windows CE 6.0 參考 BSP ---------- 10168 -------- Saved 
+BIS-6580 - Intel® Atom® N270 型 Fanless Embedded Computer ---------- 10169 -------- Saved 
+SV-F2726-H - 自助端子主機板 ---------- 10170 -------- Saved 
+ETX7100： Intel® Pentium® M ETX 模組 ---------- 10171 -------- Saved 
+COM Express CEZ5XT ---------- 10172 -------- Saved 
+EP830、插槽 M Intel&reg; 行動 Core™ 2 Duo、Core™ Duo、Core™ Solo EPIC SBC ---------- 10173 -------- Saved 
+NanoCOM-TC (COM Express CPU 模組) ---------- 10174 -------- Saved 
+NANO-PV-D510A（EPIC SBC，採用雙核 Intel® Atom® D510 處理器） ---------- 10175 -------- Saved 
+EMB-LN9T (嵌入式主機板) ---------- 10176 -------- Saved 
+HT-3008 3.5" Intel® Atom® N270 SBC ---------- 10177 -------- Saved 
+Windows Embedded Compact 7（原 CE） ---------- 10178 -------- Saved 
+VS-8024 ---------- 10179 -------- Saved 
+MITX-6893 Intel® G41 Based Mini-ITX Motherboard ---------- 10180 -------- Saved 
+Windows Embedded CE 訓練 ---------- 10181 -------- Saved 
+BIS-6591Intel® Atom® N270 基於無風扇嵌入式計算機。 ---------- 10182 -------- Saved 
+SV4-F2742-iG - 網路安全主機板 ---------- 10183 -------- Saved 
+HT-E105 Intel® Core™ Duo ETX 模組 ---------- 10184 -------- Saved 
+嵌入式 Mini-ITX 主機板： JNC9KSL-2550 (Intel® Atom™ D2550 處理器) ---------- 10185 -------- Saved 
+NS2430 ---------- 10186 -------- Saved 
+適用於 Intel® Atom® 的 Windows Embedded Compact 7 reference BSP ---------- 10187 -------- Saved 
+PICA®200 for FPGA 3D Graphics IP ---------- 10188 -------- Saved 
+Windows Embedded Standard 7 訓練 ---------- 10189 -------- Saved 
+AIMB-258 Intel® Core™2 Duo Mini ITX 主機板 ---------- 10190 -------- Saved 
+適用於精簡用戶端的 Windows Embedded ---------- 10191 -------- Saved 
+EM-7500 Intel® Pentium® M Embedded SBC，配有 VGA/LVDS、8 COM、PC/104、3 LAN、Audio & SSD ---------- 10192 -------- Saved 
+Beagle USB 12 Protocol Analyzer ---------- 10193 -------- Saved 
+嵌入式 Mini-ITX 主機板： JNF99FL-525 (Intel® Atom™ D525 處理器) ---------- 10194 -------- Saved 
+TS-EC1279U-RP ---------- 10195 -------- Saved 
+BL306-1 - 超級迷你無風扇 PC ---------- 10196 -------- Saved 
+嵌入式 Mini-ITX 主機板： JNC9C-455-LF (Intel® Atom™ N455 處理器) ---------- 10197 -------- Saved 
+MITX 6930&#9472;Mini ITX 主機板，採用 Intel® NM10 晶片組 ---------- 10198 -------- Saved 
+WAFER-945GSE3（3.5 SBC 配備 Intel® Atom® 處理器 N270 1.6G，LVDS/TTL，4 COM 和 PC/104) ---------- 10199 -------- Saved 
+嵌入式 3.5" SBC 主機板： JNF33-270-LF (Intel® Atom™ N270 處理器) ---------- 10200 -------- Saved 
+RealSSD P300 企業固態磁碟機 ---------- 10201 -------- Saved 
+TS-1279U-RP ---------- 10202 -------- Saved 
+SysCentreModule™ STM9040 系列 ---------- 10203 -------- Saved 
+Flypaper ---------- 10204 -------- Saved 
+SV1-D5226-L - 自助終端機主機板 ---------- 10205 -------- Saved 
+MIC-5212 ---------- 10206 -------- Saved 
+EMB-9658T（嵌入式主機板） ---------- 10207 -------- Saved 
+COM-LN (COM Express CPU 模組) ---------- 10208 -------- Saved 
+TS-459 Pro II ---------- 10209 -------- Saved 
+NanoCOM-LN (COM Express CPU 模組) ---------- 10210 -------- Saved 
+用於 Intel® Atom® 處理器 E600 系列的 IVI IOH ---------- 10211 -------- Saved 
+Leopard (VL-EPM-35) PC-104 單板計算機 ---------- 10212 -------- Saved 
+ICE-GM45A (ETX / COM EXPRESS / Q7) ---------- 10213 -------- Saved 
+採用 Intel® Atom® 處理器 N450（單核）的 EMB-4870NORCO EPIC 嵌入式主機板 ---------- 10214 -------- Saved 
+產品開發解決方案 ---------- 10215 -------- Saved 
+SMAPH®-H Vector/3D Hybrid IP ---------- 10216 -------- Saved 
+Raima Database Manager (RDM) ---------- 10217 -------- Saved 
+CL306-1 - 超迷你無風扇 PC ---------- 10218 -------- Saved 
+TKS-E50-9456（Turn-Key 主機殼，EmBOX） ---------- 10219 -------- Saved 
+TS-459U-RP+ ---------- 10220 -------- Saved 
+DSB-300 - 獨立數位電子看板框 ---------- 10221 -------- Saved 
+SOM-5890 ---------- 10222 -------- Saved 
+AL306-1 - 超迷你無風扇 PC ---------- 10223 -------- Saved 
+嵌入式 Mini-ITX 主機板： JNF96FL-525-LF (Intel® Atom™ D525 處理器) ---------- 10224 -------- Saved 
+工業級 DRAM 模組 ---------- 10225 -------- Saved 
+CPC-8408H-2 ---------- 10226 -------- Saved 
+TKS-G20-9310（Turn-Key 主機殼，EmBOX） ---------- 10227 -------- Saved 
+GENE-LN05W1（寬溫度范圍主機板） ---------- 10228 -------- Saved 
+COM-LN B1.0 (COM Express CPU 模組) ---------- 10229 -------- Saved 
+MITX-6920 Intel® QM67 Based Mini ITX 主機板 ---------- 10230 -------- Saved 
+NANO-PV-D5252（EPIC SBC，採用 Intel® Atom® D525 處理器和 DDR3 解決方案） ---------- 10231 -------- Saved 
+NET-1815VD6N ---------- 10232 -------- Saved 
+Pareon ---------- 10233 -------- Saved 
+Beagle I2C/SPI/MDIO Protocol Analyzer ---------- 10234 -------- Saved 
+SysCentreModule™ COMe9420 系列 ---------- 10235 -------- Saved 
+SYS9410 便攜計算平台 ---------- 10236 -------- Saved 
+TS-879U-RP ---------- 10237 -------- Saved 
+PMI：: Intel® Pentium® M PC/104 module ---------- 10238 -------- Saved 
+COM Express CEQM57XT ---------- 10239 -------- Saved 
+多 I/O 序列 NOR 快閃記憶體 (N25Q) ---------- 10240 -------- Saved 
+TEB-M7063 Mini ITX Board 採用第 3 代 Intel® Atom® ---------- 10241 -------- Saved 
+NANDrive 嵌入式 SATA/PATA SSDs ---------- 10242 -------- Saved 
+FlexNet Producer Suite ---------- 10243 -------- Saved 
+COM1800-耐用型嵌入式核心模組 ---------- 10244 -------- Saved 
+Q35SBC 高性能嵌入式多核心 SBC ---------- 10245 -------- Saved 
+SV1-D5226 - 自助終端機主機板 ---------- 10246 -------- Saved 
+104-1715CLD2N ---------- 10247 -------- Saved 
+MIC-5203 ---------- 10248 -------- Saved 
+StorFly 200 – 輕薄 SATA ---------- 10249 -------- Saved 
+PCM-9363 ---------- 10250 -------- Saved 
+CAPA801 - 3.5 英吋嵌入式主機板，支援 Intel® Atom™ Processor D425/N455/D525 和 DDR3 ---------- 10251 -------- Saved 
+系統整合 ---------- 10252 -------- Saved 
+yaSSL 嵌入式 Web 伺服器 ---------- 10253 -------- Saved 
+NANO-HM551（EPIC SBC 支援用於 Intel® Core™i7 /i5 /i3/Celeron® CPU 的 Socket G1） ---------- 10254 -------- Saved 
+Windows Embedded Automotive 7 ---------- 10255 -------- Saved 
+COM-45SP (COM Express CPU 模組) ---------- 10256 -------- Saved 
+XPedite7330 ---------- 10257 -------- Saved 
+WebDT MS1600 多螢幕裝置 ---------- 10258 -------- Saved 
+採用 Intel® GM45 的 MITX-6892:Mini-ITX 主機板 ---------- 10259 -------- Saved 
+CPC1600 - PC/104-Plus Intel® Pentium® M SBC ---------- 10260 -------- Saved 
+EBPC-3500L-61SE Intel® Atom™ N270 嵌入式系 ---------- 10261 -------- Saved 
+ClusterStor 3000 HPC 存儲解決方案 ---------- 10262 -------- Saved 
+VLP – 微型 ---------- 10263 -------- Saved 
+EC3-1813 ---------- 10264 -------- Saved 
+FSC-1814V2NAR ---------- 10265 -------- Saved 
+用於 Intel® Atom® 處理器 E600 系列的 Mediaphone IOH ---------- 10266 -------- Saved 
+Mamba (VL-EBX-37) EBX 單板計算機 ---------- 10267 -------- Saved 
+TS-239 Pro II+ ---------- 10268 -------- Saved 
+WebDT MS200 多螢幕裝置 ---------- 10269 -------- Saved 
+Q57MX ---------- 10270 -------- Saved 
+BroadSign Digital Signage Software（BroadSign 數位標牌軟體） ---------- 10271 -------- Saved 
+Lucero ---------- 10272 -------- Saved 
+TS-879 Pro ---------- 10273 -------- Saved 
+Windows Embedded Enterprise System（Windows 嵌入式企業系統） ---------- 10274 -------- Saved 
+用于网络安全应用的 TEA-N2704 ---------- 10276 -------- Saved 
+TEB-N7040-5A在网络安全中的应用 ---------- 10277 -------- Saved 
+适用于网络通信的 TEB-N7040-4D ---------- 10279 -------- Saved 
+945CMX-2 Com Express 模組 ---------- 10280 -------- Saved 
+RTX 2009 SMP ---------- 10281 -------- Saved 
+WebDT MS400 Multi Screen Appliance（WebDT MS400 多螢幕裝置） ---------- 10282 -------- Saved 
+EMB-5872 5.25" 尺寸嵌入式主機板採用 Intel® Atom® D510 Processor ---------- 10283 -------- Saved 
+配有 Intel® Atom® N450 處理器的 BIS-7870 Network Security Computer ---------- 10284 -------- Saved 
+945GSBC 3.5" 單板電腦 ---------- 10285 -------- Saved 
+PCMB-6872--PC104 嵌入式主機板，基於 Intel® Atom® N450 ---------- 10286 -------- Saved 
+DVMB-764 ATX 主機板 ---------- 10288 -------- Saved 
+基諾-945GSE2（Mini-ITX SBC 配有 Intel® Atom® N270 1.6G） ---------- 10289 -------- Saved 
+TS-659 Pro II ---------- 10290 -------- Saved 
+X9SCV-Q - Mini-ITX Motherboard ---------- 10291 -------- Saved 
+AHP-1152（HMI 平板 PC） ---------- 10292 -------- Saved 
+Cinnamon Bay EX ---------- 10293 -------- Saved 
+SBC86832、Core™2 Duo Mini ITX SBC 配有 DVI-I ---------- 10294 -------- Saved 
+CorBrick 945GSB Micro Industrial System ---------- 10295 -------- Saved 
+ECN-581A-QM57（雙 DVI 顯示多媒體箱配有 Intel® Core™ i5 處理器） ---------- 10296 -------- Saved 
+DYNASIGN Online Service ---------- 10297 -------- Saved 
+MB-73200 ---------- 10298 -------- Saved 
+Android、Linux 和 Windows Embedded 專長 ---------- 10300 -------- Saved 
+Hermes ---------- 10301 -------- Saved 
+CAPA800- Intel® Atom™ N450/ D410/ D510 3.5" 嵌入式 SBC，配備 Intel® ICH8M Chipset ---------- 10302 -------- Saved 
+SiGa XL-100 ---------- 10304 -------- Saved 
+COM-U15 A2.0 (COM Express CPU 模組) ---------- 10305 -------- Saved 
+SMAPH®-F Vector Graphics IP ---------- 10306 -------- Saved 
+SM750 Graphics 處理器 ---------- 10307 -------- Saved 
+NOVA-945GSE (5.25"SBC) ---------- 10308 -------- Saved 
+MITX-6870 Mini-ITX 嵌入式主機板基於 Intel® Atom® N450/D410/D510 Processor ---------- 10309 -------- Saved 
+AGP-3175（堅固耐用觸控面板電腦） ---------- 10310 -------- Saved 
+PM-945GSE（PCI-104 SBC 配有 Intel® Atom® 1.6 GHz CPU） ---------- 10311 -------- Saved 
+AIMB-272 ---------- 10312 -------- Saved 
+NOVA-GM45A（5.25" SBC 配有 Socket P for 45nm mobile Intel® Core™2 Quad/ Duo CPU） ---------- 10313 -------- Saved 
+Data Storage Serial NOR Flash Memory (M25P) ---------- 10314 -------- Saved 
+MB-80190 ---------- 10315 -------- Saved 
+VTrak Ex30 ---------- 10316 -------- Saved 
+Windows Embedded Standard 7 ---------- 10317 -------- Saved 
+Flypaper Digital Signage 版本 ---------- 10318 -------- Saved 
+SCM9100 Standard PC/104 小外形且配有堅固耐用的嵌入式核心模組 ---------- 10319 -------- Saved 
+SBC81205 - Intel® Core™2 Quad PICMG 1.0 全尺寸 CPU 卡 ---------- 10320 -------- Saved 
+IFC-9450 低高度 Mini-ITX 嵌入式電腦 ---------- 10321 -------- Saved 
+DVS-500 視頻監控平台 ---------- 10322 -------- Saved 
+EC5-1712CLDNA (B) ---------- 10323 -------- Saved 
+KINO-G410（Mini-ITX SBC 支援 socket LGA775 Intel® Core™2 Quad CPU） ---------- 10324 -------- Saved 
+NANO-945GSE2 (EPIC SBC) ---------- 10325 -------- Saved 
+DDR2 SDRAM ---------- 10326 -------- Saved 
+MB 80200 ---------- 10327 -------- Saved 
+AIMB-210 ---------- 10328 -------- Saved 
+SMAPH®-S 3D Graphics IP ---------- 10329 -------- Saved 
+EC7-1814L2NA ---------- 10330 -------- Saved 
+COM-LN A1.0（COM Express CPU 模組） ---------- 10331 -------- Saved 
+CPC805 - EPIC SBC 基於 Intel® Atom® N450 1.66 GHz，配有 COM104 擴展連接器 ---------- 10332 -------- Saved 
+擴展的溫度記憶體模組 ---------- 10333 -------- Saved 
+EC4-1812CLDNA ---------- 10334 -------- Saved 
+AQ7-LN（Qseven 模組） ---------- 10335 -------- Saved 
+N2200XXX ---------- 10336 -------- Saved 
+AL345-1 - 無風扇 IPC ---------- 10337 -------- Saved 
+SV6-G6614 ---------- 10338 -------- Saved 
+HT EC05 Intel® Core™ Duo/ Core™2 Duo COM Express Computer-on-Module ---------- 10339 -------- Saved 
+Intel® Atom® 的 Lynx Secure ---------- 10340 -------- Saved 
+嵌入式 Mini-ITX 主機板： JNC9MGL-525 (Intel® Atom™ D525 處理器) ---------- 10341 -------- Saved 
+CampaignManager Hostable/SAAS 數位電子看板系統 ---------- 10342 -------- Saved 
+數位引擎 DE67-HA ---------- 10343 -------- Saved 
+EMB-9459TW1 Rev. A（寬溫度板） ---------- 10344 -------- Saved 
+Wind River Simics ---------- 10345 -------- Saved 
+AEC-6860（嵌入式控制器、BOXER 2） ---------- 10346 -------- Saved 
+AIMB-213 ---------- 10347 -------- Saved 
+嵌入式工程服務 ---------- 10348 -------- Saved 
+半導體服務 ---------- 10349 -------- Saved 
+N4200PRO ---------- 10350 -------- Saved 
+PICOe-945GSE（半長 CPU 卡） ---------- 10351 -------- Saved 
+CyaSSL 嵌入式 SSL 庫 ---------- 10352 -------- Saved 
+UTC-W101 ---------- 10353 -------- Saved 
+TS-439 Pro II + ---------- 10354 -------- Saved 
+NANO-GM45A2（EPIC SBC 支援帶 Intel® GM45 & ICH9M 平台的 Intel® 45nm 行動 Core™2 Duo 處理器） ---------- 10355 -------- Saved 
+N5200XXX ---------- 10356 -------- Saved 
+Intel® BLDK 自訂支援 ---------- 10357 -------- Saved 
+LGX PT901 - 極端環境無風扇系統，配有 Intel© Core™2 Duo ---------- 10358 -------- Saved 
+電子設計服務 ---------- 10359 -------- Saved 
+DDR3 ---------- 10361 -------- Saved 
+嵌入式 Mini-ITX 主機板： JNF9C-2600 (Intel® Atom® N2600 處理器) ---------- 10362 -------- Saved 
+嵌入式系統的 Tuxera exFAT ---------- 10363 -------- Saved 
+UEFI 韌體解決方案 ---------- 10364 -------- Saved 
+ETX-LN（ETX CPU 模組） ---------- 10365 -------- Saved 
+IBX-300（適用於數位安全和監視的無風扇雙核機，搭載 Intel® Atom® 處理器 D510） ---------- 10366 -------- Saved 
+Tiger (VL-EPM-24) PC/104-Plus 單板電腦 ---------- 10367 -------- Saved 
+NOVA HM551（5.25" SBC，配有插槽 G1 32nm/45nm Intel® Core™ i7/ i5/ i3 和 Intel® Celeron® Processor） ---------- 10368 -------- Saved 
+ALTELL HyperBIOS ---------- 10369 -------- Saved 
+LGX AU110 - 帶 Intel© Atom™ 的寬溫無風扇系統 ---------- 10370 -------- Saved 
+嵌入式 Mini-ITX 主機板： JNF9C-2800 (Intel® Atom® N2800 處理器) ---------- 10371 -------- Saved 
+CommandCenterHD ---------- 10372 -------- Saved 
+ICE-945GSE COM Express Basic Type 2 模組 ---------- 10373 -------- Saved 
+SCM9200 PC104 / PC104 + 堅固耐用的嵌入式核心模組 ---------- 10374 -------- Saved 
+KINO-HM551（Mini-ITX SBC，支援插槽 G1，配有 mobile Intel® Core™ i7/ i5/ i3 和 Celeron® CPU） ---------- 10375 -------- Saved 
+LGX AU115 Intel© Atom™ 無風扇加固型電腦 ---------- 10376 -------- Saved 
+WAFER-945GSE (3.5" SBC) ---------- 10377 -------- Saved 
+CampaignManager 數位電子看板軟體 ---------- 10378 -------- Saved 
+TS-259 Pro + ---------- 10379 -------- Saved 
+NANO-945GSE3（EPIC SBC，配備 Intel® Atom® N270 1.6GHz） ---------- 10381 -------- Saved 
+DDR3 SDRAM ---------- 10382 -------- Saved 
+COM Express CEQM57 ---------- 10383 -------- Saved 
+WebDT 180 精簡用戶端 ---------- 10384 -------- Saved 
+LGX AU910 Intel© Core™ 行動式無風扇加固型電腦 ---------- 10385 -------- Saved 
+TKS-G20-9455（主機殼，EmBOX） ---------- 10386 -------- Saved 
+NANO-QM57A（EPIC SBC，配有 Intel® Core™/i7/i5/i3 行動處理器） ---------- 10387 -------- Saved 
+HT-E108 Intel® Atom® N270 ETX 模組 ---------- 10388 -------- Saved 
+NET-1816VD6N-2BP ---------- 10389 -------- Saved 
+MB-80050 ---------- 10390 -------- Saved 
+SiGa CX-200 ---------- 10391 -------- Saved 
+1UR - SolidLogic機架安裝系統，配有 Intel© Atom™ ---------- 10392 -------- Saved 
+Android 遠端資訊處理 ---------- 10393 -------- Saved 
+COM Express CEQM67 ---------- 10394 -------- Saved 
+ADI Engineering 的免版稅的 IA 引導載入程式解決方案 ---------- 10395 -------- Saved 
+LGX PT110 - 極端環境無風扇系統，配有 Intel© Atom ™ ---------- 10396 -------- Saved 
+Windows 嵌入式手持裝置 6.5 ---------- 10397 -------- Saved 
+E600 系列 CoreExpress 尺寸 CPU 模組 ---------- 10398 -------- Saved 
+X9SCV-QV4 超微嵌入式主機板 ---------- 10399 -------- Saved 
+COM Express CEQM67HD ---------- 10400 -------- Saved 
+MP67-D ---------- 10401 -------- Saved 
+採用 Intel© Atom™ 的 GS-L05 - SolidLogic 無風扇 Mini-ITX 系統 ---------- 10402 -------- Saved 
+PHSS-210 存儲伺服器 ---------- 10403 -------- Saved 
+GENE-U15B (ESB 3.5") ---------- 10404 -------- Saved 
+AEC-6876（嵌入式控制器） ---------- 10405 -------- Saved 
+PFM-LNP（PC/104 模組） ---------- 10406 -------- Saved 
+AHP-2153（觸控式螢幕） ---------- 10407 -------- Saved 
+GENE-QM67 (3.5" SBC) ---------- 10408 -------- Saved 
+PCM-LN02（緊湊板） ---------- 10409 -------- Saved 
+COM-CV Rev.B (COM Express) ---------- 10410 -------- Saved 
+MEC-5003B ---------- 10411 -------- Saved 
+EMB-H61A（Mini-ITX 主機板） ---------- 10412 -------- Saved 
+TKS-G21-CV05（嵌入箱） ---------- 10413 -------- Saved 
+X7DB3 擴充型 ATX ---------- 10414 -------- Saved 
+EC7-1818CLD2NA ---------- 10415 -------- Saved 
+LGX AG150 Intel© Atom™ 無風扇迷你工業電腦 ---------- 10416 -------- Saved 
+GENE-9455 Rev.B (3.5" ESB) ---------- 10417 -------- Saved 
+AEC-6967（嵌入式控制器） ---------- 10418 -------- Saved 
+V7875 ---------- 10419 -------- Saved 
+AHP-2176（觸控式螢幕） ---------- 10420 -------- Saved 
+LGX PT912 - 採用 Intel© Core™ i5/i7 的極端環境無風扇系統 ---------- 10421 -------- Saved 
+GENE-QM77 (3.5" SBC) ---------- 10422 -------- Saved 
+嵌入式系統設計 ---------- 10423 -------- Saved 
+GCS-1500i（綠色通訊伺服器） ---------- 10424 -------- Saved 
+AEC-6612 Rev.B（嵌入式控制器） ---------- 10425 -------- Saved 
+GENE-CV05 (ESB 3.5") ---------- 10426 -------- Saved 
+AFP-6123（觸控式面板電腦） ---------- 10427 -------- Saved 
+GENE-9655 (3.5" ESB) ---------- 10428 -------- Saved 
+GCS-2500（綠色通訊伺服器） ---------- 10429 -------- Saved 
+GENE-LN05 Rev.B (3.5" ESB) ---------- 10430 -------- Saved 
+AEC-6613（嵌入式控制器） ---------- 10431 -------- Saved 
+KINO-945GSE（Mini ITX 主機板） ---------- 10432 -------- Saved 
+工業級 Micro ATX 主機板： JNMF91-G41 (Intel® Core™ 2 Duo 處理器) ---------- 10433 -------- Saved 
+AFP-6152（觸摸面板電腦） ---------- 10434 -------- Saved 
+CT12 ---------- 10435 -------- Saved 
+EPIC-CV07（EPIC 主機板） ---------- 10436 -------- Saved 
+無風扇嵌入式系統： HBJC360F33W-B (Intel® Atom™ N270 處理器) ---------- 10437 -------- Saved 
+EMB-QM67（Mini-ITX 主機板） ---------- 10438 -------- Saved 
+工業級 ATX 主機板： JNAF92-Q67（第 2 代 Intel® Core™ i3、i5、i7 處理器） ---------- 10439 -------- Saved 
+AEC-6511（嵌入式控制器） ---------- 10440 -------- Saved 
+基於 Intel® Atom® N270 的 AFC-6640 無風扇、低功耗嵌入式系統 ---------- 10441 -------- Saved 
+Dell DX Object Storage Platform ---------- 10442 -------- Saved 
+EPIC-QM57 (EPIC Express Board) ---------- 10443 -------- Saved 
+GENE-QM57 (3.5" ESB) ---------- 10444 -------- Saved 
+Dell OEM XL 程式 ---------- 10445 -------- Saved 
+無風扇嵌入式系統： HBJC362F35W-2600-B (Intel® Atom™ N2600 處理器) ---------- 10446 -------- Saved 
+COM-CV Rev.A (COM Express 模組) ---------- 10447 -------- Saved 
+工業級 Micro ATX 主機板： JNMF92-H61（第 2 代 Intel® Core™ i3、i5、i7 處理器） ---------- 10448 -------- Saved 
+FWS-2200（網路設備） ---------- 10449 -------- Saved 
+EMB-CV1（Mini-ITX 主機板） ---------- 10450 -------- Saved 
+Dell OptiPlex XE ---------- 10451 -------- Saved 
+A10200 ---------- 10452 -------- Saved 
+XCR14 ---------- 10453 -------- Saved 
+SBC324 ---------- 10454 -------- Saved 
+V7865 - VME 6U, Core™ 2 Duo SBC ---------- 10455 -------- Saved 
+SR330-N Intel&reg; GME965/ICH8M &micro;ATX 主機板 ---------- 10457 -------- Saved 
+ACR301 ---------- 10458 -------- Saved 
+SBC341 ---------- 10459 -------- Saved 
+CR5 ---------- 10460 -------- Saved 
+SBC622 ---------- 10461 -------- Saved 
+CR12 ---------- 10463 -------- Saved 
+SBC624 ---------- 10464 -------- Saved 
+Plug-N-Run G6 ---------- 10466 -------- Saved 
+CC11 ---------- 10467 -------- Saved 
+VR11 ---------- 10468 -------- Saved 
+V7768 ---------- 10469 -------- Saved 
+IPN250 ---------- 10470 -------- Saved 
+XVP14 ---------- 10471 -------- Saved 
+CL11 ---------- 10472 -------- Saved 
+VP12 ---------- 10473 -------- Saved 
+DSP280 ---------- 10474 -------- Saved 
+XVR14 ---------- 10475 -------- Saved 
+SB600-C Intel® B65 ATX 主機板 ---------- 10476 -------- Saved 
+DFI ATX 工業主機板 - PT630-NRM 支援新四核 Intel® Core ™ i7 處理器 ---------- 10477 -------- Saved 
+SB331-D - Intel® H61 microATX 嵌入式主機板 ---------- 10478 -------- Saved 
+PT631-IPM-Intel® Q57 ATX 工業主機板 ---------- 10479 -------- Saved 
+EL339-B Intel&reg; G41/ICH7 uATX 主機板 ---------- 10480 -------- Saved 
+SB601-C Intel® B65 ATX 嵌入式主機板 ---------- 10481 -------- Saved 
+DFI ES951 無風扇嵌入式系統 ---------- 10482 -------- Saved 
+SB100-NRM Intel® Q67 Mini-ITX 主機板 ---------- 10483 -------- Saved 
+EL620-C ATX 主機板支援 ISA 匯流排應用程式 ---------- 10484 -------- Saved 
+CD905-B 系列 - Intel® Atom® D2700/N2800/N2600 + NM10 COM Express Compact R2.0, Type 2 ---------- 10485 -------- Saved 
+LR100-N16D 是採用新雙核心 Intel&reg; Atom™ 處理器 D510 的 Mini-ITX 工業主機板。 ---------- 10486 -------- Saved 
+SB630-CRM - ATX 工業主機板，支援第 2 代 Intel® Core™ 處理器 ---------- 10487 -------- Saved 
+SR960-N Intel&reg; GME965/ICH8M EPIC 主機板 ---------- 10488 -------- Saved 
+DFI LR101-B16M Intel&reg; Atom™ N450 / Intel&reg; ICH8M Mini-ITX 工業主機板 ---------- 10489 -------- Saved 
+CD951 Series - 3.5" SBC，採用 Intel® Atom® D2700/N2800/N2600 處理器和 NM10 ---------- 10490 -------- Saved 
+G7L332-L 新高性價比 Intel® 945GC/ICH7&微型 ATX 主機板 ---------- 10491 -------- Saved 
+LR100-N16M Intel&reg; ICH8M Mini-ITX 主機板 ---------- 10492 -------- Saved 
+ST101 系列 MINI-ITX 嵌入式系統 ---------- 10493 -------- Saved 
+DFI Mobile Intel® QM57 Express Chipset microATX 工業級主機板 - CP330-NRM ---------- 10494 -------- Saved 
+NP951-B16C Intel&reg; 945GSE/ICH7M 3.5" SBC 配備 12V 直流輸入 ---------- 10495 -------- Saved 
+用於數位電子看板應用程式的 ES122-NP 低功耗嵌入式電腦 ---------- 10496 -------- Saved 
+SB331-IPM - microATX Video Surveillance Platform，採用新第 2 代  Intel® Core™ 處理器 ---------- 10497 -------- Saved 
+G7B630-N Intel&reg; Q965/ICH8 ATX 主機板 ---------- 10498 -------- Saved 
+NP100-N16C 新 Intel&reg; Atom™ 945GSE/ICH7M Mini-ITX 主機板 ---------- 10499 -------- Saved 
+HR100-CRM Intel® QM67 行動 Mini-ITX 主機板 ---------- 10500 -------- Saved 
+SR100-L20C Intel&reg; GLE960/ICH8M Mini-ITX 主機板 ---------- 10501 -------- Saved 
+Mini-ITX MightyBoard 800 ---------- 10502 -------- Saved 
+Express-ATC - Compact COM Express® 模組，採用 Intel® Atom® Processor N270 和 Intel® 945GSE / ICH7-M Chipset ---------- 10503 -------- Saved 
+ReadySystem 850 ---------- 10504 -------- Saved 
+Express-MG ---------- 10505 -------- Saved 
+cPCI-6615 - 6U CompactPCI Intel® Atom™ Processor D525 主機刀片 ---------- 10506 -------- Saved 
+aTCA-8505 ---------- 10508 -------- Saved 
+nanoX-ML - 迷你大小 COM Express Type 1 引腳輸出相容性模組 ---------- 10509 -------- Saved 
+CP900-B Intel&reg; HM55 COM Express CPU 模組 ---------- 10510 -------- Saved 
+HR900-B Basic COM Express 模組 ---------- 10511 -------- Saved 
+NuPRO-A301 ---------- 10512 -------- Saved 
+Mini-ITX MightyBoard 821 ---------- 10513 -------- Saved 
+Express-ATR - Extreme Rugged™ COM Express® 模組，採用 Intel® Atom® Processor N270 和 Intel® 945GSE / ICH7-M Chipset ---------- 10514 -------- Saved 
+NP900-B16C Intel&reg; 945GSE/ICH7M COM Express 模組 ---------- 10515 -------- Saved 
+DS910-CD - Intel® Atom™ N2600 無風扇嵌入式計算機 ---------- 10516 -------- Saved 
+EPIC ReadyBoard 820 ---------- 10518 -------- Saved 
+cPCI-3970 - 3U CompactPCI® 第 2 代 Intel® Core™ i7 Processor，配備 ECC ---------- 10519 -------- Saved 
+MilSystem 840 ---------- 10520 -------- Saved 
+cPCI-6965 ---------- 10521 -------- Saved 
+SB300-C Intel® B65 microATX 嵌入式主機板 ---------- 10522 -------- Saved 
+NP905-B16C Intel&reg; Atom™，945GSE/ICH7M Micro COM Express 主機板 ---------- 10523 -------- Saved 
+EC200 系列系統採用工業計算應用的模組化構建 ---------- 10524 -------- Saved 
+M-321 ---------- 10525 -------- Saved 
+COM 840 ---------- 10526 -------- Saved 
+NuPRO-A331 - PICMG® 1.0 全尺寸 LGA1156 Intel® Core™ i7/i5/i3 SBC ---------- 10527 -------- Saved 
+cPCI-6210 - 6U CompactPCI® Quad-Core 第 2 代 Intel® Core™ i7 Processor 主機/周邊刀片 ---------- 10529 -------- Saved 
+NuPRO-E320 ---------- 10530 -------- Saved 
+aTCA-6100 ---------- 10531 -------- Saved 
+Express-CBE - COM Express® 模組，採用 Intel® Core™ i7/i5/i3 Processor 和 Intel® QM57 Chipset ---------- 10532 -------- Saved 
+SB330-CRM Intel® Q67 microATX 主機板 ---------- 10533 -------- Saved 
+G5G100-L10C Intel® 910GMLE/ICH6M Mini-ITX 主機板 ---------- 10534 -------- Saved 
+G7B336-P Intel&reg; Q965/ICH8 &micro;ATX 主機板 ---------- 10535 -------- Saved 
+ETX-PVR - ETX® 模組，採用 Intel® Atom® 單和雙核心處理器和 Intel® ICH8M Chipset ---------- 10536 -------- Saved 
+M-322 ---------- 10537 -------- Saved 
+ETX-NR667 ---------- 10538 -------- Saved 
+cPCI-6510 - 6U CompactPCI® Intel® Core™ i7 通用刀片，帶兩個 PMC 插槽 ---------- 10539 -------- Saved 
+CoreModule 800 ---------- 10540 -------- Saved 
+aTCA-6150 ---------- 10541 -------- Saved 
+M-342 - ATX Intel® Core™ i7/i5/i3 工業級主機板 ---------- 10542 -------- Saved 
+CT-60 ---------- 10543 -------- Saved 
+NuPRO-935A ---------- 10544 -------- Saved 
+G4M300-M12 Intel&reg; 852GM/ICH4 µ ATX 主機板 ---------- 10545 -------- Saved 
+MilSystem 735 ---------- 10546 -------- Saved 
+cPCI-3965 ---------- 10547 -------- Saved 
+MI-220 - Mini-ITX Intel® Core™ i7/i5/i3 工業主機板 ---------- 10548 -------- Saved 
+CP100-NRM- Intel® QM57 晶片組 Mini-ITX 工業級主機板 ---------- 10549 -------- Saved 
+EBX LittleBoard 800 ---------- 10550 -------- Saved 
+Portwell PCOM-B215VG ---------- 10551 -------- Saved 
+Portwell CAR-3000 ---------- 10552 -------- Saved 
+Portwell RUBY-9719VG2AR ---------- 10553 -------- Saved 
+Portwell WADE-8011 ---------- 10554 -------- Saved 
+ROBO-8210VG2AR ---------- 10555 -------- Saved 
+ReadyBoard 740 - Dual-Core Intel® Atom® EPIC 單板電腦，採用 H.264 硬體視訊解碼器 ---------- 10556 -------- Saved 
+Portwell PQ7-M105IT ---------- 10557 -------- Saved 
+EPIC ReadyBoard 800 ---------- 10558 -------- Saved 
+CAD-0210 ---------- 10559 -------- Saved 
+cPCI-3615 - 3U CompactPCI® Dual-Core Intel® Atom™ 入門級 Processor Blade ---------- 10560 -------- Saved 
+Portwell PCOM-B216VG ---------- 10561 -------- Saved 
+TANC-5320 ---------- 10562 -------- Saved 
+RUBY-9716VGAR ---------- 10563 -------- Saved 
+Portwell CAR-4010 ---------- 10564 -------- Saved 
+ROBO-8779VG2AR ---------- 10565 -------- Saved 
+Portwell RUBY-9911 ---------- 10566 -------- Saved 
+Portwell WADE-8020 ---------- 10567 -------- Saved 
+WADE-8012 ---------- 10568 -------- Saved 
+Portwell ROBO-8120VG2R ---------- 10569 -------- Saved 
+Portwell PCOM-B217VG ---------- 10571 -------- Saved 
+NuPRO-E315 ---------- 10572 -------- Saved 
+Express-LPC - Compact COM Express® 模組，採用單/雙核心 Intel® Atom® Processor 和 Intel® ICH8M Chipset ---------- 10573 -------- Saved 
+RUBY-9720VGAR ---------- 10574 -------- Saved 
+Portwell WEBS-3560B ---------- 10575 -------- Saved 
+Express-NR ---------- 10576 -------- Saved 
+ETX-AT - ETX® 模組，採用 Intel® Atom® Processor N270 和 Intel® 945GSE/ ICH7-M Chipset ---------- 10577 -------- Saved 
+Portwell CAR-5010 ---------- 10578 -------- Saved 
+Portwell RUBY-D711VG2AR ---------- 10579 -------- Saved 
+Portwell PCOM-B218VG ---------- 10580 -------- Saved 
+WADE-8180 ---------- 10581 -------- Saved 
+WADE-8075/8076 ---------- 10582 -------- Saved 
+NANO-8045L ---------- 10583 -------- Saved 
+PEB-3732VLA ---------- 10584 -------- Saved 
+Portwell NAR-7102 ---------- 10585 -------- Saved 
+Portwell RUBY-D712VG2AR ---------- 10586 -------- Saved 
+Portwell PQ7-M101G ---------- 10587 -------- Saved 
+WADE-8556 ---------- 10588 -------- Saved 
+CoreModule 745 - PC/104-Plus 單板電腦，配備 Intel® Atom® Processor 和 Intel® ICH8-M Chipset ---------- 10589 -------- Saved 
+Portwell NANO-6040 ---------- 10590 -------- Saved 
+ROBO-8913VG2AR ---------- 10591 -------- Saved 
+RUBY-9713VG2AR ---------- 10592 -------- Saved 
+Portwell CAD-0205/ 0206/ 0208 ---------- 10593 -------- Saved 
+ROBO-8914VG2AR ---------- 10594 -------- Saved 
+Portwell RUBY-9716VG2AR ---------- 10595 -------- Saved 
+Portwell RUBY-M710VG2AR ---------- 10596 -------- Saved 
+ROBO-8110VG2AR ---------- 10597 -------- Saved 
+NuPRO-E340 - PICMG® 1.3 全尺寸 LGA1155 Intel® Core™ i7/i5/i3 SHB ---------- 10598 -------- Saved 
+Portwell PQ7-M103XL ---------- 10599 -------- Saved 
+MI950 - Intel® Q45-based Mini-ITX 主機板 ---------- 10600 -------- Saved 
+IB892-Intel® Atom® E600 系列 3.5 英吋硬碟尺寸 SBC，配有 Intel® EG20T 晶片組 ---------- 10601 -------- Saved 
+TP A41/30x Intel® Atom™ 3U CompactPCI® SBC ---------- 10602 -------- Saved 
+LUGE LEC-7500 支援 HDMI 無風扇嵌入式系統 ---------- 10603 -------- Saved 
+AMI200-953 - Fanless Intel® Core™i7-620M Aluminum Mini-ITX System ---------- 10604 -------- Saved 
+IB935 - Intel® Q35 PICMG 1.3 全尺寸 CPU 卡 ---------- 10605 -------- Saved 
+IB827- 全尺寸 CPU 卡 ---------- 10606 -------- Saved 
+LEC-7100 Dual-core Intel® Atom® 無風扇電腦 ---------- 10607 -------- Saved 
+MI890 - Intel® Atom® N455/D425/D525 MINI-ITX 主機板 ---------- 10608 -------- Saved 
+TP 462/34x Intel® Core™2 Duo 處理器 3U CompactPCI® SBC ---------- 10609 -------- Saved 
+CSB200-888 - 無線應用的無風扇系統 ---------- 10610 -------- Saved 
+IB905 - 第二代 Intel® Core™ i7/i5/i3 3.5 英吋硬碟大小 SBC，配備 Intel® QM67 晶片組 ---------- 10611 -------- Saved 
+NISE 3100e 無風扇電腦 ---------- 10612 -------- Saved 
+CMI300-890 - 基於 Intel® Atom® N455 處理器的無風扇系統 ---------- 10613 -------- Saved 
+NSA 7110W： 2 U 機架式網路安全平台，支援 24 GbE LAN ---------- 10614 -------- Saved 
+LEC-7920 ---------- 10615 -------- Saved 
+NEX 852VL2 LV/ULV Intel® Pentium® M/Celeron® M ATX Board，配有 2 x LAN/雙顯 ---------- 10616 -------- Saved 
+RSB200-884T - 寬溫無風扇嵌入式系統 ---------- 10617 -------- Saved 
+SY AMC/2xx-MicroTCA 開發系統 ---------- 10618 -------- Saved 
+MI953 Intel® Core™ i7 / Core™ i5 Mini-ITX 主機板 ---------- 10619 -------- Saved 
+IB957-Intel® Core™ i7 5.25-inch Disk-Size SBC w/ Intel® QM57 晶片組 ---------- 10620 -------- Saved 
+EN50155 和 PCTRB 認證的車載電腦，VTC6110 ---------- 10621 -------- Saved 
+CSB100-891 - Intel® Atom® N450 無風扇嵌入式系統 ---------- 10622 -------- Saved 
+IB950 - Intel® GM965 5.25" Disk-Size SBC ---------- 10623 -------- Saved 
+WADE-8070 ---------- 10624 -------- Saved 
+SI-96 - 專為電子看板應用 w/IBASE IB826 SBC 而設計 ---------- 10625 -------- Saved 
+LEC-3010 - DIN 裝載 Intel® Atom® N450 IPC ---------- 10626 -------- Saved 
+Lanner FW-7539 Intel® Atom® D510 和 D410 網路裝置 ---------- 10627 -------- Saved 
+EBC 310 - Intel® Atom® E6xx Based 3.5" 嵌入式 SBC ---------- 10628 -------- Saved 
+ASB200-883-6COM - 支援 6 個序列埠的無風扇系統 ---------- 10629 -------- Saved 
+FW-8750 網路裝置 ---------- 10630 -------- Saved 
+IB960 - 第 2 代 Intel® Core™ i7/i5/i3 PICMG 1.3 全尺寸 CPU 卡 w/ Intel® Q67 晶片組 ---------- 10631 -------- Saved 
+MI935 - Intel® Q35 Mini-ITX 主機板 ---------- 10632 -------- Saved 
+IB888 - Intel® Atom™ based 3.5-inch SBC，配有 Intel SCH US15W XL 晶片組 ---------- 10633 -------- Saved 
+LUGE LEC-2010 無風扇嵌入式系統 ---------- 10634 -------- Saved 
+IB805 - PCI-104 單板電腦 ---------- 10635 -------- Saved 
+MPPC 2210 - 22" 多功能一體化多媒體平板電腦，帶可觸控式螢幕 ---------- 10636 -------- Saved 
+LEC-2050 ---------- 10637 -------- Saved 
+MI888 Intel® Atom® N450/D510 Mini-Itx 主機板 ---------- 10638 -------- Saved 
+MI957- Intel® Core™ i7 - 610E，Intel® Core™i3 - 330E w/ECC Mini-ITX ---------- 10639 -------- Saved 
+iPPC-1700 - Intel® Core™ i7 / i5 平板電腦 ---------- 10640 -------- Saved 
+Plug-N-Run L2 ---------- 10641 -------- Saved 
+CMI300-810 - 輕薄的無風扇系統 ---------- 10642 -------- Saved 
+I-VC5 Intel® Atom® N450 1.66GHz 車載電腦系統 ---------- 10643 -------- Saved 
+IB891 - Intel® Atom® 3.5-inch Disk Size SBC，板載 N450/D510 處理器 ---------- 10644 -------- Saved 
+AMI402 - 帶有兩個擴充槽的無風扇系統 ---------- 10645 -------- Saved 
+IB825 - Intel® Atom™ N270 半尺寸 CPU 卡配有 Intel® 945GSE 晶片組 ---------- 10646 -------- Saved 
+LEC-5510 ---------- 10647 -------- Saved 
+MI889 Intel® Atom® Mini-ITX 主機板，搭載 N450/D510 處理器 ---------- 10648 -------- Saved 
+FW-8865 ---------- 10649 -------- Saved 
+EBC 354 ---------- 10650 -------- Saved 
+VTC 6200Intel® Atom® D510 無風扇車載電腦 ---------- 10651 -------- Saved 
+NISE 2000 - 低功耗高效能無風扇電腦 ---------- 10652 -------- Saved 
+EBC 500 嵌入式 5.25" 主機板，配有 2 x PCIe GbE LAN 板和 1 x PCIe 擴充槽 ---------- 10653 -------- Saved 
+VX 541/06x Intel® Core™ 2 Duo 處理器 VXS/VME SBC ---------- 10654 -------- Saved 
+NSA 5120: 1U 機架式網路裝置，配備 8 個 Gb LAN 埠 ---------- 10655 -------- Saved 
+採用 Intel® Atom® E620 處理器的 NDiS 111 數位電子看板播放器 ---------- 10656 -------- Saved 
+ICES 300- Intel® Socket P, Core™2 Duo Family CPU COM Express 模組 ---------- 10657 -------- Saved 
+NISE 2020 - 配備 2 個 PCI 擴充插槽的無風扇工業電腦 ---------- 10658 -------- Saved 
+VX 81x/09x 第 2 代 Intel® Core™i7 VME/VXS SBC ---------- 10659 -------- Saved 
+配備 Mini PCIe 擴充的 NISE 3500 無風扇電腦 ---------- 10660 -------- Saved 
+ICES 170 - 低功耗 ETX COM 主機板 ---------- 10661 -------- Saved 
+遠端資訊處理車輛電腦，VTC 6200-NI，用於車載監控 ---------- 10662 -------- Saved 
+TR 80x/39x 第 2 代 Intel® Core™i7 處理器 OpenVPX™ SBC ---------- 10663 -------- Saved 
+NISE 3110 - 嵌入式 Intel® Core™2 Duo 無風扇電腦 w/ 1 x PCIe ---------- 10664 -------- Saved 
+用於遠端資訊處理和車輛標牌的 車輛電腦 - VTC 2000 ---------- 10665 -------- Saved 
+TP 702/38x - 32nm Intel® Core™i7 processor, 3U CompactPCI SBC ---------- 10667 -------- Saved 
+NISE 100 無風扇電腦，配備一個 GbE LAN 和豐富的 I/O 介面 ---------- 10668 -------- Saved 
+NSA 1083/1043:1U 網路安全平台，配備 8/ 4 个 GbE LAN ---------- 10669 -------- Saved 
+智慧監控系統 NViS 2140，配備 DVR 解決方案、IP 和類比相機 ---------- 10670 -------- Saved 
+PP 712/08x - 採用 32nm Intel® Core™i7 Processor 的 CompactPCI dual PMC/XMC SBC ---------- 10671 -------- Saved 
+NDiS 161 數位電子看板播放器 ---------- 10672 -------- Saved 
+PP 68x/M71 4/6 核 Intel® Xeon® 6U Compact PCI® SBC ---------- 10673 -------- Saved 
+XP 732/x8x Intel® Core™ i7 processor XMC SBC ---------- 10674 -------- Saved 
+15" 工業級沖洗觸控式螢幕平板 PC，APPC 1520T/1521T ---------- 10675 -------- Saved 
+NISE 3140M - 醫用級無風扇電腦，由 Intel® Core™2 Duo 供電，可實現高速影像處理和電腦輔助診斷 ---------- 10676 -------- Saved 
+高性能車載電腦 - VTC 6120 ---------- 10677 -------- Saved 
+NViS 2280 移動 NVR 監控系統 ---------- 10678 -------- Saved 
+TP 86x/39x 第 2 代 Intel® Core™i7 3U CompactPCI SBC ---------- 10679 -------- Saved 
+N 101 Intel® Atom® 無風扇迷你 PC，配備雙 GbE LAN 和雙顯示輸出 ---------- 10680 -------- Saved 
+VX 407/04x - Intel® Core™2 Duo 處理器 VXS/VME 處理器主機板 ---------- 10681 -------- Saved 
+3.5" 嵌入式主機板- EBC 310 ---------- 10682 -------- Saved 
+PEAK 870VL2 ---------- 10683 -------- Saved 
+TP 402/35x Core™ 2 Duo, 3U CompactPCI SBC ---------- 10684 -------- Saved 
+EBC 352 3.5" ECX 板載 Intel® Atom® D525 1.8GHz CPU ---------- 10685 -------- Saved 
+17" 無風扇沖洗觸控式螢幕平板 PC，APPC1720T/1721T ---------- 10686 -------- Saved 
+AM 210/x0x Intel® Core™ 2 Duo 處理器 AdvancedMC SBC ---------- 10687 -------- Saved 
+VP A45/01x - Intel® Atom™ N270, 6U VME SBC ---------- 10688 -------- Saved 
+EBC 353 ---------- 10689 -------- Saved 
+NISE 103： 迷你無風扇電腦 ---------- 10690 -------- Saved 
+VX 511/06x Intel® Core™ 2 Duo 處理器 VXS/VME SBC ---------- 10691 -------- Saved 
+MRC 2200 : 8.4" 平板 PC，配備觸控式螢幕和通訊模組 ---------- 10692 -------- Saved 
+NDiS 166 數位電子看板媒體播放機 - 支援 Intel® i5/i7 和雙完整高清視訊 ---------- 10693 -------- Saved 
+TP 442/34x - Intel® Core™ 2 Duo, 3U CompactPCI SBC ---------- 10694 -------- Saved 
+用於遠端資訊處理和車輛標牌的智慧型車輛電腦 - VTC 2100 ---------- 10695 -------- Saved 
+AM 31x/x0x 第 2 代 Intel® Core™ i7 AdvancedMC SBC ---------- 10696 -------- Saved 
+VR 737/08x Intel® Core™ i7 processor 6U VPX SBC ---------- 10697 -------- Saved 
+NISE 3150e -Intel® Pentium® M/ Celeron® M 無風扇系統，配備超薄 DVD Combo ---------- 10698 -------- Saved 
+ICES 200 COM Express 模組採用 Intel® Core™ Duo 插槽 M 和 Intel® GMA950，支援最高 21 個 Express 通道 ---------- 10699 -------- Saved 
+F17 - 3U CompactPCI (Express) - Core™2 Duo ---------- 10700 -------- Saved 
+G0820 工業耐用型平板電腦 ---------- 10701 -------- Saved 
+DuraCOR 810： 採用 Intel® Pentium® M738 的耐用型 COTS 處理器平台 ---------- 10702 -------- Saved 
+Rigid-752 耐用型嵌入式控制器 ---------- 10703 -------- Saved 
+VX-120 P： 採用 Intel® Celeron® M、Intel® Core™ Duo、Intel® Core™i5/ i7 處理器的平板電腦，帶 LCD TFT 12.1" 觸控式螢幕 ---------- 10704 -------- Saved 
+FPC-7310 Robust Box PC ---------- 10705 -------- Saved 
+EmETXe-i2903 ---------- 10706 -------- Saved 
+MBX-1736A（網路設備） ---------- 10707 -------- Saved 
+Zypad BR2000： 耐用且靈活的體佩電腦，配備廣泛的 I/O 和通訊連接 ---------- 10708 -------- Saved 
+MM2 - ESMini COM，配備 Intel® Atom® E600 系列處理器 ---------- 10709 -------- Saved 
+HiCORE-i67Q1 ---------- 10710 -------- Saved 
+G1050 耐用型平板 PC ---------- 10711 -------- Saved 
+Catalyst CV ---------- 10712 -------- Saved 
+A20 - 6U VME 2eSST Intel® Core™2 Duo SBC ---------- 10713 -------- Saved 
+Vx-121F-N270： 無風扇低功耗 Intel® Atom™ 平板 PC - 12.1" TFT 顯示螢幕，一個 PCI 擴充槽 ---------- 10714 -------- Saved 
+FPC-7500 嵌入式控制器 ---------- 10715 -------- Saved 
+ITX-i2701 ---------- 10716 -------- Saved 
+P1585 平板電腦 ---------- 10717 -------- Saved 
+SC21 - 供智慧顯示螢幕使用的 Intel® Atom® SBC ---------- 10718 -------- Saved 
+ITX-i45M2 ---------- 10719 -------- Saved 
+F19P - 3U CompactPCI PlusIO Intel Core™2 Duo SBC ---------- 10720 -------- Saved 
+D9 - 6U CompactPCI Core™2 Duo SBC ---------- 10721 -------- Saved 
+VX-121P: 採用 Intel® Celeron® M、Intel® Core™ Duo、Intel® Core™ i5/i7 處理器的平板電腦，配備 LCD TFT 12,1" 觸控式螢幕和一個 PCI 擴充槽 ---------- 10722 -------- Saved 
+FPC-7502 嵌入式控制器 ---------- 10723 -------- Saved 
+ITX-i2705 ---------- 10724 -------- Saved 
+Rigid-310 無風扇耐用式箱型電腦 ---------- 10725 -------- Saved 
+EmCORE i8520（5.25" 迷你板） ---------- 10726 -------- Saved 
+ITX-i9453 ---------- 10727 -------- Saved 
+XM2-ESMexpress® 採用 Intel® Core™2 Duo ---------- 10728 -------- Saved 
+DC2 - 耐用型觸控式平板電腦 ---------- 10729 -------- Saved 
+F21P - 3U CompactPCI® PlusIO Intel® Core™ i7（第 2 代）SBC ---------- 10730 -------- Saved 
+EmETXe-i9652（電腦級模組） ---------- 10731 -------- Saved 
+HiCORE-i35Q（全尺寸 SBC） ---------- 10732 -------- Saved 
+F14 - 3U CompactPCI（快遞）SBC - Pentium M ---------- 10733 -------- Saved 
+EmCORE-i55M0 ---------- 10734 -------- Saved 
+G0710（醫療平板電腦） ---------- 10735 -------- Saved 
+Advme8028： 6U VME 匯流排單板電腦基於 Intel ® Atom ™ 處理器 ---------- 10736 -------- Saved 
+M1726 病患訊娛樂終端 ---------- 10737 -------- Saved 
+Rigid-730 無風扇加固型箱式 PC ---------- 10738 -------- Saved 
+XP A40/x03 Intel® Atom ™ 處理器 XMC/PMS 主機板 ---------- 10739 -------- Saved 
+EmXTX-i9150（電腦級模組） ---------- 10740 -------- Saved 
+MB-i3453 ---------- 10741 -------- Saved 
+M1040 行動式臨床助理 ---------- 10742 -------- Saved 
+F15-3U CompactPCI（快速）SBC - Core Duo ---------- 10743 -------- Saved 
+G0720 工業堅固型平板電腦 ---------- 10744 -------- Saved 
+MBX-1820 網路伺服器 ---------- 10745 -------- Saved 
+Rigid-732 ---------- 10747 -------- Saved 
+FPC-3500 加固型車載電腦 ---------- 10748 -------- Saved 
+基於 PP 432/05x - Core™2 Duo 處理器的 CompactPCI dual PMC SBC（包括擴充的溫度選項） ---------- 10749 -------- Saved 
+VX-80F-N270： 基於 Intel ® Atom ™ N270 的無風扇平板 PC，配有顯示器 TFT 8.4" 觸控式螢幕 ---------- 10750 -------- Saved 
+DuraCOR DC 1200： 基於 Intel® Atom ™/Intel® Celeron ® M 的加固型行動式板載電腦配有 GPS、Wifi 和無線功能 ---------- 10751 -------- Saved 
+嵌入式主機板： KTQ45/FLEX ---------- 10752 -------- Saved 
+AdvancedMC：處理器模組： AM4001 (Intel&reg; Pentium&reg; M) ---------- 10753 -------- Saved 
+Vx-151F-N270： 低電源 Intel ® Atom ™ 平板電腦配有 15" TFT 顯示器和一個 PCI 擴充插槽 ---------- 10754 -------- Saved 
+MicroTCA 系統： OM6040 ---------- 10755 -------- Saved 
+AdvancedTCA；載板： AT8402 ---------- 10756 -------- Saved 
+AdvancedTCA 系統： OM9020 ---------- 10757 -------- Saved 
+VX6060 ---------- 10758 -------- Saved 
+TIGW1U - 電訊級伺服器 ---------- 10759 -------- Saved 
+DuraCOR DC 1400： 基於 Intel® Atom™ 的高整合堅固耐用型行動板載電腦 ---------- 10760 -------- Saved 
+VX-151P： 平板 PC 顯示 LCD TFT 15" 觸控式螢幕，配備 Intel® Celeron® M、Intel® Core™ Duo、Intel® Core® i5/i7 處理器和一個 PCI 擴充槽 ---------- 10761 -------- Saved 
+Toucan-QM57 ---------- 10762 -------- Saved 
+DuraCOR 810-Duo： 採用 Intel® Core™2 Duo 處理器的雙核耐用型計算平台 ---------- 10763 -------- Saved 
+KISS 1U ---------- 10764 -------- Saved 
+ANTARES ICE 1U： 19" 機架安裝工業電腦，配備 Intel® Core™ i7/ i5 Processor ---------- 10765 -------- Saved 
+GEMINI ICE： Core™2 Duo 工業電腦，1U 19" 外殼 ---------- 10766 -------- Saved 
+AdvancedMC：存儲模組： AM4500 ---------- 10767 -------- Saved 
+VX-170 P： 平板 PC 顯示 LCD TFT 17" 觸控式螢幕，配備 Intel® Celeron® M、Intel® Core™ Duo、Intel® Core™ i5/i7 processor ---------- 10768 -------- Saved 
+MicroTCA 系統： OM6120 ---------- 10769 -------- Saved 
+DuraCOR 820： 小體積戰術性任務電腦，採用 Intel® Pentium® M 處理器 ---------- 10771 -------- Saved 
+Kontron AdvancedMC 處理器模組 AM5020 ---------- 10772 -------- Saved 
+Adbc8034： 採用第 2 代 Intel® Core™i7 處理器的高性能 COM Express 板 ---------- 10773 -------- Saved 
+Bx-400F-N270： 無風扇低功耗 Intel® Atom™ 工業箱型電腦 ---------- 10774 -------- Saved 
+Adbc8022：COM Express 模組，配備 Intel® Core™ Duo 或 Intel® Core™2 Duo 處理器 ---------- 10775 -------- Saved 
+PROTEUS： 採用 Intel® Atom™ 的 COM Express 模組 ---------- 10777 -------- Saved 
+VX-171 P： 平板 PC 顯示 LCD TFT 17" 觸控式螢幕，配備 Intel® Celeron® M、Intel® Core™ Duo、Intel® Core™ i5/i7 處理器和一個 PCI 擴充槽 ---------- 10778 -------- Saved 
+ATX 嵌入式主機板 KTQ67/ATXE ---------- 10779 -------- Saved 
+带有第三代的嵌入式系统 ULV Intel® Core™ i7 3517UE 处理器 ---------- 10784 -------- Saved 
+第 3 世代エンベデッド・システム。 ULV Intel® Core™ i7 3517UE プロセッサー ---------- 10785 -------- Saved 
+MBX X-60 存储服务器 ---------- 10786 -------- Saved 
+MBX X-60 ストレージ・サーバー ---------- 10787 -------- Saved 
+S3316 3U 存储服务器 ---------- 10788 -------- Saved 
+S3316 3U ストレージ・サーバー ---------- 10789 -------- Saved 
+S2312 V3 2U 存储服务器 ---------- 10790 -------- Saved 
+S2312 V3 2U ストレージ・サーバー ---------- 10791 -------- Saved 
+TS-269 Pro ---------- 10792 -------- Saved 
+TS-269 Pro ---------- 10793 -------- Saved 
+TS-869L ---------- 10794 -------- Saved 
+TS-869L ---------- 10795 -------- Saved 
+TS-669L ---------- 10796 -------- Saved 
+TS-669L ---------- 10797 -------- Saved 
+TS-569L ---------- 10798 -------- Saved 
+TS-569L ---------- 10799 -------- Saved 
+TS-469L ---------- 10800 -------- Saved 
+TS-469L ---------- 10801 -------- Saved 
+P1177S-871 -- 17" SXGA TFT Intel® Core™ i7/ i5/ i3 超薄工业触摸屏电脑 ---------- 10804 -------- Saved 
+P1177S-871 - 17 インチの SXGA TFT Intel® Core™ i7/i5/i3 スリムな産業用タッチパネル・コンピューター ---------- 10805 -------- Saved 
+GOT3187W-832-PCT -- 18.5" WXGA TFT 无风扇多点触控液晶电脑，采用 Intel® Atom® 处理器（-10°C 〜+50°C） ---------- 10806 -------- Saved 
+GOT3187W-832-PCT -- Intel® Atom®プロセッサー(- 10C～+50C) 搭載の 18.5 インチ WXGA TFT ファンレス・マルチタッチ・パネル・コンピューター ---------- 10807 -------- Saved 
+GOT5152T-832 - 15" XGA TFT 无风扇触摸屏电脑采用 Intel® Atom® 处理器 D2550 ---------- 10808 -------- Saved 
+GOT5152T-832 - Intel® Atom® プロセッサー N2550 を搭載した 15 インチ XGA TFT ファンレス・タッチパネル・コンピューター ---------- 10809 -------- Saved 
+MANO873 — LGA1155 插槽 Intel® Core™ i7/ i5/ i3/Celeron® 迷你 ITX SBC，配备 Intel® Q77 PCH、VGA/DVI-D、双局域网以及 USB 3.0 ---------- 10810 -------- Saved 
+MANO873 - Intel® Q77 PCH、VGA/DVI-D、デュアル LAN と USB 3.0 搭載の LGA1155 ソケット Intel® Core™ i7/i5/i3/Celeron® Mini ITX SBC ---------- 10811 -------- Saved 
+eBOX730-860-FL - 配有 Intel® Core™ i7/ i3/ Celeron® 处理器、隔离式 COM 和数字 I/O 的无风扇嵌入式系统 ---------- 10812 -------- Saved 
+eBOX730-860-FL -- Intel® Core™ i7/i3/Celeron® プロセッサー、独立 COM  およびデジタル I/O 搭載のファンレス・エンベデッド・システム ---------- 10813 -------- Saved 
+P1157S-871 -- 15" XGA TFT Intel® Core™ i7/ i5/ i3 超薄工业触摸屏电脑 ---------- 10814 -------- Saved 
+P1157S-871 -- 15 インチ XGA TFT Intel® Core™ i7/i5/i3 スリムな産業用タッチパネル・コンピューター ---------- 10815 -------- Saved 
+OPS871-HM — 符合 OPS 规范的标牌播放器模块，配备 Intel® HM76 和 TPM 1.2 ---------- 10816 -------- Saved 
+OPS871-HM -- Intel® HM76 とTPM 1.2 を搭載する OPS 準拠のサイネージ・プレーヤー・モジュール ---------- 10817 -------- Saved 
+OPS871 — 符合 OPS 规范的标牌播放器模块，配备 Intel® QM77 和 TPM 1.2 ---------- 10818 -------- Saved 
+OPS871 -- Intel® QM77 と TPM 1.2 を搭載する OPS 準拠のサイネージ・プレーヤー・モジュール ---------- 10819 -------- Saved 
+Thecus N2560 ---------- 10820 -------- Saved 
+Thecus N2560 ---------- 10821 -------- Saved 
+Thecus N4560 ---------- 10822 -------- Saved 
+Thecus N4560 ---------- 10823 -------- Saved 
+POS-3152 ---------- 10824 -------- Saved 
+POS-3152 ---------- 10825 -------- Saved 
+POS-3520 ---------- 10826 -------- Saved 
+POS-3520 ---------- 10827 -------- Saved 
+PA-3252 ---------- 10828 -------- Saved 
+PA-3252 ---------- 10829 -------- Saved 
+POS-6920 ---------- 10830 -------- Saved 
+POS-6920 ---------- 10831 -------- Saved 
+SageBIOS™, Coreboot® 的一个分布 ---------- 10832 -------- Saved 
+SageBIOS ™、Coreboot ® 分配 ---------- 10833 -------- Saved 
+WADE-8015 ---------- 10834 -------- Saved 
+NSA 5150 - 1U 网络安全设备 ---------- 10835 -------- Saved 
+RUBY-D716VG2AR ---------- 10836 -------- Saved 
+PCOM-B630VG ---------- 10837 -------- Saved 
+符合 OPS880 — 符合开放式可插拔规范 (OPS) 的第 4 代 Intel® Core™ i5 数字标牌播放器 ---------- 10838 -------- Saved 
+NPC-8223 ---------- 10839 -------- Saved 
+NI PXIe-8133 ---------- 10841 -------- Saved 
+SHB130 PICMG 1.3 单板计算机专为第四代 Intel® Core™ 处理器而设计 ---------- 10842 -------- Saved 
+Express-HL： 配备第 4 代 Intel® Core™ i7/i5/i3 处理器的 COM Express 6 型模块 ---------- 10843 -------- Saved 
+FW-8771 ---------- 10844 -------- Saved 
+LEC-7950 - 采用第 2 代 Intel® Core™ i3-2310 或 Intel® Celeron® 847E CPU 的无风扇工业计算机 ---------- 10846 -------- Saved 
+LEC-2280 无风扇嵌入式计算机，采用第三代 Intel® Core™ i7/i5/i3 ---------- 10847 -------- Saved 
+LEC 2260 多功能 Intel® Celeron® 807UE 工业 PC ---------- 10848 -------- Saved 
+NDiS B533 — 无风扇数字标牌播放器 ---------- 10849 -------- Saved 
+TS-869 Pro ---------- 10850 -------- Saved 
+TS-669 Pro ---------- 10851 -------- Saved 
+TS-569 Pro ---------- 10852 -------- Saved 
+TS-469 Pro ---------- 10853 -------- Saved 
+BA-0951 ---------- 10854 -------- Saved 
+Dell PowerEdge R210 II ---------- 10855 -------- Saved 
+Dell Precision R7610 ---------- 10856 -------- Saved 
+ICES 268 COM Express 2 型基本模块 ---------- 10857 -------- Saved 
+AEGIS 家庭自动化 ---------- 10862 -------- Saved 
+AEGIS ホーム・オートメーション ---------- 10863 -------- Saved 
+AGORA — 服务交付平台 ---------- 10864 -------- Saved 
+AGORA - サービス・デリバリー・プラットフォーム ---------- 10865 -------- Saved 
+StarVX (HPEC) System ---------- 10867 -------- Saved 
+ARGOS IPv6 移植 ---------- 10868 -------- Saved 
+ARGOS IPv6 ポーティング ---------- 10869 -------- Saved 
+设备自动化测试框架 （DTAF） ---------- 10872 -------- Saved 
+デバイス・テスト・オートメーション・フレームワーク (DTAF) ---------- 10873 -------- Saved 
+嵌入式软件和系统开发 ---------- 10874 -------- Saved 
+エンベッド・ソフトウェアおよびシステム開発 ---------- 10875 -------- Saved 
+互动教学平台 Genius 站 ---------- 10876 -------- Saved 
+ジニアス・ステーション、インターアクトクラブ指導プラットホーム ---------- 10877 -------- Saved 
+硬件产品工程 ---------- 10878 -------- Saved 
+ハードウェア・プロダクト・エンジニアリング ---------- 10879 -------- Saved 
+M&A Companion Touch8 ---------- 10880 -------- Saved 
+M&A コンパニオン Touch8 ---------- 10881 -------- Saved 
+SECOMExp-iCORE ---------- 10887 -------- Saved 
+SECOMExp-iCORE ---------- 10888 -------- Saved 
+SECOMExp-x2000  ---------- 10893 -------- Saved 
+SECOMExp-x2000  ---------- 10894 -------- Saved 
+SECOnITX-ION ---------- 10895 -------- Saved 
+SECOnITX-ION ---------- 10896 -------- Saved 
+SECOpITX-x2000 ---------- 10897 -------- Saved 
+SECOpITX-x2000 ---------- 10898 -------- Saved 
+UNO-4671A ---------- 10899 -------- Saved 
+UNO-4671A ---------- 10900 -------- Saved 
+UNO-4672 ---------- 10901 -------- Saved 
+UNO-4672 ---------- 10902 -------- Saved 
+UNO-4673A ---------- 10903 -------- Saved 
+UNO-4673A ---------- 10904 -------- Saved 
+UNO-4683 ---------- 10905 -------- Saved 
+UNO-4683 ---------- 10906 -------- Saved 
+Wind River 虚拟机管理程序 ---------- 10907 -------- Saved 
+Wind River Hypervisor ---------- 10908 -------- Saved 
+Xitrix 55 英寸 Windows 8 一体式触控 PC  ---------- 10909 -------- Saved 
+Xitrix 55 インチ Windows 8 オールインワン・タッチ PC  ---------- 10910 -------- Saved 
+嵌入式軟體開發服務 ---------- 10911 -------- Saved 
+Thecus N10850 ---------- 10912 -------- Saved 
+Thecus N8850  ---------- 10913 -------- Saved 
+Thecus N6850 ---------- 10914 -------- Saved 
+Thecus N16000PRO ---------- 10915 -------- Saved 
+Thecus N12000PRO ---------- 10916 -------- Saved 
+Thecus N8900 ---------- 10917 -------- Saved 
+Thecus N4510U ---------- 10918 -------- Saved 
+Thecus N7510  ---------- 10919 -------- Saved 
+Thecus N5550  ---------- 10920 -------- Saved 
+Thecus N4800Eco ---------- 10921 -------- Saved 
+Thecus N2800  ---------- 10922 -------- Saved 
+Thecus N2520  ---------- 10923 -------- Saved 
+Thecus N4520  ---------- 10924 -------- Saved 
+BT100-D Mini-ITX 採用 Intel® Atom® Processor ---------- 10927 -------- Saved 
+HD310-Q87 - microATX 嵌入式主機板使用第 4 代 Intel® Core™ Processor ---------- 10928 -------- Saved 
+DL310-C226 - microATX 嵌入式主機板採用第 4 代 Intel® Xeon® Processor ---------- 10929 -------- Saved 
+RL830-C602/C604 - Intel® C602J/C604 EATX 主機板 ---------- 10931 -------- Saved 
+HM960-QM87 - COM Express Basic Module 使用第 4 代 Intel® Core™ 處理器 ---------- 10932 -------- Saved 
+AEC-6841（無風扇嵌入式控制器解決方案） ---------- 10934 -------- Saved 
+AEC-6620（無風扇嵌入式控制器解決方案） ---------- 10935 -------- Saved 
+FSB H61G（PICMG 1.0 全尺寸） ---------- 10936 -------- Saved 
+EMB-9459T Rev.A（嵌入式主機板，Mini-ITX） ---------- 10937 -------- Saved 
+COM-U15（COM Express CPU 模組） ---------- 10938 -------- Saved 
+AEC-6924（無風扇嵌入式控制器解決方案） ---------- 10939 -------- Saved 
+QRoam 漫遊品質應用 ---------- 10940 -------- Saved 
+QiSolve ---------- 10941 -------- Saved 
+QiCare 客戶服務解決方案 ---------- 10942 -------- Saved 
+QRoam 漫遊品質應用 ---------- 10943 -------- Saved 
+Omni-Q Service Assurance 解決方案 ---------- 10944 -------- Saved 
+QVIP Assuring SLA ---------- 10945 -------- Saved 
+QTrace 線上電話疑難排解 ---------- 10946 -------- Saved 
+RANalysis： 無線電優化： UMTS Radio Analyzer ---------- 10947 -------- Saved 
+COM-QM77 Rev.A (COM Express) ---------- 10948 -------- Saved 
+EMB-945T（嵌入式主機板，Mini ITX） ---------- 10949 -------- Saved 
+Seacliff Trail SDN-Enabled 640G 架頂式交換器參考平台 ---------- 10950 -------- Saved 
+VG-QM77 嵌入式主機板 ---------- 10951 -------- Saved 
+Quadrant AMC Reference Platform 使用 Intel® Xeon® Processor E3-1100 系列和 Intel® Communications Chipset 89xx 系列 ---------- 10952 -------- Saved 
+eIPC300 - 嵌入式工業 PC ---------- 10953 -------- Saved 
+POS-3120 ---------- 10954 -------- Saved 
+SP-6112 ---------- 10956 -------- Saved 
+SP-6110 ---------- 10957 -------- Saved 
+SP-6118 ---------- 10958 -------- Saved 
+EPC-8120 ---------- 10959 -------- Saved 
+QuadMo747-x2000 ---------- 10960 -------- Saved 
+CoreModule 920 ---------- 10961 -------- Saved 
+ETX-CV  ---------- 10962 -------- Saved 
+用於 CodeMeter 的 EDK ---------- 10963 -------- Saved 
+CoreModule 920 - Extreme Rugged™ PCI/104-Express 第 3 代 Intel® Core™ Processor 單板電腦 ---------- 10964 -------- Saved 
+D3236-S Industrial Series ATX Mainboard ---------- 10965 -------- Saved 
+XPedite7301 XMC Intel® Core™ i7 Module ---------- 10966 -------- Saved 
+Touch&Go Messenger32L ---------- 10967 -------- Saved 
+Q57AX ---------- 10968 -------- Saved 
+ENC-4211S ---------- 10969 -------- Saved 
+CPCI3010： Pentium® M 3U CPCI 模組 ---------- 10970 -------- Saved 
+CPC-1814CLD5NA ---------- 10971 -------- Saved 
+SCB-9550 2U 機架安裝式 Intel® TBG-36 D、Dual Xeon® LGA1366 網路系統、DDR3、GbE、10GbE、CF、4 個 SATA 硬碟托架、LCM、冗余 PS ---------- 10972 -------- Saved 
+SCB-7968 1U 機架安裝式 Intel® 915GME/910GMLE 網路系統，8 x GbE、1 x 10/100 LAN、CF、SATA、LCM ---------- 10973 -------- Saved 
+Touch&Go Messenger46 ---------- 10974 -------- Saved 
+Q57AXE ---------- 10975 -------- Saved 
+XCalibur4331 VME Intel® Core™i7 SBC ---------- 10976 -------- Saved 
+SEM-7705 無風扇耐用嵌入式箱型電腦，使用 Intel® Core™2 Duo 處理器 ---------- 10977 -------- Saved 
+XPedite7101 PMC/XMC Intel® Core™2 Duo Module ---------- 10978 -------- Saved 
+POS-852 ---------- 10979 -------- Saved 
+MEC-9002 ---------- 10980 -------- Saved 
+Touch&Go Multitouch Messenger 82L ---------- 10981 -------- Saved 
+TabletPOS TP11 ---------- 10982 -------- Saved 
+EC0-1811V2NA ---------- 10983 -------- Saved 
+Tablet POS - TP11 ---------- 10984 -------- Saved 
+JNB-1405 ---------- 10985 -------- Saved 
+Touch&Go Multitouch Messenger 82P ---------- 10986 -------- Saved 
+EC9-1814V2NA ---------- 10987 -------- Saved 
+VT005 Shelf Manager 相容 Intel® MPCMM0001 ---------- 10988 -------- Saved 
+XV1 四核心 VME 電腦 ---------- 10989 -------- Saved 
+UTC010，供 &#956;TCA 主機殼使用的電源模組 ---------- 10990 -------- Saved 
+ERC-2101 ---------- 10991 -------- Saved 
+XPedite7172 3U VPX Intel® Core™2 Duo Module ---------- 10992 -------- Saved 
+SCB-8961 2U 機架安裝 Intel® 3450 LGA1156 網路系統，32 x GbE、SATA、CF、LCM、PCI、PCI-E x8、冗余 PS ---------- 10993 -------- Saved 
+MEC-1003-01 ---------- 10994 -------- Saved 
+iKarPC-W08A（配備 Intel® Atom® Z510 1.1GHz 處理器的車輛電腦） ---------- 10995 -------- Saved 
+SAILOR-12A（重型工業平板 PC） ---------- 10996 -------- Saved 
+SHB-940 Intel® Q45 PICMG1.3 全尺寸 CPU 卡 ---------- 10997 -------- Saved 
+AFL-17D-N270（輕型工業平板 PC） ---------- 10998 -------- Saved 
+WebDT 390 醫療平板 ---------- 10999 -------- Saved 
+PSG-SB-3URGEDP01 ---------- 11000 -------- Saved 
+IMBA-XQ354（ATX 主機板） ---------- 11001 -------- Saved 
+ACT-408A（8" EM/Mifare Access Control Terminal，配備 Intel® Atom® Processor N270 1.6 GHz CPU） ---------- 11002 -------- Saved 
+WSB-9454 PICMG 1.0 全尺寸 CPU 卡/Intel® Core™2 Duo ---------- 11003 -------- Saved 
+PRA-WB-G41W ---------- 11004 -------- Saved 
+PSG-CB-1URAQDP01 ---------- 11005 -------- Saved 
+PPC-115 ---------- 11006 -------- Saved 
+伺服器 GPU ---------- 11007 -------- Saved 
+AFL-F08A （8" 平板 PC，採用 Intel® Atom® N270 CPU，多點觸控解決方案） ---------- 11008 -------- Saved 
+WSB-G41A（PICMG 1.0 配備 Intel® G41 支援 LGA775 Intel® Core™ 2 Quad CPU） ---------- 11009 -------- Saved 
+SV-H8125 - DVR Motherboard ---------- 11010 -------- Saved 
+SHB102，LGA775 Intel® Core™2 Quad PICMG 1.3 全尺寸 CPU 卡 ---------- 11011 -------- Saved 
+工業 PC： ThinkIO-Duo ---------- 11054 -------- Saved 
+945ITX 迷你工業級主機板 ---------- 11055 -------- Saved 
+NuPRO-E330 - PICMG® 1.3 全尺寸 LGA1156 Intel® Core™ i7/i5/i3 SHB ---------- 11056 -------- Saved 
+FW-8760 1U fox hollow 網路裝置 ---------- 11057 -------- Saved 
+PCA-6774 ISA 匯流排插槽 CPU 卡 ---------- 11058 -------- Saved 
+V7769 ---------- 11059 -------- Saved 
+XCalibur4101 cPCI Intel® Core™2 Duo SBC ---------- 11060 -------- Saved 
+EMB-945T Rev.B（Mini-ITX，工業級主機板） ---------- 11061 -------- Saved 
+嵌入式主機板： 986LCD-M/mITX (Intel&reg; Core™ Duo & Intel&reg; Core™ Solo) ---------- 11062 -------- Saved 
+CP11 - 雙插槽，CPCI 6U，Core™ 2 Duo SBC ---------- 11063 -------- Saved 
+PPC-22W05 - Avalue 22" WSXGA TFT 無風扇多功能塑膠平板電腦，採用 Intel® Atom® 雙核心解決方案 ---------- 11065 -------- Saved 
+EmCORE-i9457 ---------- 11066 -------- Saved 
+Avalue Intel® Atom® N270 3.5" Micro Module，採用 Intel® 945GSE + ICH7-M Chipset ---------- 11067 -------- Saved 
+SPC-1505 - 全 IP-65 級不銹鋼主機殼無風扇觸控式平板電腦 ---------- 11068 -------- Saved 
+SR100-N Intel&reg; GME965 Mini-ITX 解決方案 ---------- 11069 -------- Saved 
+BCM RX67Q - 工業 mATX 主機板 - 支援六個獨立同時顯示 ---------- 11070 -------- Saved 
+EmCORE-i9651 ---------- 11071 -------- Saved 
+MIC-3392 Intel® Core™2 Duo 6U CompactPCI Board ---------- 11072 -------- Saved 
+BCM MX260N Intel® Atom® N2600 雙核 Mini ITX 主機板 ---------- 11073 -------- Saved 
+ESM-945ETX - Intel® 945GME Core™ Duo / Core™2 Duo / Celeron® M ETX Module ---------- 11074 -------- Saved 
+MTP-1503 - Avalue 15" TFT 無風扇多功能觸摸平板電腦 ---------- 11075 -------- Saved 
+Avalue EMX-QM57 Mini ITX 主機板，配備 Intel® QM57 Chipset ---------- 11076 -------- Saved 
+Avalue EBM-CDV - 5.25" Intel® Atom® 5.25" Mini Module，配備 Intel® NM10 Express Chipset ---------- 11077 -------- Saved 
+ROBO-8911VG2A ---------- 11078 -------- Saved 
+Avalue LPC-1507-PCT 無風扇 15" XGA TFT 多功能觸控式平板電腦 ---------- 11079 -------- Saved 
+FPC-08W05 - 無風扇 8.9" WSVGA TFT 多功能觸控式平板電腦，採用 Intel® Atom® D525 Dual Core 處理器 ---------- 11080 -------- Saved 
+BCM NX450N - Intel® Atom® N450 低功耗無風扇* Nano ITX 主機板，配備 12V 直流電源 ---------- 11081 -------- Saved 
+EPIC EPI-QM57 Intel® Core™ i7 處理器和 Mobile Intel® QM57 Express 晶片組 ---------- 11082 -------- Saved 
+PDSM4+ ATX ---------- 11083 -------- Saved 
+BCM MX45GM2 - Mobile Intel® GM45 Mini ITX 支援 45nm Intel® Core™2 Extreme/ Core™2 Quad/ Core™2 Duo processor 和 ATX 電源 ---------- 11084 -------- Saved 
+SEM-5300 無風扇微型電腦採用 Intel® Atom® N450、D510、D410 處理器，配備 VGA、雙 GbE、COM、USB、音訊、SATA、CF & 迷你 PCI ---------- 11085 -------- Saved 
+COM Express CX-MB-EVA2 ---------- 11086 -------- Saved 
+PIT-1702 Intel® Core™2 Duo Patient Infotainment Terminal ---------- 11087 -------- Saved 
+COM Express 模組 EUROCOM 450 ---------- 11088 -------- Saved 
+kPOST（開機自檢） ---------- 11089 -------- Saved 
+MM1 - 配備 Intel® Atom® 的 ESMini COM ---------- 11090 -------- Saved 
+XPedite7040 AMC Intel® Core™ Duo 或 Intel® Core™2 Duo SBC ---------- 11091 -------- Saved 
+AMC600，AMC 2.5 英吋磁碟機模組 ---------- 11092 -------- Saved 
+NANO-945GSE (EPIC SBC) ---------- 11093 -------- Saved 
+AMC606，能夠擴展的 AMC 2.5 英吋 SAS 磁碟機 ---------- 11094 -------- Saved 
+ET820 - Intel® Atom™-based ETX CPU Module ---------- 11095 -------- Saved 
+Express-MV ---------- 11096 -------- Saved 
+SequenceRunner ---------- 11097 -------- Saved 
+LUGE EM-F345 ---------- 11098 -------- Saved 
+Deos RTOS ---------- 11099 -------- Saved 
+BIS-6540HD 數位電子看板，實現全 HD 1080P 視訊播放 ---------- 11100 -------- Saved 
+Aquarius MB_PSG-M-AQDP5100-110 ---------- 11101 -------- Saved 
+配有 Intel® Atom® XL 的 XM1L-ESMexpress ® ---------- 11102 -------- Saved 
+Intel® Atom ™ 基於 MID/UMPC 參考平台 ---------- 11103 -------- Saved 
+ROBO-8112VG2AR ---------- 11132 -------- Saved 
+Wildcat (VL-EPMp-34) PCI-104 單極電腦 ---------- 11133 -------- Saved 
+AMC603，AMC 2.5 英吋雙磁碟機模組 ---------- 11134 -------- Saved 
+CEM850 - Intel® Core™2 Duo COM Express ---------- 11135 -------- Saved 
+Touch&Go Messenger 65 Landscape 或 Portrait ---------- 11136 -------- Saved 
+MI945X - 採用 Intel® GM45 晶片組的 Mini-ITX 主機板 ---------- 11137 -------- Saved 
+EmCORE-i761 ((Pentium M)) ---------- 11138 -------- Saved 
+PT330-DRM Intel&reg; Q57 uATX 主機板 ---------- 11139 -------- Saved 
+Express-MC800 ---------- 11140 -------- Saved 
+MB-62000 ---------- 11141 -------- Saved 
+MB-i965Q（ATX 工業 MB） ---------- 11142 -------- Saved 
+MB950 - Intel® Core™2 i7 / i5 / i3 ATX 主機板 ---------- 11143 -------- Saved 
+PDSME+ ATX ---------- 11144 -------- Saved 
+BCM MX525DC-Intel® Atom™ D525 1.8 GHz 低功耗迷你 ITX 主機板提供 5 個 COM 埠、8 個 USB、LVDS、DVI、VGA、雙千兆局域網和高清音訊放大器 ---------- 11145 -------- Saved 
+COM Express CXB-CD9455 ---------- 11146 -------- Saved 
+3.5" 微型模組，配備 Intel® Platform Controller Hub EG20T Chipset ---------- 11147 -------- Saved 
+EC0-1815V2NAR ---------- 11148 -------- Saved 
+BCM MX965GME - Intel® GME965 Mobile Core™2 Duo Mini ITX，配備 HDMI、DVI、LVDS、TV-out、PCIe x4、2 個 LAN ---------- 11149 -------- Saved 
+MPC-21W5 - 21" 高清數位電子看板平板電腦，配備 Intel® Atom® Dual Core Processor ---------- 11150 -------- Saved 
+Avalue Intel® Atom® PNV-M/ PNV-D Nano ITX 主機板 ---------- 11151 -------- Saved 
+Avalue EMX-G41 Intel® Core™2 Quad / Core™2 Duo Mini ITX 主機板，採用 Intel® G41 + ICH7-R 晶片組 ---------- 11152 -------- Saved 
+bCOM2-L1100 ---------- 11153 -------- Saved 
+Intel® Atom®XTX 模組，配備 Intel® ICH8-M Chipset ---------- 11154 -------- Saved 
+270ITX 工業 Mini ITX 主機板 ---------- 11155 -------- Saved 
+Avalue Intel® Core™ i7/ Core™ i5/ Celeron® COM Express Module，採用 Intel® QM57 Chipset ---------- 11156 -------- Saved 
+BCM MX57QM - Intel® QM57 Mini ITX 採用最新雙晶片設計，支援 Intel® Core™ i7、i5、i3 行動處理器、6 個 COM、5 個 SATA RAID ---------- 11157 -------- Saved 
+NX510D - 新一代小型 Intel® Atom® D510 Dual Core 超低功耗處理器，採用納米 ITX 主機板，配備最新 Intel® 雙晶片版面配置，12V 直流電源和 TPM 1.2，是佔用空間小的行動應用的理想的解決方案 ---------- 11158 -------- Saved 
+AM 100/20x - Dual-Core Intel&reg; Xeon&reg; processor AdvancedMC 主機板 ---------- 11159 -------- Saved 
+ECM-CDV Avalue 3.5" 微型模組，配備 Intel® NM10 Express Chipset ---------- 11160 -------- Saved 
+Avalue Intel® Core™ i7-620LE/ 620UE 3.5" 微型模組，配備 Intel® QM57 Chipset ---------- 11161 -------- Saved 
+PRD_2U34VS ---------- 11162 -------- Saved 
+Avalue EPI-QM67 Intel® Core™ i3/i5/i7 EPIC 模組，採用 Intel® QM67 Chipset ---------- 11163 -------- Saved 
+RX67Q mATX 主機板使用 Intel® Q67 Socket H2 LGA1155，支援第 2 代 Intel® Core™i7/i5/i3 處理器。 ---------- 11164 -------- Saved 
+PRD_3UQ57IC ---------- 11165 -------- Saved 
+LPC-1505 - 無風扇 15" XGA TFT 多功能觸控式平板電腦 ---------- 11166 -------- Saved 
+Avalue EPC-945 Intel® Core™2 945GME Duo Tiny 嵌入式系統 ---------- 11167 -------- Saved 
+Avalue Intel® Atom® D510 Dual-Core 3.5" 微型模組，配備 Intel® ICH8-M 晶片組 ---------- 11168 -------- Saved 
+US15CMX COM Express 模組 ---------- 11169 -------- Saved 
+Komodo (VL-EPICs-36) EPIC 單板電腦 ---------- 11170 -------- Saved 
+Hurricane-QM57 - EPIC-Express 單板電腦 - Intel® Core™ i7，2.53 GHz / 1.06 GHz ---------- 11171 -------- Saved 
+ANTARES： Intel® Core™ i7 / Core™ i5 5.25" Single Board Computer ---------- 11172 -------- Saved 
+Telum ASLP11 ---------- 11173 -------- Saved 
+頭枕式車載 PC ---------- 11174 -------- Saved 
+AMC601，AMC 1.8 英吋雙磁碟機模組 ---------- 11175 -------- Saved 
+SOM-5780 ---------- 11176 -------- Saved 
+ET830 - Intel® Atom™ Z530 Nano ETX COM Express Module ---------- 11177 -------- Saved 
+XPedite7370 3U VPX Intel® Core™ i7 SBC ---------- 11178 -------- Saved 
+Cinemo Streaming Engine ---------- 11179 -------- Saved 
+Intel® Atom® EBX 型 SBC 整合新的 COMIT ---------- 11180 -------- Saved 
+Touch&Go Messenger 32P ---------- 11181 -------- Saved 
+POS-7853 ---------- 11182 -------- Saved 
+HSB-910I（半尺寸 SBC） ---------- 11183 -------- Saved 
+NSA 2189LN8 ---------- 11184 -------- Saved 
+AMI401-嵌入式系統配有基於 Intel® GM45 的主機板 ---------- 11185 -------- Saved 
+XPedite7170 3U VPX Intel® Core™2 Duo Module ---------- 11186 -------- Saved 
+iGo1000 ---------- 11187 -------- Saved 
+HeartOS RTOS ---------- 11188 -------- Saved 
+GEMINI： 採用 Intel® Core™ 2 Duo 的單板電腦 ---------- 11189 -------- Saved 
+Aries MB_PSG-M-ARUP3210-110 ---------- 11190 -------- Saved 
+XPedite7201 PMC/XMC Intel® Atom™ 模組 ---------- 11191 -------- Saved 
+KINO-QM57A（配有用於安裝 Intel® Core™ i5 / i7 Mobile Processor 的 Socket G 的 Mini-ITX SBC） ---------- 11192 -------- Saved 
+BIS-6592GM 是基於 Intel® GM45 的無風扇嵌入式 BoxPC ---------- 11193 -------- Saved 
+AFC-6573 ---------- 11194 -------- Saved 
+Express-AT - COM Express® 模組，採用 Intel® Atom® Processor N270 和 Intel® 945GSE / ICH7-M Chipset ---------- 11195 -------- Saved 
+Gemini MB_PSG-M-GEDP036D-110 ---------- 11196 -------- Saved 
+Embedded Mini-ITX Motherboard： JNF92-270-LF (Intel® Atom™ N270 Processor) ---------- 11197 -------- Saved 
+AMC604、AMC 2.5 英寸 SAS/SATA、圖形卡和 USB 2.0 ---------- 11198 -------- Saved 
+埠際電信級乙太網軟體 ---------- 11199 -------- Saved 
+COM Express CXB-CD945 ---------- 11200 -------- Saved 
+ReadyBoard 850 ---------- 11201 -------- Saved 
+AMC340，AMC 雙 DVI/VGA 視訊配接器 ---------- 11202 -------- Saved 
+ATCA： XE80 計算型雙核心 Intel® Xeon® 5600 系列 ---------- 11203 -------- Saved 
+MIC-5602 進階夾層卡 Intel® Core™ 2 Duo processor AMC ---------- 11204 -------- Saved 
+POS Termnal PT5300 ---------- 11205 -------- Saved 
+Stratix&reg; II ---------- 11206 -------- Saved 
+NI CompactRIO ---------- 11207 -------- Saved 
+VS-8148 Pro + ---------- 11208 -------- Saved 
+Touch&Go Paigezilla ---------- 11209 -------- Saved 
+AdvancedMC：Quad GbE 模組： AM4301 ---------- 11210 -------- Saved 
+aTCA-6250 ---------- 11211 -------- Saved 
+CompactPCI 3U: CP307 (Intel&reg; Core™ Duo) ---------- 11212 -------- Saved 
+PPC-L128T 12.1" 無風扇平板 PC，採用 Intel® Atom® N270 processor ---------- 11213 -------- Saved 
+POS Termnal PT6300 ---------- 11214 -------- Saved 
+NAR-7090 ---------- 11215 -------- Saved 
+Trillium Femtocell Access Point（Home NodeB）軟體 ---------- 11216 -------- Saved 
+CM-7100 Intel® Core™2 Duo ETX ETX 模組，配有 CRT/LVDS、LAN、SATA & Audio ---------- 11217 -------- Saved 
+NAD-2100 ---------- 11218 -------- Saved 
+F11S - 3U CompactPCI® Intel® Atom® SBC ---------- 11219 -------- Saved 
+iGo19-TIRI ---------- 11221 -------- Saved 
+HardCopy ASIC 系列 ---------- 11222 -------- Saved 
+NAR-5520 ---------- 11223 -------- Saved 
+VS-8124 Pro + ---------- 11224 -------- Saved 
+CT-30 ---------- 11225 -------- Saved 
+Klocwork Insight ---------- 11226 -------- Saved 
+CompactPCI 3U: CP307-V ---------- 11227 -------- Saved 
+RUBY-9712VG2A ---------- 11228 -------- Saved 
+AdvancedMC： AM4010 ---------- 11229 -------- Saved 
+L800 Intel® Atom® D2550 Thin Client ---------- 11231 -------- Saved 
+X7SB3 ATX ---------- 11232 -------- Saved 
+CG2100-電信級伺服器 ---------- 11233 -------- Saved 
+用於 Xilinx FPGA 的 Serial ATA I/II 主機控制器 ---------- 11234 -------- Saved 
+RadiSys 工程服務 ---------- 11235 -------- Saved 
+NET-1818VD10N ---------- 11236 -------- Saved 
+NAR-5530 ---------- 11237 -------- Saved 
+UTCA-5503 MicroTCA Carrier Hub ---------- 11238 -------- Saved 
+VS-8132 Pro + ---------- 11239 -------- Saved 
+工業 PC： CP-ASM-3 ---------- 11240 -------- Saved 
+此單板電腦採用 PEAK 8920 VL2 Intel® Dual-Core，配有 2 個 PCIe 千兆 LAN ---------- 11241 -------- Saved 
+Express-CBR - Extreme Rugged™ COM Express® 模組，採用 Intel® Core™ i7 Processor 和 Intel® QM57 Chipset ---------- 11242 -------- Saved 
+EC7-1819V2NA ---------- 11243 -------- Saved 
+NET-1821VD2N ---------- 11244 -------- Saved 
+FSB-960H（全尺寸 SBC） ---------- 11245 -------- Saved 
+Stratix&reg; Gx ---------- 11246 -------- Saved 
+IP 網路伺服器： NSN2U ---------- 11247 -------- Saved 
+NAR-5630 ---------- 11248 -------- Saved 
+iGo13 ---------- 11249 -------- Saved 
+SPCIE-5100DX（全尺寸 PICMG1.3 CPU 卡支援雙插槽 LGA 771 Intel® Xeon® processor） ---------- 11250 -------- Saved 
+VS-8140 Pro + ---------- 11251 -------- Saved 
+H6055 - Qseven 模組採用了 Intel® Atom® E620T/E640T/E680T ---------- 11253 -------- Saved 
+NuPRO-965 ---------- 11254 -------- Saved 
+IMBM-935（工業級主機板） ---------- 11255 -------- Saved 
+SV1-G4128 高效能 Mini-ITX 主機板 ---------- 11256 -------- Saved 
+ATCA SYS-6002 ---------- 11257 -------- Saved 
+SBC340 ---------- 11258 -------- Saved 
+LT600-D Intel&reg; 945G/ICH7 ATX motherboard ---------- 11259 -------- Saved 
+iGo17 ---------- 11260 -------- Saved 
+H6812-COM Express 模組採用了 Intel® Atom® D525/D425/N455 ---------- 11261 -------- Saved 
+RTC-1000A（加固式平板電腦） ---------- 11262 -------- Saved 
+SBC325 ---------- 11263 -------- Saved 
+ATCA SYS-6014/6016-40G ---------- 11264 -------- Saved 
+PEB-2737 ---------- 11265 -------- Saved 
+PSG-NB-1UFARUP01 ---------- 11266 -------- Saved 
+SV1-D4212 Self-service Terminals Motherboard ---------- 11267 -------- Saved 
+以 Intel® Atom® 為基礎的 Tablet PC-MRC 2000-E ---------- 11268 -------- Saved 
+Plug-N-Run E1 ---------- 11269 -------- Saved 
+ATCA SYS-6206-40 G ---------- 11270 -------- Saved 
+PPC-L157T 15" Fanless Panel PC，採用了 Intel® Atom® N270 Processor ---------- 11271 -------- Saved 
+PSG-NB-1UFARUP02 ---------- 11272 -------- Saved 
+G7B330-B rev. B ---------- 11273 -------- Saved 
+EMB-9459T Rev.B（嵌入式主機板，Mini ITX） ---------- 11274 -------- Saved 
+3.5" 主機板配有高效能 Intel® Atom® N2800/D2700 ---------- 11275 -------- Saved 
+SV1-D4216 Self-service Terminals Motherboard ---------- 11276 -------- Saved 
+XVB602 ---------- 11277 -------- Saved 
+ADLD25PC ---------- 11278 -------- Saved 
+ATCA SYS-6214-40G ---------- 11279 -------- Saved 
+工程服務 ---------- 11280 -------- Saved 
+PDSBA-Q + ATX ---------- 11281 -------- Saved 
+SV1-D4216-L Self-service Terminals Motherboard ---------- 11282 -------- Saved 
+NDiS 163 - 數位電子看板平台 ---------- 11283 -------- Saved 
+EC5-1817LNAR 5.25" EPIC 尺寸，採用了 Intel® QM67 Chipset ---------- 11284 -------- Saved 
+NS-520 ---------- 11285 -------- Saved 
+IMBI-Q57（工業級主機板） ---------- 11286 -------- Saved 
+Touch&Go Paige10 ---------- 11287 -------- Saved 
+iGo-102AT ---------- 11288 -------- Saved 
+ATCA： ATCA-FM40 ---------- 11289 -------- Saved 
+TS-1079 Pro ---------- 11290 -------- Saved 
+G20 - 3U CompactPCI® Serial Intel® Core™ i7 SBC ---------- 11291 -------- Saved 
+PL-62000 ---------- 11292 -------- Saved 
+AMC-3201/2 ---------- 11293 -------- Saved 
+TEB-M7064 Mini-ITX motherboard ---------- 11294 -------- Saved 
+COQOS ---------- 11295 -------- Saved 
+PCI-104，PC/104-Plus 單板電腦： CMX158886CX (1.0GHz Celeron&reg; M Ultra Low Voltage) ---------- 11296 -------- Saved 
+EC7-1817LNAR(B) miniITX 主機板 ---------- 11297 -------- Saved 
+MB930 - Intel® Q35 ATX Industrial Motherboard ---------- 11298 -------- Saved 
+ATX-6895 高效能 ATX Intel® Core™2 Quad/ Intel® Core™2 Duo 主機板 ---------- 11299 -------- Saved 
+BL631-D Intel&reg; Q35/ICH9 ATX motherboard ---------- 11301 -------- Saved 
+嵌入式 Midinux ---------- 11302 -------- Saved 
+ADLGS45PC ---------- 11303 -------- Saved 
+Data Fortris 1430 ---------- 11304 -------- Saved 
+ATX-6931 ATX 主機板支援 22nm/32nm LGA1155 Intel® Core™ i7/i5/i3 CPU ---------- 11305 -------- Saved 
+DPX-S425 ---------- 11306 -------- Saved 
+監控行業的 TEB-T7100 ---------- 11307 -------- Saved 
+POS 用 HS-425TD ---------- 11308 -------- Saved 
+Embedded Mini-ITX Motherboard： JNF94-270-LF (Intel® Atom™ N270 Processor) ---------- 11309 -------- Saved 
+BL330-BR Intel&reg; Q35/ICH9R micro-ATX 主機板 ---------- 11310 -------- Saved 
+AMC-1000 ---------- 11311 -------- Saved 
+SHB-960 PICMG1.3 SPEC 全尺寸 CPU 卡，採用 Intel® Q67/Q77 Chipset ---------- 11312 -------- Saved 
+面向雲終端客戶端的 TE-945M 3.5" 主機板 ---------- 11313 -------- Saved 
+Beabloo 數字營銷作業系統 ---------- 11314 -------- Saved 
+Data Fortris 3220 ---------- 11315 -------- Saved 
+eBOX530-820-FL，無風扇嵌入式系統，採用 Intel® Atom™ Processor ---------- 11316 -------- Saved 
+POS 用 HS-525TD ---------- 11317 -------- Saved 
+網路安全用 TEB-0001 ---------- 11318 -------- Saved 
+F600Q ---------- 11319 -------- Saved 
+ADLD2000PC ---------- 11320 -------- Saved 
+ATCA-2210 ---------- 11321 -------- Saved 
+數位電子看板行業用 TEB-V7040 ---------- 11322 -------- Saved 
+XProtect Corporate ---------- 11323 -------- Saved 
+智慧交通應用 TEB-M8100 ---------- 11325 -------- Saved 
+網路安全用 TEB-0003 ---------- 11326 -------- Saved 
+P600Q ---------- 11327 -------- Saved 
+ATCA-2340 ---------- 11328 -------- Saved 
+SCANFLEX 硬體平台 ---------- 11329 -------- Saved 
+基於 Intel? Atom® D525 用於機架安裝的 TEA-N1601 ---------- 11331 -------- Saved 
+SBC86831, Socket M Core™2 Duo Mini ITX SBC ---------- 11332 -------- Saved 
+元素和網路管理 ---------- 11333 -------- Saved 
+MITX-6922 Intel® QM67/QM77 Based Mini ITX 主機板 ---------- 11335 -------- Saved 
+CL630-CRM ATX 主機板，配備 Intel® Xeon® Processor E3-1200v2 系列 ---------- 11336 -------- Saved 
+U600Q ---------- 11337 -------- Saved 
+ClarinoxBlue 藍牙協定棧 ---------- 11338 -------- Saved 
+軟體平台 SYSTEM CASCON ---------- 11339 -------- Saved 
+Rapier 1140 ---------- 11340 -------- Saved 
+IEM-945GSE (ETX / COM EXPRESS / Q7) ---------- 11341 -------- Saved 
+ADL945PC ---------- 11342 -------- Saved 
+BIS-6624 ---------- 11343 -------- Saved 
+AFB100 ---------- 11344 -------- Saved 
+POS 應用程式專用的基於 POS-7933 Intel® Q67/Q77 的主機板 ---------- 11345 -------- Saved 
+智慧運輸行業 TEA-E1801 採用 Intel® Atom® P4505/i5-520E ---------- 11346 -------- Saved 
+ADLS15PC ---------- 11347 -------- Saved 
+Aegis A4801 ---------- 11348 -------- Saved 
+監控行業的 TEA-R4700 ---------- 11349 -------- Saved 
+在資訊站使用 TEB-M7100 MINI-ITX 主機板 ---------- 11350 -------- Saved 
+BCM RX61H mATX 主機板支援 22nm/32nm Intel® Core i7/i5/i3/Celeron Processors、Intel H61 Chipset、2 個 PCIe x1、LPT ---------- 11351 -------- Saved 
+醫療應用 TEB-S6040 ---------- 11352 -------- Saved 
+VPX3-1256 3U VPX Intel® Core™ i7 Single Board Computer ---------- 11353 -------- Saved 
+TS-EC1679U-RP ---------- 11354 -------- Saved 
+MPMC-9320 3U 2 插槽耐用型處理系統 ---------- 11355 -------- Saved 
+瘦客戶端用 TE 945GSE ---------- 11356 -------- Saved 
+POS 用 TEB-M7067 ---------- 11357 -------- Saved 
+CHAMP-AV8 D Intel® Core™ i7 6U VPX Digital Signal Processor Board ---------- 11358 -------- Saved 
+MPMC-9650 6U 5 插槽耐用型處理器系統 ---------- 11359 -------- Saved 
+BCM MX255D Intel® Atom® D2550 無風扇低功耗 Mini ITX 主機板，Intel GMA3600，LVDS，DVI，7 個 USB，USB DOM，DC 12V ---------- 11360 -------- Saved 
+CHAMP-AV5 Dual Intel® Core™i7 620e VME Digital Signal Processor ---------- 11361 -------- Saved 
+TS-1679U-RP ---------- 11362 -------- Saved 
+適合醫療應用的 TEB-S6310 ---------- 11363 -------- Saved 
+VPX3-1257 3U VPX Intel® Core™ i7 Quad-Core Single Board Computer ---------- 11364 -------- Saved 
+MPMC-9335 3U 3 插槽耐用型處理系統 ---------- 11365 -------- Saved 
+適用於自助服務終端機的 TEB M7080 ---------- 11366 -------- Saved 
+SCP/DCP-1201 3U CPCI Intel® Core™2 Duo Single Board Computer ---------- 11367 -------- Saved 
+MPMC-9655 6U 5-插槽型堅固耐用的處理器系統 ---------- 11368 -------- Saved 
+POS 應用中的 TEB M6060 ---------- 11369 -------- Saved 
+BCM RX67QV mATX 主機板、Intel® Q67 Chipset、DVI、HDMI、板載 18/24 位雙通道 LVDS 、3 SATAII、eSATA、AMT 7.0 ---------- 11370 -------- Saved 
+VPX6-1956 6U VPX Intel® Core™ i7 Quad Core Single Board Computer ---------- 11371 -------- Saved 
+適用於自助服務應用的 TE 945FS ---------- 11372 -------- Saved 
+MPMC-9341 3U 4 插槽型堅固耐用的處理器系統 ---------- 11373 -------- Saved 
+適用於智慧型交通的 TEA-E2700 ---------- 11374 -------- Saved 
+SVME/DMV-1901 6U VME Intel® Core™2 Duo SBC ---------- 11375 -------- Saved 
+PL-60580 ---------- 11376 -------- Saved 
+適用於彩票機應用的 SC M7068 ---------- 11377 -------- Saved 
+適用於精簡型用戶端的 TEB-M7060 ---------- 11378 -------- Saved 
+Lynx OS SE ---------- 11379 -------- Saved 
+COM Express CE915GME ---------- 11380 -------- Saved 
+適用於網路安全性的 TEA-N6601-4 ---------- 11381 -------- Saved 
+MPMC 9350 3U 5 插槽型堅固耐用的處理系統 ---------- 11382 -------- Saved 
+SVME/DMV-1905 6U VME Intel® Core™i7 SBC ---------- 11383 -------- Saved 
+MPMC-9020 子系統 ---------- 11384 -------- Saved 
+精簡用戶端用 TE-945BK ---------- 11385 -------- Saved 
+精簡用戶端用 TEB-M7061 ---------- 11386 -------- Saved 
+BCM MX61H Mini ITX 主機板支援 Intel H61 Chipset、DVI、LVDS、4 個 COM ---------- 11387 -------- Saved 
+MPMC-9610 6U 1 插槽耐用型處理器系統 ---------- 11388 -------- Saved 
+醫療應用 TEB-C6100 ---------- 11389 -------- Saved 
+WAFER-945GSE2 (3.5" SBC) ---------- 11390 -------- Saved 
+BCM BC206C ATX 主機板支援 Intel® Xeon® Processor 和 ECC Memory、Intel C206 Chipset、3 個 PCI、2 個 PCIe x1、Intel TXT、Turbo、TPM ---------- 11391 -------- Saved 
+VPX3-1252 3U VPX Intel® Core™2 Duo SBC ---------- 11392 -------- Saved 
+QNX Aviage 多媒體套件 ---------- 11393 -------- Saved 
+PCM-9362 Intel® Atom® N450/ D510 3.5" SBC ---------- 11394 -------- Saved 
+MPMC-9310 3U 1 插槽系統 ---------- 11395 -------- Saved 
+精簡用戶端用 TE-945GMS ---------- 11396 -------- Saved 
+MPMC-9620 6U 2 插槽 VME 處理器系統 ---------- 11397 -------- Saved 
+面向彩票應用程式的 TEB-H8100 ---------- 11398 -------- Saved 
+CSB200-883 - 基於 Intel® Atom ™ Processor 的無風扇系統 ---------- 11399 -------- Saved 
+FW-1109 ---------- 11400 -------- Saved 
+Terminals VMT6000 系列 ---------- 11401 -------- Saved 
+網路安全用 TEA-N1606 ---------- 11402 -------- Saved 
+BL330-B Intel&reg; Q35/ICH9 micro-ATX motherboard ---------- 11403 -------- Saved 
+高效能嵌入式 IA 參考平台 ---------- 11404 -------- Saved 
+G5C630-DR Intel® 945GME/ICH7R ATX Motherboard ---------- 11405 -------- Saved 
+XVR15 ---------- 11406 -------- Saved 
+cPCI-6880 ---------- 11407 -------- Saved 
+3U CompactPCI® processor board CP3003 ---------- 11408 -------- Saved 
+面向自助服務終端的 TEB-M7101 ---------- 11409 -------- Saved 
+網路安全用 TEA-N1610 ---------- 11410 -------- Saved 
+COM Express® 迷你電腦模組 COMe-mCT10 ---------- 11411 -------- Saved 
+F18 - 3U CompactPCI/Express Core™2 Duo SBC ---------- 11412 -------- Saved 
+NISE 3600e 無風扇工業電腦 ---------- 11413 -------- Saved 
+3U VPX 單板電腦 VX3042 ---------- 11414 -------- Saved 
+MB970 - 第 3 代 Intel® Core™ i7/i5/i3/Pentium® ATX Motherboard 和 ® Q77 PCH ---------- 11415 -------- Saved 
+SCB-7971 1U 機架安裝 Intel® Atom® Network System，六個 GbE、CF、SATA、Mini-PCI、PCI、LCM、旁路 & 4~8 交換器埠 ---------- 11416 -------- Saved 
+XCR15 ---------- 11417 -------- Saved 
+PLSA-120 ---------- 11418 -------- Saved 
+BCM RX35Q - Intel Q35 Core™2 Quad/ Core™2 Duo LGA775 mATX，配備 TPM、PCIe x16/x1、5 個 SATAII、2 個 IEEE1394 ---------- 11419 -------- Saved 
+PM-US15W ---------- 11420 -------- Saved 
+基於 Intel® Atom™ 的計算解決方案 -- QSeven 外形尺寸 ---------- 11421 -------- Saved 
+網路安全用 TEA-N1600 ---------- 11422 -------- Saved 
+SBC81206 - Intel®Core™2 Duo PICMG 1.0 全尺寸 CPU 卡 ---------- 11423 -------- Saved 
+PCE-5127G2 ---------- 11424 -------- Saved 
+PQ7-M100G ---------- 11425 -------- Saved 
+自訂醫療解決方案平板電腦 ---------- 11426 -------- Saved 
+EP850 - Intel® Core™2 Duo EPIC SBC ---------- 11427 -------- Saved 
+3U VPX 單板電腦 VX3044 ---------- 11428 -------- Saved 
+ASMB-782 ---------- 11429 -------- Saved 
+嵌入式 Mini-ITX 主機板 KTQM77/mITX ---------- 11430 -------- Saved 
+網路安全用 TEA-N1850 ---------- 11431 -------- Saved 
+ads-tec 自訂產品智慧系統 ---------- 11432 -------- Saved 
+SBC625 ---------- 11433 -------- Saved 
+PEM-E200VLA ---------- 11434 -------- Saved 
+KINO-QM57 ---------- 11435 -------- Saved 
+嵌入式主機板： KT965/Flex (Intel&reg; Core™ 2 Duo) ---------- 11436 -------- Saved 
+網路安全用 TEB-N6040 ---------- 11437 -------- Saved 
+用於網路安全的 TEA-N2850 ---------- 11438 -------- Saved 
+ML936-B16C Intel&reg; US15WP SCH ECX Motherboard ---------- 11439 -------- Saved 
+X9SPV-F 超微嵌入式主機板 ---------- 11440 -------- Saved 
+ads-tec 提供的 Tablet PC ITC1000 系列 - 輕型無風扇，基於 Intel® Atom® ---------- 11441 -------- Saved 
+網路安全用 TEA-N1601-4 ---------- 11442 -------- Saved 
+網路安全用 TEB-N6000 ---------- 11443 -------- Saved 
+EmETX-i945M（電腦模組） ---------- 11444 -------- Saved 
+Catalyst LP： 小外形尺寸的整合 Intel® Atom™ N450/D510 ---------- 11445 -------- Saved 
+面向遊戲業的 GM-0010 ---------- 11446 -------- Saved 
+適用於網路安全的 TEB-N6601 ---------- 11447 -------- Saved 
+AdvancedTCA Processor Blade AT8060 ---------- 11448 -------- Saved 
+X9SPV-LN4F 超微嵌入式主機板 ---------- 11449 -------- Saved 
+AIMB-782 ---------- 11450 -------- Saved 
+MI-945H ---------- 11452 -------- Saved 
+AXISLib-GPU ---------- 11453 -------- Saved 
+CompactPCI 6U： CP 6001 ---------- 11454 -------- Saved 
+EMB-4852 EPIC 主機板，採用 Intel® Atom® N270 Processor ---------- 11455 -------- Saved 
+M1042 醫療平板電腦 ---------- 11456 -------- Saved 
+KINO-QM770 ---------- 11457 -------- Saved 
+SHB120 - PICMG 1.3 全尺寸 CPU 卡，用於第 3 代 Intel® Core™ Processor ---------- 11458 -------- Saved 
+MPC-10W5 - 10 英吋數位電子看板電腦 ---------- 11459 -------- Saved 
+AdvancedMC 處理器模組 AM4022 ---------- 11460 -------- Saved 
+KINO-CV-N26001 ---------- 11461 -------- Saved 
+FW-8892 Intel® Xeon® 5500 Processor 網絡設備 ---------- 11462 -------- Saved 
+SequenceReporter ---------- 11463 -------- Saved 
+AXISLib-x86 ---------- 11464 -------- Saved 
+G7L331-B LGA775 Intel&reg; 945G &micro;ATX 主機板 ---------- 11465 -------- Saved 
+IMB-G41A（Micro ATX 主機板支援 45nm LGA775 Intel® Core™2 Quad CPU） ---------- 11466 -------- Saved 
+KINO-CVR-N26002 ---------- 11467 -------- Saved 
+X9DR7-TF+ 嵌入式伺服器主機板，配備 Intel® Xeon® Processor E5-2600 雙通訊端 ---------- 11468 -------- Saved 
+G5C100-N Intel&reg;945GM/945GME/ICH7R 主機板 ---------- 11469 -------- Saved 
+WAFER-OT-Z670/Z650 ---------- 11470 -------- Saved 
+CA100-D Intel&reg; GM45/ICH9M Mini-ITX 主機板 ---------- 11471 -------- Saved 
+IMBA-C2160 ---------- 11472 -------- Saved 
+AXISView ---------- 11473 -------- Saved 
+IBX-530-945GSE（嵌入式系統） ---------- 11474 -------- Saved 
+IMB-Q770 ---------- 11475 -------- Saved 
+M2M 解決方案產生器工具組 ---------- 11476 -------- Saved 
+AEC-6831（無風扇嵌入式控制器） ---------- 11477 -------- Saved 
+SEM-200 SATA Storage AMC Card ---------- 11478 -------- Saved 
+ReadyBoard 910 ---------- 11479 -------- Saved 
+CoreModule 720: Extreme Rugged™ PC/104-Plus Single Board Computer with Intel® Atom® Processor E600T Series ---------- 11480 -------- Saved 
+aTCA-9300 - Intel® Xeon® E3 Quad-Core 10 Gigabit Ethernet AdvancedTCA® Processor Blade ---------- 11481 -------- Saved 
+cPCI-6620 - Value 6U CompactPCI® Low Power 2nd Generation Intel® Core™ i7 / Celeron® Processor Blade ---------- 11482 -------- Saved 
+cPCI-6520 ---------- 11483 -------- Saved 
+MIX-110: Mini-ITX Embedded Computer System ---------- 11484 -------- Saved 
+IMBA-C2260-R10 ---------- 11485 -------- Saved 
+IMBA-Q870-R10 ---------- 11486 -------- Saved 
+IMB-Q870-R10 ---------- 11487 -------- Saved 
+PCIE-Q870-R10 ---------- 11488 -------- Saved 
+SPCIE-C2260-R10 ---------- 11489 -------- Saved 
+COM Express - CEQM87 ---------- 11490 -------- Saved 
+ATX-6951 Industrial ATX Motherboard ---------- 11491 -------- Saved 
+Sahara Slate PC i575 ---------- 11492 -------- Saved 
+MIC-3396 ---------- 11494 -------- Saved 
+FWA-6510 ---------- 11495 -------- Saved 
+TPC-671H/1071H/1271H/1571H/1771H ---------- 11497 -------- Saved 
+FES8639 ---------- 11499 -------- Saved 
+FES8912 ---------- 11500 -------- Saved 
+MIC-6311 ---------- 11501 -------- Saved 
+AIMB-784 ---------- 11502 -------- Saved 
+PCE-5128 ---------- 11503 -------- Saved 
+ASMB-584  ---------- 11504 -------- Saved 
+ASMB-784 ---------- 11505 -------- Saved 
+ASMB-820I ---------- 11508 -------- Saved 
+ASMB-822I  ---------- 11510 -------- Saved 
+COM Express Type 6 Module-COMe8030 ---------- 11511 -------- Saved 
+SBS High Reliable Processor Module CPCI-6811 ---------- 11512 -------- Saved 
+SBS Rugged Processor Module COM9510 ---------- 11516 -------- Saved 
+SBS Rugged Processor Module-ITX3010 ---------- 11521 -------- Saved 
+SBS Rugged Processor Module-ECX9010 ---------- 11522 -------- Saved 
+SBS Rugged Processor Module-SCM9022 ---------- 11523 -------- Saved 
+SBS Rugged Processor Mudule-COMe9020 ---------- 11524 -------- Saved 
+SBS Rugged Processor Module-COMe9120 ---------- 11525 -------- Saved 
+PEAK 887VL2- PICMG 1.3 full-size SBC ---------- 11526 -------- Saved 
+NEX 885- Industrial Motherboard ---------- 11527 -------- Saved 
+Sahara Slate PC i535 ---------- 11529 -------- Saved 
+NSA 7120B/7120R- Network Security Platform ---------- 11531 -------- Saved 
+FW-8895 ---------- 11533 -------- Saved 
+FW-7610-1U Cost Effective Network Platform with Intel® Celeron® 827E/847E processor, up to 16 GB RAM ---------- 11534 -------- Saved 
+FX-7220-Machine Vision and Control Fanless Intel® Atom® N2800 Industrial PC ---------- 11535 -------- Saved 
+NISE 300- Industrial Fanless Computer ---------- 11536 -------- Saved 
+FPC7161 ---------- 11537 -------- Saved 
+FES2924 ---------- 11538 -------- Saved 
+MANO870 -- Socket G2 Intel® Core™ i7/ i5/ i3/ Celeron® Mini ITX SBC with Intel® QM77 PCH, HDMI/ DVI-D/VGA/LVDS, PCI Express Gen3, SATA-600, Dual LANs and HD Audio ---------- 11539 -------- Saved 
+MI802 - Intel® Atom® D2550/ N2600-based Mini-ITX Motherboard w/ Intel® NM10 Chipset ---------- 11541 -------- Saved 
+MB837-D25 - Intel® Atom® D2550 Networking Disk-size SBC w/ Intel® NM10 PCH ---------- 11542 -------- Saved 
+2I268HW/HB-Intel® Atom® N2600/N2800 2.5" SBC ---------- 11546 -------- Saved 
+OPS885 -- IPSS 4th Generation Intel® Core™ i5 Open Pluggable Specification (OPS) Digital Signage Player ---------- 11547 -------- Saved 
+FWA-3230 ---------- 11549 -------- Saved 
+HIT-W181 - Patient Infotainment system (bedside computer terminal)  ---------- 11551 -------- Saved 
+FES2215 ---------- 11552 -------- Saved 
+FES5312 ---------- 11553 -------- Saved 
+FES5313 ---------- 11554 -------- Saved 
+PC9070 ---------- 11557 -------- Saved 
+PC9120 ---------- 11558 -------- Saved 
+PC9150 ---------- 11559 -------- Saved 
+Android software development services ---------- 11564 -------- Saved 
+EMB-LN9T Rev.B ---------- 11565 -------- Saved 
+EMB-Q77A (Industrial Motherboard) ---------- 11566 -------- Saved 
+Custom Systems Manufacturing Services ---------- 11567 -------- Saved 
+KINO-PV-D4252/D5252 ---------- 11568 -------- Saved 
+KINO-CV-N26001 ---------- 11569 -------- Saved 
+KINO-AQ670 ---------- 11570 -------- Saved 
+KINO-AH612 ---------- 11571 -------- Saved 
+ICES 667- Industrial Motherboard ---------- 11572 -------- Saved 
+Avalue ECM-QM87 - 3.5" SBC with Intel® QM87 Express chipset  ---------- 11573 -------- Saved 
+LVC-5570 - Dual Core Intel® Core™ i7-3517UE In-Vehicle Computer ---------- 11574 -------- Saved 
+X10SLQ Supermicro uATX Motherboard ---------- 11575 -------- Saved 
+C7B75 Supermicro uATX Motherboard ---------- 11576 -------- Saved 
+C7H61 Supermicro ATX Motherboard ---------- 11577 -------- Saved 
+C7H61-L Supermicro ATX Motherboard ---------- 11578 -------- Saved 
+Klocwork Cahoots ---------- 11579 -------- Saved 
+X7SPA-H-D525 Supermicro mini-ITX Motherboard ---------- 11580 -------- Saved 
+X7SPA-H Supermicro mini-ITX Motherboard ---------- 11581 -------- Saved 
+X7SPA-L Supermicro Mini-ITX Motherboard ---------- 11582 -------- Saved 
+LVC-5000 ---------- 11583 -------- Saved 
+LVC-5000N4 - Dual Core Intel® Celeron® 847E In-Vehicle Computer ---------- 11584 -------- Saved 
+Avalue ESM-QM87 - COM Express with Intel® QM87 Express chipset ---------- 11585 -------- Saved 
+Mini-ITX AIMB-214 ---------- 11587 -------- Saved 
+NViS 3542- Mobile NVR ---------- 11588 -------- Saved 
+NViS 6220- Hybrid NVR/DVR Enterprise Survillance ---------- 11589 -------- Saved 
+NViS 5240- 4 Bay Tower NVR Retail Surveillance ---------- 11590 -------- Saved 
+LX-1000 ---------- 11591 -------- Saved 
+SourcePoint Debugger ---------- 11592 -------- Saved 
+iS-2840 ---------- 11593 -------- Saved 
+WADE-8077 ---------- 11594 -------- Saved 
+LVC-5770- Dual Core Intel® Core™ i7-3517UE In-Vehicle Computer ---------- 11595 -------- Saved 
+FW-7571-Rackmount x86 Network Security Platform with Intel® Atom® C2000 Series processor ---------- 11596 -------- Saved 
+FW-7573-Rackmount x86 Network Security Platform with 8-core Intel® Atom® C2000 Series processor ---------- 11597 -------- Saved 
+FW-7551-Desktop x86 Network Security Platform with Intel® Atom® C2000 Series processor ---------- 11598 -------- Saved 
+FW-7584-Mid-range SMB Network Security Appliance ---------- 11599 -------- Saved 
+KTHM65/mITX - embedded & longterm available Mini ITX board with Intel® HM65 chipset for an optimized price-performance ratio ---------- 11601 -------- Saved 
+FPC5105 ---------- 11602 -------- Saved 
+FPC5121 ---------- 11603 -------- Saved 
+BGS5 ---------- 11604 -------- Saved 
+EHS6 ---------- 11605 -------- Saved 
+FW-8759-Rackmount x86 Network Security Platform with 4th Generation Intel® Xeon® E3-1200 v3 or Intel® Core™ i7/i5/i3 ---------- 11606 -------- Saved 
+Orion Development Workstation for Intel® Xeon Phi™ Coprocessor  ---------- 11607 -------- Saved 
+Stratus MCS ---------- 11608 -------- Saved 
+2I268C-Intel® Atom® N2600/N2800 2.5" SBC ---------- 11609 -------- Saved 
+2I260A-Intel® Atom® N2600 2.5" SBC ---------- 11610 -------- Saved 
+2I260D-Intel® Atom® N2600 2.5" SBC ---------- 11611 -------- Saved 
+3I525AW-Intel® Atom® D525 3.5" SBC ---------- 11612 -------- Saved 
+3I525CW-Intel® Atom® D525 3.5" SBC ---------- 11613 -------- Saved 
+NI525A-Intel® Atom® D525 (LEX STD) SBC ---------- 11614 -------- Saved 
+CI770A - 3rd Generation Intel® Core™ Processor (LEX STD) SBC ---------- 11615 -------- Saved 
+CI770C - 3rd Generation Intel® Core™ Processor (LEX STD) SBC ---------- 11616 -------- Saved 
+3I847A/C - Intel® Celeron® Processor 847E  CPU, 3.5" SBC ---------- 11617 -------- Saved 
+Bunker XRV-5241 1U Rugged Server ---------- 11618 -------- Saved 
+Nemo 10.4" Panel PC -IP66/67 waterproof Panel PC solution ---------- 11619 -------- Saved 
+Nemo-IP66/67 waterproof solution ---------- 11620 -------- Saved 
+UNO2I260A-Compact size PoE Client solution ---------- 11621 -------- Saved 
+7" PoE Client Panel PC  ---------- 11622 -------- Saved 
+InSight Connect Device Management Platform ---------- 11624 -------- Saved 
+COM Express C6B-7S ---------- 11625 -------- Saved 
+Axeda M2M Platform ---------- 11626 -------- Saved 
+I212AR Storage Appliance ---------- 11627 -------- Saved 
+Support of the 4th generation Intel® Core™ processors for validation and test of complex processor boards ---------- 11628 -------- Saved 
+RMC7132 ---------- 11630 -------- Saved 
+RMC8333A ---------- 11631 -------- Saved 
+Twister NI525A- 4 Channels PoE Server Solution ---------- 11633 -------- Saved 
+Twister CI770A-Intel® Core™ i5/i7 Heavy Duty Fanless system  ---------- 11634 -------- Saved 
+FPC8759 ---------- 11635 -------- Saved 
+COM Express C6B-8S ---------- 11637 -------- Saved 
+COM Express Carrier C6-MB-EVA ---------- 11638 -------- Saved 
+COM Express Carrier C6-AD-T6T2 ---------- 11639 -------- Saved 
+HD330-H81 - microATX Motherboard with 4th Generation Intel® Core™ processors ---------- 11644 -------- Saved 
+VMC 3500/35001- Vehicle Mount Computer   ---------- 11645 -------- Saved 
+VMC 3000/3001- Vehicle Mount Computer ---------- 11646 -------- Saved 
+HD632-H81 ATX motherboard with 4th Generation Intel® Core™ processors ---------- 11648 -------- Saved 
+DL631-C226 ATX motherboard with 4th Generation Intel® Xeon® processors ---------- 11649 -------- Saved 
+ANT2I260A-Palm Size Thin Client/Digital Signage solution ---------- 11650 -------- Saved 
+TREK-753 ---------- 11655 -------- Saved 
+MTC-6 ---------- 11657 -------- Saved 
+HD630-H81 - ATX Motherboard with 4th Generation Intel® Core™ processors ---------- 11662 -------- Saved 
+HM960-HM86 - COM Express Module with 4th Generation Intel® Core™ processors ---------- 11663 -------- Saved 
+ANT2I260D-Palm Size Thin Client/Networking solution ---------- 11664 -------- Saved 
+Insyde Software BIOS customization and Source Code licensing ---------- 11673 -------- Saved 
+ClusterStor™ 6000 HPC Storage Solution ---------- 11674 -------- Saved 
+HM920-HM86 -COMe with 4th Generation Intel® Core™ processors ---------- 11675 -------- Saved 
+FW-8877 ---------- 11676 -------- Saved 
+NDiS 126- Cost Effective Digital Signage Player ---------- 11677 -------- Saved 
+NDiS B322- Cost Effective Digital Signage Player ---------- 11678 -------- Saved 
+NDiS B532- High Performance Digital Signage Player ---------- 11679 -------- Saved 
+NDiS OPS-M50- OPS Digital Signage Player ---------- 11680 -------- Saved 
+FW-8771 ---------- 11681 -------- Saved 
+LEC-7070: Compact High-performance IPC Powered by 3rd Generation Intel® Core™ or Intel® Celeron® Processors ---------- 11682 -------- Saved 
+XVR16 ---------- 11686 -------- Saved 
+Engineering R&D Services ---------- 11687 -------- Saved 
+Custom Software Services ---------- 11688 -------- Saved 
+S4324 V3 4U Storage Server ---------- 11689 -------- Saved 
+S4336 V3 4U Storage Server ---------- 11690 -------- Saved 
+DS-060 ---------- 11692 -------- Saved 
+UTC-532C ---------- 11696 -------- Saved 
+UTC-515B ---------- 11697 -------- Saved 
+T-Series 40G Platform (T40) ---------- 11699 -------- Saved 
+ORION RS servers ---------- 11701 -------- Saved 
+M2M Gateway Middleware ---------- 11705 -------- Saved 
+RUBY-D717VG2AR ---------- 11706 -------- Saved 
+ROBO-8112VG2AR-Q87 ---------- 11707 -------- Saved 
+SCB-9651 4U Rackmount Platform ---------- 11708 -------- Saved 
+Digifort IP Surveillance System ---------- 11710 -------- Saved 
+System Design, Integration and Manufacturing Services ---------- 11711 -------- Saved 
+系统设计、集成和制造服务 ---------- 11712 -------- Saved 
+HD101-H81 Mini-ITX Motherboard with 4th Generation Intel® Core™ processors ---------- 11713 -------- Saved 
+ADLINK cPCI-3971 3U CompactPCI® PlusIO 2nd Generation Intel® Core™ i7 Processor Blade with ECC ---------- 11715 -------- Saved 
+Express-IBE2: COM Express® Type 2 Module with Intel® Core™ i7/i5/i3 Processor and Intel® QM77 Chipset ---------- 11717 -------- Saved 
+Express-IBER: Extreme Rugged™ COM Express® Type 6 Module with 3rd Generation Intel® Core™ i7 Processor ---------- 11718 -------- Saved 
+HPERC-IBR-MC - High Performance Extreme Rugged™ Coldplate mount System with 3rd Generation Intel® Core™ i7 CPU ---------- 11719 -------- Saved 
+IMB-M40H - ATX Intel® Core™ i7/i5/i3 Industrial Motherboard ---------- 11720 -------- Saved 
+MIX-250: Embedded Computer System with Intel® Core™ i7/i5/i3 IMB-T40H Mini-ITX Motherboard ---------- 11722 -------- Saved 
+NuPRO-A40H - PICMG 1.0 Full-Size Intel® Core™ i7/i5/i3 LGA1155 SBC ---------- 11723 -------- Saved 
+TRL-40_4U Server-Grade System with Dual Intel® Xeon® Processor E5 and E5 v2 Family Extended ATX Server Board  ---------- 11724 -------- Saved 
+X7DBR-E ATX estendida ---------- 11726 -------- Saved 
+E-2900 R3 ---------- 11727 -------- Saved 
+uIBX-200-R10/Z510P (ultra compacto sistema embarcado sem ventoinha com solução Intel® Atom® Z510P) ---------- 11728 -------- Saved 
+SuperServer 2015TA-HTRF ---------- 11729 -------- Saved 
+X7DBT-INF (16,4 "x 6.5") ---------- 11730 -------- Saved 
+X7SBE ATX ---------- 11731 -------- Saved 
+C2SBM-Q mATX ---------- 11732 -------- Saved 
+X7DBi+ ATX estendido ---------- 11733 -------- Saved 
+FSB - 868G (SBC tamanho completo) ---------- 11734 -------- Saved 
+X7DB8 + ATX estendido ---------- 11735 -------- Saved 
+X7DBR-i ATX estendido ---------- 11736 -------- Saved 
+SuperServer 5015A-EHF ---------- 11737 -------- Saved 
+X7DBN ATX estendido ---------- 11738 -------- Saved 

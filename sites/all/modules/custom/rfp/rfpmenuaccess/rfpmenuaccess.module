@@ -1,0 +1,159 @@
+<?php
+
+function rfpmenuaccess_menu_alter(&$items) {
+
+  $path = 'node/add/rfp';
+  $items[$path]['access arguments'][] = $items[$path]['access callback'];
+  $items[$path]['access callback'] = 'rfp_menu_oem_access';
+  
+  // empty 
+
+  
+}
+
+
+function rfp_menu_oem_access() {
+
+
+		if(is_user_buyer_and_employee_or_supplychain_and_employee() == 2)
+		{
+				return false;
+		}
+		return true;
+}
+
+function rfp_menu_access(){
+	   return false;
+}
+
+function rfp_menu_odm_access() {
+
+  global $user;
+  $user_fields = user_load($user->uid);
+
+
+  $companyid = $user_fields->field_company['und']['0']['target_id'];
+  $companyObj = node_load($companyid);
+  $companyType = array();
+  foreach ($companyObj->field_company_type['und'] as $key => $value) {
+    $companyType[] = $value['tid'];
+  }
+
+
+
+
+
+  if (in_array(1399, $companyType)) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+
+//role validatation for buyer
+function is_user_buyer_and_employee_or_supplychain_and_employee(){
+	global $user;
+    $user_fields = user_load($user->uid);
+    $companyid = $user_fields->field_company['und']['0']['target_id'];
+    $companyObj = node_load($companyid);
+	$companyType = array();
+	foreach ($companyObj->field_p2pmmtype['und'] as $key => $value) {
+    $companyType[$value['value']] = $value['value'];
+    }
+   if($user_fields->uid==1) //admin user
+   return 1;
+   if($user_fields->uid==9) //intel admin
+   return 1;
+   if($user_fields->uid==36) //ODM intel admin
+   return 1;   
+   if(empty($companyType) !== true ) {
+	  
+			  if (in_array('RFP or RFQ', $companyType)) {
+	            if (array_key_exists(34, $user_fields->roles) && array_key_exists(37, $user_fields->roles)){ // Buyer + Employee
+		          return 1;
+	            }
+	            if (array_key_exists(35, $user_fields->roles) && array_key_exists(37, $user_fields->roles)){ // Supply Chain + Employee
+		          return 1;
+	            }
+                return 2;				
+			  }  
+			  else   return 2;
+		  }
+   else  return 2;
+}
+
+function is_user_buyer_and_employee_or_supplychain_and_employee_edit($rfp){
+	global $user;
+    $user_fields = user_load($user->uid);
+    $companyid = $user_fields->field_company['und']['0']['target_id'];
+    $companyObj = node_load($companyid);
+	$companyType = array();
+	foreach ($companyObj->field_p2pmmtype['und'] as $key => $value) {
+    $companyType[$value['value']] = $value['value'];
+    }
+   if($user_fields->uid==1) //admin user
+   return 1;
+   if($user_fields->uid==9) //intel admin
+   return 1;
+   if($user_fields->uid==36) //ODM intel admin
+   return 1;     
+    if(empty($companyType) !== true ) {
+			  if (in_array('RFP or RFQ', $companyType)) {
+				 //if not same company wont edit
+		  		if($companyid != $rfp->field_buyer_company['und'][0]['value'])
+                return 2;							 
+	            if (array_key_exists(34, $user_fields->roles) && array_key_exists(37, $user_fields->roles)){ // Buyer + Employee
+		          return 1;
+	            }
+	            if (array_key_exists(35, $user_fields->roles) && array_key_exists(37, $user_fields->roles)){ // Supply Chain + Employee
+		          return 1;
+	            }
+			  
+	            if (array_key_exists(11, $user_fields->roles) || array_key_exists(12, $user_fields->roles) ){ // Intel Field Applications Engineer
+		          return 1;
+	            }	
+				
+                return 2;				
+			  }  
+			  else   return 2;
+		  }
+   else  return 2;
+}
+
+
+//role validatation builder
+function is_user_builder_and_sdeditor_or_supplychain_and_sdeditor(){
+
+	
+	global $user;
+    $user_fields = user_load($user->uid);
+    $companyid = $user_fields->field_company['und']['0']['target_id'];
+    $companyObj = node_load($companyid);
+	$companyType = array();
+	foreach ($companyObj->field_p2pmmtype['und'] as $key => $value) {
+    $companyType[$value['value']] = $value['value'];
+    }
+   if($user_fields->uid==1) //admin user
+   return 1;
+   if($user_fields->uid==9) //intel admin
+   return 1;
+   if($user_fields->uid==36) //ODM intel admin
+   return 1;       
+   if(empty($companyType) !== true ) {
+			  if (in_array('RFP or RFQ', $companyType)) {
+	             if (array_key_exists(33, $user_fields->roles) && array_key_exists(20, $user_fields->roles)){
+		           return 1;
+	             }
+             	if (array_key_exists(35, $user_fields->roles) && array_key_exists(20, $user_fields->roles)){
+		         return 1;
+	            }
+                return 2;				
+			  }  
+			  else   return 2;
+		  }
+   else  return 2;
+
+}
+

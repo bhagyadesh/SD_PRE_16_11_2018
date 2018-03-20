@@ -1,0 +1,74 @@
+<?php 
+/**
+* Implementation of hook_schema().
+*/ 
+
+  function intel_ea_partner_upload_schema()
+    {
+        $schema['field_data_field_approvers'] = array(
+
+     'description' => 'Approvers Table',
+     'fields' => array(
+       'entity_type' => array(
+        'description' => 'Entity Type',
+        'type' => 'varchar',
+		'length' => '128',
+        'not null' => TRUE,
+       ),
+      'bundle' => array(
+        'description' => 'Bundle',
+        'type' => 'varchar',
+        'length' => '128',
+        'not null' => TRUE,
+     ),
+    'entity_id' => array(
+      'description' => 'Entity Id',
+      'type' => 'int',
+	  'length' => 10,     
+      'not null' => TRUE,
+    ),
+	 'revision_id' => array(
+      'description' => 'Entity Id',
+      'type' => 'int',
+	  'length' => 10,     
+      'not null' => FALSE,
+    ),
+	 'language' => array(
+      'description' => 'Entity Id',
+      'type' => 'varchar',
+      'length' => '32',     
+      'not null' => TRUE,
+    ),
+	'delta' => array(
+      'description' => 'Entity Id',
+      'type' => 'int',
+	  'length' => 10,     
+      'not null' => TRUE,
+    ),
+	'field_approvers_target_id' => array(
+      'description' => 'Approvers Id',
+      'type' => 'int',
+	  'length' => 10,     
+      'not null' => TRUE,
+    ),
+  ),
+  'primary key' => array('entity_type','entity_id','language','field_approvers_target_id'),
+);
+return $schema;
+}
+
+/**
+* Implementation of hook_install().
+*/
+  function intel_ea_partner_upload_install()
+  {
+		drupal_install_schema('intel_ea_partner_upload');
+  }
+
+/**
+* Implementation of hook_uninstall().
+*/
+  function intel_ea_partner_upload_uninstall()
+  {
+		drupal_uninstall_schema('intel_ea_partner_upload');
+  }

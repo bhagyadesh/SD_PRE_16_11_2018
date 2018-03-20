@@ -1,0 +1,16 @@
+name = Intel EA module
+description = Custom Intel EA code.
+package = Intel EA
+core = 7.x
+dependencies[] = entity
+dependencies[] = facetapi
+dependencies[] = i18n_sync
+dependencies[] = node
+dependencies[] = revisioning
+
+files[] = includes/intel_ea_module.callbacks.inc
+files[] = includes/intel_ea_module.content.inc
+files[] = includes/intel_ea_module.forms.inc
+files[] = includes/intel_ea_module.private.inc
+files[] = includes/intel_ea_module.public.inc
+files[] = plugins/facetapi/filter_intel_ea_module.inc

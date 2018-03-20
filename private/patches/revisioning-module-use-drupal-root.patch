@@ -1,0 +1,13 @@
+diff --git a/sites/all/modules/contrib/revisioning/revisioning.module b/sites/all/modules/contrib/revisioning/revisioning.module
+index 085f7af..0cb1d41 100644
+--- a/sites/all/modules/contrib/revisioning/revisioning.module
++++ b/sites/all/modules/contrib/revisioning/revisioning.module
+@@ -1125,7 +1125,7 @@ function _revisioning_view_revision($node) {
+     // For Panels: @todo test this thoroughly. See [#1567880]
+     $router_item = menu_get_item('node/' . $node->nid);
+     if (!empty($router_item['include_file'])) {
+-      $path = $_SERVER['DOCUMENT_ROOT'] . base_path();
++      $path = DRUPAL_ROOT . base_path();
+       require_once $path . $router_item['include_file'];
+     }
+     // Call whatever function is assigned to the main node path but pass the
